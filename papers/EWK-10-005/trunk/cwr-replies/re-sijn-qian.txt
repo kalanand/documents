@@ -1,0 +1,51 @@
+Dear Sijn, 
+
+Thank you very much for the useful suggestions and the numerous corrections you sent us.
+
+We implemented the vast majority of, if not all, the editorial comments that we received.
+In some cases, comments from different reviewers overlap or suggest incompatible changes.
+In many of those and other cases the best solution was to rephrase the sentence or
+paragraph involved. The number of editorial comments, due to the size of the paper, is too
+large to give a reply for every single comment.
+
+Here we collect some questions that we think are necessary to address:
+
+
+Q: 
+Page 17 (35) L438 and L440, the variable of "qT" has not been defined yet in the whole paper, 
+also it has never been used again except on L440. I wonder whether it can be removed from 
+this paper. 
+A: 
+q_T is removed from the text. 
+
+Q: 
+Page 19 (39) L474 and L477, the 1st words of two titles should be consistent, 
+i.e. to change from "Modelling" --> "Modeling" 
+A: 
+Done
+ 
+Q: 
+on the 2nd line, as the background histograms are only shown in the right plot, so it should 
+be mentioned that "signal and background events ..." --> "signal and background (in the right 
+plot) events ..." 
+A: 
+Done. Actually, background is also present on the left plot, but it's invisible in linear scale. 
+
+Q: 
+Page 33 (54) L746, as the "p-value" has not been explained in the text yet, I'm not sure 
+whether it should be done here or simply be spelled out since it seems never used again afterward 
+in the text, i.e. "The p-value that measure ..." --> "The p????-value that measure ..." 
+A: 
+Rephrased as: "A goodness-of-fit test gives a probability ($p$-value) of 0.36".
+
+Some questions refer to the ATLAS-CMS comparison. We removed the comparisons to ATLAS from figures 
+and text according to CMS rule not to cite conf. notes. We think it doesn't make sense to make 
+comparisons with the old ATLAS results since they have already produced results with 36/pb that 
+we cannot show. 
+
+Thank you once more for your time and effort to read and improve this paper.
+
+All the best,
+Georgios & Luca
+
+

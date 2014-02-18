@@ -1,0 +1,100 @@
+\section{Event Selection}
+\label{sec:eventSelection}
+
+The $\Wln$ events are characterized by a prompt, energetic, and
+isolated lepton and significant missing transverse energy, $\MET$.  
+No requirement on $\MET$ is applied. Rather, the $\MET$ is used as the main 
+discriminant variable against backgrounds from QCD events. 
+
+The Z boson decays to leptons (electrons or muons) are selected based on two 
+energetic and isolated leptons.
+The reconstructed dilepton invariant mass is required to be consistent with
+the known Z boson mass. 
+
+\par
+The following background processes are considered:
+\begin{itemize}
+\item  {\sl QCD multijet events.}
+Isolation requirements reduce events with leptons produced inside jets.
+The remaining background is estimated with a variety of
+techniques based on data.  
+\item {\sl High-$\Et$ photons.}
+For the $\Wen$ channel only, there is a nonnegligible
+background contribution coming from  the conversion of a 
+photon from the process $\pp\rightarrow\gamma+$jet(s).
+\item {\sl Drell--Yan.}
+A DY lepton pair 
+%
+% Proposed by the ARC: what's the best notation ? (L.L.)
+%
+%($\pp\rightarrow\ell^+\ell^-X$) 
+constitutes a background for the $\Wln$ channels 
+when one of the two leptons is not reconstructed or does not enter a fiducial region.
+%
+% The following is not general, applies mainly to electrons: muons
+% have ~100% reconstrucion efficiency.
+% comment from Isabel.
+%
+%(not reconstructed or disappears into a non-fiducial region).  
+%After the veto of events with
+%two reconstructed leptons, this background is small.
+%
+% not correct: fit with the signal and scaled accordingly (commen from Isabel).
+%
+% and is estimated using simulations.
+\item {\sl $\Wtn$ and $\Ztt$ production.}
+A small background contribution comes from W and Z events with one or both $\tau$ decaying
+leptonically.  The minimum lepton $\Pt$ requirement tends to suppress
+these backgrounds.
+%
+% same as above...
+%
+% which are estimated from simulations.
+\item {\sl Diboson production.} The production of boson pairs ($\Wo\Wo$, $\Wo\Zo$, $\Zo\Zo$)
+is considered a background to the W and Z analysis
+because the theoretical predictions for the vector boson production
+cross sections used for comparison with data
+do not include diboson production.
+The background from diboson production
+is very small and is estimated using simulations.
+\item {\sl Top-quark pairs.}
+The background from $\ttbar$ production is quite small and
+is estimated from simulations.
+\end{itemize}
+
+The backgrounds mentioned in the first two bullets are referred to 
+as ``QCD backgrounds'', the Drell--Yan, $\Wtn$, 
+and dibosons as "EWK backgrounds", and the last one as "$\ttbar$ background".
+For both diboson and $\ttbar$ backgrounds, the NLO cross sections were used.
+The complete selection criteria used to reduce the above backgrounds 
+are described below.
+
+
+\subsection{Lepton Isolation}
+\label{sec:isolation}
+
+The isolation variables for the tracker and the electromagnetic 
+and hadronic ca\-lo\-ri\-me\-ters are defined:
+$\ITRK  = \sum_{\mathrm{tracks}} \pt$\,,
+$\IECAL = \sum_{\mathrm{ECAL}} \Et$\,, 
+$\IHCAL = \sum_{\mathrm{HCAL}} \Et$\,,
+where the sums are performed on all objects falling within a cone of aperture
+$\Delta R$ = $\sqrt{(\Delta\eta)^2+(\Delta\phi)^2}$ = 0.3 around
+the lepton candidate momentum direction.
+The energy deposits and the track associated with the lepton candidate 
+are excluded from the sums.
+
+\input{ElectronId}
+
+\input{MuonId}
+
+
+%\input{WenSel}
+
+%\input{WmnSel}
+
+%\subsection{$\Zll$ Selection}
+
+%\input{ZeeSel}
+
+%\input{ZmmSel}

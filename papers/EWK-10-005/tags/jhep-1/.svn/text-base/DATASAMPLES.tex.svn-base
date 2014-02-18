@@ -1,0 +1,34 @@
+\section{Data and Simulated Samples}
+\label{sec:samples}
+
+The W and Z analyses are based on data samples collected
+during the LHC data operation periods logged from May through November~2011,
+corresponding to an integrated luminosity $\Lint=\THELUMI$.
+
+Candidate events are selected from datasets collected with high-$\Et$ lepton trigger requirements.
+Events with high-$\Et$ electrons are selected online if they pass a
+L1 trigger filter that requires an energy deposit in a coarse-granularity region
+of the ECAL with $\Et > $ 5 or 8~GeV, depending on the data taking period.
+They subsequently must pass an HLT filter that requires a minimum $\Et$ threshold of the ECAL cluster
+which is well below the offline $\Et$ threshold of 25 GeV. The full ECAL granularity
+and offline calibration corrections are exploited by the HLT filter~\cite{CMS-PAS-EGM-10-003}.
+
+Events with high-$\pt$ muons are selected online by a single-muon trigger.
+The energy threshold at the L1 is 7~GeV. The $\pt$ threshold at the HLT level
+depends on the data taking period and was 9~GeV  for the first 7.5~pb$^{-1}$
+of collected data and 15~GeV for the remaining 28.4~pb$^{-1}$.
+
+Several large Monte Carlo (MC) simulated samples are used to
+evaluate signal and background efficiencies and to validate the
+analysis techniques employed.  Samples of EWK processes with Z
+and W bosons, both for signal and background events, are generated
+using {\sc powheg}~\cite{Alioli:2008gx, Nason:2004rx, Frixione:2007vw}
+interfaced with the {\sc pythia}~\cite{Sjostrand:2006za} parton-shower
+generator and the Z2 tune (the PYTHIA6 Z2 tune is identical 
+to the Z1 tune described in~\cite{Z1} except that Z2 uses the CTEQ6L PDF, 
+while Z1 uses the CTEQ5L PDF). 
+QCD multijet events with a muon or electron in the final state and $\ttbar$
+events are simulated with {\sc pythia}. Generated events are processed
+through the full {\sc Geant4}~\cite{Agostinelli:2002hh, Allison:2006ve}
+detector simulation, trigger emulation, and event reconstruction chain
+of the CMS experiment.

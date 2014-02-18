@@ -1,0 +1,38 @@
+%\subsection{Muon Efficiencies \label{sec:muonEff}}
+
+The muon reconstruction overall selection efficiency 
+is determined by the efficiency to find a track in the inner tracker and in the
+muon chambers, to pass the isolation requirements, and the probability 
+to pass the L1 trigger and HLT.
+
+Tag-and-Probe method is used to determine muon efficiencies for $\Wmn$ cross section determination,
+while for $\Zmm$ muon efficiencies are determined simultaneously with the Z yield using a simultaneous
+fit technique that is described in Section~\ref{sec:Zmumu}. 
+%Tag-and-Probe method uses a clean sample of $\Zmm$ candidates selected from the 36~pb$^{-1}$ available data
+%on which about 22000 triggered muon {\em tags} are selected.
+%$\Zmm$ events have muon kinematics very similar to those used in the $\Wo$ analysis.
+%The possible presence of background processes in the selected event sample has been also taken into account.
+
+%, making use of the 2 million events
+%The efficiency ratio 
+%$\rho_\mu = {\epsilon_{\mathrm{data}}}/{\epsilon_{\mathrm{MC}}}$ 
+%has been calculated in order to be applied to the  
+%W cross-section determination. 
+The efficiencies have been studied as a function of muon pseudorapidity and transverse momentum, 
+to reproduce better the real detector performance. 
+The promediated efficiencies are estimated to be
+$\epsilon_{\mathrm{data}} = 0.8548 \pm 0.0025\, \mathrm{(stat)} \pm  0.024\, \mathrm{(syst)}$ and
+$\epsilon_{\mathrm{MC}} = 0.8989  \pm   0.0004\, \mathrm{(stat)}$ in data and Monte Carlo respectively,
+hence a correction factor of $\rho_\mu= 0.9509 \pm  0.0028 \mathrm{(stat)} \pm  0.024\, \mathrm{(syst)}$
+has been appled to the data.
+The quoted systematic errors take into account the fit parameter uncertainties stemming 
+from the correction of the background.
+
+Single-muon efficiencies have also been determined separating in positive or negative charged muons, 
+obtaining the following correction factors: $\rho_\mu^+ = 0.957 \pm 0.004\,\mathrm{(stat)} \pm 0.024\,\mathrm{(syst)}$,
+$\rho_\mu^- = 0.945 \pm 0.004\,\mathrm{(stat)} \pm 0.024\,\mathrm{(syst)}$.
+
+A small fraction (0.5\%) of muon events is lost because of Level-1 trigger pre-firing
+due to the wrong assignment to the muon bunch crossing number, due to imperfect timing. 
+Cross sections in muon channels have been corrected by this effect and
+the uncertainty on the correction factor has been taken as systematic uncertainty.

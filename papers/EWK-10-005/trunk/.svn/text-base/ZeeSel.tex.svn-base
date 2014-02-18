@@ -1,0 +1,16 @@
+
+\subsubsection{$\Zee$}
+
+
+The event selection requirements for $\Zee$ are as follows:
+\begin{enumerate}
+\item
+two electrons within acceptance (as defined above, in Section~\ref{sec:electronId}),
+satisfying the WP80 selection,
+\item
+the dielectron mass must satisfy $60 < m_{\mathrm{ee}} < 120$~GeV.
+\end{enumerate}
+\par
+There is no requirement on the charges of the electrons.
+These requirements select \ZEESAMPLE events.
+

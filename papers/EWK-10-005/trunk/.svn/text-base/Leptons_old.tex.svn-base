@@ -1,0 +1,81 @@
+Events with high-$\et$ electrons are selected online when they pass an
+unprescaled L1 trigger filter that requires a coarse-granularity region 
+of the ECAL to have $\et > $ 5 or 8~GeV depending on the run period. 
+They subsequently must pass an unprescaled High-Level Trigger (HLT)~\cite{HLT}
+filter that requires an ECAL cluster with $\et$ well below the offline 
+$\et$ threshold of 25 GeV, using the full granularity of the ECAL and $\et$ measurements
+corrected using offline calibration~\cite{CMS-PAS-EGM-10-003}. 
+High-$\Pt$ muons are recorded online using the Level-1 muon
+trigger and the HLT with thresholds of $\Pt>9 \GeV$ or $\Pt>15 \GeV$, 
+according to the running periods.
+
+Electrons are identified offline as clusters of ECAL energy deposits
+matched to tracks~\cite{GSF} from the silicon tracker. 
+The ECAL clustering algorithm is designed to give clusters containing a
+large fraction of the energy of the original electron, including energy
+radiated along its trajectory. The ECAL clusters must fall in the ECAL fiducial volume
+of $|\eta| < 1.44$ for EB clusters or $1.57 < |\eta| < 2.5$ for EE clusters.
+The transition region from $1.44 < |\eta| < 1.57$ is excluded as it leads to lower-quality
+reconstructed clusters, due mainly to services and cables exiting between the barrel and 
+endcap calorimeters.
+
+\input{MuonId}
+
+% Longer version for paper w.r.t. PAS (L.L.)
+
+Events in which hadronic jets mimic an electron or a muon can contaminate
+the $\Wo$ and $\Zo$ samples. Such background is suppressed by imposing limits 
+on the presence of additional 
+tracks and calorimetric deposits near the trajectory of the lepton candidate.
+We define isolation variables for the three subsystems:  
+$\IECAL = \sum \et(\textrm{ECAL})/\pt^{\ell}$, 
+$\IHCAL = \sum \et(\textrm{HCAL})/\pt^{\ell}$ and 
+$\ITRK  = \sum \pt(\textrm{tracks})/\pt^{\ell}$,
+where  $\pt^{\ell}$ is the transverse momentum of the lepton candidate.
+The scalar sums of transverse energy ($\et$) 
+and transverse momentum ($\pt$) 
+are performed for objects falling within a cone
+$\Delta R = \sqrt{(\Delta\eta)^2+(\Delta\phi)^2} < 0.3$ around
+the lepton candidate,
+the energy deposits and the track associated with the lepton candidate 
+being excluded from the sums.  We also define a combined isolation variable,
+$\IRelComb =  \IECAL+\IHCAL+\ITRK$.
+
+\par
+For both the $\Wen$ and $\Zee$ analyses
+an electron candidate is considered isolated if $\ITRK <0.09$, $\IECAL < 0.07$
+and $\IHCAL < 0.10$ in the barrel region;  $\ITRK <0.04$, $\IECAL < 0.05$
+and $\IHCAL < 0.025$ in the endcap regions. The muon is considered to be 
+isolated if $\IRelComb <$~0.10 for $\Wmn$ and $\ITRK<3$~GeV for $\Zmm$.
+
+% Events in which hadronic jets mimic an electron or a muon can contaminate
+% the $\Wo$ and $\Zo$ samples. Such background is suppressed by imposing limits
+% on the presence of additional 
+% tracks and calorimetric deposits near the trajectory of the lepton candidate.
+% The additional activity is summed in a cone 
+% $\Delta R = \sqrt{(\Delta\eta)^2+(\Delta\phi)^2} < 0.3$ around
+% the lepton candidate. For electrons we apply separate cuts on relative ECAL, HCAL 
+% and Tracker isolations. For muons we use a relative combined isolation:
+% $ \IRelComb = \left( \sum_{\mathrm{tracks}} \pt + \sum_{\mathrm{ECAL}} \Et+ \sum_{\mathrm{HCAL}} \Et \right)/\Pt$,
+% except for $\Zmm$, where we use the track isolation: $\ITRK  = \sum_{\mathrm{tracks}} \pt$.
+
+Particles misidentified as electrons are additionally 
+suppressed by requiring that the $\eta$ and $\phi$ coordinates
+of the track trajectory extrapolated to the ECAL match the $\eta$ and
+$\phi$ coordinates of the ECAL cluster, by requiring a narrow ECAL
+cluster width in $\eta$, and by limiting the HCAL energy measured in a
+cone of $\Delta R < 0.15$ around the ECAL cluster direction.
+Electrons from photon conversions are suppressed by requiring 
+one hit in the innermost pixel layer for the
+reconstructed electron track.  Furthermore, electrons are
+rejected when a partner track is found that is consistent with a
+photon conversion, based on the opening angle and the separation in
+the transverse plane at the point at which the electron and partner
+tracks are parallel. More details and studies of electron reconstruction
+and identification can be found in Ref.~\cite{CMS-PAS-EGM-10-004}.
+
+An accurate $\MET$ measurement is essential for distinguishing
+$\Wo$ signal from QCD backgrounds. We use $\MET$ estimate provided
+by the Particle Flow (PF) algorithm which showed the best performance for the
+CMS detector. Details on Particle Flow $\MET$ are provided in Ref.~\cite{PFMET}.
+

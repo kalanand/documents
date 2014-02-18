@@ -1,0 +1,111 @@
+\section{Jet Reconstruction}
+
+\label{sec:jets}
+
+Three main types of jets are reconstructed at CMS,  which differently combine
+individual contributions from subdetectors to form the inputs
+to the jet clustering algorithm: calorimeter jets, 
+Jet Plus Track (JPT) jets and  Particle Flow (PF) jets.
+Jets in the studies presented here are reconstructed using the anti-kt~\cite{bib:akt}
+clustering algorithm with the size parameter $R=0.5$.
+To evaluate their performance, in Monte Carlo simulations 
+"generator jets" (GenJets)
+are reconstructed as well by applying the same jet clustering algorithm to all stable 
+($c\tau > 1$ cm) generated particles ("MC truth"). 
+These generator jets are then associated to jets
+reconstructed from the simulated detector signals, 
+by requiring a small distance 
+$\Delta R = \sqrt{\Delta\eta^2+\Delta\phi^2}$
+between the jet axes 
+in $\eta-\phi$ space.
+
+{\bf Calorimeter} (Calo) jets 
+are reconstructed using energy deposits in the electromagnetic (ECAL) 
+and hadronic (HCAL)
+calorimeter cells, combined into calorimeter towers. 
+%A calorimeter tower 
+%consists
+%of one or more HCAL cells and the geometrically corresponding ECAL crystals. In the barrel
+%region of the calorimeters ($|\eta| < 1.4$), the unweighted sum of one single HCAL cell and
+%5x5 ECAL crystals form a projective calorimeter tower. The association 
+%between HCAL cells and ECAL crystals is more complex in the endcap regions of the
+%electromagnetic calorimeter (1.4 $< |\eta| < $3.0).  
+%In the forward region (3.0 $< |\eta| < $5.0) a different calorimeter technology is
+%employed, using the Cerenkov light signals collected by short and long quartz-fiber
+%readouts to aid the separation of electromagnetic and hadronic signals.
+%In order to reduce the
+%contribution from calorimeter readout electronics 
+%noise, thresholds are applied on energies of individual cells when building towers
+%for reconstruction of jets and missing transverse energy ($E_T^{miss}$). These 
+%thresholds are listed in 
+%Table~\ref{tab:Threshold_Scheme6}.
+%In addition, to reduce contribution from event pile-up (additional proton-proton
+%interactions in the same bunch crossing), 
+%calorimeter towers with transverse energy of 
+%$E_T^{towers}<0.3$~GeV are not used in jet 
+%reconstruction.
+%\begin{table}[h]
+%  \centering
+%  \begin{tabular}{ |c| c |}
+%    \hline
+%    Section  & Threshold (in GeV)	\\ \hline 
+%    HB  & 0.7	 \\ \hline 
+%    HE   & 0.8	 \\ \hline 
+%    HO  & 1.1/3.5    (Ring 0/Ring 1,2)	 \\ \hline 
+%    HF (Long)  & 0.5	 \\ \hline 
+%    HF (Short) & 0.85	 \\ \hline 
+%    EB  & 0.07 (per crystal, double sided)	 \\ \hline 
+%    EE & 0.3 (per crystal, double sided)	 \\ \hline 
+%    EB Sum & 0.2	 \\ \hline 
+%    EE Sum & 0.45	 \\ \hline
+%  \end{tabular}
+%  \caption{Calorimeter offline cell thresholds used in 
+%calorimeter and JPT jet reconstruction.  The "Section" label refers to the 
+%calorimeter subsystems~\cite{bib:cms}: Hadronic Barrel
+%(HB), Endcap (HE), Outer (HO) and Forward (HF), and ECAL Barrel (EB)
+%and Endcap (EE). Independent thresholds are placed in different
+%sections (rings) of HO, and in different (long and short fiber) readouts in HF.
+%In ECAL, in addition to energy thresholds on readouts from individual 
+%crystals, thresholds are applied on the sum of crystal readouts 
+%corresponding to the same tower. 
+%  \label{tab:Threshold_Scheme6}}
+%\end{table}
+
+
+The {\bf Jet Plus Tracks} (JPT) algorithm~\cite{bib:PAS_jpt} exploits the excellent performance 
+of the CMS tracking detectors to improve the \pt response and resolution of calorimeter 
+jets. Calorimeter jets are  reconstructed first as described above, then charged 
+particle tracks are associated with each jet based on spatial separation in $\eta- \phi$
+between the jet axis and the track momentum measured at the interaction vertex. 
+%The associated tracks are projected onto the surface of the calorimeter and 
+%classified as in-cone tracks if they point to within the jet cone around the 
+%jet axis on the calorimeter surface. If the 3.8 T magnetic field of CMS has 
+%instead bent the track out of the jet cone,
+%it is classified as a out-of-cone track. 
+The momenta of charged tracks  are then used to improve the determination of the  energy 
+and direction of the associated 
+calorimeter jet. 
+%For in-cone tracks the expected average energy deposition in 
+%the calorimeters is subtracted based on the momentum of the track.
+%The direction of the axis 
+%of the original calorimeter jet is also corrected by the algorithm.
+
+The {\bf Particle Flow} (PF) algorithm combines the information
+from all CMS sub-detectors to identify and reconstruct all particles in the event, 
+namely muons, electrons, photons, charged hadrons
+and neutral hadrons. The detailed description of the algorithm
+and its performance can be found in References 
+~\cite{bib:PAS_pflow09,bib:PAS_pflow}.
+Charged hadrons, in particular, are 
+reconstructed from tracks in the central tracker. Photons 
+and neutral hadrons are reconstructed from energy clusters in the electromagnetic and 
+hadron calorimeters. Clusters separated from the extrapolated position of tracks in the 
+calorimeters constitute a clear signature of these neutral particles. A neutral particle 
+overlapping with charged particles in the calorimeters can be detected as a calorimeter energy excess 
+with respect to the sum of the associated track momenta.  
+PF jets are then reconstructed from the resulting list of particles.
+The jet momentum and spatial resolutions are 
+improved with respect to calorimeter jets
+as the use of the tracking detectors and of the excellent granularity of the ECAL 
+allows to resolve and precisely measure charged hadrons and photons inside jets,
+which constitute $\sim$90\% of the jet energy.  

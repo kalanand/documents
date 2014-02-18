@@ -1,0 +1,122 @@
+Dear Steve,
+
+thanks for your comments, they helped improve the quality of the paper. 
+
+For what concerns rest of editorial comments, we implemented the vast majority of, 
+if not all, the editorial comments that we received. In some cases, comments from 
+different reviewers overlap or suggest incompatible changes. In many of those and 
+other cases we found as the best solution to rephrase the sentence or paragraph 
+involved. The number of editorial comments, due to the size of the paper, is too 
+large to give a reply for every single comment. The latest posted draft contains 
+almost all editorial changes.
+
+Below the replies to the non-editorial and main editorial comments.
+
+Q:
+[ introduction section ] [...] These sentences should be combined and reorganized. 
+How about a reference for the HERA and Tevatron data?
+A:
+we rephrased and improved the entire introduction 
+
+Q:
+lines 100-102: reword this sentence; it says that the HLT requires ET to be well 
+below 25 GeV! And the part about "using the full" needs to be attached in a clearer way.
+A:
+Rephrased as: "They subsequently must pass an HLT filter that requires an ECAL cluster 
+with $\et$ well below the offline $\et$ threshold of 25 GeV using the $\et$ measurements 
+corrected by offline calibration and the full ECAL granularity~\cite{CMS-PAS-EGM-10-003}." 
+
+Q:
+OK for the W, but why is it [di-boson production] considered a background in the Z analysis?
+A:
+We would like to perform a measurement that is directly comparable with the NNLO predictions. 
+Tools like FEWZ do not include di-bosons, so we decided to treat them as backgrounds.  
+
+Q:
+line 169: why does this variable have such a peculiar name?!
+A:
+It is a convention followed by egamma group.
+
+Q:
+fig 1: the left plot in the third row has a bin size of 0.0003 but the vertical axis label says 0.0006.
+A:
+We rebinned so now the label is correct. 
+
+Q:
+fig 3 caption: explain what the horizontal line and arrow mean
+A:
+Added: "The vertical arrow shows the cut applied to reject cosmic muons. The horizontal line shows 
+the average of the bins with $d_{xy}>0.2~\mathrm{cm}$ used to estimate the (negligible) cosmic 
+contamination in the signal region." 
+
+Q:
+line 229: "no requirement about the tracker-muon algorithm" is unclear.
+A:
+Rephrased: "no requirement that the muon must be reconstructed through the tracker-muon algorithm is applied" 
+
+Q:
+line 240: "masked" is jargon
+A:
+Changed to: "noisy or malfunctioning towers in the ECAL removed from the reconstruction" 
+
+Q:
+We avoid using "cut" and "template" in CMS papers, but those occur frequently in this draft.
+A:
+Replaced with alternative words throughout the text 
+
+Q:
+lines 330-333: replace the sentence with something like this: "Half of the maximum difference 
+between the multibin and two-bin corrected efficiencies is taken as an additional systematic 
+uncertainty on the two-bin efficiencies used to estimate the cross sections."
+A:
+We prefer to keep it like that in order to better motivate our choice. 
+
+Q:
+Fig. 8: The lower plots should be explained here, in the caption.
+A:
+To avoid explaining the lower plots in every figure, we mentioned their definition once 
+(lines 450-452) and kept the same definition throughout the paper. 
+
+Q:
+I feel strongly that something needs to be said here to address the point that the background 
+fractions are different in W+, W-, and the combined W+- samples! I assume the fractions given 
+here are for the combined samples, and that you assume the backgrounds to be equal in the W+ and W- samples...
+A:
+We give only the W+- as an example of the background sizes. The W->taunu background is different in W+ and W- 
+since it is of the same nature as the signal. The other backgrounds are more or less charge symmetric or 
+too small to make a difference. 
+
+Q:
+Write "Arbitrary units" instead of "a.u." (astronomical units)
+A:
+Done. 
+
+Q:
+fig 15: please improve the appearance of this figure. Draw the arrows from the origin--the lines used to 
+make the arrows are clearly thicker than the other lines. The arrows should also extend much farther 
+beyond the regions, so there is more than 1 mm of space before the arrow heads. The labels on the cuts 
+are in a weak font. Why don't we label the axes Itrk/pT and ETslash instead of X and Y, saving the 
+reader some trouble? Region E doesn't seem to be used. The text implies that regions C and D have no 
+upper edge. fig 15 caption: "five" instead of "5"
+A:
+the figure has been completely restyled.
+
+Q:
+line 539: "numbers" instead of "number"; line 539: "several" instead of "a number of" [or delete those 
+words altogether]; line 540: "auxiliary" is misspelled; line 541: "fractions" instead of "fraction"; 
+line 541: how about "misidentified" instead of "fake"?; lines 541-542: comma before and 
+after "respectively"; line 542: "that" instead of "which"; line 543: comma before "all" but not 
+after "all"; lines 543-544: "related" instead of "relating"; line 546: "obtained with" 
+instead of "selected using"; line 547: delete "assigned"; line 548: "This contribution is small 
+and is dominated"; line 551: "to pass the selection on $\MET$"; lines 551-552: comma instead of 
+"which is"; line 554: "which" instead of "this"; line 556: "(i.e.\ before final..."; line 557: what 
+does "tuned" mean? (tell the reader); line 558: "scaled with the signal yield through an iterative 
+method."; lines 558-559: please rewrite this sentence ("The extracted...") yield of what? (tell the 
+reader); Do we mean, "The extracted [signal/background] yield depends on the choice of the region 
+boundaries because..."?; line 562: "controlled" is not the correct word. Small? Correctly estimated?
+A:
+The section is re-written and hopefully improved. 
+
+
+Best regards,
+Georgios and Luca

@@ -1,0 +1,122 @@
+
+\subsection{Electron Channels}
+\label{subsec:ELEsystematics}
+
+\par
+The propagation of statistical and systematic uncertainties on the data/simulation
+efficiency correction factors ($\rhoeff$)
+from the \TNP method (reconstruction, identification, and trigger)
+results in uncertainties of $\WEITNPSYST\%$ and $\ZEETNPSYST\%$ for the $\Wen$ and $\Zee$ analyses,
+respectively. The uncertainties on the $\Wp$ and $\Wm$ cross sections are larger than that for
+the inclusive $\Wo$ because of the larger statistical uncertainty when efficiencies are estimated
+per charge. The systematic uncertainty, which depends on the efficiency
+under study, is determined by considering alternative signal and background models. 
+The size of the systematic uncertainty is 0.3$\%$ for the electron selection efficiencies 
+and 1.0$\%$ for the electron reconstruction efficiency. The estimation of the 
+trigger efficiency is considered to be background-free so there is no need to 
+perform a fit for the signal estimation. Theoretical uncertainties on the 
+corrected efficiencies related to the PDF uncertainties and the PDF choice were 
+found to be negligible.
+
+\par
+The electron energy scale has an impact on the \ET distribution
+for the signal. To study this effect, the
+energy-scale corrections obtained
+from the shift of the $\Zo$ mass peak
+(Section~\ref{sec:e-escale}) are applied to electrons in the EB and EE
+in simulation (before the $\Et$ requirement)
+and  the missing $\Et$ is recomputed.
+The obtained variations on the signal yield from the UML fit
+are $\WEIESCALESYST\%$ for the inclusive $\Wo$, $\WEPESCALESYST\%$ for the $\Wp$, and
+$\WEMESCALESYST\%$ for the $\Wm$ samples and $\WERESCALESYST\%$ on the
+$\Wp/\Wm$ ratio.  All the charge-related studies (determination of individual $\Wp$ and $\Wm$
+yields and $\Wp/\Wm$ ratio and associated systematic uncertainties)
+include data/simulation
+%charge misidentification scale factor of $\WPWMISID$, estimated from
+charge misidentification scale factors, estimated from
+the fraction of same-sign events in the $\Zee$ data and simulated samples.
+\par
+The energy scale of electrons has an impact on the $\Zo$ yield because of 
+the $\Et>25~\GeV$ requirement on the two electrons and the mass window requirement.
+Applying the energy-scale corrections
+mentioned above to the EB and EE electrons and reprocessing the data, 
+the $\Zo$~yield is decreased by 10~events ($\ZEESAMPLE \to \ZEESAMPLEN$).
+A systematic uncertainty equal to this decrease of $\ZEEESCALESYST\%$
+is assigned to the $\Zo$ signal yield.
+%High statistics MC study shows that the effect
+%of the energy scale on the $Z$ yield is $0.6\%$.
+%This number is consistent with the increase of yields that
+%we observe when applying energy scale corrections to electrons in the data,
+%both for WP80 and WP95.
+The energy-scale uncertainty for the $\Wo$ selection is included in the systematic uncertainty 
+described in the previous paragraph. There, the systematic uncertainty 
+is larger than that for the $\Zo$ selection because the energy scale also affects the 
+$\MET$ shape used for the signal extraction.
+The $\Wo$ selection itself is affected by the energy scale at the level of $0.12\%$.
+\par
+%By applying the additional smearing of the electron energy obtained
+%for the same fit to the $\Zee$ data,
+%the $\Wo$ yield  is changed by 0.02\% and the $\Zo$ yield, by 0.XX\%.
+The \MET shape used in the $\Wo$ fits is also distorted
+by energy resolution uncertainties; this induces a change in the $\Wo$ signal yield
+of 0.02\%.
+
+\par
+%The \MET energy scale is affected by our limited knowledge
+%of the intrinsic hadronic recoil response.  However impressive
+%progress on this issue has been accomplished by \MET experts
+%from studies
+%of the hadronic recoil distributions against photons in $\gamma$-jet,
+%leptons in $W$ and dileptons in $Z$ events~\cite{metPAS}.
+%From the discrepancies found in these data/simulation comparisons,
+%we estimate uncertainties due to the \MET energy scale of
+%$\WEIMETSYST\%$ for inclusive $W$, $\WEPMETSYST\%$ for $W^+$, $\WEMMETSYST\%$ for
+%$W^-$ yields, and of $\WERMETSYST\%$ for the $W^+/W^-$ ratio.
+
+
+
+The \MET energy scale is affected by our limited knowledge of the intrinsic hadronic
+recoil response. From the discrepancies found in the data/simulation
+comparisons (Section~\ref{sec:WsignalMETtemplate}), uncertainties due to
+the \MET energy scale are estimated to be 0.3\% for inclusive $\Wo$,
+$\Wp$, and $\Wm$ yields, and 0.1\% for the $\Wp/\Wm$ ratio.
+
+\par
+The systematic uncertainties on the background subtraction
+address the possible difference between the true background distribution
+and the modified Rayleigh function that is used in the UML fit.
+We make the assumption that any such difference can be accounted
+for by an additional $\sigma_2$ parameter (defined in Section~\ref{sec:WQCDbkg}),
+which affects the resolution at large values of \MET (below the signal).
+The value of $\sigma_2$ is first determined for three samples: the control sample
+in the data, the control sample in the QCD simulation, and the
+selected sample in the QCD simulation. The values obtained are $\sigma_2=0.0009~\GeV^{-1}$,
+$0.0010~\GeV^{-1}$, and $0.0007~\GeV^{-1}$, respectively for $\Wp$ and
+$\sigma_2=0.0007~\GeV^{-1}$,
+$0.0009~\GeV^{-1}$, and $0.0008~\GeV^{-1}$ for $\Wm$.
+The three values of $\sigma_2$ are then fixed in turn, and $\sigma_0$ and $\sigma_1$
+are set to their values from data to generate distributions (of the size
+of our sample) with
+the three-parameter function, which  we then fit with our nominal two-parameter
+function. The maximal relative difference in the yields
+is quoted as the systematic uncertainty on background subtraction: $\WEIBKGSYST\%$ for inclusive $\Wo$,
+$\WEPBKGSYST\%$ for $\Wp$, $\WEMBKGSYST\%$ for $\Wm$, and $\WERBKGSYST\%$ for the ratio.
+%
+%
+The systematic uncertainties of the fixed shape and the ABCD methods, which were also explored 
+in order to cross check the extraction of the inclusive $\Wo$ signal yield, were found to 
+be 0.40$\%$ and 0.70$\%$, respectively. 
+
+%
+%\par
+%\input{Systematics_FixedShapeTemplates.tex}
+%
+%\par
+%\input{Systematics_ABCDE.tex}
+%
+
+The QCD background in the $\Zee$ channel is estimated, as discussed earlier, 
+using the shape information of the relative track isolation distribution. 
+The relative uncertainty (approximately 0.14$\%$) of the 
+total Z yield is used as the systematic uncertainty. 
+

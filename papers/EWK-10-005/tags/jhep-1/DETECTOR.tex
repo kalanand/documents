@@ -1,0 +1,76 @@
+\section{The CMS Detector}
+\label{sec:detector}
+\par
+The central feature of the CMS apparatus
+is a superconducting solenoid of 6~m internal diameter, providing
+a magnetic field of $3.8$~T. Within the field volume are a silicon pixel
+and strip tracker, an electromagnetic calorimeter (ECAL),
+and a hadron calorimeter (HCAL). Muons are detected
+in gas-ionization detectors embedded in the steel return
+yoke. In addition to the barrel and endcap detectors, CMS has
+extensive forward calorimetry.
+\par
+A right-handed coordinate system is used in CMS, with the origin at the
+nominal interaction point, the $x$-axis pointing to the center of
+the LHC ring, the $y$-axis pointing up (perpendicular to the LHC plane),
+and the $z$-axis along the anticlockwise-beam direction. The polar
+angle $\theta$ is measured from the positive $z$-axis and the
+azimuthal angle $\phi$ is measured (in radians) in the $xy$-plane.
+The pseudorapidity is given by $\eta = -\ln\tan(\theta/2)$.
+\par
+The inner tracker measures charged particle trajectories in the
+pseudorapidity range $|\eta| < 2.5$.   It consists of $1440$ silicon
+pixel and 15\,148 silicon strip detector modules.  It provides an
+impact parameter resolution of ${\approx}15\mum$ and a transverse
+momentum ($\pt$) resolution of about 1\% for charged particles
+with $\pt \approx 40\GeV$.
+\par
+The electromagnetic calorimeter consists of nearly $76\,000$ lead tungstate
+crystals, which provide coverage in pseudorapidity $|\eta| < 1.479$ in a
+cylindrical barrel region (EB) and $1.479 < |\eta| < 3.0$ in two endcap
+regions (EE).
+A preshower detector
+consisting of two planes of silicon sensors interleaved with a total of
+three radiation lengths of lead is located in front of the EE.
+The ECAL has an energy resolution of better than $0.5\%$ for
+unconverted photons with transverse energies ($\Et$) above $100\GeV$.
+The energy resolution is $3\%$ or better for the range of
+electron energies relevant for this analysis.
+The hadronic barrel and endcap calorimeters are sampling devices with brass
+as the passive material and scintillator as the active material.
+The combined calorimeter cells are grouped in projective towers of granularity
+$\Delta \eta \times \Delta \phi = 0.087\times0.087$ at central rapidities
+and $0.175\times0.175$ at forward rapidities.
+The energy of charged pions and other quasi-stable hadrons can be measured with 
+the calorimeters (ECAL and HCAL combined) with a resolution of 
+$\Delta E/E \simeq 100 \%/\sqrt{E(\GeV)} \oplus 5\%$. 
+For charged hadrons, the calorimeter resolution improves on the tracker momentum 
+resolution only for $\PT$ in excess of 500~GeV. 
+The energy resolution on jets and missing transverse energy is substantially improved with
+respect to calorimetric reconstruction by using
+the particle flow (PF) algorithm~\cite{PFT} which consists in reconstructing and
+identifying each single particle with an optimised combination of all sub-detector
+information. This approach exploits the very good tracker momentum resolution
+to improve the energy measurement of charged hadrons.
+
+\par
+Muons are detected in the pseudorapidity window $|\eta|< 2.4$, with
+detection planes based on three technologies: drift tubes, cathode strip
+chambers, and resistive plate chambers.  A high-$\pt$ muon originating
+from the interaction point produces track segments typically
+in three or four muon stations.  Matching these segments to tracks
+measured in the inner tracker results in a $\pt$ resolution
+between 1 and 2\% for $\pt$ values up to $100$~GeV.
+\par
+The first level (L1) of the CMS trigger system~\cite{cmsTrigger}, composed of custom
+hardware processors, is designed to select the most interesting events
+in less than $1\mus$,
+using information from the calorimeters
+and muon detectors. The High Level Trigger (HLT) processor farm~\cite{HLT} further
+decreases the event rate
+to a few hundred Hz before data storage. 
+%The HLT is divided into two trigger levels (L2 and L3).
+A more detailed description of CMS can be found elsewhere~\cite{JINST}.
+
+
+

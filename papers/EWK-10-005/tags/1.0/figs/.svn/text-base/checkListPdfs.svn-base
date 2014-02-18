@@ -1,0 +1,11 @@
+#!/bin/csh
+
+foreach file (`cat ListPdfs`)
+
+#echo $file
+#ls -lart /tmp/gdaskal/ANALYSISNOTE/notes/AN-10-395/trunk/figs/$file
+
+#cp /tmp/gdaskal/ANALYSISNOTE/notes/AN-10-395/trunk/figs/$file .
+svn commit -m " " $file
+
+end

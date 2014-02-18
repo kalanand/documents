@@ -1,0 +1,106 @@
+\section{Results\label{sec:results}}
+
+\par
+
+For all measurements we present results for electron and muon 
+channels separately and, assuming lepton universality 
+in W and Z decays, for the combined lepton channel. The electron 
+and muon channels are combined by calculating an
+average value weighted by the combined statistical and systematic uncertainties, 
+taking properly into account the correlated
+uncertainties.
+For cross section measurements, correlations are only numerically 
+relevant for theoretical uncertainties, 
+including the PDF uncertainties on the acceptance values. For cross 
+section ratio measurements, the correlations
+ of lepton efficiencies are taken into account in each lepton channel, 
+with other experimental uncertainties assumed 
+uncorrelated; in the combination of lepton channels, we assume fully 
+correlated uncertainty for the acceptance factor, 
+with other uncertainties assumed uncorrelated. The luminosity uncertainty 
+cancels exactly in the cross section ratios.
+
+We measure the following cross sections for inclusive $W$ production: 
+{\footnotesize
+\begin{eqnarray*}
+ \WEISIGBR , \\ 
+ \WMISIGBR , \\ 
+ \WLISIGBR . 
+\end{eqnarray*}
+}
+The NNLO prediction is $\THEORYSIGBRWI$.
+The results for charge-specific $W$ production are
+{\footnotesize
+\begin{eqnarray*}
+ \WEPSIGBR , \\ 
+ \WMPSIGBR , \\ 
+ \WLPSIGBR ; 
+\end{eqnarray*}
+}
+and
+{\footnotesize
+\begin{eqnarray*}
+ \WEMSIGBR , \\ 
+ \WMMSIGBR , \\ 
+ \WLMSIGBR . 
+\end{eqnarray*}
+}
+The NNLO predictions for these cross sections are $\THEORYSIGBRWP$ 
+for~$W^+$ and $\THEORYSIGBRWM$ for~$W^-$.  We also measure the 
+following cross sections for $Z$ production:
+{\footnotesize
+\begin{eqnarray*}
+ \ZEESIGBR , \\
+ \ZMMSIGBR , \\
+ \ZLLSIGBR .
+\end{eqnarray*}
+}
+The reported $Z$ cross sections pertain to the
+invariant mass range $60 < m_{\ell^+\ell^-} < 120~\GeV$, and 
+are corrected for the kinematic acceptance but not for $\gamma^*$ exchange.
+The NNLO prediction for $Z$ production is $\THEORYSIGBRZ$. 
+
+\par
+The ratio of cross sections for $W$ and $Z$ production is
+\begin{displaymath}
+  \frac{\sigma_W}{\sigma_Z} =
+  \frac{N_W}{N_Z} \,
+  \frac{\epsilon_Z}{\epsilon_W} \,
+  \frac{A_Z}{A_W} .
+\end{displaymath}
+The uncertainty from $A_Z/A_W$ is determined from Monte Carlo 
+generator studies to be 2\%.  The two different decay channels 
+are combined by assuming fully correlated uncertainty for the 
+acceptance factor, with other uncertainties assumed uncorrelated.  
+This results in the measurements
+\begin{eqnarray*}
+  \RESRATWZE , \\
+  \RESRATWZM , \\
+  \RESRATWZL . \\
+\end{eqnarray*}
+The NNLO prediction for this ratio is $\THEORYRATIOWZ$, 
+in very good agreement with our measurement.
+
+The cross section ratios of $W^+$ and $W^-$ are given by
+\begin{displaymath}
+  \frac{\sigma_{W^+}}{\sigma_{W^-}} =
+  \frac{N_{W^+}}{N_{W^-}} \,
+  \frac{\epsilon_{W^-}}{\epsilon_{W^+}} \,
+  \frac{A_{W^-}}{A_{W^+}} .
+\end{displaymath}
+The uncertainty from ${A_{W^-}}/{A_{W^+}}$ is determined from Monte Carlo
+generator studies to be 2\%.  The two different decay channels are
+combined by assuming fully correlated uncertainty for the acceptance
+factor, with other uncertainties assumed uncorrelated.  This results
+in the measurements:
+\begin{eqnarray*}
+  \RESRATWWE , \\
+  \RESRATWWM , \\
+  \RESRATWWL . \\
+\end{eqnarray*}
+The NNLO prediction is $\THEORYRATIOWW$, which agrees
+with the measured values perfectly.
+
+
+
+

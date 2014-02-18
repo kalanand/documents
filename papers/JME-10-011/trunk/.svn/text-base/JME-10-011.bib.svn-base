@@ -1,0 +1,363 @@
+@ARTICLE{CMS,
+  COLLABORATION="CMS",
+  TITLE=        "The CMS experiment at the CERN LHC",
+  JOURNAL=      "JINST",
+  VOLUME=       "03",
+  YEAR=         "2008",
+  PAGES=        "S08003",
+  doi=          "10.1088/1748-0221/3/08/S08004"
+}
+
+@TECHREPORT{PTDRI,
+  COLLABORATION= "CMS",
+  TITLE        = "CMS TRIDAS Project Technical Design Report, Volume 1, The Trigger Systems",
+  NUMBER       = "{CERN/LHCC 2000-38}",
+  YEAR         = "2000",
+  TYPE         = "CMS TDR",
+  URL          = "http://cdsweb.cern.ch/record/706847"
+}
+
+@ARTICLE{HLT,
+  COLLABORATION="CMS",
+  TITLE=        "The CMS High Level Trigger",
+  JOURNAL=      "Eur. Phys. J. C",
+  VOLUME=       "46",
+  YEAR=         "2006",
+  PAGES=        "605",
+  DOI=          "10.1140/epjc/s2006-02495-8"
+}
+
+@ARTICLE{AKT,
+     AUTHOR    = "Cacciari, M. and Salam, G. P. and Soyez, G.",
+     TITLE     = "The anti-kt jet clustering algorithm",
+     JOURNAL   = "JHEP",
+     VOLUME    = "04",
+     PAGES     = "063",
+     YEAR      = "2008",
+     doi       = "10.1088/1126-6708/2008/04/063"
+}
+
+@ARTICLE{FASTJETI,
+     AUTHOR    = "Cacciari, M. and Salam, G. P.",
+     TITLE     = "Dispelling the $N^{3}$ myth for the $k_t$ jet-finder",
+     JOURNAL   = "Phys. Lett. B",
+     VOLUME    = "641",
+     PAGES     = "57",
+     YEAR      = "2006",
+     doi       = "10.1016/j.physletb.2006.08.037"
+}
+
+@MISC{FASTJETII,
+     AUTHOR       = "Cacciari, M. and Salam, G. P. and Soyez, G.",
+     HOWPUBLISHED = "\url{http://www.fastjet.fr}"
+}
+
+@ARTICLE{KT1,
+     AUTHOR    = "Catani, S. and Dokshitzer, Y. L. and Webber, B. R.",
+     TITLE     = "The K-perpendicular clustering algorithm for jets in deep inelastic scattering and hadron collisions",
+     JOURNAL   = "Phys. Lett. B",
+     VOLUME    = "285",
+     PAGES     = "291",
+     YEAR      = "1992",
+     doi       = "10.1016/0370-2693(92)91467-N"
+}
+
+@ARTICLE{KT2,
+     AUTHOR    = "Catani, S. and others",
+     TITLE     = "Longitudinally invariant K(t) clustering algorithms for hadron hadron collisions",
+     JOURNAL   = "Nucl. Phys. B",
+     VOLUME    = "406",
+     PAGES     = "187",
+     YEAR      = "1993",
+     doi       = "10.1016/0550-3213(93)90166-M"
+}
+
+@ARTICLE{KT3,
+     AUTHOR    = "Ellis, D. and Soper, D. E.",
+     TITLE     = "Successive combination jet algorithm for hadron collisions",
+     JOURNAL   = "Phys. Rev. D",
+     VOLUME    = "48",
+     PAGES     = "3160",
+     YEAR      = "1993",
+     DOI       = "10.1103/PhysRevD.48.3160"
+}
+
+@ARTICLE{GEANT4,
+  AUTHOR=       "Agostinelli, S. and others",
+  TITLE=        "Geant 4 -- A Simulation Toolkit",
+  JOURNAL=      "Nucl. Inst. Meth.",
+  VOLUME=       "A506",
+  YEAR=         "2003",
+  PAGES=        "250",
+  doi=          "10.1016/S0168-9002(03)01368-8"
+}
+
+@UNPUBLISHED{D6T,
+  AUTHOR =        "Field, R.",
+  TITLE =         "Early LHC Underlying Event Data-Findings and Surprises",
+  eprint =        "1010.3558",
+  archivePrefix = "arXiv",
+  primaryClass  = "hep-ph",
+  year =          "2010"
+}
+
+@ARTICLE{PYTHIA,
+  AUTHOR=       "Sj{\"o}strand, T. and Mrenna, S. and Skands, P.",
+  TITLE=        "PYTHIA 6.4 physics and manual",
+  JOURNAL=      "JHEP",
+  VOLUME=       "05",
+  PAGES=        "026",
+  YEAR=         "2007",
+  doi=          "10.1088/1126-6708/2006/05/026"
+}
+
+@ARTICLE{HERWIG,
+  AUTHOR=       "Bahr, M. and others",
+  TITLE=        "Herwig++ Physics and Manual",
+  JOURNAL=      "Eur. Phys. J. C",
+  VOLUME=       "58",
+  YEAR=         "2008",
+  PAGES=        "639",
+  doi=          "10.1140/epjc/s10052-008-0798-9"
+}
+
+@ARTICLE{jes_d0,
+  AUTHOR=       "B. Abbot and others",
+  collaboration = "D0",
+  TITLE=        "Determination of the absolute jet energy scale in the D0 calorimeters",
+  JOURNAL=      "Nucl. Inst. Meth. A",
+  VOLUME=       "424",
+  YEAR=         "1999",
+  PAGES=        "352",
+  doi=          "10.1016/S0168-9002(98)01368-0"
+}
+
+@ARTICLE{jes_cdf,
+  AUTHOR=       "Bhatti, A. and others",
+  COLLABORATION = "CDF",
+  TITLE=        "Determination of the jet energy scale at the Collider Detector at Fermilab",
+  JOURNAL=      "Nucl. Inst. Meth. A",
+  VOLUME=       "566",
+  YEAR=         "2006",
+  PAGES=        "375",
+  doi=          "arXiv:hep-ex/0510047"
+}
+
+@ARTICLE{PU_JET_AREAS,
+  AUTHOR=       "Cacciari, M. and Salam, G. P.",
+  TITLE=        "Pileup subtraction using jet areas",
+  JOURNAL=      "Phys. Lett. B",
+  VOLUME=       "659",
+  YEAR=         "2007",
+  PAGES=        "119",
+  doi=          "10.1016/j.physletb.2007.09.077"
+}
+
+@ARTICLE{JET_AREAS,
+  AUTHOR=       "Cacciari, M. and Salam, G. P. and Soyez, G.",
+  TITLE=        "The Catchment Area of Jets",
+  JOURNAL=      "JHEP",
+  VOLUME=       "04",
+  PAGES=        "005",
+  YEAR=         "2007",
+  doi=          "10.1088/1126-6708/2008/04/005"
+}
+
+@ARTICLE{SPPS,
+  AUTHOR=       "Bagania, P. and others",
+  Collaboration= "UA2",
+  TITLE=        "Measurement of Production and Properties of Jets at the CERN anti-p p Collider",
+  JOURNAL=      "Z. Phys. C",
+  VOLUME=       "20",
+  YEAR=         "1983",
+  PAGES=        "117",
+  doi=          "10.1007/BF01573214"
+}
+
+@ARTICLE{d0-asymmetry,
+  COLLABORATION= "D0",
+  TITLE=        "High \pt jets in $p\bar{p}$ collisions at $\sqrt{s} = 630\GeV$ and $1800\GeV$",
+  JOURNAL=      "Phys. Rev. D",
+  VOLUME=       "64",
+  PAGES=        "032003",
+  YEAR=         "2001",
+  DOI=          "10.1103/PhysRevD.64.032003"
+}
+
+@ARTICLE{JME-09-002,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Jet Plus Tracks Algorithm for Calorimeter Jet Energy Corrections in {CMS}",
+      URL         = "http://cdsweb.cern.ch/record/1190234",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-09-002",
+      YEAR        = "2009"
+}
+
+@ARTICLE{JME-09-003,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Offset Energy Correction for Cone Jets",
+      URL         = "http://cdsweb.cern.ch/record/1194490",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-09-003",
+      YEAR        = "2009"
+}
+
+@ARTICLE{JME-09-007,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Jet Reconstruction Performance at {CMS}",
+      URL         = "http://cdsweb.cern.ch/record/1194493",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-09-007",
+      YEAR        = "2009"
+}
+
+@ARTICLE{JME-09-008,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Calorimeter Jet Quality Criteria for the First {CMS} Collision Data",
+      URL         = "http://cdsweb.cern.ch/record/1259924",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-09-008",
+      YEAR        = "2010"
+}
+@ARTICLE{JME-10-001,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Jets in 0.9 and 2.36 {TeV} pp Collisions",
+      URL         = "http://cdsweb.cern.ch/record/1248210",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-10-001",
+      YEAR        = "2010"
+}
+
+@ARTICLE{JME-10-003,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Jet Performance in pp Collisions at $\sqrt{s}$=7 {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1279362",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-10-003",
+      YEAR        = "2010"
+}
+
+@Article{JME-10-006,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Commissioning of TrackJets in pp Collisions at $\sqrt{s}$=7 {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1275133",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-10-006",
+      YEAR        = "2010"
+}
+
+@ARTICLE{JME-10-008,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Single-Particle Response in the {CMS} Calorimeters",
+      URL         = "http://cdsweb.cern.ch/record/1279141",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-10-008",
+      YEAR        = "2010"
+}
+
+@ARTICLE{JME-10-010,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Determination of the Jet Energy Scale in {CMS} with pp Collisions at $\sqrt{s}= 7$ {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1308178",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-10-010",
+      YEAR        = "2010"
+}
+
+@ARTICLE{JME-10-014,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Jet Energy Resolution in CMS at $\sqrt{s}=7$ {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1339945",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-JME-10-014",
+      YEAR        = "2010"
+}
+
+@ARTICLE{PFT-09-001,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Particle--Flow Event Reconstruction in {CMS} and Performance for Jets, Taus, and {\MET}",
+      URL         = "http://cdsweb.cern.ch/record/1194487",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-PFT-09-001",
+      YEAR        = "2009"
+}
+
+@ARTICLE{PFT-10-002,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Commissioning of the Particle-Flow Reconstruction in Minimum-Bias and Jet Events from {\Pp\Pp} Collisions at 7 {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1279341",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-PFT-10-002",
+      YEAR        = "2010"
+}
+
+@ARTICLE{TRK-10-001,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Tracking and Vertexing Results from First Collisions",
+      URL         = "http://cdsweb.cern.ch/record/1258204",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-TRK-10-001",
+      YEAR        = "2010"
+}
+
+@ARTICLE{TRK-10-004,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Measurement of Momentum Scale and Resolution using Low-mass Resonances and Cosmic Ray Muons",
+      URL         = "http://cdsweb.cern.ch/record/1279137",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-TRK-10-004",
+      YEAR        = "2010"
+}
+
+@ARTICLE{TRK-10-005,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Tracking and Primary Vertex Results in First 7 {TeV} Collisions",
+      URL         = "http://cdsweb.cern.ch/record/1279383",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-TRK-10-005",
+      YEAR        = "2010"
+}
+
+@ARTICLE{EGM-10-003,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Electromagnetic calorimeter calibration with 7 TeV data",
+      URL         = "http://cdsweb.cern.ch/record/1279350",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-EGM-10-003",
+      YEAR        = "2010"
+}
+
+@ARTICLE{EGM-10-005,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Photon reconstruction and identification at $\sqrt{s}$ = 7 {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1279143",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      =  "CMS-PAS-EGM-10-005",
+      YEAR        = "2010"
+}
+@ARTICLE{EWK-10-002,
+  Collaboration= "CMS",
+  TITLE=        "Measurements of inclusive W and Z cross sections in pp collisions at sqrt(s)=7 TeV",
+  JOURNAL=      "JHEP",
+  VOLUME=       "01",
+  YEAR=         "2011",
+  PAGES=        "080",
+  doi=          "10.1007/JHEP01(2011)080"
+}

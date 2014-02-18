@@ -1,0 +1,96 @@
+
+%\subsection{Electron Efficiencies \label{sec:electronEff}}
+\par
+The electron selection efficiency is the product of three components:~1)~the
+reconstruction efficiency,~2)~the
+identification and isolation
+efficiency,
+and~3)~the trigger efficiency.  Efficiencies are evaluated
+for the barrel and endcap regions, and for the two possible
+electron charges,  separately.
+%\par
+%The reconstruction efficiency is the probability of finding a reconstructed
+%track when the electron cluster is within the ECAL fiducial volume.
+%The probe is selected as an ECAL cluster of reconstructed transverse energy
+%greater than $25~\GeV$. To reduce backgrounds, which are not insignificant,
+%we use a tight selection on the tag and require the probe
+%to pass additional loose shower shape and isolation requirements;
+%these are known from simulations to be uncorrelated
+%with the reconstruction efficiency.
+%The measured reconstruction efficiency is the fraction of
+%probes reconstructed as electron tracks.
+%For the EB and EE electrons we measure a reconstruction efficiency
+%of $\WPWIEBEFFRECO$
+%and
+%$\WPWIEEEFFRECO$, respectively.
+%The resulting correction factors are consistent with unity.
+%\par
+%The efficiency of electron identification, isolation, and conversion
+%rejection requirements is estimated relative to the sample of
+%reconstructed electrons. The tag selection does not need to be tight,
+%and no additional criteria on the probe are imposed.
+%In the barrel, we measure a selection efficiency of
+%$\WPWIEBEFFID$, to be compared to  $\WPWIEBMCID$ for
+%the simulation, resulting in a correction factor of
+%$\WPWIEBRID$. In the endcaps, an efficiency of $\WPWIEEEFFID$
+%is measured, where $\WPWIEEMCID$ is expected from simulation, 
+%resulting in a correction factor of $\WPWIEERID$.
+%Finally, we obtain combined L1 and HLT trigger efficiencies
+%from identified and isolated electron candidates as probes.
+%We measure $\WPWIEBEFFHLT$ in the barrel,
+%and $\WPWIEEEFFHLT$ in the endcaps,
+%leading to correction factors consistent with unity.
+%
+%These tag-and-probe efficiencies are confirmed by measurements
+%made with a sample of minimum-bias events selected with scintillation
+%counters and a sample of events selected by an HLT algorithm that has
+%minimum-bias requirements at L1 and a complete emulation of the
+%offline ECAL cluster reconstruction.
+%
+%The charge misidentification for electrons in the simulated $\Wo$ sample
+%is $\EFFA{0.XX}{0.XX}$. We infer a data/simulation
+%charge misidentification correction factor of $\WPWMISID$
+%by comparing the fraction of events with electrons of same electric charge
+%in data and simulation samples.
+%The charge misidentification for electrons has a strong $\eta$ dependence 
+%with a mean value around 0.5(1.5)$\%$ in EB(EE).
+%This correction factor is included in the results for $\Wo^{\pm}$
+%cross sections, as well as their ratio, and its error propagated to the
+%systematic uncertainties on these quantities.
+%
+The products of all correction factors for the electron selection
+are $\WPWIEBR$ for the EB and $\WPWIEER$ for the EE.
+%
+When combining the correction factors, we take into account the relative
+acceptance of electrons from $\Wo$ decays in the EB and EE.
+We obtain the efficiency ratio for $\Wen$ events: $\rho_{\Wo} = \WEITNPR$
+and separately by charge: $\rho_{\Wp}=\WEPTNPR$ and $\rho_{\Wm}=\WEMTNPR$.
+
+The corrected signal selection efficiencies for the electron cluster in the 
+ECAL fiducial volume with $\et>25~\GeV$ are: $\WEIEFF$ for $\Wo$, $\WEPEFF$ 
+for $\Wp$ and $\WEMEFF$ for $\Wm$ events. The acceptances of the electron 
+cluster in the ECAL fiducial volume with $\et>25~\GeV$ are:
+$\WEIACC$ for $\Wo$, $\WEPACC$ for $\Wp$ and $\WEMACC$ for $\Wm$ events.
+
+The charge misidentification for electrons has a strong $\eta$ dependence
+with a mean value around 0.5 (1.5)$\%$ in EB (EE).
+This correction factor is included in the results for $\Wpm$
+cross sections, as well as their ratio, and its error propagated to the
+systematic uncertainties on these quantities.
+
+In the $\Zee$ analysis, one electron
+candidate is allowed to fail the trigger criteria;
+the efficiency ratio is $\rho_{\Zo} = \ZEETNPR$ and
+the corrected signal selection efficiency for $\Zee$ events with
+both electron clusters in ECAL fiducial volume and $\et>25~\GeV$
+is $\ZEEEFF$. The acceptance of those electron clusters is $\ZEEACC$.
+
+%added at the editor request.
+%This number is derived from the corrected overall electron
+%selection efficiencies, which are $\WPWIEBSELEFF$ and $\WPWIEESELEFF$ in 
+%the EB and EE, respectively, and taking into account the 
+%expected fractions of $\Zee$ events with
+%EB-EB, EB-EE and EE-EE combinations of electrons, which are
+%$\ZEBEBFRAC$, $\ZEBEEFRAC$ and $\ZEEEEFRAC$, respectively.
+
+

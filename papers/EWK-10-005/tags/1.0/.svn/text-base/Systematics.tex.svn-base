@@ -1,0 +1,189 @@
+\section{Systematic uncertainties \label{sec:systematics}}
+
+\par
+The largest uncertainty for the cross section measurement comes from
+the luminosity measurement~\cite{lumiPAS} which amounts to $\LUMISYST\%$.
+\par
+Aside from luminosity, one of the main source of experimental uncertainty in our measurements comes from the 
+propagation of uncertainties on the efficiency ratios obtained by the tag-and-probe method. 
+In the $\Zmm$ analysis, the efficiency uncertainties are mostly
+absorbed in the statistical uncertainty of the measurement, via a combined
+fit to the yield and the efficiencies.
+
+% General
+
+The $\MET$ energy scale is affected by our limited knowledge of the intrinsic hadronic recoil response. 
+We observe minor discrepancies when comparing hadronic recoil distributions in data and simulation, 
+and assign an uncertainties of $\WEIMETSYST\%$ and $\WMIMETSYST\%$ for $\Wen$ and $\Wmn$ respectively.
+\par
+The electron energy scale has an impact on the \ET distribution
+for the signal. To study this effect, we apply  the
+energy scale corrections obtained
+from the shift of the $\Zo$ mass peak to electrons in the barrel and endcap of the electromagnetic calorimeter
+in the simulation (before the $\Et$ threshold cut)
+and recompute the missing $\Et$. We obtain variations on the signal yield from the fit
+of $\WEIESCALESYST\%$ for the inclusive $\Wo$ cross section.  
+\par
+Dedicated studies indicate a muon momentum scale effect of $(-0.09\pm 0.03)\%$ for 40 GeV muons.
+An upper limit on potential resolution effects of 0.12\% is also obtained.
+The effect of momentum scale uncertainty has been estimated as \WMISCALESYST\% for $\Wmn$ and
+ \ZMMSCALESYST\% for $\Zmm$ respectively.
+The uncertainty on the muon pre-triggering inefficiency has been estimated to be
+$\ZMMEFFPRET\%$.
+
+
+\par
+In the $\Wen$ channel, the systematic uncertainty
+due to background subtraction is obtained by comparing
+fits to various background-dominated distributions:
+the sample selected with inverted identification criteria
+in the data, and the
+samples selected
+with and without inverted identification criteria in the QCD simulation.
+We quantify
+the differences in the tails of these three distributions
+by an extra parameter in our analytical background function.
+Using a set of pseudo-experiments to estimate
+the impact of such differences on the results of the nominal fit, we
+evaluate the uncertainty due to background subtraction in the $\Wen$
+analysis to be $\WEIBKGSYST\%$. 
+
+\par
+The background from
+fake electrons in the $\Zee$ sample
+is estimated from data. The uncertainty on this
+background is $\ZEEBKGSYST\%$ of the total $\PZ$ yield.
+Uncertainties from the normalization of electroweak and $\ttbar$
+backgrounds are negligible in both $W$ and $Z$ channels.
+
+The QCD background shape for the $\Wmn$ analysis is tested by refitting the $\MET$ spectrum
+varying the isolation correction factor $\alpha$ within its uncertainty, 
+which corresponds to a variation in the signal yield with respect
+to the reference template of $\WMIQCDSHAPESYST\%$, that is taken as corresponding uncertainty.
+The recoil modeling of the signal shape is also a potential source of
+uncertainty. This uncertainty is estimated by refitting the $\MET$
+distribution with
+the signal shape predicted by the simulation. The variation in the signal
+yield with respect
+to the reference result is small: $\WMIRECOILSYST\%$.
+Uncertainties on the knowledge of the electroweak backgrounds
+have a small impact on the $\Wmn$ measurement
+section. The assigned systematics, 1.5\% accounts for the
+absence of efficiency corrections and
+also for remaining differences between PYTHIA and POWHEG approaches.
+% Zmm
+
+%The largest source of systematic uncertainty for the \Zmm cross section after 
+%luminosity is the theoretical uncertainty which affect the acceptance estimate. 
+We have varied the $\Zmm$ fit procedure using different background shape models and binning size
+%in order to estimate the uncertainty assigned to the fit model.
+and we estimate the corresponding uncertainty to be \ZMMFITSYST\%.
+The uncertainty related to the presence of the small background fraction under the peak region in 
+the ``golden'' categories amounts to \ZMMBKGSYST\%,
+which adds to a total background systematic uncertainty for $\ZMM$ of \ZMMBKGTOTSYST\%.
+
+All theoretical predictions are computed at NNLO with the program 
+FEWZ~\cite{Melnikov:2006kv, Melnikov:2006di})
+and the MSTW set of PDFs.  The uncertainties are 68\% confidence
+levels obtaining by combining the NLO PDF and $\alpha_S$ errors
+from the MSTW08, CT10 and NNPDF2.0 groups and adding the
+NNLO scale uncertainties in quadrature, as prescribed by the
+PDF4LHC working group~\cite{PDF4LHC}. Other contributions to
+theoretical uncertainty come from final-state radiation modeling,
+resummation and NNLO QCD effects, factorization and renormalization scale dependence,
+missing resummation and NNLO QCD and missing electroweak corrections.
+
+Table~\ref{tab:syst} shows a summary of the systematic uncertainties
+for the $\Wo$ and $\Zo$ cross section measurements.
+Tables~\ref{tab:systMU} and~\ref{tab:systEL}
+show the summary of the systematic uncertainties
+for the charged cross sections ($\Wp, \Wm$) and ratios ($\Wp/\Wm$, $\Wo/\Zo$).
+
+\begin{table}
+   \caption[.]{ \label{tab:syst}
+Systematic uncertainties in percent for all inclusive W and Z cross sections.
+``n/a'' means the source does not apply.
+A common luminosity uncertainty of $\LUMISYST\%$ applies to all channels.}
+\begin{center}
+\begin {tabular} {|l|c|c|c|c|}
+\hline
+Source                                   & $\Wen$         & $\Wmn$           & $\Zee$         & $\Zmm$ \\
+\hline
+Lepton reconstruction \& identification  & \WEITNPSYST    & \WMIEFFSYST      & \ZEETNPSYST    &  n/a \\
+Trigger pre-firing                      & n/a            & \WMIEFFPRET      & n/a            & \ZMMEFFPRET \\
+Momentum scale \& resolution             & \WEIESCALESYST & \WMISCALESYST    & \ZEEESCALESYST & \ZMMSCALESYST \\
+$\MET$ scale \& resolution               & \WEIMETSYST    & \WMIMETSYST      &  n/a           &  n/a   \\
+Background subtraction / modeling        & \WEIBKGSYST    & \WMIQCDSHAPESYST & \ZEEBKGSYST    & \ZMMBKGTOTSYST  \\
+%Trigger changes throughout 2010          & n/a            & n/a              & n/a            & \ZMMTRIGABSYST \\
+\hline
+Total experimental                       & \WEEXPSYST    & \WMEXPSYST       & \ZEEEXPSYST    & \ZMMEXPSYST \\
+\hline
+PDF uncertainty for acceptance           & \WEIPDFACCSYST & \WMIPDFACCSYST   & \ZEEPDFACCSYST & \ZMMPDFACCSYST \\
+Other theoretical uncertainties          & \WEITHSYST     & \WMITHSYST       & \ZEETHSYST     & \ZMMTHSYST  \\
+\hline
+Total theoretical                        & \WEITOTTHSYST & \WMITOTTHSYST & \ZEETOTTHSYST & \ZMMTOTTHSYST \\
+\hline
+Total                                    & \WEITOTSYST    & \WMITOTSYST      & \ZEETOTSYST    & \ZMMTOTSYST \\
+\hline
+\end {tabular}
+\end{center}
+\end{table}
+
+\begin{table}
+   \caption[.]{ \label{tab:systMU}
+Systematic uncertainties in percent for charged W cross sections and ratios in the
+muon channel.
+A common luminosity uncertainty of 11\% applies to all cross sections. }
+\begin{center}
+\begin {tabular} {|l|c|c|c|c|}
+\hline
+Source       & $\Wp$ ($\mu$) & $\Wm$ ($\mu$) & $\Wp/\Wm$ ($\mu$) & $W/Z$ ($\mu$) \\
+         \hline
+Lepton reconstruction \& identification  & 0.4 & 0.4 & 1.3 & 0.4 \\
+Trigger pre-firing                       & 0.5 & 0.5 & 0   & 0   \\
+Momentum scale \& resolution             & $<$ 0.1 & $<$ 0.1 & $<$ 0.1 & $<$ 0.35 \\
+$\MET$ scale \& resolution               & 0.2 & 0.2 & 0.0   & 0.2 \\
+Background subtraction / modeling        & 0.4 & 0.5 & 0.2 & 0.4 \\
+\hline
+Total experimental                       & 0.8 & 0.9 & 1.3 & 0.7 \\
+\hline
+PDF uncertainty for acceptance           & 1.0 & 1.6 & 2.0 & 1.3 \\
+Other theoretical uncertainties          & 1.0 & 0.8 & 0.8 & 1.4 \\
+\hline
+Total theoretical                        & 1.4 & 1.7 & 2.2 & 1.9 \\
+\hline
+Total                                    & 1.6 & 1.9 & 2.6 & 2.0 \\
+\hline
+\end {tabular}
+\end{center}
+\end{table}
+%------------------------------------------------------------
+
+\begin{table}
+   \caption[.]{ \label{tab:systEL}
+Systematic uncertainties in percent for charged W cross sections and ratios in the
+electron channel.
+A common luminosity uncertainty of 11\% applies to all cross sections. }
+\begin{center}
+\begin {tabular} {|l|c|c|c|c|}
+\hline
+Source       & $\Wp$ (e) & $\Wm$ (e) & $\Wp/\Wm$ (e) & $W/Z$ (e) \\
+         \hline
+Lepton reconstruction \& identification  & 1.7 & 1.5 & 1.6 & 1.0 \\
+Momentum scale \& resolution             & 0.5 & 0.6 & 0.1 & 0.2 \\
+$\MET$ scale \& resolution               & 0.3 & 0.3 & 0.1 & 0.3 \\
+Background subtraction / modeling        & 0.3 & 0.5 & 0.4 & 0.3 \\
+\hline
+Total experimental                       & 1.9 & 1.7 & 1.7 & 1.1 \\
+\hline
+PDF uncertainty for acceptance           & 0.8 & 1.3 & 1.6 & 1.1 \\
+Other theoretical uncertainties          & 1.0 & 0.7 & 1.2 & 1.2 \\
+\hline
+Total theoretical                        & 1.3 & 1.5 & 2.1 & 1.6 \\
+\hline
+Total                                    & 2.3 & 2.3 & 2.7 & 2.0 \\
+\hline
+\end {tabular}
+\end{center}
+\end{table}
+%------------------------------------------------------------

@@ -1,0 +1,197 @@
+Dear Sandra, 
+
+Thank you very much for the useful suggestions and the numerous corrections you sent us.
+
+We implemented the vast majority of, if not all, the editorial comments that we received.
+In some cases, comments from different reviewers overlap or suggest incompatible changes.
+In many of those and other cases the best solution was to rephrase the sentence or
+paragraph involved. The number of editorial comments, due to the size of the paper, is too
+large to give a reply for every single comment.
+
+Here we collect some questions that we think are necessary to address:
+
+Q: 
+Line 193-196 In the event selection for Z->ee is "an opposite charge" (as for Z->mumu) 
+required ? 
+A: 
+It is stated on line 195. This sentence is anticipated to line 162. 
+
+Q: 
+Line 300 the T&P eff in MC is based on signal-only sample. Has it been verified in 
+MC that adding the (very small) background does not change the efficiency ? 
+If so it could be explicitaly said. 
+A: 
+The T&P is used for the estimation of efficiency correction factors. The correction factor is 
+defined as TnP_data/TnP_MC. Data distributions are contaminated by background which is subtracted 
+and the corresponding systematic uncertainties are estimated. The procedure is checked with MC but 
+in the determination of correction factors we didn't use any bkgd contamination in the signal sample 
+at MC level which should be later on subtracted. So the background subtraction is only relevant for 
+data and not MC. We didn't modify the text. 
+
+Q:
+Line 304: it is mentioned that the efficiency has been measured for e+ and e-. The number(s) is(are) 
+not reported and it is not said whether they were found to be different (or not) This is also 
+the case at line 325 
+A:
+The important numbers for the analysis are the corrected efficiencies. These are quoted in table 3 
+for W+, W-, W. The correction factors can be extracted from the same table. We didn't add the e+ 
+and e- efficiencies because we didn't want to fill the paper with too many tables. 
+
+Q:
+Line 513 -> are those correction derived from MC? 
+A:
+No, the corrections are entirely data driven: the correction referred to in lines 516-518 is applied 
+by constructing the data derived QCD templates (from inversion of the deltaEta cut) separately for 
+events with pfMVA greater than and less than the value -0.1 used to identify electrons in particle 
+flow. The two templates are summed according to their relative populations in the selected sample, 
+also in data. The second correction, for signal contamination is also data driven, as described in 
+lines 520-522. 
+
+Q:
+Line 522 If the information is available, add a number to give an idea of the signal contamination 
+in the background sample. 
+A:
+The fraction of the QCD template that is composed of signal events is determined from data using 
+tag and probe to be 1.17%. 
+
+Q:
+The ABCDE method: the "E" region is in the figure and in the name but it is never defined and it 
+is not used. 
+A:
+It is true that events in the E region are not used in the analysis. But they do come into the 
+optimization that decides the boundary to be placed as the maximum isolation (ie where the E region 
+begins) in order to reduce the systematic error coming from the uncertainty of eP (isolation efficiency) 
+and the bias introduced from pathalogical fake events which are poorly isolated in the assumption 
+that f_A = f_D. We agree it is confusing to have it as a region since those events aren't used so we 
+modified the text by removing any reference to E region. 
+
+Q:
+Line 543 Is the assumption that the two parameters are equal based on the fact that the isolation 
+requirement does not affect the MET spectrum for event for fake electrons ? If so it may be worth 
+adding something like "By assuming that the MET spectrum in event with fake electrons is not affected 
+by the isolation these two parameters are equal and all direct ..." 
+A:
+Yes this is the assumption. We write : "If the efficiency for passing the $\MET$ boundary is largely 
+independent of the choice of the boundaries on $\ITRK/E_T$ then these two parameters will be approximately 
+equal. Assuming $f_A=f_D$ holds exactly leads to a simplification of the system of equations such that 
+all direct dependence of the signal extraction on parameters relating to the QCD backgrounds is eliminated. 
+For this idealised case there would be no uncertainty on the extracted signal yield arising from modelling 
+of QCD backgrounds. Detailed studies of the data suggest this assumption holds to a good degree." 
+
+Q:
+Line 553-554 we do not see how epsilon_a and epsilon_d (efficiency in passing the MET cut) are measured 
+with T&P. 
+A:
+What we wrote is not correct. They are measured using the data-driven signal model which is also used in the other 
+techniques, derived in the A+B (well isolated) and C+D (less isolated) regions separately. It is now corrected 
+in the text. 
+
+Q:
+Line 701, 702 703 from the equation listed on page 30 we think that the isolated global muon should also 
+be required here to match and HLT muon, is it correct ? 
+A:
+Correct. We clarified in the text: "In all other categories global muons must correspond to an HLT 
+trigger muon" 
+
+Q:
+Line 703, from the equation on page 30 the "at least one non isolated" seem "exactly one non isolated" 
+A:
+Right. We corrected the text: "A pair of global muons, of which one is isolated and the other is non-isolated." 
+
+Q:
+Line 624 Nbkg = 4.9+/-8.4+/-8.4 It is not clear if the Nbckg estimate is inferred from a simultaneous fit or 
+it is used as a number to be subtracted from the Z yield. In the last case we think we should not have an 
+uncertainty leading to a negative contribution. 
+A:
+It is a number that must be subtracted from the Z yield. Concerning the issue of negative contributions
+we believe the effect will be small but we 'll check it. In any case the background is quite small so even 
+if we quote a larger uncertainty will not affect the final result.
+
+Q:
+Line 629 as Line 624. Also in table 8, in particular when propagating the uncertainties on the total background 
+A:
+This estimation is just a cross check. It is not used in the measurement. We will follow the same recipe 
+as in the previous question.
+
+Q:
+Line 626 measured charged mis-identification. How is this measurement performed ? If it measured with SS/OS in 
+Zee it can not be used ... 
+A:
+The idea is that we measure the charge mis-id in a "clean" Zee sample (by applying additional cuts) and then we 
+use it in a sample with looser cuts in which we estimate the signal and background. Details in CMS AN-2010/277. 
+
+Q:
+table 11, it is not clear why the uncertainties on the trigger pre-firing are the same in W and Z, since this 
+effect is 0.5% for W and 1% for Z. 
+A:
+pre-triggering only affects the barrel, and the uncertainty is on the overall acceptance. Moreover, it's a 
+derived quantity and the 0.5% is considered a conservative upper limit that applies to both cases. 
+
+Q:
+Line 939, in fact from table 12 and 13 it seems that also the uncertainty in the background subtraction 
+method/modeling have been (correctly) treated as correlated. 
+A:
+Correct: removed wrong statement 
+
+Q:
+Line 178 the "loose" requirements on electrons in then never used in the analysis 
+A:
+It is used in the Z veto which is one of the Wenu selection requirements. See line 190. 
+
+Q:
+Line 435 Is the recoil in data measured with PF ? 
+A:
+Yes. Specified in the text: "The recoil to the vector boson is defined as the negative of the 
+vector $\sum\Et$ of all particles reconstructed with the PF algorithm" 
+
+Q:
+Sec: 7.2 MC efficiency for muon in table 6. Since the efficiency depends on eta and the lepton 
+from W+ and W- have slightly different eta distribution we would expect that the overall efficiency 
+is different for W+ and W-. 
+A:
+Two different quantities are evaluated by MC: 
+a) Acceptance x efficiency term, A_W= Number of selected events/Number of generated events. 
+Values for A_W term are not given explicitly in the paper. 
+b) Acceptance term, A_kin=Number of events with a generated muon within defined 
+acceptance (pt>25 GeV, eta<2.1)/ Number of generated events. 
+Values for A_kin are given in table 1. 
+c)MC efficiencies quoted in Table 6 are derived quantities determined as eff = A_W/A_kin. 
+Figures quoted there have been exhaustively checked, the fact that they end up being so close 
+numerically is just accidental. It essentially means that eff. for W+ and W- are equal for events 
+within acceptance.
+
+Q:
+Sec 10: In the systematics on W+/W- ratios it is not completely cleat how the uncertainty on 
+the efficiency is calculated. Two efficiency are calculated with T&P separately for l+ and l-. 
+The statistical errors on the two are independent so they can be propagated to the ratio. 
+This is less evident for systematics. Question: the eff for l+ and l- are very close in MC 
+and compatible within the error in data. Why a common values can not be used for W+ and W-, 
+in this case most of the error should cancel in the ratio (still a small uncertainties may 
+remains from the different distribution in eta) 
+A:
+The choice for electrons was to use "+" and "-" efficiencies estimated separately. In this way 
+any systematic from the assumption of equal efficiencies of "+" and "-" is avoided. 
+
+Q:
+Figure 27. When comparing in the plot the ATLAS and CMS results it is said that the uncertainties 
+includes experimental, theoretical and luminosity uncertainties, but the theoretical uncertainties 
+(e.g. acceptances ) should be highly correlated. 
+A:
+Removed comparison to ATLAS from Fig. according to CMS rule not to cite conf. notes. 
+
+Q:
+As a final general remark: it is not always clear why electron and muon analyses are performed with 
+different techniques (e.g three electron methods but only one muon method for W) 
+A:
+Electron analyses in general are a bit more difficult than muons mainly due to the higher backgrounds. 
+So the cross checks are more important for electrons than for muons. The fact that in some cases 
+electrons & muons have chosen different techniques is also a matter of taste. The important thing 
+here is to have complete & robust results rather than being completely synchronized. 
+We added few sentences in the paper to mention it.
+
+Thank you once more for your time and effort to read and improve this paper.
+
+All the best,
+Georgios & Luca
+
+

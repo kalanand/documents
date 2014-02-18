@@ -1,0 +1,50 @@
+\section{Event Samples and Selection Criteria}\label{sec:data}
+
+In this Section, the data samples used for the various measurements are defined. In all samples described below, basic common event preselection criteria are applied in order to ensure that the triggered events do come from real proton-proton interactions. First, the presence of at least one well-reconstructed primary vertex (PV) is required, with at least four tracks considered in the vertex fit, and with $|\text{z}(\mathrm{PV})|<24\cm$, where $\text{z}(\mathrm{PV})$ represents the position of the proton-proton collision along the beams. In addition, the radial position of the primary vertex, $\rho(\mathrm{PV})$, has to satisfy the condition $\rho(\mathrm{PV})<2\cm$.
+
+Jet quality criteria (``Jet ID'') have been developed for CALO jets~\cite{JME-09-008} and PF jets~\cite{JME-10-003}, which are found to retain the vast majority ($>99\%$) of genuine jets in the simulation, while rejecting most of the misidentified jets arising from calorimeter and/or readout electronics noise in pure noise non-collision data samples: such as cosmic-ray trigger data or data from triggers on empty bunches during LHC operation. Jets used in the analysis are required to satisfy proper identification criteria.
+
+\subsection{Zero Bias and Minimum Bias Samples}
+
+The zero bias and minimum bias samples are used for the measurement of the energy clustered inside a jet due to noise and additional proton-proton collisions in the same bunch crossing (pile-up, or PU), as described in Section~\ref{sec:offset}. The zero bias sample is collected using a random trigger in the presence of a beam crossing. The minimum bias sample is collected by requiring coincidental hits in the beam scintillating counter~\cite{HLT} on either side of the CMS detector. 
+
+\subsection{Dijet Sample}
+\label{sec:jjsample}
+The dijet sample is composed of events with at least two reconstructed jets in the final state and is used for the measurement of the relative jet energy scale and of the jet \pt resolution. This sample is collected using dedicated high-level triggers which accept the events based on the value of the average uncorrected \pt (\pt not corrected for the non-uniform response of the calorimeter) of the two CALO jets with the highest \pt (leading jets) in the event. The selected dijet sample covers the average jet $\pt$ range from $15\GeV$ up to around $1\TeV$.
+
+ 
+\subsection{$\gamma+$jets Sample}
+
+The $\gamma+$jets sample is used for the measurement of the absolute jet energy response and of the jet \pt resolution. This sample is collected with single-photon triggers that accept an event if at least one reconstructed photon has $\pt>15\GeV$. Offline, photons are required to have transverse momentum $\pt^{\gamma}>15\GeV$ and $|\eta|<1.3$. The jets used in the $\gamma+$jets sample  are required to lie in the $|\eta|<1.3$ region. The $\gamma+$jets sample is dominated by dijet background, where a jet mimics the photon. To suppress this background, the following additional photon isolation and shower-shape requirements~\cite{EGM-10-005} are applied:
+
+\begin{itemize}
+
+\item
+\textbf{HCAL isolation}: the energy deposited in the HCAL within a cone of radius $R=0.4$ in the $\eta-\phi$ space, around the photon direction, must be smaller than $2.4\GeV$ or less than $5\%$ of the photon energy ($E_{\gamma}$);
+
+\item
+\textbf{ECAL isolation}: the energy deposited in the ECAL within a cone of radius $R=0.4$ in the $\eta-\phi$ space, around the photon direction, excluding the energy associated with the photon, must be smaller than $3\GeV$ or less than $5\%$ of the photon energy;
+
+\item
+\textbf{Tracker isolation}: the number of tracks in a cone of radius $R=0.35$ in the $\eta-\phi$ space, around the photon direction, must be less than three, and the total transverse momentum of the tracks must be less than $10\%$ of the photon transverse momentum;
+
+\item
+\textbf{Shower shape}: the photon cluster major and minor must be in the range of 0.15-0.35, and 0.15-0.3, respectively. Cluster major and minor are defined as second moments of the energy distribution along the direction of the maximum and minimum spread of the ECAL cluster in the $\eta-\phi$ space;
+
+\end{itemize}
+
+The selected $\gamma+$jets sample covers the $\pt^{\gamma}$ range from $15\GeV$ up to around $400\GeV$.
+
+\subsection{$Z(\mu^+\mu^-)$+jets Sample}
+
+The $Z(\mu^+\mu^-)$+jets sample is used for the measurement of the absolute jet energy response. It is collected using single-muon triggers with various \pt thresholds. Offline, the events are required to have at least two opposite-sign reconstructed global muons with $\pt>15\GeV$ and $|\eta^\mu|<2.3$ and at least one jet with $|\eta|<1.3$. A global muon is reconstructed by a combined fit to the muon system hits and tracker hits, seeded by a track found in the muon systems only. The reconstructed muons must satisfy identification and isolation requirements, as described in Ref.~\cite{EWK-10-002}. Furthermore, the invariant mass $M_{\mu\mu}$ of the two muons must satisfy the condition $70<M_{\mu\mu}<110\GeV$. Finally, the reconstructed Z is required to be back-to-back in the transverse plane with respect to the jet with the highest \pt: $|\Delta\phi(Z,jet)|>2.8 rad$. 
+
+\subsection{$Z(e^+e^-)$+jets Sample}
+
+The $Z(e^+e^-)$+jets sample is used for the measurement of the absolute jet energy response. It is collected using single-electron triggers with various \pt thresholds. Offline, the events are required to have at least two opposite-sign reconstructed electrons with $\pt>20\GeV$ in the fiducial region $|\eta|<1.44$ and $1.57<|\eta|<2.5$ and at least one jet with $|\eta|<1.3$. The reconstructed electrons must satisfy identification and isolation requirements, as described in Ref.~\cite{EWK-10-002}. Furthermore, the invariant mass $M_{ee}$ of the electron-positron pair must satisfy the condition $85<M_{ee}<100\GeV$. Finally, the reconstructed Z is required to be back-to-back in the transverse plane with respect to the jet with the highest \pt: $|\Delta\phi(Z,jet)|>2.7 rad$. 
+
+
+
+
+
+
