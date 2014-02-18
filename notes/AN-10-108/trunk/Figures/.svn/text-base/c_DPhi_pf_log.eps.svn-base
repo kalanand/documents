@@ -1,0 +1,92 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox:  0 0 567 546
+%%Title: ./c_DPhi_pf_log.eps: c_DPhi_pf_log
+%%Creator: ROOT Version 5.27/06b
+%%CreationDate: Thu Jul  7 14:50:15 2011
+%%EndComments
+%%BeginProlog
+80 dict begin
+/s {stroke} def /l {lineto} def /m {moveto} def /t {translate} def
+/r {rotate} def /rl {roll}  def /R {repeat} def
+/d {rlineto} def /rm {rmoveto} def /gr {grestore} def /f {eofill} def
+/c {setrgbcolor} def /black {0 setgray} def /sd {setdash} def
+/cl {closepath} def /sf {scalefont setfont} def /lw {setlinewidth} def
+/box {m dup 0 exch d exch 0 d 0 exch neg d cl} def
+/NC{systemdict begin initclip end}def/C{NC box clip newpath}def
+/bl {box s} def /bf {box f} def /Y { 0 exch d} def /X { 0 d} def 
+/K {{pop pop 0 moveto} exch kshow} bind def
+/ita {/ang 15 def gsave [1 0 ang dup sin exch cos div 1 0 0] concat} def 
+/mp {newpath /y exch def /x exch def} def
+/side {[w .77 mul w .23 mul] .385 w mul sd w 0 l currentpoint t -144 r} def
+/mr {mp x y w2 0 360 arc} def /m24 {mr s} def /m20 {mr f} def
+/mb {mp x y w2 add m w2 neg 0 d 0 w neg d w 0 d 0 w d cl} def
+/mt {mp x y w2 add m w2 neg w neg d w 0 d cl} def
+/m21 {mb f} def /m25 {mb s} def /m22 {mt f} def /m26{mt s} def
+/m23 {mp x y w2 sub m w2 w d w neg 0 d cl f} def
+/m27 {mp x y w2 add m w3 neg w2 neg d w3 w2 neg d w3 w2 d cl s} def
+/m28 {mp x w2 sub y w2 sub w3 add m w3 0 d  0 w3 neg d w3 0 d 0 w3 d w3 0 d  0 w3 d w3 neg 0 d 0 w3 d w3 neg 0 d 0 w3 neg d w3 neg 0 d cl s } def
+/m29 {mp gsave x w2 sub y w2 add w3 sub m currentpoint t 4 {side} repeat cl fill gr} def
+/m30 {mp gsave x w2 sub y w2 add w3 sub m currentpoint t 4 {side} repeat cl s gr} def
+/m31 {mp x y w2 sub m 0 w d x w2 sub y m w 0 d x w2 sub y w2 add m w w neg d x w2 sub y w2 sub m w w d s} def
+/m32 {mp x y w2 sub m w2 w d w neg 0 d cl s} def
+/m33 {mp x y w2 add m w3 neg w2 neg d w3 w2 neg d w3 w2 d cl f} def
+/m34 {mp x w2 sub y w2 sub w3 add m w3 0 d  0 w3 neg d w3 0 d 0 w3 d w3 0 d  0 w3 d w3 neg 0 d 0 w3 d w3 neg 0 d 0 w3 neg d w3 neg 0 d cl f } def
+/m2 {mp x y w2 sub m 0 w d x w2 sub y m w 0 d s} def
+/m5 {mp x w2 sub y w2 sub m w w d x w2 sub y w2 add m w w neg d s} def
+/reEncode {exch findfont dup length dict begin {1 index /FID eq  {pop pop} {def} ifelse } forall /Encoding exch def currentdict end dup /FontName get exch definefont pop } def [/Times-Bold /Times-Italic /Times-BoldItalic /Helvetica /Helvetica-Oblique
+ /Helvetica-Bold /Helvetica-BoldOblique /Courier /Courier-Oblique /Courier-Bold /Courier-BoldOblique /Times-Roman /AvantGarde-Book /AvantGarde-BookOblique /AvantGarde-Demi /AvantGarde-DemiOblique /Bookman-Demi /Bookman-DemiItalic /Bookman-Light
+ /Bookman-LightItalic /Helvetica-Narrow /Helvetica-Narrow-Bold /Helvetica-Narrow-BoldOblique /Helvetica-Narrow-Oblique /NewCenturySchlbk-Roman /NewCenturySchlbk-Bold /NewCenturySchlbk-BoldItalic /NewCenturySchlbk-Italic /Palatino-Bold
+ /Palatino-BoldItalic /Palatino-Italic /Palatino-Roman ] {ISOLatin1Encoding reEncode } forall%%EndProlog
+%%BeginSetup
+%%EndSetup
+newpath  gsave  .25 .25 scale  gsave  0 0 t black[  ] 0 sd 3 lw 1 1 1 c 2268 2184 0 0 bf black 1 1 1 c 1927 1791 295 284 bf black 1927 1791 295 284 bl 1 1 1 c 1927 1791 295 284 bf black 1927 1791 295 284 bl 0.87 0.73 0.53 c 9 lw black 3 lw 0.87 0.73
+ 0.53 c 295 284 m 848 X 66 Y 77 X 118 Y 77 X 136 Y 77 X 116 Y 77 X 122 Y 77 X 132 Y 78 X 154 Y 77 X 147 Y 77 X 123 Y 77 X 98 Y 77 X 95 Y 77 X 97 Y 77 X 117 Y 77 X 186 Y 77 X -1707 Y f 9 lw 295 284 m 848 X 66 Y 77 X 118 Y 77 X 136 Y 77 X 116 Y 77 X
+ 122 Y 77 X 132 Y 78 X 154 Y 77 X 147 Y 77 X 123 Y 77 X 98 Y 77 X 95 Y 77 X 97 Y 77 X 117 Y 77 X 186 Y 77 X s black 3 lw 295 284 m 1927 X s
+ gsave  2268 2184 0 0 C 2161.38 68.25 t 0 r /Symbol findfont 121.757 sf 0 0 m (f) show NC gr 
+ gsave  2268 2184 0 0 C 2130.94 68.25 t 0 r /Helvetica findfont 121.757 sf 0 0 m ( ) show NC gr 
+ gsave  2268 2184 0 0 C 2054.81 68.25 t 0 r /Symbol findfont 121.757 sf 0 0 m (D) show NC gr  295 340 m -56 Y s 356 312 m -28 Y s 417 312 m -28 Y s 479 312 m -28 Y s 540 312 m -28 Y s 602 340 m -56 Y s 663 312 m -28 Y s 724 312 m -28 Y s 786 312 m
+ -28 Y s 847 312 m -28 Y s 908 340 m -56 Y s 970 312 m -28 Y s 1031 312 m -28 Y s 1092 312 m -28 Y s 1154 312 m -28 Y s 1215 340 m -56 Y s 1276 312 m -28 Y s 1338 312 m -28 Y s 1399 312 m -28 Y s 1460 312 m -28 Y s 1522 340 m -56 Y s 1583 312 m -28 Y
+ s 1644 312 m -28 Y s 1706 312 m -28 Y s 1767 312 m -28 Y s 1829 340 m -56 Y s 1890 312 m -28 Y s 1951 312 m -28 Y s 2013 312 m -28 Y s 2074 312 m -28 Y s 2135 340 m -56 Y s 2135 340 m -56 Y s 2197 312 m -28 Y s
+ gsave  2268 2184 0 0 C 270.375 201.438 t 0 r /Helvetica findfont 79.9028 sf 0 0 m (0) show NC gr 
+ gsave  2268 2184 0 0 C 544.312 201.438 t 0 r /Helvetica findfont 79.9028 sf 0 0 m (0.5) show NC gr 
+ gsave  2268 2184 0 0 C 890.5 201.438 t 0 r /Helvetica findfont 79.9028 sf 0 0 m (1) show NC gr 
+ gsave  2268 2184 0 0 C 1156.88 201.438 t 0 r /Helvetica findfont 79.9028 sf 0 0 m (1.5) show NC gr 
+ gsave  2268 2184 0 0 C 1495.5 201.438 t 0 r /Helvetica findfont 79.9028 sf 0 0 m (2) show NC gr 
+ gsave  2268 2184 0 0 C 1769.44 201.438 t 0 r /Helvetica findfont 79.9028 sf 0 0 m (2.5) show NC gr 
+ gsave  2268 2184 0 0 C 2111.88 201.438 t 0 r /Helvetica findfont 79.9028 sf 0 0 m (3) show NC gr  295 2075 m 1927 X s 295 2019 m 56 Y s 356 2047 m 28 Y s 417 2047 m 28 Y s 479 2047 m 28 Y s 540 2047 m 28 Y s 602 2019 m 56 Y s 663 2047 m 28 Y s 724
+ 2047 m 28 Y s 786 2047 m 28 Y s 847 2047 m 28 Y s 908 2019 m 56 Y s 970 2047 m 28 Y s 1031 2047 m 28 Y s 1092 2047 m 28 Y s 1154 2047 m 28 Y s 1215 2019 m 56 Y s 1276 2047 m 28 Y s 1338 2047 m 28 Y s 1399 2047 m 28 Y s 1460 2047 m 28 Y s 1522 2019 m
+ 56 Y s 1583 2047 m 28 Y s 1644 2047 m 28 Y s 1706 2047 m 28 Y s 1767 2047 m 28 Y s 1829 2019 m 56 Y s 1890 2047 m 28 Y s 1951 2047 m 28 Y s 2013 2047 m 28 Y s 2074 2047 m 28 Y s 2135 2019 m 56 Y s 2135 2019 m 56 Y s 2197 2047 m 28 Y s 295 284 m 1791
+ Y s
+ gsave  2268 2184 0 0 C 106.812 1719.56 t 90 r /Helvetica findfont 121.757 sf 0 0 m (events) show NC gr  323 284 m -28 X s 323 308 m -28 X s 323 328 m -28 X s 323 345 m -28 X s 323 361 m -28 X s 351 374 m -56 X s
+ gsave  2268 2184 0 0 C 273.75 348.188 t 0 r  -33 0 t /Helvetica findfont 60.8783 sf 0 0 m (1) show NC gr  323 465 m -28 X s 323 518 m -28 X s 323 555 m -28 X s 323 584 m -28 X s 323 608 m -28 X s 323 628 m -28 X s 323 645 m -28 X s 323 661 m -28 X s
+ 351 674 m -56 X s
+ gsave  2268 2184 0 0 C 273.75 648.375 t 0 r  -67 0 t /Helvetica findfont 60.8783 sf 0 0 m (10) show NC gr  323 765 m -28 X s 323 818 m -28 X s 323 855 m -28 X s 323 884 m -28 X s 323 908 m -28 X s 323 928 m -28 X s 323 946 m -28 X s 323 961 m -28 X
+ s 351 975 m -56 X s
+ gsave  2268 2184 0 0 C 247.562 977.562 t 0 r /Helvetica findfont 41.8538 sf 0 0 m (2) show NC gr 
+ gsave  2268 2184 0 0 C 179.062 947.125 t 0 r /Helvetica findfont 60.8783 sf 0 0 m (10) show NC gr  323 1065 m -28 X s 323 1118 m -28 X s 323 1155 m -28 X s 323 1185 m -28 X s 323 1208 m -28 X s 323 1228 m -28 X s 323 1246 m -28 X s 323 1261 m -28 X
+ s 351 1275 m -56 X s
+ gsave  2268 2184 0 0 C 247.562 1282 t 0 r /Helvetica findfont 41.8538 sf 0 0 m (3) show NC gr 
+ gsave  2268 2184 0 0 C 179.062 1247.75 t 0 r /Helvetica findfont 60.8783 sf 0 0 m (10) show NC gr  323 1365 m -28 X s 323 1418 m -28 X s 323 1456 m -28 X s 323 1485 m -28 X s 323 1508 m -28 X s 323 1529 m -28 X s 323 1546 m -28 X s 323 1561 m -28 X
+ s 351 1575 m -56 X s
+ gsave  2268 2184 0 0 C 247.562 1574.94 t 0 r /Helvetica findfont 41.8538 sf 0 0 m (4) show NC gr 
+ gsave  2268 2184 0 0 C 179.062 1544.5 t 0 r /Helvetica findfont 60.8783 sf 0 0 m (10) show NC gr  323 1665 m -28 X s 323 1718 m -28 X s 323 1756 m -28 X s 323 1785 m -28 X s 323 1809 m -28 X s 323 1829 m -28 X s 323 1846 m -28 X s 323 1862 m -28 X s
+ 351 1875 m -56 X s
+ gsave  2268 2184 0 0 C 247.562 1879.38 t 0 r /Helvetica findfont 41.8538 sf 0 0 m (5) show NC gr 
+ gsave  2268 2184 0 0 C 179.062 1845.12 t 0 r /Helvetica findfont 60.8783 sf 0 0 m (10) show NC gr  323 1966 m -28 X s 323 2019 m -28 X s 323 2056 m -28 X s 2222 284 m 1791 Y s 2194 284 m 28 X s 2194 308 m 28 X s 2194 328 m 28 X s 2194 345 m 28 X s
+ 2194 361 m 28 X s 2167 374 m 55 X s 2194 465 m 28 X s 2194 518 m 28 X s 2194 555 m 28 X s 2194 584 m 28 X s 2194 608 m 28 X s 2194 628 m 28 X s 2194 645 m 28 X s 2194 661 m 28 X s 2167 674 m 55 X s 2194 765 m 28 X s 2194 818 m 28 X s 2194 855 m 28 X
+ s 2194 884 m 28 X s 2194 908 m 28 X s 2194 928 m 28 X s 2194 946 m 28 X s 2194 961 m 28 X s 2167 975 m 55 X s 2194 1065 m 28 X s 2194 1118 m 28 X s 2194 1155 m 28 X s 2194 1185 m 28 X s 2194 1208 m 28 X s 2194 1228 m 28 X s 2194 1246 m 28 X s 2194
+ 1261 m 28 X s 2167 1275 m 55 X s 2194 1365 m 28 X s 2194 1418 m 28 X s 2194 1456 m 28 X s 2194 1485 m 28 X s 2194 1508 m 28 X s 2194 1529 m 28 X s 2194 1546 m 28 X s 2194 1561 m 28 X s 2167 1575 m 55 X s 2194 1665 m 28 X s 2194 1718 m 28 X s 2194
+ 1756 m 28 X s 2194 1785 m 28 X s 2194 1809 m 28 X s 2194 1829 m 28 X s 2194 1846 m 28 X s 2194 1862 m 28 X s 2167 1875 m 55 X s 2194 1966 m 28 X s 2194 2019 m 28 X s 2194 2056 m 28 X s 1 1 1 c black 1181 284 m 75 Y s 1181 390 m 75 Y s 1143 374 m 23
+ X s 1197 374 m 23 X s /w 30 def /w2 {w 2 div} def /w3 {w 3 div} def 1181 374 m20 1259 305 m 144 Y s 1259 480 m 54 Y s 1220 465 m 23 X s 1274 465 m 23 X s 1259 465 m20 1336 625 m 34 Y s 1336 690 m 20 Y s 1297 674 m 23 X s 1351 674 m 23 X s 1336 674
+ m20 1413 739 m 17 Y s 1413 786 m 11 Y s 1374 771 m 24 X s 1428 771 m 23 X s 1413 771 m20 1490 885 m 3 Y s 1490 919 m 1 Y s 1451 904 m 24 X s 1505 904 m 23 X s 1490 904 m20 1528 1022 m 24 X s 1582 1022 m 24 X s 1567 1022 m20 1606 1137 m 23 X s 1659
+ 1137 m 24 X s 1644 1137 m20 1683 1260 m 23 X s 1736 1260 m 24 X s 1721 1260 m20 1760 1358 m 23 X s 1814 1358 m 23 X s 1798 1358 m20 1837 1469 m 23 X s 1891 1469 m 23 X s 1875 1469 m20 1914 1570 m 23 X s 1968 1570 m 23 X s 1953 1570 m20 1991 1681 m
+ 23 X s 2045 1681 m 23 X s 2030 1681 m20 2068 1809 m 23 X s 2122 1809 m 23 X s 2107 1809 m20 2145 1993 m 24 X s 2199 1993 m 23 X s 2184 1993 m20 1 1 1 c 1133 437 454 1529 bf black
+ gsave  2268 2184 0 0 C 1335.69 1833.69 t 0 r /Helvetica-Bold findfont 57.0734 sf 0 0 m ( \)) show NC gr 
+ gsave  2268 2184 0 0 C 1305.25 1860.31 t 0 r /Helvetica-Bold findfont 38.0489 sf 0 0 m (\2551) show NC gr 
+ gsave  2268 2184 0 0 C 734.5 1833.69 t 0 r /Helvetica-Bold findfont 57.0734 sf 0 0 m (CMS Data PF \( 1.01fb) show NC gr  595 1856 m20
+ gsave  2268 2184 0 0 C 734.5 1620.62 t 0 r /Helvetica-Bold findfont 57.0734 sf 0 0 m 
+ 823 789 773 754 722 707 672 622 606 568 553 515 468 427 411 378 362 324 308 267 232 195 157 141 126 85 44
+(QCD  PYTHIA + CMS Simulation) K NC gr  0.87 0.73 0.53 c 496 1562 m 198 X 152 Y -198 X f 9 lw 496 1714 m 198 X s 496 1562 m 198 X s 694 1562 m 152 Y s 496 1562 m 152 Y s
+ gr  gr showpage
+end
+%%EOF
