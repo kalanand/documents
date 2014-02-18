@@ -1,0 +1,278 @@
+%\section{Physics objects reconstructions and event selection}
+%\label{sec:eventsel}
+
+
+% MC samples
+\section{Event simulation }
+\label{sec:mc}
+All Monte Carlo (MC) simulation samples, except for the single-top-quark samples, are generated with the
+MADGRAPH 5.1.3.22 \cite{MadGraph} event generator using the CTEQ6L1 parton
+distribution functions (PDF). Single-top-quark samples are generated with {\sc POWHEG} (v1.0, r1380)\cite{Alioli:2009je,Re:2010bp} with the CTEQ6M PDF 
+set~\cite{Pumplin:2002vw,Nadolsky:2008zw}. 
+The matrix element calculation is used, and outgoing partons are matched to parton showers from
+{\sc PYTHIA} 6.426 \cite{pythia} tune $Z2^*$ \cite{Collaboration:2012tb} with
+a matching threshold of 20~GeV and a dynamic factorization ($\mu_F$) and
+renormalization ($\mu_R$) scale given by $\sqrt{m^{2}_{W/Z} + p^{2}_{T,W/Z}}$. 
+The next-to-leading-order/leading-order (NLO/LO) cross section correction factors (K-factors) for WW$\gamma$, WZ$\gamma$ and AQGC diagrams 
+are derived using the NLO cross sections calculated with {\sc aMC@NLO}~\cite{Frixione:2002ik}. The MSTW2008nlo68cl~\cite{Martin:2009iq} PDF 
+set is used to calculate the PDF uncertainty following the prescription of Ref.~\cite{Frederix:2011ss}. 
+The K-factor obtained for WW$\gamma$ and WZ$\gamma$ is consistent with a
+constant value of 2.1 for photons with $E_{T}>30$~GeV. The K-factor for AQGC diagrams is
+found to be close to 1.2.
+A \GEANTfour-based simulation~\cite{GEANT4} of the CMS
+detector is used in the production of all MC samples. All simulated events are reconstructed and analyzed using the same algorithms as for the LHC 
+collision events. Additional corrections (scale factors) are applied to take into account the difference in lepton 
+reconstruction and identification efficiencies observed between data and simulated events.
+For all simulated samples, the hard-interaction collision is overlaid with a number of simulated
+minimum bias collisions. The resulting events are weighted to reproduce the distribution of
+the number of inelastic collisions per bunch crossing (pileup) inferred from data.
+A summary of the contributing processes is given in Table~\ref{tab:samples}.
+
+\begin{table}[htb]
+\centering
+  \caption{Cross sections used to normalize the simulated samples. All cross sections assume a photon $E_T$ $>$ 10~GeV, $|\eta^{\gamma}|<2.5$.  
+The order of the cross section calculation is also indicated. The normalization for the W$\gamma$+Jets sample is derived from data. The contribution from the 
+jet$\rightarrow\gamma$ process is also obtained from data as described in Section~\ref{sec:BackgroundModeling}. }
+\scalebox{1.05}{
+  \begin{tabular}{|c|c|c|}
+  \hline
+  Process & Cross section [pb] \\
+  \hline
+  \hline
+  SM WW$\gamma$                  & (NLO)      0.090 $\pm$ 0.021    \\
+  SM WZ$\gamma$                  & (NLO)      0.012 $\pm$ 0.003    \\
+  \hline
+  W$\gamma$ + jets               & (data)     10.9  $\pm$ 0.8    \\
+  Z$\gamma$ + jets               & (LO)       0.63   $\pm$ 0.13 \\
+  $t\overline{t}\gamma$          & (LO)       0.62   $\pm$ 0.12 \\
+  Single t + $\gamma$(inclusive) & (NLO)      0.31   $\pm$ 0.01  \\
+  \hline
+  \end{tabular}}
+  \label{tab:samples}
+\end{table}
+
+To simulate the signal events for a given AQGC parameter set, several samples are generated with a range of parameter values, 
+with the other aQCG parameters set to zero.
+
+\section{Event reconstruction and selection}
+\label{sec:recosel}
+% Intro
+
+The dataset used in this analysis corresponds to a total integrated
+luminosity of 19.3~$\pm$~0.5 (19.2~$\pm$~0.5) $\fbinv$ ~\cite{lumiPAS} collected with
+the CMS detector in the muon (electron) channel in pp collisions at
+$\sqrt{s}=8$\TeV in 2012.  The data were recorded with single-lepton
+triggers using $p_T$ thresholds of 24~\GeV for muons and 27~\GeV for
+electrons. The overall trigger efficiency is about 94\% (90\%) for
+muon (electron) data, with a small dependence (a few percent) on $p_T$
+and $\eta$. Simulated events are corrected for the trigger efficiency
+as a function of lepton $p_T$ and $\eta$.
+
+
+The events used in this analysis are characterized by the production
+of a photon plus a pair of massive gauge bosons (WW or WZ), where a
+W boson decays to leptons and the other boson (W or Z) decays to
+quarks. The selections that are applied to select leptonic W boson decays include a
+requirement on the transverse mass (large than 30~GeV~\cite{WZCMS:2010}), with either 
+one muon ($p_T >$ 25~GeV, $|\eta| <$ 2.1) or one electron ($P_T >$ 30 GeV, $|\eta| <$ 2.5, excluding the transition 
+region between the ECAL barrel and endcaps $1.44 < |\eta| < 1.57$) in the final state. Events with
+additional leptons are vetoed in order to reduce backgrounds. The escaping 
+neutrino induces physical missing transverse energy ($\MET$) in the reconstructed 
+event. A selection requirement of $\MET >$ 35~GeV 
+is therefore applied to reject the multijet backgrounds. The two most energetic jet candidates are required to
+satisfy $p_T >$ 30~GeV and $|\eta| <$ 2.4. The photon candidate must satisfy $E_T >$ 30~GeV and $|\eta| <$ 1.44. 
+
+
+% Jets & MET
+Jets and 
+$\MET$~\cite{Chatrchyan:2011tn,WZCMS:2010} are formed from particles reconstructed using the PF algorithm.
+Jets are formed with the anti-$k_T$ clustering
+algorithm~\cite{ANTIKT} with a distance parameter of 0.5. 
+Charged particles with tracks not originating from
+the primary vertex are not considered for jet
+clustering~\cite{fastjet1, fastjet2}. The primary vertex of the event is chosen to be the vertex with the highest
+$\sum p_T^2$ of its associated tracks.
+Jets are required to satisfy
+identification criteria that eliminate candidates originating from noisy
+channels in the hadron calorimeter~\cite{Chatrchyan:2009hy}.  Jet
+energy corrections \cite{Chatrchyan:2011ds} are applied to
+account for the jet energy response as a function of $\eta$ and $p_{T}$,
+and to correct for contributions from event pileup. Jets from pileup are
+identified and removed using the trajectories of tracks associated with the jets, 
+the topology of the jet shape and the constituent multiplicities.
+
+The azimuthal separation between the highest $p_T$ jet and the $\MET$
+direction is required to be larger
+than 0.4. This criterion reduces the QCD multijet background, for
+which the \MET is generated sometimes by a mismeasurement of the
+leading jet energy. To
+reduce the background from W$\gamma$+jets events, requirements on the
+dijet invariant mass window of 70 $< m_{jj} <$ 100~GeV, and on the
+separation between the jets of $|\Delta\eta_{jj}| <$ 1.4, are
+imposed. In order to reject top-quark backgrounds, the two jets are
+also required to fail a b quark jet tagging requirement. The combined
+secondary vertex algorithm~\cite{Chatrchyan:2012jua} is used, with a
+discriminator based on the displaced vertex expected from b hadron
+decays. The algorithm selects b hadrons with about 70\% efficiency,
+and has a 1\% misidentification probability.
+
+% Muons
+Muon candidates are reconstructed by combining information from the
+silicon tracker and from the muon detector by means of a global
+fit. The muon candidates are required to pass the standard CMS muon
+identification and the track quality criteria~\cite{muReco}. The isolation
+variables used in the muon selection are based on the PF
+algorithm and are corrected for the contribution from pileup. The muon
+candidates have a selection efficiency of approximately 96\%.
+
+% Electrons
+Electrons are reconstructed from clusters~\cite{Chatrchyan:2013dga} of ECAL energy
+deposits matched to tracks in the silicon tracker within the ECAL
+fiducial volume, with the exclusion of the transition region between the barrel and
+the endcaps, defined above. The electron candidates are
+required to be consistent with a particle originating from the primary
+vertex in the event. The isolation variables used in the electron selection are based on the PF
+algorithm and are corrected for the contribution from pileup. 
+The electron selection efficiency is approximately
+80\%. To suppress the $Z\rightarrow e^+e^-$ background in the electron
+channel, where one electron is misidentified as a photon, a Z boson mass veto of $|M_Z - m_{e\gamma}| >$
+10~GeV is applied.
+
+% Photons
+Photon candidates are reconstructed from clusters of cells with
+significant energy deposition in the electromagnetic calorimeter;
+these are merged into ``superclusters''. The photons are required to be within the ECAL barrel fiducial region ($|\eta| <$ 1.44). 
+The observables used in the photon selection are isolation variables based on the particle flow algorithm and are corrected for 
+the contribution from pileup, the ratio of hadronic energy in the HCAL that is matched in $(\eta,\phi)$ to the electromagnetic 
+energy in the ECAL, the transverse width of the electromagnetic shower and an electron track veto.
+
+% Backgrounds and additional selection
+\section {Background modeling}
+\label{sec:BackgroundModeling}
+
+The main background contribution arises from W$\gamma$+jets
+production. After imposing the requirements described above, a binned
+maximum likelihood fit to the dijet invariant mass distribution
+\mjj~of the two leading jets is performed.  The signal region
+corresponding to the W and Z mass windows 70 $<$ \mjj $<$ 100~GeV 
+is excluded from the fit. The shape of the W$\gamma$+jets $\mjj$ distribution is obtained from
+simulation and the normalization of this background component is unconstrained in the fit.
+The normalization of the contribution from misidentified photons is allowed to float with a
+Gaussian distributed penalty term of 14\% (Section~\ref{sec:Syst}). The post-fit ratio $K =
+\sigma_{\textrm{fit}}/\sigma_{\textrm{LO}}$ for the W$\gamma$+jets
+background is measured to be $1.10\pm 0.07$ ($1.07 \pm 0.09$) in the muon (electron) channel.
+
+The background from misidentified photons arises mainly from the
+W+3~jets process, in which one jet passes the photon identification
+criteria. The total contribution from misidentified photons is
+estimated using a data control sample, where all selection criteria
+except for the isolation requirement are applied. The shower shape
+distribution is then used to estimate the total rate of misidentified
+photons. Details on the method can be found in Ref.~\cite{Vgamma}. The
+fraction of the total background from misidentified photons varies
+with photon $E_{T}$ from a maximum of 23\% ($p_{T}$ = 30~GeV) to 8\%
+($p_{T}>135$~GeV).
+
+The multijet background results from misidentified leptons caused by
+jets passing the muon or electron selection requirements. It is
+estimated using a two component fit to the \MET distribution in
+data. The procedure is described in~\cite{Chatrchyan:2012bd}, and was
+repeated for the 8~\TeV data. The multijet contribution is estimated
+to be 6.2\% for the electron channel, with a 50\% systematic
+uncertainty, and is negligible for the muon channel.
+
+Other background contributions arise from top-quark pair production,
+single-top-quark production, and Z$\gamma$+jets. These are taken from
+simulation and are fixed to their SM expectations, with the central
+values and uncertainties listed in Table~\ref{tab:samples}. The
+top-quark pair process contribution comes from the presence of two W
+bosons in the decays. The b quark jet tagging efficiency is
+approximately 70\%, with 2\% uncertainty in the scale factor. The
+Z$\gamma$+jets background can mimic the signal when the Z decays
+leptonically and one of the leptons is lost, resulting in
+\MET. Together the top-quark pair, single-top-quark, and
+Z$\gamma$+jets backgrounds represent about 8\% of the expected SM
+background rate.
+
+\section{Systematic uncertainties}
+\label{sec:Syst}
+
+The uncertainties contributing to the measured rate of misidentified
+photons arise from two sources. First, the statistical uncertainty is estimated
+from the W+3~jets simulation to be 5.6\% rising to 37\% with increasing photon
+$E_T$. The second arises from a bias in the shower shape in the control sample due to the
+inverted isolation requirements. The uncertainty is estimated to be less than 11\%. 
+
+The uncertainty in the measured value of the 
+luminosity~\cite{lumiPAS} is 2.6\% and contributes to the signal and
+those backgrounds that are taken from the MC prediction. Jet energy
+scale uncertainties contribute via selection thresholds on the
+jet $p_{T}$ and dijet invariant mass by 4.3\%. A small difference in \MET
+resolution \cite{Chatrchyan:2011tn} between data and simulation
+affects the signal selection efficiency by less than 1\%. Systematic
+uncertainties due to the trigger efficiency in the data (1\%) and
+lepton reconstruction and selection efficiency (2\%) are also accounted
+for. Photon reconstruction efficiency and energy scale uncertainties contribute to the signal selection efficiency at the 1\% level. The uncertainty
+from the b jet tagging procedure is 2\% on the data/simulation
+efficiency correction factor~\cite{Chatrchyan:2012jua}. This
+has an effect of 11\% on the t$\overline{\mathrm t}\gamma$ background, 5\% on the single-top-quark
+background, and a negligible effect on the signal. The theoretical
+uncertainty in the $t\overline{t}\gamma$ and
+Z$\gamma$+jets production is 20\%. The theoretical uncertainties in the
+WW$\gamma$, WZ$\gamma$, and AQGC signal cross sections are evaluated
+using {\sc aMC@NLO} samples. We vary the renormalization and factorization
+scales each by factors of 1/2 and 2, and require $\mu_R=\mu_F$, as described in
+Ref.~\cite{Frederix:2011ss}. We find that the scale-related uncertainties are
+23.4\%, and that the uncertainty due to the choice of PDF is 3.6\%.
+  
+\section{Estimate of the standard model WV$\gamma$ cross section}
+\label{sec:xsec}
+
+For the SM WV$\gamma$ search a ``cut-and-count'' approach is adopted. The selected numbers of candidate events 
+in the data are 183(139) in the muon(electron) channel. The predicted
+number of background plus signal events is $194.2 \pm 11.5$($147.9 \pm 10.7$) in the muon(electron) channel, where the 
+uncertainty includes statistical, systematic and luminosity related uncertainties. 
+The event yield per process is summarized in Table ~\ref{tab:evt}.
+
+\begin{table}[htb]
+\centering
+  \caption{Expected number of events per process. The predicted number of events for the W$\gamma$+jets and WV+jet processes, where the jet is reconstructed as 
+a photon, are derived from data. The "Total prediction" represents the sum of all the individual contributions.}
+\scalebox{0.92}{
+  \begin{tabular}{|c|c|c|}
+  \hline
+  Process  & Muon channel & Electron channel  \\
+    & number of events & number of events  \\
+  \hline
+  \hline
+  SM WW$\gamma$                       & 6.6   $\pm$ 1.5  & 5.0   $\pm$ 1.1  \\
+  SM WZ$\gamma$                       & 0.6   $\pm$ 0.1  & 0.5   $\pm$ 0.1  \\
+  \hline
+  W$\gamma$ + jets                    & 136.9 $\pm$ 10.5 & 101.6 $\pm$ 8.5  \\
+  WV + jet, jet $\rightarrow \gamma$  & 33.1  $\pm$ 4.8  & 21.3  $\pm$ 3.3  \\
+  MC $t\overline{t}\gamma$            & 12.5  $\pm$ 3.0  & 9.1   $\pm$ 2.2  \\
+  MC single top quark                 & 2.8   $\pm$ 0.8  & 1.7   $\pm$ 0.6  \\
+  MC Z$\gamma$ + jets                 & 1.7   $\pm$ 0.1  & 1.5   $\pm$ 0.1  \\
+  Multijets                           &  -  & 7.2   $\pm$ 5.1  \\
+  \hline
+  \hline
+  Total prediction           & 194.2 $\pm$ 11.5  & 147.9 $\pm$ 10.7  
+\\
+  \hline
+  \hline
+  Data                             & 183               & 139     \\
+  \hline
+  \end{tabular}}
+  \label{tab:evt}
+\end{table}
+
+It is only possible to set a one-sided upper limit on the WW$\gamma$ and WZ$\gamma$ cross section with the amount of data
+collected so far. The limit is calculated from the
+event yields in Table~\ref{tab:evt} using a profile likelihood
+asymptotic approximation method~(\cite{CMS-NOTE-2011-005},
+Appendix A.1.3). An observed upper limit of 311~fb is calculated for the inclusive
+cross section at 95\% confidence level(CL), which is about 3.4 times as large as
+ the standard model prediction of 91.6 $\pm$ 21.7 ~fb (with photon $E_{T} >$~30~GeV and $|\eta|<1.44$), calculated with {\sc aMC@NLO}. The 
+expected limit is calculated to be 403~fb (4.4 times the SM) 
+with 1-$\sigma$(2-$\sigma$) band of [223,598]([151,839])~fb.
+

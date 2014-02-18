@@ -1,0 +1,98 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 226819 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/papers/SMP-13-009/trunk/SMP-13-009.tex $
+\RCS$Id: SMP-13-009.tex 226819 2014-02-10 20:22:04Z jdamgov $
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{SMP-13-009} % This is over-written in the CMS environment: useful as preprint no. for export versions
+\newcommand{\mjj}{\ensuremath{m_{jj}}}%
+\renewcommand{\MET}{\ensuremath{{E\!\!\!/}_{\!\mathrm{T}}}\xspace}
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{A search for $WW\gamma$ and $WZ\gamma$ production and anomalous quartic gauge couplings in pp collisions at 
+$\sqrt{s}$ = 8 TeV}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%To mark authors as primary, use the \author* form
+%% \address[neu]{Northeastern University}
+%% \address[fnal]{Fermilab}
+%% \address[cern]{CERN}
+\author[cern]{The CMS Collaboration}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+   A study of the WV$\gamma$ triple vector boson production is presented 
+   based on events containing a W boson decaying to an muon or a electron and a neutrino,
+   a second V (W or Z) boson decaying to two jets, and a photon.
+   The dataset corresponds to an integrated luminosity of 19.3~fb$^{-1}$
+   collected in 2012 with the CMS detector at the LHC in pp collisions at $\sqrt{s}$ = 8~TeV.
+   The cross section is estimated for a final state with photon transverse energy
+   above 30 GeV and with an absolute value of pseudorapidity of less than 1.44. 
+   An upper limit of 311 fb on the cross section for standard model production of the WV$\gamma$ process is obtained at 95\% 
+   confidence level. This is approximately a factor of 3.4 larger than the predictions from next-to-leading order
+   QCD calculations. No evidence of anomalous WW$\gamma\gamma$ or WWZ$\gamma$ quartic gauge boson couplings is found.
+   This paper presents the first experimental limits on the dimension 8 WW$\gamma\gamma$ parameter
+   $f_{T,0}$ and the CP-conserving WWZ$\gamma$ parameters $\kappa_0^W$ and $\kappa_C^W$. Competitive
+   limits are also obtained for the WW$\gamma\gamma$ parameters $a_{0}^{W}$ and $a_{C}^{W}$.
+}
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible and are in plain text:
+% (1) no TeX! -- for \sqrt{s} use sqrt(s) -- this will show with extra quote marks in the draft version but is okay).
+% (2) no %.
+% (3) No curly braces {}.
+\hypersetup{%
+pdfauthor={WWA team},%
+pdftitle={A Search for WWgamma and WZgamma production in pp Collisions at sqrt(s) = 8 TeV.},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+%\tableofcontents
+\newpage
+\input{Introduction}
+\input{aQGCtheory}
+\input{CMSdescription}
+\input{EventSelection}
+\input{Results}
+\input{Conclusions}
+\input{Acknowledgements}
+\clearpage
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+\bibliography{auto_generated}   % will be created by the tdr script.
+
+%%% DO NOT ADD \end{document}!
+

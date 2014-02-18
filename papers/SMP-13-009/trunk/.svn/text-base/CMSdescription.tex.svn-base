@@ -1,0 +1,31 @@
+\section{The CMS detector }
+\label{sec:CMSdet}
+
+The central feature of the Compact Muon Solenoid (CMS) apparatus is a
+superconducting solenoid of 6\unit{m} internal diameter and 13\unit{m} length, providing a
+magnetic field of 3.8\unit{T}. Within the superconducting solenoid
+volume are a silicon pixel and strip tracker, a lead tungstate crystal
+electromagnetic calorimeter (ECAL), and a brass/scintillator hadron
+calorimeter (HCAL). Muons are reconstructed in gas-ionization detectors
+embedded in the steel flux return yoke outside the solenoid. Extensive
+forward calorimetry complements the coverage provided by the barrel
+and endcap detectors.
+
+The CMS experiment uses a right-handed coordinate system, with the origin at the
+nominal interaction point, the $x$ axis pointing to the center of the
+LHC, the $y$ axis pointing up (perpendicular to the LHC plane), and
+the $z$ axis along the counterclockwise beam direction. The polar angle
+$\theta$ is measured from the positive $z$ axis and the azimuthal
+angle $\phi$ is measured in radians in the $x$-$y$ plane. 
+The pseudorapidity $\eta$ is defined as $\eta = -\ln(\tan(\theta/2))$.
+
+The energy resolution for photons with transverse energy ($\ET$) of $60$\GeV varies between 1.1\% and 2.6\% in the ECAL 
+barrel, and from 2.2\% to 5\% in the endcaps ~\cite{Chatrchyan:2013dga}. The HCAL, when combined with the ECAL, measures jets 
+with a resolution $\Delta E/E \approx 100\% / \sqrt{E\,[\GeVns]} \oplus 5\%$~\cite{CMS:2011esa}. To improve
+reconstruction of jets, the tracking and calorimeter information is
+combined using a particle flow (PF) reconstruction technique~\cite{PFT-09-001}. The jet energy resolution 
+amounts typically to 15\% at 10\GeV, 8\% at 100\GeV, and 4\% at 1\TeV, to be 
+compared to about 40\%, 12\%, and 5\% obtained when the calorimeters alone are used for jet clustering.
+
+
+A more detailed description of the CMS detector can be found in Ref.~\cite{Chatrchyan:2008zzk}. 

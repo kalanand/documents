@@ -1,0 +1,64 @@
+\clearpage{}
+\section{Introduction}
+\label{sec:intro}
+
+The standard model (SM) of particle physics provides a good description of the existing 
+high-energy experimental data~\cite{Beringer:1900zz}. The diboson WW and WZ production cross sections have been
+precisely measured at the Large Hadron Collider (LHC) and were found to be in agreement
+with the SM expectation~\cite{CMSdiboson,Chatrchyan:2012bd,Chatrchyan:2013yaa,ATLAS:2012mec,Aad:2012twa}. This paper presents a 
+search for three gauge boson WW$\gamma$ and WZ$\gamma$ (in what follows denoted as WV$\gamma$) production and is an extension of the 
+diboson production measurement presented in Ref. \cite{Chatrchyan:2012bd}, with the additional requirement of an energetic photon 
+in the final state. Previous searches of triple vector boson production, when at
+least two bosons are massive, were performed at LEP~\cite{wwaLEP:1999,Achard:2001eg,Abdallah:2003xn,Heister:2004yd,Schael:2013ita}.
+
+The structure of gauge boson self-interactions emerges
+naturally in the SM from the non-Abelian $SU(2)_{L} \otimes U(1)_{Y}$ gauge
+symmetry. Together with the triple WW$\gamma$ and
+WWZ gauge boson vertices, the SM also predicts the existence of the quartic
+WWWW, WWZZ, WWZ$\gamma$, and WW$\gamma\gamma$ vertices.  The direct
+investigation of gauge boson self-interactions provides a crucial test
+of the gauge structure of the SM and is expected to play a significant 
+role at LHC energies~\cite{Belyaev:1998ih}.  
+
+The study of gauge boson self-interactions may provide evidence of the
+existence of new phenomena at a higher energy
+scale~\cite{aihara1996,Du:2012vh,Fichet:2013ola,Giudice:2007fh}.
+Possible new physics, expressed in a model independent
+way by higher-dimensional effective operators~\cite{500GeVNLC,
+Belanger:1999, Bosonic:2004PRD, Eboli:2006wa,Yang:2012vv,Ye:2013psa}, leads to anomalous
+triple and quartic gauge couplings (AQGC). Both types of vertices are
+included in triple gauge boson production processes. The production of three gauge bosons is more sensitive to the quartic 
+gauge coupling than the diboson channel, which is more suited to measuring the triple gauge coupling. 
+Any deviation of the observed coupling from the SM prediction would indicate new physics.
+Such a deviation would typically manifest itself in an enhanced production cross section, as well as
+changing the shape of the kinematic distributions of the  WV$\gamma$ system.
+A stringent limit on the anomalous WW$\gamma\gamma$ quartic coupling was recently obtained
+via the exclusive two-photon production of W$^+$W$^-$ ~\cite{Chatrchyan:2013foa}.
+
+This paper presents a study of WV$\gamma$ production
+in the semileptonic final state, which includes W($\to\ell\nu$)W($\to
+jj$)$\gamma$ and W($\to\ell\nu$)Z($\to jj$)$\gamma$ processes, with $\ell=e,\mu$.  This
+decay mode is chosen due to the higher branching fraction compared to
+the fully leptonic mode. One characteristic of this decay mode is that
+the two production processes WW$\gamma$ and WZ$\gamma$ cannot be
+clearly differentiated, due to the detector dijet mass resolution
+($\sigma\sim 10$\%), which is comparable to the mass difference between
+the W and Z bosons. Since the WW$\gamma$ and WZ$\gamma$ processes share the same dominant background 
+(W($\to\ell\nu$)$\gamma$+jets where the dijet invariant mass falls in the W/Z mass window) they are treated as a single 
+combined signal in the analysis.
+
+The next section provides a brief description of the theoretical
+framework selected for this analysis. Section~\ref{sec:CMSdet}
+describes the CMS detector, and section~\ref{sec:mc} the selection of
+event generators and simulators used to create simulation
+samples. Section~\ref{sec:recosel} describes how data events are
+selected and how physics objects within those events are
+reconstructed. Section~\ref{sec:BackgroundModeling} details how various
+backgrounds are modeled, including the use of a dijet invariant mass
+fit to extract the main background. Section~\ref{sec:Syst} lists the
+systematic uncertainties considered in the
+analysis. Section~\ref{sec:xsec} describes the ``cut-and-count''
+WV$\gamma$ cross section measurement. Section~\ref{sec:limits_pT}
+describes the use of the photon $E_T$ distribution to set limits on
+anomalous couplings. Section~\ref{sec:summary} summarizes the results
+of our investigation.
