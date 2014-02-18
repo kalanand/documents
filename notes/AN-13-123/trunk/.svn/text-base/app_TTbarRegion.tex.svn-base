@@ -1,0 +1,60 @@
+\section{Top Control Region Cross Check}
+\label{app:ttbar}
+
+Other variables distributions have been cross checked in the top control sample. We find reasonable agreement between Top MC simulation and Data distribution.
+%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb] 
+  {\centering
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/mu_EWK_W_2jets_l_pt_TTbarControlPlots_EWKW2jets.pdf}
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/el_EWK_W_2jets_l_pt_TTbarControlPlots_met_30_WmT_30_EWKW2jets.pdf}
+    \caption{The lepton $p_{T}$ distribution in the semileptonic top sample: muons (left) and electrons (right).}
+    \label{fig:topw:lpt}}
+\end{figure}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb] 
+  {\centering
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/mu_event_met_pfmet_TTbarControlPlots_EWKW2jets.pdf}
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/el_event_met_pfmet_TTbarControlPlots_met_30_WmT_30_EWKW2jets.pdf}
+    \caption{The MET distribution in the semileptonic top sample: muons (left) and electrons (right).}
+    \label{fig:topw:met}}
+\end{figure}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb] 
+  {\centering
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/mu_EWK_W_2jets_tagjet1_pt_TTbarControlPlots_EWKW2jets.pdf}
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/el_EWK_W_2jets_tagjet1_pt_TTbarControlPlots_met_30_WmT_30_EWKW2jets.pdf}
+    \caption{The leading jet $p_{T}$ distribution in the semileptonic top sample: muons (left) and electrons (right).}
+    \label{fig:topw:jet1pt}}
+\end{figure}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb] 
+  {\centering
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/mu_EWK_W_2jets_tagjet2_pt_TTbarControlPlots_EWKW2jets.pdf}
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/el_EWK_W_2jets_tagjet2_pt_TTbarControlPlots_met_30_WmT_30_EWKW2jets.pdf}
+    \caption{The second leading jet $p_{T}$ distribution in the semileptonic top sample: muons (left) and electrons (right).}
+    \label{fig:topw:jet2pt}}
+\end{figure}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb] 
+  {\centering
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/mu_EWK_W_2jets_ttbar_firstsecondmjj_TTbarControlPlots_logy_EWKW2jets.pdf}
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/el_EWK_W_2jets_ttbar_firstsecondmjj_TTbarControlPlots_met_30_WmT_30_logy_EWKW2jets.pdf}
+    \caption{The invariant mass distribution(semi-Log scale) of the leading jet and second leading jet in the semileptonic top sample: muons (left) and electrons (right).}
+    \label{fig:topw:massj1j2logy}}
+\end{figure}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htb] 
+  {\centering
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/mu_EWK_W_2jets_ttbar_thirdfourthmjj_TTbarControlPlots_EWKW2jets.pdf}
+    \includegraphics[width=0.49\textwidth]{figs/topwjes/el_EWK_W_2jets_ttbar_thirdfourthmjj_TTbarControlPlots_met_30_WmT_30_EWKW2jets.pdf}
+    \caption{The invariant mass distribution of the third leading jet and fouth leading jet in the semileptonic top sample: muons (left) and electrons (right).}
+    \label{fig:topw:massj3j4}}
+\end{figure}
+%%%%%%%%%%%%%%
+
+\clearpage

@@ -1,0 +1,234 @@
+This analysis uses standard physics objects provided by the PAT framework 
+and approved by the relevant POGs.  This section describes the reconstruction,
+identification, and selection of electrons, muons, jets, and
+missing transverse energy. 
+Events are reconstructed using the particle-flow reconstruction algorithm~\cite{particleflow},
+which attempts to reconstruct all stable particles in an event by combining information from
+all subdetectors. The algorithm categorizes all particles into five types: muons,
+electrons, photons, charged and neutral hadrons. The resulting particle flow candidates are passed
+to each jet clustering algorithm to create "particle flow jets".
+ Since pile-up affects all of these physics objects,
+we begin with a description of the primary vertex selection and the methods 
+applied to mitigate the effects of pile-up.
+
+\subsection{Primary vertex selection and pile-up treatment}
+
+Primary vertices are identified using tracks clustered with the Deterministic
+Annealing algorithm~\cite{PVDA}.  Reconstructed primary vertices are required to
+have a $z$ position within $24\cm$ of the nominal detector center, a radial
+position within $2\cm$ of the beamspot, and the vertex fit must include more 
+than four degrees of freedom.  The primary vertex with the largest value of
+$\sum_i {\pt}_i^2$ is selected, where ${\pt}_i$ is the transverse momentum of 
+the $i$th track in the vertex.
+
+The 2011 data sample contains a significant number of additional interactions 
+per bunch crossing, an effect known as pile-up (PU).  The average number
+of PU interactions in each triggered event is roughly given by the average number 
+of reconstructed primary vertices, which was a little less than six for the first 
+$2\fbinv$ of data collected, increasing to well over ten for the later running.  
+Over the course of 2011 LHC operation, in-time PU as well as out-of-time pile-up
+increased.  Figure~\ref{fig:PVreweight} shows the distribution of primary vertices
+in Z$(\mu\mu)$+ jet  events.
+
+PU affects jet momentum reconstruction, and therefore the reconstruction of the jet 
+mass.  It also affects the MET reconstruction, 
+lepton isolation and b-tagging.  There are two distinct approaches to address all these 
+effects (apart from MET):
+\begin{itemize}
+ \item {\bf PFnoPU}: also known as Charged Hadron Subtraction (CHS), 
+       PFPU is an algorithm embedded in the PF2PAT processing chain that attempts to 
+       filter all charged hadrons that do not appear to originate from the primary 
+       interaction.  This approach is very effective but only works in the pseudorapidity 
+       region covered by the Tracker, and only for in-time PU.  Algorithms for tagging b 
+       jets are not impacted, since they apply their own track pre-filtering that is also 
+       designed to be PU-resistant.
+ \item {\bf Fastjet}: is an external software package from which CMSSW takes virtually 
+       all its jet reconstruction services~\cite{FastJet}.  In particular it provides the 
+       means to calculate the momentum density per unit area $\rho$ due to PU for each 
+       event, which can be used to subtract the contamination of jets and lepton isolation 
+       cones based on their respective areas.  These methods are therefore referred 
+       to as ''Fastjet Subtraction.'' 
+\end{itemize}
+Ideally, charged hadrons from PU interactions are filtered from the event first before
+the application of Fastjet. In this analysis, both the PFnoPU and Fastjet Subtraction 
+methods are applied consistently in the reconstruction and identification of jets,
+and in the calculation of lepton isolation.
+
+The standard reweighting technique~\cite{PUreweight} is used in this analysis, with
+different weighting applied for 2011A and 2011B.  We use {\tt Fall 11} Monte Carlo, which
+has a pile-up profile closer to that in the full data.
+%A variation of the mean of the measured PU distribution by $\pm 0.5$ would 
+%yield a reasonable systematic uncertainty of that measurement, and such a variation 
+%could potentially cover all systematic uncertainties of the analysis due to PU, after 
+%appropriate techniques were applied and validated to correct physics objects for 
+%PU effects.
+
+
+\subsection{Electron selection}
+\label{sec:electron_cuts}
+Electrons are reconstructed using a gaussian sum 
+filter (GSF) algorithm \cite{CMS-PAS-EGM-10-004},
+and are required to pass electron ID cuts according 
+to the simple cut-based electron ID~\cite{simplecutbasedelectronid}, 
+with the ``VBTF Working Point 95' ($Z(ee)$) or ``VBTF Working Point 70'' ($W(e\nu)$). 
+The GSF algorithm accounts for possible energy loss due to
+bremsstrahlung in the tracker layers.
+The energy of an electron candidate with $\et>30~\gev$ is essentially
+determined by the ECAL cluster energy, while its momentum direction
+is determined by that of the associated track.
+The simple cut based electron ID relies on three shower
+shape variables with different cut values for the barrel and
+the endcap regions. The three variables are:
+%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item $\sigma_{i\eta i\eta}$, the supercluster $\eta$ width.
+\item $\eta_{\mathrm{SC}} - \eta_{\mathrm{trk}}$: Difference between
+      the $\eta$ of the supercluster (SC) and the $\eta$ of the track,
+      extrapolated from the vertex.
+\item $\phi_{\mathrm{SC}} - \phi_{\mathrm{trk}}$: Difference between
+      the $\phi$ of the supercluster and the $\phi$ of the track,
+      extrapolated from the vertex.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%
+The cut values used in the analysis can be found in
+Table~\ref{tab:EleID}.
+%%%%%%%%%%%%%%%%%%%
+\begin{table}[htbp!]
+\begin{center}
+{\footnotesize
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+ID Variable & WP70 Barrel & WP70 Endcaps & WP95 Barrel & WP95 Endcaps  \\
+\hline
+$\sigma_{i\eta i\eta}$ & 0.01 & 0.03 & 0.01 & 0.03 \\
+$\phi_{\mathrm{SC}} - \phi_{\mathrm{trk}}$ & 0.03 & 0.02 & 0.8 & 0.7 \\
+$\eta_{\mathrm{SC}} - \eta_{\mathrm{trk}}$ & 0.004 & 0.005 & 0.007 & 0.01 \\
+\hline
+\end{tabular}
+\caption[.]{\label{tab:EleID} Cut values for electron identification
+variables for VBTF Working Point (WP) 70 (barrel and endcap), as used
+for the $W(e\nu)$ electron selection, and VBTF Working Point (WP) 95
+(barrel and endcap), as used in the $Z(ee)$ electron selection.}}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%%%
+
+Additionally, we require
+%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item Electron $E_\mathrm{T} > 30 (20),\mathrm{GeV}$ for $W(e\nu)$ ($Z(ee)$).
+\item Pseudorapidity $|\eta| < 2.5$. There is an exclusion range due
+        to the ECAL barrel-endcap transition region, defined by
+        $1.4442 < |\eta_{\mathrm{sc}}| < 1.566$, where
+        $\eta_{\mathrm{sc}}$ is the pseudorapidity of the ECAL
+        supercluster.
+\item Impact parameter: We cut on the absolute value of the impact
+       parameter calculated with respect to the average beamspot. We
+       require:
+\begin{equation*}
+ d_0(\mathrm{Bsp}) < 0.02\,\mathrm{cm}.    
+\end{equation*}
+\item The selected electron candidates have to be isolated simultaneously in
+the tracker, and in the electromagnetic and hadronic calorimters.  Combined
+relative isolation is defined as
+%%%
+\begin{equation*}
+\mathrm{RelIso_{\mathrm{Comb}}} = \frac{I_{\mathrm{Trk}}+I_{\mathrm{EM}}+I_{\mathrm{had}}}{E_\mathrm{T}}.
+\end{equation*} 
+%%%
+The electron candidate is required to have 
+$\mathrm{RelIso_{\mathrm{Comb}}} < 0.05$ in order 
+to be considered isolated. 
+A pile-up offset subtraction in the isolation cone 
+using fastjet algorithm \cite{FastJetPUSubtraction} is applied.
+\item 
+In order to reject events in which the electron candidate actually
+originates from a conversion of a photon into an $e^{+}e^{-}$ pair, we
+require the number of missed inner tracker layers of the electron
+track to be exactly zero (i.e. there are no missed layers before the
+first hit of the electron track from the beamline). In addition, we
+reject any event in which the selected electron is flagged as a
+conversion, \textit{i.e.}, an electron that has a 
+distance of the partner track $|$\texttt{dist}$|$ $< 0.02$~mm and an
+opening angle $|$\texttt{dcot}$|$ $< 0.02$~\cite{ConversionRejection}.
+
+Different transverse momentum and id cuts are applied to the electrons from $W \to e\nu$ and $Z \to e^+e^-$ candidates in order to apply similar or tighter selection crtiera w.r.t. the online one. 
+We apply a $p_T$ cut of 80 GeV for $W \to e\nu$ + jet events, and we require the WP70 id selection criteria. 
+ The very high offline threshold on the eletron momentum is motivated by the criteria to avoid turn-off effects in the trigger efficiency for the single electron trigger. 
+For $Z \to e^+e^-$, we require $p_T>20 $ GeV and the WP95 id selection.   
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Muon selection}
+\label{sec:muon_cuts}
+Muons are obtained from the CMS reconstruction \cite{MUONPAS}.
+Muon candidates are identified by two different 
+algorithms~\cite{MUONPAS}: one proceeds from the inner tracker outwards, 
+the other one starts from tracks measured in the muon chambers and matches 
+and combines them with tracks reconstructed in the inner tracker. 
+Muons from decays in flight of hadrons and punch-through particles are 
+reduced by applying a cut on $\chi^2/dof$
+of a global fit including tracker and muon detector hits.
+In order to ensure a precise estimate of the momentum and impact parameter
+only tracks with more than 10 hits in the inner tracker and at least 
+one hit in the pixel detector are used.
+We require hits in at least two muon detection layers in the measurement,
+to ensure a good quality momentum estimate at the trigger level, and
+to suppress further any remaining fake muon candidates.
+Cosmic muons are rejected by imposing a maximum allowed transverse impact parameter 
+distance to the beam spot position.
+These criteria are summarized below:
+%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item The muon candidate is reconstructed both as a global muon and
+as a tracker muon.
+\item The number of hits of the muon track in the silicon tracker has
+to be $N_{\mathrm{Hits}} > 10$.
+\item Number of pixel hits of the Tracker track $\ge 1$;
+\item Number of muon hits of the Global track $\ge 2$;
+\item Normalized $\chi^{2}$ of the Global track $< 10.0$.
+\item Muon $p_{\mathrm{T}} > 30\,\mathrm{GeV}$.
+\item Pseudorapidity $|\eta| < 2.1$.
+\item Impact parameter: We cut on the absolute value of the impact
+parameter calculated with respect to the beamspot. We require:
+\begin{equation*}
+ d_0(\mathrm{Bsp}) < 0.02\,\mathrm{cm}.
+\end{equation*}
+\item In order to make sure that the selected muon and the selected
+jets come from the same hard interaction and not from pile up events,
+we require that the $z$ coordinate of the PV of the event and the $z$
+coordinate of the muon's inner track vertex lie within a distance of
+less than 1~cm.
+\item The selected muon candidates also have to be isolated.
+We require the muon to be isolated simultaneusly in the
+tracker, and in the electromagnetic and hadronic calorimeters.  
+This ``combined relative isolation'' is defined as
+\begin{equation*}
+\mathrm{RelIso_{\mathrm{Comb}}} = \frac{I_{\mathrm{Trk}}+I_{\mathrm{EM}}+I_{\mathrm{had}}}{p_\mathrm{T}}.
+\end{equation*} 
+The muon candidate is required to have
+$\mathrm{RelIso_{\mathrm{Comb}}} < 0.1$ in order to be considered
+isolated.
+\end{itemize}
+
+Tighter isolation is not necessary in the muon mode, as the QCD background is
+observed to be smaller than that found in $W(e\nu)$ mode.
+The offline $p_T$ cut is applied to both $W \to \mu\nu$ and $Z \to \mu^+\mu^-$ plus jet events.
+
+%%%%%%%%%%%%%%%%%%%
+
+
+
+\subsection{Missing transverse energy}
+
+The use of missing transverse energy is central to the analyses presented in this
+note.  It is critical in the reconstruction of the \WtoLN\ decays, and
+is used in the $Z$+jet channels to increase the purity of the selection.
+ For the offline analysis, missing transverse 
+energy is computed from the list of particle-flow objects with the method described 
+in~\cite{CMS-PAS-JME-10-003}.  The vector \VEtmiss\ is calculated as the negative of 
+the vectorial sum of transverse momenta of all particle-flow objects identified in the 
+event, and the magnitude of this vector is referred to as pfMET.  
+

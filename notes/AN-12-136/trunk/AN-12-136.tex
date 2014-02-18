@@ -1,0 +1,160 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 137744 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/notes/AN-12-136/trunk/AN-12-136.tex $
+\RCS$Id: AN-12-136.tex 137744 2012-07-18 02:41:05Z srappocc $
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\input{ptdr-definitions} 
+\cmsNoteHeader{AN-12-136} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Measurement of jet mass in dijet events}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+\address[fnal]{Fermilab}
+\address[cern]{CERN}
+\address[jhu]{Johns Hopkins University}
+\address[davis]{University of California, Davis}
+\address[princeton]{Princeton University}
+
+
+
+\author[jhu]{Salvatore Rappoccio}
+\author[fnal]{Nhan Tran}
+\author[fnal]{Kalanand Mishra}
+\author[princeton]{David Lopes-Pegna}
+
+
+\input{numbers}
+
+%--- Set here, reverse in the PAS:
+\newcommand{\ifnpas}{\iftrue}
+\newcommand{\ifpas}{\iffalse}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+A measurement of the jet mass in dijet events is presented
+with \intlumi of data collected at a center of mass energy of
+7 TeV by the CMS experiment at the LHC. The measurement is
+corrected to the particle level, and compared to predictions
+from several theoretical models. The effect of three different 
+jet grooming techniques on the jet mass are investigated: 
+filtering, trimming, and pruning. 
+}
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible and are in plain text (no TeX! -- for \sqrt{s} use sqrt(s) -- this will show with extra quote marks in the draft version but is okay).
+
+\hypersetup{%
+pdfauthor={Salvatore Rappoccio, Nhan Tran, Kalanand Mishra, David Lopes-Pegna},%
+pdftitle={Measurement of jet mass in dijet events},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+\ifnpas
+
+{\bf Changes since preapproval}
+
+\begin{itemize}
+\item We switched the trigger strategy from dijet mass to average pt
+  in order to avoid having average pt bins with contributions from
+  samples with large weights for small numbers of events, which avoids
+  unphysical fluctuations. 
+\item We changed from an unphysically flat-weighted pt spectrum
+for the response derivation, to using the pt-weighted spectrum.
+This is to remove several biases in the jet mass distribution
+at lower pt. 
+\item We added a 1\% flat systematic uncertainty to the AK7 JES
+uncertainties for groomed jets to account for data/MC discrepancy
+of the W mass in a semileptonic top sample. 
+\item We now explicitly correct for the unfolding bias with pythia6
+and take the correction as an additional uncertainty. 
+\end{itemize}
+
+\fi
+
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+\section{Introduction}
+\input{intro.tex}
+\input{grooming.tex}
+
+\section{CMS Detector}
+\input{cmsDetector_pas.tex}
+
+\section{Data, trigger, simulation, and event selection}
+\input{dataSampleAndEventSelection.tex}
+\clearpage
+
+\section{Data/MC raw comparisons}
+\input{rawDataMCComparisons.tex}
+\clearpage
+
+\section{Unfolding procedure}
+\input{unfolding.tex}
+\clearpage
+
+\section{Systematic uncertainties}
+\input{systematics}
+\clearpage
+
+
+\section{Results}
+\input{results}
+\clearpage
+
+%\section{Jet algorithm comparisons in data}
+
+
+\section{Performance versus pile-up}
+\input{pileup}
+
+\section{Summary}
+\input{summary}
+
+\bibliography{auto_generated}
+
+\appendix
+
+\section{Raw comparison figures} 
+\input{rawComparisonFigures}
+\clearpage
+
+
+\section{Unfolded figures}
+
+
+\input{unfoldedFigures}
+\clearpage

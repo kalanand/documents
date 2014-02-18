@@ -1,0 +1,30 @@
+ The variables most often used in analyses involving jets are usually the jet direction and the momentum transverse to the beam ($p_T$). 
+However, being  the jets composite objects, their masses and internal substructure contain additional information.
+One strong motivation for studies of the internal substructure of jets is that at the LHC particles such as $W$ and $Z$ bosons and top quarks are produced abundantly with significant Lorentz boosts. The same may also be true for new particles produced at the LHC. When
+ such particles decay hadronically, the products tend to be collimated in a small area of the detector. For sufficiently large boosts, the resulting hadrons can be clustered into a single jet. Substructure studies offer a technique to extract these single jets of interest from the overall jet background. Such techniques have been found promising for boosted W decay identification, Higgs searches and boosted top identification amongst others \cite{jetsub}. However, many of these promising approaches have never been tested with collision data and rely on the assumption that the internal structure of jets is well modelled by parton-shower Monte Carlo approaches. It is therefore important to measure some of the relevant variables in a sample of jets to verify the expected features. First results on a QCD enriched samples of boosted jets have been presented by ATLAS \cite{atlasJS}. We present here similar studies on the jet mass and substructure in samples of di-jet and boosted $V$ + jet events, where $V=W, Z$ using a data sample corresponding to an integrated luminosity of 5.0 fb$^{-1}$, collected in 2011 by the Compact Muon Solenoid (CMS) experiment at a center-of-mass energy of 7 TeV.
+ 
+The observable we measure is the differential cross section with respect to the jet mass,
+corrected for detector inefficiency and resolution effects.
+
+For the $V+$jets analysis, this is a differential distribution 
+in %the leading-$\pt$ jet's transverse momentum ($\pt$), and 
+the jet mass of the leading-$\pt$ jet: 
+
+\begin{equation}
+\label{eq:dsigmadmjetvjets}
+\frac{d\sigma}{dm_J}
+\end{equation}
+
+
+For the dijet analysis, this is a double differential distribution 
+in the average transverse momentum ($\pt$) of
+the highest two $\pt$ jets ($\pt^{AVG} = ({\pt}_1 + {\pt}_2) / 2$), and 
+the average jet mass of the highest two $\pt$ jets ($m_J^{AVG} = ({m_J}_1 + {m_J}_2) / 2$): 
+
+\begin{equation}
+\label{eq:dsigmadmjet}
+\frac{d\sigma}{dm_J^{AVG} d\pt^{AVG}}
+\end{equation}
+
+This paper is organized as follows: after a brief description of the CMS detector, and the data and Monte Carlo (MC) simulated samples used, we give details on the online and offline selection, focusing in particular on the jet clustering algorithms studied. We then discuss the unfolding procedure being applied on the  jet mass spectra, and the uncertainties considered. In sections~\ref{sec:vjetresults}  and ~\ref{sec:dijetresults} we present the results for the $V$+jet and di-jet analyses. Some final observations and remarks on the results presented are included in section~\ref{sec:summary}.   
+ 

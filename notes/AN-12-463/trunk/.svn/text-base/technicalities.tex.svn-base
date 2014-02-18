@@ -1,0 +1,156 @@
+\section{Datasets}
+\label{sec:technicalities}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\subsection{Samples used for the analysis}
+
+The data sample used in this analysis was recorded by the CMS experiment in 2012.
+Only certified runs and luminosity sections are considered, which means that a good functioning
+of all CMS sub-detectors is required. The total statistics analyzed correspond to an integrated
+luminosity of 19.3~\fbinv. % \LUMI{}.
+
+The dataset used for the analysis and the corresponding run ranges are
+listed in Table~\ref{tab:datasets}.  As indicated by the dataset
+names, they were collected using high-level single lepton triggers: a
+single muon trigger with a \pt threshold of 24~GeV and a single
+electron trigger with a \pt threshold of 27~GeV. All samples have
+been processed using a \texttt{CMSSW\_5\_3\_2} release version.
+
+\begin{table}[htb]
+  \begin{center}
+  \begin{tabular}{r|r}
+  \hline
+  Dataset name & Run range \\
+  \hline
+  /SingleMu/Run2012A-13Jul2012-v1/AOD         & 190456-193621  \\
+  /SingleElectron/Run2012A-13Jul2012-v1/AOD   &            \\ 
+  \hline
+  /SingleMu/Run2012A-recover-06Aug2012-v1/AOD        &  190782-190949  \\
+  /SingleElectron/Run2012A-recover-06Aug2012-v1/AOD  &     \\
+  \hline
+  /SingleMu/Run2012B-13Jul2012-v1/AOD         &  193833-196531  \\
+  /SingleElectron/Run2012B-13Jul2012-v1/AOD   &         \\
+  \hline
+  /SingleMu/Run2012C-24Aug2012-v1/AOD       & 198022-198913 \\
+  /SingleElectron/Run2012C-24Aug2012-v1/AOD & \\
+  \hline
+  /SingleMu/Run2012C-PromptReco-v2/AOD       & 198934-203746 \\
+  /SingleElectron/Run2012C-PromptReco-v2/AOD & \\
+  \hline
+  /SingleMu/Run2012D-PromptReco-v1/AOD       & 203894-208686 \\
+  /SingleElectron/Run2012D-PromptReco-v1/AOD & \\
+  \hline
+  \hline
+  \end{tabular}
+  \end{center}
+  \caption{Summary of data samples used and run ranges of applicability.}
+  \label{tab:datasets}
+\end{table}%
+
+\subsection{Monte Carlo samples}
+
+Standard Model Higgs boson samples, 
+as well as samples for a large variety of electroweak and QCD-induced background sources, 
+have been generated and showered using different Monte Carlo generators.
+To better reproduce the actual data-taking conditions, where there is a significant probability
+that more than two protons interact in the same bunch crossing, pile-up (PU) events are
+added on top of the hard scattering. Particle interactions with the detector were reproduced through
+a detailed description of CMS.
+
+The POWHEG-BOX generator
+\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Nason:2009ai} has
+been used to produce signal events, and the showering has been
+performed with PYTHIA6 \cite{pythia}. For this analysis, samples with
+Higgs mass hypotheses ranging from 170 to 600\GeVcc have been
+used.
+The background samples used for the studies are listed in
+Table~\ref{tab:MCsamples}.
+
+All MC samples considered in this analysis come from the official
+``Summer12\_53X'' production.  Events from Summer12 samples were
+reconstructed making use of a \texttt{CMSSW\_5\_3\_X} release version.
+The simulated samples are reweighted to represent the distribution of
+number of pp interactions per bunch crossing (pile-up) as measured in
+the data.
+
+\begin{sidewaystable}[htb]
+  \begin{center}
+    \begin{tabular}{|l|} 
+      \hline
+%%      sample & cross-section (pb) \\
+%%      \hline
+      /WJetsToLNu\_TuneZ2Star\_8TeV-madgraph-tarball/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /WW\_TuneZ2star\_8TeV\_pythia6\_tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /WZ\_TuneZ2star\_8TeV\_pythia6\_tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /TTJets\_MassiveBinDECAY\_TuneZ2star\_8TeV-madgraph-tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /DYJetsToLL\_M-50\_TuneZ2Star\_8TeV-madgraph-tarball/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+%%      /QCD\_Pt\_20\_MuEnrichedPt\_15\_TuneZ2star\_8TeV\_pythia6/Summer12-PU\_S7\_START52\_V9-v1/AODSIM   \\
+%%      /QCD\_Pt\_20\_30\_EMEnriched\_TuneZ2star\_8TeV\_pythia6/Summer12-PU\_S7\_START52\_V9-v1/AODSIM   \\
+%%      /QCD\_Pt\_30\_80\_EMEnriched\_TuneZ2star\_8TeV\_pythia6/Summer12-PU\_S7\_START52\_V9-v1/AODSIM   \\
+%%      /QCD\_Pt\_80\_170\_EMEnriched\_TuneZ2star\_8TeV\_pythia6/Summer12-PU\_S7\_START52\_V9-v1/AODSIM   \\
+%%     /QCD\_Pt\_170\_250\_EMEnriched\_TuneZ2star\_8TeV\_pythia6/Summer12-PU\_S7\_START52\_V9-v1/AODSIM   \\
+%%      /QCD\_Pt\_250\_350\_EMEnriched\_TuneZ2star\_8TeV\_pythia6/Summer12-PU\_S7\_START52\_V9-v1/AODSIM   \\
+%%      /QCD\_Pt\_350\_EMEnriched\_TuneZ2star\_8TeV\_pythia6/Summer12-PU\_S7\_START52\_V9-v1/AODSIM   \\
+      /T\_t-channel\_TuneZ2star\_8TeV-powheg-tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /T\_s-channel\_TuneZ2star\_8TeV-powheg-tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /T\_tW-channel-DR\_TuneZ2star\_8TeV-powheg-tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /Tbar\_t-channel\_TuneZ2star\_8TeV-powheg-tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /Tbar\_tW-channel-DR\_TuneZ2star\_8TeV-powheg-tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      /Tbar\_s-channel\_TuneZ2star\_8TeV-powheg-tauola/Summer12\_DR53X-PU\_S10\_START53\_V7A-v1/AODSIM \\
+      \hline 
+{\footnotesize /GluGluToHToWWToLAndTauNuQQ\_M-170\_8TeV-powheg-pythia6/ajkumar-SQWaT\_PAT\_53X\_Summer12\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /LQ-ggh180\_SIM/zixu-SQWaT\_PAT\_53X\_ggH180\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /LQ-ggh190\_SIM/zixu-SQWaT\_PAT\_53X\_ggH190\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /GluGluToHToWWToLAndTauNuQQ\_M-200\_8TeV-powheg-pythia6/shuai-SQWaT\_PAT\_53X\_ggH200-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /LQ-ggh250\_SIM-new/shuai-SQWaT\_PAT\_53X\_ggH250-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /GluGluToHToWWToLAndTauNuQQ\_M-300\_8TeV-powheg-pythia6/shuai-SQWaT\_PAT\_53X\_ggH300-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /GluGluToHToWWToLAndTauNuQQ\_M-350\_8TeV-powheg-pythia6/shuai-SQWaT\_PAT\_53X\_ggH350\_central-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /LQ-ggh400\_SIM-new/shuai-SQWaT\_PAT\_53X\_ggH400-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /GluGluToHToWWToLAndTauNuQQ\_M-450\_8TeV-powheg-pythia6/zixu-SQWaT\_PAT\_53X\_ggH450\_v5-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /LQ-ggh500\_SIM-new/shuai-SQWaT\_PAT\_53X\_ggH500-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /GluGluToHToWWToLAndTauNuQQ\_M-550\_8TeV-powheg-pythia6/shuai-SQWaT\_PAT\_53X\_ggH550-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /LQ-ggh600\_GEN\_53X/ntran-SQWaT\_PAT\_ggH600\_53x-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-170\_8TeV-powheg-pythia6/dimatteo-SQWaT\_PAT\_53X\_Summer12\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-180\_8TeV-powheg-pythia6/dimatteo-SQWaT\_PAT\_53X\_Summer12\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-190\_8TeV-powheg-pythia6/dimatteo-SQWaT\_PAT\_53X\_Summer12\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-200\_8TeV-powheg-pythia6/dimatteo-SQWaT\_PAT\_53X\_Summer12\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-250\_8TeV-powheg-pythia6/dimatteo-SQWaT\_PAT\_53X\_Summer12\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-300\_8TeV-powheg-pythia6/weizou-SQWaT\_PAT\_53X\_Summer12\_v2-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-350\_8TeV-powheg-pythia6/weizou-SQWaT\_PAT\_53X\_Summer12\_v2-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-400\_8TeV-powheg-pythia6/dimatteo-SQWaT\_PAT\_53X\_Summer12\_v1-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-450\_8TeV-powheg-pythia6/weizou-SQWaT\_PAT\_53X\_Summer12\_v2-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-500\_8TeV-powheg-pythia6/weizou-SQWaT\_PAT\_53X\_Summer12\_v2-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-550\_8TeV-powheg-pythia6/weizou-SQWaT\_PAT\_53X\_Summer12\_v2-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+{\footnotesize /VBF\_HToWWToLAndTauNuQQ\_M-600\_8TeV-powheg-pythia6/weizou-SQWaT\_PAT\_53X\_Summer12\_v2-829f288d768dd564418efaaf3a8ab9aa/USER} \\
+
+%%      /LQ-ggh700\_GEN\_53X/shuai-SQWaT\_PAT\_53X\_ggH700-829f288d768dd564418efaaf3a8ab9aa/USER \\
+%%      /GluGluToHToWWToLAndTauNuQQ\_M-800\_8TeV-powheg-pythia6/zixu-SQWaT\_PAT\_53X\_ggH800-829f288d768dd564418efaaf3a8ab9aa/USER \\
+%%      /GluGluToHToWWToLAndTauNuQQ\_M-900\_8TeV-powheg-pythia6/shuai-SQWaT\_PAT\_53X\_ggH900-829f288d768dd564418efaaf3a8ab9aa/USER \\
+%%      /GluGluToHToWWToLAndTauNuQQ\_M-1000\_8TeV-powheg-pythia6/zixu-SQWaT\_PAT\_53X\_ggH1000-829f288d768dd564418efaaf3a8ab9aa/USER \\
+
+%%      /GluGluToHToWWToLNuQQ\_M-*\_7TeV-powheg-pythia6/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM  \\
+%%      /GluGluToHToWWToTauNuQQ\_M-*\_7TeV-powheg-pythia6/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM  \\
+%%      /VBF\_HToWWToLNuQQ\_M-*\_7TeV-powheg-pythia6/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM \\
+%%
+     Higgs signal samples for various masses.  \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Summary of Monte Carlo samples used in the analysis.}
+  \label{tab:MCsamples}
+\end{sidewaystable}
+
+\subsection{Signal sample weighting}
+
+To correct the Higgs line shape generated with POWHEG,  we apply a
+complex pole reweighting scheme~\cite{Kauer:2012hd,Passarino:2012ri,Goria:2011wa}.
+This give each signal event a new weight to correct for deficiencies
+in the POWHEG generation.  These weights are cross-section neutral and
+computed on an event by event basis for the signal MC samples only.
+
+We also correct for the effect of interference between the signal and
+the SM $gg \to WW$ production process. This effect is large for
+$gg\to H\to WW$, and grows with Higgs mass. Appendix~\ref{sec:HHIntf}
+describes in further detail the reweighting procedure for this effect.
+
+\clearpage

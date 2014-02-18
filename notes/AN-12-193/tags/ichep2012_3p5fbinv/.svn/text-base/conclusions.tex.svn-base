@@ -1,0 +1,16 @@
+\section{Conclusions}
+\label{sec:conclusions}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+This study presents the search for a Standard Model Higgs boson, 
+in its decay into two W bosons, 
+out of which one decays hadronically and the other one decays leptonically.
+The major background that contaminates the signal region is due to W+jets, 
+and it is measured in a data-driven way from sidebands in the invariant mass
+of the hadronically decaying W.
+This allows us to keep the relative systematic uncertainties, 
+which are dominated by the background shape particularly at low mass, to within
+a few percent for each Higgs mass point. 
+Using 8~TeV data, we exclude the Standard Model 
+Higgs boson in the mass range 260--390~GeV, to a confidence level
+of 95\%. When combined with 7~TeV data, the exclusion range expands to 240-450~GeV.

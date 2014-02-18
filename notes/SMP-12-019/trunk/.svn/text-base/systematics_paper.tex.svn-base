@@ -1,0 +1,48 @@
+\label{sec:systematics}
+
+The systematic uncertainties are estimated by modifying the unfolding
+response matrix according to the variation in question, and the
+systematically-shifted unfolded jet mass is compared to the nominal
+value with \PYTHIA. The difference is taken as the uncertainty.
+
+
+The experimental uncertainties that can affect the unfolding procedure
+include the jet energy scale (JES),
+jet energy resolution (JER), and jet angular resolution (JAR). 
+The jet energy scale is estimated by raising and lowering the jet
+energy by the measured uncertainty as a function of jet $\pt$ and
+$\eta$ from Ref.~\cite{citeJEC}, typically around 1-2\% for the jets
+considered in this analysis. An additional $\pt$- and $\eta$-
+independent 1\% uncertainty is included as additional 
+uncertainty, to account for differences observed between the measured
+$\wboson$ mass in boosted jets in a $\ttbar$-enriched sample, as in
+Ref.~\cite{EXO-11-006}. 
+
+The jet energy and angular resolution are estimated by increasing and decreasing the jet energy, 
+$\eta$ and $\phi$ resolution by 10\%.
+The nominal value chosen is 10\%, motivated by the observed difference between data and simulation 
+in the jet energy resolution~\cite{citeJEC}, so the up and down variations 
+correspond to 20\% and 0\% additional smearing with respect to the Monte Carlo, respectively. 
+We also estimate an uncertainty associated with the pile-up simulated
+in the MC, estimated by increasing and decreasing the minimum bias
+cross section by 8\%. 
+
+As theoretical uncertainty due to the parton showering model, we
+conservatively estimate it by comparing unfolded \MADGRAPH to unfolded
+\HERWIG and assigning the difference as a systematic uncertainty.
+
+In the dijet analysis, there is some misassignment from other than dijet topologies
+into our dijet selection. This causes a bias in the unfolding procedure which
+is enhanced at low transverse momentum. This bias is accounted for with MC,
+and this correction is also taken as an additional systematic uncertainty.
+This misassignment is not present in the V+jets case. 
+
+
+In the $\pt$ bins $220-300$ \GeV and $300-450$ \GeV, the region below $m_J < 50$
+\GeV is dominated by the unfolding bias uncertainty, around
+50-100\%. Above $mjet_J > 50$ \GeV, the JES, JER, JAR, and pile-up
+uncertainties contribute roughly 10\% each. For the $\pt$ bins between
+$450-1000$ \GeV, the uncertainties are dominated by the parton
+shower uncertainty, which is around 50-100\% below the peak of the
+distribution and around 5-10\% in the bulk of the distribution. Above
+1000 \GeV the uncertainty on the entire jet mass range is statistically dominated.

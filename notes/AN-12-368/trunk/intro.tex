@@ -1,0 +1,92 @@
+\section{Introduction}
+\label{sec:intro}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+The Standard Model (SM) of particle physics successfully describes the
+majority of high-energy experimental data~\cite{pdg}. One of the key
+remaining questions is the origin of the masses of W and Z bosons.  In
+the simplest implementation of the SM, it is attributed to the
+spontaneous breaking of electroweak symmetry caused by a new scalar
+field. %~\cite{Higgs1, Higgs2, Higgs3} The existence of the associated
+field quantum, the Higgs boson, has yet to be experimentally
+confirmed.  Therefore, the search for the Higgs boson is arguably one
+of the most important studies being done at the
+LHC~\cite{lhcmachine}. For Higgs masses above or near the threshold
+for decay into two vector bosons, the decay modes of choice are
+dominated by those decays because of their large branching fractions.
+It is clear that the events where one $W$ decays leptonically, which
+provides the main trigger elements, while the other decays
+hadronically have the second highest branching fraction and have a
+reconstructable Higgs mass peak~\cite{intro2}.
+
+This note contains the analysis that sets a limit on the Higgs boson
+cross-section based on this decay mode, performed on data acquired by
+CMS at $\sqrt{s}~=$~8~TeV during the year 2012. Previous searches
+performed with similar procedures are documented in \cite{HIG-12-021}
+(5.1\fbinv collected in 2012) and \cite{HIG-12-003} (5.0\fbinv
+collected in 2011).  The analysis selects events with one well
+identified and isolated lepton, large missing transverse energy and at
+least two high \pt jets.  Therefore, the main experimental issue is to
+control the large $W$ plus jets background sufficiently well that the
+advantages of using this final state are realized.
+
+With respect to the earlier 2012 analysis, the available sample
+continues to be acquired this year by single lepton triggers, allowing
+to relax the selection on the tranverse mass of the leptonic W boson.
+Physics objects are selected with the techniques available in 2012, in
+particular jet identification is applied to reduce the effect of
+pile-up. Much of the analysis techniques are unchanged with respect to
+\cite{HIG-12-021}.
+
+Differences from \cite{HIG-12-021} include the relaxation of electron
+identification requirements to enhance the acceptance of signal and
+minor adjustments to the fitting procedure associated with the
+availability of simulation samples. A substantial difference is the
+inclusion of a Higgs lineshape reweighting procedure that improves the
+shape of the mass distribution of the Higgs boson in simulation
+samples, as well as the inclusion of a reweighting procedure for
+effects of interference from SM diboson production on the Higgs
+production cross section and mass distribution. These procedures
+follow the recommendation from the Higgs Cross Section Working Group
+\cite{Dittmaier:2012vm} and allow us to reduce some of the theoretical
+uncertainties that were previously necessary.
+
+The note is structured in a manner similar to previous notes.  A
+discussion about the data samples used in the analysis and the trigger
+selections is presented in Sections~\ref{sec:MCexpectations} and
+\ref{sec:technicalities}.  The physics objects reconstruction is
+discussed in Section~\ref{sec:firstStep}.  The lepton selection and
+other preselection requirements are described in detail in
+Section~\ref{sec:firstStep} and \ref{sec:dataMCcomparisons}.
+
+After the preselections, the signal-over-background ratio is enhanced
+by means of a selection on a MVA discriminant, designed in order to
+control the background while preserving as much as possible the
+difference in shape with respect to the signal
+(Section~\ref{sec:mvaoptimization}).  The input variables of the MVA
+exploit the decay angles of the four-body mass system, the kinematics
+of the entire four-body system. The MVA variable definition is
+optimized with dedicated trainings for each Higgs mass hypothesis case
+for each lepton flavour ($e$, $\mu$), and for each jet multiplicity (2
+jets, 3 jets) independently.  In this way, 48 different configurations
+are obtained.
+
+The main background contaminating the signal region is W+jets.  Its
+$m_{\ell{}\nu{}jj}$ shape is extrapolated from sidebands in the
+$m_{jj}$ distribution through Monte Carlo based factors
+(Section~\ref{sec:wjetsBackground}).  Also the QCD shapes come from a
+data-driven determination, as described in
+Section~\ref{sec:dataDrivenQCD}.  The remaining background shapes come
+from the Monte Carlo.  The normalization of the backgrounds in the
+signal region is measured by fitting their Monte Carlo shapes on the
+same sidebands in the $m_{jj}$ variable
+(Section~\ref{sec:mjjfitfornormal}).  The determination of the
+$m_{jj}$ distribution for W+jets is described in
+Section~\ref{sec:wjetsShape}.
+
+The systematic uncertainties present in the signal description are
+described in Section~\ref{sec:systematics}.
+Section~\ref{sec:limitExtraction} describes the obtained limits on the
+Standard Model Higgs cross section and Section~\ref{sec:conclusions}
+closes this work.
+

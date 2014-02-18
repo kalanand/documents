@@ -1,0 +1,84 @@
+This analysis uses standard physics objects provided by the PAT framework 
+and approved by the relevant POGs.  This section describes the reconstruction,
+identification, and selection of electrons, muons, jets, and
+missing transverse energy. 
+Events are reconstructed using the particle-flow reconstruction algorithm~\cite{particleflow},
+which attempts to reconstruct all stable particles in an event by combining information from
+all subdetectors. The algorithm categorizes all particles into five types: muons,
+electrons, photons, charged and neutral hadrons. The resulting particle flow candidates are passed
+to each jet clustering algorithm to create "particle flow jets".
+ Since pile-up affects all of these physics objects,
+we begin with a description of the primary vertex selection and the methods 
+applied to mitigate the effects of pile-up.
+
+\subsection{Primary vertex selection and pile-up treatment}
+
+Primary vertices are identified using tracks clustered with the Deterministic
+Annealing algorithm~\cite{PVDA}.  Reconstructed primary vertices are required to
+have a $z$ position within $24\cm$ of the nominal detector center, a radial
+position within $2\cm$ of the beamspot, and the vertex fit must include more 
+than four degrees of freedom.  The primary vertex with the largest value of
+$\sum_i {\pt}_i^2$ is selected, where ${\pt}_i$ is the transverse momentum of 
+the $i$th track in the vertex.
+
+The 2011 data sample contains a significant number of additional interactions 
+per bunch crossing, an effect known as pile-up (PU).  The average number
+of PU interactions in each triggered event is roughly given by the average number 
+of reconstructed primary vertices, which was a little less than six for the first 
+$2\fbinv$ of data collected, increasing to well over ten for the later running.  
+Over the course of 2011 LHC operation, in-time PU as well as out-of-time pile-up
+increased.  Figure~\ref{fig:PVreweight} shows the distribution of primary vertices
+in Z$(\mu\mu)$+ jet  events.
+
+PU affects jet momentum reconstruction, and therefore the reconstruction of the jet 
+mass.  It also affects the MET reconstruction, 
+lepton isolation and b-tagging.  There are two distinct approaches to address all these 
+effects (apart from MET):
+\begin{itemize}
+ \item {\bf PFnoPU}: also known as Charged Hadron Subtraction (CHS), 
+       PFPU is an algorithm embedded in the PF2PAT processing chain that attempts to 
+       filter all charged hadrons that do not appear to originate from the primary 
+       interaction.  This approach is very effective but only works in the pseudorapidity 
+       region covered by the Tracker, and only for in-time PU.  Algorithms for tagging b 
+       jets are not impacted, since they apply their own track pre-filtering that is also 
+       designed to be PU-resistant.
+ \item {\bf Fastjet}: is an external software package from which CMSSW takes virtually 
+       all its jet reconstruction services~\cite{FastJet}.  In particular it provides the 
+       means to calculate the momentum density per unit area $\rho$ due to PU for each 
+       event, which can be used to subtract the contamination of jets and lepton isolation 
+       cones based on their respective areas.  These methods are therefore referred 
+       to as ''Fastjet Subtraction.'' 
+\end{itemize}
+Ideally, charged hadrons from PU interactions are filtered from the event first before
+the application of Fastjet. In this analysis, both the PFnoPU and Fastjet Subtraction 
+methods are applied consistently in the reconstruction and identification of jets,
+and in the calculation of lepton isolation.
+
+The standard reweighting technique~\cite{PUreweight} is used in this analysis, with
+different weighting applied for 2011A and 2011B.  We use {\tt Fall 11} Monte Carlo, which
+has a pile-up profile closer to that in the full data.
+%A variation of the mean of the measured PU distribution by $\pm 0.5$ would 
+%yield a reasonable systematic uncertainty of that measurement, and such a variation 
+%could potentially cover all systematic uncertainties of the analysis due to PU, after 
+%appropriate techniques were applied and validated to correct physics objects for 
+%PU effects.
+
+
+\subsection{Jet selection}
+\label{sec:jet_cuts}
+
+The jet selection used in this analysis was the ``loose'' jet
+identification. 
+
+
+\subsection{Missing transverse energy}
+
+The use of missing transverse energy is central to the analyses presented in this
+note.  It is critical in the reconstruction of the \WtoLN\ decays, and
+is used in the $Z$+jet channels to increase the purity of the selection.
+ For the offline analysis, missing transverse 
+energy is computed from the list of particle-flow objects with the method described 
+in~\cite{CMS-PAS-JME-10-003}.  The vector \VEtmiss\ is calculated as the negative of 
+the vectorial sum of transverse momenta of all particle-flow objects identified in the 
+event, and the magnitude of this vector is referred to as pfMET.  
+

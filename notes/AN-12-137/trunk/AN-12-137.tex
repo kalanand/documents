@@ -1,0 +1,187 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+\def\WtoLN    {\ensuremath{\mathrm{W}\to\ell\cPgn}}
+\def\WtoEN    {\ensuremath{\mathrm{W}\to\Pe\cPgn}}
+\def\WtoMN    {\ensuremath{\mathrm{W}\to\Pgm\cPgn}}
+\def\ZtoBB    {\ensuremath{\mathrm{Z}\to\bbbar}}
+\def\ZtoNN    {\ensuremath{\mathrm{Z}\to\cPgn\bar{\cPgn}}}
+\def\ZtoLL    {\ensuremath{\mathrm{Z}\to\ell\ell}}
+\def\ZtoMM    {\ensuremath{\mathrm{Z}\to\MM}}
+\def\ZtoEE    {\ensuremath{\mathrm{Z}\to\EE}}
+\def\WmnJ     {\ensuremath{\mathrm{W}(\Pgm\cPgn)\mathrm{+jets}}}
+\def\ZmmJ     {\ensuremath{\mathrm{Z}(\Pgm\Pgm)\mathrm{+jets}}}
+\def\ZnnJ     {\ensuremath{\mathrm{Z}(\cPgn\bar{\cPgn})\mathrm{+jets}}}
+\def\WJ       {\ensuremath{\mathrm{W + jets}}}
+\def\HBB      {\ensuremath{\mathrm{H}\to\bbbar}}
+\def\HTT      {\ensuremath{\mathrm{H}\to\TT}}
+\def\mtW      {\ensuremath{M_{\mathrm{T}}}}
+\def\ptl      {\ensuremath{p_{\mathrm{T}}^{\ell}}}
+\def\MyZ      {\ensuremath{\mathrm{Z}}}
+\def\MyW      {\ensuremath{\mathrm{W}}}
+\def\MyH      {\ensuremath{\mathrm{H}}}
+\def\Vudscg   {\ensuremath{\mathrm{V+udscg}}}
+\def\Wudscg   {\ensuremath{\mathrm{W+udscg}}}
+\def\Wenudscg {\ensuremath{\mathrm{W}(\Pe\cPgn)+\mathrm{udscg}}}
+\def\Wmnudscg {\ensuremath{\mathrm{W}(\Pgm\cPgn)+\mathrm{udscg}}}
+\def\Wenbb    {\ensuremath{\mathrm{W}(\Pe\cPgn)+\bbbar}}
+\def\Wmnbb    {\ensuremath{\mathrm{W}(\Pgm\cPgn)+\bbbar}}
+\def\Zeebb    {\ensuremath{\mathrm{Z}(\Pe\Pe)+\bbbar}}
+\def\Zmmbb    {\ensuremath{\mathrm{Z}(\Pgm\Pgm)+\bbbar}}
+\def\Zudsg    {\ensuremath{\mathrm{Z+udsg}}}
+\def\Zudscg   {\ensuremath{\mathrm{Z+udscg}}}
+\def\Zeeudscg {\ensuremath{\mathrm{Z}(\Pe\Pe)+\mathrm{udscg}}}
+\def\Zmmudscg {\ensuremath{\mathrm{Z}(\Pgm\Pgm)+\mathrm{udscg}}}
+\def\Zenbb    {\ensuremath{\mathrm{Z}(\Pe\cPgn)+\bbbar}}
+\def\Zmnbb    {\ensuremath{\mathrm{Z}(\Pgm\cPgn)+\bbbar}}
+\def\Wbb      {\ensuremath{\mathrm{W\bbbar}}}
+\def\Zbb      {\ensuremath{\mathrm{Z\bbbar}}}
+\def\Zcc      {\ensuremath{\mathrm{Z\ccbar}}}
+\def\Vbb      {\ensuremath{\mathrm{V+\bbbar}}}
+\def\Zll      {\ensuremath{Z(\ell\ell)}}
+\def\Zmm      {\ensuremath{Z(\mu\mu)}}
+\def\Zee      {\ensuremath{Z(ee)}}
+\def\Mjj      {\ensuremath{M(\mathrm{jj})}}
+\def\ptjj     {\ensuremath{{\pt}(\mathrm{jj})}}
+\def\MZ       {\ensuremath{M_{\mathrm{Z}}}}
+\def\dRJJ     {\ensuremath{\Delta R(\mathrm{J1,J2})}}
+\def\dEtaJJ   {\ensuremath{\Delta \eta(\mathrm{J1,J2})}}
+\def\dphiVH   {\ensuremath{\Delta\phi(\mathrm{V,H})}}
+\def\dphiWH   {\ensuremath{\Delta\phi(\mathrm{W,H})}}
+\def\dphiZH   {\ensuremath{\Delta\phi(\mathrm{Z,H})}}
+\def\dphiMJ   {\ensuremath{\Delta\phi(\mathrm{pfMET,J})}}
+\def\cosTH    {\ensuremath{\cos{\theta^*}}}
+\def\dThPull  {\ensuremath{\Delta\theta_{\mathrm{pull}}}}
+\def\ptV      {\ensuremath{p_{\mathrm{T}}(\mathrm{V})}}
+\def\ptH      {\ensuremath{p_{\mathrm{T}}(\mathrm{H})}}
+\def\ptZ      {\ensuremath{p_{\mathrm{T}}(\mathrm{Z})}}
+\def\ptW      {\ensuremath{p_{\mathrm{T}}(\mathrm{W})}}
+\def\Naj      {\ensuremath{N_{\mathrm{aj}}}}
+\def\Nal      {\ensuremath{N_{\mathrm{al}}}}
+\def\etaTF    {\ensuremath{\left | \eta \right | < 2.5}}
+\def\Bexp     {\ensuremath{B_{\mathrm{exp}}}}
+\def\Bobs     {\ensuremath{B_{\mathrm{obs}}}}
+\def\Nobs     {\ensuremath{N_{\mathrm{obs}}}}
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 131141 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/notes/AN-12-137/trunk/AN-12-137.tex $
+\RCS$Id: AN-12-137.tex 131141 2012-06-20 17:23:42Z srappocc $
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{AN-12-137} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Measurement of jet mass in V+Jets events}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+\address[fnal]{Fermilab}
+\address[cern]{CERN}
+\address[jhu]{Johns Hopkins University}
+\address[davis]{University of California, Davis}
+\address[princeton]{Princeton University}
+
+
+\author[jhu]{Salvatore Rappoccio}
+\author[fnal]{Nhan Tran}
+\author[fnal]{Kalanand Mishra}
+\author[princeton]{David Lopes-Pegna}
+
+%--- Set here, reverse in the PAS:
+\newcommand{\ifnpas}{\iftrue}
+\newcommand{\ifpas}{\iffalse}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+A measurement of the jet mass in vector-boson-plus-jets events is presented.
+}
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible and are in plain text (no TeX! -- for \sqrt{s} use sqrt(s) -- this will show with extra quote marks in the draft version but is okay).
+
+\hypersetup{%
+pdfauthor={Andreas Hinzman, Justin Pilot, Michael Mulhearn, Robin
+  Erbacher, Salvatore Rappoccio, Nhan Tran, Kalanand Mishra, David Lopes-Pegna},%
+pdftitle={Measurement of jet mass in V+Jets events},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+\section{Introduction}
+\input{intro}
+\input{cmsDetector_pas}
+
+\section{Data and trigger}
+\input{samples}
+\input{triggers} 
+
+\section{Simulation}
+
+\section{Event selection}
+\input{physObjs}
+\input{Vreco}
+
+\section{Data/MC raw comparisons}
+\input{BasicDataMC}
+
+%\section{Validation using anti-kT 5 Jets}
+
+\section{Jet algorithm comparisons}
+\input{grooming}
+\input{AKcomp} 
+
+\ifnpas
+\section{Algorithmic Characterization}
+\fi
+\label{sec:algo_char}
+\input{algoCharact}
+
+\section{Unfolding procedure}
+\input{unfolding}
+
+\section{systematics}
+\input{systematics}
+
+\section{Results}
+\input{results}
+
+\section{Summary}
+
+
+\bibliography{auto_generated}
+
+\clearpage
+\appendix
+\input{AdditionalKinematics}
+\input{BinnedPlots}
+

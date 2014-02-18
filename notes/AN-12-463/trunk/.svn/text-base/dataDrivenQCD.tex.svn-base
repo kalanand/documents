@@ -1,0 +1,193 @@
+\section{Data Driven QCD Determination}
+\label{sec:dataDrivenQCD}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+A background from QCD multijet events comes from 3- or 4-jet events
+with one jet passing the lepton criteria as a 'fake'. However, it is
+not practical to generate sufficient MC to create a statistically
+significant sample that passes the selection criteria. Therefore, we
+rely on a data-driven approach in which the isolation-inverted samples
+from data, which mirror the QCD background, are used instead.
+Specifically, we perform a two-component simultaneous fit to data of
+the MET distribution in order to obtain the fraction of QCD events in
+the data; the two components are a data-based QCD sample and a
+MC-based W+Jets sample.
+
+The electron QCD sample is obtained by selecting events
+in the data with the isolation $>0.3$ (default selection for loose
+electrons uses Iso$_{el}<\sim0.2$).  In order to increase statistics
+for the QCD sample we also relax the MET cut from 30~GeV to 20~GeV and
+remove the restrictions on Electron MVA.
+Fig.~\ref{fig:QCDISOCutsWmTShape} demonstrates that taking $Iso>0.3$
+(rather than simply inverting the isolation cut), relaxing the MET as
+well as the Electron MVA gives us a falling $W_{mT}$ spectrum (as
+opposed to a signal-like one, which contains a peak near
+$W_{mT}=$80~GeV). The MC W+Jets and target data samples are obtained by
+applying the default cuts (Sec~\ref{sec:firstStep}).
+
+The fraction of QCD events in data is then obtained from a
+fit to the MET distribution, with the normalizations for two components (
+W+jets and QCD) free to float.
+The results for the electrons are shown in Figure~\ref{fig:QCDTemplateFit_MET}. 
+However, we inherently have a smaller sample of 
+QCD events for the muons. Their relative fraction
+is taken from the fit to the 7TeV data (AN-11-110).
+Due to this assumption, to account for potential discrepancies in template modeling as well as the
+fact that the QCD fraction is estimated prior to the MVA cut, a very
+large uncertainty is conservatively assumed. The final fraction of QCD
+events in data, after accounting for the change in accepatance due to the MET cut,
+is given in Table~\ref{tab:qcdfrac}. They are fed to the $m_{jj}$ fit for determination of the QCD
+normalization, and the four-body shape of the QCD distribution is fed
+to the final four-body total background determination in preparation
+for the limit setting procedure.
+
+%%Note that the W transverse mass distributions from the data and MC are
+%%statistically consistent, as shown in
+%%Figure~\ref{fig:QCDCutLoosening_MET} for muons; for electrons there's
+%%an insufficient number of MC events to make the comparison.  The MET
+%%for QCD processes is also 'fake'; i.e., it originates from badly
+%%measured jets, and therefore has an exponentially falling spectrum.
+%%By contrast, all other backgrounds exhibit a wide peak at $\sim
+%%35$~GeV from a real neutrino (with the exception of Z+Jets, where the
+%%MET is the result of a poorly measured lepton).
+
+%%  $el_{2J}$ $frac_{QCD}=0.0617\pm 0.00384$,
+%%  $el_{3J}$ $frac_{QCD}=0.0213\pm 0.00678$.
+%%
+%% $\mu_{2J}$ $frac_{QCD}=0.001625\pm 0.004214$,
+%% $\mu_{3J}$ $frac_{QCD}=0.0\pm 0.0040797$,
+
+
+\begin{table}[bthp]
+\begin{center}
+  \begin{tabular}{l c}
+    \hline  \hline
+     & 2 jets \\
+    \hline  
+    electron  & 18.6 $\pm$ 0.2\% \\
+    muon      & 0.2 $\pm$ 0.4\% \\
+    \hline  \hline
+  \end{tabular}
+\end{center}
+\caption{\label{tab:qcdfrac} Estimates of the percentage of QCD in data (and
+the fit uncertainty) for the muon and electron datasets after selection.}
+\end{table}
+
+\subsection{QCD Uncertainties}
+\label{sec:qcd_Uncertainty}
+% .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... ....
+
+When performing the $m_{jj}$ fit the QCD yield
+is Gaussian-constrained with a mean given by the value shown in
+Table~\ref{tab:qcdfrac}.
+In the case of electrons, the error on the QCD fraction
+is small and we (conservatively) estimate
+the uncertainty to be one half of the expected value. For muons the
+uncertainty is the error on the relative fraction (i.e.,
+0.4\%).
+When obtaining the result for the sum of electron and muon data, the uncertainties
+are combined using the standard error propagation machinery.
+
+
+\subsection{Cross-Checks}
+
+In order to ensure that our inverted selection provides a consistent representation of
+QCD events,
+we fit the QCD with a Raileigh Function: $xe^{-x^2/2(\sigma_0+\sigma_1x)^2}$,
+used during the inclusive cross section measurements~\cite{WZCMS:2010}.
+As can be seen from Fig.~\ref{fig:QCDMETRaileighFit},
+the function accurately fits the overall shape as well as the parameter
+corresponding to the intrinsic MET resolution ($\sigma_0\simeq 12$~GeV).
+
+In addition we compare the above procedure to the fit with the remaining backgrounds included by
+\begin{itemize}
+\item Fixing the relative ratios based on the expected cross sections and fitting with the combination, instead of W+Jets. The resulting fraction of QCD (after correcting for MET acceptance) is $0.160\pm 0.002$.
+\item Fixing the additional backgrounds to their expected values and only allowing W+Jets (and QCD) to float during the fit. The resulting fraction of QCD (after correcting for MET acceptance) is $0.156\pm 0.002$.
+\end{itemize}
+The results (Fig.~\ref{fig:QCDTemplateFit_MET_AllBkgds}) are consistent with the default approach.
+
+We also examine the impact of the QCD selection cuts on W+Jets and $t\bar{t}$ MC events. The comparison is shown in Fig.~\ref{fig:QCDSelectionDataVsNonQCDMC}. The selection procedure does not significantly alter the shapes of the non-QCD distributions ({\it i.e} we retain the peak near $W_{mT}=$80~GeV and observe a broad resonance, rather than an exponentially falling spectrum, in the MET), which remain distict from multijet events. There is no evidence that the data sideband contains a significant fraction of non-QCD events. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%
+\begin{figure}[h!] {\centering
+\unitlength=0.33\linewidth
+\includegraphics[width=0.90\textwidth]{plots/qcd/TemplateFit19p2fbQCD_MET_el2j.png}
+%\put(-0.80,0.0){(a)}
+%\unitlength=0.33\linewidth
+%\includegraphics[width=0.48\textwidth]{plots/2012_QCD/TemplateFit_MET_mu3j.pdf}
+%\put(-0.80,0.0){(b)} \\
+%\unitlength=0.33\linewidth
+%\includegraphics[width=0.48\textwidth]{plots/2012_QCD/TemplateFit_MET_el2j.pdf}
+%\put(-0.80,0.0){(c)}
+%\unitlength=0.33\linewidth
+%\includegraphics[width=0.48\textwidth]{plots/2012_QCD/TemplateFit_MET_el3j.pdf}
+%\put(-0.80,0.0){(d)}
+\caption{MET distributions fit to the QCD and W$jj$ templates for electrons.}
+\label{fig:QCDTemplateFit_MET}
+}
+\end{figure}
+%%%%%%%
+%%%%%%%
+\begin{figure}[h!] {\centering
+\unitlength=0.33\linewidth
+\includegraphics[width=0.90\textwidth]{plots/qcd/RaileighFitQCD_19p2fb_el2j.png}
+%\put(-0.80,0.0){(a)}
+%\unitlength=0.33\linewidth
+%\includegraphics[width=0.48\textwidth]{plots/2012_QCD/RaileighFitQCD_mu3j.pdf}
+%\put(-0.80,0.0){(b)} \\
+%\unitlength=0.33\linewidth
+%\includegraphics[width=0.48\textwidth]{plots/2012_QCD/RaileighFitQCD_el2j.pdf}
+%\put(-0.80,0.0){(c)}
+%\unitlength=0.33\linewidth
+%\includegraphics[width=0.48\textwidth]{plots/2012_QCD/RaileighFitQCD_el3j.pdf}
+%\put(-0.80,0.0){(d)}
+\caption{QCD MET distribution fitted with a Raileigh Function.}
+\label{fig:QCDMETRaileighFit}
+}
+\end{figure}
+%%%%%%%
+%%%%%%%
+\begin{figure}[h!] {\centering
+\unitlength=0.33\linewidth
+\includegraphics[width=0.90\textwidth]{plots/qcd/El2J_19p2fb_CutComparison_WmT.png}
+% \put(-0.80,0.0){(a)}
+% \unitlength=0.33\linewidth
+% \includegraphics[width=0.48\textwidth]{plots/2012_QCD/ISOShapeComp_WmT_mu3j_g01vg02.pdf}
+% \put(-0.80,0.0){(b)} \\
+% \unitlength=0.33\linewidth
+% \includegraphics[width=0.48\textwidth]{plots/2012_QCD/ISOShapeComp_WmT_el2j_g01vg02.pdf}
+% \put(-0.80,0.0){(c)}
+% \unitlength=0.33\linewidth
+% \includegraphics[width=0.48\textwidth]{plots/2012_QCD/ISOShapeComp_WmT_el3j_g01vg02.pdf}
+% \put(-0.80,0.0){(d)}
+\caption{ QCD W transverse mass shapes with Iso$>0.3$, MET$>20$ and no Electron MVA cut vs inverted loose isolation, MET$>30$ and loose Electron MVA cuts.}
+\label{fig:QCDISOCutsWmTShape}
+}
+\end{figure}
+%%%%%%%
+%%%%%%%
+\begin{figure}[h!] {\centering
+\unitlength=0.33\linewidth
+\includegraphics[width=0.48\textwidth]{plots/qcd/TemplateFit19p2fb_MET_AllBkgds_el2j.png}
+\put(-0.80,0.0){(a)}
+\unitlength=0.33\linewidth
+\includegraphics[width=0.48\textwidth]{plots/qcd/TemplateFit19p2fb_MET_AllBkgdsFixNonWpJ_el2j.png}
+\put(-0.80,0.0){(b)}
+\caption{ Electron MET distribution fit with: (a) fractions of the non QCD processes fixed relative to each other and the overall coefficient allowed to float (b) the additional backgrounds (i.e. processes which are not W+Jets or QCD) fixed to their expected yields and W+Jets (as well as QCD) fraction allowed to float. The resultant fraction of QCD events is consistent with the default approach (Fig.~\ref{fig:QCDTemplateFit_MET}).}
+\label{fig:QCDTemplateFit_MET_AllBkgds}}
+\end{figure}
+%%%%%%%
+%%%%%%%
+\begin{figure}[h!] {\centering
+\unitlength=0.33\linewidth
+\includegraphics[width=0.48\textwidth]{plots/qcd/El2J_11p9fb_QCDvsMC_WmT.png}
+\put(-0.80,0.0){(a)}
+\unitlength=0.33\linewidth
+\includegraphics[width=0.48\textwidth]{plots/qcd/El2J_11p9fb_QCDvsMC_MET.png}
+\put(-0.80,0.0){(b)}
+\caption{ Data, W+Jets MC and $t\bar{t}$ MC events with Iso$>0.3$, MET$>20$ and no Electron MVA cut for (a) $W_{mT}$ (b) MET. The shapes are distinct and there is no evidence of contamination in (what should be) data sideband multijet events.}
+\label{fig:QCDSelectionDataVsNonQCDMC}}
+\end{figure}
+%%%%%%%

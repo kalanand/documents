@@ -1,0 +1,132 @@
+\subsection{Event reconstruction}
+\label{evrecosection}
+
+\ifnpas
+All data are reconstructed using CMSSW 4.2.x.
+\fi
+\label{sec:preselection}
+\label{sec:reconstruction}
+Event data are reconstructed using the particle-flow reconstruction algorithm~\cite{particleflow},
+which attempts to reconstruct all stable particles in an event by combining information from
+all subdetectors. The algorithm categorizes all particles into five types: muons,
+electrons, photons, charged and neutral hadrons. The resulting particle flow candidates are passed
+to each jet clustering algorithm described in Sec.~\ref{sec:algos} to create "particle flow jets", 
+as implemented in FastJet version 3.0.1 \cite{fastjet1,fastjet2}.
+A detailed  description of the jet algorithms used in this analysis is reported below. 
+
+%An extra correction is applied to the data to account for a residual
+%nonlinearity that is not observed in the simulation. No pileup
+%corrections are applied. 
+Charged hadrons identified as pileup are removed from the inputs to the jet clustering algorithms.
+The charged hadrons are classified as belonging to a 
+pileup vertex when they are used to reconstruct a vertex that is not
+the highest $\pt$ primary vertex. The primary vertices are
+reconstructed with a deterministic annealing filter (DAF) techique from the tracks in
+the event. There are also quality criteria
+placed on the primary vertex, in that it must contain at least four
+degrees of freedom in the spatial fit (roughly corresponding to at least four
+tracks), and satisfy $\chi^2 / ndof < 8$. It must also be within the
+physical region of the pixel detector. 
+
+
+
+Electron reconstruction requires the matching of an energy cluster in the 
+ECAL with a track in the silicon tracker~\cite{CMS-PAS-EGM-10-004}.  
+Identification criteria based on the ECAL shower shape, track-ECAL cluster 
+matching, and consistency with the primary vertex are imposed. Additional 
+requirements are imposed to remove electrons produced by photon conversions. 
+In this analysis, electrons are considered in the pseudorapidity range 
+$|\eta|<2.5$, excluding the $1.44<|\eta|<1.57$ transition region between the 
+ECAL barrel and endcap.
+Muons are reconstructed using two algorithms~\cite{CMS-PAS-MUO-10-004}: 
+one in which tracks in the silicon tracker are matched to signals in 
+the muon chambers, and another in which a global track fit is performed 
+seeded by signals in the muon system. The muon candidates used in the 
+analysis are required to be reconstructed successfully by both algorithms. 
+Further identification criteria are imposed on the muon candidates to reduce 
+the fraction of tracks misidentified as muons. These include the number of 
+measurements in the tracker and the muon system, the fit quality of the 
+ muon track, and its consistency with the primary vertex.
+
+Charged leptons from W and Z boson decays are expected to be isolated from 
+other activity in the event. For each lepton candidate, a cone 
+is constructed around the track direction at the
+ event vertex. The scalar sum of the transverse energy of each 
+ reconstructed particle compatible with the primary vertex and contained 
+ within the cone is calculated excluding the contribution from the 
+lepton candidate itself. If this sum exceeds approximately 10\% of the 
+candidate $p_T$ the lepton is rejected; the exact requirement depends 
+on the lepton $\eta$, $p_T$ and flavor.
+Muons (electrons) are required to have a $p_T$, greater than 30 GeV (80 GeV). 
+The high threshold for the electron selection ensures a high trigger efficiency.
+
+%The very high offline threshold on the eletron momentum is motivated by the criteria to avoid turn-off effects in the trigger efficiency for the single electron trigger. 
+
+Furthermore, charged leptons with an isolation
+of 15\% (muons) or 20\% (electrons) of the lepton transverse momentum 
+are removed from consideration for the jet clustering algorithm, 
+where the isolation is defined as the
+ energy from charged particles, neutral particles, 
+and photons (counted separately). 
+
+
+After the removal of charged hadrons from pileup vertices and isolated
+leptons, only the
+neutral component of pileup remains
+that is not interesting for the jet algorithm. 
+The remaining particle flow candidates are used as input to the jet
+clustering algorithm. Energy corrections are applied to the resulting
+jets as follows. 
+
+% After these subtractions, aside from the true constituents of the jets,
+% this leaves only the neutral component of pileup,
+% This is removed by applying a residual
+
+The remaining neutral hadron component of pileup is removed by
+applying a residual area-based correction as described in
+Ref.~\cite{jetarea_fastjet,jetarea_fastjet_pu}. 
+The mean $\pt$ per unit area
+is computed with the $k_{\mathrm T}$ algorithm with the ``active area'' method,
+with a distance parameter of 0.6, and the
+jet energy is corrected by the amount of pileup expected in the jet
+area. The ``active area'' method adds a large number of infinitely
+soft ``ghost'' particles to the clustering sequence to examine which
+jet they are clustered into, and the area is computed by the set of
+points for each jet. This is done for all of the grooming algorithms
+in the same way as the standard jets. The active area of the
+groomed jets is smaller than the active area of the ungroomed jets,
+and hence the pileup correction is smaller. 
+Due to the different responses in the endcap
+and barrel calorimeters, the jet corrections are $\eta$-dependent. The amount of energy expected from underlying
+event is added back into the jet. 
+
+
+The pileup-subtracted jet four momenta are finally 
+corrected for nonlinearities in $\eta$ and $\pt$
+with simulated data, with a residual $\eta$-dependent correction added 
+to correct for the difference in simulated and true responses~\cite{citeJEC}.  
+The jet corrections used are specifically derived for the ungroomed
+jet algorithms, and also applied to the groomed jet algorithms with an
+additional systematic uncertainty described below.
+
+
+% These corrections are then
+% applied as 
+% \begin{equation}
+% \pt^{PU-corr} = \pt^{RAW} \times \left( 1 - F(\eta) \times \frac{A_{jet} (\rho - <\rho_{UE}>)}{<A_{jet}> <(\rho_{PU,NPV=1})>} \right)
+% \end{equation}
+% The function $F(\eta)$ is an $\eta$-dependent correction designed to correct for
+% different responses between the barrel and endcap calorimeters.
+% It is derived from an assumption of a linear dependence of jet
+% momenta as a function of the number of reconstructed primary vertices, 
+% and then computed over a range of jet pseudorapidities. 
+% The area of the jet $A_{jet}$ is computed as described in Ref~\cite{fastjet_area},
+% and depends ont he jet algorithm. The mean $\pt$ per unit area for underlying
+% event ($\rho_{UE}$) is added back into the jet, since the cachement area approach
+% subtracts this as well (which should, however, be added in the jet momentum measurement
+% to be consistent with theoretical predictions). The average jet area $<A_{jet}>$ is
+% derived for the algorithm in question in a dijet sample, and $<\rho_{PU,NPV=1}>$ is the
+% expected average mean $\pt$ per unit area in events with exactly one primary vertex. 
+
+
+An accurate MET measurement is essential for distinguishing the W signal from QCD backgrounds. We use the MET measured in the event using the full particle-flow reconstruction. The MET resolution, measured as a function of the sum $E_T$ ($\sum E_T$) of the particle-flow~\cite{particleflow} objects in the event, varies from 4\% at $\Sjm E_T$ =60 GeV to 10\% at $\sum E_T$ =350 GeV~\cite{metJINST}. In this analysis, we require MET $>$50 GeV. 

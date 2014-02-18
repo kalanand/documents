@@ -1,0 +1,49 @@
+The reconstructed interaction vertex with the largest value 
+of $\sum_i p_{T_i}^2$, where $p_{T_i}$ is the transverse momentum of 
+the $i$-th track associated to the vertex, is selected as the primary event 
+vertex. This vertex is used as the reference vertex for all 
+relevant objects in the event, which are reconstructed with 
+the particle-flow algorithm. The PU interactions affect jet momentum 
+reconstruction, missing transverse energy reconstruction, and lepton isolation.
+ To mitigate these effects, a track-based algorithm that filters all 
+ charged hadrons that do not originate from the primary interaction is used. 
+ In addition, a calorimeter-based algorithm evaluates the energy density in 
+ the calorimeter from interactions not related to the primary vertex and 
+ subtracts it from reconstructed jets in the event~\cite{}.
+
+Electron reconstruction requires the matching of an energy cluster in the 
+ECAL with a track in the silicon tracker~\cite{}.  
+Identification criteria based on the ECAL shower shape, track-ECAL cluster 
+matching, and consistency with the primary vertex are imposed. Additional 
+requirements are imposed to remove electrons produced by photon conversions. 
+In this analysis, electrons are considered in the pseudorapidity range 
+$|\eta|<2.5$, excluding the $1.44<|\eta|<1.57$ transition region between the 
+ECAL barrel and endcap.
+Muons are reconstructed using two algorithms~\cite{}: 
+one in which tracks in the silicon tracker are matched to signals in 
+the muon chambers, and another in which a global track fit is performed 
+seeded by signals in the muon system. The muon candidates used in the 
+analysis are required to be reconstructed successfully by both algorithms. 
+Further identification criteria are imposed on the muon candidates to reduce 
+the fraction of tracks misidentified as muons. These include the number of 
+measurements in the tracker and the muon system, the fit quality of the 
+ muon track, and its consistency with the primary vertex.
+
+Charged leptons from $W$ and $Z$ boson decays are expected to be isolated from 
+other activity in the event. For each lepton candidate, a cone 
+is constructed around the track direction at the
+ event vertex. The scalar sum of the transverse energy of each 
+ reconstructed particle compatible with the primary vertex and contained 
+ within the cone is calculated excluding the contribution from the 
+lepton candidate itself. If this sum exceeds approximately 10% of the 
+candidate $p_T$ the lepton is rejected; the exact requirement depends 
+on the lepton $\eta$, $p_T$ and flavor.
+Muons (electrons) are required to have a $p_T$, greater than 30 GeV (80 GeV). The very high offline threshold on the eletron momentum is motivated by the criteria to avoid turn-off effects in the trigger efficiency for the single electron trigger. 
+
+An accurate MET measurement is essential for distinguishing the $W$ signal from QCD backgrounds. We use the MET measured in the event using the full particle-flow reconstruction. The MET resolution, measured as a function of the sum $E_T$ ($\sum E_T$) of the particle-flow~\cite{} objects in the event, varies from 4\% at $\Sjm E_T$ =60 GeV to10\% at $\sum E_T$ =350 GeV~\cite{}.We require MET >30(50) GeV in the event in case of muon~(electron) data. 
+
+Jets are reconstructed from particle-flow objects~\cite{} using
+different clustering algorithmd as described in the following. 
+
+
+

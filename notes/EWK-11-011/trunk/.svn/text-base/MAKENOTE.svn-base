@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Instructions to access this from scratch
+#     svn co -N svn+ssh://svn.cern.ch/reps/tdr2 myDir
+#     cd myDir
+#     svn update utils
+#     svn update -N notes
+#     svn update notes/EWK-11-011
+
+# Working with this:
+#     cd myDir/notes/EWK-11-011/trunk
+#     MAKENOTE (edit the template, then to build the document)
+
+eval `../../tdr runtime -sh`
+
+tdr --style=pas --draft b EWK-11-011
+
+# You can commit your changes with
+# svn commit -m "commit message"

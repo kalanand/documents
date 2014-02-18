@@ -1,0 +1,247 @@
+\section{Common Event Selection}
+\label{sec:firstStep}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+The final state of the Higgs decay is characterized by a charged lepton, 
+large missing energy and two hadronic jets that form a W.
+In this section, we first describe the criteria applied to objects
+selected in the event and then we describe the requirements made at
+the event-level.
+
+\subsection{Object Definitions}
+
+The analysis relies on the standard reconstruction algorithms produced
+by the CMS community. 
+The PF2PAT procedure was used to coherently define the collection of particle-flow jets, leptons and
+MET considered in the event selection.  
+The technical details of the software configuration can be found in the group twiki page~\cite{WG_PATtuple_twiki}. 
+
+\subsubsection{Electron Cuts (e+jets)}
+\label{sec:electron_cuts}
+
+Electrons are reconstructed using a gaussian-sum filter (GSF)
+algorithm \cite{CMS-PAS-EGM-10-004}, and are required to pass electron
+ID cuts according to a multi-variate identification
+technique~\cite{cite:elemva}.  We also require that selected
+electron candidates are isolated. Particle flow-based relative
+isolation is defined as
+%%%
+\begin{equation*}
+\mathrm{RelIso_{\mathrm{PF}}} = \frac{I_{\mathrm{CH}}+I_{\mathrm{NH}}+I_{\mathrm{PHOTON}}-(\mathrm{EA}\cdot\rho)}{E_\mathrm{T}},
+\end{equation*} 
+%%%
+
+where $I_{\mathrm{CH}}$, $I_{\mathrm{NH}}$ and $I_{\mathrm{PHOTON}}$
+are the charged hadron, neutral hadron and photon isolation variables
+(using an isolation cone of 0.3). The isolation is corrected for
+contributions from pile-up using charged hadron subtraction in the
+isolation cone using fastjet algorithm \cite{FastJetPUSubtraction} and
+for neutral particles using the effective area correction,
+$(\mathrm{EA}\cdot\rho)$ where $\mathrm{EA}$ is the cone effective area
+and $\rho$ is the average neutral particle density of the event.
+
+The ID and isolation cuts used are shown in table~\ref{tab:EleID} and
+have been tuned to give the same efficiency bin-by-bin with respect to
+the working point (WP) used for 2011 analysis.
+
+Additionally, we require
+%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item Electron $E_\mathrm{T} > 35\,\mathrm{GeV}$.
+\item Pseudorapidity $|\eta| < 2.5$. There is an exclusion range due
+        to the ECAL barrel-endcap transition region, defined by
+        $1.4442 < |\eta_{\mathrm{sc}}| < 1.566$, where
+        $\eta_{\mathrm{sc}}$ is the pseudorapidity of the ECAL
+        supercluster.
+\item Impact parameter: We cut on the absolute value of the impact
+       parameter calculated with respect to the average primary vertex (PV). We
+       require: $d_0(\mathrm{PV}) < 0.02\,\mathrm{cm}.$
+\item In order to make sure that the selected electron and the selected
+jets come from the same hard interaction and not from pile up events,
+we require that the $z$ coordinate of the PV of the event and the $z$
+coordinate of the electron's vertex lie within a distance of
+less than $0.1~\mathrm{cm}$.
+
+\item 
+In order to reject events in which the electron candidate actually
+originates from a conversion of a photon into an $e^{+}e^{-}$ pair, we
+use an approach using the vertex fit probability of fully
+reconstructed conversions combined with the requirement that the
+number of missed inner tracker layers of the electron track must be
+exactly zero (i.e. there are no missed layers before the first hit of
+the electron track from the beam line). 
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+\begin{table}[bthp]
+\begin{center}
+{\footnotesize
+\begin{tabular}{|c|c|c|c|}
+\hline
+Lepton $\eta$ & $|\eta| < 0.8$ & $0.8 < |\eta| < 1.479$ & $1.479 < |\eta| < 2.5$  \\
+\hline
+ID MVA cut value (tight lepton) & 0.977 & 0.056 & 0.966 \\
+Isolation cut value (tight lepton) & 0.093 & 0.095 & 0.171 \\
+ID MVA cut value (loose lepton) & 0.877 & 0.811 & 0.707 \\
+Isolation cut value (loose lepton) & 0.426 & 0.481 & 0.390 \\
+\hline
+\end{tabular}
+\caption[.]{\label{tab:EleID} Cut values for electron identification
+MVA output and for isolation which are tuned to give the same
+efficiency as VBTF Working Point (WP) 70, as used for the tight
+electron selection, and VBTF Working Point (WP) 90, as used in the
+loose electron selection.}}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Muon Cuts (mu+jets)}
+\label{sec:muon_cuts}
+
+Muon candidates are identified by two different 
+algorithms~\cite{MUONPAS}: one proceeds from the inner tracker outwards, 
+the other one starts from tracks measured in the muon chambers and matches 
+and combines them with tracks reconstructed in the inner tracker. 
+These selection criteria are summarized below:
+%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item The muon candidate is reconstructed both as a global muon and
+as a tracker muon.
+\item Number of pixel hits of the Tracker track $\ge 1$;
+\item Number of muon system hits of the Global track $\ge 1$;
+\item Normalized $\chi^{2}$ of the Global track $< 10.0$.
+\item Muon $p_{\mathrm{T}} > 25\,\mathrm{GeV}$.
+\item Pseudorapidity $|\eta| < 2.1$.
+\item Impact parameter: We cut on the absolute value of the impact
+parameter calculated with respect to the primary vertex. We require:
+$d_0(\mathrm{PV}) < 0.02\,\mathrm{cm}.$
+\item In order to make sure that the selected muon and the selected
+jets come from the same hard interaction and not from pile up events,
+we require that the $z$ coordinate of the PV of the event and the $z$
+coordinate of the muon's inner track vertex lie within a distance of
+less than 0.5~cm.
+\item The number of tracker layers with hits from the muon track has to be
+$N_{\mathrm{layers}} > 5$.
+\end{itemize}
+
+The selected muon candidates also have to be isolated. Particle
+flow-based relative isolation for muons is defined as
+\begin{equation*}
+\mathrm{RelIso_{\mathrm{PF}}} = \frac{I_{\mathrm{CH}}+I_{\mathrm{NH}}+I_{\mathrm{PHOTON}}-(0.5~{p}_{T}^\mathrm{sumPU})}{p_\mathrm{T}},
+\end{equation*} 
+
+where $I_{\mathrm{CH}}$, $I_{\mathrm{NH}}$ and $I_{\mathrm{PHOTON}}$
+are the charged hadron, neutral hadron and photon isolation variables
+(using an isolation cone of 0.4). The isolation is corrected for
+contributions from pile-up using charged hadron subtraction in the
+isolation cone using fastjet algorithm \cite{FastJetPUSubtraction} and
+for neutral particles using the DeltaBeta correction, $(0.5
+p_T^\mathrm{sumPU})$. We require the muon to have
+$\mathrm{RelIso_{\mathrm{PF}}} < 0.12$ in order to be considered
+isolated.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsubsection{Loose Electron}
+For the purposes of rejecting events with more than one lepton we
+define a loose electron, which has looser cuts. We consider electrons
+which have $p_{\mathrm{T}} > 20\,\mathrm{GeV}/c$, $|\eta| < 2.5$,
+and which satisfy electron $\mathrm{RelIso_{\mathrm{PF}}}$ and MVA ID
+cuts. The cut values for the electron ID and isolation used in the
+analysis can be found in table~\ref{tab:EleID}. As in the case of the
+tight electrons, we also require $d_0(\mathrm{PV}) <
+0.02\,\mathrm{cm}$ and that the $z$ coordinate of the PV of the event
+and the $z$ coordinate of the electron's vertex lie within a distance
+of less than $0.1~\mathrm{cm}$.
+
+\subsubsection{Loose Muon}
+Additionally, to reject events with more than one lepton, we define a
+loose muon, which has looser cuts. We consider all global muons which
+have $p_{\mathrm{T}} > 10\,\mathrm{GeV}/c$, $|\eta| < 2.5$, and
+$\mathrm{RelIso_{\mathrm{PF}}} < 0.2$ to be loose muons.
+
+\subsubsection{Jet Cuts}
+\label{sec:firstStep_jets}
+
+Jets are reconstructed with the anti-KT algorithm \cite{cacciari}, 
+starting from the set of objects reconstructed by the particle 
+flow \cite{pflow,CMS-PAS-JME-10-003,CMS-PAS-PFT-10-002}.
+Jets are corrected such that the measured energy of the jet 
+correctly reproduces the energy of the initial particle. 
+The CMS standard L2 (relative) correction makes the jet response flat in $\eta$.
+The standard L3 (absolute) correction brings the jet closer to the $\PT$ of 
+a matched generated jet created using generator level input and a similar 
+jet clustering algorithm.
+The L2 and L3 corrections are calculated using Monte Carlo, and thus a 
+L2L3 residual correction is applied that fixes the discrepancies between 
+Monte Carlo and data~\cite{newjes-cms}.
+In this analysis we use jets with measured (corrected) $\PT$  
+greater than 30~$\gev$. 
+We require $|\eta| < 2.4$ so that the jets fall within the
+tracker acceptance.  
+Jets are required to pass a set of loose identification
+criteria; this requirement eliminates jets originating from or being seeded by
+noisy channels in the calorimeter~\cite{Chatrchyan:2009hy}: 
+%%%%%%%%%%%%%%
+\begin{itemize}
+\item Fraction of energy due to neutral hadrons $<$ 0.99.
+\item Fraction of energy due to neutral electromagnetic (EM) deposits $<$ 0.99.
+\item Number of constituents $>$ 1.
+\item Number of charged hadron candidates $>$ 0.
+\item Fraction of energy due to charged hadron candidates $>$ 0.
+\item Fraction of energy due to charged EM deposits $<$ 0.99.
+\end{itemize}
+%%%%%%%%%%
+All energy fractions are calculated from uncorrected jets.
+
+\par
+In order to account for electron and muon objects that
+have been reconstructed as jets, we remove from the jet
+collection any jet that falls within a
+cone of radius $R= 0.5$ of a loose electron or a loose muon. 
+This ``cleaning'' procedure is applied in order to ensure that the same
+particle is not double counted as two different physics objects.
+We require exactly two or three jets in the event.
+
+
+\subsection{Event-Level Criteria}
+
+The event should have a good primary vertex (PV). This means selecting
+the primary vertex with the highest sum of $p_{T}^2$ of the tracks
+associated with it and requiring it to have a number of degrees of
+freedom (ndof) $\ge 4$, where ndof corresponds to the weighted sum of
+the number of tracks used for the construction of the PV. In addition,
+the PV must lie in the central detector region of $abs(z) \le
+24~\rm{cm}$ and $\rho \le 2~\rm{cm}$ around the nominal interaction
+point.
+
+In the e+jets channel, we select events which contain exactly one
+tight electron candidate fulfilling the criteria described in
+Section~\ref{sec:electron_cuts} and reject events which contain a
+loose electron in addition to the tight electron. In this channel we
+are only interested in the decay to electron and jets, and we
+therefore reject events containing a loose muon.
+
+In the mu+jets channel, we select events which contain exactly one
+tight muon candidate whose criteria are described in
+Section~\ref{sec:muon_cuts} and reject events which contain an
+additional loose muon. In an analoguous way to the e+jets channel, we
+reject events containing a loose electron.
+
+We require an event to have missing transverse energy (MET) in excess
+of 25(35)~GeV for muons (electrons) and to have a $W$ transverse mass
+of $>30\,\mathrm{GeV}$.  These cuts are designed to reduce the
+background from QCD multijet production.
+
+We further require exactly two or three jets passing the cuts
+described in Section~\ref{sec:firstStep_jets}.  
+% We require the
+% invariant mass of the dijet system formed by the two highest $p_{T}$
+% jets in the event to be between $65$ and $95\,\mathrm{GeV}$.
+

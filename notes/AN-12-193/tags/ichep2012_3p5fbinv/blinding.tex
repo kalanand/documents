@@ -1,0 +1,18 @@
+\appendix
+\section{Blinding strategy}
+\label{sec:Blinding}
+
+In the $H\rightarrow WW \rightarrow \ell{}\nu{}jj$ search the signal extraction 
+is based on a 4-body invariant mass maximum-likelihood fit. The fit and the limit are done after simple
+kinematical cuts (fit-analysis) or after an MVA selection (MVA-analysis).
+
+For the fit-analysis an almost signal free sample can be obtained by relaxing the
+hadronic $W$ mass selections. At this level the signal contamination is of the order of
+$10^{-3}$, therefore data to MC comparisons can be safely performed.
+
+Similarly for likelihood-based analysis where the S/B is still small.
+
+Since the background estimation is fully data-driven (4-body mass fit on data),
+the usage of data in the signal region to extract expected limits is compulsory.
+Then, in order to preserve the blinding, the fit itself is performed internally by the
+combination tool and the observed limit is not computed.

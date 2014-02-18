@@ -1,0 +1,105 @@
+\section{Signal and background expectations}
+\label{sec:MCexpectations}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+
+\subsection {The signal}
+% .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... ....
+
+
+Figure~\ref{fig:higgsXSBR} shows the trend of the Higgs production cross section and decay branching ratio into four fermions, 
+as a function of its mass.
+%
+\begin{figure}[htb] 
+  {\centering
+    \includegraphics[width=0.54\textwidth]{plots/limitplot/Higgs_XS_7TeV.pdf}
+    \includegraphics[width=0.42\textwidth]{plots/limitplot/Higgs_BR_4fermion_1.pdf}
+    \caption{Standard Model Higgs boson production cross sections at 7TeV (similar plot for 8TeV is not yet available) (left) and branching ratio into four fermion final states (right).}
+    \label{fig:higgsXSBR}}
+\end{figure}
+%
+As of this writing, the inclusive cross-sections used for the Higgs
+signal at 8~TeV center-of-mass energy have been calculated by the
+Higgs Cross Section Working Group
+\cite{LHCHiggsCrossSectionWorkingGroup:2011ti},\cite{Dittmaier:2012vm}
+for the gluon-gluon fusion (ggF) process. Equivalent cross-sections for the
+vector boson fusion (VBF) process have not yet been calculated, so the
+values for 7~TeV center-of-mass energy scaled by a factor of 1.3 are
+used in their place. All values are taken from \cite{cite:higgsxsecbr}.
+
+
+\subsection {The backgrounds}
+% .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... .... ....
+
+
+All the processes with the presence in the detector of one lepton, two jets and missing energy
+have to be considered as possible sources of background. The most relevant ones are:
+% %FIXME in what order should we present it?
+\begin{itemize}
+  \item $W$+jets: this is the production of single $W$ vector bosons in association with quarks or gluons 
+       that mimick the final state signature and the hadronic $W$ decay products.
+       Because of its cross-section, 
+       this is by far the most important background to the analysis.
+  \item Drell-Yan $Z/\gamma^{*}$+jets: this is the production of single $Z/\gamma^{*}$ bosons 
+       in association with quarks or gluons, 
+       where one lepton gets undetected because of acceptance or inefficiency effects, 
+       and the hadronic activity mimicks the final state signature and the hadronic $W$ decay products.
+       %FIXME One of the main handles to reduce this background is the low missing energy, the MZZ
+  \item $WW$: this non resonant production is an irreducible background for the analysis.
+  \item $WZ$: in case the $Z$ decays hadronically, or the $W$ decays hadronically 
+              and one $Z$ lepton is not identified by the detector,
+              this sample also contributes to the backgrounds.
+  \item $ZZ$: in case one $Z$ decays hadronically, and one lepton is not identified by the detector,
+              this sample contributes to the backgrounds.
+  \item $t\bar{t}$: top quark pairs are produced at LHC via the gluon fusion process
+              $gg\to{}t\bar{t}$ or via QCD quark annihilation $qq\to{}t\bar{t}$.
+              The semi-leptonic sample, where one $W$ decays hadronically,
+              can be reduced by requests on the number of jets,
+              while the fully leptonic one is reduced by requiring only one good lepton in the event.
+              In any case, 
+              because of acceptance and inefficiencies, 
+              this background still contaminates the signal phase space.      
+  \item Single top production: it proceeds through three separate channels:
+       \begin{enumerate}
+         \item t-channel: top is produced after a quark-gluon interaction 
+               with the exchange of a virtual $W$.
+         \item s-channel: top is produced in association with an anti-bottom, 
+               after the annihilation of a pair of quarks in a weak vertex.
+         \item tW-channel: top is produced in association with a charged vector boson in a weak process, 
+               from a gluon-bottom pair in the initial state.
+       \end{enumerate}
+%       The first two can be distinguished from signal thanks to a selection on the energy of b-quarks, 
+%       which are quite different from signal tag quarks, while tW-channel has got a missing jet.
+  \item QCD multi-jet events generate a background 
+       because of the non-negligible probability of jets to be reconstructed as leptons.
+\end{itemize}
+
+The cross section for the backgrounds, multiplied by the branching ratio when meaningful, 
+are reported in Table~\ref{tab:bkg_XS}. 
+Each different sample notation includes all the decays taken into account 
+in the effective cross section calculation.
+
+\begin{table}[htb]
+  \begin{center}
+  \begin{tabular}{c|c}
+  \hline
+  Channel & Cross-section (pb) \\
+  \hline
+  W+jets                                               & $36257  $ \\ %  \pm xxx$ \\
+  Z+jets                                               & $3503   $ \\ %  \pm xxx$\\
+  WW                                                   & $57.1     $ \\ %  \pm xxx$\\
+  WZ                                                   & $32.3   $ \\ %  \pm xxx$\\
+  ZZ                                                   & $8.3   $ \\ %  \pm xxx$\\
+  t$\bar{\textnormal{t}}$+jets                         & $225.2  $ \\ %  \pm xxx$ \\
+  t/$\bar{\textnormal{t}}$+jets ($t$-channel)          & $85.5   $ \\ % \pm xxx$ \\
+  t/$\bar{\textnormal{t}}$+jets ($s$-channel)          & $5.65   $ \\ % \pm xxx$ \\
+  t/$\bar{\textnormal{t}}$+jets ($t$W-channel)         & $22.4   $ \\ % \pm xxx$ \\
+  QCD (ele enriched)                                   & $xxxxxxx$ \\ % \pm xxx$\\
+  QCD (mu enriched)                                    & $134680  $ \\ % \pm xxx$\\
+  \hline
+  \end{tabular}
+  \end{center}
+  \caption{The cross section for the backgrounds, multiplied by the branching ratio when meaningful.
+  Each different sample notation includes all the decays taken into account in the calculation.}
+  \label{tab:bkg_XS}
+\end{table}%

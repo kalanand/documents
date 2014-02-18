@@ -1,0 +1,93 @@
+\begin{verbatim}
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-770588 FROM HESSE     STATUS=OK             50 CALLS         306 TOTAL
+                     EDM=7.63089e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  WpJ_nrm      1.01379e+00   7.08134e-03   2.99392e-05  -4.66239e-01
+   2  diboson_nrm   1.43207e+00   2.84501e-01   9.97848e-04  -3.01999e-01
+   3  offset_WpJ_Mass2j_PFCor   4.60244e+01   1.07134e+00   2.83116e-04  -2.50724e-02
+   4  power2_WpJ_Mass2j_PFCor  -3.76644e-01   7.06353e-02   5.18097e-04   6.75480e-02
+   5  power_WpJ_Mass2j_PFCor   1.19236e+00   3.82054e-02   1.45815e-03  -3.11675e-04
+   6  top_nrm      1.00285e+00   6.98628e-02   5.13574e-04  -4.70698e-01
+   7  width_WpJ_Mass2j_PFCor   2.21169e+01   1.08259e+00   8.82446e-04  -8.07221e-02
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  48    NPAR=  7    ERR DEF=0.5
+  5.015e-05 -1.680e-03  2.154e-03  5.419e-05  1.050e-04 -9.855e-05  2.769e-03 
+ -1.680e-03  8.126e-02 -9.827e-02 -2.151e-03 -4.900e-03 -3.513e-03 -1.203e-01 
+  2.154e-03 -9.827e-02  1.149e+00 -6.202e-02  3.715e-02  1.442e-03  3.376e-01 
+  5.419e-05 -2.151e-03 -6.202e-02  4.994e-03 -1.908e-03 -1.536e-04 -1.588e-02 
+  1.050e-04 -4.900e-03  3.715e-02 -1.908e-03  1.461e-03  1.350e-04  2.477e-02 
+ -9.855e-05 -3.513e-03  1.442e-03 -1.536e-04  1.350e-04  4.882e-03 -1.703e-03 
+  2.769e-03 -1.203e-01  3.376e-01 -1.588e-02  2.477e-02 -1.703e-03  1.174e+00 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7
+        1  0.90362   1.000 -0.832  0.284  0.108  0.388 -0.199  0.361
+        2  0.92540  -0.832  1.000 -0.322 -0.107 -0.450 -0.176 -0.390
+        3  0.97457   0.284 -0.322  1.000 -0.819  0.907  0.019  0.291
+        4  0.91850   0.108 -0.107 -0.819  1.000 -0.706 -0.031 -0.207
+        5  0.97417   0.388 -0.450  0.907 -0.706  1.000  0.051  0.598
+        6  0.66975  -0.199 -0.176  0.019 -0.031  0.051  1.000 -0.022
+        7  0.85738   0.361 -0.390  0.291 -0.207  0.598 -0.022  1.000
+
+  RooFitResult: minimized FCN value: -770588, estimated distance to minimum: 7.63089e-05
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MIGRAD=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+               WpJ_nrm    1.0138e+00 +/-  7.08e-03
+           diboson_nrm    1.4321e+00 +/-  2.85e-01
+  offset_WpJ_Mass2j_PFCor    4.6024e+01 +/-  1.07e+00
+  power2_WpJ_Mass2j_PFCor   -3.7664e-01 +/-  7.06e-02
+  power_WpJ_Mass2j_PFCor    1.1924e+00 +/-  3.82e-02
+               top_nrm    1.0029e+00 +/-  6.99e-02
+  width_WpJ_Mass2j_PFCor    2.2117e+01 +/-  1.08e+00
+
+total expected: 126759
+data events: 126764
+plotting diboson ... events 3781.38139011
+plotting top ... events 4283.88322013
+plotting WpJ ... events 118693.802394
+
+
+  RooFitResult: minimized FCN value: -770588, estimated distance to minimum: 7.63089e-05
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MIGRAD=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+  c_diboson_Mass2j_PFCor   -1.6293e-02
+    c_top_Mass2j_PFCor   -1.2292e-02
+  f_W_diboson_Mass2j_PFCor    4.1814e-01
+  f_Z_diboson_Mass2j_PFCor    1.0931e-01
+  f_top_Mass2j_PFCor_core    1.7826e-01
+  mean_diboson_Mass2j_PFCor_W    8.3374e+01
+  mean_top_Mass2j_PFCor_core    8.4873e+01
+                 n_WpJ    1.1708e+05
+             n_diboson    2.6405e+03
+                 n_top    4.2717e+03
+  offset_diboson_Mass2j_PFCor    5.1847e+01
+  offset_top_Mass2j_PFCor    6.5618e+01
+  resolution_diboson_Mass2j_PFCor    9.7902e-02
+  sigma_top_Mass2j_PFCor_core    7.1619e+00
+  width_diboson_Mass2j_PFCor    1.9418e+01
+  width_top_Mass2j_PFCor    3.0151e+01
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+               WpJ_nrm    1.0000e+00    1.0138e+00 +/-  7.08e-03  <none>
+           diboson_nrm    1.0000e+00    1.4321e+00 +/-  2.85e-01  <none>
+  offset_WpJ_Mass2j_PFCor    4.6541e+01    4.6024e+01 +/-  1.07e+00  <none>
+  power2_WpJ_Mass2j_PFCor   -4.6512e-01   -3.7664e-01 +/-  7.06e-02  <none>
+  power_WpJ_Mass2j_PFCor    1.1926e+00    1.1924e+00 +/-  3.82e-02  <none>
+               top_nrm    1.0000e+00    1.0029e+00 +/-  6.99e-02  <none>
+  width_WpJ_Mass2j_PFCor    2.3356e+01    2.2117e+01 +/-  1.08e+00  <none>
+
+chi2: 22.04 / 13 = 1.70
+chi2 probability: 0.05479
+2*nll_null - 2*nll: -1541150.5121 - -1541175.4338 = 24.9217
+p-value: 5.971e-07
+Gaussian significance: 4.86
+
+\end{verbatim}

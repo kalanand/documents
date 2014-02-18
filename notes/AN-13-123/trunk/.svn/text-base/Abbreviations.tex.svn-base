@@ -1,0 +1,42 @@
+\chapter{Abbreviations used in this note}
+%%%%%%%%%%%
+\begin{table}[htb]
+  \begin{center}
+  \begin{tabular}{l l}
+  \hline
+    Abbreviation &  Explanation \\
+  \hline
+  EWK  & Electroweak \\
+  BS, Bsp & Beam spot \\
+  ECAL   &  Electromagnetic calorimeter \\
+  HCAL   &  Hadronic calorimeter \\
+  Iso    &  Lepton isolation \\
+  JES    &  Jet energy scale \\
+  JER    &  Jet energy resolution \\
+  LHE    &  Les Houches Event \\
+  LO     &  Leading order theory calculation in $\alpha_S$ \\
+  MVA    &  Output of a multivariate analysis \\
+  ME     &  Matrix element calculation \\
+  NLO    &  Next-to-leading order calculation in $\alpha_S$ \\
+  PF, pf &  Particle flow \\
+  PS     &  Parton shower \\
+  PU     &  Pileup \\
+  PV     &  Primary vertex \\
+  SC     &  ECAL super cluster \\
+%  TC     & Technicolor \\
+  WP     &  Working points for electron ID \\
+  nEWKW2jets & Number of electroweak W+2jets signal events \\
+  nDiboson & Number of electroweak diboson (WW,WZ,ZZ) events \\
+  nQCD     & Number of QCD multi-jet events \\
+  nSingleTop & Number of single top events \\
+  nTTbar    & Number of $t\bar{t}$ events \\
+  nWjets    & Number of W+jets events \\
+  nZjets    & Number of Z+jets events, where Z$\to\ell\ell$ and $\ell=e,\mu,\tau$\\
+%  CB     & CrystalBall shape \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \caption*{}
+  \nonumber
+\end{table}%
+%%%%%%%%%%%

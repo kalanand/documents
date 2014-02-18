@@ -1,0 +1,19 @@
+\label{sec:systematics}
+
+The systematic uncertainties were investigated by comparing
+the unfolded $m_{jet}$ distribution for each systematic
+variation to the nominal value, which is taken from
+\PYTHIA. 
+
+The experimental uncertainties considered include  
+the jet energy scale, estimated by raising and lowering the jet energy by the measured uncertainty as a function of jet $\pt$ and $\eta$, and the jet energy and angular resolution, estimated by increasing and decreasing the jet energy, $\eta$ and $\phi$ resolution by 10\%.
+The nominal value chosen is 10\%, motivated by the observed difference between data and simulation in the jet energy resolution~\cite{citeJEC}, so the up and down variations 
+correspond to 20\% and 0\% additional smearing with respect to the Monte Carlo, respectively. 
+We also estimate an uncertainty associated with the pile-up simulated in the MC, estimated by increasing and decreasing the minimum bias cross section by 8\%. 
+
+As theoretical uncertainty due to the parton showering model, we conservatively estimate it by comparing unfolded \MADGRAPH to unfolded \HERWIG and assigning the difference as a systematic uncertainty.
+
+After these effects are investigated, it is found that the dominant uncertainty is
+the difference in the parton showering model. All uncertainties are included in
+the measurement. 
+

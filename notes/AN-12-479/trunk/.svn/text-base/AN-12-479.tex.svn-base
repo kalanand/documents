@@ -1,0 +1,289 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision$
+\RCS$HeadURL$
+\RCS$Id$
+%%%%%%%%%%%%%%%  Additional definitions %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\comment}[1]{}
+\newcommand{\pb}{\ensuremath{\mathrm{pb}}}%
+\newcommand{\pp}{\ensuremath{\mathrm{pp}}}%
+\newcommand{\Wo}{\ensuremath{\mathrm{W}}}%
+\newcommand{\Wp}{\ensuremath{\mathrm{W^+}}}%
+\newcommand{\Wm}{\ensuremath{\mathrm{W^-}}}%
+\newcommand{\Zo}{\ensuremath{\mathrm{Z}}}%
+\newcommand{\rts}{\ensuremath{\sqrt{s}}}%
+\newcommand{\ra}{\ensuremath{\rightarrow}}%
+\newcommand{\MN}{\ensuremath{\mu\nu}}%
+\renewcommand{\EE}{\ensuremath{\mathrm{e}^+\mathrm{e}^-}}%
+\newcommand{\EN}{\ensuremath{\mathrm{e}\nu}}%
+\newcommand{\LN}{\ensuremath{\ell\nu}}%
+\newcommand{\MW}{\ensuremath{\mathrm{m}_\Wo}}%
+\newcommand{\MZ}{\ensuremath{\mathrm{m}_\Zo}}%
+\newcommand{\MT}{\ensuremath{\mathrm{M}_T}}%
+\newcommand{\MLL}{\ensuremath{\mathrm{M}_{\ell\ell}}}%
+\newcommand{\met}{\ensuremath{{E\!\!\!/}_{\mathrm{T}}}\xspace}
+\renewcommand{\ttbar}{\ensuremath{\mathrm{t}\bar{\mathrm{t}}}}%
+\newcommand{\Wmn}{\ensuremath{\Wo \ra \MN}}%
+\newcommand{\Wpmn}{\ensuremath{\Wp \ra \mu^+\nu}}%
+\newcommand{\Wmmn}{\ensuremath{\Wm \ra \mu^-\overline{\nu}}}%
+\newcommand{\Zmm}{\ensuremath{\Zo \ra \MM}}%
+\newcommand{\Wtn}{\ensuremath{\Wo \ra \tau\nu}}%
+\newcommand{\Ztt}{\ensuremath{\Zo \ra \tau^+\tau^-}}%
+\newcommand{\ppZmm}{\pp \ra \Zo(\gamma^*) + X \ra \MM + X}%
+\newcommand{\ppWmn}{\pp \ra \Wo + X \ra \MN + X}%
+\newcommand{\ppWpmn}{\pp \ra \Wp + X \ra \mu^+\nu + X}%
+\newcommand{\ppWmmn}{\pp \ra \Wm + X \ra \mu^-\overline{\nu} + X}%
+\newcommand{\Wen}{\ensuremath{\Wo \ra \EN}}%
+\newcommand{\Wpen}{\ensuremath{\Wp \ra \mathrm{e}^+\nu}}%
+\newcommand{\Wmen}{\ensuremath{\Wm \ra \mathrm{e}^-\overline{\nu}}}%
+\newcommand{\Zee}{\ensuremath{\Zo \ra \EE}}%
+\newcommand{\ppZee}{\pp \ra \Zo(\gamma^*) + X \ra \EE + X}%
+\newcommand{\ppWen}{\pp \ra \Wo + X \ra \EN + X}%
+\newcommand{\ppWpen}{\pp \ra \Wp + X \ra \mathrm{e}^+\nu  + X}%
+\newcommand{\ppWmen}{\pp \ra \Wm + X \ra \mathrm{e}^-\overline{\nu} + X}%
+
+\newcommand{\Wln}{\ensuremath{\Wo \ra \LN}}%
+\newcommand{\Wpln}{\ensuremath{\Wp \ra \ell^+\nu}}%
+\newcommand{\Wmln}{\ensuremath{\Wm \ra \ell^-\overline{\nu}}}%
+\newcommand{\Zll}{\ensuremath{\Zo \ra \ell^+ \ell^-}}%
+\newcommand{\ppZll}{\pp \ra \Zo(\gamma^*) + X \ra \ell^+ \ell^- + X}%
+\newcommand{\ppWln}{\pp \ra \Wo + X \ra \LN + X}%
+\newcommand{\ppWpln}{\pp \ra \Wp + X \ra \ell^+\nu  + X}%
+\newcommand{\ppWmln}{\pp \ra \Wm + X \ra \ell^-\overline{\nu} + X}%
+
+\newcommand{\Wptn}{\ensuremath{\Wp \ra \tau^+\nu_\tau}}%
+\newcommand{\Wmtn}{\ensuremath{\Wm \ra \tau^-\overline{\nu}}}%
+
+\newcommand{\Wev}{\Wen}
+\newcommand{\Wmv}{\Wmn}
+\newcommand{\Ztautau}{\Ztt}
+\renewcommand{\MET}{\met}
+\newcommand{\gammaZ}{\ensuremath{\gamma^{*}\Zo}}
+\newcommand{\gammaZmm}{\mbox{$ \gamma^{*}/\Zo\rightarrow \MM$}}
+\newcommand{\gammaZee}{\mbox{$ \gamma^{*}\Zo\rightarrow e^{+}  e^{-}$}}
+\newcommand{\gammaZtt}{\mbox{$ \gamma^{*}\Zo\rightarrow \tau^{+}  \tau^{-}$}}
+\newcommand{\gammaZll}{\mbox{$ \gamma^{*}\Zo\rightarrow \ell^{+}  \ell^{-}$}}
+\newcommand{\invpb}{\mbox{$\textrm{pb}^{-1}$}}
+\newcommand{\invnb}{\mbox{$\textrm{nb}^{-1}$}}
+\newcommand{\mz}{\mbox{$ m_{Z}$}}
+\newcommand{\hta}{\mbox{$ \eta$}}
+\newcommand{\fh}{\mbox{$ \phi$}}
+\newcommand{\etot}{\mbox{$ \epsilon_{tot}$}}
+\newcommand{\eclustering}{\mbox{$ \epsilon_{clustering}$}}
+\newcommand{\etracking}{\mbox{$ \epsilon_{tracking}$}}
+\newcommand{\egsfele}{\mbox{$ \epsilon_{gsfele}$}}
+\newcommand{\epreselection}{\mbox{$ \epsilon_{preselection}$}}
+\newcommand{\eisolation}{\mbox{$ \epsilon_{isolation}$}}
+\newcommand{\eclassification}{\mbox{$ \epsilon_{classification}$}}
+\newcommand{\eelID}{\mbox{$ \epsilon_{elID}$}}
+\newcommand{\etrigger}{\mbox{$ \epsilon_{trigger}$}}
+
+\newcommand{\DE}{$\Delta\eta_{in}$}
+\newcommand{\DP}{$\Delta\phi_{in}$}
+\newcommand{\SEE}{$\sigma_{\eta\eta}$~}
+\newcommand{\SEP}{$\sigma_{\eta\phi}$}
+\newcommand{\SPP}{$\sigma_{\phi\phi}$}
+\newcommand{\SXY}{$\sigma_{XY}$}
+\newcommand{\pth}{\hat{p}_{\perp}}
+\newcommand{\Pt}{p_{T}}
+\newcommand{\Et}{E_{T}}
+\newcommand{\Lint}{\ensuremath{{\cal L}_{\mathrm{int}}}}
+\newcommand{\IRelComb} {I^{\textrm{rel}}_{\textrm{comb}}}%
+\newcommand{\ITRK}     {I_{\textrm{trk}}}%
+\newcommand{\IECAL}    {I_{\textrm{ECAL}}}%
+\newcommand{\IHCAL}    {I_{\textrm{HCAL}}}%
+\newcommand{\Nbg}{N_{\mathrm{bg}}}%
+\newcommand{\mumu}{\mu\mu}
+\newcommand{\Zmumu}{Z_{\mumu}}
+\newcommand{\Zmus}{Z_{\mu s}}
+\newcommand{\Zmut}{Z_{\mu t}}
+\newcommand{\nonIso}{\mathrm{non\,iso}}
+\newcommand{\ZmumuNonIso}{\Zmumu^\nonIso}
+\newcommand{\ZmumuTwoHlt}{\Zmumu^{2\mathrm{HLT}}}
+\newcommand{\ZmumuOneHlt}{\Zmumu^{1\mathrm{HLT}}}
+
+\newcommand{\NZtomumu}{N_{\Zmm}}
+
+\newcommand{\Nmumu}{N_{\mumu}}
+\newcommand{\Nmus}{N_{\mu s}}
+\newcommand{\Nmut}{N_{\mu t}}
+\newcommand{\NmumuNonIso}{\Nmumu^\nonIso}
+\newcommand{\NmumuTwoHlt}{\Nmumu^{2\mathrm{HLT}}}
+\newcommand{\NmumuOneHlt}{\Nmumu^{1\mathrm{HLT}}}
+
+
+\newcommand{\effHlt}{\epsilon_\mathrm{HLT}}
+\newcommand{\effIso}{\epsilon_\mathrm{iso}}
+\newcommand{\effTrk}{\epsilon_\mathrm{trk}}
+\newcommand{\effSa}{\epsilon_\mathrm{sa}}
+
+\newcommand{\wwa}{{\sc $W^+W^-\gamma$ }}
+\newcommand{\wwaa}{{\sc $WW\gamma\gamma$ }}
+\newcommand{\wwza}{{\sc $WWZ\gamma$ }}
+\newcommand{\fbinv} {\mbox{\ensuremath{\,\text{fb}^\text{$-$1}}}}
+\newcommand{\pbinv} {\mbox{\ensuremath{\,\text{pb}^\text{$-$1}}}}
+
+\include{Numbers}
+
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{AN-12-479} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Measurement of WWgamma+WZgamma cross section and investigation of anomalous gauge boson couplings in semi-leptonic decays in pp collisions at $\sqrt{s} = 8$~TeV}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%To mark authors as primary, use the \author* form
+
+\address[ttu]{Texas Tech University, Lubbock, Texas, USA}
+\address[fnal]{Fermi National Accelerator Laboratory, Batavia, Illinois, USA}
+\address[pku]{Peking University, Beijing, China}
+\address[wsu]{Wayne State University, Detroit, Michigan, USA}
+\address[tamu]{Texas A\&M University, College Station, Texas, USA}
+%\address[nebr]{University of Nebraska at Lincoln, Nebraska, USA}
+\address[pri]{Princeton University, Princeton, New Jersey, USA}
+\address[del]{Delhi University, Delhi, India}
+\address[uerj]{Universidade do Estado do Rio de Janeiro (UERJ), Brazil}
+\address[cas]{Chinese Academy of Sciences, Beijing, China}
+\address[cbpf]{Centro Brasileiro de Pesquisas Fisicas (CBPF), Brazil}
+
+\author[ttu]{Nural~Akchurin}
+\author[cbpf]{Gilvan~Augusto~Alves}  
+\author[fnal]{Jake~Anderson}
+\author[pku]{Chayanit~Asawatangtrakuldee}
+\author[fnal]{Andrew Beretvas}
+\author[fnal]{Jeffrey~Berryhill}
+\author[fnal]{Pushpa~Bhat}
+\author[wsu]{Chris~Clarke}
+\author[ttu]{Jordan~Damgov}
+\author[ttu]{Phil~Dudero}
+\author[tamu]{Ricardo~Eusebi}
+\author[ttu]{James~Faulkner}
+\author[fnal]{Dan~Green}
+\author[wsu]{Robert~Harr}
+\author[pri]{Pratima~Jindal}
+\author[wsu]{Kristina~Krylova}
+\author[del]{Ajay Kumar}
+\author[ttu]{Sung-Won~Lee}
+\author[pku]{Qiang~Li}
+\author[pku]{Yajun~Mao}
+\author[wsu]{Kellen~McGee}
+\author[fnal]{Kalanand~Mishra}
+\author[del]{Md.~Naimuddin}
+\author[tamu]{Ilya~Osipenkov}
+\author[tamu]{Alexx~Perloff}
+\author[del]{Kirti~Ranjan}
+\author[wsu]{Sasha~Sakharov}
+\author[del]{Ram K Shivpuri}
+\author[wsu]{Kevin~Siehl}
+\author[uerj]{Andre~Sznajder}
+\author[cbpf]{Patricia~Rebello~Teles}
+\author[fnal]{Nhan~V.~Tran}
+\author[pku]{Zijun~Xu}
+\author[cas]{Weimin Wu}
+\author[pku]{Daneng~Yang}
+\author[fnal]{Fan~Yang}
+\author[fnal]{Francisco~Yumiceva}
+\author[pku]{Wei~Zou}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+   A study is presented of the standard model three electroweak vector
+   boson production, WV$\gamma$ with V = W or Z gauge boson, where the
+   W boson decays leptonically, the second boson V decays into two
+   jets, and a photon is also present in the final state. The data
+   analyzed corresponds to an integrated luminosity of 19.3~fb$^{-1}$
+   from pp collisions at $\sqrt{s}$ = 8~TeV collected in 2012 by the
+   CMS detector at the Large Hadron Collider.  With the selection
+   criteria used in this analysis, the number of observed events in
+   data is 322, while the estimated background yield is
+   341.5~$\pm$~15.8. This is consistent with the standard model
+   next-to-leading order QCD predictions, and corresponds to an upper
+   limit of 241~fb at 95\% confidence level for WV$\gamma$ with
+   photon $\pt >$ 10 GeV.  No evidence of anomalous WW$\gamma\gamma$
+   and WWZ$\gamma$ quartic gauge boson couplings is found. The
+   following 95\% confidence level upper limits are obtained for these
+   couplings:
+\begin{align*}
+   -21 &< a_{0}^{W}/\Lambda^{2} < 20 \unit{TeV}^{-2}, \\
+   -34 &< a_{C}^{W}/\Lambda^{2} < 32 \unit{TeV}^{-2}, \\
+   -25 &< f_{T,0}/\Lambda^{4} < 24 \unit{TeV}^{-4} \\
+   -12 &< \kappa_{0}^{W}/\Lambda^{2} < 10 \unit{TeV}^{-2} \textrm{, and} \\
+   -18 &< \kappa_{C}^{W}/\Lambda^{2} < 17 \unit{TeV}^{-2}.
+\end{align*}
+
+   These are the first ever limits on pure dimension-8
+WW$\gamma\gamma$ parameter $f_{T,0}$ and CP conserving WWZ$\gamma$ 
+parameters $\kappa_0^W$ and $\kappa_C^W$.  }
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible and are in plain text:
+% (1) no TeX! -- for \sqrt{s} use sqrt(s) -- this will show with extra quote marks in the draft version but is okay).
+% (2) no %.
+% (3) No curly braces {}.
+\hypersetup{%
+pdfauthor={ The WVgamma team },%
+pdftitle={Measurement of WWgamma+WZgamma cross section and investigation of anomalous gauge boson couplings in semi-leptonic decays in pp collisions at sqrts = 8~TeV},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+\tableofcontents
+%\newpage
+%\input{Abbreviations}
+\newpage
+\input{Introduction}
+\input{aTGCtheory}
+\input{DataMCsamples}
+\input{EventSelection}
+\input{Photon}
+\input{Kfactors}
+\input{DataMCcomparison}
+\input{MVAselection}
+\input{Systematics}
+\input{WWAcrosssection}
+\input{aTGClimits}
+\newpage
+\input{Conclusions}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+%\newpage
+\bibliography{auto_generated}   % will be created by the tdr script.
+
+\appendix
+\clearpage
+

@@ -1,0 +1,68 @@
+ \begin{verbatim}
+
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-5142.14 FROM MIGRAD    STATUS=CONVERGED     108 CALLS         109 TOTAL
+                     EDM=1.35213e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  power2_WpJ_tagjet_mass   1.98906e+00   1.72258e-01   6.40558e-05   1.18738e-01
+   2  power_WpJ_tagjet_mass  -5.62694e+00   9.35934e-01   2.36188e-04   2.83166e-02
+   3  r_signal     9.42048e-01   8.59560e-02   1.54937e-05  -8.37619e-01
+   4  top_nrm      9.93787e-01   6.97969e-02   1.10406e-03   2.10904e-03
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  50    NPAR=  4    ERR DEF=0.5
+  2.967e-02 -1.589e-01  1.481e-03 -8.004e-04 
+ -1.589e-01  8.763e-01 -1.585e-03  7.089e-04 
+  1.481e-03 -1.585e-03  7.388e-03 -3.736e-03 
+ -8.004e-04  7.089e-04 -3.736e-03  4.873e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.98878   1.000 -0.985  0.100 -0.067
+        2  0.98867  -0.985  1.000 -0.020  0.011
+        3  0.68519   0.100 -0.020  1.000 -0.623
+        4  0.62385  -0.067  0.011 -0.623  1.000
+ **********
+ **   15 **HESSE        2000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-5142.14 FROM HESSE     STATUS=OK             23 CALLS         132 TOTAL
+                     EDM=1.40221e-07    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  power2_WpJ_tagjet_mass   1.98906e+00   2.06598e-01   2.56223e-06   9.96175e-02
+   2  power_WpJ_tagjet_mass  -5.62694e+00   1.12240e+00   9.44753e-06  -1.88682e-01
+   3  r_signal     9.42048e-01   8.60742e-02   6.19749e-07   4.71025e-03
+   4  top_nrm      9.93787e-01   6.98696e-02   4.41626e-05  -4.74400e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  50    NPAR=  4    ERR DEF=0.5
+  4.268e-02 -2.296e-01  1.881e-03 -1.011e-03 
+ -2.296e-01  1.260e+00 -3.756e-03  1.844e-03 
+  1.881e-03 -3.756e-03  7.409e-03 -3.751e-03 
+ -1.011e-03  1.844e-03 -3.751e-03  4.883e-03 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.99222   1.000 -0.990  0.106 -0.070
+        2  0.99214  -0.990  1.000 -0.039  0.024
+        3  0.68627   0.106 -0.039  1.000 -0.624
+        4  0.62484  -0.070  0.024 -0.624  1.000
+
+  RooFitResult: minimized FCN value: -5142.14, estimated distance to minimum: 1.40221e-07
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MIGRAD=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+  power2_WpJ_tagjet_mass    1.9891e+00 +/-  2.07e-01
+  power_WpJ_tagjet_mass   -5.6269e+00 +/-  1.12e+00
+              r_signal    9.4205e-01 +/-  8.61e-02
+               top_nrm    9.9379e-01 +/-  6.99e-02
+
+chi2: 17.68 / 16 = 1.10
+chi2 probability: 0.3431
+2*nll_null - 2*nll: -10160.5906 - -10284.2884 = 123.6978
+p-value: 9.81e-29
+Gaussian significance: 11.1
+
+\end{verbatim}

@@ -1,0 +1,42 @@
+Jet grooming - elimination of uncorrelated UE/PU radiation from a target jet - is useful irrespective of the specific 
+bosted particle search and can even be applied for slow-moving heavy particles that decay to well-separated jets. 
+We consider in this analysis three different forms of grooming: trimming, pruning and filtering.  
+
+\subsection{Pruning Algorithm}
+
+Pruning was introduced by Ellis, Vermilion and Walsh~\cite{pruning}-\cite{pruning2}. The idea is to take a jet of interest and then to recluster it using a vetoed sequential clustering algorithm. 
+Clustering nominally proceeds as usual, but it is vetoed if $1)$ the particles are too far away in $\Delta R$, and 
+$2)$ the energy	sharing, defined by $min(p_{T1}, p_{T2})/p_{T(1+2)}$, is too asymmetric. 
+If both criteria are met, the softer of the two particles is thrown away and all thee relevant clustering parameters as $d_{ij} $are recalculated. The $\Delta R$ and energy-sharing thresholds are parameters of the clustering algorithm.
+
+\subsection{Trimming Algorithm}
+
+Trimming is a technique that ignores regions within a jet that fall below a minimum $p_T$ threshold. It was introduced by Krohn, Thaler and Wang in~\cite{trimming}. 
+Trimming reclusters the jets's constituents with a radius $R_{sub}$ and then accepts only the subjets that have $p_{T,sub} > fcut$, where $f_{cut}$ is taken proportional either to the jet's $p_T$ or to the event's total$H_T$ . The small jet radius and energy threshold are the only parameters.
+
+
+
+\subsection{Filtering Algorithm}
+
+The ``filtering'' procedure aims to identify relatively hard, symmetric splittings in a jet that contribute significantly to the jet invariant mass. This procedure is taken from recent Higgs search studies~\cite{boostedHiggs}. The parameters are tuned to maximise sensitivity to a Standard Model Higgs boson decaying to $b\bar{b}$, but this procedure is suitable generally for identifying two-body decay processes. The effect of the procedure is to search for jets where the clustering process combined two relatively low mass objects to make a much more massive object. This indicates the presence of a heavy particle decay. The procedure then attempts to retain only the constituents believed to be related to the decay of this particle.
+The identification strategy proposed in~\cite{boostedHiggs} uses the inclusive, longitudinally invariant C/A algorithm to flexibly adapt to the fact that the two-jet angular separation varies significantly with 
+the heavy particle $p_T$ and decay orientation. In this algorithm the angular distance 
+$\Delta R^2_{ij} = (y_i - y_j )^2 + (\phi_i - \phi_j )^2$, 
+where $y$ is the pseudorapidity and $\phi$ the azimuthal angle, is calculated between all 
+pairs of objects $i$ and $j$. The closest pair is combined into a single object, the set of distances is 
+updated, and the procedure is repeated until all objects are separated by a $\Delta R_{ij} > R$, where $R$ 
+is a parameter of the algorithm. This provides a hierarchical structure for the clustering, like the 
+$k_{\perp}$ algorithm but in angles rather than in relative transverse momenta.
+Each stage in the clustering combines two objects $j_1$ and $j_2$ to make another object $j$. We use the definition $v = \frac{min(p^2_{Tj_1},p^2_{Tj_2}) }{m^2_j} \delta R^2$. The procedure takes a
+jet to be the object $j$ and applies the following:
+\begin{enumerate}
+\item Undo the last clustering step of $j$ to get $j_1$ and $j_2$. These are ordered such that their mass has the property $m_{j_1} > m_{j_2}$. If $j$ cannot be unclustered (i.e. it is a single particle) then it is not a suitable candidate, so discard this jet.
+\item  If the splitting has $m_{j_1}/m_j < \mu$ (large change in jet mass) and $v > v_{cut}$ (fairly symmetric) then continue, otherwise redefine $j$ as $j_1$ and go back to step 1. Both $\mu$ and $v_{cut}$ are parameters of the algorithm.
+\item  Recluster the constituents of the jet with the Cambridge-Aachen algorithm with an $R$-parameter of $R_{filt} =\mbox{min} (0.3, \Delta R^2_{ij} /2)$ finding $n$ new subjets $s_1, s_2 ...s_n$ ordered in descending $p_T$.
+\item  Redefine the jet as the sum of subjet four-momenta $\sum_{i=1}^{min(n,3)} s_i$
+\end{enumerate}
+
+\noindent The algorithm parameters $\mu$ and $v_{cut}$ are taken as 0.67 and 0.09 respectively.
+The $\mu$ cut attempts to identify a hard structure in the distribution of energy in the jet, which would imply the decay of a heavy particle. The cut on $v$ further helps by suppressing very asymmetric decays of the type favoured by splittings of quarks and gluons.
+Steps 3 and 4 filter out some of the particles in the candidate jet, the aim being to retain particles relevant to the hard process while reducing the contribution from effects like underlying event and pile-up. The 4-vector after step 4 can be treated like a new jet. This new jet has a $p_T$ and mass less than or equal to those of the original jet.
+

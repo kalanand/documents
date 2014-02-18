@@ -1,0 +1,50 @@
+While the CMS detector is described in detail elsewhere~\cite{CMSdetector}, the
+key components for this analysis are summarized here.
+A superconducting solenoid occupies the
+central region of the CMS detector, providing an axial magnetic
+field of 3.8~Tesla parallel to the beam direction.
+The silicon pixel and strip
+tracker, the crystal electromagnetic calorimeter and the brass/scintillator hadron
+calorimeter are located within the solenoid. A quartz-fiber
+Cherenkov calorimeter extends the coverage to $|\eta| <$ 5.0, where pseudorapidity
+is defined as $\eta=-{\rm ln}[\tan{(\theta/2)}]$,
+and $\theta$ is the polar angle of the trajectory of the particle
+with respect to the beam direction. Muons are measured
+in gas detectors embedded in the iron return yoke outside the
+solenoid.
+The first level of the CMS trigger system, composed of custom
+hardware processors, is designed to select the most interesting events
+in less than 3 $\mu$s using information from the calorimeters and muon
+detectors. The High Level Trigger processor farm further
+decreases the event rate to a few hundred Hz, before data storage.
+
+This measurement is based on $\WW$ candidate events in which
+both bosons decay leptonically. The experimental signature consists of
+two isolated, high transverse momentum ($\pt$), 
+oppositely-charged leptons (electrons or muons) and large
+missing transverse energy ($\met$, defined as the modulus of the negative vector sum of the 
+transverse momenta of all reconstructed particles, charged or neutral, in the event) due to the undetected neutrinos.
+Several SM processes lead to backgrounds to the $\WW$ sample.
+These include $\Wjets$, $\wgamma$, and ${\rm QCD}$ multi-jet events where at
+least one of the jets is misidentified as a lepton, top production
+($\ttbar$ and $\tw$), Drell-Yan $\dyll$, and diboson
+production ($\WZ$, and $\ZZ$).
+
+A number of Monte Carlo event generators are used to simulate the signal and
+backgrounds. The $\rm{q}\bar{\rm{q}}\to\WW$ signal, $\Wjets$, $\WZ$,
+$\W\gamma^{(*)}$, Drell-Yan and $\ttbar$ processes are generated using the
+\textsc{madgraph}~\cite{madgraph} event generator. The $\mathrm{gg} \to \WW$
+signal component, which is expected to contribute 3\% of the total $\WW$
+production rate~\cite{MCFM}, is generated using \textsc{gg2ww}~\cite{ggww}.
+The \textsc{powheg} program~\cite{powheg} provided event samples for the $\tw$
+process, and the remaining processes are generated using \textsc{pythia}~\cite{pythia}.
+For leading-order generators, the default set of parton distribution functions
+(PDF) used to produce these samples is \textsc{cteq6l}~\cite{cteq66}, while 
+\textsc{ct10}~\cite{ct10} is used for next-to-leading order generators.
+NLO calculations are used for background cross sections.
+For all processes, the detector response is simulated using a detailed
+description of the CMS detector, based on the \textsc{geant4}
+package~\cite{Agostinelli:2002hh}.
+
+The simulated samples are reweighted according to the distribution of number of pp interactions 
+per bunch crossing (pile-up) as measured in the data.

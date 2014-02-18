@@ -1,0 +1,272 @@
+\label{sec:rawDataMCComparisons}
+\label{sec:dijetresults}
+
+\ifnpas
+In this Section, the detector-level distributions of the jet mass
+are investigated. Each of the distributions are made for 
+the $\pt^{AVG}$ bins described in Section~\ref{sec:ptBinAssignment}. 
+Each of the figures shows the raw event counts per $\pt^{AVG}$ bin,
+as a function of the average jet mass $m_J^{AVG}$. 
+
+
+Figure~\ref{figs:histAK7PtAvgVsMjetGroomOverReco_ratioPlots}
+shows a comparison of the jet mass from the groomed jets
+divided by the jet mass of matched ungroomed jets, for the
+three grooming techniques, for both data and the \PYTHIA Monte Carlo. 
+The data and the MC both exhibit similar behavior. In general,
+the filtering algorithm (black) is the least aggressive grooming technique,
+with groomed jet masses close to the ungroomed case.
+The trimming algorithm (red) is moderately aggressive, and the
+pruning algorithm (blue) is the most aggressive. In the case of
+the pruning algorithm, a bimodal distribution begins to manifest,
+which is typical of this algorithm since the parameters we have
+chosen require two subjets to be created. In the cases where
+the pruned jet mass is close to the ungroomed jet mass, 
+jets usually have large ``core'' components
+and small amounts of radiation, whereas when the pruned jet
+mass is closer to 0, the jets are more symmetrically split
+due to gluons splitting into two jets that fall within
+our $D=0.7$ parameter. 
+\fi
+
+\ifnpas
+Figures~\ref{figs:histAK7MjetVsPtAvg_rawDataMCComparisons_stacktrigs_pt_2}-
+\ref{figs:histAK7MjetVsPtAvg_rawDataMCComparisons_stacktrigs_pt_5}
+show the jet mass distribution for AK7 jets, along with
+the trigger breakdown for all of the $\pt^{AVG}$ bins. In each case,
+only one trigger contributes to any given $\pt^{AVG}$ bin. 
+
+
+Figures~\ref{figs:histAK7MjetVsPtAvg_rawDataMCComparisons_pt_2}-
+\ref{figs:histAK7MjetVsPtAvg_rawDataMCComparisons_pt_2_Pruned}
+%\ref{figs:histAK7MjetVsPtAvg_rawDataMCComparisons_pt_5_Pruned}
+show the detector-level distributions for the various jet grooming
+algorithms, compared to predictions from \PYTHIA, \PYTHIA8, and
+\HERWIG Monte Carlo samples. Each MC sample is normalized
+according to the expected luminosity and computed cross sections. 
+\fi
+
+\ifnpas
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/histAK7PtAvgVsMjetGroomOverReco_ratioPlots}
+\caption{Comparison of the jet mass from the groomed jets
+divided by the jet mass of matched ungroomed jets for the
+three grooming techniques, for both data and the \PYTHIA Monte Carlo. 
+\label{figs:histAK7PtAvgVsMjetGroomOverReco_ratioPlots}}
+\end{figure}
+
+\fi
+
+
+\label{sec:results}
+
+\ifnpas
+The unfolded distributions of the 
+averge jet mass are also investigated.
+In Figures~\ref{figs:unfoldedMeasurementDijets_1_allsys}-
+\ref{figs:unfoldedMeasurementDijets_9_Pruned_allsys}, 
+the differential cross
+section from Eq.~\ref{eq:pdf_mjet_simple} is shown for
+various $\pt^{AVG}$ bins, as a function of
+$m_{J}^{AVG}$, as described in
+Section~\ref{sec:dataSampleAndEventSelection}, 
+for ungroomed jets and for different grooming algorithms. 
+As described in Eq.~\ref{eq:pdf_mjet_simple},
+each distribution in each $\pt^{AVG}$ is separately normalized to
+unity, and each bin content is divided by the bin width of the
+$m_J^{AVG}$ bin,
+so these plots show the probability distribution function of $m_J^{AVG}$,
+with units of 1/GeV (see Eq.~\ref{eq:pdf_mjet_simple}). 
+The shapes for $m_J^{AVG}$ in the MC samples are
+taken directly from the MC.
+
+
+The statistical uncertainty is shown in light yellow, the uncertainties due to the jet-energy resolution, jet-energy scale, and jet-angular resolution are shown in shades of brown, the uncertainty due to pile-up is shown in green, and the uncertainty due to the parton shower differences are shown in dark yellow.
+The simulated distribution from \PYTHIA is shown in solid black, 
+from \PYTHIAEIGHT in dashed red, and from \HERWIG in dotted blue. 
+The bottom frame shows the ratio of the true distribution from
+the simulation divided by the unfolded distribution, along with
+the uncertainties in the unfolded distribution. 
+
+
+Figures~\ref{figs:unfoldedMeasurementDijets_1}-
+\ref{figs:unfoldedMeasurementDijets_9_Pruned}, 
+show the same plots, however in a simplified format with only the
+total and statistical uncertainties shown in dark yellow and 
+light yellow, respectively. 
+\fi
+
+\ifpas
+
+%The unfolded distributions of the 
+%average jet mass are also investigated.
+We present in this section the unfolded distributions of the 
+average jet mass.
+In Figures~\ref{figs:unfoldedMeasurementDijets_all}-
+%\ref{figs:unfoldedMeasurementDijets_all_Pruned},
+\ref{figs:unfoldedMeasurementDijets_allfrac_Pruned}
+%\ref{figs:unfoldedMeasurementDijets_5_Pruned}, 
+the differential cross
+section from Eq.~\ref{eq:pdf_mjet_simple} is shown for
+various $\pt^{AVG}$ bins, as a function of
+$m_{J}^{AVG}$, as described in
+Section~\ref{sec:dataSampleAndEventSelection}, 
+for ungroomed jets and for different grooming algorithms. 
+As described in Eq.~\ref{eq:pdf_mjet_simple},
+each distribution in each $\pt^{AVG}$ is separately normalized to
+unity, and each bin content is divided by the bin width of the
+$m_J^{AVG}$ bin,
+so these plots show the probability distribution function of $m_J^{AVG}$,
+with units of 1/GeV (see Eq.~\ref{eq:pdf_mjet_simple}). 
+%The shapes for $m_J^{AVG}$ in the MC samples are
+%taken directly from the MC. 
+The unfolded data are shown in
+black circles, and the 
+total and statistical uncertainties shown in dark yellow and 
+light yellow, respectively. The \HERWIG truth prediction is shown in
+dotted blue. 
+%Figures~\ref{figs:unfoldedMeasurementDijets_allfrac}-
+%\ref{figs:unfoldedMeasurementDijets_allfrac_Pruned},
+Following each differential cross-section distribution, we also show
+the ratio of the MC truth to the differential cross
+sections above for \PYTHIA in solid black, 
+for \PYTHIAEIGHT in dashed red, and for \HERWIG in dotted blue. 
+
+\fi 
+
+In all case, the distributions are truncated in the tails for
+visibility purposes. Jet-mass bins with a relative uncertainty larger
+than 100\% are not displayed to avoid overlapping with other
+$\pt^{AVG}$ bins with a more precise measurement in that bin. 
+
+The agreement with the \HERWIG parton-shower model seems to be the
+best for $\pt^{AVG} > 300$ \GeV and $m_{J}^{AVG} > 20$ \GeV.
+% Above $\pt^{AVG} > 300$ \GeV, the 
+%\HERWIG model seems to describe the jet mass very well above
+%$m_{J}^{AVG} > 50$ \GeV. 
+%After applying the various grooming techniques,
+%the agreement is even improved, and the agreement begins
+%at around $m_{J}^{AVG} > 20$ \GeV. 
+However, the filtering algorithm seems to have slightly worse agreement again 
+for $20 < m_{J}^{AVG} < 50$ \GeV when $\pt^{AVG} > 450$ \GeV.
+
+For all of the generators and all of the $\pt^{AVG}$ bins, 
+the agreement gets better for
+larger jet masses. At the very lowest jet masses, the disagreement
+is the largest: this is the most sensitive region to UE/PU and the amount of showering in the simulation seems underestimated. 
+
+The largest systematic effect is the difference in the
+unfolding using different parton shower models, with
+subleading, but still significant, uncertainties due to
+jet energy scale and resolution, and
+small contributions from jet angular resolution and pileup. 
+For the first two $\pt^{AVG}$ bins, there is also
+some contribution from unfolding bias in the lower
+jet mass regions, but this is negligible for
+$\pt^{AVG} > 450$ \GeV. 
+
+
+%\input{rawComparisonFigures}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/unfoldedMeasurementDijets_all_}
+\caption{Unfolded distributions of the jet mass for AK7 jets,
+The data are shown in black points. 
+The statistical uncertainty is shown in light yellow, and the
+systematic uncertainty is shown in dark yellow.
+The higher $\pt^{AVG}$ bins are scaled by a factor to
+enhance visibility.
+\label{figs:unfoldedMeasurementDijets_all}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/unfoldedMeasurementDijets_allfrac_}
+\caption{Ratio of MC truth to unfolded distributions of the jet mass for AK7 jets,
+The data are shown in black points.
+The statistical uncertainty is shown in light yellow, and the
+systematic uncertainty is shown in dark yellow. \PYTHIA is shown in solid black, \HERWIG is shown in dotted blue, and \PYTHIA8 is shown in dashed red.
+\label{figs:unfoldedMeasurementDijets_allfrac}}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/unfoldedMeasurementDijets_all__Filtered}
+\caption{Unfolded distributions of the jet mass for filtered AK7 jets,
+The data are shown in black points. 
+The statistical uncertainty is shown in light yellow, and the
+systematic uncertainty is shown in dark yellow.
+The higher $\pt^{AVG}$ bins are scaled by a factor to
+enhance visibility.
+\label{figs:unfoldedMeasurementDijets_all_Filtered}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/unfoldedMeasurementDijets_allfrac__Filtered}
+\caption{Ratio of MC truth to unfolded distributions of the jet mass for filtered AK7 jets,
+The data are shown in black points.
+The statistical uncertainty is shown in light yellow, and the
+systematic uncertainty is shown in dark yellow. \PYTHIA is shown in solid black, \HERWIG is shown in dotted blue, and \PYTHIA8 is shown in dashed red.
+\label{figs:unfoldedMeasurementDijets_allfrac_Filtered}}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/unfoldedMeasurementDijets_all__Trimmed}
+\caption{Unfolded distributions of the jet mass for trimmed AK7 jets,
+The data are shown in black points. 
+The statistical uncertainty is shown in light yellow, and the
+systematic uncertainty is shown in dark yellow.
+The higher $\pt^{AVG}$ bins are scaled by a factor to
+enhance visibility.
+\label{figs:unfoldedMeasurementDijets_all_Trimmed}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/unfoldedMeasurementDijets_allfrac__Trimmed}
+\caption{Ratio of MC truth to unfolded distributions of the jet mass for trimmed AK7 jets,
+The data are shown in black points.
+The statistical uncertainty is shown in light yellow, and the
+systematic uncertainty is shown in dark yellow. \PYTHIA is shown in solid black, \HERWIG is shown in dotted blue, and \PYTHIA8 is shown in dashed red.
+\label{figs:unfoldedMeasurementDijets_allfrac_Trimmed}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/unfoldedMeasurementDijets_all__Pruned}
+\caption{Unfolded distributions of the jet mass for pruned AK7 jets,
+The data are shown in black points. 
+The statistical uncertainty is shown in light yellow, and the
+systematic uncertainty is shown in dark yellow.
+The higher $\pt^{AVG}$ bins are scaled by a factor to
+enhance visibility.
+\label{figs:unfoldedMeasurementDijets_all_Pruned}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figs/unfoldedMeasurementDijets_allfrac__Pruned}
+\caption{Ratio of MC truth to unfolded distributions of the jet mass for pruned AK7 jets,
+The data are shown in black points.
+The statistical uncertainty is shown in light yellow, and the
+systematic uncertainty is shown in dark yellow. \PYTHIA is shown in solid black, \HERWIG is shown in dotted blue, and \PYTHIA8 is shown in dashed red.
+\label{figs:unfoldedMeasurementDijets_allfrac_Pruned}}
+\end{figure}
+
+
+
+
+
+
+
+
+
+%\input{jetUnfoldedFigures}

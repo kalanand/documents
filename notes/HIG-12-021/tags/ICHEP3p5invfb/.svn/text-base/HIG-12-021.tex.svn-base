@@ -1,0 +1,874 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision$
+\RCS$HeadURL$
+\RCS$Id$
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{HIG-12-021} % This is over-written in the CMS environment: useful as preprint no. for export versions
+
+\input{ptdr-definitions}
+\renewcommand{\MET}{\ensuremath{{E\!\!\!/}_{\!\mathrm{T}}}\xspace}
+\newcommand{\pp}{\ensuremath{\mathrm{pp}}}%
+\newcommand{\Wo}{\ensuremath{\mathrm{W}}}%
+\newcommand{\Wp}{\ensuremath{\mathrm{W^+}}}%
+\newcommand{\Wm}{\ensuremath{\mathrm{W^-}}}%
+\newcommand{\Zo}{\ensuremath{\mathrm{Z}}}%
+\newcommand{\Ho}{\ensuremath{\mathrm{H}}}%
+\newcommand{\ra}{\ensuremath{\rightarrow}}%
+\newcommand{\MN}{\ensuremath{\mu\nu}}%
+\renewcommand{\LL}{\ensuremath{\ell^-\ell^+}}%
+\renewcommand{\EE}{\ensuremath{\mathrm{e}^-\mathrm{e}^+}}%
+\newcommand{\EN}{\ensuremath{\mathrm{e}\nu}}%
+\newcommand{\LN}{\ensuremath{\ell\nu}}%
+\newcommand{\MW}{\ensuremath{m_\Wo}}%
+\newcommand{\MZ}{\ensuremath{m_\Zo}}%
+\newcommand{\MT}{\ensuremath{M_\mathrm{T}}}%
+\newcommand{\MLL}{\ensuremath{m_{\ell\ell}}}%
+\newcommand{\nunubar}{\ensuremath{\mathrm{nu}\bar{\mathrm{nu}}}}%
+%\newcommand{\bbbar}{\ensuremath{\mathrm{b}\bar{\mathrm{b}}}}%
+%\newcommand{\ttbar}{\ensuremath{\mathrm{t}\bar{\mathrm{t}}}}%
+\newcommand{\qqbar}{\ensuremath{\mathrm{q}\bar{\mathrm{q}}}}%
+\newcommand{\HZZ}{\ensuremath{\Ho\ra\Zo\Zo}}%
+\newcommand{\HWW}{\ensuremath{\Ho\ra\Wo\Wo}}%
+\newcommand{\HWWlvqq}{\ensuremath{\HWW\ra\ell{}\nu{}jj}}%
+\newcommand{\Hllqq}{\ensuremath{\Ho\ra\ell{}\nu{}jj}}%
+\newcommand{\mZ}{\ensuremath{m_{\Zo}}}%
+\newcommand{\mW}{\ensuremath{m_{\Wo}}}%
+\newcommand{\mH}{\ensuremath{m_{\Ho}}}%
+\newcommand{\mWW}{\ensuremath{m_{\Wo\Wo}}}%
+\newcommand{\mll}{\ensuremath{m_{\ell\ell}}}%
+\newcommand{\mjj}{\ensuremath{m_{jj}}}%
+%\newcommand{\GeVnn}{\ensuremath{{\,\text{Ge\hspace{-.08em}V\hspace{-0.16em}/\hspace{-0.08em}}c^\text{2}}}\xspace}
+\newcommand{\GeVnn}{\ensuremath{{\,\text{Ge\hspace{-.08em}V\hspace{-0.16em}}}}\xspace}
+\newcommand{\GeVcnn}{\ensuremath{{\,\text{Ge\hspace{-.08em}V\hspace{-0.16em}}}}\xspace}
+\newcommand{\GeVsnn}{\ensuremath{{\text{Ge\hspace{-.08em}V\hspace{-0.16em}}}}\xspace}
+\newcommand{\mt}{\ensuremath{m_{\mathrm{T}}}\xspace}
+\newcommand{\pb}{\ensuremath{\,\text{pb}}\xspace}
+
+
+
+\title{Search for the Standard Model Higgs boson in the H $\to$ WW $\to\ell{}\nu{}jj$ decay channel in pp collisions at $\sqrt{s}=8$\,TeV}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%\address[neu]{Northeastern University}
+%\address[fnal]{Fermilab}
+%\address[cern]{CERN}
+\author[cern]{The CMS Collaboration}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+A search for the Standard Model Higgs boson decaying to two W bosons
+with the subsequent decay to a final state containing one lepton, one
+neutrino, and two jets is presented.  The results are based on a data
+sample corresponding to an integrated luminosity of 3.5~fb$^{-1}$ of
+proton-proton collisions at $\sqrt{s}=8\,\text{Te\hspace{-.08em}V}$
+and collected with the CMS detector at the CERN LHC in 2012.
+Selections to discriminate between the signal and background events
+are based on kinematic and topological quantities including the
+angular spin correlations of the decay products.  No evidence for the
+Higgs boson is found.  Using 8~TeV data, we exclude the Standard Model
+Higgs boson in the mass range 260--390~GeV, to a confidence level of
+95\%. When combined with 7~TeV data, the exclusion range expands to
+240-450~GeV to 95\% confidence.  }
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible. For APS submissions, they are automatically converted to APS keywords.
+\hypersetup{%
+pdfauthor={CMS collaboration, lvjj team},%
+pdftitle={Search for the Standard Model Higgs boson in the H to WW  to lvjj decay channel},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+
+
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{Introduction}
+A primary goal of the Large Hadron Collider (LHC)~\cite{lhc-paper} experiments is to study the
+mechanism of electroweak symmetry breaking where the W and Z bosons acquire mass while the
+photon remains massless. The Standard Model (SM) postulates the
+mechanism of electroweak symmetry breaking with the Higgs field as a possible
+explanation~\cite{Englert:1964et, Higgs:1964pj, Guralnik:1964eu}. A consequence of the Higgs field
+would be existence of the spin-zero Higgs boson (H) with quantum numbers of the vacuum
+$J^{PC}=0^{++}$. Indirect measurements~\cite{LEP:2010zz} and direct searches~\cite{TevHiggsLimit}
+suggest that the mass of the SM Higgs boson would most likely fall below 200\GeVnn,
+with part of this range already excluded by direct limits from
+LHC~\cite{HIG-11-032,ATLAS-CONF-2011-112}. 
+However, if the Higgs sector contains a triplet field under 
+SU(2)${_\text{L}}$ the resulting Higgs bosons can have different 
+WW and ZZ couplings than the corresponding values in the SM, and 
+the ratio of the WW to ZZ couplings of the Higgs boson can be different than 
+the one in the SM~\cite{Gunion:425736}. A critical task of the LHC physics program 
+is to discover or exclude the existence of Higgs boson(s) with 
+mass below the TeV scale by probing couplings to WW and ZZ and their 
+ratio as precisely as possible in many final states.
+
+
+
+The primary production mechanism of the Higgs boson at the LHC is gluon fusion
+(gg)~\cite{Dawson:1990zj,Spira:1995rr,Harlander:2002wh,Anastasiou:2002yz,Ravindran:2003um,
+Catani:2003zt,Aglietti:2004nj,Actis:2008ug,Anastasiou:2008tj,deFlorian:2009hc} with a small but
+measurable contribution from vector boson fusion (VBF)~\cite{Ciccolini:2007jr,Ciccolini:2007ec,
+Figy:2003nv, Arnold:2008rz, Bolzoni:2010xr, Figy:2010ct} and more rare contributions from other
+processes. The decay of the Higgs boson to two 
+gauge bosons provides an important discovery signature at the LHC. 
+For Higgs boson masses
+$\mH < 2\mW$ the final states contain two photons or two weak bosons, ZZ or WW, one of which is a
+virtual particle. For $\mH \ge 2\mW$, the main final states are those with two on-shell bosons:
+$\Wp\Wm$ for $2 \mW \le \mH < 2 \mZ$, and additionally $\Zo\Zo$ for $\mH \ge 2\mZ$. 
+
+
+
+The WW channel, 
+where one W decays leptonically and allows for triggering the event, while the other decays
+hadronically, has a larger branching fraction than the two-lepton final state and has a
+reconstructable Higgs mass peak~\cite{intro2}. The main experimental challenge is to 
+control the large W+jets background.
+%%In this article we present an optimized search for the SM Higgs boson
+%%decaying to two W bosons, one of which decays leptonically while the
+%%other decays hadronically. 
+We performed a search in this channel
+previously using similar methods on 7~TeV data collected in 2011; the
+results are reported in \cite{HIG-12-003}. The ATLAS experiment also
+performed a search in this channel \cite{ATLAS:2011ae}. Here we
+present the results from data corresponding to an integrated
+luminosity of $3.50 \pm 0.18\fbinv$ collected with the CMS detector in
+pp collisions at $\sqrt{s} = 8\TeV$ at the CERN LHC in 2012. These
+results are presented both in isolation and in combination with our
+results from 2011. No evidence for a Higgs boson is found, and limits
+on the corresponding production cross section are presented for a wide
+range of masses.
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{The CMS detector}
+\label{sec:detector}
+The right-handed coordinate system is used by 
+CMS~\cite{CMS:2010} with the origin at the nominal
+interaction point, the x-axis pointing to the center of the LHC, the y-axis pointing up
+perpendicular to the LHC plane, and the z-axis along the counterclockwise-beam direction. The polar
+angle $\theta$ is measured from the positive z-axis and the azimuthal angle $\phi$ is measured in
+the x-y plane. The pseudorapidity is defined as $\eta = -\ln(\tan\frac{\theta}{2})$.
+The CMS detector~\cite{CMS:2010} consists of pixel and silicon-strip trackers up to $|\eta| < 2.5$
+which, together with a 3.8 Tesla solenoid, provide
+a track momentum resolution of 1\% at 100\GeVnn; a granular electromagnetic crystal-calorimeter  
+extending up to $|\eta| < 3$ with an energy resolution of about $3\%/\sqrt{E}$ 
+\cite{CMS-PAS-EGM-10-003}; a hadronic
+calorimeter extending up to $|\eta| < 5$ with
+an energy resolution of $100\%/\sqrt{E}$; and an efficient muon system capable of reconstructing and
+identifying muons up to $|\eta| < 2.1$. The detector is nearly hermetic, allowing for measurements
+of the missing transverse energy ($\MET$) in the event. 
+A two-tier trigger system selects the events for use in
+physics analysis.
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{Data and Simulation samples}
+\label{sec:datamc}
+We use data collected with a suite of single lepton triggers mostly using transverse momentum (\PT) 
+thresholds of 24\GeVnn for muons and 27\GeVnn for electrons. 
+Simulated Monte Carlo (MC) samples are
+corrected for any data-MC difference in trigger efficiency.
+The main sources of background are estimated from data. 
+Monte Carlo simulations are used to estimate residual contribution
+of the background, and to estimate efficiency of the Higgs signal.
+We use the \MADGRAPH~5~1.3.30~\cite{MADGRAPH} event
+generator and CTEQ6L1 parton distribution functions (PDF) 
+to simulate the W boson and Drell-Yan production
+in association with up to four jets. 
+The matrix element (ME) calculation is used and outgoing  
+partons are matched to 
+parton showers (PS) from \PYTHIA 6.422~\cite{PYTHIA} tune Z2~\cite{Collaboration:2012tb} with a matching
+threshold of 20\GeVnn and a dynamic factorization/renormalization scale given by
+{\small $\sqrt{m^{2}_{\textnormal{W/Z}} + p^{2}_{\textnormal{T, W/Z}}}$}.
+Top-quark pair events are also simulated using \MADGRAPH. Single top production is modeled using
+{\sc powheg}~1.0~\cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Nason:2009ai}. 
+Multi-jet and electroweak diboson (WW and WZ semi-leptonic decay)
+processes are simulated using \PYTHIA. 
+The {\sc powheg} generator has been used to produce Higgs signal events, and the showering has been
+performed with \PYTHIA. For this analysis, samples with Higgs mass hypotheses ranging
+from 170 to 600\GeVnn have been used. 
+All simulated events are fully reconstructed using the standard CMS
+software as used in real data.
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{Event Reconstruction}
+\label{sec:reco}
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\subsection{Jets}
+\label{sec:recojets}
+
+Jets are reconstructed from calorimeter and tracker information using
+a particle flow algorithm~\cite{PFT-09-001}, combining the information
+from all CMS sub-detectors to reconstruct each particle. The anti-\kt
+clustering algorithm~\cite{antikt,fastjetmanual} with distance
+parameter ${\Delta R \equiv \sqrt{(\Delta\eta)^2+(\Delta\phi)^2}
+=0.5}$ is used, where $\Delta\eta$ and $\Delta\phi$ are the
+differences in pseudorapidity and in azimuthal angle in radians. Jets
+that overlap with isolated leptons are not considered, where the
+overlap is determined by a cone around the lepton axis of radius
+$\Delta R = 0.3$. Jet-energy corrections are applied to account for the
+non-linear response of the calorimeters to the particle energies and
+other instrumental effects~\cite{jetpas}.  These corrections are based
+on in-situ measurements using di-jet, $\gamma+{\rm jet}$, and Z+jet
+data samples~\cite{Chatrchyan:2011ds}.  Overlapping minimum-bias
+events coming from different proton-proton collisions (pile-up) and
+the underlying event have an effect on jet reconstruction by
+contributing additional energy to the reconstructed jets. The median
+energy density due to pile-up is evaluated in each event and the
+corresponding energy is subtracted from each jet~\cite{fastjet1}. 
+In addition,
+charged-particle tracks not originating at the primary vertex are not
+considered for jet clustering~\cite{Cacciari:2008gn}. 
+A jet quality requirement, primarily based on the energy balance 
+between charged and neutral hadrons
+in a jet, is applied to remove misidentified jets~\cite{jetpas}. 
+A selection requirement $\PT>30\GeVnn$ is applied to all jets. 
+Initial and final state gluon radiation can result in an extra jet.
+Only events with two or three jets above this threshold within the 
+tracker acceptance ($|\eta|<2.4$) are selected for the analysis.
+According to simulation, in case of 2-jet events we select the 
+right jet combination at a rate that varies from 68\% for 
+$M_H = 200$~GeV to 88\% for $M_H = 600$~GeV.
+For 3-jet events, the corresponding rates are 26\% and 84\%, respectively.
+The events with wrong combination contribute as non-peaking 
+background in the $m_{WW}$ spectrum.
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\subsection{Leptons}
+\label{sec:recolepton}
+Muons are measured with the tracker and the muon system, within $|\eta|<2.1$. 
+Electrons are detected as tracks in the tracker pointing to energy 
+clusters in the ECAL, within $|\eta|<2.5$,  excluding the transition 
+region between the barrel and endcap, $1.44<|\eta|<1.57$. 
+Muons (electrons) are required to have a momentum transverse to the 
+beam direction, \PT, greater than 25\GeVnn (35\GeVnn).
+The lepton candidates are required to be compatible with the 
+primary vertex of the event, which is chosen as the vertex with 
+the highest $\sum \PT^2$ of its associated tracks. 
+According to simulation, this requirement provides the correct 
+assignment for the primary vertex in more than 99\% of cases
+in both signal and background events. 
+Charged leptons from W boson decays are required to
+be isolated from other activity in the event.
+%%Electrons (Muons) are therefore required to be isolated 
+%%from hadronic activity in the detector by restricting
+%%the sum of transverse momentum or energy in the tracker, 
+%%ECAL, and HCAL, within a surrounding cone
+%%of $\Delta R <0.3 (0.4)$, to be less than 5\% (10\%) of the measured
+%%$\PT$ of the electron (muon). 
+%%Before the isolation requirement is applied, pile-up energy is 
+%%subtracted from the isolation cone.
+To reduce the backgrounds from the Drell-Yan and electroweak 
+diboson purely-leptonic decay processes, we veto the presence of 
+any other loosely identified lepton (of $\PT > 20\GeVnn$ for electron,
+10\GeVnn for muon) in the event.
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\subsection{W Boson Reconstruction}
+\label{sec:recoMET}
+The combination of the two highest $\PT$ jets is chosen as the
+hadronic W candidate, while the lepton plus $\MET$ system is
+considered as the leptonic W candidate.
+
+An accurate $\MET$ measurement is essential for reconstructing the
+leptonic W, and from there to the full event kinematics of the WW
+system. We use $\MET$ measured in the event using the full
+particle-flow reconstruction. The $\MET$ resolution, measured as a
+function of the sum $\ET$ ($\sum\ET$) of the
+particle-flow~\cite{PFT-09-001} objects in the event, varies from 4\%
+at $\sum\ET=60\GeVnn$ to 10\% at
+$\sum\ET=350\GeVnn$~\cite{Chatrchyan:2011tn}.  We require $\MET>25$
+(30)\GeVnn in the event in case of muon (electron) data.  In addition,
+the unmeasurable longitudinal component of the neutrino momentum is
+reconstructed by requiring the lepton-neutrino pair to have the
+invariant mass of a W boson. The ambiguity in the second-order
+equation is resolved by taking the solution that yields the smallest
+$|p_{\textnormal{z}}|$ value.
+
+To reduce the background from processes that do not contain
+$\textnormal{W}\to\ell\nu$ decays, we then require that the transverse
+mass~\cite{VBTF} of the leptonic W candidate be larger than 30\GeVnn.
+
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\subsection{Kinematic distributions after physics object selection}
+\label{sec:controlplots}
+After all of the object preselections described above are performed, 
+the invariant mass of the di-jet system ($m_{jj}$) and of the
+four-body system ($m_{\ell{}\nu{}jj}$) are shown in 
+Figure~\ref{fig:massesPlots} for the muon dataset.
+As can be seen, the main background for this analysis is due to 
+the production of W bosons in association with jets (W+jets). 
+The requirement $65\GeVnn < m_{jj} < 95\GeVnn$, which keeps about 
+80\% of the signal events, is subsequently applied in
+order to reduce this background. 
+%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t!]
+  \begin{center}
+  \subfigure[]{
+  \includegraphics[width=0.45\textwidth]{plots/mu_mjj.pdf}
+  }   
+  \subfigure[]{
+  \includegraphics[width=0.45\textwidth]{plots/mu_mlvjj.pdf}
+  }   
+  \caption{The invariant mass of the di-jet system ($m_{jj}$) and of
+   the four-body system
+  ($m_{\ell{}\nu{}jj}$) after the physics object selection but 
+  before optimization, for the case of muons 2-jets sample. 
+  While the W+jets simulation describes $m_{jj}$ distribution 
+  in data well, the agreement in $m_{\ell{}\nu{}jj}$ is less good.
+  Error bars correspond to the statistical uncertainties. 
+}
+  \label{fig:massesPlots}
+  \end{center}
+\end{figure}
+%%%%%%%%%%%%%%%%%
+%%%%%%% Kalanand: June 18, 2012:  Descope fit based analysis for ICHEP.
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+%%%\section{Fit-based limit extraction}
+%%%\label{sec:fit}
+%%%A first limit extraction is performed after applying a simple set of selections on top of those
+%%%already described. To help discriminate signal-like events from background contamination, we exploit
+%%%the centrality of Higgs events by requiring lepton $|\eta|<1.5$, $\Delta\eta_{jj} < 1.5$, and
+%%%$|\eta_{jj}| < 3$. Moreover, to reduce the contamination from \ttbar in the three-jet final state,
+%%%events are discarded if one or more jets with $\PT>30\GeVnn$ and $|\eta|<2.4$ are identified to be
+%%%generated from a b-quark, based on the counting of tracks with large impact parameter within
+%%%jets~\cite{btag}.
+%%%%TCHEM
+%%%
+%%%The limit extraction is based on the simultaneous fit of signal and background on the
+%%%$m_{\ell{}\nu{}jj}$ mass spectrum. The signal model is derived from simulation, where the scale
+%%%factors accounting from residual differences between data and simulation in lepton reconstruction,
+%%%identification, and triggering are accounted for. The statistical uncertainty on the background is
+%%%derived within the limit calculation from the uncertainties on the fit parameter determination.
+%%%
+%%%The functional form of the background is chosen on the basis of compatibility with the simulation.
+%%%A set of candidate functions is inspected: polynomials ($\mathcal{T}(x;\mu,kT) \times \sum a_i x^i $),
+%%%exponentials ($\mathcal{T}(x;\mu,kT) \times \sum N_i e^{-\lambda_i x}$), exponentiated polynomials
+%%%($\mathcal{T}(x;\mu,kT) \times e^{\sum a_i x^i}$) and power laws
+%%%($\mathcal{T}(x;\mu,kT) \times \sum N_i (x-a_i)^{-n_i}$), where all functions are multiplied by
+%%%$\mathcal{T}(x;\mu,kT)$, a fermi function intended to model the low invariant mass turn-on. 
+%%%
+%%%For each family, a candidate is chosen by increasing the number of degrees of freedom until 
+%%%the goodness of the fit does not significantly increase any more. 
+%%%The resulting set is composed by a third order
+%%%exponentiated polynomial, a second order exponential, and a first order power law. Since a very
+%%%large number of degrees of freedom is needed for the polynomials to well reproduce the invariant
+%%%mass shape, the whole family is discarded.
+%%%
+%%%For any of these candidates, the average difference with respect to the others after the fit on data
+%%%is considered as an intrinsic bias due to the shape choice, and the functional form with smallest
+%%%bias and number of degrees of freedom is chosen as the background model. Its bias is then considered
+%%%as an additional systematic uncertainty in the limit extraction.
+%%%
+%%%% The choice of this model allows the limit extraction only where the background shows a
+%%%% monotonic decrease, thus for Higgs mass hypothesis above 250\GeVnn.
+%%%Figure~\ref{fig:backgroundShape} shows the four-body mass distribution of the observed events 
+%%%after the preselections, overlapped to a fit of the chosen background-only shape, performed 
+%%%outside the combination tool for illustrative purposes.
+%%%
+%%%
+%%%\begin{figure}[htb]
+%%% \begin{center}
+%%%  \subfigure[]{
+%%%   \includegraphics[width=0.45\textwidth]{plots/lin_data_mu_lepNuW_m_KF.pdf} 
+%%%   } 
+%%%  \subfigure[]{
+%%%   \includegraphics[width=0.45\textwidth]{plots/lin_data_e_lepNuW_m_KF.pdf}   
+%%%   }
+%%%   \caption{Fit-based analysis: the observed $m_{\ell{}\nu{}jj}$ distribution, with background
+%%%   contribution superimposed, after a simple kinematic selection for (a) muon and (b) electron data.
+%%%   The dashed lines represent the expected Higgs signal peak (the SM cross-section has been
+%%%   multiplied by a factor 40 to make it more visible.)}
+%%%   \label{fig:backgroundShape}
+%%% \end{center}
+%%%\end{figure}
+%%%
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{Selection optimization}
+\label{sec:mva}
+To exploit the differences in kinematics between signal and
+background, a likelihood discriminant is constructed that incorporates
+a set of variables that best distinguishes the Higgs signal from the
+W+jets background. This approach improves the expected sensitivity to
+a Higgs mass hypothesis across the entire mass range, but particularly
+allows one to extract a limit below $M_H=250$~\GeVnn, where the background
+is all the more dominant. These variables comprise five
+angles between the Higgs decay products that fully describe the Higgs
+production kinematics~\cite{Gao:2010qx}, the $\PT$ and rapidity of the
+WW system, and the lepton charge.
+
+\begin{figure}[t!]
+  \begin{center}
+    \includegraphics[width=0.3\linewidth]{plots/mu_phi.pdf}
+    \includegraphics[width=0.3\linewidth]{plots/mu_phib.pdf}
+    \includegraphics[width=0.3\linewidth]{plots/mu_ha.pdf}
+    \includegraphics[width=0.3\linewidth]{plots/mu_hb.pdf}
+    \includegraphics[width=0.3\linewidth]{plots/mu_hs.pdf}
+    \includegraphics[width=0.3\linewidth]{plots/mu_ptlvjj.pdf}
+    \includegraphics[width=0.3\linewidth]{plots/mu_etalvjj.pdf}
+    \includegraphics[width=0.3\linewidth]{plots/mu_mva2j190.pdf}
+    \includegraphics[width=0.3\linewidth]{plots/mu_mva2j500.pdf}
+  \caption{The variables used as input for the likelihood discriminant. 
+  From left to right, and from top to bottom: 
+  $\Phi$, $\Phi_1$, $\theta_1$, $\theta_2$, $\theta^*$, $\PT$(WW), 
+  and rapidity of the WW system. These variables are defined in 
+  Ref.~\cite{HIG-11-027}. 
+  Also shown in addition are the likelihood discriminants for muon 
+  plus 2 jet channel with selections optimized for Higgs mass 
+  hypotheses 190\GeVnn and 500\GeVnn. 
+  Error bars correspond to the statistical uncertainties. 
+  }
+  \label{fig:mvaPlots}
+  \end{center}
+\end{figure}
+
+The likelihood variable definition is optimized with dedicated simulation 
+samples for 12 Higgs mass hypotheses (170, 180, 190, 200, 250, 300, 350, 
+400, 450, 500, 550, 600\GeVnn), for each
+lepton flavor ($e$, $\mu$) and for each jet multiplicity (2 jets, 3 jets) 
+independently. 
+In this way, 48 different optimizations are obtained. 
+For each of them, events are retained if they survive a simple 
+selection on the likelihood discriminant, chosen on the basis of the 
+expected limit for the Higgs extraction as the figure of merit. 
+Figure~\ref{fig:mvaPlots} shows the distribution of the 
+discriminating variables for muons at the preselection level.
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{Background yields} %%% for the likelihood analysis}
+\label{sec:mjjfit}
+
+The background normalization in the signal region is extracted, for
+each Higgs mass hypotheses independently, with an unbinned maximum likelihood
+fit to the di-jet invariant mass distribution $m_{jj}$ of the two
+leading jets. The signal region corresponding to the W mass window,
+$65\GeVnn < m_{jj} < 95\GeVnn$, is excluded from the fit.  The W+jets
+shape is taken from simulation for Higgs mass hypotheses below
+180\GeVnn. For higher masses the simulation doesn't have enough
+events, so we describe the shape analytically using an exponential fit
+function.  The overall normalization of the W+jets component is
+allowed to vary in the fit.  The electroweak diboson, \ttbar, single
+top, and Drell-Yan+jets shapes are based on simulation and their
+normalization are constrained to the theoretical predictions, within
+the corresponding uncertainties.  In case of diboson backgrounds, both
+WW and WZ normalizations are constrained to the next-to-leading order
+predictions within the uncertainties.  The multi-jet background shape
+is derived from data by relaxing lepton isolation and identification
+requirements. Its contribution to the total number of events is evaluated
+from a separate two-component likelihood fit to the W transverse mass
+distribution, and constrained in the $m_{jj}$ fit according to this
+fraction within uncertainties.  Table~\ref{tab:mjjfit} summarizes the
+determination of the shape and normalization for each contributing
+process in the fit. Examples of the $m_{jj}$ fit are shown in
+Figure~\ref{fig:mjj_mH350} for muon plus 2 jet channel, with selections
+optimized for Higgs mass hypotheses 200\GeVnn, 300\GeVnn, and
+500\GeVnn. The uncertainties in the normalization obtained from the
+fit are propagated to the limit calculation as systematics.
+
+\begin{table}[!ht]
+ \begin{center}
+  \begin{tabular}{lcl}
+   \hline
+   \hline
+   Process        & Shape & External constraint on normalization \\
+   \hline
+   W+jets         & data/MC & Unconstrained \\
+   Diboson       & MC      & Constrained: (NLO) $89.4\pb \pm 10\%$ \cite{MCFM} \\ 
+   \ttbar         & MC      & Constrained: (approx. NNLO) $225\pb \pm 7\%$ \cite{Kidonakis:2010dk} \\
+   single top     & MC      & Constrained: (approx. NNLO) $113\pb \pm 5\%$ \cite{Kidonakis:2010ux,Kidonakis:2010tc,Kidonakis:2011wy} \\
+   Drell-Yan+jets & MC      & Constrained: (NNLO, $m_{\ell\ell}>50\GeV$) $3504\pb \pm 4.3\%$ \cite{Gavin:2010az}\\
+   Multi-jet      & data    & Constrained: \MET fit in data $\pm$ 50\% (100\%) for electrons (muons) \\
+   \hline
+   \hline
+  \end{tabular}
+ \end{center}
+ \caption{Determination of the $m_{jj}$ shape and normalization. External constraints are assumed
+ to be Gaussian.}
+ \label{tab:mjjfit} 
+\end{table}
+
+\begin{figure}[!t]
+  \centering
+  \subfigure[]{
+  \includegraphics[width=0.32\textwidth]{plots/H200_Mjj_Muon_2jets_Stacked.pdf}
+  }  
+  \subfigure[]{ 
+  \includegraphics[width=0.32\textwidth]{plots/H300_Mjj_Muon_2jets_Stacked.pdf}
+  }  
+  \subfigure[]{ 
+  \includegraphics[width=0.32\textwidth]{plots/H500_Mjj_Muon_2jets_Stacked.pdf}
+  }   
+  \caption{\label{fig:mjj_mH350} The di-jet invariant mass 
+  distribution with the fit projections, for the muon 2-jet 
+  category, after selections optimized for the Higgs mass 
+  hypotheses of (a) 200\GeVnn, (b) 300\GeVnn, and (c) 500\GeVnn. 
+  The fit doesn't include data points in the test region between 
+  the vertical lines. 
+  Error bars correspond to the statistical uncertainties. 
+}
+\end{figure}
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{The four-body mass shapes}%%% for the likelihood analysis}
+\label{sec:4bodymass}
+For the limit extraction, the contribution of each background in the signal region
+($65\GeVnn < m_{jj} < 95\GeVnn$) is described by the expected shape and normalization.
+
+The four-body mass shape of the W+jets contribution is extracted from data as a mixture of the
+shape measured in two signal-free regions, namely an upper sideband (SBH,
+$95\GeVnn <m_{jj} < 115\GeVnn$ ) and a lower sideband (SBL, $55\GeVnn <m_{jj} < 65\GeVnn$):
+
+\begin{equation}
+m_{\textnormal{WW}_i}^{j} = (1-\alpha^j) \cdot m_{\textnormal{SBH}_i}^j + \alpha^j \cdot  m_{\textnormal{SBL}_i}^j~,
+\label{EqnAlpha}
+\end{equation}
+
+where the index $j$ refers to each of the 48 mass spectra and 
+$i$ to the bins in the four-body mass. 
+The $\alpha$ factor is chosen for each Higgs mass hypotheses on 
+the simulation by minimizing the $\chi^2$ between the extrapolated 
+shape in the signal region and the expected one. 
+The distributions of the extrapolated W+jets background in the signal 
+region are shown in
+Figure~\ref{fig:Wjets_dd_example} (muon 2-jet category) with selections  
+optimized for Higgs mass hypotheses 200\GeVnn, 300\GeVnn, and 500\GeVnn. 
+Because of the low statistics, the shapes are regularized by
+means of an exponential fit (solid curve). 
+Uncertainties in the $\alpha$ factor and in the decay constant 
+of the exponential are utilized to derive the systematic band.
+
+\begin{figure}[!t]
+  \centering
+  \subfigure[]{
+  \includegraphics[width=0.32\textwidth]{plots/H200_Mlvjj_Muon_2jets_WpJShape.pdf}
+  }  
+  \subfigure[]{ 
+  \includegraphics[width=0.32\textwidth]{plots/H300_Mlvjj_Muon_2jets_WpJShape.pdf}
+  }  
+   \subfigure[]{ 
+  \includegraphics[width=0.32\textwidth]{plots/H500_Mlvjj_Muon_2jets_WpJShape.pdf}
+  }   
+  \caption{\label{fig:Wjets_dd_example}The distribution of the extrapolated background shape in the
+  signal region for the Higgs mass hypothesis of 200\GeVnn (a), 300\GeVnn (b), and 500\GeVnn (c),
+  for muon 2-jets category. The black markers represent the extrapolated points, while the blue curve
+  is the smooth parametrization using an exponential function. The dashed bands show the envelope of
+  the systematic uncertainty in the shape extrapolation.} 
+\end{figure}
+
+The four-body mass shape for multijet background events is obtained 
+from data as well, by selecting a control sample of non-isolated 
+leptons and relaxing the $\MET$ threshold and identification requirements. 
+The fraction of multijet events in data
+is computed from a fit to W transverse mass. 
+For muons, the multijet fraction is negligible, while for 
+electrons it is several percent depending on the jet multiplicity 
+in the event. 
+All other background categories use the $m_{\ell\nu{}jj}$
+shape predicted by their respective Monte Carlo samples. The
+$m_{\ell\nu{}jj}$ invariant mass distribution in the signal region is
+shown in Figure~\ref{fig:mlvjj_mH350} for muon plus 2-jet channel with
+selections optimized for Higgs mass hypotheses 200\GeVnn, 300\GeVnn,
+and 500\GeVnn.
+
+\begin{figure}[!t]
+  \centering
+  \subfigure[]{
+  \includegraphics[width=0.32\textwidth]{plots/H200_Mlvjj_Muon_2jets_Stacked.pdf}
+  }  
+  \subfigure[]{ 
+  \includegraphics[width=0.32\textwidth]{plots/H300_Mlvjj_Muon_2jets_Stacked.pdf}
+  }  
+  \subfigure[]{ 
+  \includegraphics[width=0.32\textwidth]{plots/H500_Mlvjj_Muon_2jets_Stacked.pdf}
+  }   
+%%\vspace*{1mm} \\
+%%  \subfigure[]{
+%%  \includegraphics[width=0.32\textwidth]{plots/H190_Mlvjj_Muon_2jets_Pull.pdf}
+%%  }  
+%%   \subfigure[]{ 
+%%  \includegraphics[width=0.32\textwidth]{plots/H350_Mlvjj_Muon_2jets_Pull.pdf}
+%%  }   
+%%  \subfigure[]{ 
+%%  \includegraphics[width=0.32\textwidth]{plots/H500_Mlvjj_Muon_2jets_Pull.pdf}
+%%  }   
+%%  \caption{\label{fig:mlvjj_mH350}
+%%  The WW invariant mass distribution with the fit projections, for the 
+%%  muon 2-jet category, after selections optimized for the Higgs mass hypotheses of 
+%%  190\GeVnn (a, d), 350\GeVnn (b, e), and 500\GeVnn (c, f). 
+%%  The top row shows the distribution of the
+%%  $m_{\ell\nu{}jj}$ invariant mass distribution in the signal region $65\GeVnn < m_{jj} < 95\GeVnn$.
+%%  With the kinematic selection used, we expect about 55, 79, and 27 Higgs signal events 
+%%  in the three distributions, respectively.
+%%  The bottom row shows pull distribution computed as [(Data - Background)/ Background uncertainty].}
+  \caption{\label{fig:mlvjj_mH350}
+  The WW invariant mass distribution with the fit projections in the signal region $65\GeVnn < m_{jj} < 95\GeVnn$, for the 
+  muon 2-jet category, after selections optimized for the Higgs mass hypotheses of 
+  200\GeVnn (a), 300\GeVnn (b), and 500\GeVnn (c).
+  Error bars correspond to the statistical uncertainties. 
+  Systematic uncertainties are not shown here. 
+  The main systematic uncertainty comes from W+jets shape extraction, 
+  and is shown in Fig.~\ref{fig:Wjets_dd_example}. 
+  Uncertainties in the signal stength and lineshape are listed in 
+  Table~\ref{tab:signalSyst}. 
+}
+\end{figure}
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{Systematic uncertainties}
+\label{sec:systematics}
+% SIGNAL SYSTEMATICS
+After rescaling the transverse momentum distribution of the Higgs boson to the HQT
+prediction~\cite{Bozzi:2005wk}, we follow the LHC Higgs Cross Section Working Group~\cite{LHCXSWG}
+%%PDF4LHC~\cite{Botje:2011sn,Alekhin:2011sk,Lai:2010vv,Martin:2009iq,Ball:2011mu} 
+recommendations for the uncertainties on the production cross-section
+of the Higgs boson, and for PDF uncertainties propagated to the signal
+acceptance within our selections. Additional uncertainties are
+implemented to account for the limitation of the narrow Higgs width
+approximation in the Higgs simulation and the effect of interference
+with the SM backgrounds, and for the uncertainty in scale caused by
+exclusive binning in 2- and 3-jet categories~(\cite{CLS2}, Appendix
+C).  The uncertainty due to luminosity is considered~\cite{lumiPAS},
+as well as the one due to the measurement of the number of pile-up
+events in data. The uncertainty on the reconstruction, identification
+and trigger efficiencies are extracted from the corresponding
+measurements, performed with a tag-and-probe~\cite{VBTF} approach.  
+The uncertainty on the jet energy measurements is accounted for by 
+%%%%%%% ---------- Kalanand: June 18, 2012:  Descope fit based analysis for ICHEP.
+%% considering the uncertainty in the
+%% measurement of the jet energy scale for the fit-based limit extraction, and
+%%%%%%% ---------- 
+using hadronically decaying W boson in highly pure \ttbar semi-leptonic 
+events~\cite{TOP-11-015}.
+%% In the latter case, the
+The uncertainty is calculated by comparing the reconstructed hadronic
+W mass in a \ttbar enriched sample between data and Monte Carlo, and
+is listed in Table~\ref{tab:signalSyst}.
+%%%%%%% ---------- Kalanand: June 18, 2012:  Descope fit based analysis for ICHEP.
+%%%For the fit-based analysis, the uncertainties due to the difference between data and simulation in
+%%%the b-tagging efficiency and mis-tag rate are considered.
+%%%%%%% ---------- In the likelihood-based analysis, we compute systematic uncertainty in the 
+We compute systematic uncertainty in the 
+Higgs signal efficiency by using a control sample in data. 
+A highly pure sample of top pair events is obtained by requiring 
+the presence of two extra b-tagged jets.  
+These events are good proxies for 
+our signal because in both cases the primary production mechanism 
+is gluon-gluon 
+fusion and the semi-leptonic final state contains decays of two W bosons. 
+We take the relative difference in efficiency between data and simulation 
+for top pair events after all the selections as an estimation of systematic 
+uncertainty in signal efficiency. 
+This accounts for 10\% uncertainty in signal strength.
+%%%This accounts for 7\% for $\mH < 500\GeVnn$, for 13\% for $\mH \ge 500\GeVnn$. 
+The systematic uncertainties on signal are summarized in
+Table~\ref{tab:signalSyst}.
+%%%%%%% ---------- Kalanand: June 18, 2012:  Descope fit based analysis for ICHEP.
+%%% \begin{table}[h!]
+%%%   \begin{center}
+%%%   \begin{tabular}{l|c|c}
+%%%  \hline
+%%%  \hline
+%%%  Source of uncertainty & Fit-based analysis  & Likelihood-based analysis \\
+%%%  \hline                                  
+%%%  Higgs line shape                       & $0-30\%$   & $0-30\%$ \\
+%%%  Cross-section                          & $13-15\%$  & $13-15\%$ \\
+%%%  Likelihood selection                   & $-$        & $10\%$ \\
+%%%  Luminosity                             & $5\%$    & $5\%$ \\
+%%%  Jet energy scale, resolution, and \MET & $2-3\%$    & $<1\%$ \\
+%%%  Theory acceptances (PDF)               & $1-2\%$    & $1-2\%$ \\
+%%%  Lepton trigger eff.                    & $1\%$      & $1\%$ \\
+%%%  Lepton selection eff.                  & $1-2\%$    & $1-2\%$ \\
+%%%  Pile-up                                & $<1\%$     & $<1\%$ \\
+%%%%  b-tag veto                             & $<1\%$     & $-$ \\
+%%%%  background modeling                    & $10-40\%$  & $-$ \\
+%%%%  PF$M_T$ trigger eff.                   & $1-2\%$    & $-$ \\
+%%%  \hline
+%%%  \hline
+%%%   \end{tabular}
+%%%   \end{center}
+%%%   \caption{Sources of signal systematics considered in the analysis, with the corresponding magnitude,
+%%%            for the limit extraction.} 
+%%%   \label{tab:signalSyst}
+%%% \end{table}
+%%%
+%%%%%%% ---------- Kalanand: June 18, 2012:  Descope fit based analysis for ICHEP.
+ \begin{table}[h!]
+   \begin{center}
+   \begin{tabular}{l|c}
+  \hline
+  \hline
+  Source of uncertainty & Magnitude \\
+  \hline                                  
+  Higgs line shape                       & $0-30\%$ \\
+  Scale uncertainties from jet binning   & $4-28\%$ \\
+  Cross-section                          & $13-15\%$ \\
+  Likelihood selection                   & $10\%$ \\
+  Luminosity                             & $5\%$ \\
+  Jet energy scale, resolution, and \MET & $<1\%$ \\
+  Theory acceptances (PDF)               & $1-2\%$ \\
+  Lepton trigger eff.                    & $1\%$ \\
+  Lepton selection eff.                  & $1-2\%$ \\
+  %%Pile-up                                & $<1\%$ \\
+  \hline
+  \hline
+   \end{tabular}
+   \end{center}
+   \caption{Sources of signal systematics considered in the analysis, 
+   with the corresponding magnitude, for the limit extraction.} 
+   \label{tab:signalSyst}
+ \end{table}
+%%%%%%%
+% BACKGROUND SYSTEMATICS
+%%%%%%% ---------- Kalanand: June 18, 2012:  Descope fit based analysis for ICHEP.
+%%%The background uncertainties for the fit-based analysis have already been addressed in
+%%%Section~\ref{sec:fit}.
+%%%For the likelihood based analysis, the largest source of systematic uncertainty is the shape
+The largest source of systematic uncertainty is the shape 
+uncertainty of the W+jets $m_{\ell\nu jj}$ distribution and its normalization, which derives from
+the fit of the extrapolated background in the signal region.
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{Results}
+\label{sec:results}
+%%%%%%% ---------- Kalanand: June 18, 2012:  Descope fit based analysis for ICHEP.
+%%%Upper limits on the SM Higgs boson cross section have been calculated with the fit-based
+%%%technique and after the likelihood optimization. 
+Upper limits on the SM Higgs boson production cross section have 
+been calculated. 
+We use the modified frequentist construction
+CL${}_{\textrm{S}}$~\cite{CLS, CLS2} with profile likelihood as the 
+test statistic. 
+Based on the expected normalization and shape of the $m_{\ell\nu{}jj}$ 
+distribution, for signal and background, and the 
+corresponding systematic uncertainties, we generate a large 
+number of random pseudo-experiments. 
+For each of them, the expected background distribution is generated 
+and a likelihood ratio for signal
+plus background, when the signal strength is free to float or is 
+fixed at a given value, is calculated. We present 95\% exclusion 
+limits on the ratio of the production cross section for the 
+Higgs boson compared to the SM expectation in Figure~\ref{fig:exclusion}. 
+%%%On the left, the fit-based limit is shown, on the right the likelihood-based one.
+%%%With the fit-based study we exclude the SM Higgs boson in the mass range $XXX-YYY\GeVnn$, while with
+%%%the likelihood-based study we exclude the SM Higgs boson in the mass range $260-390\GeVnn$.
+%%%As a final result, 
+%%%the exclusion range provided by the analysis with the most sensitive expected limit has been chosen.
+We exclude to 95\% confidence the SM Higgs boson in the mass range
+$260-390\GeVnn$ from analyzing 8 TeV data.  Combining with 7 TeV
+results~\cite{HIG-12-003}, we exclude the SM Higgs boson in
+the mass range $240-450\GeVnn$, to 95\% confidence.
+
+%%%
+%%%\begin{figure}[tbh]
+%%%  \begin{center}
+%%%    \centerline{
+%%%    \includegraphics[width=0.49\linewidth]{plots/limit_first.pdf} % FIT BASED
+%%%    \includegraphics[width=0.49\linewidth]{plots/limit_4chan_fullsyst.pdf} % LIKELIHOOD BASED
+%%%    }
+%%%    \caption{Observed (solid) and expected (dashed) 95\% CL upper limit on the ratio of the
+%%%    production cross section to the SM expectation for the Higgs boson obtained using the asymptotic
+%%%    CL${}_{\textrm{S}}$ technique. The 68\% and 95\% ranges of expectation for the background-only
+%%%    model are also shown with green and yellow bands, respectively. The solid line at 1 indicates
+%%%    the SM expectation. On the left, the fit-based limit is shown, on the right the likelihood-based
+%%%    one.}
+%%%    \label{fig:exclusion}
+%%%  \end{center}
+%%%\end{figure}
+%%%
+\begin{figure}[tbh]
+  \begin{center}
+    \centerline{
+    \includegraphics[width=0.49\linewidth]{plots/limit_4chan_fullsyst_asymp.pdf} % 8 TeV
+    \includegraphics[width=0.49\linewidth]{plots/limit_7and8tevcombined.pdf} % 7 TeV + 8 TeV combined
+    }
+    \caption{Observed (solid) and expected (dashed) 95\% CL upper limit on the ratio of the
+    production cross section to the SM expectation for the Higgs boson obtained using the asymptotic
+    CL${}_{\textrm{S}}$ technique. The 68\% and 95\% ranges of expectation for the background-only
+    model are also shown with green and yellow bands, respectively. The solid line at 1 indicates
+    the SM expectation. The limit derived from 8 TeV data is shown on the left, while the combined 
+    limit using both 7 TeV and 8 TeV data is shown on the right.}
+    \label{fig:exclusion}
+  \end{center}
+\end{figure}
+
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section{Conclusions}
+\label{sec:summary}
+We have presented a search for the SM Higgs boson decaying into two W
+bosons with semi-leptonic final state using proton-proton collision 
+data corresponding to an
+integrated luminosity of 3.5\fbinv at $\sqrt{s}=8\TeV$ recorded by the 
+CMS experiment at the LHC.  
+No evidence for the SM-like Higgs boson has been found.  
+We have presented 95\% exclusion limits on its production cross section.  
+Using 8~TeV data, we exclude the Standard
+Model Higgs boson in the mass range $260-390$~GeV, to a confidence
+level of 95\%. When combined with 7~TeV data, the exclusion range
+expands to $240-450$~GeV, once again to 95\% confidence.
+%%We exclude the SM Higgs boson in the mass
+%%range $320-420\GeVnn$ at 95\% confidence level. 
+%%In combination with analyses of other Higgs decay
+%%channels by the CMS Collaboration, these results allow the exclusion of a wide range of masses for the Higgs boson.
+
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\section*{Acknowledgments}
+% ack-text
+We wish to congratulate our colleagues in the CERN accelerator departments for the excellent performance of the LHC machine. We thank the technical and administrative staff at CERN and other CMS institutes, and acknowledge support from: FMSR (Austria); FNRS and FWO (Belgium); CNPq, CAPES, FAPERJ, and FAPESP (Brazil); MES (Bulgaria); CERN; CAS, MoST, and NSFC (China); COLCIENCIAS (Colombia); MSES (Croatia); RPF (Cyprus); Academy of Sciences and NICPB (Estonia); Academy of Finland, MEC, and HIP (Finland); CEA and CNRS/IN2P3 (France); BMBF, DFG, and HGF (Germany); GSRT (Greece); OTKA and NKTH (Hungary); DAE and DST (India); IPM (Iran); SFI (Ireland); INFN (Italy); NRF and WCU (Korea); LAS (Lithuania); CINVESTAV, CONACYT, SEP, and UASLP-FAI (Mexico); MSI (New Zealand); PAEC (Pakistan); SCSR (Poland); FCT (Portugal); JINR (Armenia, Belarus, Georgia, Ukraine, Uzbekistan); MST, MAE and RFBR (Russia); MSTD (Serbia); MICINN and CPAN (Spain); Swiss Funding Agencies (Switzerland); NSC (Taipei); TUBITAK and TAEK (Turkey); STFC (United Kingdom); DOE and NSF (USA).
+Individuals have received support from the Marie-Curie programme and the European Research Council (European Union); the Leventis Foundation; the A. P. Sloan Foundation; the Alexander von Humboldt Foundation; the Belgian Federal Science Policy Office; the Fonds pour la Formation \`a la Recherche dans l'Industrie et dans l'Agriculture (FRIA-Belgium); the Agentschap voor Innovatie door Wetenschap en Technologie (IWT-Belgium); and the Council of Science and Industrial Research, India.
+
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+\bibliography{auto_generated}   % will be created by the tdr script.
+
