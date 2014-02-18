@@ -1,0 +1,91 @@
+\label{sec:cms_detector}
+
+
+The CMS detector~\cite{:2008zzk}
+is a general-purpose device with 
+many features suited for reconstruction of 
+energetic jets, specifically, the finely segmented electromagnetic
+and hadronic calorimeters and charged-particle tracking detectors.
+
+
+CMS uses a right-handed coordinate system, with origin 
+defined by the center of the CMS detector, 
+the $x$ axis pointing to the center of the LHC ring, 
+the $y$ axis pointing up, perpendicular to the plane of the LHC ring, 
+and the $z$ axis along the direction of the counterclockwise beam. 
+The polar angle $\theta$ is measured relative to the positive $z$ 
+axis and the azimuthal angle $\phi$ relative to the $x$ axis in the $x$-$y$ plane.
+
+
+Charged particles are reconstructed in the inner silicon tracker,
+which is immersed in a $3.8$~T axial magnetic field. 
+%The tracker consists
+%of three concentric layers and two endcap disks 
+%in each, which are made of pixel sensors, and ten
+%concentric layers and twelve endcap disks of strip sensors.  
+The CMS tracking detector consists of an inner silicon pixel detector
+composed of three concentric central layers and two sets of disks
+arranged forward and backward of the center, 
+and up to ten silicon strip central layers and three inner and nine
+outer strip disks forward and backward of the center. 
+This arrangement provides 
+full azimuthal coverage for $|\eta| < 2.5$, where 
+$\eta = -\ln\tan(\theta/2)$ is the pseudorapidity.
+The pseudorapidity approximates the rapidity $y$
+and 
+equals $y$ for massless particles.
+Since many of the reconstructed jets
+are not massless, we use the rapidity $y$ for characterizing
+jets in this analysis.
+
+
+A lead tungstate crystal electromagnetic calorimeter (ECAL) and 
+a brass/scintillator hadronic calorimeter (HCAL) surround the tracking
+volume and provide photon, electron, and jet reconstruction up to $|\eta|=3$.
+The ECAL and HCAL cells are grouped into towers projecting radially 
+outward from the center of the detector.  
+In the central region ($|\eta|<1.74$), 
+the towers have dimensions of $\Delta\eta = \Delta\phi = 0.087$ 
+that increase at larger $|\eta|$.  
+ECAL and HCAL cell energies above some chosen noise-suppression 
+thresholds are combined within each tower to define the tower energy. 
+Muons are measured in gas-ionization detectors embedded in the steel 
+return yoke outside the solenoid. 
+To improve reconstruction of jets, the tracking and calorimeter 
+information is combined in a ``particle-flow'' (PF)
+algorithm~\cite{particleflow}, which is described in 
+Section~\ref{sec:reconstruction}.
+
+
+
+For the analysis of dijet events, samples are simulated with 
+\PYTHIA.4 (Tune Z2) ~\cite{pythia,Field:2010bc}, 
+\PYTHIAEIGHT  (Tune 4c)~\cite{pythia8}, 
+and \HERWIG (Tune 23)~\cite{herwig}, and
+propagated through the simulation of the CMS
+detector based on \GEANT4 \cite{Geant4}.
+Underlying event (UE) and pileup (PU) are included in the
+simulations, which are also reweighted to have the simulated
+PU distribution match the observed PU distribution
+in the data. 
+
+
+
+For the V+jet analysis, events with a vector boson produced in 
+association with jets are simulated using \MADGRAPH 5.1~\cite{madgraph}. 
+This matrix element generator is also used to simulate $\ttbar$ events. 
+The \MADGRAPH events are subsequently subjected to parton showering, simulated 
+with \PYTHIA using the Z2 Tune~\cite{Field:2010bc}. 
+To compare hadronization in different generators, we generate V+jet
+samples in which parton showering and hadronization are 
+simulated with \HERWIG.  
+Diboson (WW, WZ, and ZZ) events are also generated with \PYTHIA. 
+Single-top-quark samples are produced with \POWHEG~\cite{powheg}, and the 
+lepton enriched dijet samples are produced with \PYTHIA using the Z2 Tune. 
+CTEQ6L1~\cite{cteq} is the default set of parton distribution
+functions used 
+in all these samples, except for the single-top-quark MC, which uses CTEQ6M.
+%The \PYTHIA parameters for the underlying event are set to the Z2 tune.
+
+
+ 

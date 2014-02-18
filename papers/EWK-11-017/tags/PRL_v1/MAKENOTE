@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Instructions to access this from scratch
+#     svn co -N svn+ssh://svn.cern.ch/reps/tdr2 myDir
+#     cd myDir
+#     svn update utils
+#     svn update -N notes
+#     svn update notes/EWK-11-017
+
+# Working with this:
+#     cd myDir/notes/EWK-11-017/trunk
+#     MAKENOTE
+#     VIEWIT
+
+eval `../../tdr runtime -sh`
+
+#tdr --style=paper --nodraft b EWK-11-017
+tdr --style=paper --aps=prl,twocolumn,aps,linenumbers,twoside,amsfonts,amssymb,amsmath b EWK-11-017 

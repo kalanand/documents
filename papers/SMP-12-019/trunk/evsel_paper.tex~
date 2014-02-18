@@ -1,0 +1,46 @@
+\label{sec:evsel_paper}
+
+We apply various selection criteria to remove instrumental background and noise from the objects for the measurement.
+The events must have at least one good primary vertex as described in Sec.~\ref{sec:reconstruction}. 
+Furthermore, backgrounds from beam interactions 
+are removed by applying high purity tracking requirements on charged tracks.
+Finally, calorimeter noise is removed by timing and pulse shape selections on the calorimeter signals. 
+
+
+For the dijet event selection, events are required to have at least two AK7 jets with
+$\pt > 50$ \GeV and $|y| < 2.5$
+and each jet must satisfy the jet quality criteria explained in~\cite{particleflow}.
+
+For the V+jet event selection,
+reconstruction of W and Z bosons begins with the identification
+and selection of charged leptons and MET described in the previous 
+section. 
+Candidate \ZtoLL\ decays are reconstructed by combining 
+isolated electrons and muons and requiring the dilepton invariant 
+mass to satisfy $80<M_{\ell\ell}<100\GeV$.  
+
+Candidate \WtoLN\ decays are identifed primarily by the topology
+of a single isolated lepton with high $\pt$ and additional missing energy, with the selection described in section~\ref{evrecosection}.  The
+transverse momentum \ptW\ and transverse mass \mtW\ of the W candidate are obtained combining the lepton and the MET transverse momenta.
+
+The jet mass analysis in V+jet event is carried on in a boosted kinematic regime, namely $\pt $(V)$> 120$ GeV. We further require the leading jet in the event (independently for each clustering algorithm and jet radius) to have $\pt >$ 125 GeV.
+The back-to-back topology between the vector boson and the leading jet is ensured by the additional selections $\Delta \phi(V,\rm{jet})>2$ and $\Delta R (\ell,\rm{jet})>1$. 
+Requiring a boosted regime, in addition to the tight isolation cuts on the leptons, effectively suppresses the QCD background.
+In the \WtoLN\ +jet analysis, further QCD rejection is achieved by requiring MET $>$ 50 GeV and $M_T$(W)$>$ 50 GeV.
+
+Figure~\ref{fig:Vjetpt} shows the leading AK7 jet $\pt$ distribution in Z and W plus jet events after the selection described above has been applied. 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.495\textwidth]{figs/jetptZ_ak7.pdf}
+\includegraphics[width=0.495\textwidth]{figs/jetptW_ak7.pdf}
+\caption{$\pt$ distribution for the leading AK7 jet in Z and W plus jet event passing the selection criteria.
+\label{fig:Vjetpt}}
+\end{figure}
+
+ Given the unique signature of a highly boosted vector 
+boson recoiling from jets, the minimal selection described above is sufficient to 
+identify highly pure samples of V+jet events. The W+jet sample is about 82\% pure, with background contributions from $\mathrm{t\bar{t}}$ (13\%), single top (3\%), di-boson and Z+jet (1\% each) events.
+In the Z$(\ell\ell)$+jet ($\ell=$ e,$\mu$) analysis the additional constraint on the di-lepton mass removes almost completely these background contributions, giving a purity of about 99\%, with 1\% contamination from di-boson events. These backgrounds are subtracted based on their MC prediction from the jet mass distributions before correcting for detector effects.
+ 
+

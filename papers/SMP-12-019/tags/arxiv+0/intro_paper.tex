@@ -1,0 +1,66 @@
+The variables most often used in analyses of jet production are jet directions and transverse momenta ($p_T$).
+ %involving jets are the direction and momentum components of jets transverse to the colliding beams ($\pt$). 
+However, as jets are composite objects, their invariant masses ($m_J$) provide additional information that can be used to characterize their properties.
+One motivation for investigating jet mass is that, at the Large Hadron Collider (LHC), massive standard model (SM) particles such as \PW\ and \Z bosons and top quarks are often produced with large Lorentz boosts, and, when such particles decay into quarks, the masses of the evolved jets can be used to discriminate them from lighter objects generated in quantum-chromodynamic (QCD) radiative processes. The same argument also holds for any new massive particles produced at the LHC. %When such particles decay hadronically, the products tend to be collimated in a small area of the detector. 
+For sufficiently large boosts, all the decay products tend to be emitted as collimated groupings into small sections of the detector, and the resulting particles can be clustered into a single jet. Jet ``grooming'' techniques are designed to separate such merged jets from background. These new techniques have been found to be very promising for identifying decays of highly-boosted \PW\ bosons and top quarks, and in searches for Higgs bosons and other massive particles~\cite{jetsub}. 
+The main advantage of these grooming techniques is their ability to distinguish high $\pt$ jets that arise from decays of massive, possibly new, particles.  In addition, their robust performance is valuable in the presence
+of additional interactions in an event (pileup), which is likely to provide an even greater challenge to such analyses in future higher-luminosity runs at the LHC. 
+
+Only a few of these promising approaches have been studied in data at the Tevatron~\cite{cdfJS} or at the LHC~\cite{atlasJS}. To understand these techniques in the context of searches for new phenomena, the jet mass must be well-modeled through leading-order (LO) or next-to-leading-order (NLO) Monte Carlo (MC) simulations. %at Leading Order (LO) or Next-to-Leading Order (NLO) matched to parton showers to describe the higher order radiation. 
+Much recent theoretical work in QCD has focused on the computation of jet mass, including
+predictions using advances in an effective field theory of jets 
+(soft collinear effective theory, SCET)
+\cite{KhelifaKerfa:2011zu,Hornig:2011tg,Li:2011hy,Bauer:2011uc,Chien:2010kc,Schwartz:2007ib,Fleming:2007qr,Dasgupta:2001sh,Bauer:2006mk,Bauer:2006qp,Hornig:2011iu,Kelley:2011ng,Jouttenus:2009ns,Ellis:2009wj,Ellis:2010rwa,Cheung:2009sg,Kelley:2010qs,Banfi:2010pa,Bauer:2001yt}.
+Studies of the kind reported in the present analysis can provide an understanding of the extent to which MC simulations that match matrix-element partons with parton showers can model the observed internal jet structure. Results of these studies can also be used to compare data with theoretical computations of jet mass, and to provide benchmarks for the use of these algorithms in searches for highly-boosted Higgs bosons, or new objects beyond the SM, especially by investigating some of the background processes expected in such analyses.
+
+
+
+
+%It is therefore important to measure some of the relevant variables in a sample of jets to verify the expected features. First results on 
+We present a measurement of jet mass in a sample of dijet events, and the first study of such distributions in V+jet events, where V refers to a \PW\ or \Z boson. The data correspond to an integrated luminosity of $5.0 \pm 0.2 \fbinv$, collected by the Compact Muon Solenoid (CMS) experiment at the LHC in pp interactions at a center-of-mass energy of 7 TeV.  The analysis of these two types of final states provides complementary information because of their different parton-flavor content, since the selected dijet events are dominated by gluon-initiated jets, and the V+jet events often contain quark-initiated jets. We focus on measuring the jet mass after applying several jet grooming techniques involving ``filtering''~\cite{boostedHiggs}, ``trimming''~\cite{trimming}, and ``pruning''~\cite{pruning,pruning2} of jets, as discussed in detail below. 
+This work also presents the first attempt to measure the mass of trimmed and pruned jets.
+
+%We have a double-differential cross section for jets $\frac{d^2\sigma}{d\pt dm_J}$, where $\sigma$ is the cross section, $\pt$ is the transverse momentum of the reconstructed jet (or ``RECO'' jet), and $m_J$ is the mass of the particle jet (or ``GEN'' jet). This is divided into $i$ unequal intervals in $\pt$ ($\Delta{\pt}_i$), that correspond to the integrated cross sections:
+
+
+To study the dependence of the differential distributions in $m_J$ on jet $\pt$, 
+we measure the distributions in intervals of jet transverse momentum. 
+Formally, this 
+can be expressed in terms of a double-differential cross section for jet production 
+($d^2\sigma/d\pt dm_J$) that is examined as a function of $m_J$ for several nonoverlapping
+intervals in $\pt$: 
+
+\begin{equation}
+\label{eq:pdf_mjet_i}
+\sigma = \int_{m_J} \int_{\pt} \frac{d^2 \sigma(m_J,\pt)}{d m_J \,d\pt} \,d\pt \,dm_J = \sum_i \int_{m_J} \frac{d\sigma_i(m_J)}{d m_J} \,dm_J = \sum_i \sigma_i,
+\end{equation}
+
+\noindent where $i=1,2,3,\ldots$ refers to the $i^{\mathrm{th}}$ interval in $\pt$, 
+and the sum of contributions over all $i$ is equal to the total observed cross section
+$\sum_i \sigma_i = \sigma$. 
+The differential probability density as a function of $m_J$ for 
+each $\pt$ interval can therefore be written as
+ 
+\begin{equation}
+\label{eq:pdf_mjet_simple}
+\rho_i(m_J) = \frac{1}{\sigma_i} \times \frac{d\sigma_i}{dm_J},\; \mathrm{with} \int \rho_i(m_J) \,dm_J = 1.
+\end{equation}
+
+The distributions in reconstructed jet mass of Eq.~(\ref{eq:pdf_mjet_simple})
+include corrections used to unfold jets to the ``particle'' level;
+the $\pt$ intervals are defined for ungroomed jets,
+following energy corrections for the response of the detector. 
+
+
+For the dijet analysis, $\pt$ and $m_J$ correspond to
+the average transverse momentum and average jet mass of
+the two leading jets (i.e., of highest $\pt$): $\pt^{AVG} = ({\pt}_1 + {\pt}_2) / 2$ and
+$m_J^{AVG} = ({m_J}_1 + {m_J}_2) / 2$.
+For the V+jet analysis, we use the $m_J$ and $\pt$ of the leading jet. 
+Both quantities depend on the nature of the jet grooming algorithm, as discussed in 
+Section~\ref{sec:algos}.
+
+
+This paper is organized as follows. To introduce the subject, we first discuss jet clustering algorithms in Section~\ref{sec:algos}, focusing mainly on grooming techniques. After a brief description of the CMS detector and the MC samples in Section~\ref{sec:cms_detector}, we provide information pertaining to the collected data and a description of event reconstruction in Section~\ref{sec:trigreco}. Selection of events is then described in Section~\ref{sec:evsel_paper}, and the effect of pileup on jet mass is investigated in Section~\ref{sec:pileup}. This is followed in Section~\ref{sec:systematics} by the correction and unfolding procedures that are applied to the $m_J$ spectra and their corresponding systematic uncertainties. In Sections~\ref{sec:dijetresults} and~\ref{sec:vjetresults}, we present the results of the dijet and V+jet analyses, respectively. Finally, observations and remarks on the presented results are summarized in Section~\ref{sec:summary}.   
+ 
+The distributions shown are also stored in {\tt HEPData} format~\cite{hepdata}. 

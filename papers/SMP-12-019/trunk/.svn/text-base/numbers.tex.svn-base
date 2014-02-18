@@ -1,0 +1,30 @@
+\renewcommand{\PYTHIA} {{\textsc{pythia6}}\xspace}
+\newcommand{\PYTHIAEIGHT} {{\textsc{pythia8}}\xspace}
+\renewcommand{\HERWIG} {{\textsc{herwig++}}\xspace}
+\newcommand{\pdf}{\ensuremath{\mathrm{pdf}}}
+\newcommand{\ta}{\mbox{$\tau$}}
+\renewcommand{\ttbar}{\ensuremath{\mathrm{t}\bar{\mathrm{t}}}}
+\newcommand{\mtt}{\ensuremath{m_{\mathrm{t}\bar{\mathrm{t}}}}~}
+%\newcommand{\zp}{\ensuremath{{\mathrm{Z^{\prime}}}}}
+\newcommand{\wboson}{\ensuremath{{\mathrm{W}}}}
+\newcommand{\zboson}{\ensuremath{{\mathrm{Z}}}}
+\newcommand{\mzp}{\ensuremath{m_{\mathrm{Z^{\prime}}}}}
+\newcommand{\qq}{$\mathrm{q}\bar{\mathrm{q}}$~}
+\newcommand{\invpb}{pb$^{-1}$~}
+\newcommand{\intlumi}{5~fb$^{-1}$}
+\newcommand{\wmasssemilepdata}{ \ensuremath{m_\wboson^{\mathrm{DATA}} = 83.0 \pm 0.7 \; \GeVcc}} 
+\newcommand{\wmasssemilepmc}{ \ensuremath{m_\wboson^{\mathrm{MC}} = 82.5 \pm 0.3 \; \GeVcc}} 
+\newcommand{\topmasssemilepdata}{ \ensuremath{m_{\mathrm{t}}^{\mathrm{DATA}} = 177.1 \pm 2.0 \; \GeVcc}} 
+\newcommand{\topmasssemilepmc}{ \ensuremath{m_{\mathrm{t}}^{\mathrm{MC}} = 171.5 \pm 0.7 \; \GeVcc}} 
+\newcommand{\subjetjes}{\ensuremath{1.01 \pm 0.01}}
+\newcommand{\mcuteffsemilepdata}{ \ensuremath{\epsilon_{m_\wboson}^{\mathrm{DATA}} = 0.49 \pm 0.01}} 
+\newcommand{\mcuteffsemilepmc}{ \ensuremath{\epsilon_{m_\wboson}^{\mathrm{MC}} =  0.50 \pm 0.01}} 
+\newcommand{\mucuteffsemilepdata}{ \ensuremath{\epsilon_\mu^{\mathrm{DATA}} = 0.64 \pm 0.01}} 
+\newcommand{\mucuteffsemilepmc}{ \ensuremath{\epsilon_\mu^{\mathrm{MC}} =  0.64 \pm 0.01}} 
+\newcommand{\scalefactor}{ \ensuremath{0.97 \pm 0.03}} 
+\newcommand{\scalefactorsqrd}{ \ensuremath{0.94 \pm 0.06}}
+\newcommand{\topmasscuteffsemilepdata}{ \ensuremath{\epsilon_{m_t}^{\mathrm{DATA}} = 0.50 \pm 0.08}} 
+\newcommand{\topmasscuteffsemilepmc}{ \ensuremath{\epsilon_{m_t}^{\mathrm{MC}} =  0.65}} 
+\newcommand{\minmasscuteffsemilepdata}{ \ensuremath{\epsilon_{minMass}^{\mathrm{DATA}} = 0.71 \pm 0.16}} 
+\newcommand{\minmasscuteffsemilepmc}{ \ensuremath{\epsilon_{minMass}^{\mathrm{MC}} =  0.62}} 
+\newcommand{\scalefactorcatoptag}{ \ensuremath{0.89 \pm 0.28}} 

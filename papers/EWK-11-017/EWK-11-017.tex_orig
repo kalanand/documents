@@ -1,0 +1,865 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 101311 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/papers/EWK-11-017/trunk/EWK-11-017.tex $
+\RCS$Id: EWK-11-017.tex 101311 2012-02-05 00:18:05Z kalanand $
+%%%%%%%%%%%%% ptdr definitions %%%%%%%%%%%%%%%%%%%%%
+%\input{ptdr-definitions} %These have been replaced by the equivalent style file
+\newcommand{\comment}[1]{}
+\newcommand{\pb}{\ensuremath{\mathrm{pb}}}%
+\newcommand{\pp}{\ensuremath{\mathrm{pp}}}%
+\newcommand{\Wo}{\ensuremath{\mathrm{W}}}%
+\newcommand{\Wp}{\ensuremath{\mathrm{W^+}}}%
+\newcommand{\Wm}{\ensuremath{\mathrm{W^-}}}%
+\newcommand{\Zo}{\ensuremath{\mathrm{Z}}}%
+\newcommand{\rts}{\ensuremath{\sqrt{s}}}%
+\newcommand{\ra}{\ensuremath{\rightarrow}}%
+\newcommand{\MN}{\ensuremath{\mu\nu}}%
+\renewcommand{\EE}{\ensuremath{\mathrm{e}^+\mathrm{e}^-}}%
+\newcommand{\EN}{\ensuremath{\mathrm{e}\nu}}%
+\newcommand{\LN}{\ensuremath{\ell\nu}}%
+\newcommand{\MW}{\ensuremath{\mathrm{m}_\Wo}}%
+\newcommand{\MZ}{\ensuremath{\mathrm{m}_\Zo}}%
+\newcommand{\MT}{\ensuremath{\mathrm{M}_T}}%
+\newcommand{\MLL}{\ensuremath{\mathrm{M}_{\ell\ell}}}%
+\newcommand{\met}{\ensuremath{{E\!\!\!/}_{\mathrm{T}}}\xspace}
+\renewcommand{\ttbar}{\ensuremath{\mathrm{t}\bar{\mathrm{t}}}}%
+\newcommand{\Wmn}{\ensuremath{\Wo \ra \MN}}%
+\newcommand{\Wpmn}{\ensuremath{\Wp \ra \mu^+\nu}}%
+\newcommand{\Wmmn}{\ensuremath{\Wm \ra \mu^-\overline{\nu}}}%
+\newcommand{\Zmm}{\ensuremath{\Zo \ra \MM}}%
+\newcommand{\Wtn}{\ensuremath{\Wo \ra \tau\nu}}%
+\newcommand{\Ztt}{\ensuremath{\Zo \ra \tau^+\tau^-}}%
+\newcommand{\ppZmm}{\pp \ra \Zo(\gamma^*) + X \ra \MM + X}%
+\newcommand{\ppWmn}{\pp \ra \Wo + X \ra \MN + X}%
+\newcommand{\ppWpmn}{\pp \ra \Wp + X \ra \mu^+\nu + X}%
+\newcommand{\ppWmmn}{\pp \ra \Wm + X \ra \mu^-\overline{\nu} + X}%
+\newcommand{\Wen}{\ensuremath{\Wo \ra \EN}}%
+\newcommand{\Wpen}{\ensuremath{\Wp \ra \mathrm{e}^+\nu}}%
+\newcommand{\Wmen}{\ensuremath{\Wm \ra \mathrm{e}^-\overline{\nu}}}%
+\newcommand{\Zee}{\ensuremath{\Zo \ra \EE}}%
+\newcommand{\ppZee}{\pp \ra \Zo(\gamma^*) + X \ra \EE + X}%
+\newcommand{\ppWen}{\pp \ra \Wo + X \ra \EN + X}%
+\newcommand{\ppWpen}{\pp \ra \Wp + X \ra \mathrm{e}^+\nu  + X}%
+\newcommand{\ppWmen}{\pp \ra \Wm + X \ra \mathrm{e}^-\overline{\nu} + X}%
+
+\newcommand{\Wln}{\ensuremath{\Wo \ra \LN}}%
+\newcommand{\Wpln}{\ensuremath{\Wp \ra \ell^+\nu}}%
+\newcommand{\Wmln}{\ensuremath{\Wm \ra \ell^-\overline{\nu}}}%
+\newcommand{\Zll}{\ensuremath{\Zo \ra \ell^+ \ell^-}}%
+\newcommand{\ppZll}{\pp \ra \Zo(\gamma^*) + X \ra \ell^+ \ell^- + X}%
+\newcommand{\ppWln}{\pp \ra \Wo + X \ra \LN + X}%
+\newcommand{\ppWpln}{\pp \ra \Wp + X \ra \ell^+\nu  + X}%
+\newcommand{\ppWmln}{\pp \ra \Wm + X \ra \ell^-\overline{\nu} + X}%
+
+\newcommand{\Wptn}{\ensuremath{\Wp \ra \tau^+\nu_\tau}}%
+\newcommand{\Wmtn}{\ensuremath{\Wm \ra \tau^-\overline{\nu}}}%
+
+\newcommand{\Wev}{\Wen}
+\newcommand{\Wmv}{\Wmn}
+\newcommand{\Ztautau}{\Ztt}
+\renewcommand{\MET}{\met}
+\newcommand{\gammaZ}{\ensuremath{\gamma^{*}\Zo}}
+\newcommand{\gammaZmm}{\mbox{$ \gamma^{*}/\Zo\rightarrow \MM$}}
+\newcommand{\gammaZee}{\mbox{$ \gamma^{*}\Zo\rightarrow e^{+}  e^{-}$}}
+\newcommand{\gammaZtt}{\mbox{$ \gamma^{*}\Zo\rightarrow \tau^{+}  \tau^{-}$}}
+\newcommand{\gammaZll}{\mbox{$ \gamma^{*}\Zo\rightarrow \ell^{+}  \ell^{-}$}}
+\newcommand{\invpb}{\mbox{$\textrm{pb}^{-1}$}}
+\newcommand{\invnb}{\mbox{$\textrm{nb}^{-1}$}}
+\newcommand{\mz}{\mbox{$ m_{Z}$}}
+\newcommand{\hta}{\mbox{$ \eta$}}
+\newcommand{\fh}{\mbox{$ \phi$}}
+\newcommand{\etot}{\mbox{$ \epsilon_{tot}$}}
+\newcommand{\eclustering}{\mbox{$ \epsilon_{clustering}$}}
+\newcommand{\etracking}{\mbox{$ \epsilon_{tracking}$}}
+\newcommand{\egsfele}{\mbox{$ \epsilon_{gsfele}$}}
+\newcommand{\epreselection}{\mbox{$ \epsilon_{preselection}$}}
+\newcommand{\eisolation}{\mbox{$ \epsilon_{isolation}$}}
+\newcommand{\eclassification}{\mbox{$ \epsilon_{classification}$}}
+\newcommand{\eelID}{\mbox{$ \epsilon_{elID}$}}
+\newcommand{\etrigger}{\mbox{$ \epsilon_{trigger}$}}
+
+\newcommand{\DE}{$\Delta\eta_{in}$}
+\newcommand{\DP}{$\Delta\phi_{in}$}
+\newcommand{\SEE}{$\sigma_{\eta\eta}$~}
+\newcommand{\SEP}{$\sigma_{\eta\phi}$}
+\newcommand{\SPP}{$\sigma_{\phi\phi}$}
+\newcommand{\SXY}{$\sigma_{XY}$}
+\newcommand{\pth}{\hat{p}_{\perp}}
+\newcommand{\Pt}{p_{T}}
+\newcommand{\Et}{E_{T}}
+\newcommand{\Lint}{\ensuremath{{\cal L}_{\mathrm{int}}}}
+\newcommand{\IRelComb} {I^{\textrm{rel}}_{\textrm{comb}}}%
+\newcommand{\ITRK}     {I_{\textrm{trk}}}%
+\newcommand{\IECAL}    {I_{\textrm{ECAL}}}%
+\newcommand{\IHCAL}    {I_{\textrm{HCAL}}}%
+\newcommand{\Nbg}{N_{\mathrm{bg}}}%
+
+\newcommand{\mumu}{\mu\mu}
+\newcommand{\Zmumu}{Z_{\mumu}}
+\newcommand{\Zmus}{Z_{\mu s}}
+\newcommand{\Zmut}{Z_{\mu t}}
+\newcommand{\nonIso}{\mathrm{non\,iso}}
+\newcommand{\ZmumuNonIso}{\Zmumu^\nonIso}
+\newcommand{\ZmumuTwoHlt}{\Zmumu^{2\mathrm{HLT}}}
+\newcommand{\ZmumuOneHlt}{\Zmumu^{1\mathrm{HLT}}}
+
+\newcommand{\NZtomumu}{N_{\Zmm}}
+
+\newcommand{\Nmumu}{N_{\mumu}}
+\newcommand{\Nmus}{N_{\mu s}}
+\newcommand{\Nmut}{N_{\mu t}}
+\newcommand{\NmumuNonIso}{\Nmumu^\nonIso}
+\newcommand{\NmumuTwoHlt}{\Nmumu^{2\mathrm{HLT}}}
+\newcommand{\NmumuOneHlt}{\Nmumu^{1\mathrm{HLT}}}
+
+
+\newcommand{\effHlt}{\epsilon_\mathrm{HLT}}
+\newcommand{\effIso}{\epsilon_\mathrm{iso}}
+\newcommand{\effTrk}{\epsilon_\mathrm{trk}}
+\newcommand{\effSa}{\epsilon_{\mathrm{sa}}}
+
+\newcommand{\cls}{CL_{S}} 
+\include{Numbers}
+
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{EWK-11-017} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+%\title{Study of the di-jet mass spectrum in W+2-jets events}
+\title{Study of the dijet invariant mass distribution in $W (\rightarrow\ell\nu) +$ jets events in $pp$ collisions at $\sqrt{s} = 7$ TeV}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%\address[neu]{Northeastern University}
+%\address[fnal]{Fermilab}
+%\address[cern]{CERN}
+\author[cern]{The CMS Collaboration}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+%This note describes the study of the dijet invariant mass spectrum 
+%in events with two jets produced in association with a $W$ boson that decays leptonically.
+%We analyze a data sample that corresponds to an integrated 
+%luminosity of 1.1~fb${}^{-1}$ collected with the CMS detector at 
+%$\sqrt{s} = 7$ TeV in 2010 and 2011. We model the observed $M_{jj}$ distribution by means of a fit that uses template $M_{jj}$ distributions obtained from simulated event samples
+%in the region between 30~GeV and 300~GeV. 
+%
+We present a study of the invariant mass spectrum of 
+the leading two jets in W+jets events. 
+%The data correspond to an integrated luminosity of 4.7 fb${}^{-1}$ collected 
+%at LHC with the CMS detector from $pp$ collisions at $\sqrt{s} = 7$~TeV. 
+In 4.7 fb${}^{-1}$ data collected 
+at LHC with the CMS detector from proton-proton collisions at $\sqrt{s} = 7$~TeV,  
+we find no evidence for anomalous resonant dijet production at  
+mass around 150~GeV.
+We exclude  an excess as large as that reported by the CDF collaboration 
+at more than 99\% confidence level. We set 95\% exclusion limits on 
+a generic Gaussian resonance and a variety of other models 
+that predict a similar excess. 
+}
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible. For APS submissions, they are automatically converted to APS keywords.
+\hypersetup{%
+pdfauthor={Monika Grothe, Kalanand Mishra},%
+pdftitle={Study of the dijet mass spectrum in W+2-jets events},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+%%\section{Introduction}
+%This Letter describes a study of the invariant mass spectrum of 
+%the leading two jets 
+%in events with two or three jets produced in association with a $W$ 
+%boson that decays leptonically.
+We examine the dijet invariant mass spectrum $m_{jj}$ of 
+the leading two jets in W+jets events 
+with the goal of repeating the analysis~\cite{CDFresult, D0result} 
+performed at the Fermilab Tevatron. 
+The CDF collaboration observes a significant resonant excess 
+around 150~GeV~\cite{CDFresult} which the D\O\  collaboration 
+does not confirm~\cite{D0result}.
+%Recently, the CDF collaboration at the Fermilab Tevatron 
+%reported~\cite{CDFresult} the observation of 
+%a significant resonant excess in the dijet invariant mass ($m_{jj}$)
+%spectrum around 150~GeV  in events containing a lepton and 
+%missing transverse energy ($\MET$) from the W boson decay 
+%and exactly two jets
+%in $p\bar{p}$ collisions at $\sqrt{s} = 1.96$~TeV.
+%%Our analysis is motivated by the recent report~\cite{CDFresult} of 
+%a significant resonant excess in the observed dijet invariant mass 
+%spectrum in this process by the CDF collaboration at the Fermilab 
+%Tevatron in $p\bar{p}$ collisions at $\sqrt{s} = 1.96$~TeV.
+%%Recently, the CDF collaboration reported evidence~\cite{CDFresult} for 
+%an excess over the expected distribution
+%in the observed dijet invariant mass spectrum in this process. 
+%The CDF analysis, based on 4.3~fb${}^{-1}$ of data, 
+%collected at $\sqrt{s} = 1.96$~TeV, 
+%found an excess of 3.2 standard deviations ($\sigma$). 
+%The observed excess was compatible 
+%with a Gaussian peak centered at 150~GeV and width 
+%that is consistent with the jet resolution.
+%The D\O\  collaboration carried out a similar analysis, but could 
+%not confirm the CDF finding~\cite{D0result}.
+%%%In their analysis of 4.3~fb$^{-1}$ of data, the D\O\ collaboration 
+%%does not report a statistically significant excess consistent with 
+%%that observed by CDF, but does favor (at the $\sim$1$\sigma$ level) 
+%%the presence of a smaller bump-like feature at $\sim$150 GeV, 
+%%corresponding to a production cross section of 
+%%$0.82^{+0.83}_{-0.82}$ pb, or about 20\% as large as that reported 
+%%by CDF. 
+%The D\O\ analysis excludes a bump arising 
+%from a 4~pb Higgs-like scalar with a statistical significance 
+%described by a $p$-value of $8\times 10^{-6}$~\cite{D0result}. 
+%The differences between the 
+%results of CDF and D\O\ are highly unlikely to arise from 
+%statistical fluctuations, leaving only underlying systematic 
+%issues or actual new physics as possible 
+%resolutions~\cite{BuckleyHooperMartin}.
+%Our goal is to repeat the CDF/D\O\ analysis modulo any 
+%
+We make the adjustments needed to deal with a much larger 
+gluon-gluon and quark-gluon initiated backgrounds at the LHC. 
+Our data correspond to an integrated 
+luminosity of $4.7 \pm 0.2$~fb${}^{-1}$ collected with the CMS detector
+in $pp$ collisions at $\sqrt{s} = 7$ TeV at the CERN LHC in 2010 and 2011.
+%In order to search for anomalous dijet production in CMS data, we apply selection criteria that duplicate the CDF ones as closely as possible.
+%The resulting data sample is dominated by associated production of single $W$ bosons 
+%along with two or more jets, but also contains diboson events,
+%$WW$ and $WZ$, with hadronic $W$ or $Z$ decay to two jets ($W/Z\to jj$). 
+%Smaller contributions come from
+%top pair ($\ttbar\to l\nu jj$), single top ($pp\to tq \to \to l\nu jj$),
+%and QCD multijet production. 
+%We model the observed $M_{jj}$ distribution by means of a fit that uses template $M_{jj}$ distributions obtained from simulated event samples
+%in the region between 30~GeV and 300~GeV. 
+%
+%%\section{CMS detector}
+
+CMS~\cite{CMSDetector} uses a right-handed coordinate system, 
+with the origin at 
+the nominal interaction point, the x-axis pointing to the center of 
+the LHC, the y-axis pointing up perpendicular to the LHC plane, and 
+the z-axis along the counterclockwise-beam direction. 
+The polar angle $\theta$ is measured from the positive z-axis and 
+the azimuthal angle $\phi$ is measured in the x-y plane. 
+The pseudorapidity is defined as $\eta = −\ln(\tan\frac{\theta}{2})$. 
+The CMS detector~\cite{CMSDetector} consists of pixel and 
+silicon-strip trackers 
+up to $|\eta| < 2.4$ which, together with a 3.8 Tesla magnetic 
+solenoid, provide 
+%track reconstruction down to about 100 MeV in 
+%transverse momentum ($p_T$) and 
+a track momentum resolution of 1\% at 100 GeV; a granular 
+electromagnetic crystal-calorimeter  
+%of $\Delta\eta \times \Delta\phi \approx 0.0174 \times 0.0174$ 
+extending up to 
+$|\eta| < 3$ with an energy resolution 
+of about $3\%/\sqrt{E}$; a hadronic calorimeter 
+extending up to $|\eta| < 5$ with 
+%a tower granularity of 	
+%$\Delta\eta \times \Delta\phi \approx 0.087 \times 0.087$ and 
+an energy resolution of $100\%/\sqrt{E}$; and an efficient 
+muon system capable of reconstructing and identifying muons up to 
+$|\eta| < 2.4$. 
+The detector is nearly hermetic, allowing for measurements of the 
+missing transverse energy ($\met$) in the event using a full 
+particle-flow~\cite{PFT-09-001} reconstruction.
+A two-tier trigger system selects the most interesting collision 
+events for use in physics analysis. 
+%A more detailed description of the CMS detector can be found 
+%elsewhere~\cite{CMSDetector}.
+%
+
+
+
+%%\section{Data and Simulation samples}
+We use data collected with a suite of single lepton triggers 
+mostly using transverse momentum ($p_T$) 
+thresholds of 24~GeV for muons and 25--32~GeV for electrons.
+Simulated Monte Carlo (MC) samples are corrected for the trigger 
+efficiency.
+%%Of the data used in this analysis, all but 36~pb${}^{-1}$ of data were collected in 2011.
+%%For the 2010 data taking period, we retain events with leptons that passed the unprescaled 
+%%trigger with the 
+%%lowest $p_T$ threshold. For electrons, this threshold is $p_T >17$~GeV for most of the 
+%%collected 2010 data, for muons it is $p_T >15$~GeV. In the 2011 data taking period, trigger 
+%%conditions evolved rapidly, following the steep rise in luminosity delivered by the LHC. 
+%%The lowest unprescaled muon trigger thresholds, first 
+%%$p_T >17$~GeV and later $p_T >24$~GeV, are sufficiently below the 
+%%$p_T >25$~GeV requirement of this analysis to be used. For electrons, a logical OR
+%%of several in part prescaled trigger paths were used where the requirement on the electron
+%%$p_T$ was at most $p_T >27$~GeV and hence sufficiently below the $p_T >30$~GeV cut of 
+%%this analysis.   
+%%
+We use \MADGRAPH~\cite{MADGRAPH} event generator and  
+CTEQ6L1 parton distribution functions to simulate the 
+W boson and Drell-Yan production in association with up to four jets 
+at the level of matrix element (ME) calculation and 
+matched to parton showers (PS) from \PYTHIA 6.422~\cite{Sjostrand:2006za}
+tune Z2~\cite{CMSVjets} with a matching threshold of 20 GeV and 
+a dynamic cactorization/renormalization scale given by {\small ${\sqrt{M_{W/Z}^2 + p_{T, W/Z}^2}}$}.
+%following the MLM prescription~\cite{MLM}
+%with a matching threshold of 10 GeV. 
+Top-quark pair events are also simulated using \MADGRAPH.
+Single top production is modeled using POWHEG~\cite{POWHEG}.
+Multijet and electroweak diboson ($WW$ and $WZ$ semi-leptonic decay)
+processes are simulated using \PYTHIA.
+We consider several theoretical models which predict an excess in the 
+$m_{jj}$ spectrum near 150~GeV, \textit{e.g.},  
+technicolor~\cite{Lane_TC,AMartinMC}, 
+leptophobic $\Zo^\prime$~\cite{Buckley:2011vc,BuckleyMC}, and Higgs boson ($M_H = 150$~GeV) 
+production in association with a W boson (WH). 
+Technicolor and WH are modeled using \PYTHIA, and 
+leptophobic $\Zo^\prime$ is simulated using \MADGRAPH interfaced with \PYTHIA.
+All MC events are fully reconstructed using the standard CMS software.
+%%All simulated samples take into account event pile-up and are 
+%%processed through the full detector simulation, trigger emulation, 
+%%and event reconstruction chain.
+
+
+%%\section{Event selection\label{sec:evtSel}}
+We apply selection criteria similar to those used at 
+the Tevatron~\cite{CDFresult, D0result} 
+with some adjustments necessitated by the high luminosity, high 
+background environment at the LHC~\cite{ELM}.  
+To reconstruct the lepton and $\met$~\cite{Chatrchyan:2011tn} from W decays 
+we follow closely the criteria 
+used in the $W \rightarrow\ell\nu$ analysis~\cite{WZCMS:2010}, where 
+$\ell$ denotes an electron or a muon. 
+We require an energetic lepton of $p_T >25$ (35)~GeV and  
+$\MET >25$ (30)~GeV in the event in case of muon (electron) data. 
+To reduce the background from processes that do not contain 
+$W\to\ell\nu$ decays, we require that the transverse mass~\cite{WZCMS:2010}
+of the W candidate be larger than 50~GeV.
+To reduce the backgrounds from the Drell-Yan and 
+electroweak diboson purely-leptonic decay processes, 
+we veto the presence a second lepton (of $p_T > 20$~GeV for electron, 
+10 GeV for muon)  in the event.
+The efficiency for the lepton selection is about 95\% (64\%) while 
+the trigger efficiency for the selected leptons is about 
+94\% (90\%) for muon (electron) events, with small dependence 
+on $p_T$ and $\eta$. 
+The $\MET$ resolution, measured as a function of the sum $E_T$ ($\Sigma{}E_T$)
+of the particle-flow~\cite{PFT-09-001} objects in the event, varies from 
+4\%  at $\Sigma{}E_T=60$~GeV to 10\% at $\Sigma{}E_T=350$~GeV~\cite{Chatrchyan:2011tn}.
+The simulation is corrected for any data--MC differences  
+in lepton efficiency or $\MET$ resolution effects.
+Jets are reconstructed from the particle-flow~\cite{PFT-09-001} objects 
+using an anti-$k_T$ clustering algorithm~\cite{ANTIKT}
+with size parameter 0.5 and $|\eta| < 2.4$. 
+Jet energy corrections 
+are applied to improve the accuracy of the jet $\PT$ measurement
+and to flatten the jet energy response as a function
+of~$\eta$ and \pt~\cite{Chatrchyan:2011ds}.
+The jet $p_T$ resolution~\cite{Chatrchyan:2011ds} varies from 15\% 
+at $p_T =$ 40 GeV to 6\% at $p_T =$ 400 GeV.
+The dijet mass resolution is roughly $\sqrt{2}$ times 
+smaller than the jet $p_T$ resolution.
+Jets which fall within a radius 0.3 of a lepton candidate 
+in the $\eta-\phi$ plane are not included in the jet count.
+%The presence of additional interactions with respect to the
+%primary one, \textit{i.e.} pile-up events, often adds additional energy to the 
+%jets, or may add tracks and calometric energy
+%around the deposits of otherwise isolated leptons.
+%An algorithm that evaluates the event 
+%energy density not related to the hard interaction is 
+%used to correct the jet energy measurement~\cite{fastjet1}.
+Charged particles with tracks not originating at the primary vertex 
+are removed from the jet clustering~\cite{fastjet1, fastjet2}.
+The jets and the lepton from the W decay are required to originate 
+from the same primary vertex. 
+In addition, the hadronic energy deposited around the lepton is 
+corrected for pile-up contribution~\cite{CMSVjets}.
+We require exactly two or three jets in the event with the leading jet $p_T >40$~GeV, 
+the second jet $p_T >30$~GeV, $\Delta \eta (j,j) < 1.2$, 
+and the transverse momentum of the dijet system $p_T (j, j) > 45$~GeV.
+The azimuthal separation 
+between the leading jet and $\MET$ must be larger than 0.4.
+%%Hence, 
+%%the analysis requires exactly two jets with transverse momentum above 30~GeV, exactly one lepton and 
+%%significant 
+%%missing transverse energy $\MET >25$~GeV. In addition, the transverse momentum of the dijet system needs to 
+%%be $p_T^{jj} >40$~GeV and the azimuthal separation between the jet with highest $p_T$ and the direction 
+%%of the $\MET$ must satisfy $\Delta \phi (\MET,j_1) >0.4$. Due to trigger constraints, our lepton transverse 
+%%momentum cut and our cut on the transverse mass of the $W$ candidate are slightly higher than in the CDF analysis.
+%%We require $p_T^\mu >25$~GeV, $p_T^e >30$~GeV and $M_T >40$~GeV. Furthermore, the two leading jets are required to be central and 
+%%to have an opening angle $|\Delta \eta_{jj}| < 1.5$. This is a somewhat more stringent cut then the one used by CDF.
+%Electrons are identified as clusters of ECAL energy deposits
+%matched to tracks from the silicon tracker within the ECAL fiducial volume with $|\eta|<2.5$, with exclusion of the region
+%$1.44 < |\eta| < 1.57$ where
+%services and cables exit.
+%%Their transverse impact parameter with respect to the primary vertex, $D_{0}$, has to be below 2 mm.
+%Electron candidates have to pass a set of electron identification requirements. The 
+%$\eta$ and $\phi$ coordinates
+%of the track trajectory extrapolated to the ECAL have to match the $\eta$ and
+%$\phi$ coordinates of the ECAL cluster; the ECAL
+%cluster width in $\eta$ has to be sufficiently narrow; and the hadronic energy measured in a
+%cone around the ECAL cluster direction has to be small. Electrons with a high probability to
+%originate from photon conversions are vetoed. 
+%The quality requirement cuts are chosen such that
+%they correspond to an electron identification efficiency of about 70\% in simulated event samples.
+%Quality requirements of the type described in \cite[VBTF] are applied that correspond to an electron identification efficiency of about 70\% in simulated event samples.
+%Muons candidates are reconstructed in the fiducial region $|eta| < 2.1$ by combining
+%information from the silicon tracker
+%and from the muon chambers by means of a global fit.
+%%Contamination from decays in flight of hadrons and punch-through particles are 
+%reduced by applying a cut of $\chi^2/ndof < 10$.
+%In order to ensure a precise estimate of momentum and impact parameter
+%only tracks with more than 10 hits in the inner tracker and at least 
+%one hit in the pixel detector are used.
+%We require hits in at least two muon detection layers in the measurement,
+%to ensure a good quality momentum estimate at trigger level, and
+%to further suppress remaining fake muon candidates.
+%Cosmic muons are rejected by requiring a transverse impact parameter 
+%distance to the beam spot position of less than 2 mm.
+%We require that all leptons be well separated from hadronic activity in the event.
+%Events in which hadronic jets mimic an electron or a muon can contaminate
+%the $\Wo$ sample. Such background is suppressed by imposing limits
+%on the presence of additional
+%tracks and calorimetric deposits near the trajectory of the lepton candidate.
+%The additional activity is summed in a cone
+%$\Delta R = \sqrt{(\Delta\eta)^2+(\Delta\phi)^2} < 0.3$ around
+%the lepton candidate. 
+%We use a relative combined isolation:
+%$ \IRelComb = \left( \sum_{\mathrm{tracks}} \pt + \sum_{\mathrm{ECAL}} \Et+ \sum_{\mathrm{HCAL}} \Et \right)/\Pt$.
+%For electron candidates we require $\IRelCom < 0.05$, for muon candidates $\IRelCom < 0.1$.
+%Jets and missing transverse energy $\MET$ are reconstructed from the particle collection created
+%with the particle flow algorithm~\cite{PFMET}. Jets are reconstructed 
+%with the anti-$k_T$ clustering algorithm~\cite{ref:antikt}
+%with a size parameter of $R = 0.5$. Jet energy corrections (JEC)
+%are applied to improve the accuracy of the jet $\PT$ measurement
+%and to flatten the jet energy response as a function
+%of~$\eta$ and \pt~\cite{jme-10-010}.
+%We require $|\eta| < 2.4$ so that the jets fall within the
+%tracker acceptance. Jets are required to pass identification
+%criteria which eliminate jets originating or being seeded by
+%noisy channels in the calorimeter~\cite{Chatrchyan:2009hy}. 
+%Jets which fall within $\Delta R < 0.3$
+%from an electron candidate are not included
+%in the jet count. In the muon case, we
+%rely on the PF algorithm to exclude muons from jet clustering.
+%
+%One of the most important backgrounds in the $W$ sample
+%comes from \ttbar events that contain two $b$-quark jets.
+%As a cross check, we count the number of $b$-tagged jets 
+%using the "Simple Secondary Vertex High Efficiency" $b$-tagging
+%algorithm~\cite{btv-10-001}. We use medium operating point which 
+%has tagging efficiency of about 70\% and fake rate of about 1\%.
+%%%%%%%%%% 2-jet versus 3-jet
+Events with a third jet ($p_T > 30$~GeV) are analyzed separately, 
+due to differences in sample composition and kinematic threshold effects,
+with the results combined in the end.  
+%%%%%%%%%%%%%%%
+\begin{table}[!htbp]
+  \begin{center}
+ \caption{Determination of the $m_{jj}$ shape and normalization.}  
+ \label{tab:Table0} 
+ \begin{tabular} {l  c  l}
+   \hline \hline
+   Process                &    Shape       & Normalization cross section (pb)\\  \hline
+   W+jets                 &    data        & Unconstrained in the fit \\
+   Diboson                &    MC          & Gaussian constraint: (NLO) 61.2   $\pm$  10\%\\ 
+   $t\overline{t}$             &    MC          & Gaussian constraint: (NLO) 157.5  $\pm$   6.3\%\\ 
+   Single top             &    MC          & Gaussian constraint: (NNLO)~\cite{Kidonakis:2010tc,Kidonakis:2011wy,Kidonakis:2010ux}   $\pm$ 5\%\\
+   Drell-Yan+jets         &    MC          & Gaussian constraint: (NLO, $m_{ll}>50$~GeV) 3048  $\pm$  4.3\%\\
+   Multijet               &    data        & Gaussian constraint: from \MET fit in data \\\hline \hline
+ \end{tabular}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%\section{Dijet mass distribution\label{sec:mjj}}
+%%%%%%%%%%%% Fit 
+To estimate the total yields of the known Standard Model (SM) processes  
+we perform an unbinned maximum likelihood fit to the 
+dijet invariant mass distribution.
+The $123~{\mbox{GeV}} < m_{jj} < 186~{\mbox{GeV}}$ region is 
+excluded from this fit and is used later to obtain upper bounds on the 
+allowed contribution from any resonant dijet production.  
+The W+jets distribution is the dominant component of the data.
+To get a good description of its shap, the
+simulation needs to describe well both the matrix elements for the
+hard processes and the subsequent development of the hard partons
+into jets of hadrons.
+Optimized values of the factorization/renormalization scale $\mu^2$ 
+and ME-PS matching scale $q^2$  should give the best possible 
+approximation to the W+jets kinematics for a given fixed-order 
+calculation.
+We accomplish this using a combination of three \MADGRAPH samples with 
+different values of $\mu$ and $q$, where the relative fractions are 
+determined by the fit to the data.
+%%%%%%%%%%%%%%%%%
+\begin{equation}
+\mathcal{F}_{\text{W+jets}} = \alpha \cdot \mathcal{F}_{\text{W+jets}} (\mu_{0}^2, q'^2) + 
+\beta \cdot \mathcal{F}_{\text{W+jets}} (\mu'^2, q_{0}^2) + 
+(1-\alpha-\beta) \cdot \mathcal{F}_{\text{W+jets}} (\mu_{0}^2, q_{0}^2),
+\label{eqWpjetsShape}
+\end{equation}
+%%%%%%%%%%%%%%%%%
+where $\mathcal{F}_{\text{W+jets}}$ denotes the 
+unity normalized $m_{jj}$ shape for the W+jets process,
+$\mu_0$ ($\mu'$) and $q_0$ ($q'$) correspond to the 
+default (alternative) values of $\mu$ and $q$ respectively, and 
+$\alpha$ and $\beta$ are relative fractions allowed to vary in 
+the fit. 
+We take $\mu' = 2 \mu_0$ if $\mu>\mu_0$ and $\mu' = 0.5 \mu_0$ if $\mu<\mu_0$. 
+Similarly, $q' = 2 q_0$ if $q>q_0$ and $q' = 0.5 q_0$ if $q<q_0$. 
+The uncertainties in $\alpha$ and $\beta$  are automatically propagated to the
+fit result.
+The overall normalization of the W+jets events is a free 
+parameter in the fit as well.
+
+
+
+
+The electroweak diboson, \ttbar, single top, and Drell-Yan+jets are other 
+significant contributors. 
+Their shapes are based on simulation.  
+Their yields are estimated using next-to-leading 
+order (NLO) or next-to-NLO 
+(NNLO) predictions with Gaussian constraints on all uncertainties.
+Multijet events in which a jet misidentified as an isolated lepton 
+passes all selection requirements contribute as well.
+We model their shape directly from data; in case of muons 
+from events that fail the muon isolation requirement, and in case of 
+electrons from events that fail tight electron quality criteria but pass  
+a looser selection. We estimate the multijet fraction in data 
+from a separate two-component likelihood fit to the 
+$\MET$ distribution, as described in Ref.~\cite{WZCMS:2010}.
+We then constrain the multijet normalization in the $m_{jj}$ fit 
+according to this fraction within uncertainties. 
+Table~\ref{tab:Table0} summarizes the determination of the shape 
+and normalization for each contributing process in the fit.
+%%%%%%%%%%%%%%%
+\begin{table}[!htbp]
+   \begin{center}
+  \caption{Event yields determined from a likelihood fit
+  to the data. The total uncertainty takes into
+  account the correlations among individual components.}
+  \label{tab:mjj_shapes_and_normalization}
+  \begin{tabular} {l  c  c c c }
+    \hline \hline
+    Process             &    \multicolumn{2}{c}{Muon channel} &
+\multicolumn{2}{c}{Electron channel} \\
+\hline
+                        &    2 jets              &  3 jets
+& 2 jets             &  3 jets\\
+\hline
+    W+jets              &    53231  $\pm$  466   &  12551 $\pm$  331
+&  30075 $\pm$ 115   &  8725 $\pm$  273\\
+    Dibosons            &    1087 $\pm$  98      &  339 $\pm$  49
+&  642 $\pm$  61     &  173 $\pm$  17\\
+    $t\overline{t}$          &    3973  $\pm$  238    &  7738 $\pm$  330
+&  2313 $\pm$ 143    &  3939 $\pm$  216\\
+    Single top          &    1545  $\pm$  76     &  873 $\pm$  43
+&  858 $\pm$  43     &  489 $\pm$  24\\
+    Drell-Yan+jets      &    1362 $\pm$  58      &  417 $\pm$  18
+&  993 $\pm$  43     &  341 $\pm$  15\\
+    Multijet            &    84 $\pm$  256       &  0 $\pm$ 90
+&  4040 $\pm$ 1170   &  334 $\pm$  160\\
+\hline
+    Total from fit      &    61281 $\pm$ 290     &  21918 $\pm$ 183
+&  38923 $\pm$ 227   &  14000 $\pm$ 141\\
+    Data                &    61153               &  22030
+&  38973             &  14145 \\
+\hline
+\multicolumn{5}{c}{In the region $123\,\text{GeV} < m_{jj} <
+186\,\text{GeV}$} \\
+\hline
+   Total from fit & 12921 $\pm$ 118 & 7021 $\pm$ 91 & 7909 $\pm$ 92 &
+4297 $\pm$ 70\\
+   Data & 12761 & 7111 & 8023 & 4438 \\
+\hline \hline
+  \end{tabular}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!htbp]
+  {\centering
+  \subfigure[]{
+  \includegraphics[trim = 2.5mm 1.5mm 2mm 1mm, clip, width=0.255\textwidth]{figs/Wjj_Mjj_Muon_2jets_Stacked.pdf}
+  }   
+  \subfigure[]{
+  \includegraphics[trim = 16mm 1.5mm 2mm 1mm, clip, width=0.238\textwidth]{figs/Wjj_Mjj_Electron_2jets_Stacked.pdf}
+  }   
+   \subfigure[]{
+   \includegraphics[trim = 16mm 1.5mm 2mm 1mm, clip, width=0.238\textwidth]{figs/Wjj_Mjj_Muon_3jets_Stacked.pdf}
+   }
+   \subfigure[]{
+   \includegraphics[trim = 16mm 1.5mm 2mm 1mm, clip, width=0.238\textwidth]{figs/Wjj_Mjj_Electron_3jets_Stacked.pdf}
+   }
+\vspace*{1mm} \\
+  \subfigure[]{
+  \includegraphics[trim = 2.5mm 1.5mm 2mm 1mm, clip, width=0.255\textwidth]{figs/Wjj_Mjj_Muon_2jets_Subtracted.pdf}
+   }
+  \subfigure[]{
+  \includegraphics[trim = 16mm 1.5mm 2mm 1mm, clip, width=0.238\textwidth]{figs/Wjj_Mjj_Electron_2jets_Subtracted.pdf}
+   }
+   \subfigure[]{
+   \includegraphics[trim = 16mm 1.5mm 2mm 1mm, clip, width=0.238\textwidth]{figs/Wjj_Mjj_Muon_3jets_Subtracted.pdf}
+   }
+   \subfigure[]{
+   \includegraphics[trim = 16mm 1.5mm 2mm 1mm, clip, width=0.238\textwidth]{figs/Wjj_Mjj_Electron_3jets_Subtracted.pdf}
+   }
+   \caption{(color online) Distributions of the invariant mass of the 
+   leading two jets in data and the fit of all SM processes for 
+   (a) muon 2 jets, (b) electron 2 jets, (c) muon 3 jets, and 
+   (d) electron 3 jets categories. The fit doesn't include 
+   data points in the test region demarcated by the vertical lines. 	
+   Data minus all backgrounds except the SM electroweak diboson 
+   are also shown in the respective order (e--h). The errors 
+   on the data points are statistical. The vertical dotted lines
+      indicate the interval excluded from the fit.
+}
+\label{fig:Fig1}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%
+Figure~\ref{fig:Fig1} shows the observed and predicted dijet invariant mass 
+distributions and the contribution after 
+subtracting all components but the diboson from data.  
+Except for a peak near 80 GeV from diboson events no other peak is 
+visible in the entire mass spectrum.
+%%We perform a likelihood fit of the observed $M_{jj}$ distribution in the region [30,300]~GeV for the electron 
+%%and muon channel combined as well as separately. The fit determines the relative contribution of $W+$ jets, diboson,
+%%top, single top and QCD mutlijet production by means of $M_{jj}$ templates derived
+%%from the simulated event samples for each event class.
+%%The normalization of the diboson and $W$+jets templates are free parameters of the fit 
+%%while the top and single top contributions are constrained to the measured 
+%%cross sections. The normalization of the QCD background is obtained from a separate fit to the $\MET$ distribution.
+%%
+%%Figure~\ref{fig:mjj} shows the resulting contribution after all components with the exception of the 
+%%diboson one have been subtracted from the observed $M_{jj}$ distribution.
+%%A clear diboson peak is visible.
+%%%%%%%%%%%
+%%\begin{figure}[] {\centering
+%%\unitlength=0.33\linewidth
+%%\includegraphics[width=0.48\textwidth]{figs/mJJ-combined-fit.pdf}
+%%\unitlength=0.33\linewidth
+%%\includegraphics[width=0.48\textwidth]{figs/mJJ-combined-fit-logY.pdf}
+%%\vspace*{1mm} \\
+%%\unitlength=0.33\linewidth
+%%\includegraphics[width=0.48\textwidth]{figs/mJJ-mu-fit.pdf}
+%%\unitlength=0.33\linewidth
+%%\includegraphics[width=0.48\textwidth]{figs/mJJ-mu-fit-logY.pdf}
+%%\vspace*{1mm} \\
+%%\unitlength=0.33\linewidth
+%%\includegraphics[width=0.48\textwidth]{figs/mJJ-ele-fit.pdf}
+%%\unitlength=0.33\linewidth
+%%\includegraphics[width=0.48\textwidth]{figs/mJJ-ele-fit-logY.pdf}
+%%\caption{
+%%Measured $M_jj$ distribution for (upper) all leptons, (middle) muon channel only, (lower) electron channels only,
+%%shown (left) with linear scale and 
+%%(right) with logarithmic scale. Overlaid are the Monte Carlo derived template distributions. Their relative normalization
+%%is obtained from a likelihood fit to the measured $M_{jj$ distribution in data.} 
+%%\label{fig:Fit}}
+%%\end{figure}
+%%
+%%
+%%\begin{figure}[h!] {\centering
+%%    \includegraphics[width=0.5\textwidth]{figs/mJJ-combined-fit-subtracted.pdf}
+%%    \includegraphics[width=0.5\textwidth]{figs/mJJ-mu-fit-subtracted.pdf}
+%%    \includegraphics[width=0.5\textwidth]{figs/mJJ-ele-fit-subtracted.pdf}
+%%    \caption{The dijet invariant mass distribution for the  
+%%      electron events after subtraction of fitted 
+%%      background components obtained in Figure~\ref{fig:EleFit}.}
+%%    \label{fig:FitSubtracted}}
+%%\end{figure}
+%%%%%%%%%
+%%
+%%\section{Systematic uncertainties\label{sec:syst}}
+
+
+We analyze several sources of systematic uncertainty.
+%used to fit the components of the $m_{jj}$ distribution. 
+%The largest source is the uncertainty in the W+jets shape. 
+%To assess the systematic error arising from the uncertainty in 
+%factorization/renormalization scale $\mu^2$    
+%we consider alternate simulations where the value of $\mu$ is 
+%scaled by either a factor 2 or a factor 0.5. 
+%To assess the systematic error arising from the hadronization 
+%uncertainty we include simulations where the ME-PS matching 
+%threshold is half or twice the nominal value. 
+%By allowing the ($\mu$ up/down and ME-PS up/down) relative fractions 
+%to float we account for the W+jets shape systematics. 
+The largest source is the uncertainty in the W+jets shape 
+which we account for by allowing the 
+relative fractions of up/down variations in the 
+factorization/renormalization and ME-PS scales 
+to float in the fit.
+%%
+%%These scale-varied samples had insufficient statistics for their $M_{jj}$ templates
+%%to be used directly in the fit. 
+%%To reduce the effect of statistical fluctuations, 
+%%the ratio of the $M_{jj}$ distribution in the scale-varied samples 
+%%with respect to the $M_{jj}$ distribution with default choice of the scale was fit to a smooth
+%%functional form, a third order polynomial. This function was then used to reweight the $M_{jj}$
+%%template derived from the default \MADGRAPH sample and the fit to the $M_{jj}$ distribution 
+%%observed in data was repeated with the reweighted $W+$ jets template.
+%%
+%%\item[Jet energy scale and resolution:]
+The main uncertainty in jet reconstruction comes from the jet 
+energy scale (JES) and resolution (JER) which we estimate using the 
+hadronically decaying W boson in highly pure \ttbar\ semi-leptonic events.  
+The mean and resolution of the reconstructed dijet (\textit{i.e.,} W)  mass 
+in \ttbar\ data and simulation agree to within 0.2\%, well within 
+the statistical uncertainty of about 0.5\% due to 
+the limited sample of \ttbar\ events in data.
+%%to be 4\%, while the
+%%additional uncertainty from flavor dependence is approximately 1\% \cite{jetsyst,jetsyst2}.
+%%The uncertainty on the jet energy resolution is 10\% and has a negligible effect on the
+%%measurement. We studied the effect of scaling the jet energies up and down, respectively, by 5\%. 
+%%
+%%\item[Statistical error of the W+jets simulation sample:] 
+%%The statistical accuracy of the simulation samples for the diboson and the $W+$ jets components are 
+%%of the same order as the statistical accuracy of the data sample. 
+%%
+In order to assess any bias due to our fit procedure, 
+including the effect of statistical uncertainties from limited  amount of MC events, 
+we perform 1000 pseudo-experiments.
+Each  pseudo-dataset is constructed by adding events generated from nominal shapes 
+with predicted yields within errors.
+The bias on the total yield is less than 0.2\% which we correct for.
+%--------------------------------------------------
+%\item[MET uncertainty]
+A small difference in \MET resolution~\cite{Chatrchyan:2011tn} between data and simulation 
+affects signal acceptance for new physics models under consideration 
+at 0.5\% level.
+Systematic uncertainty in the trigger efficiency estimation in data 
+is 1\%~\cite{WZCMS:2010}.
+Systematic uncertainty in lepton reconstruction and selection 
+efficiency combined is 1--2\%~\cite{WZCMS:2010}. 
+%The uncertainty prescription is discussed in Ref.~\cite{met}.
+%https://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETUncertaintyPrescription
+%\item[Luminosity uncertainty]
+A luminosity uncertainty of 4.5\% is assumed.
+%%\section{Conclusions\label{sec:conclusion}}
+%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[bthp!]
+\subfigure[]{
+\includegraphics[trim = 2.5mm 1mm 0mm 0mm, clip, width=0.47\textwidth]{figs/mjjpvalues_gs2+3jet}
+}
+\hspace*{8mm} 
+\subfigure[]{
+\includegraphics[trim = 2.5mm 1mm 0mm 0mm, clip, width=0.47\textwidth]{figs/mjjlimitbars_2+3jet_asymptotic}
+}
+\caption{\label{fig:Fig2} (color online) 
+(a) Signal p-values for a generic Gaussian signal as a function 
+of the cross section times the $W\to\ell\nu$ branching ratio.
+(b) Observed and expected 95\% C.L. upper limits, with 1- and 2-$\sigma$ 
+error bands, on the cross section for various signal models. 
+If the excluded over predicted cross section ratio is less than one, the 
+model is excluded at 95\% C.L.
+}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+
+
+To probe for any excess in the dijet  mass, we model a possible signal as a
+Gaussian resonance centered at 150~GeV  and of width 15~GeV. 
+The mass resolution comes from the invariant mass of the hadronically decaying W 
+boson in semi-leptonic \ttbar\ events in data.
+To compare our results with those from the Tevatron experiments 
+we need to scale the latter by the ratio of some reference process 
+at the LHC to that at the Tevatron.
+%To estimate the number of expected events corresponding to the CDF-like excess 
+%we need to scale the CDF-measured cross section 
+%by the ratio of some reference process at the LHC to that at the Tevatron. 
+We choose WH ($M_H = 150$~GeV) production as the reference process which results  
+largely from quark-antiquark ($q\overline{q}$) annihilation.  
+Since $q\overline{q}$ processes have the smallest increase in partonic luminosity 
+from Tevatron to LHC, our choice gives a conservative limit. 
+The number of expected signal events at LHC corresponding to an 
+observed cross section at Tevatron $\sigma_{\textrm{obs,~Tevatron}}$ is 
+%%%%%%%%
+\begin{equation}
+  \sigma_{\textrm{obs,~Tevatron}}  \times BR(W\to\ell\nu) \times \frac{\sigma_{\textrm{pred,~LHC}}}{\sigma_{\textrm{pred,~Tevatron}}} \times (\epsilon\times\cal{A}) \times \int \cal{L} \textrm{dt},  
+\label{eqTevToLHC}
+\end{equation}
+where $\sigma_{\textrm{pred,~LHC}} = 46.8~\textrm{fb}$~\cite{LHC4PDFxsec} and 
+$\sigma_{\textrm{pred,~Tevatron}} = 12~\textrm{fb}$~\cite{Djouadi199856} are the 
+WH theory cross sections at the LHC and the Tevatron respectively, 
+$\epsilon\times\cal{A} = \textrm{efficiency} \times \textrm{acceptance}$ for WH, 
+and $\int \cal{L} \textrm{dt}$ is the integrated luminosity.
+The value of $\epsilon\times\cal{A}$ is 5.5\%, 1.8\%, 3.8\%, and 1.2\% 
+for muon 2 jets, muon 3 jets, electron 2 jets, and electron 3 jets events.
+For calculations of exclusion limits, we use the modified frequentist 
+construction CL${}_{\textrm{S}}$~\cite{CLS} with profile likelihood as the 
+test statistic.
+In Fig.~\ref{fig:Fig2}a we show the signal 
+p-value as a function of cross section $\times BR(W\to\ell\nu)$ 
+for a generic Gaussian signal after combining results of all four categories.
+Upper limits on cross section computed at the 95\% confidence level (C.L.)
+for a generic Gaussian signal normalized to  
+$\sigma_{\textrm{obs,~Tevatron}} = \textrm{4~pb}$~\cite{CDFresult} in Eq.~\ref{eqTevToLHC}, 
+as well as for technicolor~\cite{Lane_TC,AMartinMC}, 
+leptophobic $\Zo^\prime$~\cite{Buckley:2011vc,BuckleyMC}, and WH ($M_H = 150$~GeV) are 
+shown in Fig.~\ref{fig:Fig2}b.
+A CDF-like excess is excluded at the 99.9999\% C.L and 
+we set a 95\% C.L. upper limit of 1.8 pb on the production cross section 
+$\times BR(W\to\ell\nu)$ for such resonances.
+%%%%%%%%%%%%%%%%%%%%%%
+In summary, we have presented a search for resonant enhancement 
+in dijet mass spectrum near $150~\gev$ in events that contain a 
+leptonically decaying $W$ boson and two or three jets in 4.7~fb${}^{-1}$ 
+of CMS data recorded in 2010 and 2011.
+We find no evidence for anomalous resonant dijet production  
+and derive upper limits on its production cross 
+section times branching ratio for a generic Gaussian resonance as 
+well as a variety of other models.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+% >> acknowledgements (for journal papers)
+% Please include the latest version from https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubAcknow.
+%\section*{Acknowledgements}
+% ack-text
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+%\newpage
+\bibliography{auto_generated}   % will be created by the tdr script.
+
+%% examples of appendices. **DO NOT PUT \end{document} at the end
+%\clearpage
+%\appendix
+
+
+%%% DO NOT ADD \end{document}!
+

@@ -1,0 +1,583 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 149402 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/papers/SMP-12-015/trunk/SMP-12-015.tex $
+\RCS$Id: SMP-12-015.tex 149402 2012-09-26 19:07:40Z kalanand $
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+\newcommand{\mjj}{\ensuremath{m_{jj}}\xspace}
+\newcommand{\GeVnn}{\ensuremath{{\,\text{Ge\hspace{-.08em}V\hspace{-0.16em}}}}\xspace}
+\newcommand{\GeVcnn}{\ensuremath{{\,\text{Ge\hspace{-.08em}V\hspace{-0.16em}}}}\xspace}
+\newcommand{\GeVsnn}{\ensuremath{{\text{Ge\hspace{-.08em}V\hspace{-0.16em}}}}\xspace}
+\newcommand{\mt}{\ensuremath{m_{\mathrm{T}}}\xspace}
+\newcommand{\pb}{\ensuremath{\,\text{pb}}\xspace}
+
+
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{SMP-12-015} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Measurement of WW and WZ production with W+dijet events in pp collisions at $\sqrt{s} = 7$~TeV}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%To mark authors as primary, use the \author* form
+\address[cern]{CERN}
+\author[cern]{The CMS Collaboration}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+%% We report cross section measurement of 
+%% simultaneous production of two gauge bosons  
+%% diboson production 
+%% in events 
+%% containing a leptonically decaying W boson and exactly two jets.
+%% The analyzed dataset 
+%% corresponds to an integrated luminosity of 5.0~fb${}^{-1}$ at 
+%% $\sqrt{s} = 7$~TeV collected by the CMS detector at the LHC.
+A measurement of the WW+WZ diboson production 
+cross section $\sigma(\text{WW}+\text{WZ})$ in proton-proton collisions is 
+reported for events containing a leptonically decaying 
+W boson and exactly two jets, using data that correspond to an integrated
+luminosity of 5.0\,fb$^{-1}$ at 
+$\sqrt{s} = 7$~TeV collected with the CMS detector at the LHC.
+With the kinematic requirements imposed in this analysis, 
+2700 $\pm$ 340 (stat.) $\pm$ 360 (syst.) 
+WW+WZ events are observed, 
+in agreement with the standard model expectation. 
+The measured value of the sum of WW and WZ cross sections is 
+$68.9 \pm 8.7 \text{ (stat.)} \pm 9.7 \text{ (syst.)}  \pm 1.5 \text{ (lum.)}$~pb, 
+also consistent with the standard model prediction of $65.6 \pm 2.2$~pb. 
+This is the first observation of WW+WZ production  in pp collisions using 
+this signature. 
+No evidence for anomalous triple gauge couplings is found   
+and upper limits are set on their magnitude.
+%%Limits on anomalous triple gauge couplings
+%%, extracted using 
+%%the transverse momentum of the dijet system, 
+%%show no significant deviation with respect to the SM prediction.
+}
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible and are in plain text (no TeX! -- for \sqrt{s} use sqrt(s) -- this will show with extra quote marks in the draft version but is okay).
+
+\hypersetup{%
+pdfauthor={Kalanand Mishra},%
+pdftitle={Measurement of WW and WZ production with W+dijet events in pp collisions at sqrt(s) = 7 TeV},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+
+\newlength{\columnfigure}
+\newlength{\tripleColFig}
+\ifthenelse{\not{\boolean{cms@external}}}{%
+  \newenvironment{ruledtabular}{
+    \begin{center}
+  } {
+    \end{center}
+  }
+  \let\oldtabular\tabular
+  \let\endoldtabular\endtabular
+  \renewenvironment{tabular}[1]{\oldtabular{#1}\hline}{\hline \endoldtabular}
+  \setlength{\columnfigure}{0.65\columnwidth}
+  \setlength{\tripleColFig}{0.48\columnwidth}
+}
+{%
+  \setlength{\columnfigure}{0.9\columnwidth}
+  \setlength{\tripleColFig}{0.68\columnwidth}
+}
+
+
+%%\section{Introduction}
+The pair production of vector bosons allows a direct 
+test of their self-interactions, which are fixed by the 
+gauge symmetry of the standard model (SM)~\cite{PhysRevD.48.2182}. 
+Observation of anomalous triple gauge boson couplings 
+would be an indication of physics beyond the SM.
+%%Also, the SM Higgs boson may decay to WW, giving rise to the same 
+%%final state as in direct diboson production. 
+
+
+In this Letter we report the first observation of WW+WZ diboson 
+production in pp collisions in the semileptonic final state at 
+the Large Hadron Collider (LHC), where 
+one W boson decays leptonically ($\ell\nu$) while the other boson 
+(W or Z) decays hadronically ($jj$), giving rise to two energetic jets in 
+the final state.
+Previous measurements in this channel at the Tevatron p$\bar{\rm p}$ 
+collider include the recent CDF~\cite{CDF-diboson-lvjj-2010} and 
+D\O~\cite{Abazov:2011cb, Abazov:2012} results. 
+The advantage of reconstructing WW+WZ in the $\ell\nu jj$ decay mode over 
+the purely leptonic final states~\cite{Chatrchyan:2011tz,:2012ks} is the larger branching fraction to jets, but
+at the expense of larger backgrounds, mainly from W+jets production.
+In contrast to the fully leptonic decay of WW pairs, the semileptonic 
+process permits a direct measurement of the boson transverse 
+momentum (\pt). 
+Sensitivity to WW$\gamma$ coupling in WW production and WWZ 
+coupling in WW and WZ production at high boson transverse momenta 
+makes this process particularly 
+useful as a probe of anomalous triple gauge boson couplings,  
+where evidence of physics beyond the SM could appear.
+
+
+
+The data correspond to an integrated luminosity of $5.0 \pm
+0.1\fbinv$ collected in 2010 and 2011 with the Compact Muon Solenoid
+(CMS) detector in pp collisions at $\sqrt{s} = 7\TeV$ at the CERN
+LHC. The CMS experiment~\cite{CMS:2010} uses a right-handed coordinate system, with
+the origin at the nominal interaction point, the x-axis pointing to
+the center of the LHC ring, the y-axis pointing up perpendicular to the 
+plane of LHC ring, and the z-axis along the counterclockwise beam direction. The
+polar angle $\theta$ is measured from the positive z-axis and the 
+azimuthal angle $\phi$ is measured in the x-y plane. The
+pseudorapidity is defined as $\eta = -\ln(\tan\frac{\theta}{2})$. The
+central feature of the CMS apparatus is a superconducting solenoid of
+6\unit{m} internal diameter, providing a magnetic field of
+3.8\unit{T}. Within the field volume are a silicon pixel and strip
+tracker and calorimeters. The tracker covers the range $|\eta| < 2.5$
+which, together with the solenoid, provides a track momentum
+resolution of 1\% at 100\GeVnn. The lead-tungstate crystal
+electromagnetic calorimeter (ECAL) covers $|\eta| < 3$ with an energy
+resolution of about $3\%/\sqrt{E}$~\cite{CMS-PAS-EGM-10-003}. The
+brass/scintillator hadron calorimeter (HCAL) covers $|\eta| < 3.0$ with
+an energy resolution of $100\%/\sqrt{E}$. The muon system includes the
+tracker and gas-ionization detectors embedded in the steel return
+yoke, and is capable of reconstructing and identifying muons within
+$|\eta| < 2.4$. Extensive forward calorimetry complements the coverage
+provided by the barrel and endcap detectors. The detector is nearly
+hermetic, allowing for measurements of the missing transverse energy
+($\MET$) in the event.  A two-tier trigger system selects the events
+of interest.
+
+
+The data were collected with a suite of single-lepton triggers mostly 
+using \pt thresholds of 24\GeVnn for muons 
+and 25--32\GeVnn for electrons. 
+To preferentially select events with on-shell W bosons, 
+the single-electron triggers typically also require minimum 
+thresholds on $\MET$ in the range 0--25\GeVnn and the
+transverse mass \mt of the electron plus $\MET$ system in the range 0--50\GeVnn. 
+The overall trigger efficiency is about 94\% (90\%) for muon (electron) data, 
+with a small dependence of a few percent on \pt and $\eta$. 
+Simulated events are corrected for the trigger efficiency as 
+a function of lepton \pt and $\eta$, and in the case 
+of electrons also as a function of $\MET$ .
+Simulated events are used to 
+develop and validate the methods used in the analysis. 
+
+
+The {\MADGRAPH}5~1.3.30~\cite{MADGRAPH} event generator produces
+parton-level events with a \PW\ boson and up to four partons on the
+basis of matrix-element (ME) calculations.  The ME--parton shower (ME--PS) 
+matching scale $\mu$ is taken to be 20\GeV~\cite{Hoche:2006ph}, and
+the factorization and renormalization scales are both set to $q^2 =
+M_{\PW}^2 + p_{\mathrm{T},\PW}^2$.  Samples of \ttbar\ and Drell--Yan
+events are also generated with \MADGRAPH.  Single-top production is
+modeled with \POWHEG~1.0~\cite{POWHEG}.  Multijet and diboson samples
+(\PW\PW, \PW\cPZ, \cPZ\cPZ) are generated with
+\PYTHIA~6.422~\cite{Sjostrand:2006za}.  \PYTHIA provides the parton
+shower simulation in all cases, with parameters of the underlying
+event set to the Z2 tune~\cite{PythiaTuneZ2}.  The set of parton
+distribution functions used is \textsc{cteq6ll}~\cite{CTEQ}.
+A \GEANTfour-based simulation~\cite{GEANT4} of the CMS
+detector is used in the production of all Monte Carlo (MC)
+samples. Multiple proton-proton interactions within a bunch crossing
+are simulated, and the triggers are emulated.  All simulated
+events are reconstructed and analyzed with the same software as data.
+
+
+
+
+Events are selected with one well-identified and isolated lepton (muon
+or electron), large missing transverse energy \met, and exactly 
+high-\pt jets.
+Muons are reconstructed with the inner tracker and the muon system  
+within $|\eta|<2.1$~\cite{MUONPAS}. 
+Electrons are reconstructed  from tracks in the tracker 
+pointing to energy clusters in the ECAL, within $|\eta|<2.5$, 
+excluding the transition region between the barrel and endcap, 
+$1.44<|\eta|<1.57$~\cite{CMS-PAS-EGM-10-004}. 
+Muons (electrons) are required to have \pt
+greater than 25\GeVnn (35\GeVnn).
+The lepton candidates are required to be compatible with coming from the primary 
+vertex of the event, which is chosen as the vertex with the highest 
+$\sum \pt^2$ of its associated tracks. According to the simulation,
+this requirement provides the correct assignment for the primary 
+vertex in more than 99\% of the cases
+in both signal and background events. 
+Charged leptons from 
+W-boson decays are expected to 
+be isolated from other activity in the event.
+The sum of transverse momentum or energy in the tracker, ECAL, and HCAL, 
+within a surrounding cone
+of $\Delta R \equiv \sqrt{(\Delta\eta)^2+(\Delta\phi)^2} <0.3$, 
+excluding the lepton itself, is required to be 
+less than 10\% of the measured
+$\pt$ of the muon, or less than 5\% of the measured $\pt$ of the electron. 
+Here $\Delta\eta$ and
+$\Delta\phi$ are the differences in pseudorapidity 
+and in azimuthal angle, respectively.
+To reduce the backgrounds from the Drell-Yan and electroweak diboson 
+fully leptonic decays, we exclude events in which there is any other 
+loosely identified lepton (with $\pt>10$\GeVnn for 
+muons and $\pt > 20$\GeVnn for electrons) in the event.
+
+
+Jets are reconstructed from calorimeter and tracker information using
+a particle-flow technique~\cite{CMS-PAS-PFT-09-001}, which combines
+information from several subdetectors.  The anti-\kt
+clustering algorithm~\cite{antikt,fastjetmanual} with a distance
+parameter of 0.5 is used.  Jets that overlap with isolated leptons
+within $\Delta R=0.3$ are not considered.  Jet energy corrections are
+applied to account for the non-linear response of the calorimeters to
+the particle energies and other instrumental effects~\cite{jetpas}.
+These corrections are based on in-situ measurements using dijet,
+$\gamma+{\rm jet}$, and Z+jet data samples~\cite{Chatrchyan:2011ds}.
+Overlapping minimum bias events from other pp collisions (pileup) and 
+the underlying event add to the energy of the
+reconstructed jets.  The median energy density due to pileup is
+evaluated in each event and the corresponding energy is subtracted
+from each jet~\cite{fastjet1}.  In addition, charged particles with tracks
+that do not originate from the primary vertex are not considered for jet
+clustering~\cite{Cacciari:2008gn}.  
+We verify that the procedures
+sucessfully remove the dependence of jet response on the number of
+interactions in a single event.
+A jet quality requirement,
+primarily based on the energy balance between charged and neutral
+hadrons in a jet, is applied to remove misidentified jets.  Only
+events containing exactly two jets with $\pt>35$\GeVnn and within $|\eta|<2.4$
+are selected for the analysis.  To reduce contamination from \ttbar
+background, events are discarded if one or more jets pass
+high-efficiency b-quark jet identification criteria based on the
+presence of a secondary vertex within the jet~\cite{btag}.  An
+accurate $\MET$ measurement is essential to distinguish the W
+signal from multijet backgrounds and to reconstruct the full event
+kinematics of the WW system.  We use $\MET$ measured in the event
+using the full particle-flow reconstruction~\cite{Chatrchyan:2011tn}.
+%%The $\MET$ resolution, measured as a
+%%function of the sum $\ET$ ($\sum\ET$) of the particle-flow objects in the
+%%event, varies from 4\% at $\sum\ET=60\GeVnn$ to 10\% at 
+%%$\sum\ET=350\GeVnn$~\cite{Chatrchyan:2011tn}.
+and require $\MET>25$ (30)\GeVnn in the event in case of muon (electron) data.
+To reduce the background from processes that do not contain 
+$\textnormal{W}\to\ell\nu$ decays, we require that the transverse 
+mass~\cite{VBTF} of the W candidate be larger than 30\GeVnn (50\GeVnn) 
+in muon (electron) data.
+
+
+We determine the relative contribution of the known SM processes to
+the observed dijet mass (\mjj) spectrum using an unbinned maximum likelihood fit over
+the mass range 40-150\GeVnn.  The fit is performed separately
+for the electron and muon channels since their relative background compositions differ.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[bt]
+\begin{center}
+ \caption{Treatment of background \mjj shapes and normalizations in a fit
+to the data. The background normalizations are constrained to Gaussian 
+distributions with the listed central values and widths.}  
+ \label{tab:Table0} 
+\begin{ruledtabular}
+\begin{tabular} {lcl}
+   Process             &    Shape      & Constraint on normalization \\ 
+   \hline
+   Diboson (WW+WZ)     &    MC  & Unconstrained \\ 
+   W+jets              &    MC  & 31.3 nb $\pm$ 5\% (NLO)~\cite{MCFM} \\
+   \ttbar\             &    MC  & 163 \, pb $\pm$ 7\% (NLO)~\cite{Kidonakis:2010dk}\\ 
+   Single top          &    MC  & 85 \, \, pb $\pm$ 5\% (NNLL)~\cite{Kidonakis:2010tc,Kidonakis:2011wy,Kidonakis:2010ux}\\
+   Drell-Yan+jets      &    MC  & 3.05 nb  $\pm$ 4.3\% (NNLO)~\cite{FEWZ} \\  
+   Multijet (QCD)      &    data  & \MET fit in data (see text) \\
+ \end{tabular}
+\end{ruledtabular}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Table~\ref{tab:Table0} lists the SM processes included in the fit.
+The normalization of the diboson WW+WZ contribution is a free
+fit parameter. The normalizations of the background components
+are allowed to vary within a Gaussian constraint around their central
+values. For multijet events, this central value is obtained from a
+separate two-component fit to the $\MET$ distribution
+which determines the fake W fraction in data~\cite{VBTF}.   
+The constraint is determined by the corresponding uncertainty. 
+The central values for all other processes are obtained from
+next-to-leading order (NLO) or higher order calculations, and
+the constraints are taken from the theoretical uncertainties.  With the
+exception of multijet production, the shape of the \mjj template distribution
+for all processes is obtained from simulation.  Multijet
+events contribute to the total background when jets are misidentified as isolated
+leptons. Hence their \mjj shape can be derived from data events with
+lepton candidates that fail the isolation requirements.
+
+
+The \mjj spectrum of the dominant W+jets component is 
+described using the shape from \MADGRAPH simulation after taking into account 
+the uncertainties due to the factorization and renormalization scale 
+(both equal to $q$) and ME--PS matching scale $\mu$~\cite{Alwall:2007fs}:
+\begin{linenomath}
+\begin{align}
+F_{\text{W+jets}} = \alpha\, & \mathcal{F}_{\text{W+jets}} (\mu_{0}^2, q'^2) + 
+\beta\, \mathcal{F}_{\text{W+jets}} (\mu'^2, q_{0}^2) \nonumber \\ 
+&+ (1-\alpha-\beta)\, \mathcal{F}_{\text{W+jets}} (\mu_{0}^2, q_{0}^2)\,,
+\label{eqWpjetsShape}
+\end{align}
+\end{linenomath}
+where $\mathcal{F}_{\text{W+jets}}$ denotes the \mjj shape from
+simulation.  The parameters $\mu_0$ ($\mu'$) and $q_0$ ($q'$)
+correspond to the default (alternative) values of $\mu$ and $q$,
+respectively. The parameters $\alpha$ and $\beta$ are
+free to vary between 0 and 1.  We take $\mu' = 2 \mu_0$ or $0.5 \mu_0$
+($q' = 2 q_0$ or $0.5 q_0$), depending on which alternative sample
+provides a better fit to the data. 
+Thus, the fit probes a factor of two variations in both $\mu$ and  $q$. 
+%%%%%%%%%%%%%%
+\begin{figure*}[tbh]
+\includegraphics[width=\tripleColFig]{figs/Diboson_Stacked_combined.pdf}
+\includegraphics[width=\tripleColFig]{figs/Diboson_Subtracted_combined.pdf}
+\includegraphics[width=\tripleColFig]{figs/Diboson_Pull_combined.pdf}
+\caption{(a) Distribution of the dijet invariant mass in data, 
+with the fit projections of various components overlaid.
+%%The number of events per GeV, i.e., the event count divided by bin width, are depicted.  
+(b) The dijet invariant mass after subtraction of all components except the
+electroweak WW+WZ processes.  The error bars represent the
+statistical uncertainties and the hatched bands represent the systematic
+uncertainties.  (c) The normalized
+residual or pull: $(\text{data} - \text{fit})/(\text{fit~uncertainty})$. 
+}
+\label{fig:Fig1}
+\end{figure*}
+%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table*}[htbp]
+\begin{center}
+  \caption{Event yields determined from a maximum likelihood fit to the data. 
+  The total uncertainty includes the effect of correlation among the 
+  individual contributions using the full covariance matrix.
+  Due to higher kinematic threshold the acceptance $\times$ efficiency 
+  is smaller for electron channel.
+}
+  \label{tab:yields}
+\begin{ruledtabular}
+  \begin{tabular} {lll}
+        Process          &    Muon channel        & Electron channel \\
+\hline
+        Diboson (WW+WZ) &   1900 $\pm$ 370       &  780 $\pm$ 310   \\
+        W+jets          &   67000 $\pm$ 600      &  32000 $\pm$ 850  \\
+        $\ttbar$        &   1700 $\pm$ 120       &  950 $\pm$  67   \\
+        Single top      &   650 $\pm$ 33         &  310 $\pm$  17   \\
+        Drell--Yan+jets &   3600 $\pm$ 160       &  1400 $\pm$ 64   \\
+        Multijet  (QCD) &   300 $\pm$ 320        &  4200 $\pm$ 870   \\
+\hline
+    Fit $\chi^2/N_{\text{dof}}$ (probability) &   9.73/12 (0.64)     &  5.30/12 (0.95)  \\
+%%    Total from fit      &    75420           &  39371           \\
+    Data                &    75000               &  39000           \\
+\hline
+    Acceptance $\times$ efficiency ($\mathcal{A}\varepsilon$) & $7.17 \pm 0.33\%$ & $3.60 \pm 0.16\%$ \\
+\hline
+    Expected WW+WZ yield from simulation & 1700 $\pm$ 57 & 870 $\pm$ 29  \\
+  \end{tabular}
+\end{ruledtabular}
+\end{center}
+\end{table*}
+%%%%%%%%%%%%%%
+Figure~\ref{fig:Fig1}(a) shows the observed \mjj distribution for 
+both channels combined, together with the fitted projections of the
+contribution of various SM processes.  Figure~\ref{fig:Fig1}(b)
+shows the same distribution after subtracting all SM contributions
+from data except for electroweak diboson WW+WZ events.  
+Figure~\ref{fig:Fig1}(c) shows the pull distribution;
+i.e., the normalized residual defined as $(\text{data} -
+\text{fit})/(\text{fit~uncertainty})$, where fit uncertainty 
+is computed at each data point by propagating the 
+uncertainty in the normalization coefficients. 
+The yields of various SM components, as determined by the fit, 
+are reported in Table~\ref{tab:yields}. 
+
+
+We validate the fit procedure by performing pseudo-experiments.  In
+each experiment, we generate the \mjj pseudo-data for the SM processes,
+taking into account the correlation among the yields, and then perform a fit
+to each pseudo-data \mjj distribution.  
+The results for both muon and electron channels
+indicate that there is a small bias on the
+WW+WZ yield that is below 0.4 standard deviations and that the 
+fit overestimates the yield
+uncertainty slightly. These effects are corrected for in the final
+result.  
+
+
+Uncertainties due to the jet energy are estimated from a sample of
+W bosons decaying hadronically in a highly pure sample of semileptonic 
+\ttbar\ events.  The mean and resolution of the reconstructed dijet
+mass distribution in data agree to within 0.6\% of
+the expectations from simulation.  A small difference in \MET
+resolution~\cite{Chatrchyan:2011tn} between data and simulation
+affects the signal acceptance at the 0.5\% level.  
+Further systematic uncertainties
+are due to the uncertainty on the trigger efficiency in
+data (1\%), and on the lepton reconstruction and
+selection efficiencies (2\%)~\cite{VBTF}.  
+The uncertainty due to b-jet veto is negligible. 
+The uncertainty 
+in the luminosity determination is 2.2\%~\cite{lumiPAS}.
+The uncertainty in acceptance arising from theoretical uncertainties,
+including parton distribution functions and additional jet rejection, is 4\%. 
+
+
+As listed in Table~\ref{tab:yields}, we 
+observe 2700 $\pm$ 340 (stat.) $\pm$ 360 (syst.) WW+WZ events, 
+in agreement with the SM expectation. 
+This result corresponds to a significance of 8.8 standard deviations  
+when computed using a simple likelihood 
+ratio, where the nuisance parameters~\cite{Junk:1999kv} are fixed to their nominal fit 
+values.
+Using the profile likelihood ratio~\cite{Junk:1999kv}, 
+where the nuisance parameters are allowed to vary, the significance 
+becomes 4.3 standard deviations.
+We compute the WW+WZ total cross section as 
+$\sigma = N_{\text{Sig}}/ (\mathcal{A} \, \varepsilon \, {\mathcal{L}})$, 
+where $N_{\text{Sig}}$ is the number of extracted signal events,
+$\mathcal{A}$ is the signal acceptance corrected for the branching fractions,
+$\varepsilon$ is the efficiency for all requirements on 
+the event selection, and ${\mathcal{L}}$ is the integrated luminosity. 
+In the acceptance calculation we assume the SM value for WW to WZ production ratio. 
+The values of $N_{\text{Sig}}$ and $\mathcal{A}\varepsilon$ 
+are given in Table~\ref{tab:yields} separately for the muon and electron channels.
+Combining the results from the muon and electron channels, we obtain 
+$\sigma = 68.9 \pm 8.7 \text{ (stat.)} \pm 9.7 \text{ (syst.)}  \pm 1.5 \text{ (lum.)}$~pb, 
+which is in agreement with the NLO prediction~\cite{Campbell:2011bn} 
+$65.6 \pm 2.2$~pb that includes the contribution from $gg\to\text{WW}$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[tbh]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/mu_noBtag_dijetPt.pdf}
+    \includegraphics[width=0.48\textwidth]{figs/el_noBtag_dijetPt.pdf}
+    \caption{Dijet $p_T$ distribution for muon (a) and electron (b) 
+    channels after full selection and with the requirement 
+    $75~\GeVnn < \mjj < 95~\GeVnn$. 
+    The stacked histogram shapes are taken from simulation 
+    or, where applicable, from data-driven estimates. 
+    They are normalized according to the fit to the observed 
+    \mjj spectrum in data. 
+    The last bin includes the overflow.
+    }
+    \label{fig:Fig2}}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Measurements of diboson production translate into measurements of 
+gauge boson self-couplings, which are one of the most fundamental 
+aspects of the electroweak sector of the SM. 
+At the leading order, only s-channel $q\overline{q}$ annihilation 
+diagrams have a three-boson vertex: WW$\gamma$ and WWZ couplings 
+in WW production and WWZ coupling in WZ production.
+%%In the SM, these couplings are defined  up to an overall constant. 
+Physics beyond the SM can modify these couplings, leading to 
+observable differences in the cross section and the kinematic 
+distributions~\cite{Dixon:1999di}. 
+We search for anomalous triple gauge couplings (aTGC) using an effective 
+Lagrangian described by the HISZ parametrization 
+without form factors~\cite{PhysRevD.48.2182}.
+%%%The corresponding coupling value with a conventional dipole form factor can 
+%%%be obtained by dividing by the term $(1+s/\Lambda^2)^2$, where 
+%%%$s$ is the center-of-mass energy and $\Lambda$ is some 
+%%%arbitrary cutoff scale in TeV range~\cite{Dixon:1999di}.
+We use the dijet $p_T$ distribution, shown in Fig.~\ref{fig:Fig2}, 
+as the observable after requiring  $75~\GeVnn < \mjj < 95~\GeVnn$ to enhance signal purity. 
+The dependence of the distribution on specific aTGC 
+is modeled by reweighting the \PYTHIA simulation of WW+WZ to 
+the \MCFM~\cite{MCFM} NLO predictions. 
+We account for systematic uncertainties arising from luminosity,
+signal selection efficiency, signal shape, 
+and from the normalization and shape of the SM processes.
+We find no evidence for aTGC.
+Given the tight bound on the parameter $\Delta{g_1^Z}$~\cite{pdg} 
+we assume the SM value~($\Delta{g_1^Z}$=0), and set upper limits on 
+the two parameters $\lambda$ and $\Delta{\kappa_\gamma}$.  
+Upper limits at 95\% confidence level (CL) in the two-dimensional 
+$\lambda-\Delta{\kappa_\gamma}$ plane
+computed using the modified frequentist CL${}_{S}$~\cite{Junk:1999kv,CLS} 
+technique, with profile likelihood as the test statistic,  
+are shown in Fig.~\ref{fig:Fig3}. 
+We obtain the following one-dimensional observed 95\% 
+CL upper limits assuming the SM value for the other parameter: 
+$ -0.038 < \lambda < 0.030$, 
+$ -0.11 < \Delta{\kappa_\gamma} < 0.14$.
+These limits are competitive with, and in some cases improve upon, 
+the sensitivity of the combined LEP experiments listed in 
+Refs.~\cite{pdg,Abdallah:2008sf,Schael:2004tq,Abbiendi:2003mk,Achard:2004ji}. 
+The ATLAS Collaboration recently reported
+limits in the fully leptonic channel for WZ production in Ref.~\cite{ATLAS:2012wz}: 
+$ -0.046 < \lambda < 0.047$, 
+$ -0.37 < \Delta{\kappa_\gamma} < 0.57$. 
+Fully leptonic channel limits are weaker due to lower branching fraction.
+%%The corresponding expected exclusion limits are 
+%%$ -0.041 < \Lambda_Z  < 0.035$, $ -0.12 < \Delta{\kappa_\gamma} < 0.16$.
+%%These limits are consistent with the SM prediction. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[tbh]
+  {\centering
+    \includegraphics[width=\columnfigure]{figs/atgc_limits_withshape_contours.pdf}
+    \caption{Observed (solid) and expected (dashed) upper limits at 95\% CL for 
+    anomalous triple gauge couplings. 
+    The dark green and light yellow bands correspond to 
+    the one and two sigma intervals, respectively, in the 
+    expected limit distribution. 
+    The SM expectation is shown by the solid dot.
+    }
+    \label{fig:Fig3}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In summary, a measurement of the sum of WW and WZ production cross sections  
+has been performed using events containing a W and two non-b jets.
+The measured value for the cross section is 
+$68.9 \pm 8.7 \text{ (stat.)} \pm 9.7 \text{ (syst.)}  \pm 1.5 \text{ (lum.)}$~pb, 
+which is consistent with the SM prediction. 
+No evidence for anomalous triple gauge couplings is found,  
+and upper limits are set on their magnitude.
+
+% >> acknowledgements (for journal papers)
+% Please include the latest version from https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubAcknow.
+%\section*{Acknowledgements}
+% ack-text
+We thank Kristina Krylova and Kellen McGee for their help in generating
+the anomalous triple gauge coupling variations with MCFM.
+We congratulate our colleagues in the CERN accelerator departments for the excellent performance of the LHC machine. We thank the technical and administrative staff at CERN and other CMS institutes, and acknowledge support from: BMWF and FWF (Austria); FNRS and FWO (Belgium); CNPq, CAPES, FAPERJ, and FAPESP (Brazil); MES (Bulgaria); CERN; CAS, MoST, and NSFC (China); COLCIENCIAS (Colombia); MSES (Croatia); RPF (Cyprus); MoER, SF0690030s09 and ERDF (Estonia); Academy of Finland, MEC, and HIP (Finland); CEA and CNRS/IN2P3 (France); BMBF, DFG, and HGF (Germany); GSRT (Greece); OTKA and NKTH (Hungary); DAE and DST (India); IPM (Iran); SFI (Ireland); INFN (Italy); NRF and WCU (Korea); LAS (Lithuania); CINVESTAV, CONACYT, SEP, and UASLP-FAI (Mexico); MSI (New Zealand); PAEC (Pakistan); MSHE and NSC (Poland); FCT (Portugal); JINR (Armenia, Belarus, Georgia, Ukraine, Uzbekistan); MON, RosAtom, RAS and RFBR (Russia); MSTD (Serbia); SEIDI and CPAN (Spain); Swiss Funding Agencies (Switzerland); NSC (Taipei); TUBITAK and TAEK (Turkey); STFC (United Kingdom); DOE and NSF (USA). 
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+\bibliography{auto_generated}   % will be created by the tdr script.
+
+%%% DO NOT ADD \end{document}!
+
