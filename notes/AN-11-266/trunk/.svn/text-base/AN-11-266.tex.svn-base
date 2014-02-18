@@ -1,0 +1,280 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision$
+\RCS$HeadURL$
+\RCS$Id$
+%%%%%%%%%%%%% ptdr definitions %%%%%%%%%%%%%%%%%%%%%
+\input{ptdr-definitions} %These have been replaced by the equivalent style file
+%%%%%%%%%%%%%%%  Additional definitions %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\comment}[1]{}
+\newcommand{\pb}{\ensuremath{\mathrm{pb}}}%
+\newcommand{\pp}{\ensuremath{\mathrm{pp}}}%
+\newcommand{\Wo}{\ensuremath{\mathrm{W}}}%
+\newcommand{\Wp}{\ensuremath{\mathrm{W^+}}}%
+\newcommand{\Wm}{\ensuremath{\mathrm{W^-}}}%
+\newcommand{\Zo}{\ensuremath{\mathrm{Z}}}%
+\newcommand{\Ho}{\ensuremath{\mathrm{H}}}%
+\newcommand{\rts}{\ensuremath{\sqrt{s}}}%
+\newcommand{\ra}{\ensuremath{\rightarrow}}%
+\newcommand{\MN}{\ensuremath{\mu\nu}}%
+\renewcommand{\EE}{\ensuremath{\mathrm{e}^+\mathrm{e}^-}}%
+\newcommand{\EN}{\ensuremath{\mathrm{e}\nu}}%
+\newcommand{\LN}{\ensuremath{\ell\nu}}%
+\newcommand{\MW}{\ensuremath{\mathrm{m}_\Wo}}%
+\newcommand{\MZ}{\ensuremath{\mathrm{m}_\Zo}}%
+\newcommand{\MT}{\ensuremath{\mathrm{M}_T}}%
+\newcommand{\MLL}{\ensuremath{\mathrm{M}_{\ell\ell}}}%
+\newcommand{\met}{\ensuremath{{E\!\!\!/}_{\mathrm{T}}}\xspace}
+\renewcommand{\ttbar}{\ensuremath{\mathrm{t}\bar{\mathrm{t}}}}%
+\newcommand{\Wmn}{\ensuremath{\Wo \ra \MN}}%
+\newcommand{\Wpmn}{\ensuremath{\Wp \ra \mu^+\nu}}%
+\newcommand{\Wmmn}{\ensuremath{\Wm \ra \mu^-\overline{\nu}}}%
+\newcommand{\Zmm}{\ensuremath{\Zo \ra \MM}}%
+\newcommand{\Wtn}{\ensuremath{\Wo \ra \tau\nu}}%
+\newcommand{\Ztt}{\ensuremath{\Zo \ra \tau^+\tau^-}}%
+\newcommand{\ppZmm}{\pp \ra \Zo(\gamma^*) + X \ra \MM + X}%
+\newcommand{\ppWmn}{\pp \ra \Wo + X \ra \MN + X}%
+\newcommand{\ppWpmn}{\pp \ra \Wp + X \ra \mu^+\nu + X}%
+\newcommand{\ppWmmn}{\pp \ra \Wm + X \ra \mu^-\overline{\nu} + X}%
+\newcommand{\Wen}{\ensuremath{\Wo \ra \EN}}%
+\newcommand{\Wpen}{\ensuremath{\Wp \ra \mathrm{e}^+\nu}}%
+\newcommand{\Wmen}{\ensuremath{\Wm \ra \mathrm{e}^-\overline{\nu}}}%
+\newcommand{\Zee}{\ensuremath{\Zo \ra \EE}}%
+\newcommand{\ppZee}{\pp \ra \Zo(\gamma^*) + X \ra \EE + X}%
+\newcommand{\ppWen}{\pp \ra \Wo + X \ra \EN + X}%
+\newcommand{\ppWpen}{\pp \ra \Wp + X \ra \mathrm{e}^+\nu  + X}%
+\newcommand{\ppWmen}{\pp \ra \Wm + X \ra \mathrm{e}^-\overline{\nu} + X}%
+
+\newcommand{\Wln}{\ensuremath{\Wo \ra \LN}}%
+\newcommand{\Wpln}{\ensuremath{\Wp \ra \ell^+\nu}}%
+\newcommand{\Wmln}{\ensuremath{\Wm \ra \ell^-\overline{\nu}}}%
+\newcommand{\Zll}{\ensuremath{\Zo \ra \ell^+ \ell^-}}%
+\newcommand{\ppZll}{\pp \ra \Zo(\gamma^*) + X \ra \ell^+ \ell^- + X}%
+\newcommand{\ppWln}{\pp \ra \Wo + X \ra \LN + X}%
+\newcommand{\ppWpln}{\pp \ra \Wp + X \ra \ell^+\nu  + X}%
+\newcommand{\ppWmln}{\pp \ra \Wm + X \ra \ell^-\overline{\nu} + X}%
+
+\newcommand{\Wptn}{\ensuremath{\Wp \ra \tau^+\nu_\tau}}%
+\newcommand{\Wmtn}{\ensuremath{\Wm \ra \tau^-\overline{\nu}}}%
+
+\newcommand{\Wev}{\Wen}
+\newcommand{\Wmv}{\Wmn}
+\newcommand{\Ztautau}{\Ztt}
+\renewcommand{\MET}{\met}
+\newcommand{\gammaZ}{\ensuremath{\gamma^{*}\Zo}}
+\newcommand{\gammaZmm}{\mbox{$ \gamma^{*}/\Zo\rightarrow \MM$}}
+\newcommand{\gammaZee}{\mbox{$ \gamma^{*}\Zo\rightarrow e^{+}  e^{-}$}}
+\newcommand{\gammaZtt}{\mbox{$ \gamma^{*}\Zo\rightarrow \tau^{+}  \tau^{-}$}}
+\newcommand{\gammaZll}{\mbox{$ \gamma^{*}\Zo\rightarrow \ell^{+}  \ell^{-}$}}
+\newcommand{\invpb}{\mbox{$\textrm{pb}^{-1}$}}
+\newcommand{\invnb}{\mbox{$\textrm{nb}^{-1}$}}
+\newcommand{\mz}{\mbox{$ m_{Z}$}}
+\newcommand{\hta}{\mbox{$ \eta$}}
+\newcommand{\fh}{\mbox{$ \phi$}}
+\newcommand{\etot}{\mbox{$ \epsilon_{tot}$}}
+\newcommand{\eclustering}{\mbox{$ \epsilon_{clustering}$}}
+\newcommand{\etracking}{\mbox{$ \epsilon_{tracking}$}}
+\newcommand{\egsfele}{\mbox{$ \epsilon_{gsfele}$}}
+\newcommand{\epreselection}{\mbox{$ \epsilon_{preselection}$}}
+\newcommand{\eisolation}{\mbox{$ \epsilon_{isolation}$}}
+\newcommand{\eclassification}{\mbox{$ \epsilon_{classification}$}}
+\newcommand{\eelID}{\mbox{$ \epsilon_{elID}$}}
+\newcommand{\etrigger}{\mbox{$ \epsilon_{trigger}$}}
+
+\newcommand{\DE}{$\Delta\eta_{in}$}
+\newcommand{\DP}{$\Delta\phi_{in}$}
+\newcommand{\SEE}{$\sigma_{\eta\eta}$~}
+\newcommand{\SEP}{$\sigma_{\eta\phi}$}
+\newcommand{\SPP}{$\sigma_{\phi\phi}$}
+\newcommand{\SXY}{$\sigma_{XY}$}
+\newcommand{\pth}{\hat{p}_{\perp}}
+\newcommand{\Pt}{p_{T}}
+\newcommand{\Et}{E_{T}}
+\newcommand{\Lint}{\ensuremath{{\cal L}_{\mathrm{int}}}}
+\newcommand{\IRelComb} {I^{\textrm{rel}}_{\textrm{comb}}}%
+\newcommand{\ITRK}     {I_{\textrm{trk}}}%
+\newcommand{\IECAL}    {I_{\textrm{ECAL}}}%
+\newcommand{\IHCAL}    {I_{\textrm{HCAL}}}%
+\newcommand{\Nbg}{N_{\mathrm{bg}}}%
+
+\newcommand{\mumu}{\mu\mu}
+\newcommand{\Zmumu}{Z_{\mumu}}
+\newcommand{\Zmus}{Z_{\mu s}}
+\newcommand{\Zmut}{Z_{\mu t}}
+\newcommand{\nonIso}{\mathrm{non\,iso}}
+\newcommand{\ZmumuNonIso}{\Zmumu^\nonIso}
+\newcommand{\ZmumuTwoHlt}{\Zmumu^{2\mathrm{HLT}}}
+\newcommand{\ZmumuOneHlt}{\Zmumu^{1\mathrm{HLT}}}
+
+\newcommand{\NZtomumu}{N_{\Zmm}}
+
+\newcommand{\Nmumu}{N_{\mumu}}
+\newcommand{\Nmus}{N_{\mu s}}
+\newcommand{\Nmut}{N_{\mu t}}
+\newcommand{\NmumuNonIso}{\Nmumu^\nonIso}
+\newcommand{\NmumuTwoHlt}{\Nmumu^{2\mathrm{HLT}}}
+\newcommand{\NmumuOneHlt}{\Nmumu^{1\mathrm{HLT}}}
+
+
+\newcommand{\effHlt}{\epsilon_\mathrm{HLT}}
+\newcommand{\effIso}{\epsilon_\mathrm{iso}}
+\newcommand{\effTrk}{\epsilon_\mathrm{trk}}
+\newcommand{\effSa}{\epsilon_\mathrm{sa}}
+\include{Numbers}
+%==============================================================================
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{AN-11-266} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Study of the dijet invariant mass distribution in W $(\rightarrow\ell\nu) +$ jets events in $pp$ collisions at $\sqrt{s} = 7$ TeV}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%\address[cern]{CERN}
+%\author[cern]{The CMS Collaboration}
+%
+
+\address[ttu]{Texas Tech University, Lubbock, Texas, USA}
+\address[fnal]{Fermi National Accelerator Laboratory, Batavia, Illinois, USA}
+\address[wisc]{University of Wisconsin, Madison, Wisconsin, USA}
+\address[tamu]{Texas A\&M University, College Station, Texas, USA}
+\address[knu]{Texas A\&M University, College Station, Texas, USA and Kyungpook National University, Daegu, South Korea}
+\address[nebr]{University of Nebraska at Lincoln, Nebraska, USA}
+\address[punj]{Panjab University, Chandigarh, India}
+\address[uerj]{Universidade do Estado do Rio de Janeiro (UERJ), Brazil}
+
+\author[ttu]{Nural~Akchurin}
+\author[fnal]{Jake~Anderson}
+\author[fnal]{Jeffrey~Berryhill}
+\author[wisc]{Maria~Cepeda}
+\author[wisc]{Sridhara~Dasu}
+\author[ttu]{Phil~Dudero}
+\author[wisc]{Jonathan~Efron}
+\author[tamu]{Ricardo~Eusebi}
+\author[fnal]{Dan~Green}
+\author[wisc]{Monika~Grothe}
+\author[nebr]{Pratima~Jindal}
+\author[knu]{Teruki~Kamon}
+\author[ttu]{Sung-Won Lee}
+\author[fnal]{Kalanand~Mishra}
+\author[wisc]{Isabel~Ojalvo}
+\author[tamu]{Ilya~Osipenkov}
+\author[tamu]{Alexx~Perloff}
+\author[punj]{Lovedeep~Kaur~Saini}
+\author[tamu]{Tai~Sakuma}
+\author[punj]{Anil~Singh}
+\author[uerj]{Andre~Sznajder}
+\author[fnal]{Fan~Yang}
+\author[fnal]{Francisco~Yumiceva}
+
+
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+We present a study of the dijet invariant mass spectrum in events 
+with two or three jets produced in association with a W boson in data 
+corresponding to an integrated luminosity of 5.0 fb${}^{-1}$ collected 
+at LHC with the CMS detector from $pp$ collisions at $\sqrt{s} = 7$~TeV. 
+We find no evidence for anomalous resonant dijet production with 
+mass around 150~GeV and derive upper limits on its production cross 
+section times branching ratio.}
+
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible. For APS submissions, they are automatically converted to APS keywords.
+\hypersetup{%
+pdfauthor={Jake Anderson, Phil Dudero, Jonathan Efron, Monika Grothe,
+Pratima Jindal, Kalanand Mishra, Ilya Osipenkov, Alexx Perloff, Tai Sakuma, Fan
+Yang},%
+pdftitle={Study of the dijet invariant mass distribution in pp rightarrow W (rightarrow l nu) + jj final states at sqrts = 7 TeV},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+\tableofcontents
+\newpage
+\input{Abbreviations}
+\newpage
+\input{Introduction}
+\input{mc}
+\input{overview}
+\input{EventSelection}
+\input{LeptonicW}
+\clearpage
+%\section{Basic kinematic distributions of jets in events with NJets $\ge 2$ \label{sec:JetKinematics}}
+%\input{JetKinematics}
+%\section{Dijet mass distribution\label{sec:mjj}}
+%\input{mjj}
+\input{SignalExtraction}
+\clearpage
+\input{NewPhysics}
+\clearpage
+\input{Systematics}
+\clearpage
+\input{Limits}
+\clearpage
+\input{Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% >> acknowledgements (for journal papers)
+% Please include the latest version from https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubAcknow.
+%\section*{Acknowledgements}
+% ack-text
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+%\newpage
+\bibliography{auto_generated}   % will be created by the tdr script.
+%% examples of appendices. **DO NOT PUT \end{document} at the end
+\clearpage
+\appendix
+\input{appendixJECscan}
+\clearpage
+\input{CutsAndFitterConfigurations}
+\clearpage
+\input{WjetsMjj}
+\clearpage
+\input{appendixMCstatistics}
+\clearpage
+\input{appendixQCDinMC}
+\clearpage
+\input{appendixQCDwithWmT}
+\clearpage
+\input{ElectronJetPtStudy}
+\clearpage
+\input{TriggerJetPtStudy}
+\clearpage
+\input{OptimizationThenFitValidation}
+\clearpage
+\input{PileUpEpochComparison}
+\clearpage
+\input{IsolationComparison}
+\clearpage
+\input{ExclusionRangeComparison}
+%%\clearpage
+%%\input{appendixMoreLimits.tex}  
+%%% DO NOT ADD \end{document}!

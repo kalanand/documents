@@ -1,0 +1,22 @@
+\subsection{Computation of offline \& trigger efficiencies}
+\label{sec:tpefficiencies}
+
+We have done a study of the lepton efficiency for offline
+reconstruction and selection (isolation, ID) and for online triggering
+by the CMS High-level and Level-1 trigger system. The efficiencies are
+computed using a ``Tag \& Probe'' technique on the Drell-Yan
+Z$\to\ell\ell$ events in both data and Monte Carlo. The ratios of data
+versus Monte Carlo efficiencies for various steps of lepton
+reconstruction/selection are derived. If such a ratio is found to be
+statistically inconsistent with unity, it is applied as a scale factor
+correction to the MC samples. The trigger efficiencies are always
+computed for leptons passing the offline analysis level selection
+criteria. For electron data we also compute efficiency for the W
+transverse mass cut ($> 50$~GeV) applied in the lowest $p_T$ single
+electron trigger in most epochs of data taking. 
+
+Additionally, we have
+considered the possibility to use electron + 2 jets + missing $H_T$
+trigger for which we compute factorized efficiency for the lepton leg,
+jet leg, and missing $H_T$ leg. The technical details of this study can be found
+in the CMS analysis note AN-2012/021.

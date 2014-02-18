@@ -1,0 +1,202 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage{}
+\section{Signal and background expectations from CMS simulation}
+\label{sec:MCexpectations}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+\subsection {The signal}
+Table~\ref{tab:signals} lists the production cross-section for the WW and 
+WZ signals and their overall reconstruction efficiency.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[bthp]
+\begin{center}
+  \begin{tabular}{l c c c c c}
+    \hline  \hline
+    Signal &  Cross section~\cite{Campbell:2011bn} & $A\times\varepsilon$ ($ejj$) & $A\times\varepsilon$ ($ejj$,b-tag) & $A\times\varepsilon$ ($\mu jj$) & $A\times\varepsilon$ ($\mu jj$,b-tag) \\
+    \hline
+    WW & $47.0 \pm 2.0$      &  $3.039 \times 10^{-3}$ & $3.163 \times 10^{-4}$ & $5.918 \times 10^{-3}$ & $5.864 \times 10^{-4}$ \\
+    WZ & $18.6 \pm 1.0$      &  $1.608 \times 10^{-3}$ & $3.760 \times 10^{-4}$ & $3.220 \times 10^{-3}$ & $7.760 \times 10^{-4}$ \\   \hline 
+    Diboson & $65.6 \pm 2.2$ &  $2.633 \times 10^{-3}$ & $3.332 \times 10^{-4}$ & $5.153 \times 10^{-3}$ & $6.402 \times 10^{-4}$ \\   
+    \hline  \hline
+  \end{tabular}
+\end{center}
+\caption{\label{tab:signals}
+The cross section for the WW and WZ signals and their overall reconstruction efficiency, which includes
+the W leptonic branching fraction and the W/Z hadronic branching fraction, for the ``at-least-one b-jet'' and ``no b-jet'' final states. The 
+acceptance and selection cuts are described in section~\ref{sec:reco} of this note. The systematic uncertainty 
+for each $A\times\varepsilon$ in about 4\% and is described in section~\ref{sec:syst}.}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%
+\subsection {The backgrounds}
+%%%%%%%%%%%
+All processes yielding one lepton, two or more jets, 
+and missing transverse energy are possible sources 
+of background. The most relevant ones are:
+%%%%%%%%%%%
+\begin{itemize}
+  \item W+jets: this is the production of a single W vector boson 
+        in association with quarks or gluons that mimic the final state 
+        signature. 
+        Because of its large cross section, it is by far the most important 
+	background to the analysis.
+  \item Drell-Yan Z/$\gamma^{*}$+jets: this is the production of 
+        a single Z/$\gamma^{*}$ boson in association with quarks or gluons, 
+	where one lepton escapes undetected because of acceptance or 
+        inefficiency effects, and the hadronic activity mimics the final 
+	 state signature.
+  \item ZZ: in case one Z decays hadronically, and one lepton is not identified by the detector,
+              this sample contributes to the backgrounds.
+  \item $t\bar{t}$: top quarks pairs are produced at LHC via the gluon fusion process
+              $gg\to{}t\bar{t}$ or via QCD quark annihilation $q\bar{q}\to{}t\bar{t}$.
+              The semi-leptonic component, in which one W decays hadronically,
+              is reduced by requiring exactly 2 or 3 jets,
+              while the fully leptonic decay mode is reduced by requiring only 
+	      one good lepton in the event.
+              However, because of acceptance and inefficiencies, 
+              this background still contaminates the signal.
+  \item Single top production: it proceeds through three separate channels:
+       \begin{enumerate}
+         \item t-channel: top is produced after a quark-gluon interaction 
+               with the exchange of a virtual W.
+         \item s-channel: top is produced in association with an anti-bottom, 
+               after the annihilation of a pair of quarks in a weak vertex.
+         \item tW-channel: top is produced in association with a charged vector boson in a weak process, 
+               from a gluon-bottom pair in the initial state.
+       \end{enumerate}
+%       The first two can be distinguished from signal thanks to a selection on the energy of b-quarks, 
+%       which are quite different from signal tag quarks, while tW-channel has got a missing jet.
+  \item QCD multi-jet events generate a background 
+       because of the non-negligible probability of jets to be reconstructed as leptons.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+The cross section for the backgrounds, multiplied by the branching ratio when meaningful, 
+are reported in Table~\ref{tab:bkg_XS}. 
+%%%%%%%%%%%
+\begin{table}[htbp!]
+  \begin{center}
+  \begin{tabular}{c|c}
+  \hline  \hline
+  Channel & Cross-section (pb) \\
+  \hline
+  W+jets                        & $31500 \pm 1550 $ \\
+  Z+jets                        & $3048 \pm 130$ \\
+%%  ZZ                            & $5.90 \pm 0.15$\\
+  t$\bar{\textnormal{t}}$+jets  & $163 \pm 11$ \\
+  t+jets ($s$-channel)          & $4.63 \pm 0.19$ \\
+  t+jets ($t$-channel)          & $64.57 \pm 2.58$\\
+  t+jets ($t$W-channel)         & $15.74 \pm 1.17$ \\
+  QCD (ele enriched)            & $6740000 \pm 100\%$\\
+  QCD (mu enriched)             & $84700 \pm  100\%$\\
+  \hline  \hline
+  \end{tabular}
+  \end{center}
+  \caption{The cross section for the backgrounds, multiplied by the branching ratio when meaningful.}
+  \label{tab:bkg_XS}
+\end{table}%
+%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Datasets}
+\label{sec:technicalities}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --
+\subsection{Data samples}
+The data samples used in this analysis were recorded by the CMS experiment in 2010 and 2011.
+Only certified runs and luminosity sections are considered, which means that a good functioning
+of all CMS sub-detectors is required. The total statistics analyzed correspond to an integrated
+luminosity of about $5.0~\fbinv$.
+% The analysis relies on centrally-produced Primary Datasets (PDs), each of which consists of a collection
+% of High Level Trigger (HLT) paths. As explained in Section~\ref{sec:trigger}, single-lepton triggers
+% are used to select the events interesting for this analysis in both
+% the $e$ and $\mu$ channels, up to an instantaneous luminosity $L \sim 1\cdot10^{33}\percms$. At higher
+% luminosities, we move to cross electron+di-jet triggers for the $e$ channel to cope with the
+% unsustainable single-electron HLT rate. Therefore, the analysis relies on the so-called ``SingleElectron''
+% and ``SingleMu'' PDs for the first data-taking period, and on the ``ElectronHad'' and ``SingleMu'' ones 
+% for the most runs. 
+The datasets used for the analysis and the corresponding run ranges are listed in Table~\ref{tab:datasets}.
+All data samples were reconstructed using a \texttt{CMSSW\_4\_2\_X} release version.
+%%%%%%%%%%%
+\begin{table}[htbp!]
+  \begin{center}
+  \begin{tabular}{r|r}
+  \hline  \hline
+  Dataset name & Run range \\
+  \hline
+  /EG/Run2010A-Apr21ReReco-v1/AOD   & 136033 - 144114  \\
+  /Mu/Run2010A-Apr21ReReco-v1/AOD   &            \\ 
+  \hline
+  /Electron/Run2010B-Apr21ReReco-v1/AOD   &  144919 - 149442  \\
+  /Mu/Run2010B-Apr21ReReco-v1/AOD         &             \\
+  \hline
+  /SingleElectron/Run2011A-May10ReReco-v1/AOD   & 160431 - 163869 \\
+  /SingleMu/Run2011A-May10ReReco-v1/AOD         &                 \\
+  \hline                                     
+  /SingleElectron/Run2011A-PromptReco-v4/AOD       & 165088 - 167913   \\
+  /SingleMu/Run2011A-PromptReco-v4/AOD          &                 \\
+  \hline                                     
+  /SingleElectron/Run2011A-05Aug2011-v1/AOD        & 170826 - 172619 \\
+  /SingleMu/Run2011A-05Aug2011-v1/AOD           &                 \\
+  \hline                                     
+  /SingleElectron/Run2011A-PromptReco-v6/AOD       & 172620 - 173692 \\
+  /SingleMu/Run2011A-PromptReco-v6/AOD          &                 \\
+  \hline                                     
+  /SingleElectron/Run2011B-PromptReco-v1/AOD       & 175832 - 180252 \\
+ /SingleMu/Run2011B-PromptReco-v1/AOD          &                 \\
+  \hline  \hline
+  \end{tabular}
+  \end{center}
+  \caption{Summary of the data samples used and the run ranges of applicability.}
+  \label{tab:datasets}
+\end{table}%
+%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Monte Carlo samples}
+Samples for a large variety of electroweak and QCD-induced background sources, 
+as well as for the electroweak diboson signal 
+have been generated and showered using different Monte Carlo generators.
+To better reproduce the actual data-taking conditions, where there is a significant probability
+that more than two protons interact in the same bunch crossing, pile-up (PU) events are
+added on top of the hard scattering. Particle interactions with the detector were reproduced through
+a detailed description of CMS.
+
+
+The diboson events were produced with PYTHIA6 \cite{pythia}.
+The background and signal samples used for the studies are listed in Table~\ref{tab:MCsamples},
+together with the equivalent luminosity available for the study.
+All background MC samples considered in this analysis come from 
+the official ``Fall11'' production. Events were
+reconstructed making use of a \texttt{CMSSW\_4\_2\_X} release version. 
+% The pile-up scenario used for
+% these samples consists of a flat distribution of PU events up to ten additional interactions on top
+% of the hard scattering plus a poissonian tail with a mean of ten interactions; only pile-up occurring 
+% in the same bunch crossing of the main event (in time PU) was considered.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[htb]
+  \begin{center}
+  \small
+    \begin{tabular}{l c} 
+      \hline\hline
+      sample & $\approx$ \lumi (\fbinv)\\
+      \hline
+      /WJetsToLNu\_TuneZ2\_7TeV-madgraph-tauola/Fall11-PU\_S6\_START42\_V14B-v1        & 2.5\\
+      /TTJets\_TuneZ2\_7TeV-madgraph-tauola/Fall11-PU\_S6\_START42\_V14B-v2            & 23\\
+      /DYJetsToLL\_TuneZ2\_M-50\_7TeV-madgraph-tauola/Fall11-PU\_S6\_START42\_V14B-v1  & 11\\
+      /Tbar\_TuneZ2\_s-channel\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1     & 82\\
+      /Tbar\_TuneZ2\_t-channel\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1     & 83\\
+      /Tbar\_TuneZ2\_tW-channel-DS\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1 & 41\\
+      /T\_TuneZ2\_s-channel\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1        & 81\\
+      /T\_TuneZ2\_t-channel\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1        & 93\\
+      /T\_TuneZ2\_tW-channel-DS\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1    & 103\\
+      \hline
+      /WW\_TuneZ2\_7TeV\_pythia6\_tauola/Fall11-PU\_S6\_START42\_V14B-v1  & 92  \\
+      /WZ\_TuneZ2\_7TeV\_pythia6\_tauola/Fall11-PU\_S6\_START42\_V14B-v1  & 224  \\
+      \hline\hline
+    \end{tabular}
+  \end{center}
+  \caption{Summary of Monte Carlo samples used in the analysis for background and signal modeling and for systematic studies.}
+  \label{tab:datasets:mcstat}
+  %FIXME add the corresponding cross-sections
+  \label{tab:MCsamples}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

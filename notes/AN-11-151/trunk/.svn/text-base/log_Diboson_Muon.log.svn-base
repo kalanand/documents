@@ -1,0 +1,47 @@
+\begin{verbatim}
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-419443 FROM MIGRAD    STATUS=CONVERGED     285 CALLS         286 TOTAL
+                     EDM=4.34551e-05    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  fMU         -7.50239e-02   6.49106e-02   2.86251e-02  -6.23821e-03
+   2  fSU          5.32836e-02   7.81947e-02   3.34491e-02   2.91601e-02
+   3  nDiboson     1.73577e+03   3.86927e+02   9.98149e+01   1.11952e-05
+   4  nQCD         1.19459e+02   3.15347e+02   9.27709e+01   7.16746e-06
+   5  nSingleTop   6.51583e+02   3.26291e+01   1.44896e+01  -2.93715e-05
+   6  nTTbar       1.66637e+03   1.17333e+02   4.81487e+01   4.46208e-05
+   7  nWjets       6.76740e+04   5.80168e+02   1.22262e+02   4.33640e-06
+   8  nZjets       3.61285e+03   1.54846e+02   6.02904e+01  -1.57494e-05
+                               ERR DEF= 0.5
+
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.18437   1.000  0.135 -0.134  0.005  0.010  0.063  0.085 -0.044
+        2  0.29884   0.135  1.000 -0.281  0.014 -0.000 -0.004  0.180 -0.001
+        3  0.81628  -0.134 -0.281  1.000 -0.027 -0.012 -0.059 -0.614 -0.038
+        4  0.75244   0.005  0.014 -0.027  1.000 -0.001 -0.003 -0.519 -0.005
+        5  0.11822   0.010 -0.000 -0.012 -0.001  1.000 -0.001 -0.047 -0.000
+        6  0.39683   0.063 -0.004 -0.059 -0.003 -0.001  1.000 -0.160 -0.000
+        7  0.88145   0.085  0.180 -0.614 -0.519 -0.047 -0.160  1.000 -0.237
+        8  0.49113  -0.044 -0.001 -0.038 -0.005 -0.000 -0.000 -0.237  1.000
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+                   fMU    0.0000e+00   -7.5024e-02 +/-  6.49e-02  <none>
+                   fSU    0.0000e+00    5.3284e-02 +/-  7.82e-02  <none>
+              nDiboson    1.6969e+03    1.7358e+03 +/-  3.89e+02  <none>
+                  nQCD    1.2256e+02    1.1946e+02 +/-  3.17e+02  <none>
+            nSingleTop    6.5264e+02    6.5158e+02 +/-  3.26e+01  <none>
+                nTTbar    1.6788e+03    1.6664e+03 +/-  1.17e+02  <none>
+                nWjets    7.6129e+04    6.7674e+04 +/-  5.86e+02  <none>
+                nZjets    3.6095e+03    3.6129e+03 +/-  1.55e+02  <none>
+
+
+ *** chi^2/dof = 9.72765/12 = 0.810637 ***
+ *** chi^2 probability = 0.63984 ***
+
+data: 75419
+Total yield: 75460
+\end{verbatim}

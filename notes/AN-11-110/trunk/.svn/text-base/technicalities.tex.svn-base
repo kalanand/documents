@@ -1,0 +1,172 @@
+\section{Datasets}
+\label{sec:technicalities}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\subsection{Samples used for the analysis}
+
+The data sample used in this analysis was recorded by the CMS experiment in 2011.
+Only certified runs and luminosity sections are considered, which means that a good functioning
+of all CMS sub-detectors is required. The total statistics analyzed correspond to an integrated
+luminosity of 5.0~fb$^{-1}$. % \LUMI{}.
+
+% The analysis relies on centrally-produced Primary Datasets (PDs), each of which consists of a collection
+% of High Level Trigger (HLT) paths. As explained in Section~\ref{sec:trigger}, single-lepton triggers
+% are used to select the events interesting for this analysis in both
+% the $e$ and $\mu$ channels, up to an instantaneous luminosity $L \sim 1\cdot10^{33}\percms$. At higher
+% luminosities, we move to cross electron+di-jet triggers for the $e$ channel to cope with the
+% unsustainable single-electron HLT rate. Therefore, the analysis relies on the so-called ``SingleElectron''
+% and ``SingleMu'' PDs for the first data-taking period, and on the ``ElectronHad'' and ``SingleMu'' ones 
+% for the most runs. 
+
+The dataset used for the analysis and the corresponding run ranges are listed in Table~\ref{tab:datasets}.
+All samples have been processed using a \texttt{CMSSW\_4\_2\_X} release version.
+
+\begin{table}[htb]
+  \begin{center}
+  \begin{tabular}{r|r}
+  \hline
+  Dataset name & Run range \\
+  \hline
+  /EG/Run2010A-Apr21ReReco-v1/AOD   & 136033 - 144114  \\
+  /Mu/Run2010A-Apr21ReReco-v1/AOD   &            \\ 
+  \hline
+  /Electron/Run2010B-Apr21ReReco-v1/AOD   &  144919 - 149442  \\
+  /Mu/Run2010B-Apr21ReReco-v1/AOD         &             \\
+  \hline
+  /SingleElectron/Run2011A-May10ReReco-v1/AOD   & 160431 - 163869 \\
+  /SingleMu/Run2011A-May10ReReco-v1/AOD         &                 \\
+  \hline                                     
+  /SingleElectron/Run2011A-PromptReco-v4/AOD    & 165088 - 167913 \\
+  /SingleMu/Run2011A-PromptReco-v4/AOD          &                 \\
+  \hline                                     
+  /SingleElectron/Run2011A-05Aug2011-v1/AOD     & 170826 - 172619 \\
+  /SingleMu/Run2011A-05Aug2011-v1/AOD           &                 \\
+  \hline                                     
+  /SingleElectron/Run2011A-PromptReco-v6/AOD    & 172620 - 173692 \\
+  /SingleMu/Run2011A-PromptReco-v6/AOD          &                 \\
+  \hline                                     
+  /SingleElectron/Run2011B-PromptReco-v1/AOD    & 175832 - 180252 \\
+  /SingleMu/Run2011B-PromptReco-v1/AOD          &                 \\
+  \hline                                     
+%  /ElectronHad/Run2011B-PromptReco-v1/AOD       & 175832 - 177053 \\
+%  /SingleMu/Run2011B-PromptReco-v1/AOD          &                 \\
+%  \hline                                     
+%  /ElectronHad/Run2011B-PromptReco-v1/AOD       & 177074 - 177515 \\
+%  /SingleMu/Run2011B-PromptReco-v1/AOD          &                 \\  
+%  \hline
+%  \texttt{/SingleElectron/Run2011A-May10ReReco-v1/AOD} & 160404 - 163869 \\
+%  \texttt{/SingleMu/Run2011A-May10ReReco-v1/AOD}       & 160404 - 163869 \\
+%  \hline
+%  \texttt{/SingleElectron/Run2011A-PromptReco-v4/AOD} & 165088 - 165620 \\
+%  \texttt{/SingleMu/Run2011A-PromptReco-v4/AOD}       & 165088 - 165620 \\
+%  \hline
+%  \texttt{/ElectronHad/Run2011A-PromptReco-v4/AOD} & 165970 - 167784 \\
+%  \texttt{/SingleMu/Run2011A-PromptReco-v4/AOD}    & 165970 - 167784 \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \caption{Summary of data samples used and run ranges of applicability.}
+  \label{tab:datasets}
+\end{table}%
+
+
+
+\subsection{Monte Carlo samples}
+
+Standard Model Higgs boson samples, 
+as well as samples for a large variety of electroweak and QCD-induced background sources, 
+have been generated and showered using different Monte Carlo generators.
+To better reproduce the actual data-taking conditions, where there is a significant probability
+that more than two protons interact in the same bunch crossing, pile-up (PU) events are
+added on top of the hard scattering. Particle interactions with the detector were reproduced through
+a detailed description of CMS.
+
+The POWHEG-BOX generator \cite{Nason:2004rx,Frixione:2007vw,Alioli:2010xd,Nason:2009ai} has been used to
+produce signal events, and the showering has been performed with PYTHIA6 \cite{pythia}. For this analysis, 
+samples with Higgs mass hypotheses ranging from 160 to 600\GeVcc have been used.
+ 
+The background samples used for the studies are listed in Table~\ref{tab:MCsamples},
+together with the equivalent luminosity available for the study.
+
+All MC samples considered in this analysis come from the official ``Fall11'' production. 
+Events were reconstructed making use of a \texttt{CMSSW\_4\_2\_X} release version. 
+The simulated samples are reweighted to represent the distribution of number of 
+pp interactions per bunch crossing (pile-up) 
+as measured in the data.
+
+\begin{sidewaystable}[htb]
+  \caption{ MC samples for background, signal and systematic study}
+  \label{tab:datasets:mcstat}
+  \begin{center}
+    \begin{tabular}{l|l} 
+      \hline
+      sample & cross-section (pb) \\
+      \hline
+      /WJetsToLNu\_TuneZ2\_7TeV-madgraph-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM    \\
+      /WW\_TuneZ2\_7TeV\_pythia6\_tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM     \\
+      /WZ\_TuneZ2\_7TeV\_pythia6\_tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM     \\
+      /TTJets\_TuneZ2\_7TeV-madgraph-tauola/Fall11-PU\_S6\_START42\_V14B-v2/AODSIM    \\
+      /QCD\_Pt-20\_MuEnrichedPt-15\_TuneZ2\_7TeV-pythia6/Fall11-PU\_S6\_START42\_V14B-v2/AODSIM  \\      
+      /DYJetsToLL\_TuneZ2\_M-50\_7TeV-madgraph-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM   \\
+      /Tbar\_TuneZ2\_s-channel\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM     \\
+      /Tbar\_TuneZ2\_t-channel\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM     \\
+      /Tbar\_TuneZ2\_tW-channel-DS\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM    \\
+      /T\_TuneZ2\_s-channel\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM     \\
+      /T\_TuneZ2\_t-channel\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM     \\
+      /T\_TuneZ2\_tW-channel-DS\_7TeV-powheg-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM     \\
+      \hline
+%%       /QCD\_Pt-20to30\_EMEnriched\_TuneZ2\_7TeV-pythia/Summer11-PU\_S4\_START42\_V11-v1/AODSIM\\
+%%       /QCD\_Pt-30to80\_EMEnriched\_TuneZ2\_7TeV-pythia/Summer11-PU\_S4\_START42\_V11-v1/AODSIM\\
+%%       /QCD\_Pt-80to170\_EMEnriched\_TuneZ2\_7TeV-pythia6/Summer11-PU\_S4\_START42\_V11-v1/AODSIM \\
+%%       /QCD\_Pt-20to30\_BCtoE\_TuneZ2\_7TeV-pythia6/Summer11-PU\_S4\_START42\_V11-v1/AODSIM \\
+%%       /QCD\_Pt-30to80\_BCtoE\_TuneZ2\_7TeV-pythia6/Summer11-PU\_S4\_START42\_V11-v1/AODSIM \\
+%%       /QCD\_Pt-80to170\_BCtoE\_TuneZ2\_7TeV-pythia/Summer11-PU\_S4\_START42\_V11-v1/AODSIM   \\
+%%      \hline
+      /WJetsToLNu\_TuneZ2\_matchingdown\_7TeV-madgraph-tauola/Summer11-PU\_S4\_START42\_V11-v1/AODSIM  \\
+      /WJetsToLNu\_TuneZ2\_matchingup\_7TeV-madgraph-tauola/Summer11-PU\_S4\_START42\_V11-v1/AODSIM  \\
+      /WJetsToLNu\_TuneZ2\_scaledown\_7TeV-madgraph-tauola/Summer11-PU\_S4\_START42\_V11-v1/AODSIM          \\
+      /WJetsToLNu\_TuneZ2\_scaleup\_7TeV-madgraph-tauola/Summer11-PU\_S4\_START42\_V11-v1/AODSIM            \\
+      /WToLNu\_1jEnh2\_2jEnh35\_3jEnh40\_4jEnh50\_7TeV-sherpa/Summer11-PU\_S4\_START42\_V11-v1/AODSIM      \\
+      \hline 
+      /GluGluToHToWWToLNuQQ\_M-*\_7TeV-powheg-pythia6/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM  \\
+      /VBF\_HToWWToLNuQQ\_M-*\_7TeV-powheg-pythia6/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM \\
+     Higgs mass from 170 to 600~GeV  &  \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Summary of Monte Carlo samples used in the analysis.}
+  %FIXME add the corresponding cross-sections
+  \label{tab:MCsamples}
+\end{sidewaystable}
+
+\clearpage
+
+% \begin{table}[htb]
+%   \begin{center}
+%   \begin{tabular}{c|r|r}
+%   \hline
+%   Channel & Dataset name & \lumi (\fbinv) \\
+%   \hline
+%   W+jets                        & \footnotesize{\texttt{/WJetsToLNu\_TuneZ2\_7TeV-madgraph-tauola}} & 0.48 \\
+%   Z+jets                        & \footnotesize{\texttt{/DYJetsToLL\_TuneZ2\_M-50\_7TeV-madgraph-tauola}} & 0.76 \\
+%   WW                            & \footnotesize{\texttt{/WWtoAnything\_TuneZ2\_7TeV-pythia6-tauola}} & 47.90 \\
+%   WZ                            & \footnotesize{\texttt{/WZtoAnything\_TuneZ2\_7TeV-pythia6-tauola}} & 116.00 \\
+%   ZZ                            & \footnotesize{\texttt{/ZZtoAnything\_TuneZ2\_7TeV-pythia6-tauola}} & 357.00 \\
+%   t$\bar{\textnormal{t}}$+jets  & \footnotesize{\texttt{/TTJets\_TuneZ2\_7TeV-madgraph-tauola}} & 7.39 \\
+%   t+jets ($t$-channel)          & \footnotesize{\texttt{/TToBLNu\_TuneZ2\_s-channel\_7TeV-madgraph}} & 332.00 \\
+%   t+jets ($s$-channel)          & \footnotesize{\texttt{/TToBLNu\_TuneZ2\_t-channel\_7TeV-madgraph}} & 23.10 \\
+%   t+jets ($t$W-channel)         & \footnotesize{\texttt{/TToBLNu\_TuneZ2\_tW-channel\_7TeV-madgraph}} & 46.20 \\
+%   QCD                           & \footnotesize{\texttt{/QCD\_Pt-20to30\_EMEnriched\_TuneZ2\_7TeV-pythia6}} & 0.01 \\
+%   QCD                           & \footnotesize{\texttt{/QCD\_Pt-30to80\_EMEnriched\_TuneZ2\_7TeV-pythia6}} & 0.02 \\
+%   QCD                           & \footnotesize{\texttt{/QCD\_Pt-80to170\_EMEnriched\_TuneZ2\_7TeV-pythia6}} & 0.06 \\
+%   QCD                           & \footnotesize{\texttt{/QCD\_Pt-20to30\_BCtoE\_TuneZ2\_7TeV-pythia6/}} & 0.02 \\  
+%   QCD                           & \footnotesize{\texttt{/QCD\_Pt-30to80\_BCtoE\_TuneZ2\_7TeV-pythia6/}} & 0.01 \\  
+%   QCD                           & \footnotesize{\texttt{/QCD\_Pt-80to170\_BCtoE\_TuneZ2\_7TeV-pythia6/}} & 0.06 \\    
+%   QCD                           & \footnotesize{\texttt{/QCD\_Pt-20\_MuEnrichedPt-15\_TuneZ2\_7TeV-pythia6}} & 0.35 \\
+%   \hline
+%   \end{tabular}
+%   \end{center}
+%   \caption{Summary of Monte Carlo samples used and the corresponding equivalent integrated luminosity
+%   for each sample.}
+%   \label{tab:MCsamples}
+% \end{table}

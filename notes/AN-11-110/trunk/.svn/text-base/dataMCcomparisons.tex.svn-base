@@ -1,0 +1,379 @@
+\section{Data - Monte Carlo comparisons}
+\label{sec:dataMCcomparisons}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+Following the event selction criteria described above and the Monte
+Carlo samples listed in Section~\ref{sec:technicalities} with the NLO
+cross section, we make predictions for the signal and background
+yields. These yields are compared for backgrounds and data for the
+muon channel and the electron channel in
+Tables~\ref{tab:muonBKGcutflow_2jets} and
+\ref{tab:electronBKGcutflow_2jets} for 2 jet events and in
+Tables~\ref{tab:muonBKGcutflow_3jets} and
+\ref{tab:electronBKGcutflow_3jets} for 3 jet events.
+
+\begin{table}[ht]
+%\begin{adjustwidth}{-1.0in}{-1.0in} 
+\scalebox{0.75}{
+  \centering 
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline 
+Cut & $WW$ & $WZ$ & $W$+jets & $Z$+jets & $t\bar{t}$ & $t$ & QCD & Sum Bkg & Data \\ \hline 
+Preselection & 10199.15 & 2700.86 & 1351191.45 & 156192.51 & 74146.95 & 15154.85 & 166628.66 & 1776214.43 & 1850284.00 \\ \hline 
+muon p$_T$$>$27 & 8829.03 & 2313.91 & 1139256.97 & 129517.85 & 65391.82 & 13097.93 & 48575.79 & 1406983.30 & 1636756.00 \\ \hline 
+met$>$25 & 6818.69 & 1684.11 & 848226.42 & 45149.59 & 55176.01 & 10650.68 & 10576.78 & 978282.29 & 1110806.00 \\ \hline 
+jet1 p$_T$$>$30 & 6481.31 & 1614.82 & 697079.76 & 39560.16 & 55077.57 & 10516.29 & 9145.68 & 819475.59 & 916627.00 \\ \hline 
+jet2 p$_T$$>$30 & 4173.35 & 1115.21 & 378524.85 & 21943.47 & 53103.93 & 8858.41 & 4540.33 & 472259.54 & 512379.00 \\ \hline 
+2 Jets & 3180.29 & 820.06 & 305284.97 & 16731.54 & 11344.40 & 4917.92 & 3751.26 & 346030.43 & 375847.00 \\ \hline 
+$\Delta$R(jet$_{1,2}$,mu)$>$0.5 & 3165.65 & 817.73 & 303782.95 & 16674.28 & 11294.90 & 4899.86 & 3750.90 & 344386.27 & 374110.00 \\ \hline 
+65$<$diJetM$<$95 & 1717.72 & 363.66 & 63911.75 & 3486.46 & 1997.62 & 815.23 & 779.74 & 73072.16 & 78372.00 \\ \hline 
+relIso$<$0.1 & 1696.38 & 359.30 & 62915.25 & 3420.38 & 1974.04 & 804.70 & 702.23 & 71872.28 & 76883.00 \\ \hline 
+M$_T$ Lep$W$$>$50 & 1421.11 & 289.54 & 54273.78 & 2035.82 & 1451.87 & 617.86 & 132.86 & 60222.84 & 63966.00 \\ \hline  
+    \end{tabular} 
+}
+    \caption{Expected background MC yields in 4.617~fb$^{-1}$ and data yields in the muon channel.} 
+    \label{tab:muonBKGcutflow_2jets} 
+%  \end{adjustwidth} 
+\end{table} 
+
+
+\begin{table}[ht]
+%\begin{adjustwidth}{-1.0in}{-1.0in} 
+\scalebox{0.75}{
+  \centering 
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline 
+Cut & $WW$ & $WZ$ & $W$+jets & $Z$+jets & $t\bar{t}$ & $t$ & QCD & Sum Bkg & Data \\ \hline 
+Preselection & 10199.15 & 2700.86 & 1351191.45 & 156192.51 & 74146.95 & 15154.85 & 166628.66 & 1776214.43 & 1850284.00 \\ \hline 
+muon p$_T$$>$27 & 8829.03 & 2313.91 & 1139256.97 & 129517.85 & 65391.82 & 13097.93 & 48575.79 & 1406983.30 & 1636756.00 \\ \hline 
+met$>$25 & 6818.69 & 1684.11 & 848226.42 & 45149.59 & 55176.01 & 10650.68 & 10576.78 & 978282.29 & 1110806.00 \\ \hline 
+jet1 p$_T$$>$30 & 6481.31 & 1614.82 & 697079.76 & 39560.16 & 55077.57 & 10516.29 & 9145.68 & 819475.59 & 916627.00 \\ \hline 
+jet2 p$_T$$>$30 & 4173.35 & 1115.21 & 378524.85 & 21943.47 & 53103.93 & 8858.41 & 4540.33 & 472259.54 & 512379.00 \\ \hline 
+3 Jets & 809.71 & 238.62 & 59128.84 & 4069.52 & 18803.39 & 2661.47 & 701.69 & 86413.24 & 93909.00 \\ \hline 
+$\Delta$R(jet$_{1,2}$,mu)$>$0.5 & 806.53 & 238.00 & 58887.61 & 4053.78 & 18720.76 & 2652.36 & 701.69 & 86060.72 & 93467.00 \\ \hline 
+65$<$diJetM$<$95 & 212.29 & 49.95 & 6457.04 & 489.39 & 2401.40 & 415.21 & 126.53 & 10151.81 & 11280.00 \\ \hline 
+relIso$<$0.1 & 209.17 & 49.21 & 6355.42 & 482.49 & 2369.62 & 410.20 & 100.03 & 9976.13 & 11075.00 \\ \hline 
+M$_T$ Lep$W$$>$50 & 156.92 & 35.26 & 4994.24 & 264.97 & 1646.83 & 290.17 & 0.36 & 7388.74 & 8290.00 \\ \hline 
+    \end{tabular} 
+}
+    \caption{Expected background MC yields in 4.617~fb$^{-1}$ and data yields in the muon channel.} 
+    \label{tab:muonBKGcutflow_3jets} 
+%  \end{adjustwidth} 
+\end{table} 
+
+
+
+\begin{table}[h!]
+%\begin{adjustwidth}{-1.7in}{-1.7in} 
+\scalebox{0.77}{
+  \centering 
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline 
+Cut & $WW$ & $WZ$ & $W$+jets & $Z$+jets & $t\bar{t}$ & $t$ & QCD & Sum Bkg & Data \\ \hline 
+Preselection & 7327.21 & 2140.38 & 848916.67 & 173044.38 & 61800.18 & 11749.16 & 319086.39 & 1424064.37 & 991985.00 \\ \hline 
+ele p$_T$$>$30 & 6841.80 & 1989.76 & 782793.93 & 158037.73 & 58365.99 & 10997.24 & 257133.82 & 1276160.28 & 925742.00 \\ \hline 
+met$>$25 & 5263.54 & 1318.44 & 578424.20 & 36194.44 & 48851.95 & 8829.49 & 43844.53 & 722726.59 & 643354.00 \\ \hline 
+jet1 p$_T$$>$30 & 5104.15 & 1285.33 & 514875.71 & 34051.20 & 48791.55 & 8755.77 & 40610.85 & 653474.55 & 597119.00 \\ \hline 
+jet2 p$_T$$>$30 & 3562.24 & 956.41 & 317686.23 & 20517.22 & 47244.23 & 7627.39 & 21440.97 & 419034.70 & 414904.00 \\ \hline 
+2 Jets & 2692.53 & 686.53 & 253540.27 & 15102.01 & 9968.63 & 4140.64 & 15773.06 & 301903.68 & 295457.00 \\ \hline 
+$\Delta$R(jet$_{1,2}$,e)$>$0.5 & 2685.99 & 685.21 & 252824.23 & 15063.94 & 9921.31 & 4129.75 & 15773.06 & 301083.49 & 294590.00 \\ \hline 
+65$<$diJetM$<$95 & 1444.10 & 295.38 & 51311.27 & 3145.61 & 1791.45 & 693.85 & 2475.90 & 61157.55 & 59024.00 \\ \hline 
+relIso$<$0.05 & 1250.62 & 258.37 & 43220.21 & 2556.70 & 1537.33 & 604.93 & 471.20 & 49899.36 & 49098.00 \\ \hline 
+met$>$30 & 1085.31 & 221.69 & 36854.66 & 1456.52 & 1444.33 & 546.65 & 129.59 & 41738.76 & 41487.00 \\ \hline 
+M$_T$ Lep$W$$>$50 & 913.24 & 180.54 & 32224.12 & 751.52 & 1095.22 & 429.08 & 129.59 & 35723.31 & 35565.00 \\ \hline  
+    \end{tabular} 
+}
+    \caption{Expected background MC yields in 4.525~fb$^{-1}$ and data yields in the electron channel.} 
+    \label{tab:electronBKGcutflow_2jets} 
+%  \end{adjustwidth} 
+\end{table} 
+
+
+\begin{table}[h!]
+%\begin{adjustwidth}{-1.7in}{-1.7in} 
+\scalebox{0.77}{
+  \centering 
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|} \hline 
+Cut & $WW$ & $WZ$ & $W$+jets & $Z$+jets & $t\bar{t}$ & $t$ & QCD & Sum Bkg & Data \\ \hline 
+Preselection & 7327.21 & 2140.38 & 848916.67 & 173044.38 & 61800.18 & 11749.16 & 319086.39 & 1424064.37 & 991985.00 \\ \hline 
+ele p$_T$$>$30 & 6841.80 & 1989.76 & 782793.93 & 158037.73 & 58365.99 & 10997.24 & 257133.82 & 1276160.28 & 925742.00 \\ \hline 
+met$>$25 & 5263.54 & 1318.44 & 578424.20 & 36194.44 & 48851.95 & 8829.49 & 43844.53 & 722726.59 & 643354.00 \\ \hline 
+jet1 p$_T$$>$30 & 5104.15 & 1285.33 & 514875.71 & 34051.20 & 48791.55 & 8755.77 & 40610.85 & 653474.55 & 597119.00 \\ \hline 
+jet2 p$_T$$>$30 & 3562.24 & 956.41 & 317686.23 & 20517.22 & 47244.23 & 7627.39 & 21440.97 & 419034.70 & 414904.00 \\ \hline 
+3 Jets & 709.84 & 212.84 & 51628.99 & 4106.30 & 16769.33 & 2348.96 & 3132.35 & 78908.59 & 81899.00 \\ \hline 
+$\Delta$R(jet$_{1,2}$,e)$>$0.5 & 707.19 & 212.25 & 51315.40 & 4087.19 & 16676.99 & 2338.11 & 3132.35 & 78469.47 & 81417.00 \\ \hline 
+65$<$diJetM$<$95 & 183.24 & 45.52 & 5737.33 & 461.51 & 2206.04 & 372.47 & 458.85 & 9464.97 & 9645.00 \\ \hline 
+relIso$<$0.05 & 160.60 & 40.19 & 4864.23 & 379.99 & 1903.85 & 329.28 & 458.85 & 8137.00 & 8103.00 \\ \hline 
+met$>$30 & 143.86 & 35.08 & 4253.25 & 231.21 & 1779.16 & 299.65 & 458.85 & 7201.06 & 7066.00 \\ \hline 
+M$_T$ Lep$W$$>$50 & 108.99 & 25.97 & 3426.34 & 111.25 & 1263.04 & 218.84 & 372.45 & 5526.89 & 5564.00 \\ \hline  
+    \end{tabular} 
+}
+    \caption{Expected background MC yields in 4.525~fb$^{-1}$ and data yields in the electron channel.} 
+    \label{tab:electronBKGcutflow_3jets} 
+%  \end{adjustwidth} 
+\end{table} 
+ 
+
+
+To assess the quality of the modeling provided by the MC simulation we 
+make comparisons between the MC shape, normalized to the number of collected events in data,
+for the background compared to the overall data
+yield after applying the event selection criteria. 
+We show the distributions of various kinematic
+variables after applying all the selection cuts in 
+Figures ~\ref{fig:mu_jet_pt}-\ref{fig:mu_mjj}
+for the muon+jets sample and in 
+Figures ~\ref{fig:elec_jet_pt}-\ref{fig:elec_mjj} for
+the electron+jets sample. 
+Eventually, Figure~\ref{fig:lep_mlvjj} shows the four-body invariant mass,
+for electrons (on the left) 
+and muons (on the right).
+The MC has been been corrected for
+lepton reconstruction efficiency and the trigger efficiency.
+Besides the kinematics of the single objects, 
+we show here also the variables that are used in the MVA discriminant
+that masimizes the signal-over-background ratio.
+Seeing reasonable agreement gives us confidence in
+the qualitative aspects of the MC modeling. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_jetld_pt.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_jetnt_pt.pdf}
+    \caption{Comparison of the leading jet (left) and 
+      the second jet (right) $p_{T}$ distributions from data and MC for the muon+jets
+      selection.}
+    \label{fig:mu_jet_pt}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_jetld_eta.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_jetnt_eta.pdf}
+    \caption{Comparison of the leading jet $\eta $ (left) and the
+    second leading jet $\eta $ (right) distributions from data and MC
+    for the muon+jets selection.  }
+\label{fig:mu_jet_eta}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_W_muon_pt.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_W_muon_eta.pdf}
+    \caption{Comparison of the muon $p_{T} $ (left) and the
+    muon $\eta $ (right) distributions from data and MC for the
+    muon+jets selection. 
+    }
+   \label{fig:mu_muon}}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_W_mt.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_event_met_pfmet.pdf}
+    \caption{Comparison of the distributions from data and MC of the
+     transverse mass of the muon / MET system (left) and the MET (right)
+    for the muon+jets selection.
+    }
+    \label{fig:mu_W_Mt}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_mjj.pdf}
+    \caption{Comparison of the dijet mass ($m_{JJ}$) distributions from data and MC for 
+      the muon+jets selection. }
+    \label{fig:mu_mjj}}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_jetld_pt.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_jetnt_pt.pdf}
+    \caption{Comparison of the leading jet $p_{T} $ (left) and the
+      second leading jet $p_{T} $ (right) distributions from data and MC
+      for the electron+jets selection.}
+    \label{fig:elec_jet_pt}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_jetld_eta.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_jetnt_eta.pdf}
+    \caption{Comparison of the leading jet $\eta $ (left) and the
+      second leading jet $\eta $ (right) distributions from data and MC for the electron+jets selection.}
+    \label{fig:elec_jet_eta}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_W_electron_et.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_W_electron_eta.pdf}
+    \caption{Comparison of the electron $E_{T} $ (left) and the
+    electron $\eta $ (right) distributions from data and MC for the
+    electron+jets selection. 
+    }
+   \label{fig:elec_electron}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_W_mt.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_event_met_pfmet.pdf}
+    \caption{Comparison of the distributions from data and MC of the transverse mass
+     of electron / MET system (left) and the MET (right) for the
+      electron+jets selection. 
+      }
+    \label{fig:elec_W_Mt}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_mjj.pdf}
+    \caption{Comparison of the dijet mass ($m_{JJ}$) distributions from data and MC for 
+      the electron+jets selection. }
+    \label{fig:elec_mjj}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+The data MC comparison for the various inputs to the MVA are shown in  
+Figures ~\ref{fig:mu_jet_qgl}-\ref{fig:mu_ww}
+for the muon+jets sample and in 
+Figures ~\ref{fig:elec_jet_qgl}-\ref{fig:elec_ww} for
+the electron+jets sample. 
+
+% quark-gluon discriminants
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_jetld_qgl.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_jetnt_qgl.pdf}
+    \caption{Comparison of the Quark-gluon likelihood distributions for leading jet (left)
+    second leading (right) from data and MC for the muon+jets selection.}
+\label{fig:mu_jet_qgl}}
+\end{figure}
+% angular variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_ha.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_hb.pdf}
+    \caption{Comparison of the angular distributions for $\cos\theta_{1}$ (left)
+   $\cos\theta_{2}$ (right) from data and MC for the muon+jets selection.}
+\label{fig:mu_theta}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+     \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_hs.pdf}
+    \caption{Comparison of the angular distributions for $\cos\theta^{\ast}$ from data and MC 
+   for the muon+jets selection.}
+\label{fig:mu_thetas}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_phi.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_phib.pdf}
+    \caption{Comparison of the angular distributions for $\Phi$  (left)$\Phi_{1}$ (right) from data and 
+      MC for the muon+jets selection.}
+\label{fig:mu_phi}}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_charge.pdf}
+    \caption{Comparison of the charge of the muon from data and MC for the muon+jets selection.}
+\label{fig:mu_chg}}
+\end{figure}
+
+% rapidity and pt of the WW system
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_ptlvjj.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_etalvjj.pdf}
+    \caption{Comparison of the $p_{T}$ (left) $\eta$ (right) of the WW system
+      from data and MC for the muon+jets selection.}
+\label{fig:mu_ww}}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% quark-gluon discriminants
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_jetld_qgl.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_jetnt_qgl.pdf}
+    \caption{Comparison of the Quark-gluon likelihood distributions for leading jet (left)
+    second leading (right) from data and MC for the electron+jets selection.}
+\label{fig:elec_jet_qgl}}
+\end{figure}
+% angular variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_ha.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_hb.pdf}
+    \caption{Comparison of the angular distributions for $\cos\theta_{1}$ (left)
+   $\cos\theta_{2}$ (right) from data and MC for the electron+jets selection.}
+\label{fig:elec_theta}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+     \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_hs.pdf}
+    \caption{Comparison of the angular distributions for $\cos\theta^{\ast}$ from data and MC 
+   for the electron+jets selection.}
+\label{fig:elec_thetas}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_phi.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_phib.pdf}
+    \caption{Comparison of the angular distributions for $\Phi$  (left)
+    $\Phi_{1}$ (right) from data and MC for the 
+    electron+jets selection.}
+\label{fig:elec_phi}}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_charge.pdf}
+    \caption{Comparison of the charge of the electron from data and MC for the electron+jets selection.}
+\label{fig:elec_chg}}
+\end{figure}
+
+% rapidity and pt of the WW system
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_ptlvjj.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_etalvjj.pdf}
+    \caption{Comparison of the $p_{T}$ (left) $\eta$ (right) of the WW system
+      from data and MC for the electron+jets selection.}
+\label{fig:elec_ww}}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/el_mlvjj.pdf}
+    \includegraphics[width=0.49\textwidth]{plots/2012_DataMC/mu_mlvjj.pdf}
+    \caption{Comparison of the four-body invariant mass from data and MC for the electron+jets selection (left) 
+             and muon+jets selection (right).}
+\label{fig:lep_mlvjj}}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+

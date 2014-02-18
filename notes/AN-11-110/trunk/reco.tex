@@ -1,0 +1,116 @@
+\section{Physics objects reconstruction}
+\label{sec:reco}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+
+The analysis relies on the standard reconstruction algorithms produced by the CMS community.
+
+Electrons are reconstructed with the gaussian sum filter algorithm \cite{CMS-AN-2010/472},
+and are required to survive the WP90 identification selections \cite{CMS-AN-2010/264, muIDtwiki, eleIDtwiki}.
+The selections applied are listed in Table \ref{tab:eleID90}.
+
+\begin{table}[hbt]
+  \begin{center}
+  \begin{tabular}{l|l|l}
+  \hline
+  varible & barrel limit & endcap limit \\
+  \hline
+  track isolation                       & 0.10   & 0.10  \\    
+  EM isolation                          & 0.10   & 0.10  \\    
+  HAD isolation                         & 0.10   & 0.10 \\     
+  combined isolation (PU subtracted)    & 0.085  & 0.051  \\          
+  $\sigma_{i\eta i\eta}$                & 0.01   & 0.01  \\           
+  $\Delta\varphi$                       & 0.071   & 0.047  \\  
+  $\Delta\eta$                          & 0.007  & 0.011 \\  
+  \hline
+  \end{tabular}
+  \end{center}
+  \caption{The identification selections applied on electrons at preselection level.
+           \textbf{FIXME check the cuts}}
+  \label{tab:eleID90}
+\end{table}%
+
+A pile-up offset subtraction in the isolation cone using fastjet algorithm \cite{Cacciari2008119} is applied.
+
+In addition to the identification and isolation criteria, we also use the following criteria to reject
+contributions from photon conversions \cite{CMS-AN-2009/178, CMS-AN-2009/159}:
+\begin{itemize}
+ \item no missing hits in the pixel detector
+ \item distance of the partner d $>$ 0.02 or $\Delta cot\theta$ $>$ 0.02
+\end{itemize}
+
+
+The electron track is required to be compatible with the reconstructed primary vertex
+asking the logitudinal impact parameter $dz$ and 
+the transverse impact parameter $d_{0}$ to be less than
+500 $\mu$m.
+Additional electron selections are summarized in Table \ref{tab:eleSelAdd}.
+
+\begin{table}[hbt]
+  \begin{center}
+  \begin{tabular}{l|l}
+  \hline
+        & Selection \\
+  \hline
+  Impact parameter                      & $d_{0}<$ 500 $\mu$m and $dz<$ 500 $\mu$m \\    
+  Missing hits                          & 0  \\    
+  $\Delta cot\theta$                    & $>$ 0.02 \\
+  Dist                                  & $>$ 0.02 \\
+  \hline
+  \end{tabular}
+  \end{center}
+  \caption{Photon conversion rejection and primary vertex compatibility for electrons.
+           \textbf{FIXME check the cuts}}
+  \label{tab:eleSelAdd}
+\end{table}%
+
+
+
+Muons obtained from the CMS reconstruction \cite{PAS-MUO-2010-002} 
+are required to survive the selections defined in Table \ref{tab:muID}.
+
+\begin{table}[hbt]
+  \begin{center}
+  \begin{tabular}{l|l}
+  \hline
+  variable & limit \\
+  \hline
+  combined isolation (PU subtracted)       & 0.15 \\        
+  $\chi^2$/ndof                            & 10   \\     
+  nb. valid tk hits                        & 10   \\              
+  nb. valid muon hits                      & 0    \\           
+  isTrackerMuon                            & 1    \\   
+  isStandaloneMuon                         & 1    \\      
+  isGlobalMuon                             & 1    \\      
+  \hline
+  \end{tabular}
+  \end{center}
+  \caption{The identification selections applied on muons at preselection level.\textbf{FIXME check the cuts}}
+  \label{tab:muID}
+\end{table}%
+
+
+The muon track is required to be compatible with the reconstructed primary vertex
+asking the logitudinal impact parameter $dz$ to be less than 500 $\mu$m and 
+the transverse impact parameter $d_{0}$ to be less than 100 $\mu$m.
+Additional muon selections are summarized in Table \ref{tab:muSelAdd}.
+
+\begin{table}[hbt]
+  \begin{center}
+  \begin{tabular}{l|l}
+  \hline
+        & Selection \\
+  \hline
+  Impact parameter                      & $d_{0}<$ 100 $\mu$m and $dz<$ 500 $\mu$m \\    
+  \hline
+  \end{tabular}
+  \end{center}
+  \caption{Muon primary vertex compatibility.\textbf{FIXME check the cuts}}
+  \label{tab:muSelAdd}
+\end{table}%
+
+Jets are reconstructed with the anti-KT algorithm \cite{cacciari}, 
+starting from the set of objects reconstructed by the particle flow \cite{pflow1,pflow2}.
+The L2 and L3 corrections \cite{newjes-cms} are applied to them in the simulated samples,
+while also the residual corrections \cite{newjes-cms} are applied on data.
+

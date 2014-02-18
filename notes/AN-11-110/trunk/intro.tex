@@ -1,0 +1,87 @@
+\section{Introduction}
+\label{sec:intro}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+The Standard Model (SM) of particle physics successfully describes the majority of high-energy
+experimental data~\cite{pdg}. One of the key remaining questions is the origin of the masses of
+W and Z bosons.  In the simplest implementation of the SM, it is attributed to the spontaneous
+breaking of electroweak symmetry caused by a new scalar field. %~\cite{Higgs1, Higgs2, Higgs3} 
+The existence of the associated field quantum, the Higgs boson, has yet to be experimentally confirmed.
+Therefore, the search for the Higgs boson is arguably one of the most
+important studies being done at the LHC~\cite{lhcmachine}. For Higgs
+masses above or near the threshold for decay into two vector bosons,
+the decay modes of choice are dominated by those decays because of
+their large branching fractions.
+%  Looking at the experimentally
+% accessible subsequent decay modes of the vector bosons, the relative
+% event yields are shown in Table~\ref{tab:intro:evtyield}.
+% %%%%%%%%%%%%%%%%%
+% \begin{table}[htb]
+%   \caption{Higgs Decay Modes into Vector Boson Pairs.}
+%   \label{tab:intro:evtyield}
+%   \begin{center}
+%     \begin{tabular}{l|l|l|c} 
+%       \hline \hline
+%       Decay Mode & $\mathcal{B}$ & Relative $\mathcal{B}$ & Higgs Mass  Peak   \\\hline \hline
+%       $H \rightarrow WW \rightarrow \ell \nu jj$         &0.2    &1      & Yes \\
+%       $H \rightarrow WW \rightarrow \ell \nu \ell \nu$   &0.033  &1/6    & No  \\
+%       $H \rightarrow ZZ \rightarrow \ell \ell \nu \nu$   &0.0089 &1/22.5 & No  \\
+%       $H \rightarrow ZZ \rightarrow \ell \ell jj$        &0.031  &1/6.45 & Yes \\
+%       $H \rightarrow ZZ \rightarrow \ell \ell bb$        &0.0067 &1/29.8 & Yes \\
+%       $H \rightarrow ZZ \rightarrow \ell \ell \ell \ell$ &0.0045 &1/44.4 & Yes \\
+%       \hline \hline
+%     \end{tabular}
+%   \end{center}
+% \end{table}
+% %%%%%%%%%%%%%%%%%
+It is clear that the events where one $W$ decays leptonically, which
+provides the main trigger elements, while the other decays
+hadronically have the largest branching fraction and have a
+reconstructable Higgs mass peak~\cite{intro2}. 
+
+This note contains the analysis that sets a limit on the Higgs boson cross-section
+based on this decay mode. 
+The main experimental issue is to control the large $W$ plus jets 
+background sufficiently well that the advantages of using this 
+final state are realized.
+
+The analysis selects events with one well identified and isolated lepton, 
+large missing transverse energy and at least two high \pt jets.
+The note is structured as follows. 
+A discussion about the data samples used in the analysis and the trigger selections
+is presented in Sections~\ref{sec:MCexpectations} and \ref{sec:technicalities}.  
+The physics objects reconstruction is discussed in Section~\ref{sec:firstStep}.
+The lepton selection and other preselection requirements are described in detail 
+in Section~\ref{sec:firstStep} and \ref{sec:dataMCcomparisons}.
+
+A first limit extraction is performed with a few set of selections applied on top of these,
+as described in Section~\ref{sec:firstExtraction}.
+To enhance the exclusion power of this analysis, 
+tighter selections are put in place.
+
+After the preselections,
+the signal-over-background ratio is enhanced by means of a selection on a MVA discriminant, 
+designed in order to control the background while preserving as much as possible the difference in shape
+with respect to the signal (Section~\ref{sec:mvaoptimization}).
+The input variables of the MVA exploit the decay angles of the four-body mass system, 
+the kinematics of the entire four-body system. For high mass points, a quark-gluon discriminating
+variable, already exploited in the CMS search for a Standard Model Higgs boson in its $\ell{}\ell{}jj$ decay,
+is also used in parallel with the MVA discriminant.
+The MVA variable definition is optimized with dedicated trainings for each Higgs mass hypothesis case, 
+for each lepton flavour ($e$, $\mu$) and for each jets multiplicity (2 jets, 3 jets) independently.
+In this way, 48 different configurations are obtained.
+
+The main background contaminating the signal region is W+jets.
+Its $m_{\ell{}\nu{}jj}$ shape is extrapolated from sidebands in the $m_{jj}$ distribution 
+through Monte Carlo based factors (Section~\ref{sec:wjetsBackground}).
+Also the QCD shapes come from a data-driven determination, as described in Section~\ref{sec:dataDrivenQCD}.
+The remaining background shapes come from the Monte Carlo.
+The normalization of the backgrounds in the signal region 
+is measured by fitting their Monte Carlo shapes on the same sidebands in the $m_{jj}$ variable 
+(Section~\ref{sec:mjjfitfornormal}).
+The determination of the $m_{jj}$ distribution for W+jets is described in Section~\ref{sec:wjetsShape}.
+
+The systematic uncertainties present in the signal description are described in Section~\ref{sec:systematics}.
+Section~\ref{sec:limitExtraction} describes the obtained limits on the Standard Model Higgs cross section
+and Section~\ref{sec:conclusions} closes this work.
+

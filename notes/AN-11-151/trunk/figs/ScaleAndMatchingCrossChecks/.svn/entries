@@ -1,0 +1,58 @@
+10
+
+dir
+228281
+svn+ssh://svn.cern.ch/reps/tdr2/notes/AN-11-151/trunk/figs/ScaleAndMatchingCrossChecks
+svn+ssh://svn.cern.ch/reps/tdr2
+
+
+
+2012-05-23T04:01:04.832666Z
+123588
+ilyao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4525493e-7705-40b1-a816-d608a930855b
+
+el2JNoBTag_fMUfSUMuonDefault
+dir
+
+mu2JNoBTag_fSU0fMUm1
+dir
+
+mu2JNoBTag_fSUDeffMUm1sigma
+dir
+
+mu2JNoBTag_fSUm1fMU0
+dir
+
+mu2JNoBTag_fSUm1sigmafMUDef
+dir
+
+mu2JNoBTag_fSU0fMU0
+dir
+
+mu2JNoBTag_fSU0fMUp1
+dir
+
+mu2JNoBTag_fSUDeffMUp1sigma
+dir
+
+mu2JNoBTag_fSUp1fMU0
+dir
+
+mu2JNoBTag_fSUp1sigmafMUDef
+dir
+
