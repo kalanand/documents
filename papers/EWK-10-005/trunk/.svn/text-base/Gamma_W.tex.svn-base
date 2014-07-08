@@ -1,0 +1,43 @@
+\subsection{\texorpdfstring{Extraction of ${\cal B}(\Wln)$ and $\Gamma(\Wo)$}{Extraction of B(W->l n) and Gamma(W)}}
+\label{sec:Gamma_W}
+
+The precise value of the ratio of the W and Z cross sections
+obtained from the combination of the measurements in the electron
+and muon final states can be used to determine the SM
+parameters ${\cal B}(\Wln)$ and $\Gamma(\Wo)$.
+
+The ratio of W and Z cross sections can be written as
+\begin{displaymath}
+  R = \frac{\sigma(\pp \rightarrow \Wo X)}{\sigma(\pp \rightarrow \Zo X)}\,\,
+  \frac{{\cal B}(\Wln)}{{\cal B}(\Zll)}\,.
+\end{displaymath}
+
+
+In order to estimate the value of ${\cal B}(\Wln)$
+the predicted ratio of the W and Z production cross sections and the
+measured value of the ${\cal B}(\Zll)$ are needed.
+The NNLO prediction of the ratio, based on the MSTW08 PDFs, is $\sigma_\Wo$/$\sigma_\Zo$ = 3.34 $\pm$ 0.08.
+The current measured value for ${\cal B}(\Zll)$ is 0.033658$\pm$0.000023
+~\cite{PDG}. Those values lead to an indirect estimation of
+\begin{displaymath}
+{\cal B}(\Wln) = 0.106 \pm 0.003 \,,
+\end{displaymath}
+in agreement with the measured value, ${\cal B}(\Wln) = 0.1080 \pm 0.0009$~\cite{PDG}.
+
+Using the SM value for the leptonic partial width,
+$\Gamma(\Wln) = 226.6\pm 0.2$~MeV~\cite{GammaW-SM,GammaW-SM-New},
+an indirect measurement of the total $\Gamma(\Wo)$ can be obtained through the formula
+\begin{displaymath}
+  {\cal B}(\Wln) = \frac{\Gamma(\Wln)}{\Gamma(\Wo)}\,.
+\end{displaymath}
+
+Based on the above values we obtain
+\begin{displaymath}
+\Gamma(\Wo) = 2144 \pm 62 ~~\mathrm{MeV}  \,.
+\end{displaymath}
+
+The SM prediction is 2093 $\pm$ 2 MeV~\cite{GammaW-SM-New} and the world average of experimental
+results is 2085 $\pm$ 42 MeV~\cite{PDG}. The indirect measurement of $\Gamma(\Wo)$ is in good agreement
+with the world average and the theoretical prediction, as well as other published measurements.
+
+

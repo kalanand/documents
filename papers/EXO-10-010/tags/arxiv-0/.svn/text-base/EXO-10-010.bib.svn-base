@@ -1,0 +1,309 @@
+
+@ARTICLE{ref_axi,
+     author    = "Frampton, Paul H. and Glashow, Sheldon L.",
+     title     = "Chiral color: An alternative to the standard model",
+     journal   = "Phys. Lett.",
+     volume    = "B190",
+     year      = "1987",
+     doi       = "10.1016/0370-2693(87)90859-8",
+     pages     = "157"
+}
+
+@Article{ref_coloron,
+     author    = "Simmons, Elizabeth H.",
+     title     = "Coloron phenomenology",
+     journal   = "Phys. Rev.",
+     volume    = "D55",
+     year      = "1997",
+     doi       = "10.1103/PhysRevD.55.1678",
+     pages     = "1678"
+}
+
+@Article{ref_qstar,
+     author    = "Baur, U. and Hinchliffe, I. and Zeppenfeld, D.",
+     title     = "Excited Quark Production at Hadron Colliders",
+     journal   = "Int. J. Mod. Phys.",
+     volume    = "A2",
+     year      = "1987",
+     doi       = "10.1142/S0217751X87000661",
+     pages     = "1285"
+}
+
+@Article{ref_diquark,
+     author    = "Hewett, JoAnne L. and Rizzo, Thomas G.",
+     title     = "Low-energy phenomenology of superstring-inspired $E_6$ models",
+     journal   = "Phys. Rept.",
+     volume    = "183",
+     year      = "1989",
+     doi       = "10.1016/0370-1573(89)90071-9",
+     pages     = "193"
+}
+
+@Article{ref_trho,
+     author    = "Lane, Kenneth and Mrenna, Stephen",
+     journal   = "Phys. Rev.",
+     volume    = "D67",
+     year      = "2003",
+     pages     = "115011"
+}
+
+@Article{ref_rsg,
+     author    = "Randall, Lisa and Sundrum, Raman",
+     title     = "An alternative to compactification",
+     journal   = "Phys. Rev. Lett.",
+     volume    = "83",
+     year      = "1999",
+     doi       = "10.1103/PhysRevLett.83.4690",
+     pages     = "4690"
+}
+
+@Article{ref_gauge,
+     author    = "Eichten, E. and others",
+     title     = "Supercollider physics",
+     journal   = "Rev. Mod. Phys.",
+     volume    = "56",
+     year      = "1984",
+     doi       = "10.1103/RevModPhys.56.579",
+     pages     = "579"
+}
+
+@Article{refCMS,
+      AUTHOR      = "{CMS Collaboration}",
+ collaboration = "CMS",
+     journal   = "JINST",
+     title     = "The CMS Experiment at the CERN LHC",
+     volume    = "0803",
+     year      = "2008",
+     pages     = "S08004",
+     doi       = "10.1088/1748-0221/3/08/S08004"
+}
+
+@Article{refPTDR1,
+     author    = "Bayatian, G. L. and others",
+ collaboration = "CMS",
+     note     = "CERN-LHCC-2006-001"
+}
+
+@Article{refSisCone,
+     author    = "Salam, Gavin P. and Soyez, Gregory",
+     journal   = "JHEP",
+     volume    = "05",
+     year      = "2007",
+     pages     = "086"
+}
+
+@Article{refGEANT,
+     author    = "Agostinelli, S. and others",
+ collaboration = "GEANT4",
+     journal   = "Nucl. Instrum. Meth.",
+     volume    = "A506",
+     year      = "2003",
+     pages     = "250"
+}
+
+
+@ARTICLE{refJECpas,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Plans for Jet Energy Corrections at CMS",
+      URL         = "http://cdsweb.cern.ch/record/1194485",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1194485}{CMS-PAS-JME-07-002}",
+      YEAR        = "2007"
+}
+
+
+@ARTICLE{refJetAlgPAS,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Performance of Jet Algorithms in CMS",
+      URL         = "http://cdsweb.cern.ch/record/1198227",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1198227}{CMS-PAS-JME-07-003}",
+      YEAR        = "2007"
+}
+
+
+@Article{refPYTHIA,
+     author    = "Sjostrand, T. and others ",
+     title     = "High-energy-physics event generation with PYTHIA 6.1",
+     JOURNAL      = "Computer Physics Commun.",
+     volume    = "135",
+     pages     = "238",
+     doi       = "10.1016/S0010-4655(00)00236-8",
+     year      = "2001"}
+
+
+
+@Article{refNLO,
+     author    = "Nagy, Zoltan",
+     journal   = "Phys. Rev.",
+     volume    = "D68",
+     year      = "2003",
+     pages     = "094002"
+}
+
+
+
+
+@Article{refCTEQ,
+     author    = "Pumplin, J. and others",
+     title     = "New generation of parton distributions with uncertainties from global QCD analysis",
+     journal   = "JHEP",
+     volume    = "07",
+     year      = "2002",
+     doi       = "10.1088/1126-6708/2002/07/012",
+     pages     = "012"
+}
+
+
+@Article{refCDFrun2,
+     author    = "Aaltonen, T. and others",
+     title     = "Search for new particles decaying into dijets in proton-antiproton collisions at $\sqrt{s}=1.96$ TeV",
+ collaboration = "CDF",
+     journal   = "Phys. Rev.",
+     volume    = "D79",
+     year      = "2009",
+     doi       = "10.1103/PhysRevD.79.112002",
+     pages     = "112002"
+}
+
+@Article{Abe:1997hm,
+     author    = "Abe, F. and others",
+     title     = "Search for new particles decaying to dijets at CDF",
+ collaboration = "CDF",
+     journal   = "Phys. Rev.",
+     volume    = "D55",
+     year      = "1997",
+     doi       = "10.1103/PhysRevD.55.R5263",
+     pages     = "5263"
+}
+
+@ARTICLE{JME-08-003,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Determination of the Relative Jet Energy Scale at CMS from Dijet
+	Balance",
+      URL         = "http://cdsweb.cern.ch/record/1194488",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1194488}{CMS-PAS-JME-08-003}",
+      YEAR        = "2008"
+}
+
+@ARTICLE{JME-09-003,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Offset Energy Correction for Cone Jets",
+      URL         = "http://cdsweb.cern.ch/record/1194490",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1194490}{CMS-PAS-JME-09-003}",
+      YEAR        = "2009"
+}
+
+@ARTICLE{JME-09-004,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Jet energy calibration with photon+jet events",
+      URL         = "http://cdsweb.cern.ch/record/1194491",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1194491}{CMS-PAS-JME-09-004}",
+      YEAR        = "2009"
+}
+
+@ARTICLE{JME-09-005,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Determination of the jet energy scale using $Z\to \Pep\Pem$ + jet
+	$p_T$ balance and a procedure for combining data driven corrections",
+      URL         = "http://cdsweb.cern.ch/record/1194492",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1194492}{CMS-PAS-JME-09-005}",
+      YEAR        = "2009"
+}
+
+@ARTICLE{JME-09-009,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Calibration of the absolute jet energy scale with $Z(\rightarrow\Pgmp\Pgmm)$
+	+ jet events at CMS",
+      URL         = "http://cdsweb.cern.ch/record/1195743",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1195743}{CMS-PAS-JME-09-009}",
+      YEAR        = "2009"
+}
+
+@Article{Cullen:2000ef,
+     author    = "Cullen, Schuyler and Perelstein, Maxim and Peskin, Michael
+                  Edward",
+     title     = "TeV strings and collider probes of large extra dimensions",
+     journal   = "Phys. Rev.",
+     volume    = "D62",
+     year      = "2000",
+     doi       = "10.1103/PhysRevD.62.055012",
+     pages     = "055012"
+}
+@Article{Anchordoqui:2008di,
+     author    = "Anchordoqui, L. A. and Goldberg, H. and Nawata, S. and Taylor, T. R.",
+     title     = "Jet signals for low mass strings at the Large Hadron Collider",
+     journal   = "Phys. Rev. Lett.",
+     volume    = "101",
+     year      = "2008",
+     pages     = "241803",
+     doi       = "10.1103/Physrevlett.100.171603"
+}
+@article{1126-6708-2008-04-063,
+  author={Matteo Cacciari and Gavin P. Salam and Gregory Soyez},
+  journal={JHEP},
+  volume={04},
+  pages={063},
+  url={http://stacks.iop.org/1126-6708/2008/i=04/a=063},
+  title="The anti-k(t) jet clustering algorithm",
+  doi="10.1088/1126-6708/2008/04/063",
+  year={2008}
+}
+@ARTICLE{JME-07-002-PAS,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Plans for Jet Energy Corrections at CMS",
+      URL         = "http://cdsweb.cern.ch/record/1194485",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1194485}{CMS-PAS-JME-07-002}",
+      YEAR        = "2007"
+}
+@ARTICLE{JME-10-003-PAS,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Jet Performance in pp Collisions at $\sqrt{s}$=7 TeV",
+      URL         = "http://cdsweb.cern.ch/record/1279362",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1279362}{CMS-PAS-JME-10-003}",
+      YEAR        = "2010"
+}
+@ARTICLE{EXO-10-010-PAS,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Search for Dijet Resonances in the Dijet Mass Distribution in 7 TeV
+	pp Collisions at CMS",
+      URL         = "http://cdsweb.cern.ch/record/1287571",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1287571}{CMS-PAS-EXO-10-010}",
+      YEAR        = "2010"
+}
+@ARTICLE{EWK-10-004-PAS,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Measurement of CMS Luminosity",
+      URL         = "http://cdsweb.cern.ch/record/1279145",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1279145}{CMS-PAS-EWK-10-004}",
+      YEAR        = "2010"
+}
+@ARTICLE{ATLAS_Search,
+     collaboration       = "ATLAS",
+     author="Aad, G. and others",
+     journal   = "Submitted to Phys. Rev. Lett.",
+     eprint    = "1008.2461",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     SLACcitation  = "%%CITATION = 1008.2461;%%"
+}

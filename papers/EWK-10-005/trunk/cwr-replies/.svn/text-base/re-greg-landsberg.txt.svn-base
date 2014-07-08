@@ -1,0 +1,200 @@
+Dear Greg,
+
+Thank you very much for the useful suggestion and the numerous corrections you sent us. 
+
+For what concerns rest of editorial comments, we implemented the vast majority of, if not 
+all, the editorial comments that we received. In some cases, comments from different 
+reviewers overlap or suggest incompatible changes. In many of those and other cases we 
+found as the best solution to rephrase the sentence or paragraph involved. The number 
+of editorial comments, due to the size of the paper, is too large to give a reply for 
+every single comment. The latest posted draft contains almost all of the editorial changes.
+
+Below the replies to the non-editorial and main editorial comments.
+
+Q:
+1) L15: should use m_{W/Z}^2 here (as done on L21), as you are talking 
+about both the W and Z. Also, you shouldn't call this value a Q^2 (which it is not); 
+this is really \hat s! Ditto on L21: \hat s = ...
+A:
+Done 
+
+Q:
+2) L27: add references to the HERA and Tevatron data.
+A:
+Added 
+
+Q:
+3) LL162,182,185 and below: do you explicitly require the two electrons to have opposite charges? 
+If so, state this on or around L162; if not, you should also state this and not use but rather . 
+Which one is it?
+A:
+It is stated on line 195 (no charge requirement). This sentence has been anticipated to line 162 for 
+better readability.
+
+Q:
+4) Figs 1-2: suggest adding the legend to all the panes. Also, figures must say "CMS" and "36 \ipb 
+at sqrt{s} = 7 TeV" on them.
+A:    
+We have grouped the selection variables in electron-ID and Isolation. We don't see the benefit of repeating 
+the same legend many times. The figures are updated and contain the "CMS" and the usual energy and luminosity 
+information. 
+
+Q:
+5) Fig. 3: the legend for data should show a vertical error bar, not just a dot.
+A:
+Added. The legend has been removed since data is the only entry in the plot, according to another 
+opposite comment. According to the publication board, it is acceptable to use a dot w/o a 
+vertical error bar.
+
+Q:
+6) L296: add a reference to the Crystal Ball function.
+A:
+Added 
+
+Q:
+7) L328: define the "2-bin case" - what are the two bins?
+A:
+Added: "...2-bin case in which the efficiencies were estimated in two bins of $\eta$ (EB and EE)." 
+
+Q:
+9) Figs. 6 and 7: legend should show a red dot with an error bar (left); add a legend on the right.
+A:
+Errors added; right legend not added because of an opposite comment requesting to delete if there 
+is only one entry,  as for comment 5) .We will check the proper solution with the publication board.
+ 
+Q:
+10) LL412-414: the logic is flawed here as you are discussing the QCD background and then suddenly 
+tell that at high MET it's insignificant and that the more important background is EWK. 
+Suggest: The QCD multijet ... in W analyses. At high \MET, EWK backgrounds ... Yan, also become relevant ...
+A:
+Rephrased: "The QCD multijet background is one of the most significant backgrounds in W analyses. 
+At high $\MET$, EWK backgrounds, in particular $\Wtn$ and Drell--Yan, also become relevant, leading 
+to contaminations levels of the order of $\sim 10\%$ or so." 
+
+Q:
+11) LL435-446: is the difference between the W and Z mass, which generally could affect the recoil 
+spectrum taken into account? If s, how big is the effect?
+A:
+It's taken into account, as written in the text. We have now rephrased as: "The ratios of data to 
+simulation fit parameters from Z samples are used as scale factors to correct the W simulated recoil 
+curves. The recoil in simulated W events is replaced with the values drawn from the corrected W recoil 
+distributions adding the energy of the W leptons back to recalculate the E/T value for each event."
+
+Q:
+12) L494: you talked about the KS probabilities, but quote the chi^2 probability for the W+ sample - 
+I hope you meant the KS one. Since it's clear that you talk about probabilities, just say are for the sample and for the ...
+A:
+Yes, it was a copy and paste problem. Fixed in the text.
+
+Q:
+13) Fig. 10-12, 14: Data markers in the legend should show a vertical error bar. 
+Explain the bottom pane and the \chi on the y-axis.
+A:
+The bottom pane is explained earlier. See lines 450-452. 
+
+Q:
+14) Fig. 13: add CMS, 35 \ipb at \sqrt{s} = 7 TeV; change a.u. to Arbitrary Units.
+A:
+This plot is made using simulation so the 35/pb make no sense here. 
+Not sure if we want to keep the sqrt(s)=7 TeV. a.u. replaced.
+
+Q:
+15) Fig. 15: remove X_cut and Y_cut labels.
+A:
+The plot is updated with a brand new one, entirely restyled. 
+
+Q:
+16) LL542-544: The sentence "By assuming ... is eliminating" is completely unintelligible. 
+Please, rephrase for clarity, as it's impossible to understand what you meant to say here.
+A:
+The whole paragraph has been re-written. 
+
+Q:
+18) Fig. 17: please use the same dashed histogram for the non-isolated background 
+as in Fig. 16 (left) - two series of dots are too confusing. In the legend change second 
+and third entries to: "QCD non-isolated, corrected" and "QCD non-isolated".
+A:
+Histograms restyled; caption mentioning "data" left for better readability, and remark 
+the difference w.r.t. the previous figure
+
+Q:
+21) Table 8 caption: the last clause is technically not correct as for the 
+loose Z \to \mu\mu you are still using fit to data.
+A:
+Added for completeness: "(for $\Zmm$: only for candidates in the ``golden'' category)" 
+
+Q:
+22) In the rows 5-6 of the table, did you explicitly exclude the 1.44-1.57 region in |eta| when 
+producing the entries?
+A:
+Since the backgrounds are passing the Z selection, the two electrons should fall into the ECAL 
+fiducial (which excludes the 1.44-1.57 region). 
+
+Q:
+24) LL736-740: why not use two muons per event to derive the template? What's the rational of using 
+just one in a hardly random scheme you have developed? Have you checked that the numbers of even and 
+odd events in the data are indeed roughly equal?
+A:
+We use actually two muons, and it's explained in the text: "for one of the two daughter muons...". 
+The "randomness" is needed to chose which muon to take to mimic the SA candidate. 
+See also similar comment from S. Malvezzi. 
+
+Q:
+25) L820: the 0.3\% uncertainty assigned to account for residual correlations is by far the largest 
+uncertainty in the background modeling. How do we know that the 0.3\% number is indeed a conservative 
+estimate and how was it derived?
+A:
+The fixed shape QCD template is constructed by inverting the track-cluster matching variable 
+DeltaEta ("anti-selection"). A correlation between DeltaEta and pfMET can lead to a difference in the 
+shape of the pfMET distribution for background events passing the selection (true QCD distribution) 
+and anti-selection (QCD template). The correlation between pfMET and DeltaEta was studied and found 
+to be quite small. An earlier version of the analysis involved a cut on DeltaPhi, for which a 
+significantly larger correlation with pfMET was observed. The correlation was strong enough that it 
+resulted in a clearly visible discrepancy between the data and the sum of templates in the background 
+dominated region at low pfMET. In this case the bias on the signal yield was quantified and found to 
+be 0.9%. Given that the observed correlation between deltaEta and pfMET is significantly smaller, 
+together with the fact that the shape of the data matches the sum of templates extremely well in the 
+background dominated region, we estimate that any bias on the signal yield due to the correlation 
+between deltaEta and pfMET should not be more than around 0.3%. 
+
+Q:
+26) LL917-919: why the variation of the scales yields THREE different results. I expect eight 
+(plus the central value), given that each of the scales should be allowed to change independently. 
+Please, explain, how the scales are varied.
+A:
+Renormalization scale is assumed to be equal to the factorization scale. So, central value + two extreme 
+values = three values. Stated explicitly in the text, and made it less ambiguous. 
+
+Q:
+27) L949: could you please explain what this sentence mean? Does it mean that you do not subtract 
+the DY contribution from under the Z-peak? Why not? Easy to do via the sideband method...
+A:
+The gamma* contribution can't be subtracted using sidebands because of the interference and because 
+of the very large tails of the Breit-Wigner. Our measurement includes this contribution, 
+as well as the theoretical predictions we are comparing with. 
+
+Q:
+28) LL953-954 and LL958-959: naturally, the lepton ID efficiency is 100% correlated between the 
+channels that deal with the same final state flavor lepton. Why this correlation has not been 
+taken into account in the combination. How big of an effect could this have?
+A:
+The combination is done for different lepton flavours, as clearly written in the text: "The two 
+different decay channels are combined by assuming fully correlated uncertainty for the acceptance 
+factor, with other uncertainties assumed uncorrelated." 
+
+Q:
+29) L966: here you also need to state the 1.44-1.57 |eta| gap for the electrons. 
+Ditto for the top entry in the last column of Table 19.
+A:
+No. Here we multiply the total cross sections with acceptances defined exactly as it is written. 
+In this calculation the gaps are not excluded. Same for Table 19. 
+
+Q:
+3) The CMS Detector, L58: add a comma before "and"; L59: delete "(HCAL)" here: first of all you 
+don't use the acronym anymore; second, HCAL includes HF, which is not brass/scintillator.
+A:
+We actually use HCAL in the following...(e.g.. HCAL isolation, I_HCAL)
+
+
+Best regards,
+Georgios and Luca

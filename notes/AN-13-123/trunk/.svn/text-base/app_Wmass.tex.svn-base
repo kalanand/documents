@@ -1,0 +1,67 @@
+\section{ $W \rightarrow l\nu$ Mass Reconstruction} 
+\label{App:Pzneutrino}
+
+In order to reconstruct the Leptonic W system, we must reconstruct the longitudinal component of the
+neutrino momentum $p_z$. If one constrains the mass of the $W$,  the 
+resulting quadratic equation can be solved for $p_z$. In the case of complex 
+solutions, one assigns $p_z$ to the real part. With the neutrino 
+four-momentum now fully specified, one reconstructs the mass of the $W$.
+%In addition, a variety of 
+%other kinematic variables may be obtained with good resolution.
+
+%$$ {p_{W'}} = p_l + p_{\nu} + p_{j1}+ p_{j2} $$
+%$$  p_{\nu} = - {p_{W'}} + p_l  + p_{j1}+ p_{j2} $$
+%$$  M_{\nu}^2 =  {M_{W'}}^2+ ( p_l  + p_{j1}+ p_{j2})^2 + 2~{p}_{W'}\cdot({p}_{\ell}+{p}_{j1}+{p}_{j2})$$
+%$$  {M_{W'}^2 + 2~\vec{p}_{W'}\cdot({p}_\ell+{p}_{j1}+{p}_{j2}) + ( p_{\ell}  + %p_{j1}+ p_{j2})^2 = 0$$
+%$$  {M_{W'}}^2 + 2~(M_{W'},0)\cdot( E_\ell  + E_{j1}+ E_{j2}, \vec{p}_{\ell}+\vec{p}_{j1}+\vec{p}_{j1})+ ( p_{\ell} + p_{j1}+ p_{j2})^2 = 0$$
+%$$  {M_{W'}}^2 + 2~M_{W'} E_{\ell j1 j2}^{W_{cm}}+ M_{\ell j1j2}^2 = 0$$
+
+We begin by requiring the lepton and neutrino form a W.
+$$ {p_{W}^{\mu}} = p_l{^\mu} + p_{\nu}^{\mu} $$
+
+Resolving the lepton and neutrino momentum into transverse and longitudinal components, we obtain 
+the W mass to be
+
+$$ m_W^2 = m_l^2 + 2E_{\ell} E_{\nu} -2 \vec{p}_{T\ell} \cdot \vec{p}_{T\nu} -2{p}_{z\ell}{p}_{z\nu} $$
+$$ m_W^2 = m_l^2 + 2E_{\ell} \sqrt{E_{T\nu}^2 + p_{z\nu}^2} -2\vec{p}_{T\ell} \cdot \vec{p}_{T\nu} -2{p}_{z\ell}{p}_{z\nu} $$
+$$ m_W^2 - m_l^2 + 2{p}_{T\ell} \cdot {p}_{T\nu} +2{p}_{z\ell}{p}_{z\nu} = 2E_{\ell} \sqrt{E_{T\nu}^2 + p_{z\nu}^2} $$
+
+After re-arranging terms
+$$ {\rm let} ~ a = m_W^2 - m_{\ell}^2 + 2{p}_{T\ell} \cdot {p}_{T\nu}, $$
+$$ a^2 +4a{p}_{z\ell}{p}_{z\nu} +4{p}_{z\ell}^2{p}_{z\nu}^2  = 4E_{\ell}^2(E_{T\nu}^2 + p_{z\nu}^2)$$
+
+So that we obtain a quadratic equation in $p_{z\nu}$
+$$ (4E_{\ell}^2 - 4{p}_{z\ell}^2) {p}_{z\nu}^2 - 4a{p}_{z\ell}{p}_{z\nu} +4E_{\ell}^2E_{T\nu}^2-a^2 =0$$
+
+%\begin{figure}[ht]
+%\centerline{
+%\includegraphics[width=.60\textwidth]{Figures/muons/LepWmassNoPt.pdf}
+%}
+%\caption{ $W$ invariant mass reconstructed using the selected muon and the neutrino candidate.
+%In the case of complex solutions, the transverse momentum of the neutrino is assumed to equal
+%to the MET.}
+%\label{fig_LepW_nopT}
+%\end{figure}
+
+
+We can have real and complex solutions. In the case of real solutions, we the neutrino $p_{z}$ solution which is closer to lepton $p_{z}$. In the case of complex solutions, we take
+the real part as the solution for the neutrino $p_z$. This is the same
+as requesting the discriminator of the quadratic equation on $p_z$ to be zero.
+If we force the discriminator to zero, we have a second quadratic equation
+to solve on the neutrino $p_T$. Again, we have two solutions that are kept.
+We select the solution on the neutrino $p_T$ which gives the closest $W$ mass.
+%Figure~\ref{fig_LepW_nopT} shows the $W$ mass reconstructed in the case when
+%the $p_T$ of the neutrino is taken to be equal to the MET. 
+%Figure~\ref{fig:lepwmass}
+%shows the $W$ mass in the case the $p_T$ of the neutrino is recalculated for
+%complex solutions.
+
+Requiring discriminator to be zero
+$$ 16a^2{p}_{z\ell}^2 - 4(4{p}_{z\ell}^2 -4{E}_{\ell}^2)(a^2 - 4{E}_{\ell}^2{p}_{T\nu}^2) = 0 $$
+$$ {\rm let}~ \alpha = p_{x\ell}\frac{MET_x}{MET} + p_{y\ell}\frac{MET_y}{MET},$$
+$$ {\rm and}~ \Delta = m_W^2 - m_{\ell}^2,$$
+thus we obtain a second quadratic equation to be solved for $p_{T\nu}$,
+$$ (4{p}_{z\ell}^2 -4E_{\ell}^2+4\alpha^2){p}_{T\nu}^2 + 4\alpha \Delta {p}_{T\nu} +\Delta^2 = 0 $$
+
+  
+\newpage

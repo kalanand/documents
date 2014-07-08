@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Instructions to access this from scratch
+#     svn co -N svn+ssh://svn.cern.ch/reps/tdr2 myDir
+#     cd myDir
+#     svn update utils
+#     svn update -N notes
+#     svn update notes/AN-11-110
+
+# Working with this:
+#     cd myDir/notes/AN-11-110/trunk
+#     MAKENOTE (edit the template, then to build the document)
+
+eval `../../tdr runtime -sh`
+
+tdr --style=an --draft b AN-11-110
+
+# mv ../../tmp/AN-11-110_temp.pdf .
+
+# You can commit your changes with
+# svn commit -m "commit message"

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+this_note=EWK-10-002
+
+pdffile=../../tmp/${this_note}_temp.pdf
+acroread ${pdffile} &

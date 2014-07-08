@@ -1,0 +1,51 @@
+\section{Analysis exploiting a fit to the four-body mass shape}
+\label{sec:fitShapeAnalysis}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+\subsection{Analysis strategy}
+
+Within the preselections described in Section~\ref{sec:firstStep}, 
+the invariant mass spectrum of the four-body mass system is looked at,
+as the place where the Higgs resonance is expected.
+The two jets with the highest tranverse mometum are chosen as the candidates of the $W$ decay,
+and only events where they are compatible with the $W$ mass are selected
+(65~GeV~<~$m_{jj}$~<~95~GeV).
+To further enhance the signal over background ratio, 
+the events are required to have the lepton in the barrel ($|\eta|<2.1$),
+and the two jets to be closer than 1.5 in $\eta$.
+
+For each mass hypothesis, 
+the limit on the Standard Model Higgs cross section is obtained
+by fitting the four-body-mass shape with the background only
+hypothesis and with the signal plus background hypothesis
+within the CMS Combination Tool.
+The background only hypothesis is parametrized with the sum of two exponentials,
+multiplied by a turn-on curve:
+\begin{equation}
+  f(x)~=~\frac{1}{e^{-(x-\mu)/kT} + 1}\cdot{}e^{N}\cdot{}\exp^{-\lambda_1{}x}\cdot{}e^{-\lambda_2{}x}~,
+\end{equation}
+where $N$, $\lambda_1$ and $\lambda_2$ are free to float in the fit, 
+and the parameters of the turn-on ($\mu$, $kT$) have been fixed to the value 
+obtained with a free fit on a $m_{jj}$ sideband.
+
+The signal hypothesis is described with a fit on the Monte Carlo shape, 
+performed for each mass hypothesis independently.
+%FIXME list of functions and parameters for each mass
+Figure~\ref{fig:signalFit} shows this fit for the hypothesis with $m_H~=~400$~GeV.
+%
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics[width=0.45\textwidth]{plots/}
+    \caption{The distribution of the four-body mass for the signal with $m_H~=~400$~GeV, 
+            with the fit superimposed.}
+    \label{fig:signalFit}
+  \end{center}
+\end{figure}
+%
+
+
+
+/plots/2012_FIRST/limit.pdf
+
+
+

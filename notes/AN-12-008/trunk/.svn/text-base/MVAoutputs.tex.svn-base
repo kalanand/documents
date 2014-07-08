@@ -1,0 +1,253 @@
+
+The classifier outputs after MVA training for the linear discriminant, 
+likelihood, and boosted decision tree 
+are shown in Figs~\ref{fig:outputs1702jmu}--\ref{fig:outputs6003jmu}
+for various Higgs mass points and jet multiplicities.
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 170~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_170_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_170_nJ2_mu_mva_Likelihood}	
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_170_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs1702jmu}Output of the multivariate discriminant for SM Higgs mass of 170~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 170~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_170_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_170_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_170_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs1703jmu}Output of the multivariate discriminant for SM Higgs mass of 170~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 180~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_180_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_180_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_180_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs1802jmu}Output of the multivariate discriminant for SM Higgs mass of 180~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 180~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_180_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_180_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_180_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs1803jmu}Output of the multivariate discriminant for SM Higgs mass of 180~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 190~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_190_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_190_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_190_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs1902jmu}Output of the multivariate discriminant for SM Higgs mass of 190~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 190~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_190_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_190_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_190_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs1903jmu}Output of the multivariate discriminant for SM Higgs mass of 190~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 200~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_200_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_200_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_200_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs2002jmu}Output of the multivariate discriminant for SM Higgs mass of 200~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 200~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_200_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_200_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_200_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs2003jmu}Output of the multivariate discriminant for SM Higgs mass of 200~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 250~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_250_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_250_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_250_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs2502jmu}Output of the multivariate discriminant for SM Higgs mass of 250~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 250~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_250_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_250_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_250_nJ3_mu_mva_BDT}
+  \caption{\label{fig:outputs2503jmu}Output of the multivariate discriminant for SM Higgs mass of 250~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 300~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_300_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_300_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_300_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs3002jmu}Output of the multivariate discriminant for SM Higgs mass of 300~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 300~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_300_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_300_nJ3_mu_mva_Likelihood}	
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_300_nJ3_mu_mva_BDT}
+  \caption{\label{fig:outputs3003jmu}Output of the multivariate discriminant for SM Higgs mass of 300~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 350~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_350_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_350_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_350_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs3502jmu}Output of the multivariate discriminant for SM Higgs mass of 350~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 350~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_350_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_350_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_350_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs3503jmu}Output of the multivariate discriminant for SM Higgs mass of 350~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 400~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_400_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_400_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_400_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs4002jmu}Output of the multivariate discriminant for SM Higgs mass of 400~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 400~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_400_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_400_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_400_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs4003jmu}Output of the multivariate discriminant for SM Higgs mass of 400~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 450~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_450_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_450_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_450_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs4502jmu}Output of the multivariate discriminant for SM Higgs mass of 450~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 450~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_450_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_450_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_450_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs4503jmu}Output of the multivariate discriminant for SM Higgs mass of 450~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 500~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_500_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_500_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_500_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs5002jmu}Output of the multivariate discriminant for SM Higgs mass of 500~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 500~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_500_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_500_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_500_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs5003jmu}Output of the multivariate discriminant for SM Higgs mass of 500~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 550~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_550_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_550_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_550_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs5502jmu}Output of the multivariate discriminant for SM Higgs mass of 550~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 550~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_550_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_550_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_550_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs5503jmu}Output of the multivariate discriminant for SM Higgs mass of 550~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 600~GeV, 2 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_600_nJ2_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_600_nJ2_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_600_nJ2_mu_mva_BDT}	
+  \caption{\label{fig:outputs6002jmu}Output of the multivariate discriminant for SM Higgs mass of 600~GeV for the 2-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+\subsection{MVA outputs: \texorpdfstring{$M_H$}{M(H)} = 600~GeV, 3 jets}
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_600_nJ3_mu_mva_LD}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_600_nJ3_mu_mva_Likelihood}
+  \includegraphics[width=0.32\textwidth]{figs/TMVA_600_nJ3_mu_mva_BDT}	
+  \caption{\label{fig:outputs6003jmu}Output of the multivariate discriminant for SM Higgs mass of 600~GeV for the 3-jet $W\to\mu\nu$ category}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%

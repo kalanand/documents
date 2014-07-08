@@ -1,0 +1,103 @@
+
+In the present iteration of the analysis our goal is to 
+reconstruct either a linear discriminant or likelihood of 
+minimum number of uncorrelated variables necessary to 
+describe the event topology. 
+This is because the individual cuts are highly 
+inefficient. 
+To keep the analysis as simple as possible we have intentionally 
+not focused on exploiting the full potential of the 
+multivariate analysis because this would involve 
+inclusion of additional correlated variables.
+
+
+
+\subsection{Training and validation method}
+The Toolkit for Multivariate Data Analysis with ROOT 
+(TMVA)~\cite{tmva}
+is a toolkit to be implemented using ROOT that allows the user 
+to carry out a significant number of multivariate analysis 
+techniques such as boosted decision trees, neural networks, 
+projected likelihood estimators and linear discriminants.
+
+Using TMVA to implement the majority of these techniques 
+consists of two phases: the Training Phase and the Testing Phase. 
+To begin the Training Phase, the user must have samples where 
+it is known which events are to be classified as signal and which 
+are to be classified as background. 
+Using this information, TMVA is trained to separate these classes 
+as efficiently as possible. 
+Next, the Testing Phase simply stands to implement the trained 
+method of separation on a dataset where it is unknown which 
+events are to be classified as signal or background. 
+
+In the present analysis we try three classifiers to separate 
+Higgs signal from the background: linear discriminant (LD),
+likelihood, and boosted decision tree (BDT).
+We have tried to use a complete set of minimum number of 
+input variables necessary to describe the whole event topology, 
+as will be described in detail in the next section.
+
+
+The TMVA has some knobs to optimize the
+performance of various classifiers, but we didn't tune these knobs. 
+In the region of interest to us (90--95\% background
+rejection points) the likelihood and BDT classifiers have almost 
+identical performance. 
+This is expected because the input variables are mostly uncorrelated, 
+and there are no large correlations to be exploited.
+
+We have also seen in the previous iterations of training that
+with inclusion of additional (correlated) variables the BDT
+performs better than likelihood. However, some of these
+variables were correlated with the 4-body mass ($m_{WW} = m_{\ell\nu jj}$), 
+so we decided to trim down to the minimum possible complete
+set comprising of 10 variables. 
+
+
+\subsection{Training and validation samples}
+We perform a two-component multivariate analysis (MVA) to 
+separate the Higgs signal from the dominant W+jets background.
+We used the Fall11 MC samples for both Higgs signal and the 
+W+jets background, as listed in Table~\ref{tab:MCsamples}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[htb]
+  \begin{center}
+    \begin{tabular}{l|l} 
+      \hline
+       Category & Sample name\\
+      \hline
+      Background & {\footnotesize /WJetsToLNu\_TuneZ2\_7TeV-madgraph-tauola/Fall11-PU\_S6\_START42\_V14B-v1/AODSIM}  \\
+      \hline
+      Signal &  {\footnotesize /GluGluToHToWWToLNuQQ\_M-*\_7TeV-powheg-pythia6/Fall11-PU\_S6\_START42\_}\\
+       &  {\footnotesize V14B-v1/AODSIM} (with Higgs mass from 170 to 600~GeV) \\
+      \hline
+    \end{tabular}
+  \end{center}
+  \caption{Summary of Monte Carlo training and testing samples used in the analysis. 
+    We use 50\% of the events in each category for training and the other 50\% for testing/validation.}
+  \label{tab:MCsamples}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Training method}
+We train the MVA separately for the following 12 Higgs mass 
+points: 170, 180, 190, 200, 250, 300, 350, 400, 450, 500, 550, and 600~GeV.
+Exactly 50\% of the events in each category are used for training 
+the classifier and the other 50\% are used for testing/validation.
+We train separately the events with two jets 
+and three jets in the final state, because the background composition 
+and kinematics are different for the two categories.
+We also train separately for the two lepton species, \textit{i.e.}, 
+muons and electrons.
+In the following sections we will show the plots for muon channel 
+only because the corresponding plots for the electron channel are 
+very similar.
+
+
+\subsection{Selection cuts}
+Selection cuts are identical to the pre-selection described in 
+CMS AN-2011/110. These include requirements on lepton ID, loose 
+jet ID, second lepton veto in the event, and minimum missing transverse 
+energy (25 GeV for muon and 35 GeV for electron events). 
+

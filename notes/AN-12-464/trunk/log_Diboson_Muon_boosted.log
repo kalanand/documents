@@ -1,0 +1,97 @@
+\begin{verbatim}
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=-12143.8 FROM HESSE     STATUS=OK             46 CALLS         376 TOTAL
+                     EDM=2.27599e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  WpJ_nrm      1.00930e+00   7.97086e-02   1.21296e-04  -4.68070e-01
+   2  c_WpJ_GroomedJet_CA8_mass_pr  -5.06030e-02   1.74516e-02   2.18775e-04   1.55088e-02
+   3  diboson_nrm   1.98600e+00   1.02922e+00   1.22911e-03  -9.61494e-02
+   4  offset_WpJ_GroomedJet_CA8_mass_pr   7.93100e+01   2.09372e+01   2.07626e-04   5.38753e-01
+   5  top_nrm      9.96788e-01   8.00468e-02   8.77021e-05  -4.73174e-01
+   6  width_WpJ_GroomedJet_CA8_mass_pr   3.14190e+01   9.08398e+00   5.00000e-01   1.57070e+00
+                                 WARNING -   - ABOVE PARAMETER IS AT LIMIT.
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  48    NPAR=  6    ERR DEF=0.5
+  6.356e-03 -1.211e-03 -8.089e-02  1.344e+00  2.842e-05 -7.654e-05 
+ -1.211e-03  2.860e-04  1.638e-02 -3.160e-01 -9.091e-05  1.875e-05 
+ -8.089e-02  1.638e-02  1.113e+00 -1.817e+01 -1.074e-02  1.035e-03 
+  1.344e+00 -3.160e-01 -1.817e+01  3.511e+02  9.171e-02 -2.112e-02 
+  2.842e-05 -9.091e-05 -1.074e-02  9.171e-02  6.410e-03 -5.127e-06 
+ -7.654e-05  1.875e-05  1.035e-03 -2.112e-02 -5.127e-06  1.369e-06 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6
+        1  0.96944   1.000 -0.898 -0.962  0.900  0.004 -0.821
+        2  0.99878  -0.898  1.000  0.918 -0.997 -0.067  0.948
+        3  0.97780  -0.962  0.918  1.000 -0.919 -0.127  0.838
+        4  0.99929   0.900 -0.997 -0.919  1.000  0.061 -0.964
+        5  0.47323   0.004 -0.067 -0.127  0.061  1.000 -0.055
+        6  0.98702  -0.821  0.948  0.838 -0.964 -0.055  1.000
+
+  RooFitResult: minimized FCN value: -12143.8, estimated distance to minimum: 2.27599e-06
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MIGRAD=0 HESSE=0 
+
+    Floating Parameter    FinalValue +/-  Error   
+  --------------------  --------------------------
+               WpJ_nrm    1.0093e+00 +/-  7.97e-02
+  c_WpJ_GroomedJet_CA8_mass_pr   -5.0603e-02 +/-  1.75e-02
+           diboson_nrm    1.9860e+00 +/-  1.03e+00
+  offset_WpJ_GroomedJet_CA8_mass_pr    7.9310e+01 +/-  2.09e+01
+               top_nrm    9.9679e-01 +/-  8.00e-02
+  width_WpJ_GroomedJet_CA8_mass_pr    3.1419e+01 +/-  9.08e+00
+
+total expected: 4182
+data events: 4181
+plotting diboson ... events 486.56914039
+plotting top ... events 395.026978587
+plotting WpJ ... events 3299.93979496
+
+Contributions in the diboson signal region of 70.0 - 100.0 GeV :
+diboson integral in signal region: 0.757804763974
+diboson yield in the signal region: 368.72441259  +/-  191.086339255
+top integral in signal region: 0.631317102219
+top yield in the signal region: 249.38728742  +/-  20.0269873065
+WpJ integral in signal region: 0.40926713563
+WpJ yield in the signal region: 1350.55690763  +/-  106.659293219
+
+  RooFitResult: minimized FCN value: -12143.8, estimated distance to minimum: 2.27599e-06
+                covariance matrix quality: Full, accurate covariance matrix
+                Status : MIGRAD=0 HESSE=0 
+
+    Constant Parameter    Value     
+  --------------------  ------------
+  c_diboson_GroomedJet_CA8_mass_pr   -9.5107e-02
+  c_top_GroomedJet_CA8_mass_pr   -3.4242e-02
+  f_W_diboson_GroomedJet_CA8_mass_pr    5.1213e-01
+  f_Z_diboson_GroomedJet_CA8_mass_pr    1.4525e-01
+  f_top_GroomedJet_CA8_mass_pr_core    3.7754e-01
+  mean_diboson_GroomedJet_CA8_mass_pr_W    8.3501e+01
+  mean_top_GroomedJet_CA8_mass_pr_core    8.5049e+01
+                 n_WpJ    3.2695e+03
+             n_diboson    2.4500e+02
+                 n_top    3.9630e+02
+  offset_diboson_GroomedJet_CA8_mass_pr    1.1131e+02
+  offset_top_GroomedJet_CA8_mass_pr    6.9281e+01
+  resolution_diboson_GroomedJet_CA8_mass_pr    9.4147e-02
+  sigma_top_GroomedJet_CA8_mass_pr_core    8.0449e+00
+  wider_top_GroomedJet_CA8_mass_pr    4.5590e+00
+  width_diboson_GroomedJet_CA8_mass_pr    2.9477e+01
+  width_top_GroomedJet_CA8_mass_pr    1.8115e+01
+
+    Floating Parameter  InitialValue    FinalValue +/-  Error     GblCorr.
+  --------------------  ------------  --------------------------  --------
+               WpJ_nrm    1.0000e+00    1.0093e+00 +/-  7.97e-02  <none>
+  c_WpJ_GroomedJet_CA8_mass_pr   -5.0783e-02   -5.0603e-02 +/-  1.75e-02  <none>
+           diboson_nrm    1.0000e+00    1.9860e+00 +/-  1.03e+00  <none>
+  offset_WpJ_GroomedJet_CA8_mass_pr    7.3115e+01    7.9310e+01 +/-  2.09e+01  <none>
+               top_nrm    1.0000e+00    9.9679e-01 +/-  8.00e-02  <none>
+  width_WpJ_GroomedJet_CA8_mass_pr    2.6660e+01    3.1419e+01 +/-  9.08e+00  <none>
+
+chi2: 3.27 / 6 = 0.54
+chi2 probability: 0.7746
+2*nll_null - 2*nll: -24274.0272 - -24287.6035 = 13.5763
+p-value: 0.0002291
+Gaussian significance: 3.5
+
+\end{verbatim}

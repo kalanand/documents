@@ -1,0 +1,109 @@
+#define NMAX 100
+
+void draw(TChain* , TChain*, TString);
+const float normal = 1000;
+
+void MakePlots(int mass)
+{
+	TString f7name="../higgs2D/h7TeV_2D_";
+	f7name+=mass;
+	TString f8name="../higgs2D/h8TeV_2D_";	
+	f8name+=mass;
+
+	TChain * C7 = new TChain("ExTree");
+	TChain * C8 = new TChain("ExTree");
+	C7->Add(f7name+".root");
+	C8->Add(f8name+".root");
+
+	TString rationame="../ratio/ratio_";
+	rationame+=mass;
+	TFile *fratio= new TFile(rationame+".root");
+	TH2F * hRatio = (TH2F*)fratio->Get("hRatio");
+
+	//-------------------------------event weight-----------------------------
+	double eventw;
+	double hpt[NMAX];
+	double heta[NMAX];
+	C7->SetBranchAddress("hpt",&hpt);
+	C7->SetBranchAddress("heta",&heta);
+	TBranch * br = C7->Branch("eventw",&eventw,"eventw/D");
+	for(int i =0; i< C7->GetEntries(); i++)
+	{   
+		C7->GetEntry(i);
+		int bin = hRatio->FindBin(heta[0],hpt[0]);
+		eventw=hRatio->GetBinContent(bin);
+		//cout<<eventw<<endl;
+		br->Fill();
+	}  
+	//C7->Write("",TObject::kOverwrite);
+
+	draw(C7,C8,"hpt");
+	draw(C7,C8,"heta");
+	draw(C7,C8,"hmass");
+	//draw(C7,C8,"elept");
+	//draw(C7,C8,"eleeta");
+}
+
+void draw(TChain* C7 , TChain* C8, TString branch)
+{
+
+	const float entries7= (float)C7->GetEntries();
+	const float entries8= (float)C8->GetEntries();
+	TCanvas *c1 = new TCanvas();
+
+	if(branch.Contains("pt"))
+	{
+		TH1F * h7 = new TH1F("h7","h7",20,0,200);//same binning with before
+		TH1F * h8 = new TH1F("h8","h8",20,0,200);
+		h7->Sumw2();
+		h8->Sumw2();
+	}
+
+	if(branch.Contains("eta"))
+	{   
+		TH1F * h7 = new TH1F("h7","h7",20,-5,5);//same binning with before
+		TH1F * h8 = new TH1F("h8","h8",20,-5,5);
+		h7->Sumw2();
+		h8->Sumw2();
+	}   
+
+	if(branch.Contains("mass"))
+	{   
+		TH1F * h7 = new TH1F("h7","h7",300,172,188);
+		TH1F * h8 = new TH1F("h8","h8",300,172,188);
+
+	}   
+
+	//-------------------------------before reweight------------------------------
+	C7->Draw(branch+">>h7",Form("%f",normal/entries7));
+	C8->Draw(branch+">>h8",Form("%f",normal/entries8));
+
+	h7->SetLineColor(kBlue);
+	h8->SetLineColor(kRed);
+
+	h7->SetStats(0);
+	h7->SetTitle(branch+" befor reweight");
+	h7->Draw();
+	h8->Draw("same");
+	TLegend *my =new TLegend(0.7,0.9,1.0,1.0,NULL,"brNDC");
+	my->SetTextSize(0.05);
+	my->AddEntry(h7,"7TeV MH=180","l");
+	my->AddEntry(h8,"8TeV MH=180","l");
+	my->Draw();
+	c1->Print(branch+"_nw.png","png");
+
+
+	//------------------------------after reweight------------------------------
+	C7->Draw(branch+">>h7",Form("%f*eventw",normal/entries7));
+	h7->SetTitle(branch+" after reweight");
+	h7->Draw();
+	h8->Draw("same");
+	my->Draw();
+	c1->Print(branch+".png","png");
+
+	delete c1;
+	delete h7;
+	delete h8;
+
+
+}

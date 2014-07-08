@@ -1,0 +1,85 @@
+\section{Statistical Model}
+  \label{appStatModel}
+  \subsection{Introduction}
+  In this note we attempt to describe the precise mathematical procedure to treat the systematic uncertainties in the search for dijet resonances, within the context of the Bayesian formalism. First we define the parameters that will be used. Then we write the likelihood function in terms of the quantity of interest and the nuisance parameters. Finally we provide the prior pdfs for the latter.  
+  \subsection{Definitions}
+    \begin{itemize}
+     \item $m$: the observed dijet mass.
+     \item $M^*$: the theoretical resonance mass.
+     \item $m_0$: the peak position of the resonance shape pdf.
+     \item $m_{l,k},m_{h,k}$: low and high mass bin boundaries.
+     \item $\alpha$: the signal strength.
+     \item $\mathcal{L}$: the integrated luminosity nuisance parameter.
+     \item $\mathcal{L}_0$: the best estimate of the integrated luminosity.
+     \item $L$: the likelihood function.
+     \item $L^\prime$: the marginalized likelihood function (after integrating the nuisance parameters).
+     \item $\Delta_m$: the nuisance parameter related to the jet energy scale.
+     \item $\Delta_\sigma$: the nuisance parameter related to the jet energy resolution.
+     \item $\mathcal{S}^\prime$: the resonance shape pdf as a function of the observed mass. 
+     \item $\mathcal{S}$: the resonance shape pdf as a function of the true mass.  
+     \item $\mathcal{B}$: the nuisance parameter $\frac{1}{\mathcal{L}_0}\frac{dN}{dm}$.
+     \item $\mathcal{B}_0$: the best fit of $\frac{1}{\mathcal{L}_0}\frac{dN}{dm}$.
+     \item $N_k(S)$: the number of signal events in the k bin.
+     \item $N_k(B)$: the number of background events in the k bin.
+     \item $f_\mathcal{L}$: the fractional uncertainty for the luminosity.
+     \item $f_m$: the fractional uncertainty for the jet energy scale.
+     \item $f_\sigma$: the fractional uncertainty for the jet energy resolution.
+     \item $f_\mathcal{B}(m)$: the fractional uncertainty for the background (mass dependent).
+    \end{itemize}
+
+  \subsection{Likelihood Function}
+    We define the binned likelihood function as the product of the Poisson probabilities in each bin,
+    with $n_k$ observed events and $\mu_k$ expected events.
+    \begin{equation}
+      L(m|a,\vec{\Delta})=\prod_k{\frac{\mu_k(a,\vec{\Delta})^{n_k}{e^{-\mu_k(a,\vec{\Delta})}}}{n_k!}}
+    \end{equation}
+    The likelihood function is defined in terms of the variable of interest $a$ which is interpreted as
+    the cross-section of the resonance. In addition, the likelihood function depends on the nuisance
+    parameters $\vec{\Delta}=(\mathcal{L},\Delta_m,\Delta_\sigma,\mathcal{B})$. The parameters $a$ and $\vec{\Delta}$
+    enter through the mean number of events $\mu_k$:
+    \begin{equation}
+      \mu_k(a,\vec{\Delta})=N_k(S)+N_k(B)
+    \end{equation}
+    where the signal and background number of events are calculated by integrating the corresponding continuous functions across each mass bin:
+    \begin{eqnarray}
+      N_k(S) = \mathcal{L}\cdot a\cdot\int_{m_{l,k}}^{m_{h,k}}{\mathcal{S}^\prime(m,\Delta_m,\Delta_\sigma)\,dm}\\
+      N_k(B) = \mathcal{L}\cdot\int_{m_{l,k}}^{m_{h,k}}{\mathcal{B}(m)\,dm}  
+    \end{eqnarray}
+    The observed resonance shape is related to the true resonance shape through a mass variable transformation:
+    \begin{equation}
+      \mathcal{S}^\prime(m,\Delta_m,\Delta_\sigma) = \mathcal{S}\left(\Delta_m\cdot\left[\Delta_\sigma\cdot\left(m-m_0\right)+m_0\right]\right) 
+    \end{equation}
+    The motivation for this transformation is to perform a simultaneous shift in the position and the width of the resonance shape. 
+    Although this likelihood function may be refined in the future, we believe that is captures most of the essence of the measurement model, and it is a good starting point for implementing the model in RooStats, exercising the code and getting the first results to compare with our expectations.
+
+  \subsection{Marginalized Likelihood Function}
+    In order to set limits on the unknown parameter $a$, the likelihood function needs to be intergated over the nuisance parameters (marginalization). The integration is formally expressed as: 
+    \begin{equation}
+      L^\prime(m|a)=\int{L(m|a;\vec{\delta})\cdot\pi(\vec{\delta})\,d^4\vec{\delta}}
+    \end{equation}
+    where $\pi(\vec{\delta})$ is the pdf of the nuisance parameters. We assume that the pdf is factorizable (uncorrelated nusiance parameters) $\pi(\vec{\delta})=\pi(\Delta_m)\cdot\pi(\Delta_\sigma)\cdot\pi(\mathcal{B})\cdot\pi(\mathcal{L})$ and is described by a Gaussian distribution, with mean equal to zero and sigma equal to the corresponding uncertainty.
+
+    \subsubsection{Nuisance Parameters' Prior PDF}
+    The probability densities for the nuisance parameters are at present all defined in terms of a relative uncertainty corresponding to a standard deviation in the case of Gaussian pdf. In the first implementation, a truncated Gaussian pdf can be used, but eventually we should follow the Statistics Committee's recommendation to use lognormal or gamma distribution, defined according to the recipes described in \cite{bib:statistics}.
+    \begin{equation}
+      \pi(\mathcal{L},\mathcal{L}_0,f_\mathcal{L})\sim\exp{\left[-\frac{\left(\mathcal{L}-\mathcal{L}_0\right)^2}{2\cdot\left(f_\mathcal{L}\cdot\mathcal{L}_0\right)^2}\right]}
+    \end{equation}
+    \begin{equation}
+      \pi(\Delta_m,f_m)\sim\exp{\left[-\frac{\left(\Delta_m-1\right)^2}{2\cdot f_m^2}\right]}
+    \end{equation}
+    \begin{equation}
+      \pi(\Delta_\sigma,f_\sigma)\sim\exp{\left[-\frac{\left(\Delta_\sigma-1\right)^2}{2\cdot f_\sigma^2}\right]}
+    \end{equation}
+    \begin{equation}
+      \pi(\mathcal{B}(m),\mathcal{B}_0(m),f_\mathcal{B}(m))\sim\exp{\left[-\frac{\left(\mathcal{B}(m)-\mathcal{B}_0(m)\right)^2}{2\cdot\left(f_\mathcal{B}(m)\cdot\mathcal{B}_0(m)\right)^2}\right]}
+    \end{equation}
+  \subsection{Limit Setting}
+    The marginalized likelihood function can be combined with the prior pdf to obtain the posterior probability density for the parameter $a$:
+    \begin{equation}
+      p(a|m)=\frac{L^\prime(m|a)\cdot\pi(a)}{\int_0^{+\infty}{L^\prime(m|a)\cdot\pi(a)\,da}}
+    \end{equation}
+    We use a flat prior $\pi(a)=const.$ for the parameter $a$ and the $95\%$ credibility limit $a_0$ is defined as:
+    \begin{equation}
+      \int_0^{a_0}{p(a|m)\,da}=0.95\cdot\int_0^{+\infty}{p(a|m)\,da}
+    \end{equation}
+

@@ -1,0 +1,36 @@
+\par
+The efficiencies for lepton reconstruction, identification,
+isolation and trigger efficiencies are obtained from data.
+Correction factors are the ratios of efficiencies extracted from data and simulations 
+($\rho = {\epsilon_{\mathrm{data}}}/{\epsilon_{\mathrm{MC}}}$) 
+with a tag-and-probe method exercised on $\Zll$ samples in both data and simulation.
+%This procedure adequately removes any systematic uncertainties coming from imperfections in
+%the simulation, even though the kinematic distributions
+%of leptons in the $\Zll$ sample differ slightly from those
+%in the selected $\Wln$ sample.
+The tag-and-probe sample for the measurement of a given efficiency
+contains events selected with two lepton candidates.
+One lepton candidate, called the ``tag,'' satisfies
+tight identification and isolation requirements. The other
+lepton candidate, called the ``probe,'' is selected with
+criteria that depend on the efficiency being measured.
+The invariant mass of the tag and probe lepton candidates
+must fall in the range $60$--$120~\GeV$.
+%The signal yields are obtained for two exclusive subsamples of events
+%in which the probe lepton passes or fails the selection criteria considered.
+%Fits are performed to the invariant-mass distributions
+%of the pass and fail subsamples, including a term that
+%accounts for the background.
+%The measured efficiency is
+%deduced from the relative level of signal in the pass and fail subsamples;
+%its uncertainty includes a systematic contribution from the fitting
+%procedure.
+%\par
+%The correction factors are obtained as
+%ratios of tag-and-probe efficiencies for
+%the data and for the simulation.  They are used to compute
+%the signal selection efficiency ratios $\RHO{}$, and
+%their uncertainties are  propagated as systematic uncertainties
+%on these quantities,
+%except in the $\Zmm$ analysis, for which the efficiencies and yields
+%are determined simultaneously.

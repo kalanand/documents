@@ -1,0 +1,79 @@
+\section{Introduction}
+This note describes the measurement in pp collisions at
+$\sqrt{s} = 7~\TeV$ of the inclusive production cross section for W
+and Z bosons, observed via their decay to electrons and muons, and
+additionally presents selected cross section ratios.
+
+%The production of W and Z bosons decaying to
+%charged leptons is an important process to measure at the LHC, for several
+%reasons: it is simultaneously a benchmark for lepton
+%reconstruction and identification to be used in future analyses, a
+%precision test of perturbative QCD and the parton distribution
+%functions of the proton (PDFs), a possible estimator of integrated
+%luminosity for proton collisions~\cite{Dittmar:1997md}.  
+%At the LHC, QCD predictions, in next-to-next-to leading order (NNLO) in the strong
+%coupling $\alpha_{\mathrm{S}}$, exist for the matrix elements
+%describing inclusive W and Z production.  When combined with
+%recent NNLO PDFs, the cross section is predicted with a few percent
+%uncertainty~\cite{Martin:2009iq,Martin:2009bu}. 
+%The ratio of inclusive cross sections for Ws and Zs, $R_{\mathrm{WZ}}$, and
+%the ratio of cross sections for  W$^+$ and W$^-$, $R_{+-}$, are also
+%precisely predicted at the same level of accuracy, but do not suffer
+%from experimental uncertainties in proton collision luminosity, which
+%cancel, along with other uncertainties.
+
+W and the Z production cross sections have been 
+previously measured by ATLAS~\cite{WZATLAS:2010} with
+an integrated luminosity of 320~nb$^{-1}$ and by 
+CMS~\cite{WZCMS:2010} with an integrated luminosity of 2.9~pb$^{-1}$. 
+We present here an update with the full luminosity recorded at the LHC 
+in 2010 corresponding to 36~pb$^{-1}$.
+
+%A detailed description of CMS and its performance can be found in 
+%Ref.~\cite{JINST}. 
+%The systematic uncertainty on the luminosity is currently
+%11\%~\cite{lumiPAS}.
+%
+%For W measurements, the missing transverse energy in the event, $\MET$
+%is measured using the particle flow method~\cite{PFMET}.
+%
+%Several samples of simulated events are used to evaluate signal
+%and background efficiencies and to validate our analysis techniques.
+%Samples of electroweak processes with Z and W~production, both for
+%signal and background events, are produced with POWHEG~\cite{Alioli:2008gx, Nason:2004rx, Frixione:2007vw}
+%interfaced with the PYTHIA~\cite{Sjostrand:2006za} parton-shower generator using the tune Z2. 
+%QCD events with muons, electrons or jets likely to fake electrons in the
+%final state are studied with PYTHIA, as well as other minor
+%backgrounds in the analysis, like $\ttbar$.  Generated events are
+%processed through the full GEANT4~\cite{GEANT4} detector simulation,
+%trigger emulation and event reconstruction chain of the CMS
+%experiment.
+
+%Several samples of simulated events were used to evaluate signal
+%and background efficiencies and to validate the analysis techniques.
+%Samples of electroweak processes with Z and W~production, both for
+%signal and background events, are produced with POWHEG~\cite{Alioli:2008gx, Nason:2004rx, Frixione:2007vw}
+%interfaced with the PYTHIA~\cite{Sjostrand:2006za} parton-shower generator.
+%QCD events with muons, electrons or jets likely to fake electrons in the
+%final state are studied with PYTHIA, as well as other minor
+%backgrounds in the analysis, like $\ttbar$.  Generated events are
+%processed through the full GEANT4~\cite{GEANT4} detector simulation,
+%trigger emulation and event reconstruction chain of the CMS experiment.
+
+
+% The note is organized as follows. 
+% Section~\ref{sec:leptonId} 
+% describes the baseline lepton identification criteria, whereas 
+% section~\ref{sec:evtSel} and~\ref{sec:Zmumu} present the relevant
+% details of the analysis and signal extraction strategies used to measure
+% the $\Wmn$ and $\Zmm$ yields. Section~\ref{sec:muonEff} contains
+% a description of the studies carried out to determine the muon efficiencies
+% relative to Monte Carlo that enter in the measurements, as well as their
+% estimated uncertainty. Sections~\ref{sec:electronId}, \ref{sec:Wenu}, 
+% \ref{sec:Zee} and \ref{sec:electronEff} are the corresponding sections 
+% for the electron channels. Section~\ref{sec:systematics} 
+% discusses the systematic uncertainties for the
+% cross sections and ratios, and the final results are 
+% reported in Section~\ref{sec:results}.
+% A brief conclusion is reported at the end of the note.
+

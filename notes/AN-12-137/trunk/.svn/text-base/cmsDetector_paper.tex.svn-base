@@ -1,0 +1,45 @@
+
+\label{sec:cms_detector}
+
+
+The CMS detector~\cite{:2008zzk}
+is a general-purpose device, however it has
+many features particularly suited for reconstruction of 
+energetic jets,specifically, the finely segmented electromagnetic
+and hadronic calorimeters, and the charged particle tracking.
+The charged particles are reconstructed by the inner tracker,
+immersed in a $3.8$~T axial magnetic field; the inner tracker consists
+of three layers and two endcap disks of pixel sensors, and ten
+barrel layers and twelve endcap disks of silicon strips.  This
+arrangement results
+in a full azimuthal coverage within $|\eta| < 2.5$, where $\eta$
+is the pseudorapidity and is defined as $\eta = -\ln\tan(\theta/2)$.
+The CMS uses a polar coordinate system, with the 
+$z$ axis coinciding with the axis of symmetry of the CMS detector,
+and oriented in the counterclockwise proton direction; here $\theta$ 
+is the polar angle defined with respect to the positive $z$ axis.
+The pseudorapidity is an approximation for the full rapidity $y$, and
+the approximation is exact for massless particles. Since many of the
+particles we use are not massless, we use the full rapidity $y$ which
+is defined as $y = \frac{1}{2} \frac {E + p_{z}/c}{E - p_{z}/c}$.
+
+A lead-tungstate crystal electromagnetic calorimeter (ECAL) and 
+a brass-scintillator hadronic calorimeter (HCAL) surround the tracking
+volume and allow photon, electron and jet reconstruction up to $|\eta|=3$.
+The ECAL and HCAL cells are grouped into towers projecting radially 
+outward from the interaction region.  In the central region ($|\eta|<1.74$)
+the towers have dimensions $\Delta\eta = \Delta\phi = 0.087$; however,
+at higher $\eta$, the $\Delta\eta$ and $\Delta\phi$ widths increase.  
+ECAL and HCAL
+cell energies above the noise suppression thresholds are combined within
+each tower to define the calorimeter tower energy, and the towers are further
+combined into clusters, which are then identified as jets.  For an improved
+jet reconstruction, the tracking and calorimeter information is combined 
+in an algorithm called particle-flow~\cite{particleflow}, which is described below.
+
+Simulated samples of vector boson produced in association with jets and several backgrounds are produced using various event generators, wit the CMS detector response modeled with \GEANT4 \cite{}.
+The \MADGRAPH 4.4~\cite{} generator is used for the W+jets, Z+jets, and $t\bar{t}$ samples. In order to compare the shower hadronization in different generators, we also use $W$ and $Z$ + jet samples in which the shower hadronization is simulated with \HERWIG.  
+Di-boson samples are generated eith \PYTHIA 6.4~\cite{}. The single-top samples are produced with \POWHEG and the QCD multijet samples with PYTHIA. The default set of parton distribution functions (PDF) used	to produce these samples is CTEQ6L1 ~\cite{}. The \PYTHIA parameters for the underlying event are set to the Z2 tune~\cite{}.
+
+
+

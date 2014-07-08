@@ -1,0 +1,160 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 132031 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/notes/AN-12-193/tags/ichep2012_3p5fbinv/AN-12-193.tex $
+\RCS$Id: AN-12-193.tex 132031 2012-06-22 21:26:23Z dudero $
+
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{AN-12-193} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Search for the Standard Model Higgs boson in the $ H \rightarrow WW \rightarrow l\nu jj $ decay with 2012 data}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+\address[ttu]{Texas Tech University, Lubbock, Texas, USA}
+\address[fnal]{Fermi National Accelerator Laboratory, Batavia, Illinois, USA}
+\address[mib]{Milano-Bicocca University and INFN, Milan, Italy}
+\address[uva]{University of Virginia, Charlottesville, Virginia, USA}
+\address[wsu]{Wayne State University, Detroit, Michigan, USA}
+\address[tamu]{Texas A\&M University, College Station, Texas, USA}
+\address[del]{Delhi University, Delhi, India} 
+\address[nebr]{University of Nebraska at Lincoln, Nebraska, USA}
+\address[und]{University of Notre Dame, Notre Dame, Indiana, USA}
+\address[uerj]{Universidade do Estado do Rio de Janeiro (UERJ), Brazil}
+\address[ham]{University of Hamburg, Hamburg, Germany}
+\address[pku]{Peking University, China}
+\address[cern]{CERN}
+
+
+
+\author[ttu]{Nural~Akchurin}
+\author[fnal]{Jake~Anderson}
+\author[pku]{Chayanit~Asawatangtrakuldee} 
+\author[mib]{Andrea~Benaglia}
+\author[fnal]{Andrew Beretvas}
+\author[fnal]{Jeffrey~Berryhill} 
+\author[fnal]{Pushpa~Bhat} 
+\author[uva]{Sarah~Boutle}
+\author[wsu]{Chris~Clarke} 
+\author[mib]{Fabio~Colombo}
+\author[uerj]{Analu~Custodio}
+\author[ttu]{Jordan~Damgov}
+\author[mib]{Leonardo~Di~Matteo}
+\author[ttu]{Phil~Dudero}
+\author[tamu]{Ricardo~Eusebi} 
+\author[cern]{Pietro~Govoni}
+\author[fnal]{Dan~Green}
+\author[uva]{Joey~Goodell}
+\author[wsu]{Robert~Harr} 
+\author[nebr]{Pratima~Jindal}
+\author[del]{Ajay Kumar} 
+\author[ham]{Gordon~Kaussen}
+\author[wsu]{Kristina~Krylova}
+\author[und]{Kevin~Lannon} 
+\author[ttu]{Sung-Won~Lee}
+\author[pku]{Quiang~Li}
+\author[pku]{Shuai~Liu}
+\author[und]{Wuming~Luo} 
+\author[pku]{Yajun~Mao} 
+\author[wsu]{Kellen~McGee} 
+\author[fnal]{Kalanand~Mishra}
+\author[del]{Md.~Naimuddin} 
+\author[uva]{Chris~Neu}
+\author[tamu]{Ilya~Osipenkov}
+\author[tamu]{Alexx~Perloff} 
+\author[del]{Kirti~Ranjan} 
+\author[wsu]{Sasha~Sakharov}
+\author[del]{Ram K Shivpuri}
+\author[wsu]{Kevin~Siehl} 
+\author[uerj]{Andre~Sznajder}
+\author[fnal]{Nhan~V.~Tran}
+\author[pku]{Zijun~Xu} 
+\author[fnal]{Weimin Wu} 
+\author[uva]{John~Wood} 
+\author[fnal]{Fan~Yang}
+\author[fnal]{Francisco~Yumiceva} 
+\author[pku]{Wei~Zou} 
+
+% useful shortcuts
+%\renewcommand{\LUMI}{4.7~fb$^{-1}$} %THIS LATEX THING BY NOW DOES NOT WORK
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+\abstract{
+This note describes the search strategy for the Higgs boson 
+in the H$\to$WW$\to\ell\nu jj$ final state
+with the full statistics accumulated during the 2012 LHC run, 
+at the centre-of-mass energy of $\sqrt{s}=8\TeV$.}
+}
+
+\hypersetup{%
+pdfauthor={L. Di Matteo, P. Dudero},%
+pdftitle={Search for the Standard Model Higgs boson in the  H rightarrow WW rightarrow lnu jj  decay with 2012 data},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%s
+
+\tableofcontents
+\clearpage{}
+\input{intro.tex}               % motivations and brief description of the note  
+\input{MCexpectations.tex}      % description of backgrounds and expected cross-section from MC, for signal and background  
+\input{technicalities.tex}      % what samples and triggers have been used  
+\input{firstStep.tex}           % to be revised
+\input{dataMCcomparisons.tex}
+\clearpage{} 
+\input{efficiencies.tex}
+\input{kineFit.tex}             % to be revised          
+%% \input{firstLimitExtraction.tex}
+\clearpage{} % put all the plots until here in the paper
+\input{MVAoptimization.tex}           % optimization of the MVA discriminant
+\input{dataDrivenQCD.tex}             % description of the QCD DD technique
+\input{WjetsShape.tex}                % W+jets two-body mass shape
+\clearpage{} % put all the plots until here in the paper
+\input{WjetsBackground.tex}           % determination of the backgrounds contamination
+\input{systematics.tex}               % systematics on the signal
+\input{limitExtraction.tex}
+\input{conclusions.tex}           
+\clearpage{} % put all the plots until here in the paper
+\input{blinding.tex}           
+\input{controlPlotsAB.tex}           
+\input{sigefficiencies.tex}
+\clearpage{} % put all the plots until here in the paper
+
+
+% >> acknowledgements (for journal papers)
+% Please include the latest version from https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubAcknow.
+%\section*{Acknowledgements}
+% ack-text
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+\bibliography{auto_generated}   % will be created by the tdr script.
+
+%% examples of appendices. **DO NOT PUT \end{document} at the end
+%\clearpage

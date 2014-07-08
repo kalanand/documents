@@ -1,0 +1,162 @@
+\subsection{Event reconstruction}
+\label{evrecosection}
+
+\ifnpas
+All data are reconstructed using CMSSW 4.2.x.
+\fi
+\label{sec:preselection}
+\label{sec:reconstruction}
+As indicated above, events are reconstructed using the particle-flow 
+algorithm, which
+combines the information from all subdetectors to reconstruct
+the particle candidates
+in an event. 
+The algorithm categorizes particles into muons,
+electrons, photons, charged hadrons, and neutral hadrons. 
+The resulting PF candidates are passed through each jet clustering 
+algorithm of Section~\ref{sec:algos},  
+as implemented in FastJet (Version 3.0.1) \cite{fastjet1,fastjet2}.
+
+
+%An extra correction is applied to the data to account for a residual
+%nonlinearity that is not observed in the simulation. No pileup
+%corrections are applied. 
+%Charged hadrons identified as pileup are removed from the inputs to the jet %clustering algorithms.
+%The charged hadrons are classified as belonging to a 
+%pileup vertex when they are used to reconstruct a vertex that is not
+%the highest $\pt$ primary vertex. The primary vertices are
+%reconstructed with a deterministic annealing filter (DAF) technique from the tracks %in
+%the event. There are also quality criteria
+%placed on the primary vertex, in that it must contain at least four
+%degrees of freedom in the spatial fit (roughly corresponding to at least four
+%tracks), and satisfy $\chi^2 / ndof < 8$. It must also be within the
+%physical region of the pixel detector. 
+
+The reconstructed interaction vertex characterized by the largest value 
+of $\sum_i ({\pt}^{\mathrm{trk}}_i)^2$, where ${\pt}^{\mathrm{trk}}_i$ is the transverse momentum of the 
+$i^{\mathrm{th}}$ charged track associated with the vertex, is defined
+as the leading primary vertex (PV) of the event. 
+This vertex is used as the reference vertex for all PF objects in the event. 
+A pileup interaction can affect the reconstruction of 
+jet momenta and $\met$, as well as lepton isolation and b-tagging efficiency. 
+To mitigate these effects, a track-based algorithm is used to remove 
+all charged hadrons that are not consistent with originating from the
+leading PV. 
+
+Electron reconstruction requires the matching of an energy cluster in the 
+ECAL with a track extrapolated from the silicon 
+tracker~\cite{CMS-PAS-EGM-10-004}.  
+Identification criteria based on the energy distribution of showers in the 
+ECAL %the matching of tracks to ECAL clusters, 
+and consistency of tracks 
+with the primary vertex are imposed on electron candidates. 
+Additional requirements remove any electrons produced through
+conversions of photons in detector material. 
+The analysis considers electrons only in the range of $|\eta|<2.5$, 
+excluding the transition region $1.44<|\eta|<1.57$ between the central and endcap ECAL detectors 
+because of poorer resolution for electrons in this region.
+Muons are reconstructed using two algorithms~\cite{CMS-PAS-MUO-10-004}: 
+(i) in which tracks in the silicon tracker are matched to signals in 
+the muon chambers, and (ii) in which a global fit is performed to a track 
+seeded by signals in the external muon system. 
+The muon candidates are required to be reconstructed through both algorithms. 
+Additional identification criteria are imposed on muon candidates to reduce 
+the fraction of tracks misidentified as muons, and to reduce
+contamination from muon 
+decays in flight. 
+These criteria include the number of hits detected 
+in the tracker and in the outer muon system, the quality of the fit to 
+a muon track, and its consistency of originating from the leading PV.
+
+
+
+Charged leptons from V-boson decays are expected to be isolated from 
+other energy depositions in the event. 
+For each lepton candidate, a cone with radius 0.3 for muons and 0.4
+for electrons is chosen around the direction of the 
+track at the event vertex. 
+When the scalar sum of the transverse momenta of reconstructed particles
+within that cone, excluding the contribution from the 
+lepton candidate, 
+exceeds ${\approx} 10\%$ of the $\pt$ of the 
+lepton candidate, that lepton is ignored.  
+The exact isolation requirement depends on the $\eta$, $\pt$, and flavor of
+the lepton.  
+Muons and electrons are required to have $\pt > 30$~GeV and $>80$~GeV, respectively. 
+The large threshold for electrons ensures good trigger efficiency.
+To avoid double counting, isolated charged leptons are removed from 
+the list of PF objects that are clustered into jets.
+%The very high offline threshold on the eletron momentum is motivated by the criteria to avoid turn-off effects in the trigger efficiency for the single electron trigger. 
+
+%Furthermore, charged leptons with an isolation
+%of 15\% (muons) or 20\% (electrons) of the lepton transverse momentum 
+%are removed from consideration for the jet clustering algorithm, 
+%where the isolation is defined as the
+% energy from charged particles, neutral particles, 
+%and photons (counted separately). 
+
+
+After removal of isolated leptons and charged hadrons 
+%attributable to accompanying 
+from pileup vertices, only the
+neutral hadron component from pileup remains and is included in the
+jet clustering. %This pileup contribution is corrected for as follows. 
+This remaining component of pileup to the jet energy is removed by
+applying a
+correction based on a 
+mean $\pt$ per unit area of ($\Delta y \times \Delta \phi$) 
+originating
+from neutral particles~\cite{jetarea_fastjet,jetarea_fastjet_pu}.
+This quantity is computed using
+the $k_{\mathrm T}$ 
+algorithm, and corrects the jet energy
+by the amount of energy expected from pileup in the jet cone. 
+This ``active area'' method adds a large number of 
+soft ``ghost'' particles to the
+clustering sequence to determine the effective area subtended by each
+jet. 
+This procedure is done for all grooming algorithms just
+as for the ungroomed jets. 
+The active area of a groomed jet is smaller than that of an ungroomed jet, and the pileup correction is therefore also smaller.. 
+Different responses in the endcap and central barrel calorimeters 
+necessitate using $\eta$-dependent jet corrections. 
+The amount of energy expected from the remnants of the hard collision
+(the underlying
+event) is estimated from minimum-bias data and MC events, and
+is added back into the jet. 
+
+
+
+In addition, the pileup-subtracted jet four-momenta in data are
+corrected for nonlinearities in $\eta$ and $\pt$ by using a
+$\pt$- and $\eta$-dependent correction to account for the difference 
+between the response in MC-simulated events and 
+data~\cite{citeJEC}.  
+The jet corrections are derived for the ungroomed
+jet algorithms but are also applied to the groomed algorithms, thereby adding 
+additional systematic uncertainty in the energy of groomed jets. 
+
+
+% These corrections are then
+% applied as 
+% \begin{equation}
+% \pt^{PU-corr} = \pt^{RAW} \times \left( 1 - F(\eta) \times \frac{A_{jet} (\rho - <\rho_{UE}>)}{<A_{jet}> <(\rho_{PU,NPV=1})>} \right)
+% \end{equation}
+% The function $F(\eta)$ is an $\eta$-dependent correction designed to correct for
+% different responses between the barrel and endcap calorimeters.
+% It is derived from an assumption of a linear dependence of jet
+% momenta as a function of the number of reconstructed primary vertices, 
+% and then computed over a range of jet pseudorapidities. 
+% The area of the jet $A_{jet}$ is computed as described in Ref~\cite{fastjet_area},
+% and depends ont he jet algorithm. The mean $\pt$ per unit area for underlying
+% event ($\rho_{UE}$) is added back into the jet, since the cachement area approach
+% subtracts this as well (which should, however, be added in the jet momentum measurement
+% to be consistent with theoretical predictions). The average jet area $<A_{jet}>$ is
+% derived for the algorithm in question in a dijet sample, and $<\rho_{PU,NPV=1}>$ is the
+% expected average mean $\pt$ per unit area in events with exactly one primary vertex. 
+
+
+%An accurate measurement of $\met$ is essential for distinguishing 
+%the W signal from background processes. 
+%The $\met$ in the event is defined using the PF objects,
+%and this analysis requires $\met > 50$~GeV. 

@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage{}
+\section{Introduction}
+\label{sec:intro}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+So far the SM of particle physics describes the majority of high-energy
+experimental data~\cite{Beringer:1900zz}. The $W^{+}W^{-}$ and 
+$W^{\pm}Z$ cross-section has been precisely measured at LHC and is well
+described by the SM expectation. Our analysis extends it to include 
+$W^{+}W^{-}$ and $W^{\pm}Z$ events with energetic photons in order to 
+probe the modelling of electromagnetic radiation in the $W^{+}W^{-}$ 
+and $W^{\pm}Z$  pair creation processes, although these channels have 
+very small predicted cross sections. Previous measurements of three 
+vector boson production, when at least two bosons are massive, was 
+perfomed by LEP2~\cite{wwaLEP:1999}, restricting the analysis to 
+$W^{+}W^{-}\gamma$. 
+
+Here we aim to observe the first three boson prodution of 
+$WW(WZ)\gamma$ with a cross section substantially smaller than that of
+$WW(WZ)$. This is a very difficult cross section to measure due to very
+low statistics and large systematic and statistical uncertainties. 
+
+On the other hand, $W^{+}W^{-}\gamma$ and $W^{\pm}Z\gamma$ final states
+may be sensitive to anomalous contributions to the SM's 
+$W^{+}W^{-}\gamma\gamma$ and  $W^{+}W^{-}Z\gamma$ quartic couplings. 
+Quartic gauge boson couplings can be probed in final states with three
+vector bosons produced, as well as through vector boson fusion mediated
+reactions. These final states are both kinematically reacheable at LHC.
+
+The structure of the trilinear and quartic gauge boson couplings 
+emerges naturally from the SM non-abelian $SU(2)_{L}\otimes U(1)_{Y}$ 
+gauge symmetry~\cite{burgess2007}. Their vertices have a common origin 
+and possess a universal strength. Together with triple gauge 
+boson couplings (TGC), $W^{+}W^{-}\gamma$ and $W^{+}W^{-}Z$, the SM 
+predicts the existence of four quartic gauge couplings (QGC), 
+$W^{+}W^{-}W^{+}W^{-}$, $W^{+}W^{-}ZZ$, $W^{+}W^{-}Z\gamma$ and 
+$W^{+}W^{-}\gamma\gamma$. These couplings are expected to play a 
+significant role at LHC energies~\cite{Belyaev:1998ih}. What scarce 
+experimental information currently exists on QGC comes from
+the LEP experiment~\cite{ALEPH:2005aa},
+where phase space limitations have constrained couplings involving 
+photons in the final state. At LEP2,  $e^{+}e^{-}\to W^{+}W^{-}$ and 
+$e^{+}e^{-}\to W^{+}W^{-}\gamma$ final states have been used to infer 
+the SM triple couplings $WWZ$ and $WW\gamma$, as well as the SM quartic
+$WW\gamma\gamma$ and $WWZ\gamma$ ones, respectively. To date there is 
+no direct experimental confirmation of the existence of quartic 
+couplings. QGC measurements may be probed at several
+colliders~\cite{Belanger:1992qh,Eboli:1993wg,Eboli:1995gv,Eboli:2000ad,
+Bosonic:2004PRD,Yang:2012vv,Ye:2013psa}. The study of these interactions can either confirm SM 
+predictions or give some hint on the existence of new phenomena at a 
+higher energy scale~\cite{aihara1996}. Possible new physics, expressed
+in a model independent way by high-dimensional effective 
+operators~\cite{500GeVNLC, Belanger:1999, Bosonic:2004PRD, 
+Eboli:2006wa}, leads to anomalous triple (aTGC) or quartic (aQGC) gauge
+boson couplings. Nevertheless, no deviations from the SM predictions 
+have been found~\cite{ALEPH:2005aa}. Recently, a direct stringent limit on
+the anomalous $W^{+}W^{-}\gamma\gamma$ quartic coupling was obtained by
+the Foward Physics CMS Group~\cite{CMS-PAS-FSQ-12-010}.
+
+The triple gauge boson production channels cover some important issues 
+of EW physics at the LHC (e.g. the precise measurement of electroweak 
+parameters, gauge boson self interactions, and the mechanism of 
+spontaneous symmetry breaking.) Within the framework of the SM, gauge 
+boson self-interactions are completely determined by the 
+$SU(2)_{L} \otimes U(1)_{Y}$ gauge symmetry; thus, direct investigation
+of gauge boson self-interactions provides a crucial test on the gauge 
+structure of the SM. Moreover, since the longitudinal components of 
+$W^\pm$ and $Z^0$ result from the spontaneous symmetry breaking, these 
+kinds of studies may also be important to explore the electroweak 
+symmetry breaking (EWSB) mechanisms. In the past, due to the 
+insufficient center-of-mass energy, we were not able to probe these 
+kinds of channels; however, with the accumulation of LHC data, it is 
+now worth trying to analyze these channels.
+
+So far, we have yet to observe any significant deviation from the SM; 
+however, there are many reasons to expect new physics beyond the SM to
+appear at the LHC (TeV) energy scale (e.g. the demand for dark matter 
+candidates and the quest to understand large hierarchy between the 
+electroweak and Planck scales.) Further confirmation of the SM or 
+uncovering new physics beyond the SM thus become urgent goals for both 
+theorists and experimentalists at the LHC era. For the triple gauge 
+boson associated production, which is of our interest in this paper, 
+extra contributions other than the SM predictions can be induced by 
+possible new physics expressed in a model independent way by 
+high-dimensional operators which lead to anomalous triple or quartic 
+gauge boson couplings (aTGCs or aQGCs). 
+
+Both aTGCs and aQGCs are included in triple boson production processes;
+however, compared with the gauge boson pair production channel for TGCs
+measurement, triple gauge boson production is more compatible for 
+probing aQGCs. As in the cases discussed in 
+Ref.~\cite{500GeVNLC,Bosonic:2004PRD}, it is possible the QGCs deviate 
+from the SM prediction while the TGCs do not, assuming for example that
+the exchange of extra heavy bosons generates tree-level contributions 
+to four gauge boson couplings while the effect on the triple gauge 
+vertex appears only at one-loop and is consequently suppressed. 
+Assuming the aTGC contribution can be neglected, in this paper we test 
+the so called "genuine quartic couplings" which just contribute to 
+quartrilinear couplings.
+

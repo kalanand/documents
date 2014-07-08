@@ -1,0 +1,874 @@
+--- COMMENTS may be placed outside the @ENTRYTYPE{ ... } stuctures
+--- CMS guidelines
+---- Every journal article citation should include the DOI.
+---- All URLs for CMS notes, ANs, etc, should refer to the CDS server, not the CMS server. Use our standard format for them, as shown below.
+----  CMS Notes not available on CDS are regarded as private and may not be cited.
+---- For papers by collaborations, list the collaboration in the COLLABOROATION field and put the first author and "and others" in the AUTHOR field.
+----  If only the collaboration is listed as the author, put "{XXX Collaboration}" under AUTHOR.
+---- Number of authors to list:
+----   PRL requests that we include all authors up to fifteen except for large collaborations, and we take this as our internal guide as well.
+----   The individual journal bib style file (theirs, ours, PLB, etc.) will truncate at the appropriate point. We have ours set to _3_ as
+----   a reminder to list the appropriate number. For larger collaborations, just use first author + "and others".
+---- Use only the URL field instead of embedding an href (this is a change in our practice).
+---- A reference only published on the arXiv should be listed as UNPUBLISHED (with a note "Submitted to XXX" for large collaboration papers).
+----   Experimental papers only on the arXiv and not submitted for publication may not be cited.
+---- Some journals will lowercase the title: use {} to protect words which must be capitalized, e.g., {LHC}, {TeV}, {CERN}, {CMS}.
+----  Do not escape the entire title as it will then clash with the journal style.
+---- Journal names: the journals generally include the series in the journal name, "Physical Review D", vol 5, rather than PR D5
+%
+% Notes hosted only on CDS are listed as TECHREPORTs.
+%
+@TECHREPORT{CMS_AN_2006-027,
+     AUTHOR       = "Belotelov, I. and Golutvin, I. and Bourilkov, D. and Lanyov, A. and Rogalev, E. and Savina, M. and Shmatov, S.",
+     TITLE        = "Search for {ADD} extra dimensional gravity in di-muon channel with the {CMS} Detector",
+     TYPE      = "CMS Note",
+     NUMBER       = "2006/076",
+     URL          = "http://cdsweb.cern.ch/record/962045",
+     YEAR         = "2006"}
+@TECHREPORT{CMS_NOTE_2006-106,
+     AUTHOR       = "Aldaya, M. and Arce, P. and Caballero, J. and de la Cruz, B. and Garcia-Abia, P. and Hernandez, J.M. and Josa, M.I. and Ruiz, E.",
+     TITLE        = "Discovery potential and search strategy for the Standard Model {H}iggs boson in the {$H\to ZZ^\star\to 4\mu$} decay channel using a mass-independent analysis",
+     TYPE      = "CMS Note",
+     NUMBER       = "2006/106",
+     URL          = "http://cdsweb.cern.ch/record/962058",
+     YEAR         = "2006"}
+%
+% standard article
+%
+@Article{Brandt:1997gi,
+     author    = "Brandt, A. and others",
+ collaboration = "UA8",
+     title     = "Measurements of single diffraction at $\sqrt{s} =$ 630 {GeV}:
+                  Evidence for  a non-linear $\alpha(t)$ of the pomeron",
+     journal   = "Nucl. Phys. B",
+     volume    = "514",
+     year      = "1998",
+     pages     = "3",
+     SLACcitation  = "%%CITATION = HEP-EX 9710004;%%",
+     doi       = "10.1016/S0550-3213(97)00813-4"
+}
+@ARTICLE{Buchmuller:1986zs,
+     AUTHOR       = "Buchm{\"u}ller, W. and Wyler, D.",
+     TITLE        = "Constraints on {SU(5)}-type leptoquarks",
+     JOURNAL      = "Phys. Lett. B",
+     VOLUME       = "177",
+     YEAR         = "1986",
+     pages        = "377",
+     SLACcitation  = "%%CITATION = PHLTA,B191,442;%%",
+     doi          = "10.1016/0370-2693(86)90771-9"}
+@Article{PTDR2,
+     author    = "{CMS Collaboration}",
+     title     = "{CMS} technical design report, volume {II}: {Physics}
+                  performance",
+     journal   = "J. Phys. G",
+     volume    = "34",
+     year      = "2007",
+     pages     = "995-1579",
+     doi       = "10.1088/0954-3899/34/6/S01",
+     SLACcitation  = "%%CITATION = JPHGB,G34,995;%%"
+}
+% PAS are now TECHREPORTS. Same for Notes. A formatted list of PASs is located in [svn]/utils/branches/dev/general/pasBib-tech.bib
+@TECHREPORT{CMS-PAS-JME-10-003,
+      AUTHOR      = "{CMS Collaboration}",
+      TITLE       = "Jet Performance in pp Collisions at $\sqrt{s}$=7 {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1279362",
+      TYPE     = "CMS Physics Analysis Summary",
+      NUMBER      = "CMS-PAS-JME-10-003",
+      YEAR        = "2010"
+}
+%SPIRES had this one as R. Adolphi, et. al. Wrong. Now corrected in InspireHEP.
+@Article{Chatrchyan:2008zzk,
+     author    = "Chatrchyan, S. and others",
+     title     = "The {CMS} experiment at the {CERN} {LHC}",
+     journal   = "JINST",
+     volume    = "3",
+     year      = "2008",
+     pages     = "S08004",
+     doi       = "10.1088/1748-0221/3/08/S08004",
+     SLACcitation  = "%%CITATION = JINST,3,S08004;%%"
+}
+%
+% An example of a document which only appears on arXiv. This one could alternatively be cited as a TECHREPORT using any of the various laboratory report numbers when hosted on a lab server:
+% reportNumber   = "CERN-PH-EP-2010-095, FERMILAB-TM-2480-PPD, LEPEWWG-2010-01, TEVEWWG-2010-01, ALEPH-2010-001-PHYSICS-2010-001, CDF-NOTE-10338, D0-NOTE-6130, DELPHI-DELPHI-2010-001-PHYS-952, L3-NOTE-2837, OPAL-PR432, SLAC-PUB-14301",
+%
+@UNPUBLISHED{LEPewkfits,
+     author = "{ALEPH, CDF, D0, DELPHI, L3, OPAL, SLD Collaborations,
+                                    the LEP Electroweak Working Group, the Tevatron Electroweak Working Group, and the SLD Electroweak and Heavy Flavour Groups}",
+     title     = "Precision electroweak measurements and constraints on
+the {Standard Model}",
+     URL       = "http://lepewwg.web.cern.ch/LEPEWWG",
+     eprint    = "1012.2367",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     year  = "2010",
+     SLACcitation  = "%%CITATION = 1012.2367;%%"
+}
+%
+% A document hosted on a laboratory server
+%
+@TECHREPORT{Bertram:2000br,
+  author = " Bertram, I. and Landsberg, G. and Linnemann, J. and Partridge, R. and Paterno, M. and Prosper, H.B.",
+  title =  "A Recipe for the construction of confidence limits",
+  institution = "Fermilab",
+  number     = "{TM-2104}",
+  url = "http://lss.fnal.gov/archive/test-tm/2000/fermilab-tm-2104.pdf",
+  year = "2000"
+ }
+ %
+ % A document included in Proceedings. PRL may want the ADDRESS field as well.
+ %
+@INPROCEEDINGS{RooStats,
+  AUTHOR       = "Moneta, L. and Belasco, K. and  Cranmer, K.S. and Lazzaro, A. and Piparo, D. and Schott, G. and Verkerke, W. and Wolf, M. ",
+  TITLE        = "The {R}oo{S}tats {P}roject",
+  BOOKTITLE = "13$^\text{th}$ International Workshop on Advanced Computing and Analysis Techniques in Physics Research (ACAT2010)",
+  YEAR         = "2010",
+  PUBLISHER = "SISSA",
+  NOTE = "{PoS(ACAT2010)057}",
+  URL          = "http://pos.sissa.it/archive/conferences/093/057/ACAT2010_057.pdf",
+  eprint = "1009.1003",
+  primaryClass = "physics.data-an"
+}
+%
+% CMS/ATLAS papers submitted but not yet accepted; The SLACcitation is not required. This is only for illustration, these are now published.
+% Upon acceptance the note is modified and the DOI included (if available).
+%
+@Unpublished{Khachatryan:2010mp,
+     author    = "{CMS Collaboration}",
+     title     = "Search for Pair Production of First-Generation Scalar Leptoquarks in pp Collisions at $\sqrt{s} = 7$ {TeV}",
+     note  = "Submitted to \textit{Phys. Rev. Lett.}",
+     eprint    = "1012.4031",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     year = "2010",
+     SLACcitation  = "%%CITATION = 1012.4031;%%"
+}
+@Unpublished{ATLAS:2011aa,
+        Archiveprefix = {arXiv},
+        Author = {{ATLAS Collaboration}},
+        Eprint = {1112.2577},
+        Note = {Submitted to \textit{Phys. Rev. Lett.}},
+        Primaryclass = {hep-ex},
+        Slaccitation = {%%CITATION = 1112.2577;%%},
+        Title = {Search for the {H}iggs boson in the {$H\to$WW(*)$\to \ell^+ \nu \ell^- \bar{\nu}$} decay channel in pp collisions at $\sqrt{s}$ = 7 {TeV} with the {ATLAS} detector},
+        Year = {2011}}
+
+@unpublished{ATLAS:2012wz,
+      author         = "{ATLAS Collaboration}",
+      title          = "{Measurement of WZ production in proton-proton collisions
+                        at $\sqrt{s}$ = 7 TeV with the ATLAS detector}",
+      note           = "Submitted to {Eur. Phys. J. C}",
+      year           = "2012",
+      eprint         = "1208.1390",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2012-179",
+      SLACcitation   = "%%CITATION = ARXIV:1208.1390;%%",
+}
+
+@unpublished{ATLAS:2012ww,
+      author         = "{ATLAS Collaboration}",
+      title          = "{Measurement of $\text{W}^+\text{W}^-$ production in pp collisions at $\sqrt{s} = 7\TeV$ with the ATLAS detector and limits on anomalous WWZ and WW$\gamma$ couplings}",
+      note           = "Submitted to {Phys. Rev. D}",
+      year           = "2012",
+      eprint         = "1210.2979",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2012-242",
+      SLACcitation   = "%%CITATION = ARXIV:1208.1390;%%",
+}
+
+% Misc
+@Article{Cacciari:2008gp,
+     AUTHOR    = "Cacciari, Matteo and Salam, Gavin P. and Soyez, Gregory",
+     TITLE     = "The anti-$k_t$ jet clustering algorithm",
+     JOURNAL   = "JHEP",
+     VOLUME    = "04",
+     YEAR      = "2008",
+     PAGES     = "063",
+     doi       = "10.1088/1126-6708/2008/04/063",
+     eprint         = "0802.1189",
+     archivePrefix  = "arXiv",
+     primaryClass   = "hep-ex",
+}
+@ARTICLE{CMS:2010,
+     author    = "Chatrchyan, Serguei and others",
+    collaboration = "CMS",
+     TITLE        = "The CMS experiment at the CERN LHC",
+     JOURNAL      = "JINST",
+     VOLUME    = "3",
+     YEAR         = "2008",
+     PAGES        = "S08004",
+     doi       = "10.1088/1748-0221/3/08/S08004",
+     SLACcitation  = "%%CITATION = JINST,0803,S08004;%%"
+}
+@TECHREPORT{CMS-PAS-EGM-10-003,
+     author   = "{CMS Collaboration}",
+     title        = "Electromagnetic calorimeter calibration with 7 TeV data",
+     URL          = "http://cdsweb.cern.ch/record/1279350",
+     TYPE     = "CMS Physics Analysis Summary",
+     number  = "CMS-PAS-EGM-10-003",
+     year         = "2010"
+}
+@Article{MADGRAPH,
+  author     = "Maltoni, F. and Stelzer, T.",
+  title      = "MadEvent: automatic event generation with MadGraph",
+  journal    = "JHEP",
+  volume     = "02",
+  year       = "2003",
+  pages      = "027",
+  eprint    = "hep-ph/0208156",
+  archivePrefix = "arXiv",
+  doi = "10.1088/1126-6708/2003/02/027"
+}
+
+@Article{madgraph5,
+     author    = "Johan Alwall and Michel Herquet and Fabio Maltoni and Olivier Mattelaer and Tim Stelzer",
+     title     = "{MadGraph 5}: going beyond",
+     journal   = "JHEP",
+     volume    = "06",
+     year      = "2011",
+     pages     = "128",
+     doi           = "10.1007/JHEP06(2011)128",
+     eprint    = "1106.0522",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     SLACcitation  = "%%CITATION = 1106.0522;%%"
+}
+
+
+@Article{PYTHIA,
+     author    = "{T. Sjostrand, S. Mrenna and P. Z. Skands}",
+     title     = "{PYTHIA 6.4 Physics and Manual}",
+     journal   = "JHEP",
+     volume    = "05",
+     year      = "2006",
+     pages     = "026",
+     eprint    = "hep-ph/0603175",
+     archivePrefix = "arXiv",
+     SLACcitation  = "%%CITATION = HEP-PH/0603175;%%"
+}
+@Unpublished{Collaboration:2012tb,
+      author         = "{CMS Collaboration}",
+      title          = "{Measurement of the underlying event in the Drell-Yan
+                        process in proton-proton collisions at $\sqrt{s}$ = 7 TeV}",
+      note           = "Submitted to {Eur. Phys. J. C}",
+      year           = "2012",
+      eprint         = "1204.1411",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-QCD-11-012, CERN-PH-EP-2012-085",
+      SLACcitation   = "%%CITATION = ARXIV:1204.1411;%%",
+}
+@Article{Nason:2004rx,
+     author    = "Nason, Paolo",
+     title     = "{A new method for combining NLO QCD with shower Monte Carlo
+                  algorithms}",
+     journal   = "JHEP",
+     volume    = "11",
+     year      = "2004",
+     pages     = "040",
+     eprint    = "hep-ph/0409146",
+     archivePrefix = "arXiv",
+     doi       = "10.1088/1126-6708/2004/11/040",
+     SLACcitation  = "%%CITATION = HEP-PH/0409146;%%"
+}
+@Article{POWHEG,
+     author    = "Frixione, Stefano and Nason, Paolo and Oleari, Carlo",
+     title     = "{Matching NLO QCD computations with Parton Shower
+                  simulations: the POWHEG method}",
+     journal   = "JHEP",
+     year      = "2007",
+     volume    = "11",
+     pages     = "070",
+     eprint    = "0709.2092",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1088/1126-6708/2007/11/070",
+     SLACcitation  = "%%CITATION = 0709.2092;%%"
+}
+@Article{Frixione:2007vw,
+     author    = "Frixione, Stefano and Nason, Paolo and Oleari, Carlo",
+     title     = "{Matching NLO QCD computations with Parton Shower
+                  simulations: the POWHEG method}",
+     journal   = "JHEP",
+     volume    = "11",
+     year      = "2007",
+     pages     = "070",
+     eprint    = "0709.2092",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1088/1126-6708/2007/11/070",
+     SLACcitation  = "%%CITATION = 0709.2092;%%"
+}
+@Article{Alioli:2010xd,
+     author    = "Alioli, Simone and Nason, Paolo and Oleari, Carlo and Re,
+                  Emanuele",
+     title     = "{A general framework for implementing NLO calculations in
+                  shower Monte Carlo programs: the POWHEG BOX}",
+     journal   = "JHEP",
+     volume    = "06",
+     year      = "2010",
+     pages     = "043",
+     eprint    = "1002.2581",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1007/JHEP06(2010)043",
+     SLACcitation  = "%%CITATION = 1002.2581;%%"
+}
+@Article{Nason:2009ai,
+     author    = "Nason, Paolo and Oleari, Carlo",
+     title     = "{NLO Higgs boson production via vector-boson fusion matched
+                  with shower in POWHEG}",
+     journal   = "JHEP",
+     volume    = "02",
+     year      = "2010",
+     pages     = "037",
+     eprint    = "0911.5299",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1007/JHEP02(2010)037",
+     SLACcitation  = "%%CITATION = 0911.5299;%%"
+}
+@article{VBTF,
+      author         = "Chatrchyan, Serguei and others",
+      title          = "{Measurement of the Inclusive W and Z Production Cross
+                        Sections in pp Collisions at $\sqrt{s}$ = 7 TeV}",
+      collaboration  = "CMS",
+      journal        = "JHEP",
+      volume         = "10",
+      pages          = "132",
+      doi            = "10.1007/JHEP10(2011)132",
+      year           = "2011",
+      eprint         = "1107.4789",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-EWK-10-005, CERN-PH-EP-2011-107",
+      SLACcitation   = "%%CITATION = ARXIV:1107.4789;%%",
+}
+
+@TECHREPORT{CMS-PAS-PFT-09-001,
+      AUTHOR      = "{CMS Collaboration}",
+      title       = "Particle Flow Event Reconstruction in CMS and Performance for Jets, Taus, and Emiss",
+      URL         = "http://cdsweb.cern.ch/record/1194487",
+      TYPE     = "CMS Physics Analysis Summary",
+      NUMBER      = "CMS-PAS-JME-10-003",
+      year      = "2009"
+}
+
+@Article{antikt,
+     author    = "Cacciari, Matteo and Salam, Gavin P. and Soyez, Gregory",
+     title     = "{The anti-$k_t$ jet clustering algorithm}",
+     journal   = "JHEP",
+     volume    = "04",
+     year      = "2008",
+     pages     = "063",
+     doi       = "10.1088/1126-6708/2008/04/063",
+     eprint    = "0802.1189",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph"
+}
+
+
+@Unpublished{fastjetmanual,
+      author         = "M. Cacciari and G. P. Salam and G. Soyez",
+      title          = "{FastJet user manual}",
+      year           = "2011",
+      eprint         = "1111.6097",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}
+
+@Article{fastjet1,
+     author    = "M. Cacciari and G. P. Salam",
+     title     = "Pileup subtraction using jet areas",
+     journal   = "Phys. Lett. B",
+     volume    = "659",
+     year      = "2008",
+     pages     = "119",
+     doi       = "10.1016/j.physletb.2007.09.077",
+     eprint    = "0707.1378",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph"
+}
+
+@TECHREPORT{jetpas,
+      AUTHOR      = "{CMS Collaboration}",
+      title       = "{Jet Performance in pp Collisions at $\sqrt{s}=7 \rm\ TeV$}",
+      URL         = "http://cdsweb.cern.ch/record/1279362",
+      TYPE     = "CMS Physics Analysis Summary",
+      NUMBER      = "2010",
+      year      = "JME-10-003"
+}
+
+@Article{Chatrchyan:2011ds,
+     author    = "Chatrchyan, Serguei and others",
+ collaboration = "CMS",
+     title     = "{Determination of Jet Energy Calibration and Transverse
+                  Momentum Resolution in CMS}",
+     journal   = "JINST",
+     volume    = "6",
+     year      = "2011",
+     pages     = "P11002",
+     eprint    = "1107.4277",
+     archivePrefix = "arXiv",
+     primaryClass  =  "physics.ins-det",
+     doi       = "10.1088/1748-0221/6/11/P11002",
+     SLACcitation  = "%%CITATION = 1107.4277;%%"
+}
+@Article{Cacciari:2008gn,
+     author    = "Cacciari, Matteo and Salam, Gavin P. and Soyez, Gregory",
+     title     = "{The Catchment Area of Jets}",
+     journal   = "JHEP",
+     volume    = "04",
+     year      = "2008",
+     pages     = "005",
+     eprint    = "0802.1188",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1088/1126-6708/2008/04/005",
+     SLACcitation  = "%%CITATION = 0802.1188;%%"
+}
+@article{Chatrchyan:2011tn,
+      author         = "Chatrchyan, Serguei and others",
+      title          = "{Missing transverse energy performance of the CMS
+                        detector}",
+      collaboration  = "CMS",
+      journal        = "JINST",
+      volume         = "6",
+      pages          = "P09001",
+      doi            = "10.1088/1748-0221/6/09/P09001",
+      year           = "2011",
+}
+@TECHREPORT{btag,
+     author   = "{CMS Collaboration}",
+     title    = "Status of b-tagging tools for 2011 data analysis",
+     URL      = "http://cdsweb.cern.ch/record/1395489",
+     TYPE     = "CMS Physics Analysis Summary",
+     number   = "CMS-PAS-BTV-11-002",
+     year     = "2011"
+}
+@ARTICLE{MCFM,
+     author = "J. M. Campbell and R. K. Ellis",
+     title     = "MCFM for the Tevatron and the LHC",
+     JOURNAL   = "Nucl. Phys. Proc. Suppl.",
+     VOLUME    = "205--206",
+     PAGES     = "10",
+     YEAR      = "2010",
+     eprint    = "1007.3492",
+     doi       = "10.1016/j.nuclphysbps.2010.08.011",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     SLACcitation  = "%%CITATION = 1007.3492;%%"
+}
+@article{Kidonakis:2011wy,
+      author         = "Kidonakis, Nikolaos",
+      title          = "{Next-to-next-to-leading-order collinear and soft gluon
+                        corrections for t-channel single top quark production}",
+      journal        = "Phys. Rev. D",
+      volume         = "83",
+      pages          = "091503",
+      doi            = "10.1103/PhysRevD.83.091503",
+      year           = "2011",
+      eprint         = "1103.2792",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      SLACcitation   = "%%CITATION = ARXIV:1103.2792;%%",
+}
+@article{Kidonakis:2010tc,
+      author         = "Kidonakis, Nikolaos",
+      title          = "{NNLL resummation for s-channel single top quark
+                        production}",
+      journal        = "Phys. Rev. D",
+      volume         = "81",
+      pages          = "054028",
+      doi            = "10.1103/PhysRevD.81.054028",
+      year           = "2010",
+      eprint         = "1001.5034",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      SLACcitation   = "%%CITATION = ARXIV:1001.5034;%%",
+}
+@article{Kidonakis:2010ux,
+      author         = "Kidonakis, Nikolaos",
+      title          = "{Two-loop soft anomalous dimensions for single top quark
+                        associated production with a $\text{W}^-$ or $\text{H}^-$}",
+      journal        = "Phys. Rev. D",
+      volume         = "82",
+      pages          = "054018",
+      doi            = "10.1103/PhysRevD.82.054018",
+      year           = "2010",
+      eprint         = "1005.4451",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      SLACcitation   = "%%CITATION = ARXIV:1005.4451;%%",
+}
+@Article{Kidonakis:2010dk,
+     author    = "Kidonakis, Nikolaos",
+     title     = "{Next-to-next-to-leading soft-gluon corrections for the top
+                  quark cross section and transverse momentum distribution}",
+     journal   = "Phys. Rev. D",
+     volume    = "82",
+     year      = "2010",
+     pages     = "114030",
+     eprint    = "1009.4935",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1103/PhysRevD.82.114030",
+     SLACcitation  = "%%CITATION = 1009.4935;%%"
+}
+@article{FEWZ,
+      author         = "Melnikov, Kirill and Petriello, Frank",
+      title          = "{Electroweak gauge boson production at hadron colliders
+                        through O($\alpha_S^2$)}",
+      journal        = "Phys. Rev. D",
+      volume         = "74",
+      pages          = "114017",
+      doi            = "10.1103/PhysRevD.74.114017",
+      year           = "2006",
+      eprint         = "hep-ph/0609070",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "UH-511-1092-06",
+      SLACcitation   = "%%CITATION = HEP-PH/0609070;%%",
+}
+@TECHREPORT{lumiPAS,
+     AUTHOR      = "{CMS Collaboration}",
+     TITLE        = "Absolute Calibration of the Luminosity Measurement at {CMS}: {W}inter 2012 {U}pdate",
+     TYPE  = "CMS Physics Analysis Summary",
+     NUMBER       = "CMS-PAS-SMP-12-008",
+     URL         = "http://cdsweb.cern.ch/record/1434360",
+     YEAR         = "2012"
+}
+@article{CDF-diboson-lvjj-2010,
+      author         = "Aaltonen, T. and others",
+      title          = "{Measurement of the WW+WZ Production Cross Section Using
+                        the Lepton+Jets Final State at CDF II}",
+      collaboration  = "CDF",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "104",
+      pages          = "101801",
+      doi            = "10.1103/PhysRevLett.104.101801",
+      year           = "2010",
+      eprint         = "0911.4449",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-09-593-E",
+      SLACcitation   = "%%CITATION = ARXIV:0911.4449;%%",
+}
+@article{Abazov:2011cb,
+      author         = "Abazov, Victor Mukhamedovich and others",
+      title          = "{Measurements of $WW$ and $WZ$ production in $W$ + jets
+                        final states in $p\bar{p}$ collisions}",
+      collaboration  = "D0",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "108",
+      pages          = "181803",
+      year           = "2012",
+      doi            = "10.1103/PhysRevLett.108.181803",
+      eprint         = "1112.0536",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-11-635-E",
+      SLACcitation   = "%%CITATION = ARXIV:1112.0536;%%",
+}
+@Unpublished{Abazov:2012,
+      author         = "Abazov, Victor Mukhamedovich and others",
+      title          = "{Limits on anomalous trilinear gauge boson couplings from
+                        WW, WZ and W$\gamma$ production in $p\bar{p}$ collisions at
+                        $\sqrt{s}$ = 1.96 TeV}",
+      note           = "Submitted to {Phys. Lett. B}",
+      collaboration  = "D0",
+      year           = "2012",
+      eprint         = "1208.5458",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-12-485-E",
+      SLACcitation   = "%%CITATION = ARXIV:1208.5458;%%",
+}
+
+@article{Campbell:2011bn,
+      author         = "Campbell, John M. and Ellis, R. Keith and Williams,
+                        Ciaran",
+      title          = "{Vector boson pair production at the LHC}",
+      journal        = "JHEP",
+      volume         = "07",
+      pages          = "018",
+      doi            = "10.1007/JHEP07(2011)018",
+      year           = "2011",
+      eprint         = "1105.0020",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "FERMILAB-PUB-11-182-T",
+      SLACcitation   = "%%CITATION = ARXIV:1105.0020;%%",
+}
+@article{PhysRevD.48.2182,
+  title = {Low energy effects of new interactions in the electroweak boson sector},
+  author = {Hagiwara, K. and Ishihara, S. and Szalapski, R. and Zeppenfeld, D.},
+  journal = {Phys. Rev. D},
+  volume = {48},
+  pages = {2182},
+  year = {1993},
+  doi = {10.1103/PhysRevD.48.2182},
+  publisher = {American Physical Society}
+}
+
+@article{Dixon:1999di,
+      author         = "Dixon, Lance J. and Kunszt, Z. and Signer, A.",
+      title          = "{Vector boson pair production in hadronic collisions at
+                        order $\alpha_s$ : Lepton correlations and anomalous
+                        couplings}",
+      journal        = "Phys. Rev. D",
+      volume         = "60",
+      pages          = "114037",
+      doi            = "10.1103/PhysRevD.60.114037",
+      year           = "1999",
+      eprint         = "hep-ph/9907305",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "SLAC-PUB-8188, ETH-TH-99-10, DTP-99-72",
+      SLACcitation   = "%%CITATION = HEP-PH/9907305;%%",
+}
+
+@Article{pdg,
+     author    = "Beringer, J. and others",
+ collaboration = "Particle Data Group",
+     title     = "{Review of particle physics}",
+     journal   = "Phys. Rev. D",
+     volume    = "86",
+     year      = "2012",
+     pages     = "010001"
+}
+
+@article{Beringer:1900zz,
+      author         = "{Particle Data Group} and J. Beringer and others",
+      title          = "{Review of Particle Physics}",
+      journal        = "Phys. Rev. D",
+      volume         = "86",
+      pages          = "010001",
+      doi            = "10.1103/PhysRevD.86.010001",
+      year           = "2012",
+      SLACcitation   = "%%CITATION = PHRVA,D86,010001;%%",
+}
+
+@article{CLS,
+  author={A L Read},
+  title={Presentation of search results: the $CL_s$ technique},
+  journal={J. Phys. G},
+  volume={28},
+  pages={2693},
+  doi={10.1088/0954-3899/28/10/313},
+  year={2002}
+}
+@article{Abdallah:2008sf,
+      author         = "Abdallah, J. and others",
+      title          = "{Study of W boson polarisations and Triple Gauge boson
+                        Couplings in the reaction $e^+e^-\to\text{W}^+\text{W}^-$  at LEP 2}",
+      collaboration  = "DELPHI",
+      journal        = "Eur. Phys. J. C",
+      volume         = "54",
+      pages          = "345",
+      doi            = "10.1140/epjc/s10052-008-0528-3",
+      year           = "2008",
+      eprint         = "0801.1235",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2007-036",
+      SLACcitation   = "%%CITATION = ARXIV:0801.1235;%%",
+}
+@article{Schael:2004tq,
+      author         = "Schael, S. and others",
+      title          = "{Improved measurement of the triple gauge-boson couplings
+                        $\gamma$WW and ZWW in $e^+e^-$ collisions}",
+      collaboration  = "ALEPH",
+      journal        = "Phys. Lett. B",
+      volume         = "614",
+      pages          = "7",
+      doi            = "10.1016/j.physletb.2005.03.058",
+      year           = "2005",
+      reportNumber   = "CERN-PH-EP-2004-065",
+      SLACcitation   = "%%CITATION = PHLTA,B614,7;%%",
+}
+@article{Abbiendi:2003mk,
+      author         = "Abbiendi, G. and others",
+      title          = "{Measurement of charged current triple gauge boson
+                        couplings using W pairs at LEP}",
+      collaboration  = "OPAL",
+      journal        = "Eur. Phys. J. C",
+      volume         = "33",
+      pages          = "463",
+      doi            = "10.1140/epjc/s2003-01524-6",
+      year           = "2004",
+      eprint         = "hep-ex/0308067",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-EP-2003-042",
+      SLACcitation   = "%%CITATION = HEP-EX/0308067;%%",
+}
+@article{Achard:2004ji,
+      author         = "Achard, P. and others",
+      title          = "{Measurement of triple gauge boson couplings of the W
+                        boson at LEP}",
+      collaboration  = "L3",
+      journal        = "Phys. Lett. B",
+      volume         = "586",
+      pages          = "151",
+      doi            = "10.1016/j.physletb.2004.02.045",
+      year           = "2004",
+      eprint         = "hep-ex/0402036",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-EP-2003-086",
+      SLACcitation   = "%%CITATION = HEP-EX/0402036;%%",
+}
+@Article{GEANT4,
+     author    = "Agostinelli, S. and others",
+ collaboration = "GEANT4",
+     title     = "{GEANT4}---a simulation toolkit",
+     journal   = "Nucl. Instrum. Meth. A",
+     volume    = "506",
+     year      = "2003",
+     pages     = "250",
+     doi       = "10.1016/S0168-9002(03)01368-8",
+     SLACcitation  = "%%CITATION = NUIMA,A506,250;%%"
+}
+@Article{CTEQ,
+     author    = "Lai, Hung-Liang and Huston, Joey and Li, Zhao and Nadolsky, Pavel and Pumplin, Jon
+                   and Stump, Daniel and Yuan, C.-P.",
+     title     = "Uncertainty induced by {QCD} coupling in the {CTEQ} global
+                  analysis of parton distributions",
+     journal   = "Phys. Rev. D",
+     volume    = "82",
+     year      = "2010",
+     pages     = "054021",
+     eprint    = "1004.4624",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1103/PhysRevD.82.054021",
+}
+
+@Unpublished{Hoche:2006ph,
+      author         = "Hoeche, Stefan and Krauss, Frank and Lavesson, Nils and
+                        Lonnblad, Leif and Mangano, Michelangelo and Schaelicke, Andreas and Schumann, Steffen",
+      title          = "Matching Parton Showers and Matrix Elements",
+      year           = "2006",
+      eprint         = "hep-ph/0602031",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      SLACcitation   = "%%CITATION = HEP-PH/0602031;%%",
+}
+@Article{Sjostrand:2006za,
+     author    = "Sjostrand, Torbjorn and Mrenna, Stephen and Skands, Peter
+                  Z.",
+     title     = "{PYTHIA} 6.4 physics and manual",
+     journal   = "JHEP",
+     volume    = "05",
+     year      = "2006",
+     pages     = "026",
+     eprint    = "hep-ph/0603175",
+     archivePrefix = "arXiv",
+     SLACcitation  = "%%CITATION = HEP-PH/0603175;%%",
+     doi = "10.1088/1126-6708/2006/05/026",
+}
+@article{PythiaTuneZ2,
+      author         = "Chatrchyan, Serguei and others",
+      title          = "{Measurement of the underlying event activity at the LHC
+                        with $\sqrt{s}= 7$ TeV and comparison with $\sqrt{s} =
+                        0.9$ TeV}",
+      collaboration  = "CMS",
+      journal        = "JHEP",
+      pages          = "109",
+      doi            = "10.1007/JHEP09(2011)109",
+      year           = "09",
+      volume         = "11",
+      eprint         = "1107.0330",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CMS-QCD-10-010, CERN-PH-EP-2011-059",
+      SLACcitation   = "%%CITATION = ARXIV:1107.0330;%%",
+}
+
+
+@TECHREPORT{MUONPAS,
+      AUTHOR      = "{CMS Collaboration}",
+      title       = "Performance of CMS muon identification in pp collisions at $\sqrt{s} = 7$ TeV",
+      URL         = "http://cms.cern.ch/iCMS/analysisadmin/get?analysis=MUO-10-002-pas.pdf",
+      TYPE     = "CMS Physics Analysis Summary",
+      NUMBER      = "MUO-2010-002",
+      year      = "2010"
+}
+
+@TECHREPORT{CMS-PAS-EGM-10-004,
+      AUTHOR      = "{CMS Collaboration}",
+      title       = "Electron Reconstruction and Selection Studies with First CMS 7 TeV Data",
+      URL         = "http://cdsweb.cern.ch/record/1299116",
+      TYPE     = "CMS Physics Analysis Summary",
+      NUMBER      = "CMS-PAS-EGM-10-004",
+      year      = "2010"
+}
+
+@article{Junk:1999kv,
+      author         = "Junk, Thomas",
+      title          = "{Confidence level computation for combining searches with
+                        small statistics}",
+      journal        = "Nucl. Instrum. Meth. A",
+      volume         = "434",
+      pages          = "435",
+      doi            = "10.1016/S0168-9002(99)00498-2",
+      year           = "1999",
+      eprint         = "hep-ex/9902006",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CARLETON-OPAL-PHYS-99-01, CERN-EP-99-041",
+      SLACcitation   = "%%CITATION = HEP-EX/9902006;%%",
+}
+@article{Alwall:2007fs,
+      author         = "Alwall, Johan and others",
+      title          = "Comparative study of various algorithms for the merging
+                        of parton showers and matrix elements in hadronic
+                        collisions",
+      journal        = "Eur. Phys. J. C",
+      volume         = "53",
+      pages          = "473",
+      doi            = "10.1140/epjc/s10052-007-0490-5",
+      year           = "2008",
+      eprint         = "0706.2569",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+      reportNumber   = "SLAC-PUB-12604, CERN-PH-TH-2007-066, LU-TP-07-13,
+                        KA-TP-06-2007, DCPT-07-62, IPPP-07-31",
+      SLACcitation   = "%%CITATION = ARXIV:0706.2569;%%",
+}
+@article{Chatrchyan:2011tz,
+      author         = "Chatrchyan, Serguei and others",
+      title          = "{Measurement of $\text{W}^+\text{W}^-$ Production and Search for the Higgs
+                        Boson in pp Collisions at $\sqrt{s}$ = 7 TeV}",
+      collaboration  = "CMS",
+      journal        = "Phys. Lett. B",
+      volume         = "699",
+      pages          = "25",
+      doi            = "10.1016/j.physletb.2011.03.056",
+      year           = "2011",
+      eprint         = "1102.5429",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "FERMILAB-PUB-11-759-CMS, CERN-PH-EP-2011-015,
+                        CMS-EWK-10-009, FERMILAB-PUB-10-714-E",
+      SLACcitation   = "%%CITATION = ARXIV:1102.5429;%%",
+}
+@article{:2012ks,
+      author         = "Aad, Georges and others",
+      title          = "{Measurement of the WW cross section in $\sqrt{s}$ = 7 TeV
+                        pp collisions with the ATLAS detector and limits on
+                        anomalous gauge couplings}",
+      collaboration  = "ATLAS",
+      journal        = "Phys. Lett. B",
+      volume         = "712",
+      pages          = "289",
+      doi            = "10.1016/j.physletb.2012.05.003",
+      year           = "2012",
+      eprint         = "1203.6232",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2012-060",
+      SLACcitation   = "%%CITATION = ARXIV:1203.6232;%%",
+}

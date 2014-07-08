@@ -1,0 +1,494 @@
+@Article{Bhatti:2008hz,
+     author    = "Bhatti, Anwar and others",
+     title     = "{CMS search plans and sensitivity to new physics with
+                  dijets}",
+     journal   = "J. Phys.",
+     volume    = "G36",
+     year      = "2009",
+     pages     = "015004",
+     eprint    = "0807.4961",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     doi       = "10.1088/0954-3899/36/1/015004",
+     SLACcitation  = "%%CITATION = 0807.4961;%%"
+}
+
+@Article{Aaltonen:2008dn,
+     author    = "Aaltonen, T. and others",
+ collaboration = "CDF",
+     title     = "{Search for new particles decaying into dijets in proton-
+                  antiproton collisions at sqrt(s) = 1.96 TeV}",
+     journal   = "Phys. Rev.",
+     volume    = "D79",
+     year      = "2009",
+     pages     = "112002",
+     eprint    = "0812.4036",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     doi       = "10.1103/PhysRevD.79.112002",
+     SLACcitation  = "%%CITATION = 0812.4036;%%"
+}
+
+@Article{Abazov:2003tj,
+     author    = "Abazov, V. M. and others",
+ collaboration = "D0",
+     title     = "Search for new particles in the two-jet decay channel with
+                  the D0  detector",
+     journal   = "Phys. Rev.",
+     volume    = "D69",
+     year      = "2004",
+     pages     = "111101",
+     eprint    = "hep-ex/0308033",
+}
+
+
+
+@Article{Baur:1987ga,
+     author    = "Baur, U. and Hinchliffe, I. and Zeppenfeld, D.",
+     title     = "EXCITED QUARK PRODUCTION AT HADRON COLLIDERS",
+     journal   = "Int. J. Mod. Phys.",
+     volume    = "A2",
+     year      = "1987",
+     pages     = "1285",
+}
+
+@Article{Bagger:1987fz,
+     author    = "Bagger, Jonathan and Schmidt, Carl and King, Stephen",
+     title     = "AXIGLUON PRODUCTION IN HADRONIC COLLISIONS",
+     journal   = "Phys. Rev.",
+     volume    = "D37",
+     year      = "1988",
+     pages     = "1188",
+}
+@Article{Chivukula:1996yr,
+     author    = "Chivukula, R. S. and Cohen, Andrew G. and Simmons, E. H.",
+     title     = "New Strong Interactons at the Tevatron ?",
+     journal   = "Phys. Lett.",
+     volume    = "B380",
+     year      = "1996",
+     pages     = "92-98",
+     eprint    = "hep-ph/9603311",
+}
+@Article{Hewett:1988xc,
+     author    = "Hewett, JoAnne L. and Rizzo, Thomas G.",
+     title     = "LOW-ENERGY PHENOMENOLOGY OF SUPERSTRING INSPIRED E(6)
+                  MODELS",
+     journal   = "Phys. Rept.",
+     volume    = "183",
+     year      = "1989",
+     pages     = "193",
+     and references therein
+}
+@Article{Lane:2002sm,
+     author    = "Lane, Kenneth and Mrenna, Stephen",
+     title     = "The collider phenomenology of technihadrons in the
+                  technicolor Straw Man Model",
+     journal   = "Phys. Rev.",
+     volume    = "D67",
+     year      = "2003",
+     pages     = "115011",
+     eprint    = "hep-ph/0210299",
+}
+
+@Article{Eichten:1984eu,
+     author    = "Eichten, E. and Hinchliffe, I. and Lane, Kenneth D. and
+                  Quigg, C.",
+     title     = "SUPER COLLIDER PHYSICS",
+     journal   = "Rev. Mod. Phys.",
+     volume    = "56",
+     year      = "1984",
+     pages     = "579-707",
+}
+
+@ARTICLE{RS,
+      AUTHOR       = "{L.~Randall and R.~Sundrum}",
+      TITLE        = "{Large Mass Hierarchy from a Small Extra Dimension}",
+      JOURNAL      = prl,
+      VOLUME       = "83",
+      YEAR         = "1999",
+      PAGES        = "3370",
+}
+
+@ARTICLE{CMS_AN_2006-070,
+     AUTHOR       = "Gumus, K. and Akcshurin, N. and Esen, S. and Harris, R.",
+     TITLE        = "CMS Senitivity to Dijet Resonances",
+     JOURNAL      = "CMS Note",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?type=NOTE&year=2006&files=NOTE2006_070.pdf}{2006/070 HYPERLINK}",
+     YEAR         = "2006"}
+
+@ARTICLE{CMS_AN_2009-070,
+     AUTHOR       = "Ozturk, S. and Jeong, C. and Lee, S. and Harris, R. and Kousouris, K.",
+     TITLE        = "Plans to Search for New Particles Decaying to Dijets in pp Collisions at sqrt(s)=10 TeV",
+     JOURNAL      = "CMS AN-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2009_070_v3.pdf}{2009/070 HYPERLINK}",
+     YEAR         = "2009"}
+
+@ARTICLE{CMS_AN_2009-145,
+     AUTHOR       = "Jeong, C. and Lee,S. and Volobuev, I. and Ozturk, S. and and Harris, R. and Kousouris, K.",
+     TITLE        = "Dijet Resonance Shapes for sqrt(s)=10 TeV",
+     JOURNAL      = "CMS AN-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2009_145_v1.pdf}{2009/145 HYPERLINK}",
+     YEAR         = "2009"}
+
+@ARTICLE{CMS_AN_2010-126,
+     AUTHOR       = " Harel, A. and Hirschauer, J. and Koylu, S. E. and Miner, D. ",
+     TITLE        = "Search for New Physics with the Dijet Centrality Ratio",
+     JOURNAL      = "CMS AN-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2010/126}{2010/126 HYPERLINK}",
+     YEAR         = "2010"}
+
+
+@ARTICLE{CMS_AN_2006-027,
+     AUTHOR       = "Belotelov, I. and Golutvin, I. and Bourilkov, D. and Lanyov, A. and Rogalev, E. and Savina, M. and Shmatov, S.",
+     TITLE        = "Search for ADD extra dimensional gravity in di-muon channel with the CMS Detector",
+     JOURNAL      = "CMS Note",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?type=NOTE&year=2006&files=NOTE2006_076.pdf}{2006/076}",
+     YEAR         = "2006"}
+@ARTICLE{CMS_NOTE_2006-106,
+     AUTHOR       = "Aldaya, M. and Arce, P. and Caballero, J. and de la Cruz, B. and Garcia-Abia, P. and Hernandez, J.M. and Josa, M.I. and Ruiz, E.",
+     TITLE        = "Discovery potential and search strategy for the Standard Model Higgs boson in the $H\to ZZ^\star\to 4\mu$ decay channel using a mass-independent analysis",
+     JOURNAL      = "CMS Note",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?type=NOTE&year=2006&files=NOTE2006_106.pdf}{2006/106}",
+     YEAR         = "2006"}
+@Article{Brandt:1997gi,
+     author    = "Brandt, A. and others",
+ collaboration = "UA8",
+     title     = "Measurements of single diffraction at $\sqrt{s} =$ 630 GeV:
+                  Evidence for  a non-linear $\alpha(t)$ of the pomeron",
+     journal   = "Nucl. Phys.",
+     volume    = "B514",
+     year      = "1998",
+     pages     = "3-44",
+     SLACcitation  = "%%CITATION = HEP-EX 9710004;%%",
+     doi       = "10.1016/S0550-3213(97)00813-4"
+}
+@ARTICLE{Buchmuller:1986zs,
+     AUTHOR       = "Buchm{\"u}ller, W. and Wyler, D.",
+     TITLE        = "Constraints on SU(5)-type leptoquarks",
+     JOURNAL      = "Phys. Lett.",
+     VOLUME       = "B 177",
+     YEAR         = "1986",
+     pages        = "p.377",
+     SLACcitation  = "%%CITATION = PHLTA,B191,442;%%",
+     DOI          = "10.1016/0370-2693(86)90771-9"}
+@Article{PTDR2,
+     author    = "{CMS Collaboration}",
+     title     = "{CMS technical design report, volume II: Physics
+                  performance}",
+     journal   = "J. Phys.",
+     volume    = "G34",
+     year      = "2007",
+     pages     = "995-1579",
+     doi       = "10.1088/0954-3899/34/6/S01",
+     SLACcitation  = "%%CITATION = JPHGB,G34,995;%%"
+}
+@Article{Cullen:2000ef,
+     author    = "Cullen, Schuyler and Perelstein, Maxim and Peskin, Michael
+                  Edward",
+     title     = "{TeV strings and collider probes of large extra
+                  dimensions}",
+     journal   = "Phys. Rev.",
+     volume    = "D62",
+     year      = "2000",
+     pages     = "055012",
+     eprint    = "hep-ph/0001166",
+     archivePrefix = "arXiv",
+     doi       = "10.1103/PhysRevD.62.055012",
+     SLACcitation  = "%%CITATION = HEP-PH/0001166;%%"
+}
+@Article{Anchordoqui:2008di,
+     author    = "Anchordoqui, Luis A. and others",
+     title     = "{Dijet signals for low mass strings at the LHC}",
+     journal   = "Phys. Rev. Lett.",
+     volume    = "101",
+     year      = "2008",
+     pages     = "241803",
+     eprint    = "0808.0497",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1103/PhysRevLett.101.241803",
+     SLACcitation  = "%%CITATION = 0808.0497;%%"
+}
+@Article{Cheung:2005ig,
+     author    = "Cheung, Kingman and Liu, Yueh-Feng",
+     title     = "{Constraints on string resonance amplitudes}",
+     journal   = "Phys. Rev.",
+     volume    = "D72",
+     year      = "2005",
+     pages     = "015010",
+     eprint    = "hep-ph/0505241",
+     archivePrefix = "arXiv",
+     doi       = "10.1103/PhysRevD.72.015010",
+     SLACcitation  = "%%CITATION = HEP-PH/0505241;%%"
+}
+
+@Article{Abe:1997hm,
+     author    = "Abe, F. and others",
+ collaboration = "CDF",
+     title     = "{Search for new particles decaying to dijets at CDF}",
+     journal   = "Phys. Rev.",
+     volume    = "D55",
+     year      = "1997",
+     pages     = "5263-5268",
+     eprint    = "hep-ex/9702004",
+     archivePrefix = "arXiv",
+     doi       = "10.1103/PhysRevD.55.R5263",
+     SLACcitation  = "%%CITATION = HEP-EX/9702004;%%"
+}
+
+@Article{Abe:1997hm,
+     author    = "Abe, F. and others",
+ collaboration = "CDF",
+     title     = "{Search for new particles decaying to dijets at CDF}",
+     journal   = "Phys. Rev.",
+     volume    = "D55",
+     year      = "1997",
+     pages     = "5263-5268",
+     eprint    = "hep-ex/9702004",
+     archivePrefix = "arXiv",
+     doi       = "10.1103/PhysRevD.55.R5263",
+     SLACcitation  = "%%CITATION = HEP-EX/9702004;%%"
+}
+
+@Article{Abe:1995jz,
+     author    = "Abe, F. and others",
+ collaboration = "CDF",
+     title     = "{Search for new particles decaying to dijets in $p\bar{p}$
+                  collisions at $\sqrt{s} = 1.8$ TeV}",
+     journal   = "Phys. Rev. Lett.",
+     volume    = "74",
+     year      = "1995",
+     pages     = "3538-3543",
+     eprint    = "hep-ex/9501001",
+     archivePrefix = "arXiv",
+     doi       = "10.1103/PhysRevLett.74.3538",
+     SLACcitation  = "%%CITATION = HEP-EX/9501001;%%"
+}
+
+
+@ARTICLE{ref:VdM,
+     AUTHOR       = "Van der Meer, S.",
+     TITLE        = "Calibration of the Effective Beam Height in ISR",
+     JOURNAL      = "ISR-PO/",
+     VOLUME       = "68-31",
+     YEAR         = ""}
+
+
+@ARTICLE{PAS_JME_07-002,
+     AUTHOR       = " ",
+     collaboration = "CMS",
+     TITLE        = "Plans for Jet Energy Corrections at CMS",
+     JOURNAL      = "CMS PAS JME-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=JME-07-002}{07-002 HYPERLINK}",
+     YEAR         = "2008"}
+
+
+@ARTICLE{PAS_JME_10-003,
+     AUTHOR       = " ",
+     collaboration = "CMS",
+     TITLE        = "CMS Jet Performance in pp Collisions at sqrt(s)=7 TeV",
+     JOURNAL      = "CMS PAS JME-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=JME-10-003}{10-003 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{PAS_JME_10-010,
+     AUTHOR       = " ",
+     collaboration = "CMS",
+     TITLE        = "Jet Energy Corrections determination at sqrt(s)=7 TeV",
+     JOURNAL      = "CMS PAS JME-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=JME-10-010}{10-010 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{PAS_JME_10-011,
+     AUTHOR       = " ",
+     collaboration = "CMS",
+     TITLE        = "Jet Calibration and Resolution",
+     JOURNAL      = "CMS PAS JME-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=JME-10-011}{10-011 HYPERLINK}",
+     YEAR         = "2011"}
+
+
+
+@ARTICLE{PAS_EWK_10-004,
+     AUTHOR       = " ",
+     collaboration = "CMS",
+     TITLE        = "Measurement of Luminosity",
+     JOURNAL      = "CMS PAS EWK-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=EWK-10-004}{10-004 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{PAS_EXO_10-010,
+     AUTHOR       = " ",
+     collaboration = "CMS",
+     TITLE        = "Search for Dijet Resonances in the Dijet Mass Distribution in 7 TeV $pp$ Collisions at CMS",
+     JOURNAL      = "CMS PAS EXO-",
+     VOLUME       =
+     "\href{http://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=EXO-10-010}{10-010 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{PAS_EXO_10-001,
+     AUTHOR       = " ",
+     collaboration = "CMS",
+     TITLE        = "Search for Dijet Resonances in the Dijet Mass Distribution in $pp$ Collisions at $\sqrt{s}=7$ TeV",
+     JOURNAL      = "CMS PAS EXO-",
+     VOLUME       =
+     "\href{http://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=EXO-10-001}{10-001 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{CMS_AN_2010/141,
+     AUTHOR       = "Pandolfi, F and del Re, Daniele",
+     TITLE        = "Jet Response and Resolution Measurement with Photon+Jet Events at sqrt{s} = 7 TeV  ",
+     JOURNAL      = "CMS AN-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2010/141}{2010/141 HYPERLINK}",
+     YEAR         = "2010"}
+
+
+@ARTICLE{CMS_AN_2010/179,
+     AUTHOR       = "Sharma, S. and others",
+     TITLE        = "  Single Particle Response in the CMS Calorimeters ",
+     JOURNAL      = "CMS AN-",
+     VOLUME       = "\href{Single Particle Response in the CMS Calorimeters}{2010/179 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{CMS_AN_2010/139,
+     AUTHOR       = "Kousouris, Konstantinos",
+     TITLE        = " Measurement of the Relative Jet Energy Scale in CMS with pp Collisions at $\mathbf{\sqrt{s}=7\,\text{TeV}}$  ",
+     JOURNAL      = "CMS AN-",
+     VOLUME       ="\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2010_139_v2.pdf}{2010/139 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{PAS_JME_10-008,
+     AUTHOR       = " ",
+     collaboration = "CMS",
+     TITLE        = "Single Particle Response in the CMS Calorimeters",
+     JOURNAL      = "CMS PAS JME-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/analysisadmin/cadi?ancode=JME-10-008}{10-008 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{CMS_AN_2010/134,
+     AUTHOR       = "Philip Schieferdecker",
+     TITLE        = "Measurement of the Jet Energy Resolution in sqrt(s)= 7 TeV data from the Asymmetry Method",
+     JOURNAL      = "CMS AN-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2010_134_v2.pdf}{2010/134 HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{CDF5305,
+     AUTHOR       = "Luc Demortier",
+     TITLE        = "A convolution method for folding systematic uncertainties into likelihood functions",
+     JOURNAL      = "CDF/MEMO/STATISTICS/PUBLIC/",
+     VOLUME       = "5305",
+     YEAR         = "2005"}
+
+@ARTICLE{refMikko,
+     AUTHOR       = "Mikko Voutilainen",
+     TITLE        = "Absolute JEC Plan B: (Resolution extracted from Slide 12)",
+     JOURNAL      = "Presentation at the June 24 Jet Algorithms Meeting",
+     VOLUME       = "\href{http://indico.cern.ch/getFile.py/access?contribId=4&resId=0&materialId=slides&confId=99488}{HYPERLINK}",
+     YEAR         = "2010"}
+
+@ARTICLE{refExoticaMultijetsTalk,
+     AUTHOR       = "Robert Harris",
+     TITLE        = "$\eta$ Cuts for Dijet Resonance Search",
+     JOURNAL      = "Presentation at the July 29, 2010 Exotica Multijets Meeting",
+     VOLUME       = "\href{http://indico.cern.ch/materialDisplay.py?contribId=1&materialId=slides&confId=102784}{HYPERLINK}",
+     YEAR         = "2010"}
+     
+@ARTICLE{ATLAS_Search,
+     collaboration       = "ATLAS",
+     title     = "{Search for New Particles in Two-Jet Final States in 7 TeV
+                  Proton-Proton Collisions with the ATLAS Detector at the
+                  LHC}",
+     year      = "2010",
+     eprint    = "1008.2461",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     SLACcitation  = "%%CITATION = 1008.2461;%%"
+}
+
+@Article{CMSdijetPRL,
+     author    = "Khachatryan, Vardan and others",
+ collaboration = "CMS",
+     title     = "{Search for Dijet Resonances in 7 TeV pp Collisions at
+                  CMS}",
+     journal   = "Phys. Rev. Lett.",
+     volume    = "105",
+     year      = "2010",
+     pages     = "211801",
+     eprint    = "1010.0203",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     doi       = "10.1103/PhysRevLett.105.211801",
+     SLACcitation  = "%%CITATION = 1010.0203;%%"
+}
+
+@ARTICLE{CMS_AN_2010/108,
+     AUTHOR       = "Jeong, C. and Ozturk, S. and others",
+     TITLE        = "Search for Dijet Resonances in the Dijet Mass Distribution in $pp$ Collisions at $\sqrt{s}=7$ TeV",
+     JOURNAL      = "CMS AN-",
+     VOLUME       ="\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2010_108_v15.pdf}{2010/108 HYPERLINK}",
+     YEAR         = "2011"}
+
+@ARTICLE{CMS_AN_2010/108,
+     AUTHOR       = "Jeong, C. and Ozturk, S. and others",
+     TITLE        = "Search for Dijet Resonances in the Dijet Mass Distribution in $pp$ Collisions at $\sqrt{s}=7$ TeV",
+     JOURNAL      = "CMS AN-",
+     VOLUME       ="\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2010_108_v15.pdf}{2010/108 HYPERLINK}",
+     YEAR         = "2011"}
+
+@ARTICLE{bib:statistics,
+     AUTHOR       = "Cousins, B",
+     TITLE        = "Lognormal and Gamma distribution instead of truncated Gaussian for pdf of positive nuisance parameter.",
+     JOURNAL      = "CMS Twiki ",
+     VOLUME       ="\href{
+     https://twiki.cern.ch/twiki/bin/view/CMS/QuestionsAndAnswers}{Statistics Questions and Answers HYPERLINK}",
+     YEAR         = "2010"}
+@ARTICLE{JME-10-014-PAS,
+     collaboration       = "CMS",
+     TITLE        = "   Jet Energy Resolution determination at $\sqrt{s}=7$~TeV",
+     report      = "CMS PAS JME-10-014",
+     YEAR         = "2011"
+}
+@Article{Aad:2011aj,
+     author    = "Aad, Georges and others",
+ collaboration = "ATLAS",
+     title     = "{Search for New Physics in Dijet Mass and Angular
+                  Distributions in pp Collisions at sqrt(s) = 7 TeV Measured
+                  with the ATLAS Detector}",
+     year      = "2011",
+     eprint    = "1103.3864",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     SLACcitation  = "%%CITATION = 1103.3864;%%"
+}
+@ARTICLE{CMS_AN_2009-070,
+     AUTHOR       = "Ozturk, S. and Jeong, C. and Lee, S. and Harris, R. and Kousouris, K.",
+     TITLE        = "Plans to Search for New Particles Decaying to Dijets in pp Collisions at sqrt(s)=10 TeV",
+     JOURNAL      = "CMS AN-",
+     VOLUME       = "\href{http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2009_070_v3.pdf}{2009/070 HYPERLINK}",
+     YEAR         = "2009"}
+@ARTICLE{PFT-09-001-PAS,
+     collaboration       = "CMS",
+     TITLE        = "Particle-Flow Event Reconstruction in CMS and Performance for
+Jets, Taus, and MET",
+     report      = "CMS PAS PFT-09-001",
+     YEAR         = "2009"
+}
+
+@article{1126-6708-2008-04-063,
+  author={Matteo Cacciari and Gavin P. Salam and Gregory Soyez},
+  title={The anti- k t jet clustering algorithm},
+  journal={Journal of High Energy Physics},
+  volume={2008},
+  number={04},
+  pages={063},
+  url={http://stacks.iop.org/1126-6708/2008/i=04/a=063},
+  year={2008}
+}
+
+
+@ARTICLE{CMS_AN_2011/242,
+     AUTHOR       = "Gouzevitch, M. and others",
+     TITLE        = "Search for Heavy Particles Decaying to Hadronic Final States with FatJet Reconstruction",
+     JOURNAL      = "CMS AN-",
+     VOLUME      = "\href{http://cms.cern.ch/iCMS/jsp/db_notes/noteInfo.jsp?cmsnoteid=CMS%20AN-2011/242}{2011/242 HYPERLINK}",
+     YEAR         = "2011"}

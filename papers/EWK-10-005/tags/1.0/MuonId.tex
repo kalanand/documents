@@ -1,0 +1,24 @@
+%\subsection{Muons \label{sec:muonId}}
+
+%Muon used in this analysis are selected according to the
+%quality criteria studies in
+%Events with high-$\Pt$ muons are recorded online using the Level-1 muon
+%trigger and the High-Level Trigger (HLT), which requires muons within $|\eta| < 2.1$ and
+%with a thresholds of $\Pt>9 \GeVc$ or $\Pt>15 \GeVc$, according to the running periods. 
+Muons must be identified by two different algorithms~\cite{MUONPAS}: one proceeds from 
+the inner tracker outwards (``tracker muons''), the other one starts from 
+segments in the muon chambers and proceeds inwards (``global muons''). 
+Decays in flight of hadrons and punch-through are reducing a cut of $\chi^2/ndof < 10$ 
+on a global fit containing tracker and muon detector hits. 
+In order to ensure a precise estimate of momentum and impact parameter 
+%(the muon momentum resolution is dominated by the inner tracker detector
+%for the tranverse momentum range interesting for this measurement)
+only tracks with more than 10 hits and at least one hit in the pixel detector are used. 
+We require at least two levels of muon stations in the measurement, 
+to ensures a good quality momentum estimate at trigger level, and
+to further suppresses remaining fake muon candidates.
+%For the $\Zmm$ analysis we minimize the cross-corrlation between tracker and muon 
+%detectors by drop the $\chi^2/{\mathrm{ndof}}$ and 
+%the request that the muon is found by the tracker algorithm.
+Cosmics are rejected by requiring a transverse impact parameter distance to the beam spot
+position of less than 2 mm.

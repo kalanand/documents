@@ -1,0 +1,97 @@
+\section{Limit Shapes}
+\label{app:limitShapes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%
+%%%%%%%
+%%%%%%%
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=170}
+\caption{Shape inputs to the limit setter for Higgs mass point 170~GeV}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=180}
+\caption{Shape inputs to the limit setter for Higgs mass point 180~GeV}
+\end{center}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=190}
+\caption{Shape inputs to the limit setter for Higgs mass point 190~GeV}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=200}
+\caption{Shape inputs to the limit setter for Higgs mass point 200~GeV}
+\end{center}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=250}
+\caption{Shape inputs to the limit setter for Higgs mass point 250~GeV}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=300}
+\caption{Shape inputs to the limit setter for Higgs mass point 300~GeV}
+\end{center}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=350}
+\caption{Shape inputs to the limit setter for Higgs mass point 350~GeV}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=400}
+\caption{Shape inputs to the limit setter for Higgs mass point 400~GeV}
+\end{center}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=450}
+\caption{Shape inputs to the limit setter for Higgs mass point 450~GeV}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=500}
+\caption{Shape inputs to the limit setter for Higgs mass point 500~GeV}
+\end{center}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=550}
+\caption{Shape inputs to the limit setter for Higgs mass point 550~GeV}
+\end{center}
+\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figs/hww-histo-shapes-M=600}
+\caption{Shape inputs to the limit setter for Higgs mass point 600~GeV}
+\end{center}
+\end{figure}
+%%%%%%%
+
+%--------------------------------------------------

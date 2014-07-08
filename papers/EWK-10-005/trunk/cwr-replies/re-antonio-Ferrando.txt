@@ -1,0 +1,72 @@
+Dear Antonio, 
+
+Thank you very much for the useful suggestions and the numerous corrections you sent us. 
+
+We implemented the vast majority of, if not all, the editorial comments that we received. 
+In some cases, comments from different reviewers overlap or suggest incompatible changes. 
+In many of those and other cases the best solution was to rephrase the sentence or 
+paragraph involved. The number of editorial comments, due to the size of the paper, is too 
+large to give a reply for every single comment. 
+
+Here we collect some questions that we think are necessary to address:
+
+Q: 
+The paper is mostly written in first person as from the first sentence in the Abstract 
+(We present ...). The CMS Collaboration is too important as to allow such a way of writing. 
+The paper should therefore be entirely rewritten. I include here some examples of lines that 
+need to be changed because of the use of the first person: [...] 
+A: 
+Done in the abstract and in most of the Sections of the paper. A few first person sentences 
+are left, according to the PubBoard guidelines. On average one every 5 pages now. 
+
+Q: 
+In Lines 70 to 79. The ECAL rough energy resolution is mentioned, but as in most of the CMS 
+papers nothing is said about the HCAL energy resolution. Here, not even a rough estimate is 
+given. However, for the analysis presented here, the HCAL energy reconstruction is used. 
+Please, think about saying a minimum on this subject. 
+A: 
+We added a sentence on HCAL similar to CERN-PH-EP/2011-044. 
+
+Q: 
+Lines 168 and 169. Please complete the text by defining the variables later used: H/E and sihih 
+A: 
+The sihih variable was mentioned twice. This is now corrected. The sihih is a measure of the 
+e/m shower width in eta direction. The H/E is defined on line 168.
+ 
+Q: 
+In the Captions of Figs. 1 and 2 it is said that the simulated signal (histograms) are 
+normalized to the same number of events as in the data (dots). I was expected equal areas 
+for both types of events in all figures. I have the impression that this is not the case, 
+but may be is just an effect of the logarithmic scale and that the dots are too thick. 
+A: 
+The intension was to normalize as described above. We double checked w/o finding any 
+normalization problem. 
+
+Q: 
+Lines 210-211. I suggest discarding the sentence: .Moreover (?), the global muon 
+fit .... less than 10... I think is better to say nothing than admit you are happy with 
+any chi^2/NDF ratio. 
+A: 
+The cut is actually not applied to ensure the quality of the fit, but to reject fake muons. 
+The text has been improved adding: "in order to reject fake muons and mis-reconstructed 
+particles".
+
+Q: 
+Lines 467-468 and Table 7. You have to use a unique definition (the correct one, of course!). 
+Background fraction means B/(B+S) and ratio of background to signal is B/S. Use the correct 
+expression in text and Table. 
+A: 
+Both text and table caption unambiguously refer to background-to-signal ratio that is B/S. 
+
+Q:
+Caption of Fig. 27. To avoid confusion I would finish the last sentence by .... the total 
+experimental, theoretical and luminosity uncertainties. The luminosity uncertainties 
+amount to 3.4% for ATLAS and 4% for CMS...
+A:
+Removed comparison to ATLAS from Fig. according to CMS rule not to cite conf. notes. 
+
+
+Thank you once more for your time and effort to read and improve this paper.
+
+All the best, 
+Georgios & Luca

@@ -1,0 +1,133 @@
+\subsection{Dijet trigger selection}
+\label{sec:dataSampleAndEventSelection}
+
+Events are collected using single-jet triggers, which are
+based on jets reconstructed only from calorimetric information. 
+This procedure yields inferior resolution to jets reconstructed
+offline with PF constituents, but provides faster 
+reconstruction that meets trigger requirements.
+As the instantaneous luminosity is time-dependent, the specific
+jet-$\pt$ thresholds change with time.
+%\label{sec:trigAssignment}
+The triggers used to select dijet events have partial overlap. 
+Those with lower-$\pt$ thresholds have high prescale settings to accommodate the higher
+data-acquisition rates, and some
+events selected with these lower-$\pt$ triggers are also collected at
+higher thresholds.
+
+To avoid double counting of phase space, each event is assigned
+to a specific trigger. 
+To do this, we compute the trigger 
+efficiency as a function of reconstructed $\pt^{AVG}$, select 
+an interval in trigger efficiency where the efficiency is maximum ($>
+95$\%) for 
+that range of $\pt^{AVG}$, and assign that trigger to the appropriate $\pt^{AVG}$ interval. 
+The assignment is based on the
+jet $\pt$ values
+reconstructed offline (but not groomed). %Table~\ref{TriggerTurnOns}
+%shows the $\pt$ thresholds for each of the dijet triggers, and the corresponding interval 
+%used for the reconstructed $\pt^{AVG}$ in the event.
+Table~\ref{TriggerTurnOns}
+shows the $\pt$ thresholds for each of the jet triggers used in the
+analysis, and the corresponding intervals of $\pt$ to which the 
+triggered events are assigned. 
+
+\begin{table}[h]
+  \centering
+  \caption{Trigger $\pt$ thresholds for individual jets, 
+    and corresponding $\pt^{AVG}$ intervals used to assign the
+    triggered events in the dijet analysis.\label{TriggerTurnOns}}
+  \begin{tabular}{ |c|c|}
+    \hline 
+\rule{0pt}{12pt}
+Trigger $\pt$ threshold (\GeVns) & $\pt^{AVG}$ range (\GeVns) \\ 
+\hline
+%60 & 0-150   \\
+%100& 150-220 \\
+190& 220--300  \\
+240& 300--450  \\
+370& $>$450 \\
+   \hline 
+  \end{tabular}
+\end{table}
+ 
+\subsection{V+jet trigger selection}
+\label{sec:dataSampleAndEventSelectionVjet}
+
+
+Several triggers are also used to collect events corresponding to
+the topology of V+jet events, where the V decays via electrons or
+muons in the final state. 
+For the \PW+jet channels, the triggers consist of several single-lepton 
+triggers, with lepton identification criteria applied online. 
+To assure an acceptable event rate, leptons are required to be isolated from other
+tracks and energy depositions in the calorimeters. 
+For the \PW$(\mu\nu_\mu)$ channel, the trigger thresholds for the
+muon $\pt$ are in the range of 17 to 40\GeV.
+The higher thresholds are used at higher instantaneous luminosity. 
+The combined trigger efficiency for signal events 
+%that pass all trigger and offline requirements
+that pass offline requirements
+(described in Section~\ref{sec:evsel_paper}) is ${\approx} 92\%$.
+
+
+For the $\PW(\Pe\Pgne)$ events, the electron $\pt$ threshold ranges 
+from 25 to 65 \GeV. 
+To enhance the fraction of \PW+jet events in the data, the
+single-electron triggers are also required to have minimum thresholds 
+on the magnitude of the imbalance 
+in transverse energy ($\met$) and on the transverse mass 
+($m_\mathrm{T}$) of the (electron + $\met$) system,
+where $m_\mathrm{T}^2 = 2E_\mathrm{T}^{\mathrm{e}}\met(1-\cos\phi)$,
+and $\phi$ is the angle between the directions of $p_{\mathrm{T}}^{\mathrm{e}}$ and $\met$. 
+The combined efficiency for electron \PW+jet events that pass the offline 
+criteria is ${\approx} 99\%$.
+
+
+ The $\Z(\mu\mu)$ channel uses the same single-muon triggers as the
+ $\PW(\mu\nu_\mu)$ channel. The $\Z (\Pe\Pe)$ channel uses dielectron triggers
+ with lower thresholds for $\pt$ (17 and 8\GeV), and additional isolation
+ requirements. These triggers are 99\% efficient for all
+ {\Z}$+$jet events that pass the final offline selection criteria.
+
+\subsection{Binning jets as a function of $\pt$}
+\label{sec:ptBinAssignment}
+
+
+The jet $\pt$ bins introduced in Eq.~(\ref{eq:pdf_mjet_i}) are given in
+Table~\ref{tab:ptBins} for V+jet and dijet events. The jet $\pt$ is re-evaluated for each grooming
+algorithm. 
+Because there are large biases due to jet misassignment in the dijet
+events, especially at small $\pt$ (when three particle-level jets are
+often reconstructed as two jets in the detector, or vice versa), 
+the $\pt$ intervals for these events begin at 220 GeV. 
+Furthermore, the smaller number of events in the V+jet samples precludes the
+study of these events beyond $\pt=$ 450 GeV.
+
+
+\begin{table}[h]
+  \centering
+  \caption{Intervals in ungroomed jet $\pt$ for the V+jet and dijet analyses. \label{tab:ptBins}}
+  \begin{tabular}{ |ccc|}
+    \hline 
+\rule{0pt}{12pt}
+    Bin & $\pt$ interval (\GeVns) & Analysis\\ 
+    \hline
+%    1 & 50-125 \GeV \\
+    1 & 125--150 & V+jet \\
+    2 & 150--220 & V+jet  \\
+    3 & 220--300 & V+jet,dijet  \\
+    4 & 300--450 & V+jet,dijet  \\
+    5 & 450--500 & dijet  \\
+    6 & 500--600 & dijet  \\
+    7 & 600--800 & dijet  \\
+    8 & 800--1000 & dijet  \\
+    9& 1000--1500 & dijet  \\
+%    11& $>$1500  \\
+   \hline 
+  \end{tabular}
+\end{table}
+
+
+
+

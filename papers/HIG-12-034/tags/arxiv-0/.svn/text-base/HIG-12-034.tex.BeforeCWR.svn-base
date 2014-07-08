@@ -1,0 +1,173 @@
+%\ww Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 165261 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/papers/HIG-12-034/trunk/HIG-12-034.tex $
+\RCS$Id: HIG-12-034.tex 165261 2013-01-17 06:16:36Z asavin $
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+%%%%%%%%%% 2l2q
+\providecommand{\MT}{\ensuremath{M_{\mathrm{T}}\xspace}}
+%%%%%%%%%%% 4l
+\newcommand{\Zee}{\ensuremath{\cPZ\to\Pep\Pem}}%\mbox{$\rm Z\rightarrow\rm e^{+} \rm e^{-}$}}
+\newcommand{\mW}{\ensuremath{m_\mathrm{W}}}
+\newcommand{\mZZ}{\ensuremath{m_\mathrm{ZZ}}}
+\newcommand{\mjj}{\ensuremath{m_\mathrm{jj}}}
+\newcommand{\mll}{\ensuremath{m_\mathrm{\ell \ell}}}
+\newcommand{\tauh}{\ensuremath{\Pgt_\mathrm{h}}}
+\newcommand{\taul}{\ensuremath{\Pgt_\mathrm{\ell}}}
+\newcommand{\nanob}{\mbox{{\rm ~nb}~}}
+\newcommand{\fb}{\ensuremath{\mathrm{fb}}}
+\newcommand{\pb}{\ensuremath{\mathrm{pb}}}
+\newcommand{\ifb}{\ensuremath{\mathrm{fb^{-1}}}}
+\newcommand{\ipb}{\ensuremath{\mathrm{pb^{-1}}}}
+\newcommand{\Hmu}{\ensuremath{\PH\to\cPZ\cPZ^{(\ast)}\to 4\Pgm}}%{\ensuremath{\mathrm{H}\to\mathrm{ZZ^{(\ast)}}\to4\mu}}
+\newcommand{\mmu}{\ensuremath{m_{4\Pgm}}}%{\ensuremath{\mathrm{m_{4\mu}}}}
+\newcommand{\mH}{\ensuremath{m_{\PH}}}%{\ensuremath{m_{\mathrm{H}}}}
+\newcommand{\lnQ}{\ensuremath{\mathrm{ln}(Q)}}
+\newcommand{\mlnQ}{\ensuremath{-2\,\ln(Q)}}
+\newcommand{\LS}{\ensuremath{\mathcal{L}(S)}}
+\newcommand{\LB}{\ensuremath{\mathcal{L}(B)}}
+\newcommand{\LSB}{\ensuremath{\mathcal{L}(S+B)}}
+\newcommand{\mZ}{\ensuremath{m_{\cPZ}}}
+\newcommand{\Zbb}{\ensuremath{(\cPZ/\Pgg^*){\cPqb\cPaqb}}}
+%\newcommand{\ZZ}{\ensuremath{\cPZ/\Pgg^*\cPZ/\Pgg^*}}
+\newcommand{\ZZ}{\ensuremath{\cPZ\cPZ}}
+\newcommand{\Zgam}{\ensuremath{\cPZ/\Pgg^*}}
+\newcommand{\mumu}{\ensuremath{\Pgmp\Pgmm}}
+\newcommand{\Wo}{\ensuremath{\PW}}%
+\newcommand{\Wp}{\ensuremath{\PWp}}%
+\newcommand{\Wm}{\ensuremath{\PWm}}%
+\newcommand{\Zo}{\ensuremath{\cPZ}}%
+\newcommand{\Ho}{\ensuremath{\PH}}%
+\newcommand{\KD}{\mathrm{KD} }
+\newcommand{\X}{\mathrm{X} }
+\newcommand{\Tau}{\ensuremath{\tau}}
+\newcommand{\Elpm}{\ensuremath{\mathrm{\mathrm{e}}^{\pm}}}
+\newcommand{\Elp}{\ensuremath{\mathrm{\mathrm{e}}^{+}}}
+\newcommand{\Elm}{\ensuremath{\mathrm{\mathrm{e}}^{-}}}
+\newcommand{\Mmp}{\ensuremath{\mu^{\mp}}}
+\newcommand{\Lep}{\ensuremath{\mathrm{\ell}}}
+\newcommand{\ptlmax}{\ensuremath{p_{\mathrm{T}}^{\Lep,\mathrm{max}}}}
+\newcommand{\Et}{\ensuremath{E_\mathrm{T}}}
+\newcommand{\met}{\ensuremath{\Et^{\mathrm{miss}}}}
+\newcommand{\GAMMA}{\ensuremath{\gamma}}
+\newcommand{\Hi}{\ensuremath{\PH}}
+\newcommand{\Mp}{\ensuremath{\mu^{+}}}
+\newcommand{\Mm}{\ensuremath{\mu^{-}}}
+\newcommand{\deletall}{\ensuremath{\Delta\eta_{\Lep\Lep}}}
+\newcommand{\delphill}{\ensuremath{\Delta\phi_{\Lep\Lep}}}
+\newcommand{\delphimetll}{\ensuremath{\Delta\phi_{\Lep\Lep,\MET}}}
+\newcommand{\ptlmin}{\ensuremath{p_{\mathrm{T}}^{\Lep,\mathrm{min}}}}
+\newcommand{\wgamma}{\ensuremath{\Wo\GAMMA}}
+\newcommand{\WW}{\ensuremath{\Wo\Wo}}
+\newcommand{\WpWm}{\ensuremath{\Wo^+\Wo^-}}
+\newcommand{\tw}{\ensuremath{\mathrm{t}\Wo}} 
+\newcommand{\WZ}{\ensuremath{\Wo\Zo}}
+\newcommand{\Wjets}{\ensuremath{\mathrm{W+jets}}}
+\newcommand{\Hww}{\Hi\to\WW}
+\newcommand{\dytt}{\ensuremath{\mathrm{\Z}/\GAMMA^* \to\tau^+\tau^-}}
+\newcommand{\dyll}{\ensuremath{\mathrm{\Z}/\GAMMA^*\mathrm{\to \ell^+\ell^-}}}
+\newcommand{\dyee}{\ensuremath{\mathrm{\Z}/\GAMMA^*\mathrm{\to e^+e^-}}}
+
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{HIG-12-034} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+%\title{High Higgs mass searches: all WW+ZZ}
+\title{Search for a standard-model-like Higgs boson in the 
+%mass range $160 < \mH < 1000$ GeV in
+mass range up to $1\TeV$ in
+$\PH \to \WW$ and $\PH \to \ZZ$
+channels in \Pp\Pp\ collisions 
+ at $\sqrt{s}$ = 7 and 8 TeV}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%To mark authors as primary, use the \author* form
+\author[dummy]{CMS Collaboration}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+A search for a standard-model-like Higgs boson in the $\PH \to \WW$ and $\PH \to \ZZ$ decay channels
+is reported, for mass hypotheses in the range $145 < \mH < 1000\GeV$. The search is based upon
+proton-proton collision data samples corresponding to an integrated luminosity
+of up to 5.1 ${\rm fb}^{-1}$ at $\sqrt{s} = 7\TeV$
+and up to 5.3 ${\rm fb}^{-1}$ at $\sqrt{s} = 8\TeV$, recorded by the CMS experiment at the LHC. 
+The measured combined
+upper limits at 95\% confidence level on products of the cross-section and branching 
+fractions 
+%exclude 
+for the standard-model-like Higgs boson
+extend the mass range excluded previously by CMS from
+$127<\mH<600\GeV$ to $127<\mH<710\GeV$.
+% in the mass
+%range $145 < \mH < 710\GeV$.
+}
+
+%% ED: The expected limits only go to ~700GeV. It is reasonable to say this is a search up to 1TeV, which implies that we are sensitive across that whole mass range?
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible and are in plain text:
+% (1) no TeX! -- for \sqrt{s} use sqrt(s) -- this will show with extra quote marks in the draft version but is okay).
+% (2) no %.
+% (3) No curly braces {}.
+\hypersetup{%
+pdfauthor={The CMS Collaboration - HZZ and HWW working group - Editors: A.S., P.D.},%
+pdftitle={High Higgs mass from HZZ and HWW}, % 
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, Higgs, multilepton, diboson}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+
+
+\input{Common}
+\input{WW}
+\input{ZZ}
+\input{Combined}
+
+\section*{Acknowledgements}
+
+We congratulate our colleagues in the CERN accelerator departments for the excellent performance of the LHC and thank the technical and administrative staffs at CERN and at other CMS institutes for their contributions to the success of the CMS effort. In addition, we gratefully acknowledge the computing centres and personnel of the Worldwide LHC Computing Grid for delivering so effectively the computing infrastructure essential to our analyses. Finally, we acknowledge the enduring support for the construction and operation of the LHC and the CMS detector provided by the following funding agencies: BMWF and FWF (Austria); FNRS and FWO (Belgium); CNPq, CAPES, FAPERJ, and FAPESP (Brazil); MEYS (Bulgaria); CERN; CAS, MoST, and NSFC (China); COLCIENCIAS (Colombia); MSES (Croatia); RPF (Cyprus); MoER, SF0690030s09 and ERDF (Estonia); Academy of Finland, MEC, and HIP (Finland); CEA and CNRS/IN2P3 (France); BMBF, DFG, and HGF (Germany); GSRT (Greece); OTKA and NKTH (Hungary); DAE and DST (India); IPM (Iran); SFI (Ireland); INFN (Italy); NRF and WCU (Republic of Korea); LAS (Lithuania); CINVESTAV, CONACYT, SEP, and UASLP-FAI (Mexico); MSI (New Zealand); PAEC (Pakistan); MSHE and NSC (Poland); FCT (Portugal); JINR (Armenia, Belarus, Georgia, Ukraine, Uzbekistan); MON, RosAtom, RAS and RFBR (Russia); MSTD (Serbia); SEIDI and CPAN (Spain); Swiss Funding Agencies (Switzerland); NSC (Taipei); ThEPCenter, IPST and NSTDA (Thailand); TUBITAK and TAEK (Turkey); NASU (Ukraine); STFC (United Kingdom); DOE and NSF (USA).
+
+Individuals have received support from the Marie-Curie programme and the European Research Council (European Union); the Leventis Foundation; the A. P. Sloan Foundation; the Alexander von Humboldt Foundation; the Belgian Federal Science Policy Office; the Fonds pour la Formation \`a la Recherche dans l'Industrie et dans l'Agriculture (FRIA-Belgium); the Agentschap voor Innovatie door Wetenschap en Technologie (IWT-Belgium); the Ministry of Education, Youth and Sports (MEYS) of Czech Republic; the Council of Science and Industrial Research, India; the Compagnia di San Paolo (Torino); and the HOMING PLUS programme of Foundation for Polish Science, cofinanced from European Union, Regional Development Fund.
+
+
+% >> acknowledgements (for journal papers)
+% Please include the latest version from https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubAcknow.
+%\section*{Acknowledgements}
+% ack-text
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+\bibliography{auto_generated}   % will be created by the tdr script.
+
+%% examples of appendices. **DO NOT PUT \end{document} at the end
+%\clearpage

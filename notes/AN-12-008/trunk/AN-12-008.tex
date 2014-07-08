@@ -1,0 +1,141 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 110744 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/notes/AN-12-008/trunk/AN-12-008.tex $
+\RCS$Id: AN-12-008.tex 110744 2012-03-15 00:17:51Z dudero $
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{AN-12-008} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Multivariate optimization and background estimation for the Standard Model Higgs boson search in H$\to$WW$\to\ell\nu jj$ decay}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+
+
+\address[ttu]{Texas Tech University, Lubbock, Texas, USA}
+\address[fnal]{Fermi National Accelerator Laboratory, Batavia, Illinois, USA}
+\address[tamu]{Texas A\&M University, College Station, Texas, USA}
+\address[nebr]{University of Nebraska at Lincoln, Nebraska, USA}
+\address[uerj]{Universidade do Estado do Rio de Janeiro (UERJ), Brazil}
+
+\author[ttu]{Nural~Akchurin}
+\author[fnal]{Jake~Anderson}
+\author[fnal]{Andrew Beretvas}
+\author[fnal]{Jeffrey~Berryhill}
+\author[fnal]{Pushpa~Bhat}
+\author[ttu]{Phil~Dudero}
+\author[tamu]{Ricardo~Eusebi}
+\author[fnal]{Dan~Green}
+\author[nebr]{Pratima~Jindal}
+\author[ttu]{Sung-Won Lee}
+\author[fnal]{Kalanand~Mishra}
+\author[tamu]{Ilya~Osipenkov}
+\author[tamu]{Alexx~Perloff}
+\author[uerj]{Andre~Sznajder}
+\author[fnal]{Nhan~V.~Tran}
+\author[fnal]{Fan~Yang}
+\author[fnal]{Francisco~Yumiceva}
+
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+We present a study of the multi-variate optimization
+for the Higgs boson search in the H$\to$WW$\to\ell\nu jj$
+final state in the gluon fusion production mechanism. 
+Using a complete set of mostly uncorrelated variables 
+we optimize each Higgs mass points separately to distinguish 
+between the Higgs signal and the dominant W+jets background.
+We also develop a data-driven technique to derive 4-body 
+$m_{\ell\nu jj}$ invariant mass shape for W+jets background. 
+For this we use events in the upper and lower sidebands 
+of the $m_{jj}$ distribution to extract the 4-body mass 
+shape for events in the signal region  
+65 GeV ~$< m_{jj} <$~95 GeV. 
+Using this data-driven technique we are able to keep 
+the systematic uncertainties (dominated by background 
+shape systematics) to within a few percent. 
+This analysis note complements the documentation of the 
+main analysis in AN-11/110.
+}
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible and are in plain text (no TeX! -- for \sqrt{s} use sqrt(s) -- this will show with extra quote marks in the draft version but is okay).
+
+\hypersetup{%
+pdfauthor={Jake Anderson, Phil Dudero, 
+Pratima Jindal, Kalanand Mishra, Ilya Osipenkov, Fan Yang},%
+pdftitle={Multivariate optimization and background estimation for the Standard Model Higgs boson search in HtoWWtoellnujj decay},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+\tableofcontents
+\newpage
+\section{Introduction}
+\input{Introduction}
+\newpage
+\section{Input variables used for MVA training}
+\input{MVAInputs}
+\newpage
+\section{Correlation among the input variables}
+\input{MVAcorrelations}
+\newpage
+\section{Output of the MVA training}
+\input{MVAoutputs}
+\newpage
+\section{Performance: signal efficiency vs. background rejection rate}
+\input{MVAperformance}
+\newpage
+\section{Ranking of the input variables}
+\input{VariableRanking}
+
+\newpage
+\input{MVASection}
+\clearpage
+%\clearpage
+%\input{Conclusions}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% >> acknowledgements (for journal papers)
+% Please include the latest version from https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubAcknow.
+%\section*{Acknowledgements}
+% ack-text
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+\bibliography{auto_generated}   % will be created by the tdr script.
+
+%%%% DO NOT ADD \end{document}!
+

@@ -1,0 +1,136 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision$
+\RCS$HeadURL$
+\RCS$Id$
+%%%%%%%%%%%%% ptdr definitions %%%%%%%%%%%%%%%%%%%%%
+\input{ptdr-definitions} %These have been replaced by the equivalent style file
+%%%%%%%%%%%%%%%  Additional definitions %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\comment}[1]{}
+\newcommand{\pb}{\ensuremath{\mathrm{pb}}}%
+\newcommand{\pp}{\ensuremath{\mathrm{pp}}}%
+\newcommand{\Wo}{\ensuremath{\mathrm{W}}}%
+\newcommand{\Wp}{\ensuremath{\mathrm{W^+}}}%
+\newcommand{\Wm}{\ensuremath{\mathrm{W^-}}}%
+\newcommand{\Zo}{\ensuremath{\mathrm{Z}}}%
+\newcommand{\rts}{\ensuremath{\sqrt{s}}}%
+\newcommand{\ra}{\ensuremath{\rightarrow}}%
+\newcommand{\MW}{\ensuremath{\mathrm{m}_\Wo}}%
+\newcommand{\MZ}{\ensuremath{\mathrm{m}_\Zo}}%
+\newcommand{\MT}{\ensuremath{\mathrm{M}_T}}%
+\newcommand{\MLL}{\ensuremath{\mathrm{M}_{\ell\ell}}}%
+\newcommand{\met}{\ensuremath{{E\!\!\!/}_{\mathrm{T}}}\xspace}
+\renewcommand{\ttbar}{\ensuremath{\mathrm{t}\bar{\mathrm{t}}}}%
+\newcommand{\Wmn}{\ensuremath{\Wo \ra \MN}}%
+\newcommand{\Wpmn}{\ensuremath{\Wp \ra \mu^+\nu}}%
+\newcommand{\Wmmn}{\ensuremath{\Wm \ra \mu^-\overline{\nu}}}%
+\newcommand{\Zmm}{\ensuremath{\Zo \ra \MM}}%
+\newcommand{\Wtn}{\ensuremath{\Wo \ra \tau\nu}}%
+\newcommand{\Ztt}{\ensuremath{\Zo \ra \tau^+\tau^-}}%
+\newcommand{\Wen}{\ensuremath{\Wo \ra \EN}}%
+\newcommand{\Wpen}{\ensuremath{\Wp \ra \mathrm{e}^+\nu}}%
+\newcommand{\Wmen}{\ensuremath{\Wm \ra \mathrm{e}^-\overline{\nu}}}%
+\newcommand{\Zee}{\ensuremath{\Zo \ra \EE}}%
+\newcommand{\Zll}{\ensuremath{\Zo \ra \ell^+ \ell^-}}%
+\newcommand{\Wev}{\Wen}
+\newcommand{\Wmv}{\Wmn}
+\newcommand{\Ztautau}{\Ztt}
+\renewcommand{\MET}{\met}
+\newcommand{\invpb}{\mbox{$\textrm{pb}^{-1}$}}
+\newcommand{\pth}{\hat{p}_{\perp}}
+\newcommand{\Pt}{p_{T}}
+\newcommand{\Et}{E_{T}}
+\newcommand{\Lint}{\ensuremath{{\cal L}_{\mathrm{int}}}}
+\newcommand{\IRelComb} {I^{\textrm{rel}}_{\textrm{comb}}}%
+\newcommand{\Nbg}{N_{\mathrm{bg}}}%
+\newcommand{\mumu}{\mu\mu}
+\newcommand{\Zmumu}{Z_{\mumu}}
+\newcommand{\Zmus}{Z_{\mu s}}
+\newcommand{\Zmut}{Z_{\mu t}}
+\newcommand{\nonIso}{\mathrm{non\,iso}}
+\newcommand{\Wln}{W \rightarrow \ell \nu} 
+\include{Numbers}
+%==============================================================================
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{EWK-11-011} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Study of WW, WZ and ZZ production in non purely-leptonic final states}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+%\address[neu]{Northeastern University}
+%\address[fnal]{Fermilab}
+%\address[cern]{CERN}
+\author[cern]{The CMS Collaboration}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+We present a study of diboson production in events with a  
+leptonically decaying vector boson ($W\to\ell\nu$ or $Z\to\ell\ell$, 
+where $\ell=e,\mu$) and 
+a hadronically decaying $W$ or $Z$ boson ($W/Z\to q\bar{q}$) in $pp$ 
+collisions at $\sqrt{s} = 7~$TeV using the CMS detector. We also present results from a study of $ZZ$ diboson production in the channel where one of the $Z$-boson decays to charged leptons ($Z \rightarrow \ell\ell$, with $\ell=e,\,\mu$) while the other decays to a pair of neutrinos ($Z \rightarrow \nu\nu$).
+}
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible. For APS submissions, they are automatically converted to APS keywords.
+\hypersetup{%
+pdfauthor={Tulika Bose, Vuko Brigljevic, Gautier Hamel de Monchenault, Kalanand Mishra, ....},%
+pdftitle={Study of WW, WZ and ZZ production in non purely-leptonic final states},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+
+%\tableofcontents
+%\newpage
+%%%%%%
+\input{Introduction}
+%%%%%%
+\input{WW}
+%%%%%%
+\input{ZZ}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% >> acknowledgements (for journal papers)
+% Please include the latest version from https://twiki.cern.ch/twiki/bin/viewauth/CMS/Internal/PubAcknow.
+%\section*{Acknowledgements}
+% ack-text
+
+%% **DO NOT REMOVE BIBLIOGRAPHY**
+%\newpage
+\bibliography{auto_generated}   % will be created by the tdr script.
+
+%% examples of appendices. **DO NOT PUT \end{document} at the end
+%\clearpage
+%\appendix
+
+%%% DO NOT ADD \end{document}!
+

@@ -1,0 +1,44 @@
+We first show basic kinematic distributions for the selected $V$+jet events in the boosted regime, requiring the leading AK7 jets above 125 GeV.
+In Fig.~\ref{figs:kin1}-\ref{figs:kin4}, we show the:
+
+\begin{itemize}
+\item di-lepton invariant mass for $Z$ events (transverse mass for $W$ events)
+\item Particle-Flow MET in the event
+\item Vector boson $p_T$
+\item lepton $p_T$ and pseudorapidity (splitted by charge, if applicable)
+\item leading jet $p_T $ and $\eta$. 
+\end{itemize}
+
+In all distributions the MC prediction is normalized to the data integral and the different contributions from $V$+jet and the considered backgrounds are stacked.  
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{figs/kinematics_stack_ak7_Zmumu.pdf}
+\caption{Kinematic distributions for $Z(\mu\mu)$+ jet events. In clockwise order from top left: di-lepton invariant mass, vector boson $p_T$, MET, $p_T (\mu^-)$ and $\eta (\mu^-)$, $p_T (\mu^+)$ and $\eta (\mu^+)$, AK7 jet $p_T$ and $\eta$.}
+\label{figs:kin1}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{figs/kinematics_stack_ak7_Zee.pdf}
+\caption{Kinematic distributions for $Z(ee)$+ jet events. In clockwise order from top left: di-lepton invariant mass, vector boson $p_T$, MET, $p_T (e^-)$ and $\eta (e^-)$, $p_T (e^+)$ and $\eta (e^+)$, AK7 jet $p_T$ and $\eta$.}
+\label{figs:kin2}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{figs/kinematics_stack_ak7_Wmunu.pdf}
+\caption{Kinematic distributions for $W(\mu\nu)$+ jet events. In clockwise order from top left: $W$ transverse mass, vector boson $p_T$, MET, $p_T (\mu^-)$ and $\eta (\mu^-)$, AK7 jet $p_T$ and $\eta$.}
+\label{figs:kin3}
+\end{figure}
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1.0\textwidth]{figs/kinematics_stack_ak7_Wenu.pdf}
+\caption{Kinematic distributions for $W(e\nu)$+ jet events. In clockwise order from top left: $W$ transverse mass, vector boson $p_T$, MET, $p_T (e^-)$ and $\eta (e^-)$, AK7 jet $p_T$ and $\eta$.}
+\label{figs:kin4}
+\end{figure}
+
+
+Corresponding kinematic distributions requiring different leading jet types are shown in Appendix~\ref{app:kinematic}. 
+

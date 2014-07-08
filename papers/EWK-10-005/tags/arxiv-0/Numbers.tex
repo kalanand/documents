@@ -1,0 +1,507 @@
+% GHM
+\def\ERROR#1#2{ \ensuremath{ \pm #1\, (\textrm{#2}) } \xspace }
+\def\RESA#1#2#3{ \ensuremath{ #1 \ERROR{#2}{#3} } \xspace}
+\def\RESB#1#2#3#4#5{ \ensuremath{ \RESA{#1}{#2}{#3} \ERROR{#4}{#5} } \xspace}
+\def\RESC#1#2#3#4#5#6#7{ \ensuremath{ \RESB{#1}{#2}{#3}{#4}{#5} \ERROR{#6}{#7} } \xspace}
+\def\RESD#1#2{ \ensuremath{ #1 \pm #2 } }
+\def\RESE#1#2#3#4#5#6#7#8#9{ \ensuremath{ \RESC{#1}{#2}{#3}{#4}{#5}{#6}{#7} \ERROR{#8}{#9} } \xspace}
+\def\RESGD#1#2#3#4{ \ensuremath{ \RESC{#1}{#2}{stat.}{#3}{syst.}{#4}{lumi.} }}
+\def\EFF#1#2{ \ensuremath{ (\RESA{#1}{#2}{stat.})\% } \xspace}
+\def\EFFA#1#2{ \ensuremath{ ({#1} \pm {#2})\% } \xspace}
+\def\EFFB#1#2#3{ \ensuremath{ (\RESA{#1}{#2}{stat.} \ERROR{#3}{syst.})\% } \xspace}
+%\def\EFFA#1#2{ \ensuremath{ \PRINTEFF{#1}{#2} } \xspace}
+\def\SIGBR#1#2{  \ensuremath{ \sigma \left( \pp \to #1 X \right) \times {\cal B} \left( #1 \to #2 \right) } \xspace}
+\def\SIGBRSHORT#1{\ensuremath{ \sigma\times{\cal B}(#1) }}
+\def\RESSIGBR#1#2#3#4#5#6{  \ensuremath{ \SIGBR{#1}{#2} &=& \RESC{#3}{#4}{stat.}{#5}{syst.}{#6}{lumi.} \, \textrm{nb} } \xspace}
+\def\RESSIGBRTH#1#2#3#4#5#6#7{  \ensuremath{ \SIGBR{#1}{#2} &=& \RESE{#3}{#4}{stat.}{#5}{syst.}{#6}{th}{#7}{lumi.} \, \textrm{nb} } \xspace}
+\def\RATWZ#1#2{ \ensuremath{ {
+ \frac{ \sigma(\pp\rightarrow \Wo X)\times {\cal B}(\Wo\rightarrow #1)  }
+      { \sigma(\pp\rightarrow \Zo X)\times {\cal B}(\Zo\rightarrow #2)  }   }  } }
+\def\RESRATWZ#1#2#3#4#5#6{ \ensuremath{ \RATWZ{#1}{#2} &=& 
+                                   #3 \ERROR{#4}{stat.} \ERROR{#5}{syst.} \ERROR{#6}{th.}} }
+\def\RATWW#1#2{ \ensuremath{ {
+ \frac{ \sigma(\pp\rightarrow \Wp X)\times {\cal B}(\Wp\rightarrow #1)  }
+      { \sigma(\pp\rightarrow \Wm X)\times {\cal B}(\Wm\rightarrow #2)  }   }  } }
+\def\RESRATWW#1#2#3#4#5#6{ \ensuremath{ \RATWW{#1}{#2} &=& 
+                                   #3 \ERROR{#4}{stat.} \ERROR{#5}{syst.} \ERROR{#6}{th.}} }
+
+\def\THEORYSIGBR#1#2{\ensuremath{ \RESD{#1}{#2}~{\mathrm{nb}} }}
+\def\THEORYRATIO#1#2{\ensuremath{ \RESD{#1}{#2} }}
+
+\def\EPS#1{ \ensuremath{ \epsilon_{\textrm{#1}} } \xspace}
+\def\EPSTNPALL#1{ \ensuremath{ \EPS{\tnp-WP{#1}-ALL}  } \xspace }
+\def\EPSTNPREC{ \ensuremath{ \EPS{\tnp-rec} } \xspace }
+\def\EPSTNPTRG{ \ensuremath{ \EPS{\tnp-trg} } \xspace }
+\def\EPSTNPWP#1{ \ensuremath{ \EPS{\tnp-WP{#1} } } \xspace }
+\def\EPSTNPTRGWP#1{ \ensuremath{ \EPS{\tnp-TRG{#1}} } \xspace }  % MHS
+
+% integrated luminosity
+\newcommand{\THELUMI} {\ensuremath{{35.9\pm 1.4}~\mathrm{pb}^{-1}}}%
+
+% Tag'n probe efficiencies 
+
+% I=Inclusive; P=Plus; M=Minus
+
+% WPW = Working Point @ 80\%  -- WPZ = Working Point @ 95\%
+
+% one bin
+\def\WPWIEFFRECO{   \ensuremath{\EFFA{99.7}{1.0}} \xspace} % GHM
+\def\WPWIEFFID{     \ensuremath{\EFFA{76.3}{1.9}} \xspace} % GHM
+\def\WPWIEFFHLT{    \ensuremath{\EFFA{98.9}{1.3}} \xspace} % GHM
+\def\WPWIEFF{       \ensuremath{\EFFA{75.3}{2.3}} \xspace} % GHM 
+\def\WPWIEFFMC{     \ensuremath{ 79.98\% } \xspace} % GHM
+\def\WPWITNPR{      \ensuremath{\RESD{0.941}{0.028}} \xspace}  % !!!
+
+% EB
+\def\WPWIEBEFFRECO{   \ensuremath{\EFFA{97.0}{1.0}} \xspace} % GHM 
+\def\WPWIEBMCRECO{   \ensuremath{\EFFA{97.78}{0.02}} \xspace}  % GHM
+\def\WPWIEBRRECO{   \ensuremath{\RESD{0.992}{0.011}} \xspace} % GHM
+
+\def\WPWIEBEFFID{   \ensuremath{\EFFA{84.0}{0.3}} \xspace} %GHM 
+\def\WPWIEBMCID{   \ensuremath{\EFFA{87.47}{0.05}} \xspace} % GHM
+\def\WPWIEBRID{   \ensuremath{\RESD{0.960}{0.004}} \xspace} % GHM
+
+\def\WPZIEBEFFID{   \ensuremath{\EFFA{93.9}{1.5}} \xspace} % GHM
+\def\WPZIEBMCID{   \ensuremath{ 96.4\% } \xspace}  % GHM
+\def\WPZIEBRID{   \ensuremath{\RESD{0.974}{0.016}} \xspace} %GHM 
+
+\def\WPWIEBEFFHLT{  \ensuremath{\EFFA{98.0}{0.1}}    \xspace} % GHM
+\def\WPWIEBMCHLT{   \ensuremath{\EFFA{97.10}{0.03}}    \xspace} % GHM
+\def\WPWIEBRHLT{    \ensuremath{\RESD{1.009}{0.001}} \xspace} % GHM 
+
+\def\WPZIEBEFFHLT{  \ensuremath{\EFFA{98.7}{0.2}}    \xspace} % GHM
+\def\WPZIEBMCHLT{   \ensuremath{ 99.4\% }           \xspace} % GHM
+\def\WPZIEBRHLT{    \ensuremath{\RESD{0.992}{0.002}} \xspace} % GHM 
+
+\def\WPWIEBEFF{    \ensuremath{\EFFA{79.8}{0.9}}     \xspace} % GHM
+\def\WPWIEBMC{     \ensuremath{\EFFA{83.05}{0.06}}     \xspace} % GHM
+\def\WPWIEBR{      \ensuremath{\RESD{0.961}{0.011} } \xspace} % GHM
+
+\def\WPZIEBEFF{     \ensuremath{\EFFA{91.3}{1.5}}    \xspace} % GHM
+\def\WPZIEBMC{     \ensuremath{ 94.4\% }            \xspace} % GHM
+\def\WPZIEBR{      \ensuremath{\RESD{0.967}{0.016} } \xspace} % GHM
+
+%EE
+\def\WPWIEEEFFRECO{   \ensuremath{\EFFA{94.3}{1.1}} \xspace} % GHM
+\def\WPWIEEMCRECO{   \ensuremath{\EFFA{94.61}{0.05}} \xspace} % GHM
+\def\WPWIEERRECO{   \ensuremath{\RESD{0.997}{0.011}} \xspace}  % GHM
+
+\def\WPWIEEEFFID{   \ensuremath{\EFFA{73.1}{0.7}} \xspace}  % GHM
+\def\WPWIEEMCID{   \ensuremath{\EFFA{75.61}{0.06}} \xspace}  % GHM
+\def\WPWIEERID{   \ensuremath{\RESD{0.966}{0.009}} \xspace}  % GHM
+
+\def\WPWIEEEFFHLT{  \ensuremath{\EFFA{97.3}{0.3}}    \xspace} % GHM
+\def\WPWIEEMCHLT{   \ensuremath{\EFFA{97.16}{0.04}}    \xspace} % GHM
+\def\WPWIEERHLT{    \ensuremath{\RESD{1.001}{0.003}} \xspace} % GHM
+
+\def\WPWIEEEFF{     \ensuremath{\EFFA{67.0}{1.0}} \xspace}  % GHM
+\def\WPWIEEMC{     \ensuremath{\EFFA{69.51}{0.07}}    \xspace} % GHM
+\def\WPWIEER{      \ensuremath{\RESD{0.965}{0.015} } \xspace} % GHM
+
+%%%
+
+\def\WPZIEEEFFID{   \ensuremath{\EFFA{90.3}{1.9}} \xspace} % GHM
+\def\WPZIEEMCID{   \ensuremath{ 93.9\% } \xspace} % GHM
+\def\WPZIEERID{   \ensuremath{\RESD{0.962}{0.020}} \xspace}  % GHM
+
+\def\WPZIEEEFF{     \ensuremath{\EFFA{86.1}{1.9}} \xspace}  % GHM
+\def\WPZIEEMC{     \ensuremath{ 88.3\% } \xspace}
+ % GHM
+\def\WPZIEER{      \ensuremath{\RESD{0.975}{0.022} } \xspace} % GHM
+
+\def\WPZIEEEFFHLT{   \ensuremath{\EFFA{99.16}{0.02}} \xspace} % GHM
+\def\WPZIEEMCHLT{   \ensuremath{ 97.7\% } \xspace} % GHM
+\def\WPZIEERHLT{   \ensuremath{\RESD{1.015}{0.0003}} \xspace} % GHM
+
+
+
+% W electron, total efficiency from TNP, data
+\def\WEITNPDAT{ \ensuremath{\EFFA{75.1}{0.9}} \xspace} 
+\def\WEPTNPDAT{ \ensuremath{\EFFA{75.3}{1.1}} \xspace} 
+\def\WEMTNPDAT{ \ensuremath{\EFFA{74.8}{1.1}} \xspace} 
+
+% W electron, total efficiency from TNP, MC
+\def\WEITNPMC{ \ensuremath{ \EFFA{78.06 }{0.03}} \xspace} 
+\def\WEPTNPMC{ \ensuremath{ \EFFA{77.68 }{0.03}} \xspace} 
+\def\WEMTNPMC{ \ensuremath{ \EFFA{78.57 }{0.03}} \xspace} 
+
+% electron, data/MC ratio from TNP
+\def\WEITNPR{ \ensuremath{\RESD{0.962}{0.012} } \xspace} 
+\def\WEPTNPR{ \ensuremath{\RESD{0.969}{0.014} } \xspace} 
+\def\WEMTNPR{ \ensuremath{\RESD{0.952}{0.013} } \xspace} 
+
+
+% W electron, true MC efficiency
+\def\WEIEFFMC{ \ensuremath{(76.40 \pm 0.02)\%} \xspace} %GHM
+\def\WEPEFFMC{ \ensuremath{(76.04 \pm 0.03)\%} \xspace} %GHM
+\def\WEMEFFMC{ \ensuremath{(76.94 \pm 0.03)\%} \xspace} %GHM
+
+\def\WEIEBEFFMC{ \ensuremath{\RESD{81.51\%} {0.02\%}} \xspace} %GHM 
+\def\WEPEBEFFMC{ \ensuremath{\RESD{81.38\%} {0.03\%}} \xspace} %GHM
+\def\WEMEBEFFMC{ \ensuremath{\RESD{81.69\%} {0.03\%}} \xspace} %GHM
+
+\def\WEIEEEFFMC{ \ensuremath{\RESD{67.63\%} {0.03\%}} \xspace} %GHM
+\def\WEPEEEFFMC{ \ensuremath{\RESD{67.47\%} {0.03\%}} \xspace} %GHM
+\def\WEMEEEFFMC{ \ensuremath{\RESD{67.90\%} {0.04\%}} \xspace} %GHM
+
+\def\WEIEFF{ \ensuremath{ \EFFA{73.5}{0.9} } \xspace} %GHM
+\def\WEPEFF{ \ensuremath{ \EFFA{73.7}{1.0} } \xspace} %GHM
+\def\WEMEFF{ \ensuremath{ \EFFA{73.2}{1.0} } \xspace} %GHM
+
+% WEI=Wenu-inclusive, WEP=Wenu-plus, WEM=Wenu-minus
+
+% selected sample 
+\def\WEISAMPLE{  \ensuremath{235\,687}   \xspace}  % GHM
+\def\WEPSAMPLE{  \ensuremath{132\,696}   \xspace}  % GHM
+\def\WEMSAMPLE{  \ensuremath{102\,991}   \xspace}  % GHM
+
+% acceptances
+%\def\WEIAGEN{   \ensuremath{0.5649} \xspace} % errors!
+%\def\WEPAGEN{   \ensuremath{0.5906} \xspace} % errors!
+%\def\WEMAGEN{   \ensuremath{0.5436} \xspace} % errors!
+\def\WEIAGEN{   \ensuremath{\RESD{0.5201}{0.0003}} \xspace} % errors!
+\def\WEPAGEN{   \ensuremath{\RESD{0.5297}{0.0004}} \xspace} % errors!
+\def\WEMAGEN{   \ensuremath{\RESD{0.5059}{0.0004}} \xspace} % errors!
+
+\def\WEIAGENGD{   \ensuremath{\RESD{0.520}{0.003}} } % errors!
+\def\WEPAGENGD{   \ensuremath{\RESD{0.530}{0.004}} } % errors!
+\def\WEMAGENGD{   \ensuremath{\RESD{0.506}{0.007}} } % errors!
+
+
+% acceptances
+\def\WEIAPRIM{   \ensuremath{\RESD{0.3768}{0.0053}} \xspace} 
+\def\WEPAPRIM{   \ensuremath{\RESD{0.3815}{0.0061}} \xspace} 
+\def\WEMAPRIM{   \ensuremath{\RESD{0.3699}{0.0071}} \xspace} 
+
+\def\WEIACC{   \ensuremath{ \RESD{0.4933 }{ 0.0003 }} \xspace} %GHM
+\def\WEPACC{   \ensuremath{ \RESD{0.5017 }{ 0.0004 }} \xspace} %GHM
+\def\WEMACC{   \ensuremath{ \RESD{0.4808 }{ 0.0004 }} \xspace} %GHM
+
+\def\WEIEBACC{ \ensuremath{ \RESD{0.3115 }{ 0.0003 }} \xspace} %GHM 
+\def\WEPEBACC{ \ensuremath{ \RESD{0.3090 }{ 0.0003 }} \xspace} %GHM 
+\def\WEMEBACC{ \ensuremath{ \RESD{0.3152 }{ 0.0004 }} \xspace} %GHM 
+
+\def\WEIEEACC{ \ensuremath{ \RESD{0.1817 }{ 0.0002 }} \xspace} %GHM
+\def\WEPEEACC{ \ensuremath{ \RESD{0.1927 }{ 0.0003 }} \xspace} %GHM
+\def\WEMEEACC{ \ensuremath{ \RESD{0.1655 }{ 0.0003 }} \xspace} %GHM
+
+% yield from fit
+%\def\WEIYIELD{ \ensuremath{\RESA{11\,871.5}{130.3}{stat.}} \xspace} 
+%\def\WEPYIELD{ \ensuremath{\RESA{ 7\,143.3}{ 94.9}{stat.}} \xspace} 
+%\def\WEMYIELD{ \ensuremath{\RESA{ 4\,751.4}{ 78.4}{stat.}} \xspace} 
+%\def\WEIYIELD{ \ensuremath{\RESD{11\,849.3}{133.1} } \xspace} %GHM
+%\def\WEPYIELD{ \ensuremath{\RESD{ 7\,174.1}{ 96.6} } \xspace} %GHM
+%\def\WEMYIELD{ \ensuremath{\RESD{ 4\,703.4}{ 79.3} } \xspace} %GHM
+
+\def\WEIYIELD{ \ensuremath{\RESD{136\,328}{386} } \xspace} %GHM
+\def\WEPYIELD{ \ensuremath{\RESD{ 81\,568}{297} } \xspace} %GHM
+\def\WEMYIELD{ \ensuremath{\RESD{ 54\,760}{246} } \xspace} %GHM
+
+\def\WEIftYIELD{ \ensuremath{\RESD{135\,982}{388} } \xspace} %GHM
+\def\WEPftYIELD{ \ensuremath{\RESD{ 81\,286}{302} } \xspace} %GHM
+\def\WEMftYIELD{ \ensuremath{\RESD{ 54\,703}{249} } \xspace} %GHM
+
+\def\WEIabYIELD{ \ensuremath{\RESD{136\,003}{498} } \xspace} %GHM
+\def\WEPabYIELD{ \ensuremath{\RESD{ 81\,525}{385} } \xspace} %GHM
+\def\WEMabYIELD{ \ensuremath{\RESD{ 54\,356}{315} } \xspace} %GHM
+
+\def\rWEIftYIELD{ \ensuremath{\RESD{0.997}{0.005} } \xspace} %GHM
+\def\rWEPftYIELD{ \ensuremath{\RESD{0.997}{0.005} } \xspace} %GHM
+\def\rWEMftYIELD{ \ensuremath{\RESD{0.999}{0.005} } \xspace} %GHM
+
+\def\rWEIabYIELD{ \ensuremath{\RESD{0.998}{0.007} } \xspace} %GHM
+\def\rWEPabYIELD{ \ensuremath{\RESD{0.999}{0.007} } \xspace} %GHM
+\def\rWEMabYIELD{ \ensuremath{\RESD{0.993}{0.007} } \xspace} %GHM
+
+% p-value of KS test
+\def\WEIKSP{ \ensuremath{ X.XX } \xspace} % GHM
+\def\WEPKSP{ \ensuremath{ X.XX } \xspace} % GHM
+\def\WEMKSP{ \ensuremath{ X.XX } \xspace} % GHM
+\def\WEIKSPCOR{ \ensuremath{ X.XX } \xspace} % GHM
+\def\WEPKSPCOR{ \ensuremath{ 0.31 } \xspace} % GHM
+\def\WEMKSPCOR{ \ensuremath{ 0.25 } \xspace} % GHM
+
+% sigma X BF
+\def\WEISIGBR{ \ensuremath{  \RESSIGBRTH{\Wo}{\mathrm{e}\nu}
+                             {10.48}{0.03}{0.16}{0.09}{0.42} } \xspace} %GHM 
+\def\WEPSIGBR{ \ensuremath{  \RESSIGBRTH{\Wp}{\mathrm{e}^+\bar{\nu}}
+                             {6.15}{0.02}{0.10}{0.07}{0.25} } \xspace} %GHM
+\def\WEMSIGBR{ \ensuremath{  \RESSIGBRTH{\Wm}{e^-\nu}
+                             {4.34}{0.02}{0.07}{0.06}{0.17} } \xspace} %GHM
+\def\ZEESIGBR{ \ensuremath{  \RESSIGBRTH{\Zo}{\mathrm{e}^+\mathrm{e}^-}
+                             {0.992}{0.011}{0.018}{0.016}{0.040} } \xspace} % GHM
+
+% restricted cross sections
+
+\def\WEISIGBRX{\ensuremath{ \RESSIGBR{\Wo}{\mathrm{e}\nu}
+                             {5.449}{0.015}{0.086}{0.218} } \xspace}
+\def\WEPSIGBRX{\ensuremath{ \RESSIGBR{\Wp}{\mathrm{e}^+\nu}
+                             {3.257}{0.012}{0.061}{0.130} } \xspace}
+\def\WEMSIGBRX{\ensuremath{ \RESSIGBR{\Wm}{\mathrm{e}^-\bar{\nu}}
+                             {2.193}{0.010}{0.039}{0.088} } \xspace}
+\def\ZEESIGBRX{\ensuremath{ \RESSIGBR{\Zo}{\mathrm{e}^+\mathrm{e}^-}
+                             {0.420}{0.005}{0.010}{0.017} } \xspace}
+
+
+\def\WEISIGBRXGD{\ensuremath{ \RESGD
+                             {5.449}{0.015}{0.086}{0.218} }}
+\def\WEPSIGBRXGD{\ensuremath{ \RESGD
+                             {3.257}{0.012}{0.061}{0.130} }}
+\def\WEMSIGBRXGD{\ensuremath{ \RESGD
+                             {2.193}{0.010}{0.039}{0.088} }}
+\def\ZEESIGBRXGD{\ensuremath{ \RESGD
+                             {0.420}{0.005}{0.010}{0.017} }}
+
+
+
+
+
+% yields and backgrounds
+\def\ZEESAMPLE{  \ensuremath{8452}   \xspace} % in [60,120] window
+\def\ZEESAMPLEN{  \ensuremath{8442}   \xspace} % in [60,120] window
+
+\def\ZEEYIELD{ \ensuremath{ \RESD{8406}{92} } \xspace} % GHM
+%\def\ZEEQCDBKG{ \ensuremath{ \RESD{6.2}{13.8}  } \xspace}
+\def\ZEEQCDBKG{ \ensuremath{ \RESD{5}{12}  } \xspace} % GHM
+\def\ZEEEWKBKG{   \ensuremath{ \RESD{30.8}{0.4}   } \xspace} % GHM
+%\def\ZEEBKG{ \ensuremath{ \RESD{9.8}{11.8}  } \xspace}
+\def\ZEEBKG{ \ensuremath{ \RESD{36}{12}  } \xspace} % GHM
+\def\ZEESIG{   \ensuremath{ \RESD{xxx.x}{xx.x} } \xspace} %GHM
+
+%\def\ZEEAGEN{     \ensuremath{ \RESD{0.4364}{0.0001} } \xspace}  %errors!
+\def\ZEEAGEN{     \ensuremath{ \RESD{0.4230}{0.0005} } \xspace}  %errors!
+\def\ZEEAPRIM{     \ensuremath{ \RESD{0.2577}{0.0045} } \xspace}  %!!!
+
+\def\ZEEAGENGD{     \ensuremath{ \RESD{0.423}{0.004} } }  %errors!
+
+\def\ZEEACC{     \ensuremath{ \RESD{0.3876}{0.0005} } \xspace} % GHM
+\def\ZEEBBACC{   \ensuremath{ \RESD{0.2119}{0.0004} } \xspace} % GHM
+\def\ZEEBEACC{   \ensuremath{ \RESD{0.1296}{0.0003} } \xspace} % GHM
+\def\ZEEEEACC{   \ensuremath{ \RESD{0.0462}{0.0002} } \xspace} % GHM
+
+\def\ZEETNPDAT{ \ensuremath{ \EFFA{60.7}{1.1} } \xspace} % GHM 
+\def\ZEETNPMC{ \ensuremath{ \EFFA{66.48}{0.03} } \xspace}  % GHM
+\def\ZEETNPR{  \ensuremath{ \RESD{0.913}{0.017} } \xspace}  % GHM
+\def\ZEEEFFMC{ \ensuremath{ \EFFA{66.74}{0.07} } \xspace}  % GHM
+\def\ZEEEFF{   \ensuremath{ \EFFA{60.9}{1.1} } \xspace}  % GHM
+
+\def\EBESCALE{ \ensuremath{ {X.XXX}\pm{X.XXX} } \xspace} 
+\def\EEESCALE{ \ensuremath{ {X.XXX}\pm{X.XXX} } \xspace}  
+
+\def\EBESMEAR{ \ensuremath{ {X.XX}\pm{X.XX}~\GeV } \xspace} 
+\def\EEESMEAR{ \ensuremath{ {X.XX}\pm{X.XX}~\GeV } \xspace}  
+
+\def\RESRATWZE{ \ensuremath{ \RESRATWZ{\mathrm{e}\nu}{\mathrm{e}^+\mathrm{e}^-}{10.56}{0.12}{0.12}{0.15} } }
+\def\RESRATWWE{ \ensuremath{ \RESRATWW{\mathrm{e}^+\nu}{\mathrm{e}^-\bar{\nu}}{1.418}{0.008}{0.022}{0.029} } }
+
+% systematics
+\def\LUMISYST{ \ensuremath{ 4 } \xspace}
+
+\def\WEITNPSYST{ \ensuremath{ 1.4 } \xspace}
+\def\WEIESCALESYST{ \ensuremath{ 0.5 } \xspace}
+\def\WEPESCALESYST{ \ensuremath{ 0.5 } \xspace}
+\def\WEMESCALESYST{ \ensuremath{ 0.6 } \xspace}
+\def\WERESCALESYST{ \ensuremath{ 0.1 } \xspace}
+\def\WEIMETSYST{ \ensuremath{ 0.3 } \xspace}
+\def\WEPMETSYST{ \ensuremath{ 0.3 } \xspace}
+\def\WEMMETSYST{ \ensuremath{ 0.3 } \xspace}
+\def\WERMETSYST{ \ensuremath{ 0.1 } \xspace}
+\def\WEIBKGSYST{ \ensuremath{ 0.35 } \xspace}
+\def\WEPBKGSYST{ \ensuremath{ 0.33 } \xspace}
+\def\WEMBKGSYST{ \ensuremath{ 0.48 } \xspace}
+\def\WERBKGSYST{ \ensuremath{ 0.39 } \xspace}
+\def\ZEEBKGSYST{ \ensuremath{ 0.14 } \xspace}
+%\def\ZEEBKGSYST{ \ensuremath{ 0.XX } \xspace} % MS, requested by GD
+\def\WPWMISID{ \ensuremath{ X.X^{+X.X}_{-X.X} } \xspace}
+
+\def\ZEEESCALESYST{ \ensuremath{ 0.12 } \xspace}
+\def\ZEETNPSYST{ \ensuremath{ 1.8 } \xspace}
+
+\def\WEIPDFACCSYST{\ensuremath{ 0.6 }}
+\def\ZEEPDFACCSYST{\ensuremath{ 0.9 }}
+\def\WEITHSYST{\ensuremath{ 0.7 }}
+\def\ZEETHSYST{\ensuremath{ 1.4 }}
+
+\def\WEITOTSYST{\ensuremath{ 1.8 }}
+\def\ZEETOTSYST{\ensuremath{ 2.4 }}
+
+\def\WEEXPSYST{\ensuremath{ 1.6 }}
+\def\ZEEEXPSYST{\ensuremath{ 1.8 }}
+\def\WEITOTTHSYST{   \ensuremath{ 0.9 }}
+\def\ZEETOTTHSYST{   \ensuremath{ 1.6 }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MS:  muon 
+
+\def\WMUIEFFSA{      \ensuremath{\EFFA{96.4}{0.5}} \xspace}
+\def\WMUIMCEFFSA{    \ensuremath{ 97.2\% }  \xspace} 
+\def\WMUIRSA{      \ensuremath{\RESD{0.992}{0.005}}  \xspace}
+\def\WMUIEFFTRK{      \ensuremath{\EFFA{99.1}{0.4}} \xspace}
+\def\WMUIMCEFFTRK{    \ensuremath{ 99.3\% }  \xspace} 
+\def\WMUIRTRK{      \ensuremath{\RESD{0.998}{0.003}}  \xspace}
+\def\WMUIEFFSEL{      \ensuremath{\EFFA{99.7}{0.3}} \xspace}
+\def\WMUIMCEFFSEL{    \ensuremath{ 99.7\% }  \xspace} 
+\def\WMUIRSEL{      \ensuremath{\RESD{1.000}{0.003}}  \xspace}
+\def\WMUIEFFISO{      \ensuremath{\EFFA{98.5}{0.4}} \xspace}
+\def\WMUIMCEFFISO{    \ensuremath{ 99.1\% }  \xspace} 
+\def\WMUIRISO{      \ensuremath{\RESD{0.994}{0.004}}  \xspace}
+\def\WMUIEFFTRG{      \ensuremath{\EFFA{88.3}{0.8}} \xspace}
+\def\WMUIMCEFFTRG{    \ensuremath{ 93.2\% }  \xspace} 
+\def\WMUIRTRG{      \ensuremath{\RESD{0.947}{0.009}}  \xspace}
+\def\WMUIEFF{      \ensuremath{\EFFA{82.8}{1.0}} \xspace}
+\def\WMUIMCEFF{    \ensuremath{ 88.7\% }  \xspace} 
+
+\def\WMIEFFPLS{\ensuremath{ \RESD{0.935}{0.018} }}
+\def\WMIEFFMIN{\ensuremath{ \RESD{0.931}{0.019} }}
+\def\WMIEFFBAR{\ensuremath{ \RESD{0.955}{0.024} }}
+\def\WMIEFFTRA{\ensuremath{ \RESD{0.89}{0.04} }}
+\def\WMIEFFEND{\ensuremath{ \RESD{0.92}{0.03} }}
+
+
+% efficiencies
+\def\WMIRHOEFF{ \ensuremath{\RESD{0.933}{0.012}} }
+\def\WMUIR{        \ensuremath{\WMIRHOEFF}  \xspace}
+
+% acceptances
+%%\def\WMIAGEN{   \ensuremath{\RESD{0.4638}{0.0003}} } 
+%%\def\WMPAGEN{   \ensuremath{\RESD{0.4706}{0.0004}} } 
+%%\def\WMMAGEN{   \ensuremath{\RESD{0.4570}{0.0004}} } 
+\def\WMIAGEN{   \ensuremath{\RESD{0.4543}{0.0003}} } 
+\def\WMPAGEN{   \ensuremath{\RESD{0.4594}{0.0004}} } 
+\def\WMMAGEN{   \ensuremath{\RESD{0.4471}{0.0004}} } 
+%\def\ZMMAGEN{   \ensuremath{\RESD{0.3977}{0.0017}} }
+\def\ZMMAGEN{   \ensuremath{\RESD{0.3977}{0.0048}} } %GHM error=1.2%
+
+\def\WMIAGENGD{   \ensuremath{\RESD{0.464}{0.003}} }
+\def\WMPAGENGD{   \ensuremath{\RESD{0.471}{0.005}} }
+\def\WMMAGENGD{   \ensuremath{\RESD{0.457}{0.008}} }
+\def\ZMMAGENGD{   \ensuremath{\RESD{0.398}{0.005}} } 
+
+
+
+\def\WMIAPRIM{  \ensuremath{\RESD{0.4618}{0.0051}} } 
+\def\WMPAPRIM{  \ensuremath{\RESD{0.4765}{0.0053}} } 
+\def\WMMAPRIM{  \ensuremath{\RESD{0.4413}{0.0052}} } 
+
+% background
+\def\ZMMBG{ \ensuremath{\RESD{55}{3}} }
+
+% selected sample 
+\def\WMISAMPLE{  \ensuremath{18\,571} }
+\def\WMPSAMPLE{  \ensuremath{10\,682} }
+\def\WMMSAMPLE{  \ensuremath{ 7\,889} }
+\def\WMISAMPLEH{ \ensuremath{11\,011} }
+\def\WMPSAMPLEH{ \ensuremath{ 6\,495} }
+\def\WMMSAMPLEH{ \ensuremath{ 4\,516} }
+\def\ZMMSAMPLE{  \ensuremath{913} }
+
+% yields
+\def\WMIYIELD{ \ensuremath{\RESD{12\,257}{111} }} 
+\def\WMPYIELD{ \ensuremath{\RESD{ 7\,445}{ 87} }} 
+\def\WMMYIELD{ \ensuremath{\RESD{ 4\,812}{ 68} }} 
+%\def\ZMMYIELD{ \ensuremath{\RESD{1\,045}{35} }} 
+\def\ZMMYIELD{ \ensuremath{\RESD{13\,728}{121} }} 
+
+% systematics
+\def\WMIEFFSYST{     \ensuremath{ 0.9 }}
+\def\WMIEFFPRET{     \ensuremath{ 0.5 }}
+\def\ZMMEFFSYST{     \ensuremath{ 1.2 }}
+\def\ZMMEFFPRET{     \ensuremath{ 0.5 }}
+\def\WMIEFFSYSTPRET{     \ensuremath{ 1.5 }}
+\def\WMISCALESYST{   \ensuremath{ 0.22 }}
+\def\ZMMSCALESYST{   \ensuremath{ 0.35 }}
+\def\WMIQCDSHAPESYST{\ensuremath{ 0.4 }}
+\def\WMIRECOILSYST{\ensuremath{ 0.6 }}
+
+\def\WMIMETSYST{ \ensuremath{ 0.2 } }
+\def\WMIBKGSYST{\ensuremath{ ? }}
+\def\ZMMBKGSYST{\ensuremath{ 0.2 }}
+\def\ZMMFITSYST{\ensuremath{ 0.2 }}
+\def\ZMMBKGSYST{\ensuremath{ 0.2 }}
+\def\ZMMBKGTOTSYST{\ensuremath{ 0.28 }}
+\def\ZMMTRIGABSYST{\ensuremath{ 0.1 }}
+
+\def\WMEXPSYST{\ensuremath{ 1.1 }}
+\def\ZMMEXPSYST{\ensuremath{ 0.7 }}
+
+\def\WMIPDFACCSYST{\ensuremath{ 0.8 }}
+\def\ZMMPDFACCSYST{\ensuremath{ 1.1 }}
+\def\WMITHSYST{    \ensuremath{ 0.8 }}
+\def\ZMMTHSYST{    \ensuremath{ 1.6 }}
+\def\WMITOTSYST{   \ensuremath{ 1.6 }}
+\def\ZMMTOTTHSYST{   \ensuremath{ 1.9 }}
+\def\WMITOTTHSYST{   \ensuremath{ 1.1 }}
+\def\ZMMTOTSYST{   \ensuremath{ 2.0 }}
+
+% cross sections
+\def\WMISIGBR{\ensuremath{ \RESSIGBRTH{\Wo}{\mu\nu}
+                             {10.18}{0.03}{0.12}{0.11}{0.41}} }
+\def\WMPSIGBR{\ensuremath{ \RESSIGBRTH{\Wp}{\mu^+\nu}
+                             {5.98}{0.02}{0.07}{0.08}{0.24} } }
+\def\WMMSIGBR{\ensuremath{ \RESSIGBRTH{\Wm}{\mu^-\bar{\nu}}
+                             {4.20}{0.02}{0.05}{0.07}{0.17} } }
+\def\ZMMSIGBR{\ensuremath{  \RESSIGBRTH{\Zo}{\mu^+\mu^-}
+                             {0.968}{0.008}{0.007}{0.018}{0.039} } }
+% restricted cross sections
+\def\WMISIGBRX{\ensuremath{ \RESSIGBR{\Wo}{\mu\nu}
+                             {4.723}{0.012}{0.066}{0.189} } \xspace}
+\def\WMPSIGBRX{\ensuremath{ \RESSIGBR{\Wp}{\mu^+\nu}
+                             {2.815}{0.009}{0.042}{0.113} } \xspace}
+\def\WMMSIGBRX{\ensuremath{ \RESSIGBR{\Wm}{\mu^-\bar{\nu}}
+                             {1.920}{0.008}{0.027}{0.077} } \xspace}
+\def\ZMMSIGBRX{\ensuremath{ \RESSIGBR{Z}{\mu^+\mu^-}
+                             {0.385}{0.003}{0.007}{0.015} } \xspace}
+
+
+\def\WMISIGBRXGD{\ensuremath{ \RESGD
+                             {4.736}{0.012}{0.067}{0.189} }}
+\def\WMPSIGBRXGD{\ensuremath{ \RESGD
+                             {2.815}{0.009}{0.042}{0.113} }}
+\def\WMMSIGBRXGD{\ensuremath{ \RESGD
+                             {1.921}{0.008}{0.027}{0.077} }}
+\def\ZMMSIGBRXGD{\ensuremath{ \RESGD
+                             {0.396}{0.003}{0.007}{0.016} }}
+
+
+
+
+
+% ratios
+\def\RESRATWZM{\ensuremath{ \RESRATWZ{\mu\nu}{\mu^+\mu^-}{10.52}{0.09}{0.10}{0.17} }}
+\def\RESRATWWM{\ensuremath{ \RESRATWW{\mu^+\nu}{\mu^-\bar{\nu}}{1.423}{0.008}{0.019}{0.030} }}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% combined results
+\def\WLISIGBR{\ensuremath{ \RESSIGBRTH{W}{\ell\nu}
+                             {10.30}{0.02}{0.10}{0.10}{0.41} } }
+\def\WLPSIGBR{\ensuremath{ \RESSIGBRTH{\Wp}{\ell^+\nu}
+                             {6.04}{0.02}{0.06}{0.08}{0.24} } }
+\def\WLMSIGBR{\ensuremath{ \RESSIGBRTH{\Wm}{\ell^-\bar{\nu}}
+                             {4.26}{0.01}{0.04}{0.07}{0.17} } }
+\def\ZLLSIGBR{\ensuremath{ \RESSIGBRTH{Z}{\ell^+\ell^-}
+                             {0.974}{0.007}{0.007}{0.018}{0.039} } }
+
+\def\RESRATWZL{ \ensuremath{ \RESRATWZ{\ell\nu}{\ell^+\ell^-}{10.54}{0.07}{0.08}{0.16} }}
+\def\RESRATWWL{ \ensuremath{ \RESRATWW{\ell^+\nu}{\ell^-\bar{\nu}}{1.421}{0.006}{0.014}{0.029} }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% theoretical predictions
+\def\THEORYSIGBR#1#2{\ensuremath{ \RESD{#1}{#2}~{\mathrm{nb}} }}
+\def\THEORYSIGBRWI{\ensuremath{ \THEORYSIGBR{10.44}{0.27} }}
+\def\THEORYSIGBRWP{\ensuremath{ \THEORYSIGBR{6.15}{0.17} }}
+\def\THEORYSIGBRWM{\ensuremath{ \THEORYSIGBR{4.29}{0.11} }}
+\def\THEORYSIGBRZ{ \ensuremath{ \THEORYSIGBR{0.97}{0.03} }}
+\def\THEORYRATIOWZ{\ensuremath{ \THEORYRATIO{10.74}{0.04} }}
+\def\THEORYRATIOWW{\ensuremath{ \THEORYRATIO{1.43}{0.01} }}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ratios of CMS over Theory
+\def\RATCMSTHY#1#2#3#4{\ensuremath{ #1\pm #2\,{\mathrm{(exp)}}\pm #3\,{\mathrm{(th)}}\,\, [ \pm #4\,{\mathrm{(tot)}} ] }}
+\def\RATCMSTHYWI{\ensuremath{\RATCMSTHY{0.986}{0.009}{0.028}{0.029}}}
+\def\RATCMSTHYWP{\ensuremath{\RATCMSTHY{0.982}{0.010}{0.030}{0.031}}}
+\def\RATCMSTHYWM{\ensuremath{\RATCMSTHY{0.992}{0.010}{0.029}{0.031}}}
+\def\RATCMSTHYZ {\ensuremath{\RATCMSTHY{1.002}{0.010}{0.032}{0.034}}}
+\def\RATCMSTHYWZ{\ensuremath{\RATCMSTHY{0.981}{0.010}{0.015}{0.018}}}
+\def\RATCMSTHYWW{\ensuremath{\RATCMSTHY{0.990}{0.011}{0.023}{0.025}}}

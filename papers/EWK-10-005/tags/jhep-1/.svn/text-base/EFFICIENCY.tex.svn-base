@@ -1,0 +1,41 @@
+\section{Efficiencies}
+\label{sec:efficiencies}
+
+A key component of this analysis is the estimation of lepton efficiencies.
+The efficiency is determined for different selection steps:
+\begin{itemize}
+\item offline reconstruction of the lepton;
+\item lepton selection, with identification and isolation criteria;
+\item trigger (L1+HLT).
+\end{itemize}
+The order of the above selections steps is important. Lepton efficiency for each
+selection is determined with respect to the prior step.
+\par
+%
+% Should we define TNP here and use it afterwards? L.L.
+%
+A tag-and-probe (\TNP) technique is used, as described below, on pure samples of $\Zll$ events.
+The statistical uncertainty on the efficiencies is
+ultimately propagated as a systematic uncertainty on the cross-section measurements.
+This procedure has the advantage
+of extracting the efficiencies from a sample of leptons kinematically very similar
+to those used in the $\Wo$ analysis and exploits the relatively pure selection
+of $\Zll$ events obtained after a dilepton invariant mass requirement around the Z mass.
+\par
+The \TNP method is as follows: one lepton candidate,
+called the ``tag'', satisfies trigger criteria, tight identification
+and isolation requirements. The other lepton candidate, called the ``probe'',
+is required to pass specific criteria that depend on the efficiency under study.
+\par
+For each kind of efficiency, the \TNP method is applied to real data and to
+simulated samples, and the ratio of efficiencies in data ($\effdata$) and simulation ($\effmc$) is computed:
+\begin{equation}
+\label{eq:rho}
+ \rhoeff = \frac{\effdata}{\effmc}\,,
+\end{equation}
+together with the associated statistical and systematic uncertainties.
+
+\input{ElectronEff}
+
+\input{MuonEff}
+

@@ -1,0 +1,68 @@
+
+\subsection{Electron \label{sec:electronId}}
+
+\par
+Events with high-$\et$ electrons are selected online when they pass a L1 trigger
+filter that requires a coarse-granularity region of the ECAL to have
+$\et > 8$~GeV. They subsequently must pass an HLT~\cite{HLT}
+filter that requires an ECAL cluster with $\et$ above a threshold, using
+the full granularity of the ECAL and $\et$ measurements
+corrected using offline calibration~\cite{CMS-PAS-EGM-10-003}. The threshold depends 
+on the run period. For the analysis we have used unprescaled triggers.
+
+\par
+Electrons are identified offline as clusters of ECAL energy deposits
+matched to tracks from the silicon tracker. The ECAL clusters are designed
+to collect the largest fraction of the energy of the original electron,
+including energy radiated along its trajectory.  They must
+fall in the ECAL fiducial volume
+of
+$|\eta| < 1.44$ for EB
+clusters or $1.57 < |\eta| < 2.5$ for EE clusters.
+The transition region
+from $1.44 < |\eta| < 1.57$
+is excluded as it leads to lower-quality
+reconstructed clusters, due mainly to
+services and cables exiting between the barrel and endcap calorimeters.
+Electron tracks are reconstructed using an
+algorithm~\cite{GSF} that accounts for possible energy loss due to
+bremsstrahlung in the tracker layers.
+The energy of an electron candidate with $\et>20~\gev$ is essentially
+determined by the ECAL cluster energy, while its momentum direction
+is determined by that of the associated track.
+Particles misidentified as
+electrons are suppressed by requiring that the $\eta$ and $\phi$ coordinates
+of the track trajectory extrapolated to the ECAL match the $\eta$ and
+$\phi$ coordinates of the ECAL cluster, by requiring a narrow ECAL
+cluster width in $\eta$, and by limiting the HCAL energy measured in a
+cone of $\Delta R < 0.15$ around the ECAL cluster direction.
+\par
+Electrons from photon conversions are suppressed by requiring
+one hit in the innermost pixel layer
+for the
+reconstructed electron track.  Furthermore, electrons are
+rejected when a partner track is found that is consistent with a
+photon conversion, based on the opening angle and the separation in
+the transverse plane at the point at which the electron and partner
+tracks are parallel.
+\par
+For both the $\PW$ and $\PZ$ analyses
+an electron candidate is considered isolated if $\ITRK <0.09$, $\IECAL < 0.07$
+and $\IHCAL < 0.10$ in the barrel region;  $\ITRK <0.04$, $\IECAL < 0.05$
+and $\IHCAL < 0.025$ in the endcap regions.
+\par
+The electron selection criteria were obtained
+by optimizing signal and background levels according to
+simulation-based studies. The optimization was done for EB
+and EE separately.  We use the same criteria for the $\Wen$ and
+$\Zee$ channels; these select approximately 81\% of the
+reconstructed electrons in the data with clusters in the ECAL fiducial
+volume and
+$\et>25~\GeV$, and reduce the
+fake electron background by
+two orders of magnitude.
+\par
+More details and studies of electron reconstruction and identification
+can be found in Ref.~\cite{CMS-PAS-EGM-10-004}.
+
+

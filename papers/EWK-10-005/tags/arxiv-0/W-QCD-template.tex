@@ -1,0 +1,138 @@
+\subsection{\texorpdfstring{Modeling of the QCD Background and $\Wen$ Signal Yield}{Modeling of the QCD Background and W-> e nu Signal Yield}}
+\label{sec:WQCDbkg}
+
+Three signal extraction methods are used, which give consistent
+signal yields. The method described in Section~\ref{sec:AnalyticalFunction}
+is used to extract the final result.
+
+\subsubsection{Modeling the QCD Background Shape with an Analytical Function}
+\label{sec:AnalyticalFunction}
+
+The $\Wen$ signal is extracted using an unbinned maximum likelihood
+(UML) fit to the $\MET$ distribution.
+%Signal and EWK background
+%distributions are derived from simulation and are validated using dedicated studies.
+
+The shape of the $\MET$ distribution for the QCD background is modeled by a parametric function (modified Rayleigh
+distribution) whose expression is
+\begin{equation}
+f_{\mathrm{CQD}}(\MET) = \MET\exp\left(-\frac{\MET{^2}}{2(\sigma_0+\sigma_1 \MET)^{2}}\right)\,.
+\label{eq:rayleigh}
+\end{equation}
+The fit to a control sample, defined by inverting the track-cluster matching selection
+variables $\Delta\eta$, $\Delta\phi$, shown in Fig.~\ref{fig:e-inverted}, illustrates
+the quality of the description of the background shape by the parameterized function,
+including the region of the signal, at high \MET.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.50\textwidth]{figs/fixedMCyield_normal_model.pdf}
+\caption{Fit to the background-dominated control sample defined by inverting
+the selection on the track-match variables,
+while maintaining the rest of the signal selection.
+The blue solid line represents the model used to fit the control data sample. This is a Rayleigh
+function plus a floating-yield signal shape that accounts for the signal contamination in the
+control region. The magenta dashed line shows the Rayleigh function alone with its parameters estimated
+from the combined fit.
+}\label{fig:e-inverted}
+\end{center}
+\end{figure}
+To study the systematic uncertainties associated with the background shape, the resolution term in
+Eq.~(\ref{eq:rayleigh}) was changed by introducing an additional QCD shape parameter $\sigma_2$,
+thus: $\sigma_0 + \sigma_1 \MET + \sigma_2 \MET^2$.
+
+The free parameters of the UML fit are the QCD background yield,
+the $\Wo$ signal yield, and the background shape
+parameters $\sigma_0$ and $\sigma_1$.
+The following signal yields are obtained:
+$\WEIYIELD$ for the inclusive sample, $\WEPYIELD$ for the $\Wpen$ sample, and
+$\WEMYIELD$ for the $\Wmen$ sample.
+%with negligible correlation between the $\Wp$ and $\Wm$ yields.
+The fit to the inclusive $\Wen$ sample is displayed
+in Fig.~\ref{fig:Wen}, while the fits for the charge-specific
+channels are displayed in Fig.~\ref{fig:WenPM}.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figs/w_inc_36pb.pdf}
+\includegraphics[width=0.48\textwidth]{figs/w_inc_36pb_log.pdf}
+\caption{ \label{fig:Wen}
+The $\MET$ distribution for the selected $\Wen$ candidates on
+a linear scale (left) and on a logarithmic scale (right).
+The points with the error bars represent the data. Superimposed are the
+contributions obtained with the fit
+for QCD background (violet, dark histogram), all other backgrounds
+(orange, medium histogram), and signal plus  background (yellow, light histogram).
+The orange dashed line is the fitted signal contribution.
+}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figs/wp_36pb.pdf}
+\includegraphics[width=0.48\textwidth]{figs/wm_36pb.pdf}
+\caption{ \label{fig:WenPM}
+The $\MET$ distributions for the selected W$^+$ (left) and W$^-$ (right) candidates.
+The points with the error bars represent the data. Superimposed are the contributions
+obtained with the fit for QCD background (violet, dark histogram), all other backgrounds
+(orange, medium histogram), and signal plus background (yellow, light histogram).
+The orange dashed line is the fitted signal contribution.
+}
+\end{center}
+\end{figure}
+
+The Kolmogorov--Smirnov probabilities for the fits to the charge-specific
+channels are $\WEPKSPCOR$ for the $\Wp$ sample and
+$\WEMKSPCOR$ for the $W^-$ sample.
+\begin{figure}[t!]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figs/inc_pfmt_withMVA.pdf}
+\includegraphics[width=0.48\textwidth]{figs/inc_pfmt_log_withMVA.pdf}
+\caption{ \label{fig:WenMT}
+The $\MT$ distribution for the selected $\Wen$ candidates on
+a linear scale (left) and on a logarithmic scale (right).
+The points with the error bars represent the data. Superimposed are the
+contributions obtained with the fit
+for QCD background (violet, dark histogram), all other backgrounds
+(orange, medium histogram), and signal plus  background (yellow, light histogram).
+The orange dashed line is the fitted signal contribution.
+}
+\end{center}
+\end{figure}
+Figure~\ref{fig:WenMT} shows the distribution for the inclusive $\Wo$ sample
+of the transverse mass, defined as
+$\MT=\sqrt{2\Pt\MET (1-\cos(\Delta\phi_{\mathrm{l},\MET}))}$,
+where $\Delta\phi_{\mathrm{l},\MET}$ is the azimuthal angle between the
+lepton and the $\MET$ directions.
+
+\input{Wenu_FixedShapeTemplates.tex}
+
+\label{sec:e-Wsigextr-ABCDE}
+
+\input{ABCDE.tex}
+
+The results of the three signal extraction methods are summarised in Table~\ref{tab:WsignalCollection}.
+
+\begin{table}[htbp] %
+\begin{center}
+   \caption[.]{ \label{tab:WsignalCollection}
+Comparison of $\Wen$ signal extraction methods. The signal yield of each method is presented together with
+its statistical uncertainty.
+For the fixed shape and the ABCD methods, the ratios of the signal yields with the analytical function method
+are also shown taking into account only the uncorrelated systematics between the methods used in the ratios.}
+\begin {tabular} {|l|l|c|c|c|}
+\hline
+\multicolumn{2}{|l|}{Source}        & $\Wen$           & $\Wpen$           & $\Wmen$            \\
+\hline\hline
+Analytical fun. &yield    & $\WEIYIELD$      &  $\WEPYIELD$      &  $\WEMYIELD$      \\
+\hline
+\multirow{2}{*}{Fixed shape} & yield                         & $\WEIftYIELD$    &  $\WEPftYIELD$    &  $\WEMftYIELD$      \\
+ & ratio & $\rWEIftYIELD$   &  $\rWEPftYIELD$   &  $\rWEMftYIELD$      \\
+\hline
+\multirow{2}{*}{ABCD} & yield                                & $\WEIabYIELD$    & $\WEPabYIELD$     & $\WEMabYIELD$    \\
+ & ratio       & $\rWEIabYIELD$   & $\rWEPabYIELD$    & $\rWEMabYIELD$    \\
+\hline
+\end {tabular}
+\end{center}
+\end{table}
+

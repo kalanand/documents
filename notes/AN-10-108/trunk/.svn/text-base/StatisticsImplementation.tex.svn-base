@@ -1,0 +1,69 @@
+\section{Statistics Implementation}
+\label{appStatImplement}
+
+The method of statistical inference has been substantially updated since the previous publication of this analysis~\cite{CMSdijetPRL}.  In this
+version, we implement a fully Bayesian treatment of both statistical and systematic uncertainties.  Previously, computational and technical
+difficulties prevented the use of a rigorously Bayesian formalism; instead, a less formal---but still conservative---treatment was adopted. 
+Herein we summarize our methodology, and point out the few places where we diverge from Appendix.~\ref{appStatModel}, which inspired our technique.
+
+\subsection{Likelihood Definition}
+
+We define a binned-likelihood function as the product of the Poisson probabilities in each bin $k$, with $n_k$ observed events and $\mu_k$ expected events,
+\begin{equation}
+L(\vec{x}|a,\vec{\Delta})=\prod_k{\frac{\mu_k(a,\vec{\Delta})^{n_k}{e^{-\mu_k(a,\vec{\Delta})}}}{n_k!}},
+\end{equation}
+where $\vec{x}$ is the observed data, $\vec{\Delta}\equiv(\Delta_m, \Delta_\sigma, \mathcal{L}, \mathcal{B})$ are the nuisance parameters, and $a$ is the variable of interest, that is, the cross section times acceptance times branching fraction of the resonance signal.  The four nuisance parameters in this measurement correspond to the jet-energy scale ($\Delta_m$), the jet-energy resolution ($\Delta_\sigma$), the luminosity ($\mathcal{L}$), and the background shape $(\mathcal{B})$.
+
+The parameters $a$ and $\vec{\Delta}$ enter through the mean number of events $\mu_k$ according to
+    \begin{equation}
+      \mu_k(a,\vec{\Delta})=\mathcal{L}\cdot a\cdot\mathcal{S}^\prime(m_k,\Delta_m,\Delta_\sigma)\,dm_k + N_{\mathcal{B}}\cdot \mathcal{B}(m_k)\,dm_k,
+    \end{equation}
+    where the first and second terms in the expression are the number of signal and background events in bin $k$.  These are calculated for each $k$ by evaluating the continuous probability distribution functions (PDFs) $\mathcal{S}^\prime$ and $\mathcal{B}$ in the bin center $m_k$ and multiplying by the bin width $dm_k$\footnote{The careful reader will already note several differences with Appendix.~\ref{appStatModel}.  Most prominently, we do not integrate over the PDFs but evaluate them at the bin center.  This technique is enforced by $\textsc{RooFit}$ which approximates integrals in this way.  In order for this approximation to be valid, we bin the dataset very finely---approximately 1 GeV/bin.  Using an unbinned-likelihood method would avoid this approximation, but it is computationally expensive because the number of data points is $>\mathcal{O}(10^5)$.}.  The expressions $\mathcal{L}\cdot a$ and $N_{\mathcal{B}}$ are effectively normalizations of the PDFs.  Although the parameter $N_{\mathcal{B}}$ should also be considered a nuisance parameter, in practice the number of data points is sufficiently large that the uncertainty contributes negligibly to final result.
+
+We incorporate the jet-energy-scale and jet-energy-resolution nuisance parameters in the signal PDF construction by the following transformation:
+\begin{equation}
+      \mathcal{S}^\prime(m_k,\Delta_m,\Delta_\sigma) = \mathcal{S}\left(\Delta_m\cdot\left[\Delta_\sigma\cdot\left(m_k-m_0\right)+m_0\right]\right),
+\end{equation}
+where $m_0$ is the theoretical resonance mass.  Here, $\mathcal{S}(m)$ is the original PDF measured in simulation, while variations in $\Delta_m$ and $\Delta_\sigma$ result in a ``shifting'' and ``stretching'' of the PDF, respectively.  This transformation therefore captures the essence of these systematic uncertainties. 
+
+The background PDF is determined by fits to the data of the functional form (Eq.~\ref{eqParam}).  In order to have a conservative estimate of the credibility interval, we fit the data to a linear combination of the background and signal PDFs.  The PDF with the best fit parameters is referred to as $\mathcal{B}_0$, while the PDF with the parameters varied $\pm1\,\sigma$ about their uncertainties given by the diagonalized Hessian matrix are referred to as $\mathcal{B}_\pm$.  We treat the distinct PDFs $\mathcal{B}_{0,+,-}$ as a discrete nuisance parameter, unlike the other continuous nuisance parameters.
+
+\subsection{Nuisance Parameters}
+
+In order to set upper-limits on the unknown parameter $a$, the likelihood function must be marginalized, that is, the nuisance parameters must be integrated out.  Formally, this is expressed as
+\begin{equation}
+L'(\vec{x}|a)=\int{L(\vec{x}|a,\vec{\Delta})}\cdot\pi(\vec{\Delta})\,d^4\vec{\Delta}
+\end{equation}
+where $\pi(\vec{\Delta})$ is the PDF of the nuisance parameters.  We assume that the nuisance parameters are uncorrelated in the expression so that the PDF is factorizable,
+\begin{equation}
+\pi(\vec{\Delta})=\pi(\Delta_m)\cdot\pi(\Delta_\sigma)\cdot\pi(\mathcal{L})\cdot\pi(\mathcal{B}).
+\end{equation}
+
+We choose a lognormal distribution to describe the PDFs for $\Delta_m$, $\Delta_\sigma$, and $\mathcal{L}$, where the median of the distribution is chosen to be the best estimate of the nuisance parameter, and the shape parameter is chosen to be $\log(\delta+1)$, where $\delta$ is the uncertainty on the nuisance parameter.  The background nuisance PDF $\pi(\mathcal{B})$ is discrete and is formally expressed as
+\begin{equation}
+\pi(\mathcal{B})=\frac{1}{3}\delta(\mathcal{B}-\mathcal{B}_0)+\frac{1}{3}\delta(\mathcal{B}-\mathcal{B}_+)+\frac{1}{3}\delta(\mathcal{B}-\mathcal{B}_-).
+\end{equation}
+Integrating over this nuisance parameter is mathematically equivalent to taking the average likelihood function evaluated for each $\mathcal{B}$.
+
+\subsection{Limit Setting}
+
+We use Bayes' Theorem to convert the marginalized likelihood into a posterior probability density for the parameter $a$:
+\begin{equation}
+p(a|\vec{x})=\frac{L^\prime(\vec{x}|a)\cdot\pi(a)}{\int{L^\prime(\vec{x}|a)\cdot\pi(a)\, da}}.
+\end{equation}
+We choose a flat prior bounded at 0, so that
+\begin{equation}
+\pi(a)=\Theta(a).
+\end{equation}
+
+Because we do not see evidence of signal, we determine the 95\% credibility limit $a_0$ for the unknown parameter $a$ from the equation
+\begin{equation}
+\int_{-\infty}^{a_0}p(a|\vec{x})\,da=0.95\,\int_{-\infty}^\infty{p(a|\vec{x})\,da}.
+\end{equation}
+
+Although we have stated the formal expression above, the posterior probability is calculated in practice through a numerical integration technique.  We compute the integral by randomly sampling the nuisance parameter PDFs and evaluating the posterior probability distribution at those values.  The average of the posterior distribution over the sampled nuisance parameters is equal to the marginalized posterior in the limit of large samples:
+\begin{eqnarray}
+p(a|\vec{x}) & \propto & L^\prime(\vec{x}|a)\cdot\pi(a) = \int{L(\vec{x}|a,\vec{\Delta})}\cdot\pi(\vec{\Delta})\,d^4\vec{\Delta}\cdot\pi(a) \\
+ & \propto & \frac{1}{N}\sum_i^N L(\vec{x}|a,\vec{\Delta}_i)\cdot\pi(a)
+\end{eqnarray}
+where $\vec{\Delta}_i$ are the nuisance parameters sampled from $\pi(\vec{\Delta})$.  All nuisance parameters are sampled in this way except for $\mathcal{B}$, for which we sample each of the three $\mathcal{B}_{0,\pm}$ once for each set of $N$ samples of the other nuisance parameters.

@@ -1,0 +1,41 @@
+In the following paragraphs we discuss the systematic uncertainties of 
+the fixed shape and the ABCD methods which were also explored in order 
+to cross check the extraction of the $\Wen$ signal. 
+These uncertainties correspond to the specific methods and are not propagated
+to the final cross section measurement reported in this paper. 
+
+The systematic uncertainties on the background subtraction using fixed-shape 
+distributions are summarized in Table~\ref{tab:FixedTempSyst}.  
+The total uncertainty is taken as the sum in quadrature of 
+the values in the table, giving 0.40\%.  
+The total uncertainty is dominated by the uncertainty of the correction of the 
+signal contamination in the control sample. This uncertainty is evaluated by 
+propagating the uncertainty on the measured contamination using the \TNP technique. 
+The statistical uncertainty of this evaluation is calculated using 
+a large number of shapes in which the number of events is generated 
+from a Poisson distribution with the mean equal to the number of events in the nominal shape. 
+The signal yield under variation of the requirements used to define the control 
+sample was also studied and found to be very stable with an RMS spread  
+of 0.12\% for the range of selections considered. In order to take into 
+account the observation of small residual correlations that are not corrected for,
+an additional systematic uncertainty of 0.35$\%$ is assigned as a conservative estimate of their size.
+
+\begin{table}[htbp] %
+  \begin{center}
+    \caption{Summary of systematic uncertainties for background modeling using 
+fixed-shape distributions.}
+    \label{tab:FixedTempSyst}
+    \begin{tabular}{|l|c|}
+      \hline
+      Source of systematic uncertainty & Value \\
+      \hline\hline
+      MVA Correction & 0.05\% \\
+      Signal contamination & 0.15\% \\
+      Statistical fluctuations & 0.12\% \\
+      Residual correlations & 0.34\% \\
+      \hline
+      Total & 0.40\% \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table} 

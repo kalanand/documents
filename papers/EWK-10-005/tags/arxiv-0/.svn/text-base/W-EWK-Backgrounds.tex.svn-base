@@ -1,0 +1,79 @@
+\subsection{Electroweak Backgrounds}
+\label{sec:EWKbkgds}
+
+A certain fraction of the events passing the selection criteria for $\Wln$
+are due to other EWK processes. Several sources of
+contamination have been identified. The events with $\Zll$ 
+(DY background), where one of the two leptons lies
+beyond the detector acceptance and escapes
+detection, mimic the signature of $\Wln$ events. Events from $\Ztt$ and $\Wtn$,
+with the tau decaying leptonically, have in general a lower-momentum lepton than signal
+events and are strongly suppressed by the minimum $\Pt$ requirements.
+
+The $\MET$ shape for the EWK vector boson and ${\mathrm t}\bar{\mathrm t}$ contributions are
+evaluated from simulations. For the main EWK backgrounds ($\Zll$ and $\Wtn $), the $\MET$ shape is 
+corrected by means of the procedure described in Section~\ref{sec:WsignalMETtemplate}.
+The $\MET$ shapes are evaluated separately for $\Wptn$ and $\Wmtn$.
+
+A summary of the background fractions in the $\Wen$ and $\Wmn$ analyses can be found in Table~\ref{tab:WlnBG}.
+The fractions are similar for the $\Wen$ and $\Wmn$ channels, 
+except for the DY background which is higher in the $\Wen$ channel. 
+The difference is mainly due to the tighter definition of the DY veto in the $\Wmn$ channel, 
+which is not compensated by the larger geometrical acceptance of electrons 
+($|\eta|<2.5$) with respect to muons ($|\eta|<2.1$).
+% with respect to $\Wen$ channel (the electron analysis rejects an event 
+%if there is a second electron with $\Et>20.0\GeV$ while the muon analysis 
+%rejects an event if there is a second muon with $\Pt>10\GeV$).
+
+\begin{table} %
+\begin{center}
+\caption{\label{tab:WlnBG}
+Estimated background-to-signal ratios in the $\Wen$ and $\Wmn$ channels.}
+
+\begin{tabular}{|l|c|c|}
+\hline
+{\multirow{2}{*}{Processes}} & \multicolumn{2}{c|}{Bkg. to sig. ratio}  \\ \cline{2-3}
+                           & $\Wen$ & $\Wmn$ \\ 
+\hline \hline
+$\Zee,\, \mu^+\mu^-,\, \tau^+\tau^-$ (DY)               & 7.6\%  &  4.6\% \\
+$\Wtn $                    & 3.0\%  & $3.0$\%    \\
+$\Wo\Wo$+$\Wo\Zo$+$\Zo\Zo$ & 0.1\% & $0.1$\%   \\
+$\ttbar$                   & 0.4\% & $0.4$\%   \\
+\hline
+Total EWK                  & 11.2\%& $8.1$\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+%In the fit procedure described in the following Section, the relative normalization of the 
+%EWK backgrounds is kept fixed to the values shown in Table~\ref{tab:WlnBG}.
+
+% \begin{table}
+% \begin{center}
+% \begin{tabular}{|l|c|c|}
+% \hline
+% source & $\Nbg/(N_\Wo+\Nbg)$ & $\Nbg$ in $36.$~pb$^{-1}$ \\
+% \hline\hline
+% QCD multi-jet            & $5.1$\% & 8896  \\
+% \hline
+% $\Wtn$                   & $2.7$\%  &  4667  \\
+% $\Ztt$                   & $0.5$\%  &   911  \\
+% $\Wo\Wo$+$\Wo\Zo$+$\Zo\Zo$           & $0.1$\%  &   205  \\
+% $\ttbar$                 & $0.3$\%  &   592  \\
+% \hline
+% EWK + $\ttbar$           & $7.1$\%  &  12538 \\
+% \hline
+% total                    & $12.2$\% &  21434 \\
+% \hline
+% $\Wmn$ signal            & $87.8$\%  & 153940 \\
+% \hline
+% \end{tabular}
+% \caption{Estimates of backgrounds in the $\Wmn$ channel, based on Monte Carlo simulations.}
+% \label{table:WmnBG}
+% \end{center}
+% \end{table}
+
+
+
+

@@ -1,0 +1,50 @@
+\section{Jet Energy Calibration}\label{sec:jec}
+
+\subsection{Overview of the Calibration Strategy}
+
+The purpose of the jet energy calibration is to relate, on average, the energy measured for the detector jet to the energy of the corresponding true particle jet. A true particle jet results from the clustering (with the same clustering algorithm applied to detector jets) of all stable particles originating from the fragmenting parton, as well as of the particles from the underlying event (UE) activity. The correction is applied as a multiplicative factor $\mathcal{C}$ to each component of the raw jet four-momentum vector $p_\mu^{raw}$ (components are indexed by $\mu$ in the following):
+
+\begin{equation}
+  \label{eq:master}
+  p_\mu^{cor} = \mathcal{C}\cdot p_\mu^{raw}.
+\end{equation}
+
+The correction factor $\mathcal{C}$ is composed of the offset correction $C_\text{offset}$, the MC calibration factor $C_\text{MC}$, and the residual calibrations $C_\text{rel}$ and $C_\text{abs}$ for the relative and absolute energy scales, respectively. The offset correction removes the extra energy due to noise and pile-up, and the MC correction removes the bulk of the non-uniformity in $\eta$ and the non-linearity in \pt. Finally, the residual corrections account for the small differences between data and simulation. The various components are applied in sequence as described by the equation below:
+
+\begin{equation}
+  \label{eq:jec_components}
+  \mathcal{C} = C_\text{offset}(\pt^{raw})\cdot C_\text{MC}(\pt^{\prime},\eta)\cdot C_\text{rel}(\eta)\cdot C_\text{abs}(\pt^{\prime\prime}),
+\end{equation}
+
+where $\pt^{\prime}$ is the transverse momentum of the jet after applying the offset correction and $\pt^{\prime\prime}$ is the \pt of the jet after all previous corrections. In the following sections, each component of the jet energy calibration will be discussed separately.
+
+\input{jec_offset.tex}
+\input{jec_mctruth.tex}
+\input{jec_relative.tex}
+\input{jec_absolute.tex}
+\input{jec_combined.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

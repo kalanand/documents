@@ -1,0 +1,38 @@
+\section{Conclusions}
+\label{sec:conclusions}
+We have presented a search for a resonant enhancement 
+in the dijet mass spectrum near $150~\gev$ in events containing a 
+leptonically decaying W boson and two or three jets using 5.0 fb${}^{-1}$ 
+integrated luminosity.
+We have gone through 
+the whole analysis chain using 
+similar event selection criteria to those used 
+by the CDF and D\O\ collaborations,  
+with some adjustments 
+needed to deal with a much larger $gg$- and $qg$-initiated 
+backgrounds at the LHC.  
+We have studied detailed Monte Carlo simulations of a wide range 
+of signal scenarios.
+We find no evidence for anomalous resonant dijet production 
+and derive upper limits on the production cross section of 
+a dijet resonance recently reported by the CDF 
+Collaboration.
+At 95\% confidence level, we exclude a dijet bump 
+as large as the one observed by CDF at $M_{jj} = 150$ GeV.
+We also exclude several important benchmark New Physics models such as
+technicolor and a leptophobic Z' that were proposed to explain the 
+CDF bump.
+We also investigate the range of dijet invariant mass from 
+123 to 186 GeV, and find no evidence for any resonant enhancement.
+
+%The goal for this preliminary analysis is to go through 
+%the whole analysis chain (``from soup to nuts'') using the 
+%same event selection criteria as used by the CDF and D\O\ collaborations. 
+%We understand that these selection criteria are not necessarily 
+%the most optimal for LHC conditions since the S/B is almost three times worse. 
+%In the next iteration of the analysis we will focus on a more
+%optimized event selection.  
+%We have presented detailed Monte Carlo simulation of a wide range 
+%of signal scenarios.
+%We generically set limit on the production rate of the $150~\gev$ 
+%dijet resonance predicted by these models.

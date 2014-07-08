@@ -1,0 +1,110 @@
+\section{Acceptance}
+\label{sec:acceptance}
+
+The acceptance $A_\Wo(\mathrm{e})$ for $\Wen$ is defined
+as the fraction of simulated $\Wo$ events having an ECAL cluster within
+the ECAL fiducial volume with $\Et>25\GeV$.
+The ECAL cluster must match the generated electron after final-state radiation
+(FSR) within a cone of $\Delta R=0.2$. No matching in energy is required.
+
+%These acceptances are reported in Table~\ref{tab:e-Waecal}.
+
+% \begin{table}[ht]
+%   \begin{center}
+%   \begin{tabular}{|l|c|c|c|}
+%     \hline
+%     $A^{\textrm{ECAL}}_\Wo$  & $\Wp$ & $\Wm$ & $\Wpm$ \\
+%     \hline\hline
+%     EB     & \WEPEBACC & \WEMEBACC & \WEIEBACC \\
+%     EE     & \WEPEEACC & \WEMEEACC & \WEIEEACC \\
+%     \hline
+%     EB+EE  & \WEPACC & \WEMACC & \WEIACC \\
+%     \hline
+%     \end{tabular}
+%   \end{center}
+%   \caption{ ECAL acceptances computed from the POWHEG $\Wen$ samples.
+%   \label{tab:e-Waecal}}
+% \end{table}
+
+There is an inefficiency in the ECAL cluster reconstruction for
+electrons direction within the ECAL fiducial volume
+due to a small fraction ($0.5\%$) of noisy or malfunctioning towers
+removed from the reconstruction. These are
+taken into account in the MC simulation, and no uncertainty is assigned to
+this purely geometrical inefficiency. The ECAL cluster selection efficiency is
+also affected by a bias in the electron energy scale due to
+the $25~\GeV$ energy threshold. The related systematic uncertainty is assigned
+to the final $\Wo$ and $\Zo$ selection efficiencies.
+
+The acceptance for the $\Zee$ selection, $A_\Zo(\mathrm{e})$,
+is defined as the number of simulated events with
+two ECAL clusters  with $\Et>25~\GeV$ within the ECAL fiducial volume and
+with invariant mass in the range $60<m_{\mathrm{ee}}<120\,\mathrm{GeV}$, divided by the total number
+of signal events in the same mass range, with the invariant mass evaluated using
+the momenta at generator level before FSR.
+The ECAL clusters must match the two simulated electrons after FSR
+within cones of $\Delta R<0.2$. No requirement on energy matching is applied.
+
+For the $\Wmn$ analysis, the acceptance $A_\Wo(\mu)$ is defined as the fraction
+of simulated $\Wo$ signal events with muons having transverse momentum $\Pt^{\textrm{gen}}$
+and pseudorapidity $\eta^{\textrm{gen}}$, evaluated at the generator level
+after FSR, within the kinematic selection: $\Pt^{\textrm{gen}}>25~\GeV$ and $|\eta^{\textrm{gen}}|<2.1$.
+% Similarily, for $\Wmn$ the muon is required to have a muon with $p_T^{\textrm{gen}}>25\GeV$
+% and $|\eta^{\textrm{gen}}|<2.1$.
+
+The acceptance $A_\Zo(\mu)$ for the $\Zmm$ analysis is defined as the number of
+simulated $\Zo$ signal events with both muons passing the kinematic selection with momenta evaluated
+after FSR, $\Pt^{\textrm{gen}}>20~\GeV$ and $|\eta^{\textrm{gen}}|<2.1$, and with
+invariant mass in the range $60<m_{\mu\mu}<120\,\mathrm{GeV}$, divided by the total number
+of signal events in the same mass range, with the invariant mass evaluated using
+the momenta at generator level before FSR.
+
+Table~\ref{tab:WZlaccgen} presents the acceptances
+for $\Wp$, $\Wm$, and inclusive $\Wo$ and $\Zo$ events,
+computed from samples simulated with {\sc powheg} using the CT10 PDF,
+for the muon and the electron channels. The acceptances are affected by several
+theoretical uncertainties,
+which are discussed in detail in Section~\ref{sec:theory}.
+
+\begin{table}[htbp] %
+\begin{center}
+\caption[.] {\label{tab:WZlaccgen}
+Acceptances from {\sc powheg} (with CT10 PDF) for $\Wln$ and $\Zll$ final states,
+with the MC statistics uncertainties.\\}
+\begin{tabular}{|l|c|c|}
+\hline
+ {\multirow{2}{*}{Process}} &  \multicolumn{2}{c|}{$A_{\mathrm{W,Z}}$}  \\ \cline{2-3}
+  & $\ell=\mathrm{e}$ &$\ell=\mu$ \\
+\hline\hline
+%      $\Wpln$      & \WEPAGEN & \WMPAGEN \\
+%      $\Wmln$      & \WEMAGEN & \WMMAGEN\\
+%      $\Wln$  & \WEIAGEN & \WMIAGEN \\
+     $\Wpln$      & \WEPACC & \WMPAGEN \\
+     $\Wmln$      & \WEMACC & \WMMAGEN\\
+     $\Wln$  & \WEIACC & \WMIAGEN \\
+\hline
+% $\Zll$ & \ZEEAGEN & $0.3977 \pm 0.0017$ \\
+$\Zll$ & \ZEEACC & $0.3978 \pm 0.0005$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+% \begin{table}[htbp]
+%   \begin{center}
+%   \begin{tabular}{|l|c|}
+%     \hline
+%     $A^{\textrm{ECAL}}_\Zo$  & $Z \to e^+e^-$ \\
+%     \hline\hline
+%     EB+EB     & \ZEEBBACC \\
+%     EB+EE     & \ZEEBEACC \\
+%     EE+EE     & \ZEEEEACC \\
+%     \hline
+%     all       & \ZEEACC \\
+%     \hline
+%     \end{tabular}
+%   \end{center}
+%   \caption{ Signal acceptances computed from POWHEG $Z \to e^+e^-$ samples.
+%   \label{tab:e-Zaecal}}
+% \end{table}

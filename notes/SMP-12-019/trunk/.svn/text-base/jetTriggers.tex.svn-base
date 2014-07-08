@@ -1,0 +1,114 @@
+A mix of different triggers are used to collect events consistent with
+the $V$+jet finsl state signature, in some cases varying
+significantly across the 2011 dataset. 
+
+For the $W(\mu\nu)$ and $Z(\mu\mu)$ + jet analyses, we use the logical OR of isolated and non-isolated single muon triggers, with variable thresholds as reported below. For the $W(e\nu)$ + jet analysis, we use the logical OR of single electron triggers, where in addition to a tight isolated electron (with variable momentum threshold), we require a 50 GeV cut on the electron plus PFMET transverse mass.     
+
+\subsection{Single Lepton Triggers}
+
+\subsubsection{Run2011A: Menus 5E32 (Runs: 160404--163869), 
+1E33 (Runs:165088--166967), and 1.4E33 (Runs:167039--167913)}
+\begin{itemize}
+\item
+Muon data:\\
+     IsoMu17\_v* OR Mu30\_v* \\
+Note: We really needed to OR in the nonisolated muon 
+trigger as it recovers about half of the offline-isolated 
+muons rejected by IsoMu, increasing the trigger efficiency 
+by ~5\%. 
+\item
+Electron data:\\   
+Ele27\_CaloIdVT\_CaloIsoT\_TrkIdT\_TrkIsoT\_v* \, \, \, \textcolor{red}{5E32 epoch}\\
+Ele25\_WP80\_PFMT40\_v1 \, \, \, \textcolor{red}{1E33 epoch}\\
+Ele27\_WP80\_PFMT50\_v* \, \, \, \textcolor{red}{1.4E33 epoch}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Run2011A:Menu 2E33, Runs 170249--173198}
+\begin{itemize}
+\item
+Muon data:\\
+     (IsoMu17\_v13 OR IsoMu20\_v8 OR IsoMu24\_v8) \, \, OR \, \, (Mu30\_v7 OR Mu40\_v5)\\
+
+Note: This epoch was complicated because Mu30, IsoMu17, 
+and IsoMu20 were all prescaled for brief periods, so we 
+could either break it down into sub-epochs or lump them 
+together. We chose the latter because it is predominantly 
+IsoMu17 and the sub-epoch lumi accounting is painful.   
+\item
+Electron data:\\   
+Ele27\_WP80\_PFMT50\_v*
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Run2011A:Menu 3E33, Runs: 173236--173692}
+\begin{itemize}
+\item
+Muon data:\\
+HLT\_IsoMu20\_v9 OR HLT\_Mu40\_eta2p1\_v1
+\item
+Electron data:\\
+ Ele27\_WP80\_PFMT50\_v*
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Run2011B: Menu 3E33, Runs: 175832--178380}
+\begin{itemize}
+\item
+Muon data:\\
+    (IsoMu30\_eta2p1\_v3  OR IsoMu24\_eta2p1\_v3  OR IsoMu24\_v9 OR IsoMu20\_v9) \\
+     OR \\  
+    (Mu40\_eta2p1\_v1  OR  HLT\_Mu40\_v6)
+\item
+Electron data:\\  
+Ele27\_WP80\_PFMT50\_v* OR Ele27\_WP70\_PFMT50\_v*
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Run2011B: Menu 5E33, Runs: 178420--180252}
+\begin{itemize}
+\item
+Muon data:\\
+       (IsoMu30\_eta2p1\_v6 OR IsoMu24\_eta2p1\_v6 OR IsoMu24\_v12 OR \\
+       IsoMu30\_eta2p1\_v7 OR IsoMu24\_eta2p1\_v7 OR IsoMu24\_v13) \\
+       OR \\
+      (Mu40\_eta2p1\_v4 OR  Mu40\_v9) \, \, \,
+      \textcolor{red}{(v1.4, 178420-179889)} \\
+       OR (Mu40\_eta2p1\_v5 OR  Mu40\_v10) \, \, \,
+      \textcolor{red}{(v2.2, 179959--180252)}
+\item
+Electron data:\\
+ Ele32\_WP70\_PFMT50\_v*
+\end{itemize}
+
+
+\subsection{Double Electron Triggers}
+
+For the $Z(ee)$+ jet analysis, we use a double electron trigger:
+
+Ele17\_CaloIdL\_CaloIsoVL\_Ele8\_CaloIdL\_CaloIsoVL (early 2011)  and
+
+ Ele17\_Ele8\_CaloIdL\_CaloIsoVL\_TrkIdVL\_TrkIsoVL. 
+
+This trigger allows a lower offline threshold of $20\GeV$ for both electrons.
+
+
+ 
+
+% Z$(\Pe\Pe)$                     & {\tt SingleEG12}             & {\tt Ele17\_CaloIdL\_CaloIsoVL\_Ele8\_CaloIdL\_CaloIsoVL}
+%           \\
+%                                  & {\tt SingleEG12}             & {\tt Ele17\_Ele8\_CaloIdL\_CaloIsoVL\_TrkIdVL\_TrkIsoVL} 
+%           \\
+%                                  & {\tt SingleEG\_12\_5}        & {\tt Ele17\_Ele8\_CaloIdL\_CaloIsoVL\_TrkIdVL\_TrkIsoVL} 
+%           \\
+
+rate.  The current triggers support offline thresholds of $20\GeV$ and $30\GeV$ 
+for the muon and electron, respectively.
+
+
+The same set of single muon triggers are used in the 
+$Z(\mu\mu)$+jet  channel, which allows for a low $25/25$ threshold
+combination on both muons.  
+
+
+

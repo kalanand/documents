@@ -1,0 +1,17 @@
+\subsection{Missing Transverse Energy}
+\label{sec:MET}
+An accurate $\MET$ measurement is essential for distinguishing
+$\Wo$ signal from QCD backgrounds. We use $\MET$ estimate provided
+by the Particle Flow (PF) algorithm which showed the best performance for the
+CMS detector. Details on Particle Flow $\MET$ are provided in Ref.~\cite{PFMET}. 
+\par
+Very good agreement of the $\MET$
+distributions in $\Wln$ in data and simulation was found~\cite{metPAS}.
+\par
+The $\MET$ is computed as the vector sum of all PF objects.
+The resolution for inclusive multi-jet samples and for
+$\Wln$ events is well reproduced by the 
+simulation.  A modest broadening of about $10\%$ is observed 
+when there is more than one primary vertex; this occurs in less 
+than $40\%$ of the events and has a negligible impact on the
+extraction of the $W$ yields described below.

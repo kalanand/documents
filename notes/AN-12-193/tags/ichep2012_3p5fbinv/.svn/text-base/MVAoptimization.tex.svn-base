@@ -1,0 +1,26 @@
+\section{Multivariate optimization}
+\label{sec:mvaoptimization}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+In addition to the common preselections listed in Sec.~\ref{sec:firstStep}, the
+MVA likelihood analysis applies the following selections:
+
+\begin{itemize}
+\item $|\Delta\phi_{\textrm{leading jet,MET}}| > 0.4$ for muons
+\item $|\Delta\phi_{\textrm{leading jet,MET}}| > 0.8$ for electrons
+\end{itemize}
+
+As of this writing, the optimization for the MVA has not been completed for 2012;
+as a result, we adopt the optimization performed on last year's data and MC samples.
+This optimization is documented completely in the analysis notes AN-2011/110 and
+AN-2012/008.
+
+An additional point of distinction between the optimization procedures
+for the 2011 data and this year's data is the use of the quark-gluon
+likelihood discriminant. In 2011, this discriminant was used to
+distinguish quark-originated jets (signal) from gluon-originated jets
+(W+Jets dominant background), particularly at high mass ($M_{H}\geq
+500$~GeV), after applying the MVA output requirement. However, the PDF
+for the discriminant for 2012 beam conditions was not yet available as
+of this writing, and the PDF based on 2011 beam conditions did not
+yield reliable results, so it is not applied.

@@ -1,0 +1,101 @@
+Dear Albert, 
+
+Thank you very much for the useful suggestions and the numerous corrections you sent us.
+
+We implemented the vast majority of, if not all, the editorial comments that we received.
+In some cases, comments from different reviewers overlap or suggest incompatible changes.
+In many of those and other cases the best solution was to rephrase the sentence or
+paragraph involved. The number of editorial comments, due to the size of the paper, is too
+large to give a reply for every single comment.
+
+Here we collect some questions that we think are necessary to address:
+
+Q:
+it does read a little too much as a collection of largely independent analyses put together. 
+The muon and electron analyses sometimes take different choices for no seemingly good reason, 
+eg for the Z cross section extraction we use the cut and count for the e+e- which is a method 
+we do not even try for the mumu. What you need here is a bit more upfront motivation for the 
+strategies followed int the paper/analysis. 
+A:
+the cut and count was tried for mumu with smaller statistics and proven to be less precise. 
+For this reason it has not been pursued further. We added few sentences to address these issues.
+
+Q:
+One important issue is that we upfront say exactly and precisely what cross section we measure, 
+since this is a precision measurement, thus leaving no trace of doubt. Eg how do we treat QED FSR 
+in these measurements, and what should theorists do to compare exactly with our results. The 
+conveners may remember I once sent them a communication of a discussion between ATLAS and TH 
+(reresented by Frank Kraus) on exactly this matter when ATLAS prepared for its first publication 
+last year... 
+A:
+The fiducial cross sections are estimated from the total cross sections by multiplying with 
+QED FSR corrected acceptances. This is done in order to have direct comparisons with NNLO restricted 
+cross section predictions which do not contain QED FSR corrections. It is clearly mentioned
+in the paper.
+
+Q:
+line 38 (more to RobertoT) do we HAVE to refer to ATLAS conference notes? do they refer to 
+our PASes? Can we actually show the ATLAS values in fig 27, ie can we publish their values 
+before they do? Also the number on the systematic given there in the caption is purely due 
+to their more aggressive take for the lumi uncertainty, and not a consequence of more clever work 
+on the cross section extraction, so I would not stress that number here without explaining more... 
+A:
+Removed comparison to ATLAS from Fig. according to CMS rule not to cite conf. notes. 
+
+Q:
+Fig 1 looking at this at face value we see the data behaving quite different from the signal MC. 
+Nothing is said on that either in the figure or text. Maybe a sentence to re-assure the reader 
+here that things are all right may help? 
+A:
+Data is Signal+Background while MC is pure Signal. Obviously they will have some differences 
+which motivate the cut on the particular variable.
+
+Q:
+table 1: is it obvious why the W acceptance is better for the electron channel, while the reverse 
+is true for the Z acceptance? Maybe worth a comment around line 259. 
+A:
+The W acceptance is higher for electrons because of the larger fiducial volume : |eta|<2.5 for 
+electrons and |eta|<2.1 for muons. For Z the looser Pt cut on muons (20 GeV instead of 25 GeV for 
+electrons) compensates for the smaller fiducial volume and gives a bit higher acceptance for muons. 
+
+Q:
+line 290: no opposite charge is fixed for the pairs, but was it checked that the like-sign 
+charges we get are roughly what we expect from the MC? (we say something at the end on 
+line 625 and further, but this comes late when the reader can have the question here. 
+If this is the answer put at least a pointer to section "9.0.1") 
+A:
+Why we need this check against MC? We don't use it anywhere in the analysis.
+
+Q:
+line 423: tt and diboson background will be negligible, but maybe it is useful to say to 
+what you fix the cross sections (NLO? measurements, quasi NNLO...)) 
+A:
+My impression is that we used NLO (to be cross checked). 
+
+Q:
+line 432: did we say somewhere in the paper what tune is used for the underlying event? 
+Maybe should be added to --the present- section 4? 
+A:
+That would be useful. We need a reference for this. It is not added yet.
+
+Q:
+Fig 8: bottom parts of the plot are not explained in the caption (they are in the text). 
+Either add or refer to the text 
+A:
+In the text we explain the definition of the bottom parts and we say that it stays the same 
+for all plots. This is done on purpose in order to avoid explaining again & again the same 
+thing. So if we add it here we 'll have to add it everywhere which is what we would like to avoid. 
+
+Q:
+line 990: We mention ATLAS here but we do not show their data, so no need to mention I suppose. 
+See also comments above for 
+Fig 27. 
+A:
+Removed comparison to ATLAS from Fig. according to CMS rule not to cite conf. notes. 
+
+
+Thank you once more for your time and effort to read and improve this paper.
+
+All the best,
+Georgios & Luca
+

@@ -1,0 +1,42 @@
+\section{Modeling of W+jets background shape in \texorpdfstring{$m_{jj}$}{dijet invariant mass} }
+\label{sec:wjetsShape}
+
+To determine the expected number of W+jets events in the signal region,
+it is necessary to know its shape in the $m_{jj}$ variable.
+
+Because of inadequate statistics in the W+jets MC and the overall poor
+agreement between W+jets MC and many data distibutions, we employ an
+empirical description of the W+jets shape.  This description is a
+kinematic turn on and a power law tail:
+\begin{equation}
+  \mathcal{F}_{W+\text{jets}} = \text{erf}(m_{jj}; m_0, \sigma)\times\left[(m_{jj})^{-\alpha-\beta\ln(m_{jj}/\sqrt{s})}\right]\,,
+\end{equation}
+where $m_0$ is the value of the turn on and $\sigma$ is the width of
+this turn on.  The parameters $m_0$, $\sigma$, $\alpha$ and $\beta$
+are determined in the fit to the data after the MVA cut.
+
+This nominal fit shape is not particularly well suited for all of the
+mass points.  In the 2-jet channels for masses from 180 GeV and below
+we use the MC morphing technique used in the study of the W+2 jets
+mass spectrum analysis documented in CMS AN-2011/266, Section 12.
+These lower mass points do not suffer from the lack of statistics as
+they are background rich, particularly in W+jets background.  We also
+use the MC morphing technique for 3-jet mass points from 200 GeV and
+below.  We use the following parameterization for 2-jet mass points
+190 and 200 GeV.
+
+\begin{equation}
+  \mathcal{F}_{W+\text{jets low mass, 2 jets}} = \text{erf}(m_{jj}; m_0, \sigma)\times(m_{jj})^{-\alpha}\times\exp(m_{jj}\tau)\,,
+\end{equation}
+
+where the parameters $m_0$, $\sigma$, $\alpha$ and $\tau$ are
+determined in the fit.  In the 3-jet channels we use the
+parameterization
+
+\begin{equation}
+  \mathcal{F}_{W+\text{jets low mass, 3 jets}} = (m_{jj})^{-\alpha-\beta\ln(m_{jj}/\sqrt(s))}\times\exp(m_{jj}\tau)
+\end{equation}
+
+for masses 250 and 300 GeV.  These functional line shapes are
+motivated by the W+jets MC, however their parameters are derived
+strictly from data in the $m_{jj}$ sidebands around the W mass.

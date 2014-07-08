@@ -1,0 +1,12 @@
+The measured spectrum of a physical observable, like the jet mass distribution, is usually distorted by	detector effects, su
+ch as finite resolution and limited acceptance. Moreover, in this analysis the chosen bin size is comparable to the resoluti
+on, so there is a significant migration of events generated in one jet bin mass and ending up in a different bin of reconstr
+ucted jet mass. A comparison of the measured mass spectrum with that predicted at generator level requires that we remove th
+ese effects to obtain the true underlying mass spectrum. There are several possible ways to achieve the unfolding of detecto
+r effects on measured spectra. We use an unfolding procedure described by G.~D.~Agostini in~\cite{agostini}. Repeated application of Bayes theorem is used 
+to invert the response matrix. Regularization is achieved by stopping iterations before reaching the ``true'' (but wildly fl
+uctuating) inverse. The regularization parameter is just the number of iterations.
+ In principle, this has to be tuned to prevent the statistical fluctuations being interpreted as structure in the true distr
+ibution, according to the sample statistics and binning. In practice, the results are fairly insensitive to the precise sett
+ing used and four iterations are usually sufficient.
+

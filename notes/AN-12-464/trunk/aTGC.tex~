@@ -1,0 +1,405 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage{}
+\section{Measuring Anomalous Trilinear Gauge Couplings}
+\label{sec:atgc}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+
+The $s$-channel production of WW events occurs via the triple-gauge couplings 
+WW$\gamma$ and WWZ.  
+In the standard model, these couplings are defined  up to an overall constant. 
+Contributions to these couplings from new physics processes would 
+affect the measured WW cross section~\cite{Hagiwara1987253}.  
+An effective Lagrangian can be used to describe the effect of non-SM 
+processes on the $WWV$ couplings, where $V$ is either $\gamma$ or $\Z^0$. 
+Such a Lagrangian contains a subset of the 14
+possible terms consistent with Lorentz invariance~\cite{Hagiwara1987253}:
+%%%%%%%%%%
+\begin{equation*}
+\frac{\mathcal{L}_{WWV}}{g_{WWV}}  = i g_1^V \left(
+W^{\dagger}_{\mu\nu}W^{\mu}V^{\nu} -
+W^{\dagger}_{\mu}V_{\nu}W^{\mu\nu} \right) + i\kappa_V
+W^{\dagger}_{\mu}W_{\nu}V^{\mu\nu} + \frac{i\lambda}{M_W^2}
+W^{\dagger}_{\lambda\mu} W^{\mu}_{\nu} V^{\nu\lambda} %% +
+%% \frac{i\tilde{\lambda}}{M_W^2} W^{\dagger}_{\lambda\mu} W^{\mu}_{\
+%% \nu} \hat{V}^{\nu\lambda},
+\end{equation*}
+%%%%%%%%%%%%%
+\noindent
+where $g_{WW\gamma} = -e,~g_{WWZ} = -e\cot\theta_W,~V_{\mu\nu} = \partial_{\mu} 
+V_{\nu} - \partial_{\nu} V_{\mu}$, and $W_{\mu\nu} = \partial_{\mu} W_{\nu} - 
+\partial_{\nu} W_{\mu}$.  
+Demanding that the couplings are invariant
+under $\mathrm{SU}(2)_L \times \mathrm{U}(1)_Y$ reduces the number
+of coupling constants from 14 to 5 \cite{PhysRevD.41.2113}: 
+$\lambda_Z$, $\Delta{\kappa_\gamma}$, $\Delta{g_1^Z}$, 
+$\lambda_\gamma$ and $\Delta{\kappa_Z}$~\cite{MCFM}.
+In the SM, $\kappa = 1$, and $\lambda = 0$.
+Assuming that the
+coupling constants to $\gamma$ and $Z$ are the same 
+further reduces the number to 3: 
+$\lambda_Z$, $\Delta{\kappa_\gamma}$, and $\Delta{g_1^Z}$. 
+The other two parameters ($\lambda_\gamma$ and $\Delta{\kappa_Z}$) 
+can be written as functions of these three.
+While we might want to search for anomalous couplings that differ for
+$\gamma$ and $Z$, or are not invariant under the SM gauge symmetry,
+the first search should be done in this restricted regime.  All
+previous searches at hadron colliders have been done under these
+assumptions.
+%% In the present analysis, we additionally set $\Delta{g_1^Z} = 0$
+%% (\textit{i.e.}, SM) and set limits on $\lambda_Z$ and $\Delta{\kappa_\gamma}$.
+
+
+Individually, non-zero couplings lead to divergent WW cross 
+section at high $\sqrt{s}$, and non-SM values of the $g_1^V$ or $\kappa_V$ 
+couplings break the gauge cancellation of processes at high momentum transfer.  
+However, there is no unique prescription to regulate this behavior or  
+to apply a suppression factor, because such a regularization 
+would depend on the scale of new physics which is unknown \textit{a priori}. 
+{ \bf Hence, in the present analysis we do not apply any 
+form factors or cut-off scale for new physics.}
+
+%\cite{previous_searches}
+
+%%We use the {\sc MCFM} program \cite{MCFM} to simulate the effects of
+%%anomalous couplings as it is an accepted standard with calculations to
+%%NLO.  Unfortunately, the output of MCFM is in a non-standard format
+%%not easily interfaced to the CMS simulation framework.  Therefore, we
+%%use the output of MCFM to understand the effects of anomalous
+%%couplings on event variables and reweight standard CMS MC events to
+%%match the MCFM distributions.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Existing limits}
+The current best fit results for anomalous couplings are dominated by LEP results. 
+Table~\ref{tab:aTGC_limits_fromPDG} shows the
+existing limits for various couplings~\cite{PhysRevD.80.053012,pdg}.
+Recent LHC measurements in the fully-leptonic final state 
+(WW $\to\ell^+\nu\ell^-\overline{\nu}$) are approaching similar 
+sensitivity~\cite{Chatrchyan:2011tz,Aad:2012ks}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[h]
+\caption{\label{tab:aTGC_limits_fromPDG}
+Current limits on anomalous couplings. The world best limits are based on a fit of LEP
+measurements. The LHC and Tevatron results are shown for comparison.}
+\begin{center}
+  \begin{tabular}{l c}
+    \hline  \hline
+   Coupling  &  Particle Data Group Fit\\\hline
+   $\lambda_\gamma$  &  $0.028^{+0.020}_{- 0.021}$ \\
+   $\lambda_Z$  &  $0.088^{+0.060}_{- 0.057}$ \\
+   $\Delta{g_1^Z}$  &  $0.016^{+0.022}_{- 0.019}$ \\
+   $\Delta{\kappa_\gamma}$  &  $0.027^{+0.044}_{- 0.045}$ \\
+   $\Delta{\kappa_Z}$  &  $0.026^{+0.059}_{- 0.056}$ \\
+    \hline  
+\end{tabular}
+\vskip 2mm
+%%%%%%
+  \begin{tabular}{l c c}
+   \hline  
+Coupling & Tevatron (WW +WZ $\to\ell\nu$2jet) & Tevatron (WW $\to\ell^+\nu\ell^-\overline{\nu}$)\\\hline
+$\lambda = \lambda_\gamma = \lambda_Z$ & [-0.10,0.11] at 95\% C.L. & [-0.14,0.18] at 95\% C.L. \\
+$\Delta{\kappa_\gamma}$  & [-0.44,0.55] at 95\% C.L. & [-0.54,0.83] at 95\% C.L. \\ 
+$\Delta{g_1^Z}$  &   [-0.12,0.20] at 95\% C.L. & [-0.14,0.30] at 95\% C.L.\\
+   \hline 
+\end{tabular}
+\vskip 2mm
+%%%%%%
+  \begin{tabular}{l c c}
+   \hline  
+Coupling & CMS 35~pb${}^{-1}$ (WW $\to\ell^+\nu\ell^-\overline{\nu}$) & ATLAS 1~fb${}^{-1}$ (WW $\to\ell^+\nu\ell^-\overline{\nu}$)\\\hline
+$\lambda_Z$ & [-0.19,0.19] at 95\% C.L. & [-0.079,0.77] at 95\% C.L. \\
+$\Delta{\kappa_\gamma}$  & [-0.61,0.65] at 95\% C.L. & [-0.071,0.071] at 95\% C.L. \\ 
+$\Delta{g_1^Z}$  &   [-0.29,0.31] at 95\% C.L. & [-0.052,0.082] at 95\% C.L.\\
+   \hline  \hline
+\end{tabular}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Monte Carlo modeling of anomalous couplings}
+We use the MCFM v6.0 NLO~\cite{MCFM} event generator to produce samples of 
+1 million WW  events with and without anomalous couplings. 
+The kinematic threshold values used to generate these events are  
+summarized in Table~\ref{tab:MCFMSELECTION}.
+
+%%%%%%%%%%%%%%%%%
+\\
+\begin{table}
+\begin{center}
+\caption{Kinematic threshold values used to generate events with and without anomalous couplings in MCFM.
+\label{tab:MCFMSELECTION}}
+\begin{tabular}{l l}
+\hline \hline
+         \Wln\ selection  & Jet selection \\ \hline 
+          Lepton $p_{T} > 25~\GeV, |\eta| <2.5 $ & anti-$k_T$ 0.5, $p_{T}^{\textrm{jet}}> 30~\GeV, |\eta| <2.4$\\
+          W transverse mass $> 50$~GeV     &  $\Delta \eta_{jj} < 1.5$ \\
+          $\MET> 25$~GeV  & $\Delta \phi (\MET,\textrm{lead~jet}) > 0.4$  \\
+\hline \hline
+\end{tabular}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Pythia_mcfm_dijetpt.png}
+    \includegraphics[width=0.48\textwidth]{figs/atgc_xsec2.png}
+    \caption{(left) Comparison of the dijet $p_T$ distribution for WW events in Pythia 
+    (after Gen--RECO matching) and LO MCFM. The agreement between the two is good.
+    (right) Change in cross section relative to the standard model couplings 
+    as a function of $\lambda_Z$ and $\Delta{\kappa_\gamma}$.
+    }
+    \label{fig:ww_dijetPt_PythiaMCFM_comparison}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Fig_aTGC_NoBoost.pdf}
+    \includegraphics[width=0.48\textwidth]{figs/Fig_aTGC_Boosted.pdf}
+    \includegraphics[width=0.60\textwidth]{figs/Fig_aTGC.pdf}
+    \caption{Ratio of the hadronic W $p_T$ distribution 
+    for various anomalous coupling values relative to 
+    the standard model coupling in dijet (upper left) and  
+    boosted (upper right) samples. The lower plot shows the 
+   combined distribution of the two samples.}
+    \label{fig:ww_dijetPt_atgcRatio}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The differential cross section as a function of the 
+$p_T$ of either W boson can directly probe the anomalous couplings,
+particularly at high $p_T$.
+We use the the dijet $p_T$ distribution as an observable to set limit on 
+anomalous couplings.
+The dependence of the distribution on specific anomalous couplings 
+is modeled by re-weighting the Pythia SM WW MC to the predictions 
+of the MCFM~\cite{MCFM} NLO generator at the matrix-element level. 
+The dijet $p_T$ distribution is found
+to be consistent between the LO Pythia WW and the generator level LO 
+MCFM without anomalous couplings, as can be seen in 
+Figure~\ref{fig:ww_dijetPt_PythiaMCFM_comparison}. 
+%%Therefore, anomalous coupling samples produced in MCFM can 
+%%be used directly for the present study.
+Figure~\ref{fig:ww_dijetPt_PythiaMCFM_comparison}b shows the change in 
+relative cross section compared to the standard model couplings 
+as a function of anomalous coupling parameters.
+The anomalous coupling samples were produced with several values 
+of aTGC parameters. 
+Figure~\ref{fig:ww_dijetPt_atgcRatio} 
+shows the ratio of the hadronic W $p_T$ spectrum relative to 
+the standard model for various values of anomalous gauge couplings.
+In order to obtain predictions for a continuous 
+variation in aTGC parameter values, we  
+parametrize the above ratio using a quadratic function: 
+%%%%%%%%%%%
+\begin{equation}
+\text{Ratio} = \text{constant term} + 
+\text{linear term} \cdot x + \text{quadratic term} \cdot x^2,
+\label{eqatgcparam}
+\end{equation}
+%%%%%%%%%%%
+where the variable $x$ is hadronic W $p_T$ and 
+the three coefficients are quadratic functions of 
+the anomalous coupling value.
+%%%%%%%%%%%
+\begin{eqnarray}
+\text{Ratio} (\lambda_Z) &=& C_0 (\lambda_Z)  + C_1 (\lambda_Z) \cdot p_T
+                           + C_2 (\lambda_Z) \cdot p_T^2,  \nonumber \\
+\text{Ratio} (\Delta{\kappa_\gamma}) &=& C'_0 (\Delta{\kappa_\gamma})  + 
+                      C'_1 (\Delta{\kappa_\gamma}) \cdot p_T + 
+                      C'_2 (\Delta{\kappa_\gamma}) \cdot p_T^2,  \nonumber \\
+\text{Ratio} (\Delta{g_1^Z}) &=& C''_0 (\Delta{g_1^Z})  + C''_1 (\Delta{g_1^Z}) \cdot p_T
+                           + C''_2 (\Delta{g_1^Z}) \cdot p_T^2, 
+\end{eqnarray}
+%%%%%%%%%%%
+where 
+%%%%%%%%%%%
+\begin{eqnarray}
+C_i (\lambda_Z) &=& P_{i0} + P_{i1} \cdot \lambda_Z + P_{i2} \cdot \lambda_Z^2, \nonumber \\
+C_i (\Delta{\kappa_\gamma}) &=& P'_{i0} + P'_{i1} \cdot \Delta{\kappa_\gamma} + P'_{i2} \cdot \Delta{\kappa_\gamma}^2, \nonumber \\
+C_i (\Delta{g_1^Z}) &=&  P''_{i0} + P''_{i1} \cdot \Delta{g_1^Z} + P''_{i2} \cdot {\Delta{g_1^Z}}^2,
+\end{eqnarray}
+%%%%%%%%%%%
+where $P_{ij}$, $P'_{ij}$, and $P''_{ij}$ are constant parameters. 
+Indices $i, j = 0, 1, 2$.  
+The linear terms $C_1, C'_1, C''_1$ turn out to be zero in all cases. 
+Figure~\ref{fig:ww_dijetPt_aTGC_parametrization} shows 
+the parametrization.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.32\textwidth]{figs/Fig_lambda.pdf}
+    \includegraphics[width=0.32\textwidth]{figs/Fig_kappa.pdf}
+    \includegraphics[width=0.32\textwidth]{figs/Fig_g1.pdf}
+    \caption{Parametrization of $\Lambda_Z$ (left) and 
+      $\Delta{\kappa_\gamma}$ (middle), and $\Delta{g1^Z}$ (right).}
+    \label{fig:ww_dijetPt_aTGC_parametrization}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Limit setting}
+\label{sec:limits}
+We use the dijet $p_T$ distribution as observable to set limit on anomalous couplings. 
+We plot the dijet $p_T$ distribution in data and various standard model 
+components using the event selection criteria described in section~\ref{sec:reco},
+additionally requiring a dijet invariant mass selection of $75 < m_{jj} < 95$~\GeV,
+in Fig.~\ref{fig:ww_dijetPt_stacked}. 
+The figure also shows a typical anomalous coupling corresponding to 
+$\lambda_Z = 0.2, \Delta{\kappa_\gamma} = 0.0$ for comparison.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/mu_dijet_dijetPt.pdf}
+    \includegraphics[width=0.48\textwidth]{figs/mu_boosted_dijetPt.pdf}
+    \includegraphics[width=0.48\textwidth]{figs/el_dijet_dijetPt.pdf}
+    \includegraphics[width=0.48\textwidth]{figs/el_boosted_dijetPt.pdf}
+    \caption{Comparison of the hadronic W $p_T$ distribution using the event 
+    selection criteria described in section~\ref{sec:reco}, and with the requirement
+    $70 < m_{jj} < 100$~\GeV : 
+    muon dijet (upper left), muon boosted (upper right), electron 
+    dijet (lower left), electron boosted (lower right).
+    The individual components are normalized according to the fit 
+    results of section~\ref{sec:mjj_fit} for the $p_T$ range being plotted.
+    }
+    \label{fig:ww_dijetPt_stacked}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+We use the ``Higgs Combination'' package \cite{cite:combine} for
+setting exclusion limits. This package is a
+RooStats\cite{cite:roostats}-based statistical analysis tool-set
+recommended by the CMS Higgs PAG and approved by CMS statistics committee.
+
+We take as inputs the dijet $p_T$
+distributions for each signal model (\textit{i.e.},  
+various choices of $\lambda_Z$ and $\Delta{\kappa_\gamma}$), 
+data, and total background that
+survive after analysis cuts. 
+All of these distributions are segregated by lepton flavor and jet content,
+which represent independent
+channel inputs to the limit setter. 
+We supply
+these distributions over the range $50-400~\gev$ in the form of
+histograms to the limit setter.
+
+
+The limit setter is then set to utilize the ``asymptotic CL$_{s}$''
+\cite{cite:asympcls1,cite:asympcls2} method. The resulting observed limit, as well as
+the median expected limit and 1- and 2-sigma error bands, are plotted.
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Systematic uncertainties considered for limit settings}
+We considered the following sources of systematics.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Normalization of the standard model processes}
+The uncertainty in the normalization of the sum of the standard model backgrounds 
+(diboson, W+jets, $\ttbar$,  single top, QCD multi-jets, and Z+jets processes) 
+is taken directly from the diboson signal extraction fit, as 
+documented in section~\ref{sec:syst}.
+%%%%%
+\subsubsection{Normalization of the aTGC cross section}
+Since we model the aTGC process via a differential ratio 
+(in dijet $p_T$) relative to the standard model process, 
+the cross section uncertainty is already accounted for in 
+the normalization of the background. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Luminosity uncertainty}
+The latest recommendation for the uncertainty on LHC luminosity is 2.2$\%$~\cite{lumiPAS}.
+We propagate LHC luminosity uncertainty of 2.2$\%$~\cite{lumiPAS} 
+to the expected yield of the aTGC signal.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Lepton selection and trigger efficiency}
+Systematic uncertainties in the trigger efficiencies in
+Section~\ref{sec:trigger} are of the order of 1\%. Systematic
+uncertainties in the lepton reconstruction and identification
+efficiency scale factors are of the order of 2\%. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Background shape uncertainty}
+ The shape uncertainty of the W+jets background 
+constitutes a systematic uncertainty. The alternative 
+W+jets samples described in Sections~\ref{sec:wjetsShape}-\ref{sec:mjj_fit} 
+do not have decent statistics in the tail of high dijet $p_T$ regime. 
+Therefore, we take the variation in factorization/renormalization scale 
+from MCFM LO. 
+Using the same scale choice as used in our default MadGraph sample 
+($q_0^2 = M_W^2 + p_{T, W}^2$), we generated samples with 
+$q= 2~q_0$ and $q= 0.5~q_0$. 
+We then take the maximal variation in the dijet $p_T$ shape with respect 
+to the $q= q_0$ as a systematic uncertainty. 
+The dijet $p_T$ spectrum has statistically insignificant variation 
+when one includes background events with higher jet multiplicity 
+(\textit{i. e.}, $\text{N}_{\text{jets}} >2$). 
+Figure~\ref{fig:ww_dijetPt_stacked} shows the combined effect of this 
+shape systematics.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Signal shape uncertainty}
+Since the signal shape is derived from the 
+NLO generator at the matrix-element level, the effect of 
+factorization/renormalization scale is minuscule.
+We verify this for a few aTGC points and assume 
+this systematics to be negligible.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Shape-based limit using full \texorpdfstring{19.5 fb${}^{-1}$}{19.5/fb} data sample}
+In Figures~\ref{fig:limitshape2d} and \ref{fig:limitshape1d} we present
+shape-based exclusion limits using the full dijet $pT$ spectrum.  Exclusion
+limits in 2-dimensional $\lambda_Z:\Delta{\kappa_\gamma}$ plane and individually
+for $\lambda_Z$ and $\Delta{\kappa_\gamma}$ are computed at the 95\% C.L.
+
+We obtain the following observed exclusion limits:
+
+%% Expected: \\
+%% \hspace*{6 mm} $ -0.100 < \, \, \lambda_Z \, \, < 0.086$  \, \, \,(assuming $\Delta{\kappa_\gamma}=0$)\\ 
+%% \hspace*{6 mm} $ -0.315 < \, \, \Delta{\kappa_\gamma} \, \, < 0.349$  \, \, \,(assuming $\lambda_Z=0$)\\
+%% Observed: \\ 
+%% \hspace*{6 mm} $ -0.038 < \, \, \lambda_Z \, \, < 0.03$  \, \, \, (assuming $\Delta{\kappa_\gamma}=0$) \\
+%% \hspace*{6 mm} $ -0.11 < \, \, \Delta{\kappa_\gamma} \, \, < 0.14$  \, \, \, (assuming $\lambda_Z=0$).
+\hspace*{6 mm} $ -yyy < \, \, \lambda_Z \, \, < yyy$  \, \, \, (assuming $\Delta{\kappa_\gamma}=0, \Delta{g_1^Z}=0$) \\
+\hspace*{6 mm} $ yyy < \, \, \Delta{\kappa_\gamma} \, \, < yyy$  \, \, \, (assuming $\lambda_Z=0, \Delta{g_1^Z}=0$) \\
+\hspace*{6 mm} $ yyy < \, \, \Delta{g_1^Z} \, \, < yyy$  \, \, \, (assuming $\lambda_Z=0, \Delta{\kappa_\gamma}=0$) \\
+
+These limits are consistent with the SM prediction. 
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[bthp]
+\includegraphics[width=0.8\textwidth]{figs/xx.pdf}
+%%\includegraphics[width=0.8\textwidth]{figs/lz_dkg_2dlimit.pdf}
+%% \includegraphics[width=0.48\textwidth]{figs/atgc_limits_withshape_nosyst.png}
+\caption{\label{fig:limitshape2d}
+The observed and expected values of the shape-based  CL${}_{\textrm{S}}$ limit for 
+anomalous triple gauge couplings in $\lambda_Z:\Delta{\kappa_\gamma}$ plane.
+}
+\end{figure}
+\begin{figure}[bthp]
+\includegraphics[width=0.48\textwidth]{figs/xx.pdf}
+\includegraphics[width=0.48\textwidth]{figs/xx.pdf}
+%% \includegraphics[width=0.48\textwidth]{figs/lz_1dlimit.pdf}
+%% \includegraphics[width=0.48\textwidth]{figs/dkg_1dlimit.pdf}
+\caption{\label{fig:limitshape1d}
+The observed and expected values of the shape-based  CL${}_{\textrm{S}}$ limit for 
+anomalous triple gauge couplings in $\lambda_Z$ (left) and $\Delta{\kappa_\gamma}$ (right)
+including all systematic uncertainties.
+}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+
+
+\clearpage

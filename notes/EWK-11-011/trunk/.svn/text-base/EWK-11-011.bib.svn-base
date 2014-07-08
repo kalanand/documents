@@ -1,0 +1,450 @@
+--- COMMENTS may be placed outside the @ENTRYTYPE{ ... } stuctures
+--- CMS guidelines
+---- All URLs for CMS notes, ANs, etc, should refer to the CDS server, not the CMS server. Use our standard format for them, as shown below.
+---- If a collaboration is referenced by the collaboration name, it should be listed in the AUTHOR field. If by a first author + "and others", the collaboration name must be listed in the COLLABORATION field.
+----   We use the collaboration in preference to the author field, but most journals will list both, so include both.
+---- Number of authors to list:
+----   PRL requests that we include all authors up to fifteen except for large collaborations, and we take this as our internal guide as well.
+----   The individual journal bib style file (theirs, ours, PLB, etc.) will truncate at the appropriate point. We have ours set to _3_ as
+----   a reminder to list the appropriate number. For large collaborations, just use first author + "and others".
+---- Use only the URL field instead of embedding an href (this is a change in our practice).
+---- A reference only published on the arXiv should be listed as UNPUBLISHED (with a note "Submitted to XXX" for CMS papers).
+---- Some journals will lowercase the title: use {} to protect words which must be capitalized, e.g., {LHC}, {TeV}, {CERN}, {CMS}. Do not escape the entire title as it will then clash with the journal style.
+---- Journal names: the journals generally include the series in the journal name, "Physical Review D", vol 5, rather than PR D5
+%
+% We cite notes hosted in a CDS collection as if they are in a journal. This may be changed to a TECHREPORT.
+%
+@ARTICLE{JESPAS,
+   COLLABORATION = "CMS",
+   TITLE = "CMS Jet Performance in pp Collisions at $\sqrt{s} = 7$ TeV",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=JME-10-003-pas.pdf}{JME-2010-003}",
+   YEAR = "2010"}
+}
+@Article{Hobbs:2010yg,
+     author    = "Hobbs, John D. and Neubauer, Mark S. and Willenbrock, Scott
+                  ",
+     title     = "{Tests of the Standard Electroweak Model at the Energy
+                  Frontier}",
+     year      = "2010",
+     eprint    = "1003.5733",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     SLACcitation  = "%%CITATION = 1003.5733;%%"
+}
+@ARTICLE{CDF-diboson-lvjj-2010,
+   author = "T. Aaltonen et al. (CDF Collaboration)",
+   TITLE = "Measurement of the WW+WZ Production Cross Section Using the lepton+jets Final State at CDF II",
+   JOURNAL = "Phys. Rev. Lett.",
+    VOLUME = "104, 101801",
+   YEAR = "2010"}
+}
+
+@ARTICLE{ECALDP,
+   COLLABORATION = "CMS",
+   TITLE = "Electron Reconstruction and Identification at $\sqrt{s} = 7$ TeV",
+   JOURNAL = "CMS Detector Performance Summary",
+   VOLUME = "\href{http://cdsweb.cern.ch/collection/CMS\%20Detector\%20Performance\%20Summaries?ln=en}{DP-2010-032}",
+   YEAR = "2010"}
+}
+
+
+@ARTICLE{CMS-PAS-EGM-10-003,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Electromagnetic calorimeter calibration with 7 TeV data",
+      URL         = "http://cdsweb.cern.ch/record/1279350",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1279350}{CMS-PAS-EGM-10-003}",
+      YEAR        = "2010"
+}
+
+
+
+
+
+
+
+@ARTICLE{CMS-PAS-EGM-10-004,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Electron Reconstruction and Selection Studies with First   CMS 7 TeV Data",
+      URL         = "http://cdsweb.cern.ch/record/1299116",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "\href{http://cdsweb.cern.ch/record/1299116}{CMS-PAS-EGM-10-004}",
+      YEAR        = "2010"
+}
+
+
+
+
+
+@ARTICLE{MUONPAS,
+   COLLABORATION = "CMS",
+   TITLE = "Performance of CMS muon identification in pp collisions at $\sqrt{s} = 7$ TeV",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=MUO-10-002-pas.pdf}{MUO-2010-002}",
+   YEAR = "2010"}
+
+
+%added by GHM
+@article{CMS-PAS-EWK-11-010,
+      collaboration = "CMS",
+      title        = "Measurement of the WW, WZ and ZZ cross sections at CMS",
+      JOURNAL = "CMS PAS",
+      VOLUME = "\href{http://cdsweb.cern.ch/record/1370067}{EWK-2011-010}",
+      year         = "2011"
+}
+
+
+@ARTICLE{PFMET,
+   COLLABORATION = "CMS",
+   TITLE = "Particle-flow commissioning with muons and electrons from J/Psi, and W events at 7 TeV",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=PFT-10-003-pas.pdf}{PFT-2010-003}",
+   YEAR = "2010"}
+
+
+@ARTICLE{lumiPAS,
+   COLLABORATION = "CMS",
+   TITLE = "Measurement of CMS luminosity",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=EWK-10-004-pas.pdf}{EWK-2010-004}",
+   YEAR = "2010"}
+
+
+
+@ARTICLE{CMS-PAS-PFT-10-002,
+   COLLABORATION = "CMS",
+   TITLE = "Commissioning of the Particle-Flow Reconstruction in Minimum-Bias and Jet Events from pp Collisions at 7 TeV",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=PFT-10-002-pas.pdf}{PFT-2010-002}",
+   YEAR = "2010"}
+
+
+
+@ARTICLE{CMS-PAS-JME-10-010,
+   COLLABORATION = "CMS",
+   TITLE = "Jet Energy Corrections determination at 7 TeV",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=JME-10-010-pas.pdf}{JME-2010-010}",
+   YEAR = "2010"}
+
+
+@MISC{jetsyst, NOTE = "
+  {\protect M. Voutilainen  {\it et al.},
+   "Absolute jet energy correction uncertainty,"
+   CMS-AN-2010/304.}
+"}
+
+
+@ARTICLE{jetsyst2, 
+   COLLABORATION = "CMS",
+   TITLE = "Jet Energy Resolution in CMS at $\sqrt{s} = 7$ TeV",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=JME-10-014-pas.pdf}{JME-2010-014}",
+   YEAR = "2010"}
+
+
+
+
+
+@ARTICLE{met, 
+   COLLABORATION = "CMS",
+   TITLE = "Missing ET Uncertainty Prescription",
+   JOURNAL = "CMS twiki",
+   VOLUME = "\href{http://twiki.cern.ch/twiki/bin/viewauth/CMS/MissingETUncertaintyPrescription}{MET twiki}",
+   YEAR = "2011"}
+
+
+
+@ARTICLE{CMS-BTV-10-001,
+   COLLABORATION = "CMS",
+   TITLE = "Commissioning of b-jet identification with pp collisions at $\sqrt{s} = 7$ TeV",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=BTV-10-001-pas.pdf}{BTV-2010-001}",
+   YEAR = "2010"}
+
+
+
+
+@MISC{PYTHIA, NOTE = "
+  {\protect T.~Sj\"ostrand, L.~L\"onnblad and S.~Mrenna,
+           ``PYTHIA 6.2: Physics and manual'', arXiv:hep-ph/0108264.}
+"}
+
+@MISC{MCNLO, NOTE = "
+  S.~Frixione and B.R.~Webber,
+           ``The MC@NLO 3.2 Event Generator'', CERN-PH-TH/2006-012 (2006).
+"}
+
+@MISC{CTEQ, NOTE = "
+  J.~Pumplin \etal, JHEP 0207:012 and
+           arXiv:hep-ph/0201195 (2002).
+"}
+
+@MISC{POWHEG, NOTE = "
+  S.~Frixione, P.~Nason, C.~Oleari, arXiv:0709.209 (2007)
+"}
+
+@MISC{MRST, NOTE = "
+  R.S.~Thorne \etal, Acta Phys.Polon. B33 (2002) 2927-2932
+           and arXiv:hep-ph/0207067 (2002)
+"}
+
+@MISC{JINST, NOTE="CMS Collaboration, ``The CMS experiment at the CERN LHC'', JINST 0803:S08004,2008"}
+
+@MISC{LHCLuminosityPaper, NOTE="
+           LHC/CMS luminosity reference
+"}
+
+@MISC{GEANT4, NOTE = "
+  S.~Agostinelli \etal, Nucl. Instr. and Methods A 506 (2003) 250-303
+"}
+
+@MISC{ALPGEN, NOTE = "
+  ALPGEN generator reference.
+"}
+
+@MISC{MCFM, NOTE = "
+  J.~Campbell and R.K.~Ellis, ``Monte Carlo for FeMtobarn processes'', http://mcfm.fnal.gov/
+"}
+
+
+@MISC{ANTIKT, NOTE="M. Cacciari, G.P. Salam, and G. Soyez, Ã¢ÂÂThe anti-kt jet clustering algorithmÃ¢ÂÂ, JHEP 0804, (2008) 063."}
+
+@MISC{HLT, NOTE="W. Adam et al., {\em The CMS High Level Trigger}, ~{\bf Eur. Phys. J. C46 (2006), 605-667}"}
+
+@MISC{SC, NOTE="S. Baffioni et. al.,~{\em Electron reconstruction in CMS},~{\bf CMS NOTE-2006/040}"}
+
+@MISC{GSF, NOTE="W. Adam et. al.,~{\em Reconstruction of Electrons with the Gaussian-Sum Filter in the CMS Tracker at the LHC},~{\bf CMS Note 2005/001}"}
+
+@MISC{PFT, NOTE="CMS Collaboration,~{\em Event Reconstruction in CMS and Performance for Jets, Taus, and ETmiss},~{\bf CMS PAS PFT-09-001}"}
+
+@MISC{MSTW2008, NOTE="A.D. Martin, W.J. Stirling, R.S. Thorne, and G. Watt,~{\bf arXiv:0901.0002.}"}
+
+@MISC{TandP, NOTE="CMS Collaboration,~{\em Measuring Electron Efficiencies at CMS with Early Data},~{\bf CMS PAS EGM-07-001}"}
+
+@MISC{LUMI, NOTE = "Proceedings of the workshop: ~{\em HERA and the LHC workshop series on the implications of HERA for LHC physics }, ~{\bf arXiv:0903.3861}"}
+
+@MISC{MCNLO, NOTE=" S.~Frixione and B.R.~Webber,
+         ``The MC@NLO 3.2 Event Generator'', CERN-PH-TH/2006-012 (2006). "}
+
+
+@Article{MADGRAPH, 
+  author     = "Maltoni, F. and Stelzer, T.",
+  title      = "MadEvent: Automatic event generation with MadGraph",
+  journal    = "JHEP",
+  volume     = "02",
+  year       = "2003",
+  pages      = "027",
+  eprint    = "hep-ex/0208156",
+  archivePrefix = "arXiv"
+}
+
+
+
+@ARTICLE{metPAS,
+   COLLABORATION = "CMS",
+   TITLE = "CMS MET Performance in Events Containing Electroweak Bosons from pp Collisions at $\sqrt{s}$=7 TeV",
+   JOURNAL = "CMS PAS",
+   VOLUME = "\href{http://cms.cern.ch/iCMS/analysisadmin/get?analysis=JME-10-005-pas-v0.pdf}{JME-2010-005}",
+   YEAR = "2010"}
+
+
+
+
+@Article{Frixione:2007vw,
+     author    = "Frixione, Stefano and Nason, Paolo and Oleari, Carlo",
+     title     = "{Matching NLO QCD computations with Parton Shower
+                  simulations: the POWHEG method}",
+     journal   = "JHEP",
+     volume    = "11",
+     year      = "2007",
+     pages     = "070",
+     eprint    = "0709.2092",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ph",
+     doi       = "10.1088/1126-6708/2007/11/070",
+     SLACcitation  = "%%CITATION = 0709.2092;%%"
+}
+
+@Article{Sjostrand:2006za,
+     author    = "Sjostrand, Torbjorn and Mrenna, Stephen and Skands, Peter
+                  Z.",
+     title     = "{PYTHIA 6.4 Physics and Manual}",
+     journal   = "JHEP",
+     volume    = "05",
+     year      = "2006",
+     pages     = "026",
+     eprint    = "hep-ph/0603175",
+     archivePrefix = "arXiv",
+     SLACcitation  = "%%CITATION = HEP-PH/0603175;%%"
+}
+
+
+
+
+@Article{WZCMS:2010,
+     COLLABORATION = "CMS",
+     title     = "{Measurements of Inclusive W and Z Cross Sections in pp Collisions at $\sqrt{s}$ = 7~TeV}",
+     journal   = "JHEP",
+     volume    = "2",
+     year      = "2011",
+     pages     = "2-40",
+     eprint    = "hep-ph/10122466",
+     archivePrefix = "arXiv",
+     doi       = "10.1007/JHEP01(2011)080",
+     SLACcitation  = ""
+}
+
+
+@Article{btv-10-001,
+     author    = "{CMS Collaboration}",
+     title     = "{Commissioning of b-jet identification with pp collisions at sqrt(s) = 7 TeV }",
+     journal   = "CMS PAS BTV",
+     volume    = "10-001",
+     year      = "2010",
+     pages     = "",
+     doi       = ""
+}
+
+
+@Article{ref:antikt,
+     author    = "{M. Cacciari, G.P. Salam, and G. Soyez}",
+     title     = "{The anti-kt jet clustering algorithm}",
+     journal   = "JHEP",
+     volume    = "0804",
+     year      = "2008",
+     pages     = "063",
+     doi       = ""
+}
+
+
+@Article{jme-10-010,
+     author    = "{CMS Collaboration}",
+     title     = "{Jet Energy Corrections determination at $\sqrt{s}=7$ TeV}",
+     journal   = "CMS PAS JME",
+     volume    = "10-010",
+     year      = "2010",
+     pages     = "",
+     doi       = ""
+}
+
+@Article{Chatrchyan:2009hy,
+     author    = "Chatrchyan, Serguei and others",
+ collaboration = "CMS",
+     title     = "{Identification and Filtering of Uncharacteristic Noise in
+                  the CMS Hadron Calorimeter}",
+     journal   = "JINST",
+     volume    = "5",
+     year      = "2010",
+     pages     = "T03014",
+     eprint    = "0911.4881",
+     archivePrefix = "arXiv",
+     primaryClass  =  "physics.ins-det",
+     doi       = "10.1088/1748-0221/5/03/T03014",
+     SLACcitation  = "%%CITATION = 0911.4881;%%"
+}
+
+
+@MISC{PDF4LHC,
+NOTE="PDF4LHC Working Group,
+{\tt http://www.hep.ucl.ac.uk/pdf4lhc/PDF4LHCrecom.pdf}"
+}
+
+
+@Article{PTDR2,
+     author    = "{CMS Collaboration}",
+     title     = "{CMS} technical design report, volume {II}: {Physics}
+                  performance",
+     journal   = "J. Phys. G",
+     volume    = "34",
+     year      = "2007",
+     pages     = "995-1579",
+     doi       = "10.1088/0954-3899/34/6/S01",
+     SLACcitation  = "%%CITATION = JPHGB,G34,995;%%"
+}
+%SPIRES had this one as R. Adophi, et. al. Wrong.
+@Article{CMS:2008zzk,
+     author    = "Chatrchyan, S. and others",
+     collaboration = "CMS",
+     title     = "{The CMS experiment at the CERN LHC}",
+     journal   = "JINST",
+     volume    = "3",
+     year      = "2008",
+     pages     = "S08004",
+     doi       = "10.1088/1748-0221/3/08/S08004",
+     SLACcitation  = "%%CITATION = JINST,3,S08004;%%"
+}
+%
+% We cite PASs as if the CDS collection is a journal. This may be changed to a TECHREPORT.
+%
+@ARTICLE{CMS-PAS-JME-10-003,
+      AUTHOR      = "{CMS Collaboration}",
+      COLLABORATION = {CMS},
+      TITLE       = "Jet Performance in pp Collisions at $\sqrt{s}$=7 {TeV}",
+      URL         = "http://cdsweb.cern.ch/record/1279362",
+      JOURNAL     = "CMS Physics Analysis Summary",
+      VOLUME      = "CMS-PAS-JME-10-003",
+      YEAR        = "2010"
+}
+%
+% An example of a document which only appears on arXiv
+%
+@UNPUBLISHED{LEPewkfits,
+     author = "{ALEPH, CDF, D0, DELPHI, L3, OPAL, SLD Collaborations,
+                                    the LEP Electroweak Working Group, the Tevatron Electroweak Working Group, and the SLD Electroweak and Heavy Flavour Groups}",
+     title     = "Precision electroweak measurements and constraints on
+the {Standard Model}",
+     URL       = "http://lepewwg.web.cern.ch/LEPEWWG",
+     eprint    = "1012.2367",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     year  = "2010",
+     SLACcitation  = "%%CITATION = 1012.2367;%%"
+}
+%
+% A document hosted on a laboratory server
+%
+@TECHREPORT{Bertram:2000br,
+  author = " Bertram, I. and Landsberg, G. and Linnemann, J. and Partridge, R. and Paterno, M. and Prosper, H.B.",
+  title =  "A Recipe for the construction of confidence limits",
+  institution = "Fermilab",
+  number     = "{TM-2104}",
+  url = "http://lss.fnal.gov/archive/test-tm/2000/fermilab-tm-2104.pdf",
+  year = "2000"
+ }
+%
+% A CMS paper submitted but not yet accepted; The SLACcitation is not necessary. This one is now accepted rather than submitted, however.
+%
+@Unpublished{Khachatryan:2010mp,
+     author    = "{CMS Collaboration}",
+     collaboration = "CMS",
+     title     = "Search for Pair Production of First-Generation Scalar Leptoquarks in pp Collisions at $\sqrt{s} = 7$ {TeV}",
+     note  = "Submitted to \textit{Phys. Rev. Lett.}",
+     eprint    = "1012.4031",
+     archivePrefix = "arXiv",
+     primaryClass  =  "hep-ex",
+     year = "2010",
+     SLACcitation  = "%%CITATION = 1012.4031;%%"
+}
+
+@article{Eichten:2011sh,
+      author         = "Eichten, Estia J. and Lane, Kenneth and Martin, Adam",
+      title          = "{Technicolor at the Tevatron}",
+      year           = "2011",
+      eprint         = "1104.0976",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}
+
+@article{Buckley:2011vc,
+      author         = "Buckley, Matthew R. and Hooper, Dan and Kopp, Joachim and
+                        Neil, Ethan",
+      title          = "{Light Z' Bosons at the Tevatron}",
+      year           = "2011",
+      eprint         = "1103.6035",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ph",
+}

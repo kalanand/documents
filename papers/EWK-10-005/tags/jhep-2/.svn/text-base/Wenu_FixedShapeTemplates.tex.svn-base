@@ -1,0 +1,79 @@
+\subsubsection{Modeling the QCD Background Shape with a Fixed Distribution}
+\label{sec:e-Wsigextr-FixedTemplate}
+
+In this approach the QCD shape is extracted directly from data using a 
+control sample obtained by inverting a subset of the requirements used to select the 
+signal. After fixing the shape from data,
+only the normalization is allowed to float in the fit.  
+
+The advantage of this approach 
+is that detector effects, such as anomalous signals in the ca\-lo\-ri\-me\-ters or 
+dead ECAL towers, are automatically reproduced in the QCD shape, since these 
+effects are not affected by the selection inversion used to define the control sample.
+The track-cluster matching variable $\Delta\eta$ is found
+to have the smallest correlation with $\MET$ and is therefore chosen as the one 
+to invert in order to suppress the signal and obtain the QCD control sample.  
+Requirements on isolation and $H/E$ are the same as for the signal 
+selection since these variables show significant correlation with \MET. 
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics*[angle=-90,width=0.55\textwidth]{figs/antiselShape.pdf}
+    \caption{Normalised \MET distribution for QCD and $\gamma$+jet simulated 
+events passing the signal selection (solid histogram) compared 
+to the normalised distribution for events from all simulated samples passing
+the same inverted selection criteria used to obtain the control sample in data
+(dashed histogram).}
+    \label{fig:antiselShape}
+  \end{center}
+\end{figure}
+
+The shape of the $\MET$ distribution for QCD and $\gamma$+jet simulated 
+events passing the signal selection is compared 
+to the \MET distribution for a simulated control sample composed of all simulated samples (signal and 
+all backgrounds, weighted according to the 
+theoretical production cross sections), after applying the same anti-selection 
+as in data (Fig.~\ref{fig:antiselShape}).
+
+\begin{figure}[htb]
+  \begin{center}
+    \includegraphics*[width=0.5\textwidth]{figs/Wenu_pfMET_lin.pdf}
+%    \includegraphics*[width=0.48\textwidth]{figs/Wenu_pfMT_lin.pdf}
+    \caption{Result of the fixed-shape fit to the $\MET$ distribution for all W candidates.
+The points with the error bars represent the data.   Superimposed are the results
+of the maximum likelihood fit for QCD background (violet, dark histogram), other backgrounds
+(orange, medium histogram), and signal plus  background (yellow, light histogram).
+The orange dashed line (left plot) is the fit contribution from signal.
+}
+    \label{fig:resultAll}
+  \end{center}
+\end{figure}
+
+The difference in the $\MET$ distributions from the signal and inverted selections
+is found to be predominantly due to two effects, which can be reduced by applying corrections.
+The first effect is due to a large difference in the distribution of the output of a multivariate 
+analysis (MVA) used for electron identification in the PF algorithm, between the selected events 
+and the control sample. The value of the MVA output determines whether an electron candidate 
+is treated by the PF algorithm as a genuine electron, or as a superposition of a charged pion and 
+a photon, with track momentum and cluster energy each contributing separately to $\MET$. The control 
+sample contains a higher fraction of electron candidates in the latter category, resulting in a bias on 
+the $\MET$ shape. A correction is derived to account for this.
+The second effect comes from the signal 
+contamination in the control sample. The size of the contamination (1.17$\%$) is 
+measured from data, using the \TNP technique with $\Zee$  
+events, by measuring the efficiency for a signal electron to pass the 
+control sample selection.
+
+
+The results of the inclusive fit to the $\MET$ distribution with the fixed QCD background shape
+are shown in Fig.~\ref{fig:resultAll}; the only free parameters in the extended 
+maximum likelihood fit are the QCD and signal yields.
+By applying this second method the following yields are obtained:
+$135\,982 \pm 388$ (stat.) for the inclusive sample, $81\,286 \pm 302$ (stat.) for the $\Wpen$ sample, and
+$54\,703 \pm 249$ (stat.) for the $\Wmen$ sample.
+%with negligible correlation between the $\Wp$ and $\Wm$ yields.
+%The quoted yields are from the $\MET$ fits. 
+The ratios of the inclusive, $\Wpen$, and $\Wmen$ yields between this 
+method and the parameterized
+QCD shape method are $0.997 \pm 0.005$, $0.997 \pm 0.005$, and $0.999 \pm 0.005$, respectively, 
+considering only the uncorrelated systematic uncertainties between the two methods.
+

@@ -1,0 +1,96 @@
+\subsubsection{Central Jet Activities and Distribution}
+\label{sec:cenjetdis}
+
+The central jet multiplicities and first central jet kinematics distributions are shown in Figs.~\ref{fig:centraljetnumer_20} to Figs.~\ref{fig:Zeppenfield_centraljetnumer}. Central jets are defined as the jet $\eta$ which locating between the tagjet pair $\eta$ region. We find resableable agreement between MC and data in all these dis tributions.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljetnum_20_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljetnum_20_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of Central jet number with $p_{T}$ threshold 20 GeV in the muons (left) and electrons (right).}
+\label{fig:centraljetnumer_20}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljetnum_25_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljetnum_25_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of Central jet number with $p_{T}$ threshold 25 GeV in the muons (left) and electrons (right).}
+\label{fig:centraljetnumer_25}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljetnum_30_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljetnum_30_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of Central jet number with $p_{T}$ threshold 30 GeV in the muons (left) and electrons (right).}
+\label{fig:centraljetnumer_30}
+\end{figure}
+
+%We also study the 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljet_pt_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljet_pt_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of leading central jet $p_{T}$ in the muons (left) and electrons (right).}
+\label{fig:centraljetleadingjetpt_20}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljet_eta_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljet_eta_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of leading central jet $\eta$  in the muons (left) and electrons (right).}
+\label{fig:centraljetleadingjeteta_20}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljet_tagjet1_deltaeta_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljet_tagjet1_deltaeta_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of $\Delta \eta$(leading central jet, tagjet1) in the muons (left) and electrons (right).}
+\label{fig:centraljetdeltaetajettagjet1_20}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljet_tagjet1_deltaphi_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljet_tagjet1_deltaphi_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of $\Delta \phi$(leading central jet, tagjet1) in the muons (left) and electrons (right).}
+\label{fig:centraljetdeltaphijettagjet1_20}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljet_tagjet2_deltaeta_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljet_tagjet2_deltaeta_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of $\Delta \eta$(leading central jet, tagjet2) in the muons (left) and electrons (right).}
+\label{fig:centraljetdeltaetajettagjet2_20}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljet_tagjet2_deltaphi_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljet_tagjet2_deltaphi_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of $\Delta \phi$(leading central jet, tagjet2) in the muons (left) and electrons (right).}
+\label{fig:centraljetdeltaphijettagjet2_20}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_mu/mu_EWK_W_2jets_centraljet_tagjet_Zeppenfield_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_EWKW2jets.pdf}
+\includegraphics[width=0.49\textwidth]{figs/n-1_plots_el/el_EWK_W_2jets_centraljet_tagjet_Zeppenfield_mjj_600_tagjet1_60_tagjet2_50_Zeppenfield_1point2_met_30_WmT_30_EWKW2jets.pdf}
+\end{center}
+\caption{Distribution of leading central jet Zeppenfeld variable in the muons (left) and electrons (right).}
+\label{fig:Zeppenfield_centraljetnumer}
+\end{figure}
+%\clearpage

@@ -1,0 +1,30 @@
+Studies of $\WW$ production test the description of electroweak and
+strong interactions in the standard model (SM).
+Next-to-leading order (NLO) calculations~\cite{MCFM} of $\WW$ production in pp
+collisions at $\sqrt{s} = 8~\TeV$ predict a cross section of
+%
+\begin{equation}
+\sigma^{{\rm NLO}} (\mathrm{gg}\to\WW + \mathrm{qq}\to\WW) = \nloCrossSection.\nonumber
+\end{equation}
+
+The dominant $\WW$ production mechanisms are the s-channel and
+t-channel $\rm{q}\bar{\rm{q}}$ annihilation diagrams. The gluon-gluon fusion
+contributes $\sim$3\%. The $\W\W\gamma$ and $\W\W\Z$ triple-gauge boson couplings (TGCs) in
+the s-channel are sensitive to possible new physics processes at a higher mass
+scale. The presence of anomalous TGCs would change the $\WW$ production rate or
+kinematic distributions from the SM predictions. In addition, $\WW$ production
+is an important background source for new particle searches, e.g. Higgs
+boson searches~\cite{HiggsPAS2012}. In fact, the selection applied in this paper
+closely follows the selection applied in the Higgs boson search in the event
+category with zero counted jets.
+The Higgs boson preselection for masses above 140~\GeV and the selection
+applied in this paper differ only in the trailing lepton minimum transverse momentum.
+This requirement is tightened from 10~\GeV to 20~\GeV
+to further suppress the background from $\Wjets$ events, where the trailing 
+lepton is a misidentified jet. With this selection a
+SM Higgs boson with a mass of 110 (130)~\GeV would enhance the $\WW$ signal by
+about $0.3\%$ $(7\%)$.
+
+This paper reports a measurement of the $\WW$ production cross section in pp
+collisions at $\sqrt{s} = 8~\TeV$, performed on a dataset corresponding to an
+integrated luminosity of $\usedLumi$, collected during 2012.

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+this_note=EWK-10-002
+
+eval `../../tdr runtime -sh`
+
+#tdr --style=pas --nodraft b ${this_note}
+tdr --style=pas --draft b ${this_note}

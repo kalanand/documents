@@ -1,0 +1,108 @@
+Three final states are considered:
+$\Elp\Elm$, $\Mp\Mm$ and $\Elpm\Mmp$.
+W$\to \ell \nu$ ($\ell = \mathrm{e},\mu$) decays are the main signal
+components, while $\W\to\tau\nu_{\tau}$ events with leptonic $\tau$
+decays are included, although the analysis is not optimised for this final state.
+The events are selected by trigger conditions requiring
+the presence of one or two high $\pt$ electrons or muons.
+
+Two oppositely-charged lepton candidates are required, both with $\pt > 20~\GeV$.
+Muon candidates~\cite{muonpas} are identified using a selection close to
+the one described in Ref.~\cite{Chatrchyan:2011tz}, while
+electron candidates are selected using a multivariate
+approach, that exploits correlations among the selection variables
+described in~\cite{egmpas} to improve identification performance. 
+The lepton candidates are required to be compatible with the primary vertex of the
+event, which is chosen as the vertex with highest $\sum \pt^2$ of its associated tracks. 
+This criterion provides the correct assignment for the
+primary vertex in more than 99\% of both signal and
+background events for the pile-up distribution observed in the data. 
+
+Charged leptons from $\W$ boson decays are usually isolated
+from other activity in the event. For each lepton candidate, a cone
+is constructed around the track direction at the event vertex.  The scalar
+sum of the transverse energy of each reconstructed
+particle~\cite{PFT-09-001} compatible with the
+chosen primary vertex and contained within the cone is calculated
+excluding the contribution from the lepton candidate itself. Electron candidates
+are rejected if this sum exceeds 15\% of the candidate $\pt$.
+Cones of several widths are constructed around the track direction at the event vertex 
+to account for the differences in the differential energy deposit between a muon and a jet 
+faking a lepton. This information is combined using a multivariate approach.
+For both electrons and muons a correction is applied to account for the contribution to 
+the energy in the isolation cone due to the several pp interactions per bunch crossing.
+A median energy density ($\rho$) is determined event by event and the pile-up contribution to 
+the transverse energy is estimated as the product of $\rho$ and an effective isolation cone area. 
+This contribution is  subtracted~\cite{Cacciari:subtraction} from the transverse energy in the 
+isolation cone.
+
+Jets are reconstructed from calorimeter and tracker information using
+the particle-flow technique~\cite{PFT-09-001,jetpas}. The anti-$\mathrm{k_T}$
+clustering algorithm~\cite{antikt} with distance parameter $\mathrm{
+R}=0.5$ is used, as implemented in the \textsc{fastjet}
+package~\cite{Cacciari:fastjet1,Cacciari:fastjet2}. The jet energy is corrected
+for pile-up in a manner similar to the correction of the energy inside a lepton
+isolation cone. Jet energy corrections are also applied as a function of the jet
+$\Et$ and $\eta$~\cite{cmsJEC}. 
+
+The properties of the hard jets are modified by particles from pile-up interactions;
+a combinatoric background from low-\pt jets from pile-up interactions that get 
+clustered into high-\pt jets may also arise.
+A multivariate selection is applied to separate jets coming from the 
+primary interaction from those reconstructed from energy deposits associated with 
+pile-up. The discrimination is based on the differences in the jet shapes,
+in the relative multiplicity of charged and neutral components and in the different 
+fraction of transverse momentum carried by the hardest components.
+Tracks associated with a jet are required to be compatible with the primary vertex.
+
+To reduce the background from top quark decays, events with one or more jet
+surviving the jet selection criteria and with corrected $\Et > 30~\GeV$ and
+$|\eta|< 4.7$ are rejected. To further suppress the top quark background, a
+top tagging technique based on soft-muon and b-jet
+tagging~\cite{btag1,btag2} is applied. The first method vetoes events containing
+muons from b-quarks. The second method uses b-jet tagging applied to jets with
+$15 < \Et < 30~\GeV$: this technique is based on tracks with large impact parameter within
+jets. The combined rejection efficiency for top events is about 50\%.
+
+A {\it projected $\met$} is defined
+as the component of $\met$ transverse to the closest lepton if it is closer
+than $\pi/2$ in azimuthal angle, and the full $\met$ otherwise.
+This observable more efficiently rejects $\dytt$ background events, where the $\met$
+is preferably aligned with the leptons, as well as $\dyll$ events with mismeasured
+$\met$ associated with poorly reconstructed leptons or jets.
+Since the {\it projected $\met$} resolution is deteriorated by pile-up,
+the minimum of two different observables is used: the first includes all particle candidates in the
+event~\cite{PFT-09-001}, while the second uses only the charged
+particle candidates associated to the primary vertex. This exploits
+the correlation between the two observables in events with significant real
+{\it $\met$}, as in the signal, and the lack of correlation otherwise, as
+in Drell-Yan events.  
+In order to reduce the Drell-Yan contamination, the {\it projected $\met$} is
+required to be above 45~$\GeV$ in the $\Elp\Elm$ and $\Mp\Mm$ final states.
+For the $\Elpm\Mmp$ final state, which has lower
+contamination from $\dyll$ decays, the threshold is reduced to 20 $\GeV$.
+These requirements remove more than 99\% of the Drell-Yan background.
+To reduce the contamination from $\dyll$ events in which the $\Z$ boson recoils
+against a jet, the angle in the transverse plane between the dilepton system and
+the most energetic jet with $\Et > 15~\GeV$ is required to be smaller than 165 degrees.
+This selection is applied only in the $\Elp\Elm$ and $\Mp\Mm$
+final states when
+the leading jet has $E_T>$~15 $\GeV$.
+To further reduce the Drell-Yan background in the
+$\Elp\Elm$ and $\Mp\Mm$ final states,
+events with a dilepton mass within $\pm 15$~\GeV of
+the \Z mass are rejected.
+Events with dilepton masses below 12~$\GeV$ are also rejected
+to suppress contributions from low-mass resonances. The same
+requirement is also
+applied in the $\Elpm\Mmp$ final state. 
+Finally, the transverse momentum of the dilepton system, $\pt^{\ell\ell}$,
+is required to be above 45~$\GeV$ to reduce both Drell-Yan and 
+events containing jets misidentfied as leptons.
+
+To reduce the background from other diboson processes, such as $\WZ$ and $\ZZ$
+production, any event that has an additional third lepton passing the
+identification and isolation requirements is rejected. 
+$\wgamma$ production, in which the photon converts, is suppressed
+by rejecting electrons consistent with a photon conversion.
+

@@ -1,0 +1,225 @@
+% Customizable fields and text areas start with % >> below.
+% Lines starting with the comment character (%) are normally removed before release outside the collaboration, but not those comments ending lines
+
+\def\WtoLN    {\ensuremath{\mathrm{W}\to\ell\cPgn}}
+\def\WtoEN    {\ensuremath{\mathrm{W}\to\Pe\cPgn}}
+\def\WtoMN    {\ensuremath{\mathrm{W}\to\Pgm\cPgn}}
+\def\ZtoBB    {\ensuremath{\mathrm{Z}\to\bbbar}}
+\def\ZtoNN    {\ensuremath{\mathrm{Z}\to\cPgn\bar{\cPgn}}}
+\def\ZtoLL    {\ensuremath{\mathrm{Z}\to\ell\ell}}
+\def\ZtoMM    {\ensuremath{\mathrm{Z}\to\MM}}
+\def\ZtoEE    {\ensuremath{\mathrm{Z}\to\EE}}
+\def\WmnJ     {\ensuremath{\mathrm{W}(\Pgm\cPgn)\mathrm{+jets}}}
+\def\ZmmJ     {\ensuremath{\mathrm{Z}(\Pgm\Pgm)\mathrm{+jets}}}
+\def\ZnnJ     {\ensuremath{\mathrm{Z}(\cPgn\bar{\cPgn})\mathrm{+jets}}}
+\def\WJ       {\ensuremath{\mathrm{W + jets}}}
+\def\HBB      {\ensuremath{\mathrm{H}\to\bbbar}}
+\def\HTT      {\ensuremath{\mathrm{H}\to\TT}}
+\def\mtW      {\ensuremath{M_{\mathrm{T}}}}
+\def\ptl      {\ensuremath{p_{\mathrm{T}}^{\ell}}}
+\def\MyZ      {\ensuremath{\mathrm{Z}}}
+\def\MyW      {\ensuremath{\mathrm{W}}}
+\def\MyH      {\ensuremath{\mathrm{H}}}
+\def\Vudscg   {\ensuremath{\mathrm{V+udscg}}}
+\def\Wudscg   {\ensuremath{\mathrm{W+udscg}}}
+\def\Wenudscg {\ensuremath{\mathrm{W}(\Pe\cPgn)+\mathrm{udscg}}}
+\def\Wmnudscg {\ensuremath{\mathrm{W}(\Pgm\cPgn)+\mathrm{udscg}}}
+\def\Wenbb    {\ensuremath{\mathrm{W}(\Pe\cPgn)+\bbbar}}
+\def\Wmnbb    {\ensuremath{\mathrm{W}(\Pgm\cPgn)+\bbbar}}
+\def\Zeebb    {\ensuremath{\mathrm{Z}(\Pe\Pe)+\bbbar}}
+\def\Zmmbb    {\ensuremath{\mathrm{Z}(\Pgm\Pgm)+\bbbar}}
+\def\Zudsg    {\ensuremath{\mathrm{Z+udsg}}}
+\def\Zudscg   {\ensuremath{\mathrm{Z+udscg}}}
+\def\Zeeudscg {\ensuremath{\mathrm{Z}(\Pe\Pe)+\mathrm{udscg}}}
+\def\Zmmudscg {\ensuremath{\mathrm{Z}(\Pgm\Pgm)+\mathrm{udscg}}}
+\def\Zenbb    {\ensuremath{\mathrm{Z}(\Pe\cPgn)+\bbbar}}
+\def\Zmnbb    {\ensuremath{\mathrm{Z}(\Pgm\cPgn)+\bbbar}}
+\def\Wbb      {\ensuremath{\mathrm{W\bbbar}}}
+\def\Zbb      {\ensuremath{\mathrm{Z\bbbar}}}
+\def\Zcc      {\ensuremath{\mathrm{Z\ccbar}}}
+\def\Vbb      {\ensuremath{\mathrm{V+\bbbar}}}
+\def\Zll      {\ensuremath{Z(\ell\ell)}}
+\def\Zmm      {\ensuremath{Z(\mu\mu)}}
+\def\Zee      {\ensuremath{Z(ee)}}
+\def\Mjj      {\ensuremath{M(\mathrm{jj})}}
+\def\ptjj     {\ensuremath{{\pt}(\mathrm{jj})}}
+\def\MZ       {\ensuremath{M_{\mathrm{Z}}}}
+\def\dRJJ     {\ensuremath{\Delta R(\mathrm{J1,J2})}}
+\def\dEtaJJ   {\ensuremath{\Delta \eta(\mathrm{J1,J2})}}
+\def\dphiVH   {\ensuremath{\Delta\phi(\mathrm{V,H})}}
+\def\dphiWH   {\ensuremath{\Delta\phi(\mathrm{W,H})}}
+\def\dphiZH   {\ensuremath{\Delta\phi(\mathrm{Z,H})}}
+\def\dphiMJ   {\ensuremath{\Delta\phi(\mathrm{pfMET,J})}}
+\def\cosTH    {\ensuremath{\cos{\theta^*}}}
+\def\dThPull  {\ensuremath{\Delta\theta_{\mathrm{pull}}}}
+\def\ptV      {\ensuremath{p_{\mathrm{T}}(\mathrm{V})}}
+\def\ptH      {\ensuremath{p_{\mathrm{T}}(\mathrm{H})}}
+\def\ptZ      {\ensuremath{p_{\mathrm{T}}(\mathrm{Z})}}
+\def\ptW      {\ensuremath{p_{\mathrm{T}}(\mathrm{W})}}
+\def\Naj      {\ensuremath{N_{\mathrm{aj}}}}
+\def\Nal      {\ensuremath{N_{\mathrm{al}}}}
+\def\etaTF    {\ensuremath{\left | \eta \right | < 2.5}}
+\def\Bexp     {\ensuremath{B_{\mathrm{exp}}}}
+\def\Bobs     {\ensuremath{B_{\mathrm{obs}}}}
+\def\Nobs     {\ensuremath{N_{\mathrm{obs}}}}
+
+\input{numbers}
+
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision: 149639 $
+\RCS$HeadURL: svn+ssh://svn.cern.ch/reps/tdr2/papers/SMP-12-019/trunk/SMP-12-019.tex $
+\RCS$Id: SMP-12-019.tex 149639 2012-09-27 19:54:08Z srappocc $
+%%%%%%%%%%%%% local definitions %%%%%%%%%%%%%%%%%%%%%
+% This allows for switching between one column and two column (cms@external) layouts
+% The widths should  be modified for your particular figures. You'll need additional copies if you have more than one standard figure size.
+\newlength\cmsFigWidth
+\ifthenelse{\boolean{cms@external}}{\setlength\cmsFigWidth{0.85\columnwidth}}{\setlength\cmsFigWidth{0.4\textwidth}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsLeft}{top}}{\providecommand{\cmsLeft}{left}}
+\ifthenelse{\boolean{cms@external}}{\providecommand{\cmsRight}{bottom}}{\providecommand{\cmsRight}{right}}
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{AN-12-137} % This is over-written in the CMS environment: useful as preprint no. for export versions
+% >> Title: please make sure that the non-TeX equivalent is in PDFTitle below
+\title{Jet mass in multijet and $W/Z+$jet events}
+
+% >> Authors
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+%For multiple affiliations, create an address entry for the combination
+\address[fnal]{Fermilab}
+\address[cern]{CERN}
+\address[jhu]{Johns Hopkins University}
+\address[davis]{University of California, Davis}
+\address[princeton]{Princeton University}
+
+
+\author[jhu]{Salvatore Rappoccio}
+\author[fnal]{Nhan Tran}
+\author[fnal]{Kalanand Mishra}
+\author[princeton]{David Lopes-Pegna}
+
+%--- Set here, reverse in the PAS:
+\newcommand{\ifnpas}{\iffalse}
+\newcommand{\ifpas}{\iftrue}
+
+% >> Date
+% The date is in yyyy/mm/dd format. Today has been
+% redefined to match, but if the date needs to be fixed, please write it in this fashion.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+% For the final version it is best to "touch" the head file to make sure it has the latest date.
+\date{\today}
+
+% >> Abstract
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %**                  to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros**         in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+%In the last few years, many studies have highlighted the potential of using jet substructure techniques
+%to improve the sensitivity in the identification of hadronic decays of boosted heavy particles. These studies assume that the internal structure of jets, including the mass, generated by QCD radiation is understood. We investigate the effect of several different jet
+%substructure algorithms on the jet mass in samples comprising dijet
+%and vector-boson-plus-jet events. 
+Invariant mass spectra for jets reconstructed using the 
+anti-$k_\mathrm{T}$ and Cambridge-Aachen algorithms are studied for
+different jet ``grooming'' techniques
+in data corresponding to an integrated luminosity of
+\intlumi, recorded with the CMS detector in proton-proton collisions at
+the LHC at a center-of-mass energy of 7 TeV. 
+Leading-order QCD predictions for parton-shower Monte Carlo multijet
+and $W/Z+$jets production are found to agree with
+the data, and agreement improves with the application
+of jet grooming.   
+}
+
+% >> PDF Metadata
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible and are in plain text (no TeX! -- for \sqrt{s} use sqrt(s) -- this will show with extra quote marks in the draft version but is okay).
+
+\hypersetup{%
+pdfauthor={Salvatore Rappoccio, Nhan Tran, Kalanand Mishra, David Lopes-Pegna},%
+pdftitle={Jet mass in multijet and $W/Z+$jets events},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+% >> Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% **DO NOT REMOVE THE BIBLIOGRAPHY** which is located before the appendix.
+%% You can take the text between here and the bibiliography as an example which you should replace with the actual text of your document.
+%% If you include other TeX files, be sure to use "\input{filename}" rather than "\input filename".
+%% The latter works for you, but our parser looks for the braces and will break when uploading the document.
+%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{sec:intro}
+\input{intro_paper}
+
+\section{Jet Clustering Algorithms and Grooming Techniques}
+\input{grooming_paper}
+
+\section{CMS Detector and Simulations} 
+\input{cmsDetector_paper}
+
+\section{Triggers and Event Reconstruction}
+\input{triggers_paper} 
+\input{evreco_paper}
+%\input{grooming_paper}
+
+
+\section{Event selection}
+\input{evsel_paper}
+
+\section{Influence of pile-up on Jet Grooming Algorithms}
+\input{jetPileup}
+
+%\section{Data Correction}
+%\input{unfolding_paper}
+
+\section{Data Correction and Systematic Uncertainties}
+\input{systematics_paper}
+
+\section{Results from dijet final states}
+
+\input{jetResults}
+
+\section{Results from V+jet final states}
+\input{results_paper}
+
+%\clearpage
+
+
+
+\section{Summary}
+\input{summary}
+
+\section*{Acknowledgements}
+We congratulate our colleagues in the CERN accelerator departments for the
+excellent performance of the LHC machine. We thank the technical and
+administrative staff at CERN and other CMS institutes, and acknowledge
+support from: BMWF and FWF (Austria); FNRS and FWO (Belgium); CNPq, CAPES,
+FAPERJ, and FAPESP (Brazil); MES (Bulgaria); CERN; CAS, MoST, and NSFC
+(China); COLCIENCIAS (Colombia); MSES (Croatia); RPF (Cyprus); MoER,
+SF0690030s09 and ERDF (Estonia); Academy of Finland, MEC, and HIP
+(Finland); CEA and CNRS/IN2P3 (France); BMBF, DFG, and HGF (Germany); GSRT
+(Greece); OTKA and NKTH (Hungary); DAE and DST (India); IPM (Iran); SFI
+(Ireland); INFN (Italy); NRF and WCU (Korea); LAS (Lithuania); CINVESTAV,
+CONACYT, SEP, and UASLP-FAI (Mexico); MSI (New Zealand); PAEC (Pakistan);
+MSHE and NSC (Poland); FCT (Portugal); JINR (Armenia, Belarus, Georgia,
+Ukraine, Uzbekistan); MON, RosAtom, RAS and RFBR (Russia); MSTD (Serbia);
+SEIDI and CPAN (Spain); Swiss Funding Agencies (Switzerland); NSC (Taipei);
+TUBITAK and TAEK (Turkey); STFC (United Kingdom); DOE and NSF
+(USA). Individuals have received support from the Marie-Curie programme and
+the European Research Council (European Union); the Leventis Foundation;
+the A. P. Sloan Foundation; the Alexander von Humboldt Foundation; the
+Austrian Science Fund (FWF); the Belgian Federal Science Policy Office; the
+Fonds pour la Formation \`a la Recherche dans l'Industrie et dans
+l'Agriculture (FRIA-Belgium); the Agentschap voor Innovatie door Wetenschap
+en Technologie (IWT-Belgium); the Council of Science and Industrial
+Research, India; the Compagnia di San Paolo (Torino); and the HOMING PLUS
+programme of Foundation for Polish Science, cofinanced from European Union,
+Regional Development Fund. 
+
+\bibliography{auto_generated}
+
+

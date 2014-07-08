@@ -1,0 +1,10 @@
+\par
+The efficiencies for lepton reconstruction, identification,
+isolation and trigger efficiencies are obtained from clean $\Zll$ 
+data samples where one lepton is selected with tight  
+requirements and the required selection is probed on the other
+lepton (\TNP method). The invariant mass of the \TNP lepton candidates
+must fall in the range $60$--$120~\GeV$.
+Correction factors are the ratios of efficiencies extracted from data and simulations 
+($\rho = {\epsilon_{\mathrm{data}}}/{\epsilon_{\mathrm{MC}}}$) 
+applying the same tag-and-probe algorithm.

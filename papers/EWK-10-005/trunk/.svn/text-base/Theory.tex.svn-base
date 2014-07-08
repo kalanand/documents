@@ -1,0 +1,186 @@
+
+\subsection{Theoretical Uncertainties}
+\label{sec:theory}
+
+The main theoretical uncertainty on the cross section estimation arises from the computation of the
+geometrical and kinematic acceptance of the detector.  Uncertainty due to
+the PDF choice, and uncertainties in the PDFs themselves are
+studied using the full PDF eigenvector set and comparing among PDFs
+provided by the CTEQ, MSTW, and NNPDF groups. For the estimation of 
+the acceptance uncertainties, we followed the recipe prescribed by the 
+PDF4LHC working group~\cite{PDF4LHC}.
+
+%All theoretical predictions quoted in this section are computed
+%at NNLO with the {\sc FEWZ}~\cite{Melnikov:2006kv, Melnikov:2006di} code
+%and the MSTW PDF set. 
+%The uncertainties correspond to a 68\% confidence
+%levels (CL) obtained by combining the NLO PDF and $\alpha_S$ uncertainty
+%from the MSTW08~\cite{Martin:2009iq}, CT10~\cite{CTEQ10}, and NNPDF2.1~\cite{NNPDF21} PDFs, and adding the
+%NNLO scale uncertainties in quadrature, as prescribed by the
+%PDF4LHC working group~\cite{PDF4LHC}.
+
+Systematic uncertainties on the acceptances due to the PDF choice are
+reported in Table~\ref{tab:pdfSyst}.
+Here $\Delta_{i}$ denotes the uncertainty (68\% confidence level (CL)) within a given set 
+$i$ ($i=$ CT10~\cite{CTEQ10}, MSTW08NLO~\cite{Martin:2009iq}, NNPDF2.1~\cite{NNPDF21}). 
+The quantity $\Delta_{\mathrm{sets}}$ corresponds to half of the maximum difference between the central values of any pair of sets. 
+The final systematic uncertainty (last column) considers half of the maximum
+difference between the extreme values (central values plus positive or minus negative 
+uncertainties), again for any pair of the three 
+sets, plus the remaining $\alpha_S$ uncertainties.
+As can be seen from Table~\ref{tab:pdfSyst}, the $\Wm$ acceptance uncertainties 
+are larger than the $\Wp$ ones. This is true for each 
+PDF set as well as for the total assigned acceptance uncertainty and reflects the 
+larger d-quark PDF uncertainties with respect to those for the u quark.
+The acceptance estimates obtained using the different PDF sets are summarized in
+Table~\ref{tab:pdfAcc}.
+
+\begin{table}[htb] %
+\begin{center}
+\caption{Systematic uncertainties from the PDF choice on estimated 
+acceptances and acceptance correction factors after the analysis selections. }
+\label{tab:pdfSyst}
+\begin{tabular}{| l | c | c | c | l | c |}
+\hline
+\centering Quantity & $\Delta_{\mathrm{CTEQ}}$ (\%) & $\Delta_{\mathrm{MSTW}}$ (\%) &  $\Delta_{\mathrm{NNPDF}}$ (\%) & $\Delta_{\mathrm{sets}}$ (\%) & Syst. (\%) \\
+\hline
+\hline
+$\Wp$ acceptance (e) & $\pm 0.5$ & $\pm 0.3$ &  $\pm 0.4$ & $0.2$~{\tiny (NNPDF-MSTW)} & $0.7$ \\
+$\Wm$ acceptance (e) & $\pm 0.9$ & $\pm 0.5$ &  $\pm 0.7$ & $0.5$~{\tiny (NNPDF-MSTW)} & $1.2$ \\
+$\Wo$ acceptance (e)   & $\pm 0.5$ & $\pm 0.3$ &  $\pm 0.4$ & $0.2$~{\tiny (MSTW-CTEQ)} & $0.6$ \\
+$\Zo$ acceptance (e)   & $\pm 0.7$ & $\pm 0.4$ &  $\pm 0.6$ & $0.3$~{\tiny (NNPDF-MSTW)} & $0.9$ \\
+$\Wp/\Wm$ correction (e) & $\pm 1.6$ & $\pm 0.5$ &  $\pm 0.7$ & $0.7$~{\tiny (NNPDF-MSTW)} & $1.6$ \\
+$\Wo/\Zo$ correction (e) & $\pm 0.6$ & $\pm 0.2$ &  $\pm 0.3$ & $0.2$~{\tiny (NNPDF-MSTW)} & $0.6$ \\
+\hline
+$\Wp$ acceptance ($\mu$)   & $\pm 0.7$ & $\pm 0.4$ &  $\pm 0.6$ & $0.3$~{\tiny (NNPDF-MSTW)} & $0.9$ \\
+$\Wm$ acceptance ($\mu$) & $\pm 1.1$ & $\pm 0.6$ &  $\pm 0.9$ & $0.5$~{\tiny (MSTW-CTEQ)} & $1.5$ \\
+$\Wo$ acceptance ($\mu$) & $\pm 0.7$ & $\pm 0.4$ &  $\pm 0.6$ & $0.2$~{\tiny (MSTW-CTEQ)} & $0.8$ \\
+$\Zo$ acceptance ($\mu$)   & $\pm 1.0$ & $\pm 0.6$ &  $\pm 0.9$ & $0.2$~{\tiny (NNPDF-MSTW)} & $1.1$ \\
+$\Wp/\Wm$ correction ($\mu$) & $\pm 1.9$ & $\pm 0.6$ &  $\pm 0.9$ & $0.8$~{\tiny (NNPDF-MSTW)} & $1.9$ \\
+$\Wo/\Zo$ correction ($\mu$) & $\pm 0.8$ & $\pm 0.2$ &  $\pm 0.3$ & $0.2$~{\tiny (NNPDF-CTEQ)} & $0.9$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htb] %
+\begin{center}
+\caption{Predictions of the central values of the acceptances and the ratios of 
+acceptances for various PDF sets. }
+\label{tab:pdfAcc}
+\begin{tabular}{| l | c | c | c |}
+\hline
+\centering Quantity & CTEQ & MSTW &  NNPDF  \\
+\hline
+\hline
+$A_\Wp(\mathrm{e})$ & 0.5017 & 0.5016 & 0.5036 \\
+$A_\Wm(\mathrm{e})$ & 0.4808 & 0.4855 & 0.4804 \\
+$A_\Wo(\mathrm{e})$ & 0.4933 & 0.4951 & 0.4942 \\
+$A_\Zo(\mathrm{e})$ & 0.3876 & 0.3892 & 0.3872 \\
+$A_\Wm(\mathrm{e})/A_\Wp(\mathrm{e})$ & 0.9583 & 0.9488 & 0.9626 \\
+$A_\Zo(\mathrm{e})/A_\Wo(\mathrm{e})$ & 0.7857 & 0.7853 & 0.7880 \\
+\hline
+$A_\Wp(\mu)$ & 0.4594 & 0.4587 & 0.4617 \\
+$A_\Wm(\mu)$ & 0.4471 & 0.4519 & 0.4472 \\
+$A_\Wo(\mu)$ & 0.4543 & 0.4559 & 0.4557 \\
+$A_\Zo(\mu)$ & 0.3978 & 0.3990 & 0.3973 \\
+$A_\Wm(\mu)/A_\Wp(\mu)$ & 0.9732 & 0.9614 & 0.9778 \\
+$A_\Zo(\mu)/A_\Wo(\mu)$ & 0.8756 & 0.8761 & 0.8796 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[!ht] %
+\begin{center}
+\caption{Uncertainties on acceptances due to theoretical assumptions. The different contributions are due to
+ISR plus NNLO effects, factorization and renormalization scales, PDF uncertainties, FSR modeling, and EWK corrections.}
+\label{tab:th_results}
+\begin{tabular}{|l|ccccc|c|}
+	\hline
+	Quantity & ISR+NNLO & $\mu_R$,$\mu_F$ Scales & PDF & FSR & EWK & Total \\
+	\hline\hline
+	$\Wp$ acceptance (e)     & $0.63\%$ & $0.77\%$ & $0.7\%$ & $0.17\%$ & $0.14\%$ & $1.2\%$ \\
+	$\Wm$ acceptance (e)     & $0.31\%$ & $0.50\%$ & $1.2\%$ & $0.20\%$ & $0.29\%$ & $1.4\%$ \\
+	$\Wo$ acceptance (e)       & $0.53\%$ & $0.34\%$ & $0.6\%$ & $0.13\%$ & $0.14\%$ & $0.9\%$ \\
+	$\Zo$ acceptance (e)       & $0.84\%$ & $0.39\%$ & $0.9\%$ & $0.54\%$ & $0.84\%$ & $1.6\%$ \\
+	$\Wp/\Wm$ correction (e) & $0.32\%$ & $1.14\%$ & $1.6\%$ & $0.26\%$ & $0.25\%$ & $2.0\%$ \\
+	$\Wo/\Zo$ correction (e)     & $0.31\%$ & $0.48\%$ & $0.6\%$ & $0.44\%$ & $1.00\%$ & $1.4\%$ \\
+	\hline
+	$\Wp$ acceptance $(\mu)$     & $0.72\%$ & $0.49\%$ & $0.9\%$ & $0.34\%$ & $0.14\%$ & $1.3\%$ \\
+	$\Wm$ acceptance $(\mu)$     & $0.50\%$ & $0.37\%$ & $1.5\%$ & $0.16\%$ & $0.39\%$ & $1.7\%$ \\
+	$\Wo$ acceptance $(\mu)$       & $0.65\%$ & $0.44\%$ & $0.8\%$ & $0.21\%$ & $0.13\%$ & $1.1\%$ \\
+	$\Zo$ acceptance $(\mu)$       & $1.08\%$ & $0.20\%$ & $1.1\%$ & $0.25\%$ & $1.08\%$ & $1.9\%$ \\
+	$\Wp/\Wm$ correction $(\mu)$ & $0.23\%$ & $0.61\%$ & $1.9\%$ & $0.31\%$ & $0.43\%$ & $2.1\%$ \\
+	$\Wo/\Zo$ correction $(\mu)$     & $0.43\%$ & $0.38\%$ & $0.9\%$ & $0.27\%$ & $1.22\%$ & $1.6\%$ \\
+	\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+Table~\ref{tab:th_results} summarizes the different theoretical uncertainties on the acceptance
+due to ISR and NNLO, higher order effects, PDFs, FSR, and missing
+EWK contributions.
+
+The baseline MC generator used to simulate the W and Z signals, {\sc POWHEG}, is
+accurate up to the NLO in perturbative QCD, and up to
+the leading-logarithmic (LL) order  for soft, nonperturbative QCD effects.
+A description accurate to just beyond the next to next to LL (NNLL)
+can be attained with a resummation procedure~\cite{Collins-1, Collins-2}.
+The {\sc ResBos} generator~\cite{ResBos} implements both the resummation and NNLO calculations,
+which are missing in the baseline generator, and its predictions for the W boson $\PT$ spectrum 
+show 
+%remarkable 
+agreement with $\mathrm{p}\bar{\mathrm{p}}$ data at 
+$\sqrt{s} = 1.96$~TeV~\cite{ResBosComp}. Final state radiation is incorporated 
+in {\sc ResBos} via {\sc PHOTOS}~\cite{PHOTOS}.
+The effect of soft nonperturbative effects, hard higher-order effects, and initial-state radiation (ISR),
+which are not accounted for in the baseline generator, is studied by comparing {\sc ResBos} 
+results with {\sc POWHEG},
+and the difference is taken as a systematic uncertainty (second column in Table~\ref{tab:th_results}).
+
+Fixed-order cross section calculations depend on the renormalization ($\mu_R$) and factorization
+ ($\mu_F$) scales. 
+%Differences found when varying $\mu_R$ and $\mu_F$ are taken to indicate the 
+%uncertainty on the cross section from missing higher perturbative orders. 
+Higher-order virtual 
+processes influence the W and Z boson momentum and rapidity distributions. 
+%The fixed-order calculations implemented both by generators and integrators lead to an unnatural 
+%dependence on the QCD factorization scale that must be quantified. 
+{\sc ResBos} fixes $\mu_R$ and $\mu_F$ to the boson mass, so 
+{\sc FEWZ}~\cite{Melnikov:2006kv, Melnikov:2006di} code is used to
+estimate the effect of scale dependence of NNLO calculations that is quoted as a systematic uncertainty.
+The acceptance is computed by varying up and down the renormalization 
+and factorization scales within a factor of two, keeping $\mu_R =\mu_F$.
+Half of the maximum excursion range from half to twice the central scale value
+is taken as a systematic uncertainty (third column in Table~\ref{tab:th_results}). The PDF uncertainties
+from Table~\ref{tab:pdfSyst} are reported in the fourth column of Table~\ref{tab:th_results}
+and added in quadrature to the other contributions to determine the total theoretical
+uncertainties, shown in the last column.
+
+% On top of higher-order QCD corrections, the effect of EWK corrections, not fully 
+% implemented in our baseline MC samples, is estimated using the {\sc HORACE} generator~\cite{HORACE-1, HORACE-2, HORACE-3, HORACE-4},
+% which implements both FSR and virtual and nonvirtual corrections. 
+% Individual effects are separated and the final-state effects
+% are then compared to the {\sc PYTHIA} results, as {\sc PYTHIA} is used for FSR in the 
+% {\sc POWHEG} event generation. While {\sc PYTHIA} only partially accounts for NLO EWK corrections 
+% by generating QED ISR and FSR with a parton shower approximation, HORACE also implements one-loop
+% virtual corrections and photon emission from W boson. The difference between the two generators is taken
+% as a systematic uncertainty (fifth column in Table~\ref{tab:th_results}). Moreover, FSR is simulated beyond the
+% single-photon emission in HORACE using the parton shower method. The difference due to FSR in HORACE and
+% PYTHIA is taken as a contribution to the systematic uncertainty (sixth column in Table~\ref{tab:th_results}). 
+
+At the energy scale of weak boson production, NLO EWK corrections have magnitude of comparable order to NNLO QCD effects. 
+In the baseline {\sc POWHEG} samples, QED ISR and FSR are simulated using {\sc PYTHIA}
+with a parton shower approximation, while virtual corrections and photon emission from W are missing. 
+The magnitude of NLO EWK corrections has been estimated using the {\sc HORACE} event generator~\cite{HORACE-1, HORACE-2, HORACE-3, HORACE-4}
+which implements both FSR and virtual and nonvirtual corrections. {\sc HORACE} also uses a parton shower approximation to account for FSR 
+beyond single photon emission, and has been interfaced to {\sc PYTHIA} in order to generate MC samples with full detector simulation and reconstruction. 
+The difference in acceptances between {\sc PYTHIA} and {\sc HORACE} samples, generated enabling FSR simulation only,
+is taken as systematic uncertainty due to FSR modelling (fifth column in Table~\ref{tab:th_results}).
+The difference in acceptances between {\sc HORACE} samples simulated using the full suite of corrections and
+enabling FSR simulation only is taken as systematic uncertainty due to virtual corrections and radiation from W 
+(sixth column in Table~\ref{tab:th_results}). 
+The effect of QED ISR on the acceptance was found to be negligible comparing {\sc PYTHIA} 
+samples generated with QED ISR enabled and disabled. 

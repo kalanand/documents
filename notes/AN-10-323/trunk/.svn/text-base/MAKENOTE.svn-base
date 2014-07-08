@@ -1,0 +1,6 @@
+#!/bin/sh
+
+eval `../../tdr runtime -sh`
+
+#tdr --style=an --nodraft b AN-10-323
+tdr --style=an b AN-10-323

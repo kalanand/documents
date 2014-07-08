@@ -1,0 +1,137 @@
+\label{sec:systematics}
+
+Before comparison of the jet mass distributions with QCD predictions, the data are
+corrected to the particle level for detector effects, such as resolution and
+acceptance. The simulated particle-level jets are
+reconstructed with the same algorithm and with the same parameters as
+the PF jets. We use the unfolding procedure described in
+Refs.~\cite{unfolding_extra1,unfolding_extra2,unfolding_extra3,unfolding_extra4,agostini} 
+to correct the jet mass, through
+an iterative technique for finding the
+maximum-likelihood solution of the unfolding problem.
+The detector response matrix is obtained in MC studies of jets. 
+In general, the number of iterations must be tuned to minimize the
+impact of
+statistical fluctuations on the result. In practice, however, the
+procedure is largely insensitive to
+the precise settings and binning of events and four iterations usually
+suffice. A larger number of iterations were found to
+provide the same results except for small fluctuations in the tails of
+distributions. A simpler bin-by-bin unfolding is used as a
+cross-check, 
+and is found to provide similar results, with fluctuations
+in the tails of the distributions. The jet transverse momenta are
+not unfolded. 
+
+Systematic uncertainties are estimated by modifying the 
+response matrix for each source of uncertainty by $\pm 1$ standard
+deviation, and comparing the mass
+distribution to the nominal results, based on simulated \PYTHIA
+events. The difference in the unfolded mass spectrum from such a change is taken as
+the uncertainty arising from that source.
+
+
+The experimental uncertainties that can affect the unfolding
+of the jet mass
+include the jet energy scale (JES),
+jet energy resolution (JER), and jet angular resolution (JAR). 
+The uncertainty from JES is estimated by raising and lowering the jet
+four-momenta by the measured uncertainty as a function of jet $\pt$
+and $\eta$~\cite{citeJEC}, which typically corresponds to 1--2\% for the jets
+in this analysis. Two additional $\pt$- and $\eta$-independent
+uncertainties are included: a 1\% uncertainty to account for
+differences observed between the measured and
+predicted $\wboson$ mass for high-$\pt$ jets in a $\ttbar$-enriched sample, and a
+3\% uncertainty to account for differences in the groomed and
+ungroomed energy responses found in MC simulation~\cite{EXO-11-006}. 
+
+The impact of uncertainties in JER and JAR on $m_J$ are evaluated by
+smearing the jet energies, as well as the resolutions in $\eta$ and
+$\phi$, each by 10\% in the MC simulation relative to the
+particle-level generated jets~\cite{citeJEC}. 
+These estimated uncertainties on JER and JAR are found to be
+essentially the same for all jet grooming techniques in MC studies. 
+Since this analysis uses jets constructed from PF constituents, the
+charged particles have excellent energy and angular
+resolutions, but their use induces a dependence on tracking
+uncertainties, e.g., tracking efficiency. This dependence is accounted for
+implicitly in the $\pm$10\% changes in jet energy and angular
+resolutions, since such changes would lead to a difference between
+expected and observed values of these quantities. The same is true for the
+neutral electromagnetic
+component of the jet (primarily from $\pi^0 \rightarrow \gamma\gamma$
+decays). 
+
+The remaining sources of uncertainty are estimated from MC simulation.
+The tracking information is not sensitive to the neutral hadronic
+component of jets, and this small contribution is taken
+directly from simulation. 
+We estimate this remaining uncertainty by comparing the unfolded data using \PYTHIA 
+and using \HERWIG, and assign the difference as a systematic uncertainty.
+This also accounts for the uncertainty from modeling parton showers. 
+The latter effect often comprises the largest uncertainty in the unfolded jet mass
+distributions as described below. 
+Other theoretical ambiguities that can affect the unfolding of the jet
+mass include the variation of the parton distribution functions and
+the modeling of initial and final-state radiation (ISR/FSR). The former
+was investigated and found to be much smaller than the difference
+between the unfolding with \PYTHIA and the unfolding with \HERWIG, and
+hence is neglected. The latter is included implicitly in the uncertainty between
+\PYTHIA and \HERWIG. 
+
+%The jet energy and angular resolution are estimated by increasing and decreasing the jet energy, 
+%$\eta$ and $\phi$ resolution by 10\%.
+%The nominal value chosen is 10\%, motivated by the observed difference between data %and simulation 
+%in the jet energy resolution~\cite{citeJEC}, so the up and down variations 
+%correspond to 20\% and no additional smearing with respect to the Monte Carlo, respectively. 
+As described in Section~\ref{sec:reconstruction}, the jets used
+in this analysis are reconstructed after removing
+the charged hadrons that appear to emanate from subleading primary
+vertices.  
+This procedure produces a dramatic (${\approx} 60\%$) reduction in the pileup
+contribution to jets. 
+The residual uncertainty from pileup is obtained through MC simulation, 
+estimated by increasing and decreasing the cross section for minimum-bias events by 8\%. 
+
+
+% The jets used at CMS are created from constituents reconstructed 
+% with the particle-flow algorithm. Due to this fact, the systematic
+% effects that are considered in this analysis are handled differently
+% than previous measurements at ATLAS~\cite{atlasJS}, for instance. 
+% In that measurement, explicit uncertainties on the jet mass scale and
+% resolution (JMS and JMR) are estimated using the ratio of masses
+% of jets reconstructed with only calorimetric information to the
+% masses of jets reconstructed with only tracking information. 
+% To be explicit, this methodology corrects for the differences
+% in jet mass in data and MC 
+% due to the charged components of the jets only. The
+% remaining differences due to the neutral components are taken 
+% directly from the MC. 
+
+% At
+% CMS, the tracking and calorimetric measurements are synthesized with the
+% particle-flow algorithm, and hence the same method cannot be used to
+% estimate the charged components of the JMS and JMR. 
+% However, since the charged components are directly measured
+% with the tracking information, this is already accounted for
+% in the uncertainties on the jet mass due to the energy and
+% angular resolutions. In addition, the jet mass scale is explicitly
+% checked with the difference in the $\wboson$ mass in data
+% and MC as described above, and also included already. 
+% The remaining differences due to the neutral components
+% are also taken directly from the MC, from the differences
+% between the \pythia and \herwig jet masses. 
+
+
+
+
+In the dijet analysis, there can be incorrect assignments of leading
+reconstructed jets relative to the generator level, e.g., two
+generator-level jets can be matched to three reconstructed jets, or vice versa. 
+This effect causes a bias in the unfolding procedure, which becomes greater
+at small $\pt$. This bias is corrected through MC studies
+of matching of particle-level jets to reconstructed jets,
+and the magnitude of the bias correction is also 
+added to the overall systematic uncertainty.
+Such misassignments are negligible in the V+jet analysis. 
+

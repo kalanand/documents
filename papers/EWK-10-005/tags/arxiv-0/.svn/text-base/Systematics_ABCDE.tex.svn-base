@@ -1,0 +1,37 @@
+The systematic uncertainties on the signal extraction using the ABCD method
+are summarized in Table~\ref{tab:ABCDEsyst}. The total uncertainty is
+taken as the sum in quadrature of the individual components listed in the table,
+and corresponds to 0.7$\%$.
+The two most important sources of systematic uncertainty arise from the 
+modeling of the signal shape. The largest of these (0.53$\%$) comes from 
+the uncertainty on $\varepsilon_\mathrm{P}$, dominated by the statistical uncertainties 
+in the \TNP method. Uncertainties on the electron energy scale, and hadronic 
+recoil response and resolution affect the modeling of the $\MET$ distribution 
+for the signal and together give rise to the second largest uncertainty (0.4$\%$).
+The uncertainty coming from the modeling of electroweak backgrounds is 
+estimated to be 0.2$\%$. The assumption that the fake electron efficiency to 
+pass the $\MET$ boundary is independent of the relative track isolation leads 
+to a small bias for which a correction is applied. The uncertainty on this 
+correction gives rise to a very small error on the yield of 0.07$\%$. This is dominated 
+by the uncertainty on the signal contamination of the anti-selected sample used 
+to estimate the correction.
+
+\begin{table}[hbtp] %
+  \begin{center}
+    \caption{Summary of systematic uncertainties for the ABCD method.}
+    \label{tab:ABCDEsyst}
+    \begin{tabular}{|l|c|}
+      \hline
+      Source of systematic uncertainty & Value \\
+      \hline\hline
+      Signal contamination in bias correction & 0.07\% \\
+      EWK backgrounds & 0.20\% \\
+      Tag-and-probe  & 0.53\% \\
+      $\MET$ modeling  & 0.40\% \\
+      \hline
+      Total & 0.70\% \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+

@@ -1,0 +1,59 @@
+Dear Tommaso,
+
+thanks for your comments, they helped improve the quality of the paper. 
+
+For what concerns rest of editorial comments, we implemented the vast majority of, 
+if not all, the editorial comments that we received. In some cases, comments from 
+different reviewers overlap or suggest incompatible changes. In many of those and 
+other cases we found as the best solution to rephrase the sentence or paragraph 
+involved. The number of editorial comments, due to the size of the paper, 
+is too large to give a reply for every single comment. 
+The latest posted draft contains most of the editorial changes.
+
+Below the replies to the non-editorial and main editorial comments.
+
+Q:
+L189 (discussing Fig.1 and 2): I think the agreement in these figures between data 
+and simulation is quite poor (especially in endcaps), and this would require 
+a comment in the text, but I see nothing. Please explain why there is very bad 
+matching in some of the variables, even in the isolated electron region. 
+Examples are delta-eta and delta-phi in the endcaps, and H/E.
+A:
+As we explain in the captions, the data are signal+background while the MC is pure 
+signal normalized to the number of data (S+B). We don't expect an agreement of 
+the data & MC signal distributions. We just show how the signal looks like and 
+how the background affects the distributions. 
+
+Q:
+L743 What is a "Poissonian likelihood" ? I suggest that you write the expression in full.
+A:
+Likelihood is just the one reported in Baker & Cousins paper that we cite and the recommended 
+standard by PDG. No modification has been done for our case, se we prefer to leave just 
+the reference.
+
+Q:
+L746 awkward sentence: "measure"->"measures". However we suggest that you add detail of how 
+this p-value is defined. As it is, the sentence is quite un-informative. How do we 
+extract the goodness-of-fit measure ?
+A:
+Rephrased as: "A goodness-of-fit test gives a probability (p-value) of 0.36 for this fit". 
+It's the chi^2 probability from likelihood ratio using the Wilks' theorem approximation, 
+as from the Baker & Cousins paper we refer to (see above point).
+
+Q:
+L185 "eliminates" is quite a strong word - we cannot be sure 100% that we have absolutely 
+no QCD events left. I suggest we soften this sentence a bit, such as in "reduces to a 
+negligible level" or "strongly reduces".
+A:
+Rephrased: "reduces the QCD backgrounds to a negligible level" 
+
+Q:
+L493-494 What are the prob(chi2) and prob(KS) ? They are addressed together as 
+"Kolmogorov-Smirnov probabilities" but the first looks like something else. 
+Are they just labeled incorrectly ?
+A:
+this was actually a mistake due to copy and paste, we use only KS probabilities. 
+We rephrased the entire sentence mentioning KS probabilities only.
+
+Best regards,
+Georgios and Luca

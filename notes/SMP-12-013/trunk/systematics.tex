@@ -1,0 +1,83 @@
+
+The signal efficiency is estimated using simulation, considering both 
+the $\rm{q}\bar{\rm{q}}\to\WW$ and $\mathrm{gg} \to \WW$ processes. 
+Correction factors for the lepton reconstruction and identification
+efficiency are determined using $\dyll$ events~\cite{wzxs} recorded with
+dedicated unbiased triggers.
+These factors depend on the lepton $\pt$ 
+and $|\eta|$ and are typically around 0.96 for electrons and 0.98 for muons.
+The trigger efficiency for signal events is measured to be approximately 98\%
+for both $\rm{q}\bar{\rm{q}}\to\WW$ and $\mathrm{gg} \to \WW$ final states.
+
+The uncertainties on lepton momentum scale and resolution, 
+$\met$ modeling and jet energy scale are applied to the reconstructed objects in 
+simulated events by smearing and scaling the relevant observables and propagating 
+the effects to the kinematic variables used in the analysis. 
+The uncertainty assigned to the pile-up corresponds to shifting the mean number
+of pile-up events per beam crossing up and down by one interaction, and amounts to $2.3\%$.
+
+The uncertainty on the acceptance due to variations in the parton distribution functions and the
+value of $\alpha_{s}$ was found to be 2.3\% by following the {\sc pdf4lhc} prescription
+~\cite{PDF4LHC,LHCHiggsCrossSectionWorkingGroup:2011ti}. 
+The effect of higher-order corrections was found to be 1.5\% by varying the QCD renormalisation 
+($\mu_R$) and factorisation ($\mu_F$) scales using the \textsc{mcfm} program~\cite{MCFM}.
+
+The $\WW$ jet veto efficiencies in data are estimated from simulation, and multiplied by a 
+data-to-simulation scale factor derived from $\dyll$ events in the $\Z$ peak: 
+$\epsilon_{\WW}^{\rm data} = \epsilon_{\WW}^{\rm MC} \times \epsilon_{\Z}^{\rm data}/\epsilon_{\Z}^{\rm MC}.$
+The uncertainty is thus factorized into the uncertainty on the $\Z$ efficiency in data and the
+uncertainty on the ratio of the $\WW$ efficiency to the \Z\ efficiency in simulation
+($\epsilon_{\WW}^{\rm MC}/\epsilon_{\Z}^{\rm MC}$). The former, which is statistically dominated, 
+is 0.3\%. Theoretical uncertainties due to higher order corrections contribute most to the 
+WW/Z efficiency ratio uncertainty, which is estimated to be 4.6\% for $\WW$ production. The 
+data-to-simulation correction factor is found to be close to one.
+
+The uncertainties on the $\Wjets$ and top background predictions 
+are 36\% and 15\%, respectively, as described in Section~\ref{sec:backgrounds}. 
+
+The theoretical uncertainties on the $\WZ$ and $\ZZ$ cross sections are calculated 
+by varying the QCD renormalisation ($\mu_R$) and factorisation ($\mu_F$) scales using 
+the \textsc{mcfm} program~\cite{MCFM}. The effect of variations in the parton distribution 
+functions and the value of $\alpha_{s}$ on the predicted cross sections were derived 
+by following the same prescription as for the signal acceptance.
+Including the experimental uncertainties gives a systematic uncertainty of around 10\%.
+The total uncertainty on the background estimations is about 13\%, which is dominated by 
+the systematic uncertainties on the normalisation of the top quark and $\Wjets$ 
+backgrounds. The luminosity measurement uncertainty is $4.4\%$~\cite{lumiPAS}.
+
+A summary of the uncertainties taken into account in this analysis is given in
+Table~\ref{tab:wwSystematics}.
+
+\begin{table}[!ht]
+\begin{center}
+\caption{Relative systematic uncertainties on the estimated signal and
+background yields, in percent. Data-driven background uncertainties
+are separated in statistical component of the control sample and systematic
+component of the extrapolation, (stat.) $\bigoplus$ (syst.).
+\label{tab:wwSystematics}}
+{\scriptsize
+\begin{tabular}{l|c|c|c|c|c|c|c|c}
+\hline
+\multirow{9}{*}{} & $\rm{q}\bar{\rm{q}}$ & gg       & top & W+jets & WZ  & Z$/\gamma*$   & W+$\gamma$ & W+$\gamma^{*}$ \\
+                  & $\to$ WW             & $\to$ WW &     &        & +ZZ & $\to\ell\ell$ &            &                \\
+\hline
+luminosity                   & 4.4 &  4.4 &  -                &  -                & 4.4 &  -                & 4.4 &  -  \\
+trigger efficiency           & 1.5 &  1.5 &  -                &  -                & 1.5 &  -                & 1.5 &  -  \\
+lepton id efficiency         & 2.0 &  2.0 &  -                &  -                & 2.0 &  -                & 2.0 &  -  \\
+muon momentum scale          & 1.5 &  1.5 &  -                &  -                & 1.5 &  -                & 1.5 &  -  \\
+electron energy scale        & 2.5 &  2.5 &  -                &  -                & 1.9 &  -                & 2.0 &  -  \\
+$\met$ resolution            & 2.0 &  2.0 &  -                &  -                & 2.0 &  -                & 2.0 &  -  \\
+jet veto efficiency          & 4.7 &  4.7 &  -                &  -                & 4.7 &  -                & 4.7 &  -  \\
+pile-up                      & 2.3 &  2.3 &  -                &  -                & 2.3 &  -                & 2.3 &  -  \\
+top normalisation            &   - &    - & 10 $\bigoplus$ 15 &  -                & -   &  -                & -   &  -  \\
+W+jets normalisation         &   - &    - &  -                & 19 $\bigoplus$ 36 & -   &  -                & -   &  -  \\
+Z normalisation              &   - &    - &  -                &  -                & -   & 15 $\bigoplus$ 24 & -   &  -  \\
+W+$\gamma$ normalisation     &   - &    - &  -                &  -                & -   &  -                & 30  &  -  \\
+W+$\gamma^{*}$ normalisation &   - &    - &  -                &  -                & -   &  -                & -   & 30  \\
+PDFs                         & 2.3 &  0.8 &  -                &  -                & 5.9 &  -                & -   &  -  \\
+higher order corrections     & 1.5 & 30.0 &  -                &  -                & 3.3 &  -                & -   &  -  \\
+sample statistics            & 1.1 &  3.1 &  -                &  -                & 4.1 &  -                & 8.4 & 8.4 \\
+\hline
+\end{tabular}}
+\end{center}
+\end{table}

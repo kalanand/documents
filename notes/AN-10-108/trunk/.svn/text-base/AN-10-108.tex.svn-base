@@ -1,0 +1,125 @@
+% svn info. These are modified by svn at checkout time.
+% The last version of these macros found before the maketitle will be the one on the front page,
+% so only the main file is tracked.
+% Do not edit by hand!
+\RCS$Revision$
+\RCS$HeadURL$
+\RCS$Id$
+%%%%%%%%%%%%% ptdr definitions %%%%%%%%%%%%%%%%%%%%%
+\input{ptdr-definitions}
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\cmsNoteHeader{2011 / 203} % This is over-written in the CMS environment: useful as preprint no. for export versions
+\title{Search for Dijet Resonances in the Dijet Mass Spectrum in $pp$ Collisions at $\sqrt{s}=7$ TeV}% Force line breaks with \\
+
+%Author is always "The CMS Collaboration" for PAS and papers, so author, etc, below will be ignored in those cases
+\address[CERN]{CERN, Geneva, Switzerland}
+\address[brown]{Brown University, Providence, RI, USA}
+\address[fnal]{Fermilab, Batavia, IL, USA}
+\address[ttu]{Texas Tech University, Lubbock, TX, USA}
+\author[CERN]{Colin Bernet}
+\author[brown]{John Paul Chou}
+\author[CERN]{Maxime Gouzevitch}
+\author[fnal]{Robert M Harris}
+\author[ttu]{Chiyoung Jeong}
+\author[fnal]{Konstantinos Kousouris}
+\author[ttu]{Sung-Won Lee}
+\author[CERN]{Emilio Meschi}
+\author[CERN]{Maurizio Pierini}
+\author[CERN]{Will Reece}
+
+
+% please supply the date in yyyy/mm/dd format. Today has been
+% redefined to do so, but it should be fixed as of the final release date.
+% For papers and PAS, \today is taken as the date the head file (this one) was last modified according to svn: see the RCS Id string above.
+\date{\today}
+
+% Abstract processing:
+% 1. **DO NOT use \include or \input** to include the abstract: our abstract extractor will not search through other files than this one.
+% 2. **DO NOT use %** to comment out sections of the abstract: the extractor will still grab those lines (and they won't be comments any longer!).
+% 3. **DO NOT use tex macros** in the abstract: External TeX parsers used on the abstract don't understand them.
+\abstract{
+We present a search for new particles decaying to dijets in the dijet mass
+spectrum at CMS in pp collisions
+at $\sqrt{s}=7$~TeV using data corresponding to an integrated luminosity of 358 pb$^{-1}$. 
+The dijet mass distribution of the two leading jets is measured and compared to QCD predictions 
+from PYTHIA propagated through the CMS detector simulation. 
+We require the pseudorapidity separation of the two jets 
+to satisfy $\mid \Delta\eta \mid < 1.3$ with each jet inside the region 
+$\mid \eta \mid < 2.5$. 
+We fit the observed dijet mass spectrum with
+a parameterization, search for dijet resonances, and set upper limits
+at 95\% Confidence Level (C.L.) on the resonance cross section.
+These generic cross section limits are compared with theoretical predictions for the cross 
+section for several models of new particles: string resonances, axigluons, colorons,  
+excited quarks, $E_{6}$ diquarks, Randall-Sundrum gravitons, W' and Z'.
+Including statistical uncertainties only we exclude at 95\% C.L. string resonances in the mass
+range $0.9 < M(S) < 3.8$ TeV, excited quarks in the mass range $0.9<M(q*)<2.3$ TeV,
+axigluons and colorons in the mass range 
+$0.9<M(A)<2.3$ TeV, and $E_6$ diquarks in the mass range
+$0.9<M(D)<2.7$ TeV.}
+
+% Do not comment out the following hypersetup lines (metadata). They will disappear in NODRAFT mode and are needed by CDS.
+% Also: make sure that the values of the metadata items are sensible.
+\hypersetup{
+pdfauthor={Dijet Group},
+pdftitle={Search for Dijet Resonances in the Dijet Mass Distribution in $pp$ Collisions at $\sqrt{s}=7$ TeV},%
+pdfsubject={CMS},%
+pdfkeywords={CMS, physics, software, computing}}
+
+\maketitle %maketitle comes after all the front information has been supplied
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Begin text %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\clearpage
+\input{Introduction}
+
+\input{Measurement}
+
+\input{SearchforResonances}
+
+\input{Systematic}
+
+%\input{ExpectedLimits}
+
+\input{Results}
+
+%\input{FutureLimits}
+
+\input{Conclusions}
+
+%\begin{figure}[hbtp]
+%  \begin{center}
+%    \includegraphics[width=0.4\textwidth]{CMS-bw-logo}\hspace{1cm}\includegraphics[width=0.4\textwidth]{CMScol}
+ %   to generate (a) and (b) labels under the figures, you can use subfigure (which is obsolete and may be replaced with the subfig package)
+ %   \subfigure[]{\includegraphics[width=0.2\textwidth]{CMS-bw-logo}}\subfigure[]{\includegraphics[width=0.2\textwidth]{CMScol}}
+%    \caption{2 Figures inserted using includegraphics.}
+%    \label{fig:ex1}
+%  \end{center}
+%\end{figure}
+%
+%\begin{figure}[hbtp]
+%  \begin{center}
+%    \includegraphics[width=0.4\textwidth]{CMS-bw-logo}\hspace{1cm}\includegraphics[width=0.4\textwidth]{CMScol}
+%    \includegraphics[width=0.4\textwidth]{CMS-bw-logo}\hspace{1cm}\includegraphics[width=0.4\textwidth]{CMScol}
+ %   to generate (a) and (b) labels under the figures, you can use subfigure (which is obsolete and may be replaced with the subfig package)
+ %   \subfigure[]{\includegraphics[width=0.2\textwidth]{CMS-bw-logo}}\subfigure[]{\includegraphics[width=0.2\textwidth]{CMScol}}
+%    \caption{4 Figures inserted using includegraphics.}
+%    \label{fig:ex2}
+%  \end{center}
+%\end{figure}
+
+\clearpage
+
+\appendix
+\input{StringApp}
+\input{ModelCrossSections}
+\input{DataTable.tex}
+\input{EventDisplays}
+\input{StatisticalModel}
+\input{StatisticsImplementation}
+\input{Likelihood}
+%\input{StatCheck}
+\clearpage
+
+\bibliography{auto_generated}   % will be created by the tdr script.
+%\clearpage

@@ -1,0 +1,12 @@
+
+\input{res.tex}
+
+\input{res_mctruth.tex}
+
+\input{res_dijet.tex}
+\newpage
+\clearpage 
+\input{res_gjet.tex}
+
+\input{res_tails.tex}
+

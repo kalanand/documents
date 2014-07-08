@@ -1,0 +1,24 @@
+\label{sec:summary}
+
+In summary, the particle-level differential jet mass distribution for 
+anti-$k_{\mathrm{T}}$ jets with a $D$-parameter of 0.7 has
+been presented, for standard jets, as well as
+for jets with several grooming algorithms applied,
+filtering, trimming, and pruning. 
+
+The various MC models reasonably reproduce the observation
+in the data. The improvement is better at larger jet
+masses, and also at larger transverse momentum. 
+Furthermore, all of the grooming techniques improve
+the agreement between the various MC models, between
+each other and with the observation in the data. 
+The largest systematic effect is the difference in the
+unfolding using different parton shower models, with
+subleading, but still significant, uncertainties due to
+jet energy and angular scale and resolution, and
+a small contribution from pileup. 
+
+%The behavior of the jet mass with pileup has also been
+%investigated, as well as comparisons at the detector level
+%between anti-$k_{\mathrm{T}}$-0.5, anti-$k_{\mathrm{T}}$-0.7,
+%anti-$k_{\mathrm{T}}$-0.8, CA-0.8 and CA-1.2 jets.  

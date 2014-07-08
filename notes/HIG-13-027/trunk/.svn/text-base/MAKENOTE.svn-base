@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Instructions to access this from scratch
+#     svn co -N svn+ssh://svn.cern.ch/reps/tdr2 myDir
+#     cd myDir
+#     svn update utils
+#     svn update -N notes
+#     svn update notes/HIG-13-027
+
+# Working with this:
+#     cd myDir/notes/HIG-13-027/trunk
+#     MAKENOTE
+#     VIEWIT
+
+eval `../../tdr runtime -sh`
+
+noteNum=`echo $(pwd) | awk -F '/' '{print $(NF-1)}'`
+echo "note $noteNum"
+
+#tdr --style=paper --nodraft b HIG-13-027
+tdr --style=paper b $noteNum
+
+cp -v "../../tmp/${noteNum}_temp.pdf" "./${noteNum}.pdf"

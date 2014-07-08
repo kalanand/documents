@@ -1,0 +1,122 @@
+\section{Systematic Uncertainties}
+\label{sec:systematics}
+
+The largest uncertainty contribution on the measured cross sections is related to the
+integrated luminosity~\cite{lumiPAS}, and amounts to $\LUMISYST\%$.
+\par
+The next most important source of systematic uncertainty is due to the
+lepton efficiency correction factors obtained
+from the \TNP method.
+In the $\Zmm$ analysis, the efficiency uncertainties are 
+absorbed in the statistical uncertainty of the measurement, via the simultaneous 
+fit to the yield and efficiencies.
+
+%The $\MET$ energy scale is affected by our limited knowledge of the intrinsic hadronic recoil response. 
+%We observe minor discrepancies when comparing hadronic recoil distributions in data and simulation, 
+%and assign uncertainties of $\WEIMETSYST\%$ and $\WMIMETSYST\%$ to $\Wen$ and $\Wmn$ cross sections
+%respectively.
+
+Table~\ref{tab:syst} shows a summary of systematic uncertainties
+for the $\Wo$ and $\Zo$ cross section measurements.
+Tables~\ref{tab:systEL} and~\ref{tab:systMU}
+show a summary of systematic uncertainties
+for the individual cross sections ($\Wp, \Wm$) and the ratios ($\Wp/\Wm$, $\Wo/\Zo$).
+Details of systematic uncertainties for the muon and electron channels are described in the
+following subsections.
+
+\begin{table}[htbp] %
+\begin{center}
+   \caption[.]{ \label{tab:syst}
+Systematic uncertainties in percent for inclusive W and Z cross sections.
+The ``n/a'' entry means that the source does not apply.
+A common luminosity uncertainty of 4\% applies to all channels.}
+\begin {tabular} {|l|c|c|c|c|}
+\hline
+Source                                   & $\Wen$         & $\Wmn$           & $\Zee$         & $\Zmm$ \\
+\hline\hline
+Lepton reconstruction \& identification  & \WEITNPSYST    & \WMIEFFSYST      & \ZEETNPSYST    &  n/a \\
+Trigger prefiring                      & n/a            & \WMIEFFPRET      & n/a            & \ZMMEFFPRET \\
+Energy/momentum scale \& resolution             & \WEIESCALESYST & \WMISCALESYST    & \ZEEESCALESYST & \ZMMSCALESYST \\
+$\MET$ scale \& resolution               & \WEIMETSYST    & \WMIMETSYST      &  n/a           &  n/a   \\
+Background subtraction / modeling        & \WEIBKGSYST    & \WMIQCDSHAPESYST & \ZEEBKGSYST    & \ZMMBKGTOTSYST  \\
+Trigger changes throughout 2010          & n/a            & n/a              & n/a            & \ZMMTRIGABSYST \\
+\hline
+Total experimental                       & \WEEXPSYST    & \WMEXPSYST       & \ZEEEXPSYST    & \ZMMEXPSYST \\
+\hline
+PDF uncertainty for acceptance           & \WEIPDFACCSYST & \WMIPDFACCSYST   & \ZEEPDFACCSYST & \ZMMPDFACCSYST \\
+Other theoretical uncertainties          & \WEITHSYST     & \WMITHSYST       & \ZEETHSYST     & \ZMMTHSYST  \\
+\hline
+Total theoretical                        & \WEITOTTHSYST & \WMITOTTHSYST & \ZEETOTTHSYST & \ZMMTOTTHSYST \\
+\hline
+Total (excluding luminosity)                      & \WEITOTSYST    & \WMITOTSYST      & \ZEETOTSYST    & \ZMMTOTSYST \\
+\hline
+\end {tabular}
+\end{center}
+\end{table}
+
+
+\begin{table}[htbp] %
+\begin{center}
+   \caption[.]{ \label{tab:systEL}
+Systematic uncertainties in percent for individual W cross sections and the ratios in the
+electron channel.
+A common luminosity uncertainty of 4\% applies to all cross sections. }
+\begin {tabular} {|l|c|c|c|c|}
+\hline
+Source       & $\Wp$ (e) & $\Wm$ (e) & $\Wp/\Wm$ (e) & $W/Z$ (e) \\
+         \hline\hline
+Lepton reconstruction \& identification  & 1.5 & 1.5 & 1.5 & 1.1 \\
+Energy scale \& resolution             & 0.5 & 0.6 & 0.1 & 0.2 \\
+$\MET$ scale \& resolution               & 0.3 & 0.3 & 0.1 & 0.3 \\
+Background subtraction / modeling        & 0.3 & 0.5 & 0.4 & 0.3 \\
+\hline
+Total experimental                       & 1.6 & 1.7 & 1.6 & 1.2 \\
+\hline
+PDF uncertainty for acceptance           & 0.7 & 1.2 & 1.6 & 0.6 \\
+Other theoretical uncertainties          & 1.0 & 0.7 & 1.2 & 1.2 \\
+\hline
+Total theoretical                        & 1.2 & 1.4 & 2.0 & 1.4 \\
+\hline
+Total (excluding luminosity)                                   & 2.1 & 2.2 & 2.6 & 1.8 \\
+\hline
+\end {tabular}
+\end{center}
+\end{table}
+
+\begin{table}[htbp] %
+\begin{center}
+   \caption[.]{ \label{tab:systMU}
+Systematic uncertainties in percent for individual W cross sections and ratios in the
+muon channel.
+A common luminosity uncertainty of 4\% applies to all cross sections. }
+\begin {tabular} {|l|c|c|c|c|}
+\hline
+Source       & $\Wp$ ($\mu$) & $\Wm$ ($\mu$) & $\Wp/\Wm$ ($\mu$) & $W/Z$ ($\mu$) \\
+         \hline\hline
+Lepton reconstruction \& identification  & 0.9 & 0.9 & 1.3 & 0.9 \\
+Trigger prefiring                       & 0.5 & 0.5 & 0   & 0   \\
+Momentum scale \& resolution             & 0.19 & 0.25 & 0.06 & 0.35 \\
+$\MET$ scale \& resolution               & 0.2 & 0.2 & 0.0   & 0.2 \\
+Background subtraction / modeling        & 0.4 & 0.5 & 0.2 & 0.4 \\
+\hline
+Total experimental                       & 1.1 & 1.2 & 1.3 & 1.1 \\
+\hline
+PDF uncertainty for acceptance           & 0.9 & 1.5 & 1.9 & 0.9 \\
+Other theoretical uncertainties          & 0.9 & 0.8 & 0.8 & 1.4 \\
+\hline
+Total theoretical                        & 1.3 & 1.7 & 2.1 & 1.6 \\
+\hline
+Total (excluding luminosity)                             & 1.7 & 2.1 & 2.5 & 2.0 \\
+\hline
+\end {tabular}
+\end{center}
+\end{table}
+%------------------------------------------------------------
+
+
+
+\input{ElectronSys}
+
+\input{MuonSys}
+
+\input{Theory}

@@ -1,0 +1,188 @@
+\section{\texorpdfstring{The $\Wln$  Signal Extraction}{The W-> l nu  Signal Extraction}}
+\label{sec:WsignalExtraction}
+
+The signal and background yields are obtained by fitting
+the $\MET$ distributions for $\Wen$ and $\Wmn$ to different
+functional models.
+An accurate $\MET$ measurement is essential for distinguishing
+a $\PW$ signal from QCD multijet backgrounds.
+We profit from the application of the PF
+algorithm, which provides superior $\MET$
+reconstruction performance~\cite{PFMET1} with respect to alternative
+algorithms at the energy scale of the $\PW$ boson.
+% The energy of photons is directly obtained from the ECAL measurement,
+% corrected for zero-suppression effects.
+% The energy of electrons is determined from a combination of the track
+% momentum at
+% the main interaction vertex, the corresponding ECAL cluster energy,
+% and the energy sum of
+% all bremsstrahlung photons attached to the track. The energy of muons
+% is obtained from the
+% corresponding track momentum. The energy of charged hadrons is
+% determined from a combination
+% of the track momentum and the corresponding ECAL and HCAL energy,
+% corrected for
+% zero-suppression effects, and calibrated for the non-linear response
+% of the calorimeters. Finally
+% the energy of neutral hadrons is obtained from the corresponding
+% calibrated ECAL and HCAL
+% energy.
+
+
+The $\MET$ is the magnitude of the transverse component of the missing momentum
+vector, computed as the negative of the vector sum of all
+reconstructed transverse momenta of particles identified with
+the PF algorithm. The algorithm combines the information from
+the inner tracker, the muon chambers, and the calorimeters
+to classify reconstructed objects according to particle type
+(electron, muon, photon, or charged or neutral hadron),
+thereby allowing precise energy corrections.
+The use of the tracker information reduces the sensitivity of $\MET$ to miscalibration of the calorimetry.
+%also providing a significant degree of redundancy that
+%reduces the sensitivity of the $\MET$ measurements
+%to miscalibrations of the calorimetry.
+%\par
+%The impact of anomalous noise signal in the calorimeters is reduced to
+%a negligible level~\cite{metPAS}.
+
+\par
+The QCD multijet background is one of the most significant backgrounds in W analyses.
+At high $\MET$, EWK backgrounds, in particular $\Wtn$ and DY,
+also become relevant, leading to contamination levels on the
+order of $10\%$.
+
+The $\MET$ model is fitted to the observed distribution as the sum of three contributions:
+the W signal, and the QCD and EWK backgrounds.
+The EWK contributions are normalized to the W signal yield in the fit
+through the ratios of the theoretical cross sections.
+
+Simultaneous fits are performed to the two $\MET$ spectra of W$^+$ and W$^-$ candidates,
+fitting either the total W cross section and
+the ratio of positive and negative W cross sections, or
+the individual positive and negative W cross sections.
+In both cases the overall normalization of QCD multijet events is determined from the fit.
+The diboson and $\ttbar$ contributions,
+taken from simulations, are negligible (Section~\ref{sec:EWKbkgds}).
+
+
+\par
+In the following sections the modeling
+of the $\MET$ shape for the signal and the EWK backgrounds are presented,
+and the methods used to determine
+the $\MET$ shape for the QCD multijet background from data are
+ described.
+Finally, the extraction of the signal yields is discussed.
+
+
+
+%\input{MET}
+
+\input{W-EWK-template}
+
+\input{W-EWK-Backgrounds.tex}
+
+\input{W-QCD-template}
+
+\input{Wmn.tex}
+
+
+\section{\texorpdfstring{The $\Zll$ Signal Extraction}{The Z-> ll Signal Extraction}}
+\label{sec:ZsignalExtraction}
+
+The $\Zll$ yield can be obtained by counting the
+number of selected candidates after subtracting the residual background.
+The $\Zll$ yield and lepton efficiencies are also determined using a simultaneous fit
+to the invariant mass spectra of multiple dilepton categories.
+The simultaneous fit deals correctly with correlations
+in determining the lepton efficiencies and the $\Zo$ yield
+from the same sample.
+The Z yield extracted in this way does not need to be corrected for efficiency effects
+in order to determine the cross section, and
+the statistical uncertainty on the $\Zo$ yield absorbs the uncertainties
+on the determination of lepton efficiencies that would be propagated as systematic
+uncertainties in the counting analysis.
+Both methods were performed for the $\Zee$ analysis, while only
+the simultaneous fit was used for the $\Zmm$ analysis
+after taking into account the results from the previous studies~\cite{WZCMS:2010}.
+%at lower luminosity which disfavour the use of the counting analysis.
+
+\subsection{EWK and QCD Backgrounds}
+\label{sec:bkgZll}
+
+For the $\Zee$ analysis the background contributions from EWK processes $\Ztt$, $\ttbar$,
+and diboson production are estimated from the yields of events selected in NLO MC samples
+normalized to the NNLO cross sections and scaled to the considered integrated luminosity.
+They amount to \ZEEEWKBKG events, where the uncertainty combines the NNLO
+and luminosity uncertainties. Data are used to estimate the background
+originating from W+jets, $\gamma$+jets, and QCD multijet events where the
+selected electrons come from misidentified jets or photons
+(referred to as 'QCD background').
+This background contribution is estimated using the distribution
+of the relative track isolation, $\ITRK/\Et$,
+and amounts to $4.9 \pm 8.4\, \textrm{(stat.)} \pm 8.4\, \textrm{(syst.)}$ events.
+As a cross-check, the ``same-sign/opposite-sign'' method was used,
+which is based on the signs of the charges of the two electron candidates, the measured
+charge misidentification for electrons that pass the nominal selection criteria, and the
+hypothesis that the QCD background is charge-symmetric.
+The QCD background estimate with this method is $59 \pm 17
+\textrm{(stat.)} \pm 160\, \textrm{(syst.)}$ events.
+The two methods are consistent with the presence of negligible QCD background in our sample.
+
+Backgrounds in the $\Zmm$ analysis containing two isolated global muons
+have been estimated with simulations to be very small.
+This category of dimuon events is defined as the ``golden'' category.
+The simulation prediction of the smallness of the $\ttbar$ and QCD backgrounds was validated with data.
+First, the selected dimuon sample was enriched with $\ttbar$ events by applying
+a requirement on $\MET$, because of the presence of neutrinos in $\ttbar$ events,
+and an agreement between data and the simulation prediction was found
+with the dimuon invariant mass requirement inverted,
+where the residual Z signal is negligible.
+The QCD component has been checked using the same-sign dimuon events and dimuon events with
+both muons failing the isolation requirement, and was found to be in agreement with the simulation predictions.
+The conclusion from the maximum amount of measured data-simulation discrepancy
+was that the uncertainty in the residual background subtraction
+has a negligible effect on the $\Zmm$ measured yield.
+The backgrounds to the $\Zmm$ categories having one global and one looser muon
+are significantly larger than in the golden category.
+Simulation estimates in this case are not used for such backgrounds and
+fits to the dimuon invariant mass
+distributions are performed including parameterized background components, as
+described in Section~\ref{sec:Zmumu}.
+
+Backgrounds estimates in the $\Zee$ and $\Zmm$ analyses are summarized in Table~\ref{tab:ZllBG}.
+%--------------------------------------------------
+\begin{table} %
+\begin{center}
+\caption[.]{\label{tab:ZllBG}
+Estimated background-to-signal ratios in the $\Zee$ and $\Zmm$ (only for candidates
+in the golden category) channels.
+The QCD background for the $\Zee$ channel has been estimated with data,
+while all other estimates are based on MC simulations, and their corresponding uncertainties
+are statistical only.}
+\begin{tabular}{|l|c|c|}
+\hline
+Processes & $\Zee$ sel. & $\Zmm$ sel. \\
+\hline\hline
+Diboson production   & $(0.157\pm 0.001)\%$ & $(0.158\pm 0.001)\%$ \\
+$\ttbar$             & $(0.117\pm 0.008)\%$ & $(0.141\pm 0.014)\%$ \\
+$\Ztt$               & $(0.080\pm 0.006)\%$ & $(0.124\pm 0.005)\%$ \\
+W+jets               & $(0.010\pm 0.002)\%$ & $(0.008\pm 0.002)\%$ \\
+\hline
+Total EWK plus $\ttbar$  & $(0.365\pm 0.010)\%$ & $(0.430\pm 0.015)\%$ \\
+\hline
+QCD            & $(0.06\pm 0.14)\%$ &  $(0.013\pm 0.001)\%$ \\
+\hline
+Total background                & $(0.42\pm 0.14)\%$ & $(0.444\pm 0.015)\%$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+%--------------------------------------------------
+
+
+\input{Zee}
+
+\input{Zmm}

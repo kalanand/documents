@@ -1,0 +1,103 @@
+Dear Guneratne,
+
+thanks for your comments, they helped improve the quality of the paper. 
+
+For what concerns rest of editorial comments, we implemented the vast majority of, 
+if not all, the editorial comments that we received. In some cases, comments from 
+different reviewers overlap or suggest incompatible changes. In many of those and 
+other cases we found as the best solution to rephrase the sentence or paragraph 
+involved. The number of editorial comments, due to the size of the paper, is too 
+large to give a reply for every single comment. The latest posted draft contains 
+almost all of such editorial changes.
+
+Below the replies to the non-editorial and main editorial comments.
+
+Q: 
+The muon selection subchapter refers to a CMS PAS on muon reconstruction and identification [16]. 
+Is there a similar PAS for electron reconstruction and identification, which could be 
+given as a reference for subchapter 5.2 on electron (tight and loose) selection?
+A:
+It is CMS PAS EGM-10-004 that we could quote for the electron reconstruction and identification. 
+It is based on 200/nb and contains the tight & loose selections as WP80 and WP95. Maybe it is 
+a bit confusing for the reader. Not decided yet what to do.
+
+Q: 
+Line 296: Reference for asymmetric resolution function (Crystal Ball)?
+A:
+Added reference [17] 
+
+Q: 
+Lines 366-367: "This behaviour is not fully reproduced by the MC". Could we indicate which kind 
+of effects would have to be implemented in the MC in order to reproduce better the data? Alignment, 
+edge inefficiencies?
+A:
+We don't rely on MC for efficiency estimates, so we don't need to motivate the MC imperfections. 
+
+Q: 
+Lines 447-452: The residual distributions shown at the bottom of Fig. 8 are not very useful. 
+In particular the ratio of the systematic error to the statistical error (residual distributions 
+(red and blue) Fig. 8 right bottom) is of no interest. What one wants is the total uncertainty 
+(syst + stat) on the signal template MET shape used in the fit. One possibility is to keep 
+only the plot on the left of Fig. 8 and replace the residual (chi) plot by a plot of the ratio 
+(correction factor) of the corrected shape to the simulated shape and its total estimated 
+(stat + syst) error. Residual plots are only useful to compare histograms and fitted curves 
+such as in Fig.9, 10 and others. One would have to move their definition (Lines 450-452) to 
+the next subchapter 8.3, when discussing Fig. 9 for example.
+A:
+We agree that the residual distributions are not so useful. From the other side it is a 
+quick way to aid the eye spotting differences between the presented distributions. 
+
+Q: 
+Lines 540-544: Completely obscure. Fraction of fake electrons is ambiguous. A priori there 
+are 4 (not 2) different fractions of fake electrons in the 4 regions ABCD: fA, fB, fC and fD? 
+Only after reading the note AN2011_009_v6.pdf one can understand what is meant. Here is a 
+suggestion to simplify the text, replacing the two sentences Lines 540-544 by: 
+"In this formulation, two of these parameters are the relative numbers of fake electrons 
+(QCD background)reconstructed in the AB and CD regions: QA/QB and QD/QC. By assuming that 
+these two parameters are equal (factorization) the number of signal events can be extracted 
+from the system of equations independently of the number of QCD background events."
+A:
+Changed to : "In this formulation, two parameters, f_A and f_D, relate to the QCD backgrounds 
+and are defined as the ratios of events with a fake electron candidate in the A and D regions 
+to the number in the AB and CD regions respectively, representing the efficiency with which 
+fake electrons pass the boundary on MET dividing AD from BC. If the efficiency for passing 
+the MET boundary is largely independent of the choice of the boundaries on I_trk/ET then 
+these two parameters will be approximately equal. Assuming f_A = f_D holds exactly leads 
+to a simplification of the system of equations such that all direct dependence of the signal 
+extraction on parameters relating to the QCD backgrounds is eliminated." 
+
+Q: 
+Lines 617-630: The errors on QCD background estimates are dominated by large systematic errors. 
+Only because of these large errors are the two estimates compatible. It would be nice 
+(in particular for the SS/OS method) to explain how these systematic errors have been estimated.
+A:
+Since this is only a cross check we don't want to discuss it extensively in this paragraph. 
+
+Q: 
+Lines 767-772: Not easy to understand. Not clear that this is useful. Are the systematic 
+uncertainties of 0.3% (selection) and 1% (reconstruction) already included in the 1.4% total 
+systematic uncertainty for the W->e nu cross-section? These numbers do not appear in Table 11. 
+Drop it all or rewrite more clearly?
+A:
+Yes they are. Should not appear in table 11 as a separate entry. The systematic uncertainty quoted 
+for the electron reconstruction & identification includes the statistical uncertainty related 
+to the size of the Z sample used to estimate the efficiencies. 
+
+Q: 
+Lines 861-864: Add a sentence: The effect of this uncertainty of 1.5% was propagated to the 
+fitted W contribution and found negligible.
+A:
+Actually the sentence was a left-over from a previous version, and was not correct, 
+so it has been has been removed 
+
+Q: 
+Fig. 27 caption: suppress the sentence "The solid symbols [] and the hollow symbols[]". The total 
+uncertainty looks bigger for ATLAS than for CMS. This is not in agreement with the caption: "3.4% for ATLAS 
+and 4% for CMS". In ATLAS-CONF-2011-041 one finds a total error of 5.1 % for sigma(W) and 5.4% for sigma(Z). 
+That is in an average total uncertainty of 5.2% for ATLAS compared to 4% for CMS.
+A:
+Removed comparison to ATLAS from Fig. according to CMS rule not to cite conf. notes. 
+
+
+Best regards,
+Georgios and Luca

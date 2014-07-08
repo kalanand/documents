@@ -1,0 +1,146 @@
+\section{Appendix: Variation in \texorpdfstring{$m_{WW}$}{mWW} for anomalous couplings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_060.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_060_ratio.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m060.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m060_ratio.png}
+    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+    the standard model coupling (right) for $\Lambda_Z = \pm 0.6$ and various choices of $\Delta{\kappa_\gamma}$.}
+    \label{fig:ww_Mass4Body_atgcRatio06}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_040.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_040_ratio.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m040.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m040_ratio.png}
+    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+    the standard model coupling (right) for $\Lambda_Z = \pm 0.4$ and various choices of $\Delta{\kappa_\gamma}$.}
+    \label{fig:ww_Mass4Body_atgcRatio04}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_036.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_036_ratio.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m036.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m036_ratio.png}
+    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+    the standard model coupling (right) for $\Lambda_Z = \pm 0.36$ and various choices of $\Delta{\kappa_\gamma}$.}
+    \label{fig:ww_Mass4Body_atgcRatio036}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_032.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_032_ratio.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m032.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m032_ratio.png}
+    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+    the standard model coupling (right) for $\Lambda_Z = \pm 0.32$ and various choices of $\Delta{\kappa_\gamma}$.}
+    \label{fig:ww_Mass4Body_atgcRatio032}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_028.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_028_ratio.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m028.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m028_ratio.png}
+    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+    the standard model coupling (right) for $\Lambda_Z = \pm 0.28$ and various choices of $\Delta{\kappa_\gamma}$.}
+    \label{fig:ww_Mass4Body_atgcRatio028}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_024.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_024_ratio.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m024.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m024_ratio.png}
+    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+    the standard model coupling (right) for $\Lambda_Z = \pm 0.24$ and various choices of $\Delta{\kappa_\gamma}$.}
+    \label{fig:ww_Mass4Body_atgcRatio024}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_020.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_020_ratio.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m020.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m020_ratio.png}
+    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+    the standard model coupling (right) for $\Lambda_Z = \pm 0.20$ and various choices of $\Delta{\kappa_\gamma}$.}
+    \label{fig:ww_Mass4Body_atgcRatio020}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h!t]
+  {\centering
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_016.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_016_ratio.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m016.png}
+    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m016_ratio.png}
+    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+    the standard model coupling (right) for $\Lambda_Z = \pm 0.16$ and various choices of $\Delta{\kappa_\gamma}$.}
+    \label{fig:ww_Mass4Body_atgcRatio016}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\begin{figure}[h!t]
+%%  {\centering
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_012.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_012_ratio.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m012.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m012_ratio.png}
+%%    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+%%    the standard model coupling (right) for $\Lambda_Z = \pm 0.12$ and various choices of $\Delta{\kappa_\gamma}$.}
+%%    \label{fig:ww_Mass4Body_atgcRatio012}}
+%%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\begin{figure}[h!t]
+%%  {\centering
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_008.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_008_ratio.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m008.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m008_ratio.png}
+%%    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+%%    the standard model coupling (right) for $\Lambda_Z = \pm 0.08$ and various choices of $\Delta{\kappa_\gamma}$.}
+%%    \label{fig:ww_Mass4Body_atgcRatio008}}
+%%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\begin{figure}[h!t]
+%%  {\centering
+%%%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_004.png}
+%%%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_004_ratio.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m004.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_m004_ratio.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_000.png}
+%%    \includegraphics[width=0.48\textwidth]{figs/Mass4Body_000_ratio.png}
+%%    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+%%    the standard model coupling (right) for $\Lambda_Z = 0.04$ (top row) and 
+%%    $\Lambda_Z = 0.00$ (bottom row)
+%%    and various choices of $\Delta{\kappa_\gamma}$.}
+%%    \label{fig:ww_Mass4Body_atgcRatio004}}
+%%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%\begin{figure}[h!t]
+%%%%  {\centering
+%%%%
+%%%%    \caption{WW invariant mass distribution (left) and its ratio with respect to 
+%%%%    the standard model coupling (right) for $\Lambda_Z = 0.00$ and various choices of $\Delta{\kappa_\gamma}$.}
+%%%%    \label{fig:ww_Mass4Body_atgcRatio000}}
+%%%%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

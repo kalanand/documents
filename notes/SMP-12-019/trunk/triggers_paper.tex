@@ -1,0 +1,128 @@
+
+\subsection{Dijet trigger selection}
+\label{sec:dataSampleAndEventSelection}
+
+The dijet data sample was collected in 2011 at $\sqrt{s}=7$ TeV and corresponds to
+an integrated luminosity of \intlumi. 
+Events are collected with single-jet high level triggers (HLT). The online jet reconstruction 
+used only calorimetric information and the resulting HLT 
+jets had typically worse energy resolution than the offline ones.  
+ %Events are triggered by a single
+%\ifpas
+%calorimeter jet.
+%\else
+%{\tt CaloJet}.
+%\fi
+
+As the instantaneous luminosity increased with time,
+different thresholds are used in different time periods.
+%We use a trigger strategy such that the triggers are
+%assigned based on the $\pt^{AVG}$ evaluated using anti-$k_t$ jets with $R$=0.7. 
+
+\label{sec:trigAssignment}
+The triggers that were used in the dijet analysis have partially overlapping phase space. 
+The lower-threshold triggers have high prescales in order to accommodate higher
+trigger rates, and the $\pt$ selections on these triggers are only one-sided,
+hence lower-threshold triggers have overlapping phase space with higher-threshold
+triggers. To uniquely assign events to a specific trigger, the
+strategy used is to compute the trigger efficiency as a function
+of $\pt^{AVG}$ and select a region in the trigger plateau, then
+assign one trigger per $\pt^{AVG}$ region. The trigger assignment is based on the ungroomed jet $\pt$. Table~\ref{TriggerTurnOns}
+shows the trigger threshold for each trigger.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ |c|c|}
+    \hline 
+trigger $\pt$ threshold (\GeV) & $\pt^{AVG}$ region (\GeV) \\ 
+\hline
+%60 & 0-150   \\
+%100& 150-220 \\
+190& 220-300  \\
+240& 300-450  \\
+370& $>$450 \\
+   \hline 
+  \end{tabular}
+  \caption{Trigger efficiency turn-on values for all jet samples.\label{TriggerTurnOns}}
+\end{table}
+
+\subsection{V+jets trigger selection}
+
+
+Several triggers are used to collect events consistent with
+the topology of a vector boson decaying leptonically, to electrons or muons. For the W + jet channels the trigger
+paths consist of several single-lepton triggers with lepton
+identification criteria applied. Leptons are also required to be isolated from other
+tracks and calorimeter energy depositions to maintain an acceptable
+trigger rate. For the W$(\mu\nu)$ channel, the trigger thresholds for the
+muon $\pt$ are in the range of 17 to 40 GeV.
+The higher thresholds are used for the periods of higher instantaneous
+ luminosity. The combined trigger efficiency is
+ around 90\% for signal events that pass all offline requirements,
+ described in the following.
+ For the W$(e\nu)$ channel the electron $\pt$ threshold ranges
+ from 25 to 65 GeV. Lower $\pt$ threshold electron triggers in combination with online dijet requirements are available but are not used in this analysis to avoid the modeling of the trigger response for groomed jets.
+
+To preferentially select only
+ real W events, the single electron triggers typically also require
+ minimum thresholds on the missing transverse energy (MET) and the transverse mass
+ $m_T$ of the electron plus MET system.
+
+ The combined efficiency for these triggers for signal events
+ that pass the final offline selection criteria is $>95\%$.
+
+
+ The Z$(\mu\mu)$ channel uses the same single-muon triggers as the
+ W$(\mu\nu)$ channel. For the Z$(ee)$ channel, di-electron triggers
+ with lower $\pt$ thresholds (17 and 8 GeV) and isolation
+ requirements are used. These triggers are 99\% efficient for all
+ Z$(ee)$ plus jet events that pass the final offline selection criteria.
+
+\subsection{Transverse momentum bin assignment}
+\label{sec:ptBinAssignment}
+
+
+%The jet mass is correlated with the energy of the jet. As such,
+%it is necessary to measure the jet mass in bins of transverse 
+%momentum of the jet $\pt$. 
+%The average jet $\pt$ is used as a variable of interest ($\pt^{AVG}$)
+%for the dijet analysis, while the leading jet $\pt$ is used as a
+%variable of interest for the V+jets analysis.
+
+We measure the jet
+mass distribution for different jet $\pt$ regions. For the dijet analysis, 
+$\pt^{AVG}$ is used, while the leading jet $\pt$ is used for
+the V+jets analysis.
+
+The $\pt$ binning is 
+identical between the two analyses, and shown in Table~\ref{tab:ptBins}.
+In this case, to assure that the appropriate $\pt$ dependence
+of the jet mass is captured for the various grooming algorithm,
+the $\pt$ is evaluated for each of the grooming techniques. 
+
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ |c|c|}
+    \hline 
+    Bin & $\pt$ (\GeV) \\ 
+    \hline
+%    1 & 50-125 \GeV \\
+    1 & 125-150 \\
+    2 & 150-220  \\
+    3 & 220-300  \\
+    4 & 300-450  \\
+    5 & 450-500  \\
+    6 & 500-600  \\
+    7 & 600-800  \\
+    8 & 800-1000  \\
+    9& 1000-1500  \\
+%    11& $>$1500  \\
+   \hline 
+  \end{tabular}
+  \caption{Jet $\pt$ bins. \label{tab:ptBins}}
+\end{table}
+
+
+
+

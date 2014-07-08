@@ -1,0 +1,25 @@
+
+Several triggers are used to collect events consistent with 
+the vector boson topollogy. For the $W$ + jet channels the trigger 
+paths consist of several single-lepton triggers with tight lepton 
+identification. Leptons are also required to be isolated from other 
+tracks and calorimeter energy depositions to maintain an acceptable 
+trigger rate. For the $W(\mu\nu)$ channel, the trigger thresholds for the 
+muon $p_T$, are in the range of 17 to 40 GeV. 
+The higher thresholds are used for the periods of higher instantaneous 
+ luminosity. The combined trigger efficiency is 
+ around 90\% for signal events that pass all offline requirements, 
+ described in the following. 
+ For the $W(e\nu)$ channel the electron $p_T$ threshold ranges 
+ from 25 to 32 GeV. To preferentially keep only 
+ real W events, the single electron triggers typically also require 
+ minimum thresholds on the missing transverse energy (MET) and the transverse mass 
+ $m_T$ of the electron plus MET system. 
+ The combined efficiency for these triggers for signal events 
+ that pass the final offline selection criteria is $>95\%$.
+ The $Z(\mu\mu)$ channel uses the same single-muon triggers as the 
+ $W(\mu\nu)$ channel. For the $Z(ee)$ channel, di-electron triggers 
+ with lower pT thresholds (17 and 8 GeV) and tight isolation 
+ requirements are used. These triggers are 99\% efficient for all 
+ $Z(ee)$ plus jet events that pass the final offline selection criteria.
+

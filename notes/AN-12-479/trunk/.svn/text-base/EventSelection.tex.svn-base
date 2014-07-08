@@ -1,0 +1,443 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage{}
+\section{Physics objects reconstruction}
+\label{sec:reco}
+\label{sec:firstStep}
+% ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+The study of the $WV\gamma$ final state involves reconstruction of variety of physics object - electrons, muons missing transverse energy, jets and photons. 
+In this section we describe in details the all physics objects involved in the analysis. 
+
+
+The analysis relies on the standard reconstruction algorithms
+produced by the CMS community. Event data is reconstructed using the 
+particle-flow (PF) reconstruction technique~\cite{pflow}. Particle flow 
+attempts to reconstruct all stable particles in an event by combining 
+information from all sub-detectors. The algorithm categorizes all particles 
+into the following five types: muons, electrons, photons, charged and 
+neutral hadrons. The list of reconstructed particles is used as the set of
+inputs for a jet clustering algorithm to create particle-flow jets.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Electron selection}
+\label{sec:electron_cuts}
+
+Electrons are reconstructed using a gaussian-sum filter (GSF)
+algorithm \cite{CMS-PAS-EGM-10-004}, and are required to pass electron
+ID cuts according to a multi-variate identification
+technique~\cite{cite:elemva}.  We also require that selected
+electron candidates are isolated. Particle flow-based relative
+isolation is defined as
+%%%
+\begin{equation*}
+\mathrm{RelIso_{\mathrm{PF}}} = \frac{I_{\mathrm{CH}}+max(0,I_{\mathrm{NH}}+I_{\mathrm{PHOTON}}-(\mathrm{EA}\cdot\rho))}{E_\mathrm{T}},
+\end{equation*}
+%%%
+where $I_{\mathrm{CH}}$, $I_{\mathrm{NH}}$ and $I_{\mathrm{PHOTON}}$
+are the charged hadron, neutral hadron and photon isolation variables
+(using an isolation cone of 0.3). The $I_{\mathrm{CH}}$ variable is calculated from charged hadrons, associated to the primary vertex.
+The neutral hadron and photon isolation variables are corrected for
+contributions from pile-up using the effective area correction \cite{EAcorrElectrons},
+$(\mathrm{EA}\cdot\rho)$, where $\mathrm{EA}$ is the cone effective area
+and $\rho$ is the average neutral particle density of the event.
+
+The ID and isolation cuts used are shown in Table~\ref{tab:EleID} and
+have been tuned by Egamma POG to give the same efficiency bin-by-bin with respect to
+the working point (WP) used for 2011 analysis.
+
+Additionally, we require
+%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item Electron $E_\mathrm{T} > 30\,\mathrm{GeV}$.
+\item Pseudorapidity $|\eta| < 2.5$. There is an exclusion range due
+        to the ECAL barrel-endcap transition region, defined by
+        $1.4442 < |\eta_{\mathrm{sc}}| < 1.566$, where
+        $\eta_{\mathrm{sc}}$ is the pseudorapidity of the ECAL
+        supercluster.
+%\item Impact parameter: We cut on the absolute value of the impact
+%       parameter calculated with respect to the average primary vertex (PV). We
+%       require: $d_0(\mathrm{PV}) < 0.02\,\mathrm{cm}.$
+
+%\item In order to make sure that the selected electron and the selected
+%jets come from the same hard interaction and not from pile up events,
+%we require that the $z$ coordinate of the PV of the event and the $z$
+%coordinate of the electron's vertex lie within a distance of
+%less than $0.1~\mathrm{cm}$.
+
+
+\item
+In order to reject events in which the electron candidate actually
+originates from a conversion of a photon into an $e^{+}e^{-}$ pair, we
+use an approach using the vertex fit probability of fully
+reconstructed conversions combined with the requirement that the
+number of missed inner tracker layers of the electron track must be
+exactly zero (i.e. there are no missed layers before the first hit of
+the electron track from the beam line).
+\end{itemize}
+
+\begin{table}[bthp]
+\begin{center}
+{\footnotesize
+\begin{tabular}{|c|c|c|c|}
+\hline
+Lepton $\eta$ & $|\eta| < 0.8$ & $0.8 < |\eta| < 1.479$ & $1.479 < |\eta| < 2.5$  \\
+\hline
+ID MVA cut value (tight lepton) & 0.913 & 0.964 & 0.899 \\
+Isolation cut value (tight lepton) & 0.105 & 0.178 & 0.150 \\
+ID MVA cut value (loose lepton) & 0.877 & 0.811 & 0.707 \\
+Isolation cut value (loose lepton) & 0.426 & 0.481 & 0.390 \\
+\hline
+\end{tabular}
+\caption[.]{\label{tab:EleID} Cut values for electron identification
+MVA output and for isolation which are tuned to give the same
+efficiency as VBTF Working Point (WP) 80, as used for the tight
+electron selection, and VBTF Working Point (WP) 90, as used in the
+loose electron selection.}}
+\end{center}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Muon selection}
+\label{sec:muon_cuts}
+
+Muon candidates are identified by two different
+algorithms~\cite{MUONPAS}: one proceeds from the inner tracker outwards,
+the other one starts from tracks measured in the muon chambers and matches
+and combines them with tracks reconstructed in the inner tracker.
+These selection criteria\cite{muonIDtwiki} are summarized below:
+%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item The muon candidate is reconstructed both as a global muon and
+as a tracker muon.
+\item Number of pixel hits of the Tracker track $\ge 1$;
+\item Number of muon system hits of the Global track $\ge 1$;
+\item Normalized $\chi^{2}$ of the Global track $< 10.0$.
+\item Muon $p_{\mathrm{T}} > 25\,\mathrm{GeV}$.
+\item Pseudorapidity $|\eta| < 2.1$.
+\item Impact parameter: We cut on the absolute value of the impact
+parameter calculated with respect to the primary vertex. We require:
+$d_0(\mathrm{PV}) < 0.02\,\mathrm{cm}.$
+\item In order to make sure that the selected muon and the selected
+jets come from the same hard interaction and not from pile up events,
+we require that the $z$ coordinate of the PV of the event and the $z$
+coordinate of the muon's inner track vertex lie within a distance of
+less than 0.5~cm.
+\item The number of tracker layers with hits from the muon track has to be
+$N_{\mathrm{layers}} > 5$.
+\end{itemize}
+
+The selected muon candidates also have to be isolated. Particle
+flow-based relative isolation for muons is defined as
+\begin{equation*}
+\mathrm{RelIso_{\mathrm{PF}}} = \frac{I_{\mathrm{CH}}+max(0,I_{\mathrm{NH}}+I_{\mathrm{PHOTON}}-(0.5~{p}_{T}^\mathrm{sumPU}))}{p_\mathrm{T}},
+\end{equation*}
+
+where $I_{\mathrm{CH}}$, $I_{\mathrm{NH}}$ and $I_{\mathrm{PHOTON}}$
+are the charged hadron, neutral hadron and photon isolation variables
+(using an isolation cone of 0.4). The charged hadron isolation variable uses tracks from the primary vertices only. 
+The neutral hadron and photon isolation variables are corrected for
+contributions from pile-up using the DeltaBeta correction, $(0.5
+p_T^\mathrm{sumPU})$. We require the muon to have
+$\mathrm{RelIso_{\mathrm{PF}}} < 0.12$ in order to be considered
+isolated.
+
+
+\subsubsection{Loose Electron}
+For the purposes of rejecting events with more than one lepton we
+define a loose electron, which has looser cuts. We consider electrons
+which have $p_{\mathrm{T}} > 20\,\mathrm{GeV}/c$, $|\eta| < 2.5$,
+and which satisfy electron $\mathrm{RelIso_{\mathrm{PF}}}$ and MVA ID
+cuts. The cut values for the electron ID and isolation used in the
+analysis can be found in Table~\ref{tab:EleID}.
+%As in the case of the
+%tight electrons, we also require $d_0(\mathrm{PV}) <
+%0.02\,\mathrm{cm}$ and that the $z$ coordinate of the PV of the event
+%and the $z$ coordinate of the electron's vertex lie within a distance
+%of less than $0.1~\mathrm{cm}$.
+
+\subsubsection{Loose Muon}
+Additionally, to reject events with more than one lepton, we define a
+loose muon, which has looser cuts. We consider all global muons which
+have $p_{\mathrm{T}} > 10\,\mathrm{GeV}/c$, $|\eta| < 2.5$, and
+$\mathrm{RelIso_{\mathrm{PF}}} < 0.2$ to be loose muons.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Jet selection}
+\label{sec:firstStep_jets}
+Jets are reconstructed with the anti-KT algorithm \cite{cacciari},
+starting from the set of objects reconstructed by the particle
+flow \cite{pflow,CMS-PAS-JME-10-003,CMS-PAS-PFT-10-002}.
+Jets are corrected such that the measured energy of the jet
+correctly reproduces the energy of the initial particle.
+The CMS standard L2 (relative) correction makes the jet response flat in $\eta$.
+The standard L3 (absolute) correction brings the jet closer to the $\PT$ of
+a matched generated jet created using generator level input and a similar
+jet clustering algorithm.
+The L2 and L3 corrections are calculated using Monte Carlo, and thus a
+L2L3 residual correction is applied that fixes the discrepancies between
+Monte Carlo and data~\cite{newjes-cms}.
+In this analysis we use jets with measured (corrected) $\PT$
+greater than 30~$\gev$.
+We require $|\eta| < 2.4$ so that the jets fall within the
+tracker acceptance.  Jets from pile-up are identified and removed with PileupJetID tool ~\cite{cite:PileupJetID}.
+
+Jets are required to pass a set of loose identification
+criteria; this requirement eliminates jets originating from or being seeded by
+noisy channels in the calorimeter~\cite{Chatrchyan:2009hy}:
+
+%%%%%%%%%%%%%%
+\begin{itemize}
+\item Fraction of energy due to neutral hadrons $<$ 0.99.
+\item Fraction of energy due to neutral EM deposits $<$ 0.99.
+\item Number of constituents $>$ 1.
+\item Number of charged hadrons candidates $>$ 0.
+\item Fraction of energy due to charged hadrons candidates $>$ 0.
+\item Fraction of energy due to charged EM deposits $<$ 0.99.
+\end{itemize}
+%%%%%%%%%%
+All energy fractions are calculated from uncorrected jets.
+
+\par
+In order to account for electron and muon objects that
+have been reconstructed as jets, we remove from the jet
+collection any jet that falls within a
+cone of radius $R= 0.3$ of a loose electron or a loose muon.
+This ``cleaning'' procedure is applied in order to ensure that the same
+particle is not double counted as two different physics objects.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Missing Transverse Energy (\MET)}
+\label{sec:MET}
+An accurate \MET measurement is essential for distinguishing
+the $\Wo$ signal from QCD backgrounds.
+We use the \MET estimate provided by the Particle Flow algorithm.
+PF \MET showed the best performance
+among several \MET algorithms~\cite{PFMET}.
+The \MET is computed as the vector sum of all PF objects.
+It has energy scale correction (type 1) and also "shift" correction, which account for small misalignment of various sub-detector systems.
+A good agreement is found between the \MET
+distributions of $\Wln$ events in data and simulation~\cite{metPAS}.
+The resolution for inclusive multi-jet samples and for
+$\Wln$ events is also well reproduced by the simulation.
+A relative broadening of a few percent is observed in the data compared to MC,
+and has a negligible impact on the
+extraction of the W yields~\cite{WZCMS:2010}.
+We reject events with small opening angle between \MET and any of the two leading jest ($\Delat\phi(\MET,j)<0.4$). 
+This cut rejects events with fake \MET due to a mismeasured jet $p_T$.  
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\section{Event selection}
+\label{sec:evtSel}
+
+
+The event should have a good primary vertex (PV). This means selecting
+the primary vertex with the highest sum of $p_{T}^2$ of the tracks
+associated with it and requiring it to have a number of degrees of
+freedom (ndof) $\ge 4$, where ndof corresponds to the weighted sum of
+the number of tracks used for the construction of the PV. In addition,
+the PV must lie in the central detector region of $|z| \le 24$~cm
+and $\rho \le 2$~cm around the nominal interaction point.
+
+\par
+In the electron channel, we select events that contain exactly one
+tight electron candidate fulfilling the criteria described in
+Section~\ref{sec:electron_cuts} and reject events that contain a
+loose electron or a loose muon in addition to the tight electron.
+In the muon channel, we select events that contain exactly one
+tight muon candidate whose criteria are described in
+Section~\ref{sec:muon_cuts} and reject events that contain an
+additional loose lepton.
+In both channels we require an event to have missing transverse energy
+\MET in excess of 35~GeV and to have transverse mass greater than
+30~GeV.  These cuts are designed to reduce the background
+from QCD multijet production.
+
+Further we require two central jets in the event with di-jet invariant mass 70<$m_{jj}$<100 GeV which corresponds to the hadronic decay of the W or Z in the signal process 
+and $\Delat\eta(j,j)<1.4$ which further suppresses the $W\gamma+jets$ background. Additionally we require both jets to fail the CSV-medium b-tag requirement, which suppresses 
+the $t\overline{t}\gamma$ and single top backgrounds. In the electron channel we require $|M_{e\gamma}-M_{Z}|>10$ GeV, which efficiently rejects the 
+$Z+jets$ background, when one of the leptons in $e^+e^-$ pair is misreconstructed as photon. 
+
+
+%We further require exactly two jets passing the cuts
+%described in Section~\ref{sec:firstStep_jets}.
+
+
+\section{Lepton reconstruction, selection and trigger efficiencies}\label{sec:Eff}
+
+Since the lepton reconstruction, selection, and trigger efficiencies can be slightly different between data and simulation,
+correction factors have to be applied to the MC to account for these differences. The efficiencies are calculated using a Tag and Probe
+technique exploiting Z boson decays to a pair of electrons or muons, respectively. One of the leptons is used as tag and has to pass a
+tight selection, while the second one is used as probe if the tag-probe pair combines to the Z boson mass. The total lepton efficiency
+can be factorized into three components:
+
+\begin{equation}
+\epsilon_{\textnormal{total}}=\epsilon_{\textnormal{Reco}}\cdot\epsilon_{\textnormal{Id}}\cdot\epsilon_{\textnormal{HLT}}
+\end{equation}
+
+The tag and probe method is nearly the same compared to the one already used in the 2011 data analysis for this Higgs search
+(\cite{CMS-AN-12-029},\cite{CMS-AN-2012-021}). Therefore, only the most important information will be discussed.
+
+\subsection{Electron efficiencies}\label{subsec:EffEle}
+In the electron case, the reconstruction efficiency $\epsilon_{\textnormal{Reco}}$ characterizes the transition from a supercluster in the
+electromagnetic calorimeter to a reconstructed Particle Flow electron. The ability of a reconstructed electron to pass the offline
+selection, consisting of several isolation and identification criteria, is given by the identification efficiency $\epsilon_{\textnormal{Id}}$.
+Finally, the selected electron has a certain probability to fire the high level trigger and the efficiency to fulfill the HLT requirements
+is parametrized as $\epsilon_{\textnormal{HLT}}$. In data, a single electron trigger is used at HLT level, while in MC the HLT requirements are dropped. \\
+Since the HLT efficiency is MC is equal to $100\%$, the HLT efficiency measured on data is applied directly in the analysis of MC samples,
+while the other two efficiency components are calculated both for data and MC, so that a data/MC scale factor is applied in the other cases. \\
+In general, since the efficiency depends both on $\pt$ and $\eta$ of the electron, the measurement is binned in $\pt$ as (30, 35, 40, 45, 50, 200)\GeVc
+and in $\eta$ as (-2.5, -1.5, 0.0, 1.5, 2.5) of the probe electron. The resulting efficiencies and scale factors are summarized in Table~\ref{tab:eleEff} and
+shown in Figure~\ref{fig:eleEff}.
+
+\begin{table}[htb]
+\centering
+\scalebox{0.70}{
+  \begin{tabular}{|c|c|c|c|c|c|c|}
+  \hline
+  $p_{\textnormal{T,min}}$ & $p_{\textnormal{T,max}}$ & $\eta_{\textnormal{min}}$ & $\eta_{\textnormal{max}}$ & $\epsilon_{\textnormal{Reco,data}}$/$\epsilon_{\textnormal{Reco,mc}}$ & $\epsilon_{\textnormal{ID,data}}$/$\epsilon_{\textnormal{ID,mc}}$ & $\epsilon_{\textnormal{HLT,data}}$ \\
+  $[\GeVc]$         & $[\GeVc]$         &                     &                     &                              &                           &                               \\
+  \hline
+  \hline
+  30 & 35 & -2.5 & -1.5 & 1.000 $\pm$ 0.002 & 0.973 $\pm$ 0.004 & 0.639 $\pm$ 0.003 \\
+  30 & 35 & -1.5 & 0 & 0.996 $\pm$ 0.001 & 0.981 $\pm$ 0.003 & 0.874 $\pm$ 0.001 \\
+  30 & 35 & 0 & 1.5 & 0.996 $\pm$ 0.001 & 0.980 $\pm$ 0.003 & 0.874 $\pm$ 0.001 \\
+  30 & 35 & 1.5 & 2.5 & 1.002 $\pm$ 0.001 & 0.999 $\pm$ 0.004 & 0.650 $\pm$ 0.003 \\
+  35 & 40 & -2.5 & -1.5 & 1.001 $\pm$ 0.001 & 1.005 $\pm$ 0.003 & 0.686 $\pm$ 0.002 \\
+  35 & 40 & -1.5 & 0 & 0.999 $\pm$ 0.001 & 0.978 $\pm$ 0.002 & 0.896 $\pm$ 0.001 \\
+  35 & 40 & 0 & 1.5 & 0.998 $\pm$ 0.001 & 0.978 $\pm$ 0.002 & 0.891 $\pm$ 0.002 \\
+  35 & 40 & 1.5 & 2.5 & 1.001 $\pm$ 0.001 & 1.003 $\pm$ 0.085 & 0.690 $\pm$ 0.002 \\
+  40 & 45 & -2.5 & -1.5 & 1.001 $\pm$ 0.001 & 1.005 $\pm$ 0.003 & 0.708 $\pm$ 0.002 \\
+  40 & 45 & -1.5 & 0 & 0.999 $\pm$ 0.001 & 0.985 $\pm$ 0.001 & 0.909 $\pm$ 0.001 \\
+  40 & 45 & 0 & 1.5 & 0.999 $\pm$ 0.001 & 0.983 $\pm$ 0.001 & 0.906 $\pm$ 0.001 \\
+  40 & 45 & 1.5 & 2.5 & 1.000 $\pm$ 0.001 & 1.014 $\pm$ 0.003 & 0.720 $\pm$ 0.002 \\
+  45 & 50 & -2.5 & -1.5 & 1.001 $\pm$ 0.001 & 1.017 $\pm$ 0.003 & 0.724 $\pm$ 0.002 \\
+  45 & 50 & -1.5 & 0 & 1.000 $\pm$ 0.001 & 0.984 $\pm$ 0.002 & 0.917 $\pm$ 0.001 \\
+  45 & 50 & 0 & 1.5 & 0.999 $\pm$ 0.001 & 0.985 $\pm$ 0.002 & 0.911 $\pm$ 0.001 \\
+  45 & 50 & 1.5 & 2.5 & 1.001 $\pm$ 0.001 & 1.021 $\pm$ 0.003 & 0.733 $\pm$ 0.002 \\
+  50 & 200 & -2.5 & -1.5 & 0.999 $\pm$ 0.001 & 1.023 $\pm$ 0.003 & 0.733 $\pm$ 0.003 \\
+  50 & 200 & -1.5 & 0 & 0.999 $\pm$ 0.001 & 0.990 $\pm$ 0.002 & 0.925 $\pm$ 0.001 \\
+  50 & 200 & 0 & 1.5 & 0.999 $\pm$ 0.001 & 0.991 $\pm$ 0.003 & 0.920 $\pm$ 0.001 \\
+  50 & 200 & 1.5 & 2.5 & 1.000 $\pm$ 0.001 & 1.019 $\pm$ 0.003 & 0.745 $\pm$ 0.003 \\
+  \hline
+  \end{tabular}}
+\caption{Electron efficiency and data/MC scale factors for super-cluster to reconstructed electrons ($\epsilon_{\textnormal{Reco}}$),
+    reconstructed to selected electrons ($\epsilon_{\textnormal{ID}}$) and selected to HLT electrons ($\epsilon_{\textnormal{HLT}}$).
+    The errors are statistical only.}
+\label{tab:eleEff}
+\end{table}
+
+\begin{figure}[b]
+  \begin{center}
+    \subfigure[]{
+    \includegraphics[width=0.32\textwidth]{figs/scaleFactor-Run2012ABC-SCToElectron.pdf}
+  }
+    \subfigure[]{
+    \includegraphics[width=0.32\textwidth]{figs/scaleFactor-Run2012ABC-GsfElectronToId.pdf}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.32\textwidth]{figs/efficiency-Run2012ABC-WP80ToHLTEle.pdf}
+  }
+    \caption{Electron efficiency and data/MC scale factors for super-cluster to reconstructed electrons $\epsilon_{\textnormal{Reco}}$ (a),
+    reconstructed to selected electrons $\epsilon_{\textnormal{Id}}$ (b) and selected to HLT electrons
+      $\epsilon_{\textnormal{HLT}}$ (c).}
+    \label{fig:eleEff}
+  \end{center}
+\end{figure}
+
+\subsection{Muon efficiencies}\label{subsec:EffMu}
+
+In the muon case, the reconstruction efficiency $\epsilon_{\textnormal{Reco}}$ describes the ability to reconstruct a Particle Flow muon starting with
+a particle track and can be assumed to be one \cite{MUONPAS}. The identification efficiency $\epsilon_{\textnormal{Id}}$ gives an estimate for a
+reconstructed muon to pass the offline selection criteria. It can be computed for both data and simulation and thus a scale factor,
+the ratio of the two efficiencies, is derived. \\
+The trigger efficiency $\epsilon_{\textnormal{HLT}}$  is the fraction of selected muons fulfilling the HLT requirements, and, since the HLT
+requirement is dropped on the MC analysis, the efficiency computed on data is used directly to correct the MC event expectation.\\
+The efficiency measurement is binned both in $\pt$ and $\eta$ of the probe muon covering the
+relevant intervals (25, 30, 35, 40, 45, 50, 200)\GeVc in $\pt$ and (-2.1, -1.5, -1.0, -0.5, 0.0, 0.5, 1.0, 1.5, 2.1) in $\eta$. The resulting selection
+and trigger efficiencies and scale factors are summarized in Table~\ref{tab:muonEff} and Figure~\ref{fig:muonEff}.
+
+\begin{table}[htb]
+\centering
+\scalebox{0.70}{
+  \begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  $p_{\textnormal{T,min}}$ & $p_{\textnormal{T,max}}$ & $\eta_{\textnormal{min}}$ & $\eta_{\textnormal{max}}$ & $\epsilon_{\textnormal{ID,data}}$/$\epsilon_{\textnormal{ID,mc}}$ & $\epsilon_{\textnormal{HLT,data}}$ \\
+  $[\GeVc]$         & $[\GeVc]$         &                     &                     &                             &                               \\
+  \hline
+  \hline
+  25 & 30 & -2.1 & -1.5 & 0.992 $\pm$ 0.003 & 0.766 $\pm$ 0.003 \\
+  25 & 30 & -1.5 & -1 & 0.987 $\pm$ 0.003 & 0.822 $\pm$ 0.003 \\
+  25 & 30 & -1 & -0.5 & 0.990 $\pm$ 0.003 & 0.914 $\pm$ 0.002 \\
+  25 & 30 & -0.5 & 0 & 0.984 $\pm$ 0.003 & 0.920 $\pm$ 0.002 \\
+  25 & 30 & 0 & 0.5 & 0.985 $\pm$ 0.003 & 0.924 $\pm$ 0.002 \\
+  25 & 30 & 0.5 & 1 & 0.992 $\pm$ 0.003 & 0.913 $\pm$ 0.002 \\
+  25 & 30 & 1 & 1.5 & 0.991 $\pm$ 0.003 & 0.802 $\pm$ 0.003 \\
+  25 & 30 & 1.5 & 2.1 & 0.995 $\pm$ 0.002 & 0.814 $\pm$ 0.003 \\
+  30 & 35 & -2.1 & -1.5 & 0.991 $\pm$ 0.002 & 0.785 $\pm$ 0.002 \\
+  30 & 35 & -1.5 & -1 & 0.988 $\pm$ 0.002 & 0.829 $\pm$ 0.002 \\
+  30 & 35 & -1 & -0.5 & 0.988 $\pm$ 0.002 & 0.921 $\pm$ 0.002 \\
+  30 & 35 & -0.5 & 0 & 0.984 $\pm$ 0.002 & 0.930 $\pm$ 0.001 \\
+  30 & 35 & 0 & 0.5 & 0.985 $\pm$ 0.002 & 0.935 $\pm$ 0.001 \\
+  30 & 35 & 0.5 & 1 & 0.990 $\pm$ 0.002 & 0.922 $\pm$ 0.002 \\
+  30 & 35 & 1 & 1.5 & 0.987 $\pm$ 0.002 & 0.807 $\pm$ 0.002 \\
+  30 & 35 & 1.5 & 2.1 & 0.995 $\pm$ 0.002 & 0.833 $\pm$ 0.002 \\
+  35 & 40 & -2.1 & -1.5 & 0.992 $\pm$ 0.002 & 0.793 $\pm$ 0.002 \\
+  35 & 40 & -1.5 & -1 & 0.987 $\pm$ 0.002 & 0.832 $\pm$ 0.002 \\
+  35 & 40 & -1 & -0.5 & 0.991 $\pm$ 0.002 & 0.926 $\pm$ 0.001 \\
+  35 & 40 & -0.5 & 0 & 0.986 $\pm$ 0.002 & 0.935 $\pm$ 0.001 \\
+  35 & 40 & 0 & 0.5 & 0.986 $\pm$ 0.002 & 0.940 $\pm$ 0.001 \\
+  35 & 40 & 0.5 & 1 & 0.991 $\pm$ 0.002 & 0.925 $\pm$ 0.001 \\
+  35 & 40 & 1 & 1.5 & 0.989 $\pm$ 0.002 & 0.812 $\pm$ 0.002 \\
+  35 & 40 & 1.5 & 2.1 & 0.994 $\pm$ 0.002 & 0.837 $\pm$ 0.002 \\
+  40 & 45 & -2.1 & -1.5 & 0.994 $\pm$ 0.002 & 0.800 $\pm$ 0.002 \\
+  40 & 45 & -1.5 & -1 & 0.987 $\pm$ 0.001 & 0.837 $\pm$ 0.002 \\
+  40 & 45 & -1 & -0.5 & 0.992 $\pm$ 0.001 & 0.927 $\pm$ 0.001 \\
+  40 & 45 & -0.5 & 0 & 0.986 $\pm$ 0.001 & 0.940 $\pm$ 0.001 \\
+  40 & 45 & 0 & 0.5 & 0.987 $\pm$ 0.001 & 0.944 $\pm$ 0.001 \\
+  40 & 45 & 0.5 & 1 & 0.991 $\pm$ 0.001 & 0.928 $\pm$ 0.001 \\
+  40 & 45 & 1 & 1.5 & 0.991 $\pm$ 0.001 & 0.817 $\pm$ 0.002 \\
+  40 & 45 & 1.5 & 2.1 & 0.996 $\pm$ 0.001 & 0.844 $\pm$ 0.002 \\
+  45 & 50 & -2.1 & -1.5 & 0.993 $\pm$ 0.002 & 0.807 $\pm$ 0.002 \\
+  45 & 50 & -1.5 & -1 & 0.987 $\pm$ 0.002 & 0.840 $\pm$ 0.002 \\
+  45 & 50 & -1 & -0.5 & 0.990 $\pm$ 0.001 & 0.931 $\pm$ 0.001 \\
+  45 & 50 & -0.5 & 0 & 0.988 $\pm$ 0.002 & 0.941 $\pm$ 0.001 \\
+  45 & 50 & 0 & 0.5 & 0.987 $\pm$ 0.002 & 0.947 $\pm$ 0.001 \\
+  45 & 50 & 0.5 & 1 & 0.992 $\pm$ 0.001 & 0.930 $\pm$ 0.001 \\
+  45 & 50 & 1 & 1.5 & 0.991 $\pm$ 0.002 & 0.821 $\pm$ 0.002 \\
+  45 & 50 & 1.5 & 2.1 & 0.995 $\pm$ 0.002 & 0.851 $\pm$ 0.002 \\
+  50 & 200 & -2.1 & -1.5 & 0.991 $\pm$ 0.002 & 0.809 $\pm$ 0.002 \\
+  50 & 200 & -1.5 & -1 & 0.987 $\pm$ 0.002 & 0.842 $\pm$ 0.002 \\
+  50 & 200 & -1 & -0.5 & 0.992 $\pm$ 0.002 & 0.931 $\pm$ 0.001 \\
+  50 & 200 & -0.5 & 0 & 0.987 $\pm$ 0.002 & 0.944 $\pm$ 0.001 \\
+  50 & 200 & 0 & 0.5 & 0.989 $\pm$ 0.002 & 0.946 $\pm$ 0.001 \\
+  50 & 200 & 0.5 & 1 & 0.992 $\pm$ 0.002 & 0.932 $\pm$ 0.001 \\
+  50 & 200 & 1 & 1.5 & 0.993 $\pm$ 0.002 & 0.824 $\pm$ 0.002 \\
+  50 & 200 & 1.5 & 2.1 & 0.996 $\pm$ 0.002 & 0.854 $\pm$ 0.002 \\
+  \hline
+  \end{tabular}}
+\caption{Muon selection scale factors and HLT efficiencies. The errors are statistical only.}
+\label{tab:muonEff}
+\end{table}
+
+
+\begin{figure}[t]
+  \begin{center}
+    \subfigure[]{
+    \includegraphics[width=0.47\textwidth]{figs/scaleFactor-Run2012ABC-RecoToIso.pdf}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.47\textwidth]{figs/efficiency-Run2012ABC-IsoToIsoMuHLT.pdf}
+  }
+    \caption{Muon scale factors for reconstructed to selected muons $\epsilon_{\textnormal{ID,data}}$/$\epsilon_{\textnormal{ID,mc}}$ (a) and
+    efficiency for selected to HLT muons $\epsilon_{\textnormal{HLT,data}}$ (b).}
+    \label{fig:muonEff}
+  \end{center}
+\end{figure}
+
+

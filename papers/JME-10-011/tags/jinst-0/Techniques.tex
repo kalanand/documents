@@ -1,0 +1,112 @@
+\section{Experimental Techniques}\label{sec:methods}
+
+%------------------------------- Dijet balance -------------------------
+
+\subsection{Dijet \pt-Balancing}
+
+The dijet \pt-balancing method is used for the measurement of the relative jet energy response as a function of $\eta$. It is also used for the measurement of the jet \pt resolution. The technique was introduced at the CERN p$\bar{\text{p}}$ collider (SP$\bar{\text{P}}$S)~\cite{spps} and later refined by the Tevatron experiments~\cite{jes_d0, jes_cdf}. The method is based on transverse momentum conservation and utilizes the \pt-balance in dijet events, back-to-back in azimuth. 
+
+For the measurement of the relative jet energy response, one jet (barrel jet) is required to lie in the central region of the detector ($|\eta|<1.3$) and the other jet (probe jet) at arbitrary $\eta$. The central region is chosen as a reference because of the uniformity of the detector, the small variation of the jet energy response, and because it provides the highest jet \pt-reach. It is also the easiest region to calibrate in absolute terms, using $\gamma$+jet and Z+jet events. The dijet calibration sample is collected as described in Section~\ref{sec:jjsample}. Offline, events are required to contain at least two jets. The two leading jets in the event must be  azimuthally separated  by $\Delta \phi > 2.7 rad$, and one of them must lie in the $|\eta|<1.3$ region.  
+
+The balance quantity $\mathcal{B}$ is defined as:
+
+\begin{equation}
+\mathcal{B}=\frac{\pt^{probe}-\pt^{barrel}}{\ptave},
+\end{equation}
+
+where \ptave is the average \pt of the two leading jets:
+
+\begin{equation}
+  \ptave = \frac{\pt^{barrel}+\pt^{probe}}{2}.
+\end{equation}
+
+The balance is recorded in bins of $\eta^{probe}$ and \ptave. In order to avoid a trigger bias, each \ptave bin is populated by events satisfying the conditions of the fully efficient trigger with the highest threshold.
+
+The average value of the $\mathcal{B}$ distribution, $\langle \mathcal{B}\rangle$, in a given $\eta^{probe}$ and \ptave bin, is used to determine the relative response $\mathcal{R_\text{rel}}$: 
+
+\begin{equation}
+\mathcal{R_\text{rel}}(\eta^{probe},\ptave)=\frac{2 + \langle \mathcal{B}\rangle}{2 - \langle \mathcal{B}\rangle}.
+\end{equation}
+
+The variable $\mathcal{R_\text{rel}}$ defined above is mathematically equivalent to $\langle\pt^{probe}\rangle/\langle\pt^{barrel}\rangle$ for narrow bins of \ptave. The choice of \ptave minimizes the resolution-bias effect (as opposed to binning in $\pt^{barrel}$, which leads to maximum bias) as discussed in Section~\ref{sec:resbias} below. 
+
+A slightly modified version of the dijet \pt-balance method is applied for the measurement of the jet \pt resolution. The use of dijet events for the measurement of the jet \pt resolution was introduced by the D0 experiment at the Tevatron~\cite{d0-asymmetry} while a feasibility study at CMS was presented using simulated events~\cite{JME-09-007}.
+
+In events with at least two jets, the asymmetry variable $\mathcal{A}$ is defined as:
+
+\begin{equation}
+\mathcal{A} = \frac{\ptfirst - \ptsecond}{\ptfirst + \ptsecond},
+\end{equation}
+
+where \ptfirst and \ptsecond refer to the randomly ordered transverse momenta of the two leading jets. The variance of the asymmetry variable $\sigma_\mathcal{A}$ can be formally expressed as:
+
+\begin{equation}
+  \sigma_\mathcal{A}^2 = \left|\frac{\partial\mathcal{A}}{\partial\ptfirst}\right|^2\cdot\sigma^2(\ptfirst) +
+  \left|\frac{\partial\mathcal{A}}{\partial\ptsecond}\right|^2\cdot\sigma^2(\ptsecond).
+\end{equation}
+
+If the two jets lie in the same $\eta$ region, $\pt\equiv\langle\ptfirst\rangle = \langle\ptsecond\rangle$ and $\sigma(\pt)\equiv\sigma(\ptfirst) = \sigma(\ptsecond)$. The fractional jet \pt resolution is calculated to be:
+
+\begin{equation}
+  \frac{\sigma(\pt)}{\pt} = \sqrt{2}\,\sigma_\mathcal{A}.
+\end{equation}
+
+The fractional jet \pt resolution in the above expression is an estimator of the true resolution, in the limiting case of no extra jet activity in the event that spoil the \pt balance of the two leading jets. The distribution of the variable $\mathcal{A}$ is recorded in bins of the average \pt of the two leading jets, $\ptave=\left(\ptfirst+\ptsecond\right)/2$, and its variance is proportional to the relative jet \pt resolution, as described above.
+
+%------------------------------- pt balance ----------------------------
+
+\subsection{$\gamma$/Z+jet \pt-Balancing}
+
+The $\gamma$/Z+jet \pt-balancing method is used for the measurement of the jet energy response and the jet \pt resolution with respect to a reference object, which can be a $\gamma$ or a Z boson. The \pt resolution of the reference object is typically much better than the jet resolution and the absolute response $R_{abs}$ is expressed as: 
+
+\begin{equation}
+  R_{abs} = \frac{\pt^{jet}}{\pt^{\gamma,Z}}.
+\end{equation}
+
+The absolute response variable is recorded in bins of $\pt^{\gamma,Z}$. It should be noted that, because of the much worse jet \pt resolution, compared to the $\gamma$ or Z \pt resolution, the method is not affected by the resolution bias effect (see Section~\ref{sec:resbias}), as it happens in the dijet \pt-balancing method. Also, for the same reason, the absolute response can be defined as above, without the need of more complicated observables, such as the balance $\mathcal{B}$ or the asymmetry $\mathcal{A}$.
+
+%------------------------------- MPF -----------------------------------
+
+\subsection{Missing Transverse Energy Projection Fraction}
+
+The missing transverse energy projection fraction (MPF) method (extensively used at the Tevatron~\cite{jes_d0}) is based on the fact that the $\gamma,Z$+jets events have no intrinsic \vecmet and that, at parton level, the $\gamma$ or Z is perfectly balanced by the hadronic recoil in the transverse plane:
+
+\begin{equation}
+\vec{\pt}^{\gamma,Z} + \vec{\pt}^{recoil} = 0.
+\end{equation}
+
+For reconstructed objects, this equation can be re-written as:
+
+\begin{equation}
+R_{\gamma,Z}\vec{\pt}^{\gamma,Z} + R_{recoil}\vec{\pt}^{recoil} = -\vecmet,
+\end{equation}
+
+where $R_{\gamma,Z}$ and $R_{recoil}$ are the detector responses to the $\gamma$ or Z and the hadronic recoil, respectively. 
+
+Solving the two above equations for $R_{recoil}$ gives:
+
+\begin{equation}
+R_{recoil}= R_{\gamma,Z} +\frac{\vecmet \cdot \vec{\pt}^{\gamma,Z}}{(\pt^{\gamma,Z})^2}\equiv R_{MPF}.
+\end{equation}
+
+This equation forms the definition of the MPF response $R_{MPF}$. The additional step needed is to extract the jet energy response from the measured MPF response. In general, the recoil consists of additional jets, beyond the leading one, soft particles and unclustered energy. The relation $R_{leadjet}=R_{recoil}$ holds to a good approximation if the particles, that are not clustered into the leading jet, have a response similar to the ones inside the jet, or if these particles are in a direction perpendicular to the photon axis. Small response differences are irrelevant if most of the recoil is clustered into the leading jet. This is ensured by vetoing secondary jets in the selected back-to-back $\gamma,Z$+jets events.
+
+The MPF method is less sensitive to various systematic biases compared to the $\gamma,Z$ \pt-balancing method and is used in CMS as the main method to measure the jet energy response, while the $\gamma,Z$ \pt-balancing is used to facilitate a better understanding of various systematic uncertainties and to perform cross-checks.
+
+\subsection{Biases}
+
+All the methods based on data are affected by inherent biases related to detector effects (e.g. \pt resolution) and to the physics properties (e.g. steeply falling jet \pt spectrum). In this Section, the two most important biases related to the jet energy scale and to the \pt resolution measurements are discussed: the resolution bias and the radiation imbalance.
+
+\subsubsection{Resolution Bias}\label{sec:resbias}
+
+The measurement of the jet energy response is always performed by comparison to a reference object. Typically, the object with the best resolution is chosen as a reference object, as in the $\gamma$/Z+jet balancing where the $\gamma$ and the Z objects have much better \pt resolution than the jets. However, in other cases, such as the dijet \pt-balancing, the two objects have comparable resolutions. When such a situation occurs, the measured relative response is biased in favor of the object with the worse resolution. This happens because a reconstructed jet \pt bin is populated not only by jets whose true (particle-level) \pt lies in the same bin, but also from jets outside the bin, whose response has fluctuated high or low. If the jet spectrum is flat, for a given bin the numbers of true jets migrating in and out are equal and no bias is observed. In the presence of a steeply falling spectrum, the number of incoming jets with lower true \pt that fluctuated high is larger and the measured response is systematically higher. In the dijet \pt-balancing, the effect described above affects both jets. In order to reduce the resolution bias, the measurement of the relative response is performed in bins of \ptave, so that if the two jets have the same resolution, the bias is cancelled on average. This is true for the resolution measurement with the asymmetry method where both jets lie in the same $\eta$ region. For the relative response measurement, the two jets lie in general in different $\eta$ regions, and the bias cancellation is only partial.
+
+\subsubsection{Radiation Imbalance}\label{sec:radbias}
+
+The other source of bias is the \pt-imbalance caused by gluon radiation. In general, the measured \pt-imbalance is caused by the response difference of the balancing objects, but also from any additional objects with significant \pt. The effect can by demonstrated as follows: an estimator $\mathcal{R}^{meas}$ of the response of an object with respect to a reference object, is $\mathcal{R}^{meas}=\pt/\pt^{ref}$ where \pt and $\pt^{ref}$ are the measured transverse momenta of the objects. These are related to the true \pt ($p^{true}_{T,ref}$) through the true response: $\pt=R^{true}\cdot\pt^{true}$ and $\pt^{ref}=R^{true}_{ref}\cdot p^{true}_{T,ref}$. In the presence of additional hard objects in the event, $\pt^{true}=p^{true}_{T,ref}-\Delta\pt$, where $\Delta\pt$ quantifies the imbalance due to radiation.  By combining all the above, the estimator $\mathcal{R}^{meas}$ is expressed as: $\mathcal{R}^{meas}=R^{true}/R^{true}_{ref}\left(1-\Delta\pt/p^{true}_{T,ref}\right)$. This relation indicates that the \pt-ratio between two reconstructed objects is a good estimator of the relative response, only in the case where the additional objects are soft, such that $\Delta\pt/p_{T,ref}^{true}\rightarrow 0$. 
+
+The above considerations are important for all \pt-balancing measurements presented in this paper (the dijet \pt-balancing and the $\gamma$/Z+jet \pt-balancing), both for the scale and the resolution determination. Practically, the measurements are performed with a varying veto on an estimator of $a^{true}=\Delta\pt/p_{T,ref}^{true}$ and then extrapolated linearly to $a^{true}=0$. For the dijet \pt-balancing, the estimator of $a^{true}$ is the ratio $\ptthird/\ptave$, while for the $\gamma,Z$+jet \pt-balancing it is the ratio $\ptsecond/\pt^{\gamma,Z}$.  
+
+
+
+
